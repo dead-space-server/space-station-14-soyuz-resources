@@ -1,0 +1,114 @@
+# vocal emotes
+- type: emote
+  id: Hiss
+  name: chat-emote-name-hiss
+  category: Vocal
+  chatMessages: [шипит.]
+  chatTriggers:
+    - hiss
+    - hisses
+    - hisses.
+    - hisses!
+    - hissing
+    - hissed
+    # DeadSpace-Localization-Start
+    - шипит
+    - шипит.
+    - шипит!
+    # DeadSpace-Localization-End
+
+- type: emote
+  id: Meow
+  name: chat-emote-name-meow
+  category: Vocal
+  chatMessages: [мяукает.]
+  chatTriggers:
+    - meow
+    - meows
+    - meows.
+    - meows!
+    - meowing
+    - meowed
+    - miau
+    - miaus
+    - miaus.
+    - miaus!
+    - nya
+    - nyas
+    - nyas.
+    - nyas!
+    # DeadSpace-Localization-Start
+    - мяукает
+    - мяукает.
+    - мяукает!
+    - мяучет
+    - мяучет.
+    - мяучет!
+    # DeadSpace-Localization-End
+
+- type: emote
+  id: Mew
+  name: chat-emote-name-mew
+  category: Vocal
+  chatMessages: [мявкает.]
+  chatTriggers:
+    - mew
+    - mews
+    - mews.
+    - mews!
+    - mewing
+    - mewed
+    # DeadSpace-Localization-Start
+    - мявкает
+    - мявкает.
+    - мявкает!
+    # DeadSpace-Localization-End
+
+- type: emote
+  id: Growl
+  name: chat-emote-name-growl
+  category: Vocal
+  chatMessages: [рычит.]
+  chatTriggers:
+    - growl
+    - growls
+    - growls.
+    - growls!
+    - growling
+    - growled
+    # DeadSpace-Localization-Start
+    - рычит
+    - рычит.
+    - рычит!
+    # DeadSpace-Localization-End
+
+- type: emote
+  id: Purr
+  name: chat-emote-name-purr
+  category: Vocal
+  chatMessages: [мурлычет.]
+  chatTriggers:
+    - purr
+    - purrs
+    - purrs.
+    - purrs!
+    - purring
+    - purred
+    # DeadSpace-Localization-Start
+    - мурлычет
+    - мурлычет.
+    - мурлычет!
+    - мурлыкает
+    - мурлыкает.
+    - мурлыкает!
+    # DeadSpace-Localization-End
+
+- type: emote
+  id: Howl
+  name: chat-emote-name-howl
+  category: Vocal
+  chatMessages: [воет.]
+  chatTriggers:
+    - воет
+    - воет.
+    - воет!

@@ -1,0 +1,35 @@
+- type: Tag
+  id: BorgSecRLeg
+
+- type: Tag
+  id: BorgSecTorso
+
+- type: Tag
+  id: BorgSecHead
+
+- type: Tag
+  id: BorgSecLLeg
+
+- type: Tag
+  id: BorgSecRArm
+
+- type: Tag
+  id: BorgSecLArm
+
+- type: Tag
+  id: BorgModuleSecurity
+
+- type: Tag
+  id: FelinidFood
+
+- type: Tag
+  id: KatanaVjlados
+
+- type: Tag
+  id: MagazineEagle
+
+- type: Tag
+  id: MagazineEagleAP
+
+- type: Tag
+  id: Necro

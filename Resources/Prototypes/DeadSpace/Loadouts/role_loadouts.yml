@@ -1,0 +1,125 @@
+# Command
+- type: roleLoadout
+  id: JobADTBlueShieldOfficer
+  groups:
+  - BlueShieldOfficerJumpsuit
+  - Trinkets
+
+# Civilian
+- type: roleLoadout
+  id: JobSeniorAdministrator
+  groups:
+  - SeniorAdministratorJumpsuit
+  - CommonBackpack
+  - Glasses
+  - Trinkets
+
+- type: roleLoadout
+  id: JobClownSponsor
+  groups:
+  - ClownHead
+  - ClownJumpsuit
+  - ClownBackpack
+  - ClownOuterClothing
+  - ClownShoes
+  - Glasses
+  - Trinkets
+
+# Cargo
+- type: roleLoadout
+  id: JobSeniorSalvageSpecialist
+  groups:
+  - SalvageSpecialistBackpack
+  - SalvageSpecialistOuterClothing
+  - SalvageSpecialistShoes
+  - Glasses
+  - Trinkets
+
+# Law
+- type: roleLoadout
+  id: JobMagistrat
+  groups:
+  - LawyerNeck
+  - MagistratJumpsuit
+  - CommonBackpack
+  - Trinkets
+
+# Engineering
+- type: roleLoadout
+  id: JobSeniorEngineer
+  groups:
+  - SeniorEngineerHead
+  - SeniorEngineerJumpsuit
+  - StationEngineerBackpack
+  - StationEngineerOuterClothing
+  - StationEngineerShoes
+  - SeniorEngineerID
+  - Trinkets
+
+# Science
+- type: roleLoadout
+  id: JobSeniorResearcher
+  groups:
+  - SeniorResearcherHead
+  - ScientistNeck
+  - SeniorResearcherJumpsuit
+  - ScientistBackpack
+  - SeniorResearcherOuterClothing
+  - ScientistGloves
+  - ScientistShoes
+  - SeniorResearcherPDA
+  - Glasses
+  - Trinkets
+
+# Security
+- type: roleLoadout
+  id: JobBrigmedic
+  groups:
+  - BrigmedicJumpsuit
+  - BrigmedicBackpack
+
+- type: roleLoadout
+  id: JobSeniorOfficer
+  groups:
+  - SeniorOfficerJumpsuit
+  - SeniorOfficerBackpack
+  - SecurityOuterClothing
+  - SecurityShoes
+  - SeniorOfficerPDA
+  - SecurityBelt
+  - Trinkets
+
+- type: roleLoadout
+  id: JobSecurityPilot
+  groups:
+  - SecurityJumpsuit
+  - SecurityBackpack
+  - SecurityShoes
+  - SecurityBelt
+  - Trinkets
+
+# Medical
+- type: roleLoadout
+  id: JobSeniorPhysician
+  groups:
+  - SeniorPhysicianHead
+  - MedicalMask
+  - SeniorPhysicianJumpsuit
+  - MedicalGloves
+  - MedicalBackpack
+  - SeniorPhysicianOuterClothing
+  - MedicalShoes
+  - SeniorPhysicianPDA
+  - Glasses
+  - Trinkets
+
+- type: roleLoadout
+  id: JobCoroner
+  groups:
+  - CoronerHead
+  - MedicalMask
+  - CoronerJumpsuit
+  - MedicalGloves
+  - CoronerBackpack
+  - Glasses
+  - Trinkets

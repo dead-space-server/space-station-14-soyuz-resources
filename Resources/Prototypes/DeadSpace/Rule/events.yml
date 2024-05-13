@@ -1,0 +1,13 @@
+- type: entity
+  parent: BaseGameRule
+  id: DemonsInvasion
+  noSpawn: true
+  components:
+  - type: StationEvent
+    weight: 0 # Soyuz requested by ilryaz
+    duration: 1
+    earliestStart: 45
+    reoccurrenceDelay: 60
+    minimumPlayers: 20
+  - type: RandomSpawnRule
+    prototype: MobGhostHerald

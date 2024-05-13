@@ -1,0 +1,32 @@
+- type: entity
+  id: BriefcaseIAAFilled
+  parent: BriefcaseBrown
+  suffix: IAA
+  components:
+    - type: StorageFill
+      contents:
+        - id: Paper
+          amount: 4
+        - id: RubberStampIAA
+
+- type: entity
+  id: BriefcaseMagistratFilled
+  parent: BriefcaseBrown
+  suffix: Magistrat
+  components:
+    - type: StorageFill
+      contents:
+        - id: Paper
+          amount: 4
+        - id: RubberStampMagistrat
+
+- type: entity
+  id: BriefcaseLawyerFilled
+  parent: BriefcaseBrown
+  suffix: Lawyer
+  components:
+    - type: StorageFill
+      contents:
+        - id: Paper
+          amount: 4
+        - id: RubberStampLawyer

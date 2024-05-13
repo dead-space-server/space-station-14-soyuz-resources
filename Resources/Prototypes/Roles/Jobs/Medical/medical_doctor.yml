@@ -1,0 +1,24 @@
+- type: job
+  id: MedicalDoctor
+  name: job-name-doctor
+  description: job-description-doctor
+  playTimeTracker: JobMedicalDoctor
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Medical
+      time: 18000 # 5 hours
+  startingGear: DoctorGear
+  icon: "JobIconMedicalDoctor"
+  supervisors: job-supervisors-cmo
+  access:
+  - Medical
+  - Maintenance
+  extendedAccess:
+  - Paramedic
+  - Coroner
+
+- type: startingGear
+  id: DoctorGear
+  equipment:
+    ears: ClothingHeadsetMedical
+    belt: ClothingBeltMedicalFilled

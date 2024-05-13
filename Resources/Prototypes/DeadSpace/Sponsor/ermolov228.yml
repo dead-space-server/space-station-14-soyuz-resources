@@ -1,0 +1,430 @@
+- type: sponsorLoadout
+  id: ermolov228
+  entity: ClothingBackpackErmolov228
+  sponsorOnly: true
+
+# Backpack
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackErmolov228
+  name: чёрный вместительный рюкзак
+  description: Вместительный рюкзак с множеством карманов. Окрашен в чёрный цвет. Принадлежат члену экипажа, находящемуся под покровительством спонсорской организации.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/ermolov228/backpack.rsi
+  - type: Clothing
+    sprite: DeadSpace/Sponsor/ermolov228/backpack.rsi
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,11,5
+  - type: StorageFill
+    contents:
+      - id: ClothingNeckErmolov228
+      - id: ClothingUniformJumpsuitErmolov228
+      - id: ClothingOuterCoatErmolov228
+      - id: CigarGoldCaseErmolov228
+      - id: CigarGoldCaseErmolov228
+      - id: FlippoLighter
+      - id: BoxFolderRed
+      - id: BoxFolderBlue
+      - id: BoxFolderBlack
+      - id: PenErmolov228
+      - id: HandLabeler
+      - id: ClothingHandsGlovesLatex
+      - id: PaperLawErmolov228
+      - id: MobSiliconErmolov228ServoSkull
+
+# Neck
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckErmolov228
+  name: кружевной воротник
+  description: Принадлежит члену экипажа, находящемуся под покровительством спонсорской организации.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/ermolov228/neck.rsi
+
+# Jumpsuit
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitErmolov228
+  name:  костюм прокурора
+  description: Принадлежит члену экипажа, находящемуся под покровительством спонсорской организации.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/ermolov228/jumpsuit.rsi
+  - type: Clothing
+    sprite: DeadSpace/Sponsor/ermolov228/jumpsuit.rsi
+
+# Coat
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatErmolov228
+  name: пиджак прокурора
+  description: Красный пиджак прокурора, слева можно заметить жетон юридического департамента. Принадлежит члену экипажа, находящемуся под покровительством спонсорской организации.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/ermolov228/coat.rsi
+  - type: Clothing
+    sprite: DeadSpace/Sponsor/ermolov228/coat.rsi
+
+# CigarCase
+- type: entity
+  parent: CigarGoldCase
+  id: CigarGoldCaseErmolov228
+  name: портсигар прокурора
+  description: Принадлежит члену экипажа, находящемуся под покровительством спонсорской организации.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/ermolov228/case.rsi
+
+# Pen
+- type: entity
+  parent: Pen
+  id: PenErmolov228
+  name: роскошная ручка прокурора
+  description: Дорогая и модная ручка, которой вы достойны обладать только в том случае, если вы умеете работать с огромным количеством бумаг. Принадлежит члену экипажа, находящемуся под покровительством спонсорской организации.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/ermolov228/pen.rsi
+
+# PaperLaw
+- type: entity
+  parent: PaperPrintedCentcomm
+  id: PaperLawErmolov228
+  name: распечатанный документ
+  description: Лист бумаги с заголовком центкома. Страшно даже смотреть на него.
+  noSpawn: true
+  components:
+  - type: Paper
+    stampState: paper_stamp-centcom
+    stampedBy:
+    - stampedColor: '#006600FF'
+      stampedName: Центральное Командование
+    - stampedColor: '#00BE00FF'
+      stampedName: Одобрено
+    content: paper-law-ermolov228
+
+#Servoskull
+- type: entity
+  parent: BaseMob
+  id: MobSiliconErmolov228ServoSkull
+  name: сервочереп-писец
+  description: Робототехническое устройство, похожее на беспилотный аппарат, созданный из человеческого черепа.
+  noSpawn: true
+  components:
+    - type: Sprite
+      sprite: DeadSpace/Sponsor/ermolov228/servoskull.rsi
+      layers:
+        - state: servo
+        - state: servo_e
+          map: ["enum.BorgVisualLayers.Light"]
+          shader: unshaded
+          visible: true
+        - state: servo_l
+          shader: unshaded
+          map: ["light"]
+          visible: true
+    - type: Speech
+      speechVerb: Robotic
+      speechSounds: Pai
+    - type: NoSlip
+    - type: GhostRole
+      allowMovement: true
+      allowSpeech: true
+      makeSentient: true
+      name: ghost-role-information-servoskull-name
+      description: ghost-role-information-servoskull-description
+    - type: InteractionPopup
+      interactSuccessString: petting-success-recycler
+      interactFailureString: petting-failure-generic
+      interactSuccessSound:
+        path: /Audio/Ambience/Objects/periodic_beep.ogg
+    - type: TTS
+      voice: Kelthuzad
+    - type: BorgChassis
+      maxModules: 1
+      moduleWhitelist:
+        tags:
+          - BorgModuleSponsor
+      hasMindState: servo_e
+      noMindState: servo_e
+    - type: ItemSlots
+      slots:
+        cell_slot:
+          name: power-cell-slot-component-slot-name-default
+          startingItem: PowerCellHyper
+    - type: ContainerFill
+      containers:
+        borg_brain:
+          - PositronicBrain
+        borg_module:
+          - BorgModuleChronicler
+    - type: ZombieImmune
+    - type: StaticPrice
+      price: 1500
+    - type: MovementAlwaysTouching
+    - type: NpcFactionMember
+      factions:
+        - NanoTrasen
+    - type: Access
+      enabled: false
+      tags:
+      - Maintenance
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        100: Critical
+        200: Dead
+      stateAlertDict:
+        Alive: BorgHealth
+        Critical: BorgCrit
+        Dead: BorgDead
+      showOverlays: false
+      allowRevives: true
+    - type: IntrinsicRadioTransmitter
+      channels:
+        - Binary
+        - Common
+        - Law
+    - type: ActiveRadio
+      channels:
+        - Binary
+        - Common
+        - Law
+    - type: FlashImmunity
+    - type: Reactive
+      groups:
+        Acidic: [Touch]
+    - type: DamageOnHighSpeedImpact
+      damage:
+        types:
+          Blunt: 5
+      soundHit:
+        collection: MetalThud
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.35
+          density: 150
+          mask:
+          - MobMask
+          layer:
+          - MobLayer
+    - type: MovementSpeedModifier
+      baseWalkSpeed : 2.5
+      baseSprintSpeed : 4.5
+    - type: RotationVisuals
+      horizontalRotation: 90
+    - type: MobState
+      allowedStates:
+      - Alive
+      - Critical
+      - Dead
+    - type: HealthExaminable
+      examinableTypes:
+        - Blunt
+        - Slash
+        - Piercing
+        - Heat
+        - Shock
+      locPrefix: silicon
+    - type: UserInterface
+      interfaces:
+        enum.BorgUiKey.Key:
+          type: BorgBoundUserInterface
+        enum.StrippingUiKey.Key:
+          type: StrippableBoundUserInterface
+        enum.PhotocopierUiKey.Key:
+          type: PhotocopierBoundUi
+    - type: ActivatableUI
+      key: enum.PhotocopierUiKey.Key
+    - type: Strippable
+    - type: Repairable
+      doAfterDelay: 30
+      allowSelfRepair: false
+    - type: NameIdentifier
+      group: Silicon
+    - type: ContainerContainer
+      containers:
+        borg_brain: !type:ContainerSlot { }
+        cell_slot: !type:ContainerSlot { }
+        borg_module: !type:Container { }
+        part-container: !type:Container
+        Paper: !type:ContainerSlot
+    - type: PowerCellSlot
+      cellSlotId: cell_slot
+      fitsInCharger: true
+    - type: PowerCellDraw
+      drawRate: 0.6
+    - type: StatusEffects
+      allowed:
+      - Stun
+      - KnockedDown
+      - SlowedDown
+    - type: TypingIndicator
+      proto: robot
+    - type: UnblockableSpeech
+    - type: Lock
+      locked: true
+    - type: ActivatableUIRequiresLock
+    - type: Flashable
+    - type: Damageable
+      damageContainer: Silicon
+    - type: Destructible
+      thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 75
+        behaviors:
+        - !type:PlaySoundBehavior
+          sound:
+            path: /Audio/Machines/warning_buzzer.ogg
+            params:
+              volume: 5
+      - trigger:
+          !type:DamageTrigger
+          damage: 300
+        behaviors:
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalBreak
+        - !type:EmptyContainersBehaviour
+          containers:
+          - borg_brain
+          - cell_slot
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+    - type: HandheldLight
+      toggleOnInteract: false
+      wattage: 0.2
+      blinkingBehaviourId: blinking
+      radiatingBehaviourId: radiating
+    - type: LightBehaviour
+      behaviours:
+      - !type:FadeBehaviour
+        id: radiating
+        maxDuration: 2.0
+        startValue: 3.0
+        endValue: 2.0
+        isLooped: true
+        reverseWhenFinished: true
+      - !type:PulseBehaviour
+        id: blinking
+        interpolate: Nearest
+        maxDuration: 1.0
+        minValue: 0.1
+        maxValue: 2.0
+        isLooped: true
+    - type: ToggleableLightVisuals
+    - type: PointLight
+      enabled: false
+      mask: /Textures/Effects/LightMasks/cone.png
+      autoRot: true
+      radius: 4
+      netsync: false
+      color: red
+    - type: Pullable
+    - type: Puller
+      needsHands: false
+    - type: StandingState
+    - type: Tag
+      tags:
+      - DoorBumpOpener
+      - CanPilot
+    - type: Emoting
+    - type: GuideHelp
+      guides:
+        - Cyborgs
+    - type: InventorySlots
+    - type: Hands
+      showInHands: false
+    - type: Appearance
+    - type: Body
+      prototype: Ermolov
+    - type: Photocopier
+      paperSlot:
+        ejectSound: /Audio/Machines/tray_eject.ogg
+        whitelist:
+          components:
+            - Paper
+    - type: ApcPowerReceiver
+      powerLoad: 0
+    - type: StepTriggerImmune
+
+- type: body
+  id: Ermolov
+  name: "Ermolov"
+  root: torso
+  slots:
+    torso:
+      part: TorsoHuman
+      connections:
+      - right arm
+    right arm:
+      part: RightArmHuman
+      connections:
+      - right hand
+    right hand:
+      part: RightHandHuman
+
+#ServoskullPenModule
+- type: entity
+  id: BorgModuleChronicler
+  parent: [ BaseBorgModuleSponsor, BaseProviderBorgModule ]
+  name: летописный модуль
+  description: Модуль со странной ручкой, интересно, она тоже из костей?
+  noSpawn: true
+  components:
+  - type: Sprite
+    layers:
+    - state: service
+    - state: icon-pen
+  - type: ItemBorgModule
+    items:
+    - Pen
+
+#BaseBorgModuleSponsor
+- type: entity
+  id: BaseBorgModuleSponsor
+  parent: BaseBorgModule
+  abstract: true
+  components:
+    - type: Tag
+      tags:
+      - BorgModuleSponsor
+
+#Tag
+- type: Tag
+  id: BorgModuleSponsor
+
+#ReinforcementRadio
+- type: entity
+  parent: BaseItem
+  id: ReinforcementRadioErmolov228ServoSkull
+  name: радио запроса сервочерепа
+  description: Радио, которое вызывает сервочереп, который появится прямо из радио, невероятно!
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: Objects/Devices/communication.rsi
+    layers:
+    - state: old-radio
+  - type: GhostRole
+    name: ghost-role-information-servoskull-name
+    description: ghost-role-information-servoskull-description
+  - type: GhostRoleMobSpawner
+    prototype: MobSiliconErmolov228ServoSkull
+  - type: EmitSoundOnUse
+    sound: /Audio/Effects/thunk.ogg
+  - type: UseDelay
+    delay: 300

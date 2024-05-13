@@ -1,0 +1,51 @@
+- type: startingGear
+  id: UnitologGear
+  storage:
+    back:
+    - SyringeExtractInfectorDead
+
+- type: antag
+  id: Uni
+  name: roles-antag-uni-name
+  antagonist: true
+  setPreference: true
+  objective: roles-antag-uni-objective
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 86400 # 24 hours
+
+- type: entity
+  id: Unitology
+  parent: BaseGameRule
+  noSpawn: true
+  components:
+  - type: GameRule
+    minPlayers: 40
+  - type: UnitologyRule
+  - type: AntagSelection
+    definitions:
+    - prefRoles: [ Uni ]
+      max: 4
+      playerRatio: 20
+      briefing:
+        text: uni-role-greeting
+        color: CornflowerBlue
+        sound: "/Audio/DeadSpace/Necromorfs/unitolog_start.ogg"
+      startingGear: UnitologGear
+      components:
+      - type: IntrinsicRadioTransmitter
+        channels:
+        - Unitolog
+      - type: ActiveRadio
+        channels:
+        - Unitolog
+      - type: IntrinsicRadioReceiver
+      - type: Unitology
+      - type: ImmunitetInfectionDead
+      - type: UnitologyObeliskSpawnAbility
+      - type: NpcFactionMember
+        factions:
+        - Necromorfs
+      mindComponents:
+      - type: UnitologyRole
+        prototype: Uni

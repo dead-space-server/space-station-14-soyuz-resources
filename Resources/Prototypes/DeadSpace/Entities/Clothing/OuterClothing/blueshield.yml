@@ -1,0 +1,32 @@
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: ClothingOuterHardsuitBlueShield
+  name: blue shild hardsuit
+  description: A hardsuit designed for the defender of the command stuff.
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Clothing/OuterClothing/Hardsuits/blue_shield.rsi
+  - type: Clothing
+    sprite: DeadSpace/Clothing/OuterClothing/Hardsuits/blue_shield.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.45
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Heat: 0.7
+        Slash: 0.7
+        Piercing: 0.7
+        Radiation: 0.5
+        Caustic: 0.6
+        Stun: 0.85
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 0.9
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitBlueShield
+  - type: Item
+    size: Huge

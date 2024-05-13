@@ -1,0 +1,14 @@
+ent-ClothingUnderwearSocksBase = based socks
+    .desc = Ты не должен их видеть.
+ent-ClothingUnderwearSocksHigh = высокие носки
+    .desc = Высокие носки СССП для персонала станции. Покрашены в белый.
+ent-ClothingUnderSocksBee = пчелиные носки
+    .desc = Заставь их поясницу жужжать!
+ent-ClothingUnderSocksCoder = носки кодера
+    .desc = Время кодить сестры!!11!
+ent-ClothingUnderwearSocksNormal = носки
+    .desc = Стандартные носки СССП для персонала станции. Покрашены в белый.
+ent-ClothingUnderwearSocksShort = короткие носки
+    .desc = Короткие носки СССП для персонала станции. Покрашены в белый.
+ent-ClothingUnderwearSocksThigh = чулки
+    .desc = Стандартные чулки СССП для персонала станции. Покрашены в белый.

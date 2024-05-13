@@ -1,0 +1,106 @@
+# DS14 DEATH SQUAD GEAR
+
+- type: job
+  id: DeathSquadUnit
+  name: job-name-clown
+  description: job-description-cburnagent
+  playTimeTracker: JobDeathSquadUnit
+  setPreference: false
+  startingGear: DeathSquadUnitGear
+  icon: "JobIconNanotrasen"
+  supervisors: job-supervisors-centcom
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+
+- type: startingGear
+  id: DeathSquadUnitGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitDeathSquad
+    back: ClothingDeathSquadBackpackFilled
+    mask: ClothingMaskGasDeathSquad
+    eyes: ADTClothingEyesHudAdvanced
+    ears: ClothingHeadsetDeathSquad
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitDeathsquad
+    suitstorage: OxygenTankFilled
+    shoes: ClothingShoesBootsMagAdv
+    id: CentcomIDCardDeathsquad
+    pocket1: EnergySword
+    belt: ClothingBeltDeathSquadWebbingFilled
+    underwearb: ClothingUnderwearBottomBoxersDeathSquad # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraDeathSquad # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesDeathSquad # Sirena-Underwear
+  innerClothingSkirt: ClothingUniformJumpskirtColorBlack
+  satchel: ClothingDeathSquadBackpackFilled
+  duffelbag: ClothingDeathSquadBackpackFilled
+
+- type: entity
+  parent: WeaponRevolverMateba
+  id: WeaponRevolverMatebaAP # Матеба для бойца отряда специального назначения "Дым"
+  name: Матеба
+  description: Знаковое оружие ужасающих эскадронов смерти. Использует патроны калибра .44 магнум.
+  suffix: Револьвер, Бронебойный
+  components:
+  - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+        - CartridgeMagnum
+        - SpeedLoaderMagnum
+    proto: CartridgeMagnumAP
+
+- type: entity
+  parent: ClothingDeathSquadronBackpack
+  id: ClothingDeathSquadBackpackFilled
+  name: рюкзак бойца отряда специального назначения "Дым"
+  description: Вместительный рюкзак использующий технологию БлюСпейс.
+  suffix: Заполненный
+  components:
+    - type: StorageFill
+      contents:
+        - id: CombatMedipen
+          amount: 6
+        - id: C4
+          amount: 4
+        - id: WeaponPulseRifle
+        - id: WeaponRevolverMatebaAP
+        - id: SpeedLoaderMagnumAP
+          amount: 8
+        - id: PinpointerNuclear
+        - id: BoxHandcuff
+        - id: EnergyShield
+    - type: ExplosionResistance
+      damageCoefficient: 0.05
+
+- type: entity
+  parent: ClothingBeltSecurityWebbing
+  id: ClothingBeltDeathSquadWebbingFilled
+  name: РПС бойца отряда специального назначения "Дым"
+  description: РПС члена отряда элитной эвакуации.
+  suffix: Заполненный
+  components:
+    - type: StorageFill
+      contents:
+        - id: PowerDrill
+        - id: WelderExperimental
+        - id: Multitool
+        - id: JawsOfLife
+
+- type: entity
+  parent: ClothingHeadset
+  id: ClothingHeadsetDeathSquad
+  name: мастер гарнитура
+  description: Уникальный образец гарнитуры с доступом во все каналы.
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeySOC
+      - EncryptionKeyCentCom
+      - EncryptionKeyStationMaster
+      - EncryptionKeyFreelance
+      - EncryptionKeyDeathSquad
+  - type: Sprite
+    sprite: Clothing/Ears/Headsets/base.rsi
+  - type: Clothing
+    sprite: Clothing/Ears/Headsets/base.rsi

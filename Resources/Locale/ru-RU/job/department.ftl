@@ -1,0 +1,10 @@
+department-Cargo = Отдел почты
+department-Civilian = Обслуживающий отдел
+department-Command = Командование
+department-Engineering = Инженерный отдел
+department-Medical = Медицинский отдел
+department-Security = Милиция
+department-Science = Научно-исследовательский отдел
+department-Specific = На определённых станциях
+department-Law = Юридический отдел
+department-Silicons = Синтетики

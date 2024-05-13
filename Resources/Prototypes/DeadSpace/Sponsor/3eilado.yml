@@ -1,0 +1,199 @@
+- type: sponsorLoadout
+  id: 3eilado
+  entity: ClothingBackpack3eilado
+  sponsorOnly: true
+
+# Backpack
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpack3eilado
+  name: пурпурно-синий блюспейс рюкзак
+  description: Рюкзак использующий технологию блюспейса для увелечения своего максимального объёма. Окрашен в пурпурно-синий цвет. Принадлежат члену экипажа, находящемуся под покровительством спонсорской организации.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/3eilado/backpack.rsi
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,13,5
+  - type: StorageFill
+    contents:
+      - id: ClothingBelt3eiladoFilled
+      - id: ClothingNeckCloak3eilado
+      - id: ClothingHandsGloves3eilado
+      - id: ClothingOuterHardsuit3eilado
+      - id: ClothingHeadHat3eilado
+      - id: ClothingUniformJumpsuit3eilado
+      - id: ClothingShoesBootsMag3eilado
+      - id: ClothingUnderSocks3eilado
+      - id: JetpackVoidFilled
+      - id: DominatorMedkitAdvanced
+      - id: ADTtelescopicBaton
+      - id: ToySword
+      - id: SpaceCash1000
+      - id: WeaponDisablerToySponsor
+      - id: PaperLaw3eilado
+
+# Belt
+- type: entity
+  parent: ClothingBeltChiefEngineer
+  id: ClothingBelt3eiladoFilled
+  name: пурпурно-синий украшенный пояс
+  description: Вместительный пояс окрашенный в пурпурно-синий цвет.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/3eilado/belt.rsi
+  - type: Clothing
+    sprite: DeadSpace/Sponsor/3eilado/belt.rsi
+  - type: Item
+    size: Huge
+  - type: StorageFill
+    contents:
+      - id: PowerDrill
+      - id: JawsOfLife
+      - id: WelderExperimental
+      - id: Multitool
+
+# Cloak
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloak3eilado
+  name: пурпурно-синий плащ
+  description: От этого плаща не оторвать глаз.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/3eilado/cloak.rsi
+
+# Gloves
+- type: entity
+  parent: ClothingHandsGlovesCombat
+  id: ClothingHandsGloves3eilado
+  name: белые боевые перчатки
+  description: Принадлежат члену экипажа, находящемуся под покровительством спонсорской организации. Изолированны.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/vjlados/gloves.rsi
+  - type: Clothing
+    sprite: DeadSpace/Sponsor/vjlados/gloves.rsi
+
+# Hardsuit
+- type: entity
+  parent: ClothingOuterHardsuitAtmos
+  id: ClothingOuterHardsuit3eilado
+  name: скафандр Warden
+  description: От этого скафандра не оторвать глаз. Принадлежит члену экипажа, находящемуся под покровительством тайной организации «Зодиак». Характеристики идентичны скафандру атмос-техника.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/3eilado/hardsuit.rsi
+  - type: Clothing
+    sprite: DeadSpace/Sponsor/3eilado/hardsuit.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuit3eilado
+  - type: Item
+    size: Huge
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetHardsuit3eilado
+  noSpawn: true
+  name: шлем скафандра Warden
+  description: Шлем изолирующий владельца от страшного вакуума снаружи. На внутренней стороне шлема нанесена гравировка "ahahahahha & Jeleshka".
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/3eilado/helmet.rsi
+  - type: Clothing
+    sprite: DeadSpace/Sponsor/3eilado/helmet.rsi
+  - type: PointLight
+    color: "#B1A0F7"
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+
+# Head
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHat3eilado
+  name: бантиковая лента
+  description: Принадлежит члену экипажа, находящемуся под покровительством спонсорской организации.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/vjlados/head.rsi
+  - type: Clothing
+    sprite: DeadSpace/Sponsor/vjlados/head.rsi
+
+# Jumpsuit
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuit3eilado
+  name: костюм с морским воротником
+  description: Принадлежит члену экипажа, находящемуся под покровительством спонсорской организации.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/vjlados/jumpsuit.rsi
+  - type: Clothing
+    sprite: DeadSpace/Sponsor/vjlados/jumpsuit.rsi
+
+# Magboots
+- type: entity
+  parent: ClothingShoesBootsMag
+  id: ClothingShoesBootsMag3eilado
+  name: пурпурно-синие украшенные магнитные ботинки
+  description: Магнитные ботинки пурпурно-синего цвета.
+  noSpawn: true
+  components:
+    - type: Sprite
+      sprite: DeadSpace/Sponsor/3eilado/magboots.rsi
+      layers:
+      - state: icon
+        map: [ "enum.ToggleVisuals.Layer" ]
+    - type: Clothing
+      sprite: DeadSpace/Sponsor/3eilado/magboots.rsi
+    - type: Magboots
+      toggleAction: ActionToggleMagboots3eilado
+    - type: ClothingSpeedModifier
+      walkModifier: 1
+      sprintModifier: 1
+      enabled: false
+
+- type: entity
+  id: ActionToggleMagboots3eilado
+  parent: ActionBaseToggleMagboots
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon: { sprite: DeadSpace/Sponsor/3eilado/magboots.rsi, state: icon }
+    iconOn: DeadSpace/Sponsor/3eilado/magboots.rsi/icon-on.png
+
+# Socks
+- type: entity
+  parent: ClothingUnderwearSocksBase
+  id: ClothingUnderSocks3eilado
+  name: полосатые чулки
+  description: Принадлежат члену экипажа, находящемуся под покровительством спонсорской организации.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/vjlados/socks.rsi
+
+- type: entity
+  parent: PaperPrintedCentcomm
+  id: PaperLaw3eilado
+  name: распечатанный документ
+  description: Лист бумаги с заголовком центкома. Страшно даже смотреть на него.
+  noSpawn: true
+  components:
+  - type: Paper
+    stampState: paper_stamp-centcom
+    stampedBy:
+    - stampedColor: '#006600FF'
+      stampedName: Центральное Командование
+    - stampedColor: '#00BE00FF'
+      stampedName: Одобрено 
+    content: paper-law-3eilado

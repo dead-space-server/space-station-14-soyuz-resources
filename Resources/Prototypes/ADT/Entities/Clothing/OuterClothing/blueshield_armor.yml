@@ -1,0 +1,11 @@
+- type: entity
+  parent: ClothingOuterCoatHoSGreatcoat
+  id: ADTClothingBlueshieldArmor
+  name: blueshield bulletproof vest
+  description: A Type III heavy bulletproof vest that excels in protecting the wearer against traditional projectile weaponry and explosives to a minor extent.
+  components:
+  - type: Sprite
+    sprite: ADT/Clothing/OuterClothing/Armor/blueshield_armor.rsi
+  - type: Clothing
+    sprite: ADT/Clothing/OuterClothing/Armor/blueshield_armor.rsi
+

@@ -1,0 +1,28 @@
+- type: job
+  id: ServiceWorker
+  name: job-name-serviceworker
+  description: job-description-serviceworker
+  playTimeTracker: JobServiceWorker
+  requirements:
+    - !type:OverallPlaytimeRequirement
+        time: 3600 # 1 hour
+  startingGear: ServiceWorkerGear
+  icon: "JobIconServiceWorker"
+  supervisors: job-supervisors-service
+  access:
+  - Bar
+  - Service
+  - Maintenance
+  - Janitor
+  - Theatre
+  extendedAccess:
+  - Chapel
+  - Kitchen
+  - Hydroponics
+
+- type: startingGear
+  id: ServiceWorkerGear
+  equipment:
+    shoes: ClothingShoesColorBlack
+    id: ServiceWorkerPDA
+    ears: ClothingHeadsetService

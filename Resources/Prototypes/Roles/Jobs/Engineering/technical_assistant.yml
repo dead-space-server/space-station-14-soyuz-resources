@@ -1,0 +1,27 @@
+- type: job
+  id: TechnicalAssistant
+  name: job-name-technical-assistant
+  description: job-description-technical-assistant
+  playTimeTracker: JobTechnicalAssistant
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 3600 # 1 hours
+    - !type:DepartmentTimeRequirement
+      department: Engineering
+      time: 54000 # 15 hours
+      inverted: true # stop playing intern if you're good at engineering!
+  startingGear: TechnicalAssistantGear
+  icon: "JobIconTechnicalAssistant"
+  supervisors: job-supervisors-engineering
+  access:
+  - Maintenance
+  - Engineering
+  - External
+
+- type: startingGear
+  id: TechnicalAssistantGear
+  equipment:
+    shoes: ClothingShoesBootsWork
+    id: TechnicalAssistantPDA
+    belt: ClothingBeltUtilityEngineering
+    ears: ClothingHeadsetEngineering

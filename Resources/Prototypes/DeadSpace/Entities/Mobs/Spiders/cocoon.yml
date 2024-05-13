@@ -1,0 +1,38 @@
+- type: entity
+  name: паучий кокон
+  parent: BaseStructure
+  id: CocoonSpider
+  components:
+  - type: Tag
+    tags:
+    - Wall
+  - type: Physics
+    bodyType: Static
+  - type: Sprite
+    scale: 0.7, 0.7
+    noRot: true
+    sprite: DeadSpace/Mobs/Spiders/egg.rsi
+    layers:
+    - state: cocoon
+      map: [ "enum.DamageStateVisualLayers.Base" ]
+  - type: Damageable
+    damageContainer: Biological
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+  - type: Appearance
+  - type: Egg
+    eggSound:
+      collection: SpiderHatches #Звуки яйца
+    duration: 360 #Время до вылупления
+    durationPlayEggSound: 10 #Интервалы между звуками яйца
+    spawned:
+    - id: MobSpiderTerrorGuardian #Что вылупилось
+      amount: 2 #Колличество
+
+

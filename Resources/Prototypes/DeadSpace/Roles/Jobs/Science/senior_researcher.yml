@@ -1,0 +1,20 @@
+- type: job
+  id: SeniorResearcher
+  name: job-name-senior-researcher
+  description: job-description-senior-researcher
+  playTimeTracker: JobSeniorResearcher
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Science
+      time: 288000 # 80 hours
+  startingGear: SeniorResearcherGear
+  icon: "JobIconSeniorResearcher"
+  supervisors: job-supervisors-rd
+  access:
+  - Research
+  - Maintenance
+
+- type: startingGear
+  id: SeniorResearcherGear
+  equipment:
+    ears: ClothingHeadsetScience

@@ -1,0 +1,56 @@
+# Jumpsuit
+- type: loadout
+  id: SeniorOfficerJumpsuit
+  equipment: SeniorOfficerJumpsuit
+
+- type: startingGear
+  id: SeniorOfficerJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSeniorOfficer
+
+- type: loadout
+  id: SeniorOfficerJumpskirt
+  equipment: SeniorOfficerJumpskirt
+
+- type: startingGear
+  id: SeniorOfficerJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtSeniorOfficer
+
+# Back
+- type: loadout
+  id: SeniorOfficerBackpack
+  equipment: SeniorOfficerBackpack
+
+- type: startingGear
+  id: SeniorOfficerBackpack
+  equipment:
+    back: ADTClothingBackpackSeniorSecurityFilled
+
+- type: loadout
+  id: SeniorOfficerSatchel
+  equipment: SeniorOfficerSatchel
+
+- type: startingGear
+  id: SeniorOfficerSatchel
+  equipment:
+    back: ADTClothingBackpackSatchelSeniorSecurityFilled
+
+- type: loadout
+  id: SeniorOfficerDuffel
+  equipment: SeniorOfficerDuffel
+
+- type: startingGear
+  id: SeniorOfficerDuffel
+  equipment:
+    back: ADTClothingBackpackDuffelSeniorSecurityFilled
+
+# PDA
+- type: loadout
+  id: SeniorOfficerPDA
+  equipment: SeniorOfficerPDA
+
+- type: startingGear
+  id: SeniorOfficerPDA
+  equipment:
+    id: SeniorOfficerPDA

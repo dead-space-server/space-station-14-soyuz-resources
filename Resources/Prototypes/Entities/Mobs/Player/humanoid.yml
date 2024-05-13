@@ -1,0 +1,1030 @@
+# DS14 Humanoids prototypes
+
+# ERT
+## Leader
+### Amber
+- type: entity
+  id: RandomHumanoidSpawnerERTLeaderAmber
+  name: ERT leader amber
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: ertleadereva
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstERTLeader
+      - NamesLastERT
+    - type: RandomHumanoidSpawner
+      settings: ERTLeaderAmberPreset
+    - type: InitialInfectedExempt
+
+- type: randomHumanoidSettings
+  id: ERTLeaderAmberPreset
+  speciesBlacklist:
+    - Diona
+    - IPS
+    - IPC
+    - Dwarf
+    - KoboltSpecies
+    - Felinid
+  randomizeName: false
+  components:
+    - type: MindShield
+    - type: GhostRole
+      name: ghost-role-information-ert-leader-name
+      description: ghost-role-information-ert-leader-description
+      requirements:
+        - !type:DepartmentTimeRequirement
+          department: Medical
+          time: 36000 # 10 hours
+        - !type:DepartmentTimeRequirement
+          department: Security
+          time: 72000 # 20 hours
+        - !type:DepartmentTimeRequirement
+          department: Command
+          time: 36000 # 10 hours
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable
+    - type: AutoImplant
+      implants:
+      - TrackingImplant
+    - type: Loadout
+      prototypes: [ ERTLeaderGearAmber ]
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstERTLeader
+      - NamesLastERT
+    - type: InitialInfectedExempt
+
+### Red
+- type: entity
+  id: RandomHumanoidSpawnerERTLeaderRed
+  parent: RandomHumanoidSpawnerERTLeaderAmber
+  name: ERT leader red
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: ertleadereva
+    - type: RandomHumanoidSpawner
+      settings: ERTLeaderRedPreset
+    - type: InitialInfectedExempt
+
+- type: randomHumanoidSettings
+  id: ERTLeaderRedPreset
+  speciesBlacklist:
+    - Diona
+    - IPS
+    - IPC
+    - Dwarf
+    - KoboltSpecies
+    - Felinid
+  randomizeName: false
+  components:
+    - type: MindShield
+    - type: GhostRole
+      name: ghost-role-information-ert-leader-name
+      description: ghost-role-information-ert-leader-description
+      requirements:
+        - !type:DepartmentTimeRequirement
+          department: Medical
+          time: 36000 # 10 hours
+        - !type:DepartmentTimeRequirement
+          department: Security
+          time: 72000 # 20 hours
+        - !type:DepartmentTimeRequirement
+          department: Command
+          time: 36000 # 10 hours
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable
+    - type: AutoImplant
+      implants:
+      - TrackingImplant
+    - type: Loadout
+      prototypes: [ ERTLeaderGearRed ]
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstERTLeader
+      - NamesLastERT
+    - type: InitialInfectedExempt
+
+### Gamma
+- type: entity
+  id: RandomHumanoidSpawnerERTLeaderGamma
+  parent: RandomHumanoidSpawnerERTLeaderAmber
+  name: ERT leader gamma
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: ertleadereva
+    - type: RandomHumanoidSpawner
+      settings: ERTLeaderGammaPreset
+    - type: InitialInfectedExempt
+
+- type: randomHumanoidSettings
+  id: ERTLeaderGammaPreset
+  speciesBlacklist:
+    - Diona
+    - IPS
+    - IPC
+    - Dwarf
+    - KoboltSpecies
+    - Felinid
+  randomizeName: false
+  components:
+    - type: MindShield
+    - type: GhostRole
+      name: ghost-role-information-ert-leader-name
+      description: ghost-role-information-ert-leader-description
+      requirements:
+        - !type:DepartmentTimeRequirement
+          department: Medical
+          time: 36000 # 10 hours
+        - !type:DepartmentTimeRequirement
+          department: Security
+          time: 72000 # 20 hours
+        - !type:DepartmentTimeRequirement
+          department: Command
+          time: 36000 # 10 hours
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable
+    - type: AutoImplant
+      implants:
+      - TrackingImplant
+    - type: Loadout
+      prototypes: [ ERTLeaderGearGamma ]
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstERTLeader
+      - NamesLastERT
+    - type: InitialInfectedExempt
+
+### CBURN
+- type: entity
+  id: RandomHumanoidSpawnerCBURNLeader
+  parent: RandomHumanoidSpawnerERTLeaderAmber
+  name: CBURN leader
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: cburn
+    - type: RandomHumanoidSpawner
+      settings: CBURNLeaderPreset
+    - type: InitialInfectedExempt
+
+- type: randomHumanoidSettings
+  id: CBURNLeaderPreset
+  speciesBlacklist:
+    - Diona
+    - IPS
+    - IPC
+    - Dwarf
+    - KoboltSpecies
+    - Felinid
+  randomizeName: false
+  components:
+    - type: MindShield
+    - type: GhostRole
+      name: ghost-role-information-cburn-leader-name
+      description: ghost-role-information-cburn-leader-description
+      requirements:
+        - !type:DepartmentTimeRequirement
+          department: Medical
+          time: 36000 # 10 hours
+        - !type:DepartmentTimeRequirement
+          department: Security
+          time: 72000 # 20 hours
+        - !type:DepartmentTimeRequirement
+          department: Command
+          time: 36000 # 10 hours
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable
+    - type: AutoImplant
+      implants:
+      - TrackingImplant
+    - type: ZombieImmune
+    - type: Loadout
+      prototypes: [ CBURNLeaderGear ]
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstERTLeader
+      - NamesLastERT
+    - type: InitialInfectedExempt
+
+### CBURN Sierra
+- type: entity
+  id: RandomHumanoidSpawnerCBURNSierraLeader
+  parent: RandomHumanoidSpawnerERTLeaderAmber
+  name: CBURN Sierra leader
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: cburn
+    - type: RandomHumanoidSpawner
+      settings: CBURNSierraLeaderPreset
+    - type: InitialInfectedExempt
+
+- type: randomHumanoidSettings
+  id: CBURNSierraLeaderPreset
+  speciesBlacklist:
+    - Diona
+    - IPS
+    - IPC
+    - Dwarf
+    - KoboltSpecies
+    - Felinid
+  randomizeName: false
+  components:
+    - type: MindShield
+    - type: GhostRole
+      name: ghost-role-information-cburn-leader-name
+      description: ghost-role-information-cburn-leader-description
+      requirements:
+        - !type:DepartmentTimeRequirement
+          department: Medical
+          time: 36000 # 10 hours
+        - !type:DepartmentTimeRequirement
+          department: Security
+          time: 72000 # 20 hours
+        - !type:DepartmentTimeRequirement
+          department: Command
+          time: 36000 # 10 hours
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable
+    - type: AutoImplant
+      implants:
+      - TrackingImplant
+    - type: ZombieImmune
+    - type: Loadout
+      prototypes: [ CBURNSierraLeaderGear ]
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstERTLeader
+      - NamesLastERT
+    - type: InitialInfectedExempt
+
+## Security
+### Amber
+- type: entity
+  id: RandomHumanoidSpawnerERTSecurityAmber
+  parent: RandomHumanoidSpawnerERTLeaderAmber
+  name: ERT security amber
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: ertsecurity
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstERT
+      - NamesLastERT
+    - type: RandomHumanoidSpawner
+      settings: ERTSecurityAmberPreset
+    - type: InitialInfectedExempt
+
+- type: randomHumanoidSettings
+  id: ERTSecurityAmberPreset
+  speciesBlacklist:
+    - Diona
+    - IPS
+    - IPC
+    - Dwarf
+    - KoboltSpecies
+    - Felinid
+  components:
+    - type: MindShield
+    - type: GhostRole
+      name: ghost-role-information-ert-security-name
+      description: ghost-role-information-ert-security-description
+      requirements:
+        - !type:DepartmentTimeRequirement
+          department: Medical
+          time: 14400 # 4 hours
+        - !type:DepartmentTimeRequirement
+          department: Security
+          time: 72000 # 20 hours
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable
+    - type: AutoImplant
+      implants:
+      - TrackingImplant
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstERT
+      - NamesLastERT
+    - type: Loadout
+      prototypes: [ ERTSecurityGearAmber ]
+    - type: InitialInfectedExempt
+
+### Red
+- type: entity
+  id: RandomHumanoidSpawnerERTSecurityRed
+  parent: RandomHumanoidSpawnerERTSecurityAmber
+  name: ERT security red
+  components:
+    - type: RandomHumanoidSpawner
+      settings: ERTSecurityRedPreset
+    - type: InitialInfectedExempt
+
+- type: randomHumanoidSettings
+  id: ERTSecurityRedPreset
+  speciesBlacklist:
+    - Diona
+    - IPS
+    - IPC
+    - Dwarf
+    - KoboltSpecies
+    - Felinid
+  components:
+    - type: MindShield
+    - type: GhostRole
+      name: ghost-role-information-ert-security-name
+      description: ghost-role-information-ert-security-description
+      requirements:
+        - !type:DepartmentTimeRequirement
+          department: Medical
+          time: 14400 # 4 hours
+        - !type:DepartmentTimeRequirement
+          department: Security
+          time: 72000 # 20 hours
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable
+    - type: AutoImplant
+      implants:
+      - TrackingImplant
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstERT
+      - NamesLastERT
+    - type: Loadout
+      prototypes: [ ERTSecurityGearRed ]
+    - type: InitialInfectedExempt
+
+### Gamma
+- type: entity
+  id: RandomHumanoidSpawnerERTSecurityGamma
+  parent: RandomHumanoidSpawnerERTSecurityAmber
+  name: ERT security gamma
+  components:
+    - type: RandomHumanoidSpawner
+      settings: ERTSecurityGammaPreset
+    - type: InitialInfectedExempt
+
+- type: randomHumanoidSettings
+  id: ERTSecurityGammaPreset
+  speciesBlacklist:
+    - Diona
+    - IPS
+    - IPC
+    - Dwarf
+    - KoboltSpecies
+    - Felinid
+  components:
+    - type: MindShield
+    - type: GhostRole
+      name: ghost-role-information-ert-security-name
+      description: ghost-role-information-ert-security-description
+      requirements:
+        - !type:DepartmentTimeRequirement
+          department: Medical
+          time: 14400 # 4 hours
+        - !type:DepartmentTimeRequirement
+          department: Security
+          time: 72000 # 20 hours
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable
+    - type: AutoImplant
+      implants:
+      - TrackingImplant
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstERT
+      - NamesLastERT
+    - type: Loadout
+      prototypes: [ ERTSecurityGearGamma ]
+    - type: InitialInfectedExempt
+
+## Medical
+### Amber
+- type: entity
+  id: RandomHumanoidSpawnerERTMedicalAmber
+  parent: RandomHumanoidSpawnerERTLeaderAmber
+  name: ERT medic amber
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: ertmedical
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstERT
+      - NamesLastERT
+    - type: RandomHumanoidSpawner
+      settings: ERTMedicalAmberPreset
+    - type: InitialInfectedExempt
+
+- type: randomHumanoidSettings
+  id: ERTMedicalAmberPreset
+  speciesBlacklist:
+    - Diona
+    - IPS
+    - IPC
+    - Dwarf
+    - KoboltSpecies
+    - Felinid
+  components:
+    - type: MindShield
+    - type: GhostRole
+      name: ghost-role-information-ert-medical-name
+      description: ghost-role-information-ert-medical-description
+      requirements:
+        - !type:DepartmentTimeRequirement
+          department: Medical
+          time: 36000 # 10 hours
+        - !type:DepartmentTimeRequirement
+          department: Security
+          time: 36000 # 10 hours
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable
+    - type: AutoImplant
+      implants:
+      - TrackingImplant
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstERT
+      - NamesLastERT
+    - type: Loadout
+      prototypes: [ ERTMedicalGearAmber ]
+    - type: InitialInfectedExempt
+
+### Red
+- type: entity
+  id: RandomHumanoidSpawnerERTMedicalRed
+  parent: RandomHumanoidSpawnerERTMedicalAmber
+  name: ERT medic red
+  components:
+    - type: RandomHumanoidSpawner
+      settings: ERTMedicalRedPreset
+    - type: InitialInfectedExempt
+
+- type: randomHumanoidSettings
+  id: ERTMedicalRedPreset
+  speciesBlacklist:
+    - Diona
+    - IPS
+    - IPC
+    - Dwarf
+    - KoboltSpecies
+    - Felinid
+  components:
+    - type: MindShield
+    - type: GhostRole
+      name: ghost-role-information-ert-medical-name
+      description: ghost-role-information-ert-medical-description
+      requirements:
+        - !type:DepartmentTimeRequirement
+          department: Medical
+          time: 36000 # 10 hours
+        - !type:DepartmentTimeRequirement
+          department: Security
+          time: 36000 # 10 hours
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable
+    - type: AutoImplant
+      implants:
+      - TrackingImplant
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstERT
+      - NamesLastERT
+    - type: Loadout
+      prototypes: [ ERTMedicalGearRed ]
+    - type: InitialInfectedExempt
+
+### Gamma
+- type: entity
+  id: RandomHumanoidSpawnerERTMedicalGamma
+  parent: RandomHumanoidSpawnerERTMedicalAmber
+  name: ERT medic gamma
+  components:
+    - type: RandomHumanoidSpawner
+      settings: ERTMedicalGammaPreset
+    - type: InitialInfectedExempt
+
+- type: randomHumanoidSettings
+  id: ERTMedicalGammaPreset
+  speciesBlacklist:
+    - Diona
+    - IPS
+    - IPC
+    - Dwarf
+    - KoboltSpecies
+    - Felinid
+  components:
+    - type: MindShield
+    - type: GhostRole
+      name: ghost-role-information-ert-medical-name
+      description: ghost-role-information-ert-medical-description
+      requirements:
+        - !type:DepartmentTimeRequirement
+          department: Medical
+          time: 36000 # 10 hours
+        - !type:DepartmentTimeRequirement
+          department: Security
+          time: 36000 # 10 hours
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable
+    - type: AutoImplant
+      implants:
+      - TrackingImplant
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstERT
+      - NamesLastERT
+    - type: Loadout
+      prototypes: [ ERTMedicalGearGamma ]
+    - type: InitialInfectedExempt
+
+## Janitor
+### Amber
+- type: entity
+  id: RandomHumanoidSpawnerERTJanitorAmber
+  parent: RandomHumanoidSpawnerERTLeaderAmber
+  name: ERT janitor amber
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: ertjanitor
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstERT
+      - NamesLastERT
+    - type: RandomHumanoidSpawner
+      settings: ERTJanitorAmberPreset
+    - type: InitialInfectedExempt
+
+- type: randomHumanoidSettings
+  id: ERTJanitorAmberPreset
+  speciesBlacklist:
+    - Diona
+    - IPS
+    - IPC
+    - Dwarf
+    - KoboltSpecies
+    - Felinid
+  components:
+    - type: MindShield
+    - type: GhostRole
+      name: ghost-role-information-ert-janitor-name
+      description: ghost-role-information-ert-janitor-description
+      requirements:
+        - !type:DepartmentTimeRequirement
+          department: Security
+          time: 36000 # 10 hours
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable
+    - type: AutoImplant
+      implants:
+      - TrackingImplant
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstERT
+      - NamesLastERT
+    - type: Loadout
+      prototypes: [ ERTJanitorGearAmber ]
+    - type: InitialInfectedExempt
+
+### Red
+- type: entity
+  id: RandomHumanoidSpawnerERTJanitorRed
+  parent: RandomHumanoidSpawnerERTJanitorAmber
+  name: ERT janitor red
+  components:
+    - type: RandomHumanoidSpawner
+      settings: ERTJanitorRedPreset
+    - type: InitialInfectedExempt
+
+- type: randomHumanoidSettings
+  id: ERTJanitorRedPreset
+  speciesBlacklist:
+    - Diona
+    - IPS
+    - IPC
+    - Dwarf
+    - KoboltSpecies
+    - Felinid
+  components:
+    - type: MindShield
+    - type: GhostRole
+      name: ghost-role-information-ert-janitor-name
+      description: ghost-role-information-ert-janitor-description
+      requirements:
+        - !type:DepartmentTimeRequirement
+          department: Security
+          time: 36000 # 10 hours
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable
+    - type: AutoImplant
+      implants:
+      - TrackingImplant
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstERT
+      - NamesLastERT
+    - type: Loadout
+      prototypes: [ ERTJanitorGearRed ]
+    - type: InitialInfectedExempt
+
+### Gamma
+- type: entity
+  id: RandomHumanoidSpawnerERTJanitorGamma
+  parent: RandomHumanoidSpawnerERTJanitorAmber
+  name: ERT janitor gamma
+  components:
+    - type: RandomHumanoidSpawner
+      settings: ERTJanitorGammaPreset
+    - type: InitialInfectedExempt
+
+- type: randomHumanoidSettings
+  id: ERTJanitorGammaPreset
+  speciesBlacklist:
+    - Diona
+    - IPS
+    - IPC
+    - Dwarf
+    - KoboltSpecies
+    - Felinid
+  components:
+    - type: MindShield
+    - type: GhostRole
+      name: ghost-role-information-ert-janitor-name
+      description: ghost-role-information-ert-janitor-description
+      requirements:
+        - !type:DepartmentTimeRequirement
+          department: Security
+          time: 36000 # 10 hours
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable
+    - type: AutoImplant
+      implants:
+      - TrackingImplant
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstERT
+      - NamesLastERT
+    - type: Loadout
+      prototypes: [ ERTJanitorGearGamma ]
+    - type: InitialInfectedExempt
+
+## Engineer
+### Amber
+- type: entity
+  id: RandomHumanoidSpawnerERTEngineerAmber
+  parent: RandomHumanoidSpawnerERTLeaderAmber
+  name: ERT engineer amber
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: ertengineer
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstERT
+      - NamesLastERT
+    - type: RandomHumanoidSpawner
+      settings: ERTEngineerAmberPreset
+    - type: InitialInfectedExempt
+
+- type: randomHumanoidSettings
+  id: ERTEngineerAmberPreset
+  speciesBlacklist:
+    - Diona
+    - IPS
+    - IPC
+    - Dwarf
+    - KoboltSpecies
+    - Felinid
+  components:
+    - type: MindShield
+    - type: GhostRole
+      name: ghost-role-information-ert-engineer-name
+      description: ghost-role-information-ert-engineer-description
+      requirements:
+        - !type:DepartmentTimeRequirement
+          department: Engineering
+          time: 36000 # 10 hours
+        - !type:DepartmentTimeRequirement
+          department: Security
+          time: 36000 # 10 hours
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable
+    - type: AutoImplant
+      implants:
+      - TrackingImplant
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstERT
+      - NamesLastERT
+    - type: Loadout
+      prototypes: [ ERTEngineerGearAmber ]
+    - type: InitialInfectedExempt
+
+### Red
+- type: entity
+  id: RandomHumanoidSpawnerERTEngineerRed
+  parent: RandomHumanoidSpawnerERTEngineerAmber
+  name: ERT engineer red
+  components:
+    - type: RandomHumanoidSpawner
+      settings: ERTEngineerRedPreset
+    - type: InitialInfectedExempt
+
+- type: randomHumanoidSettings
+  id: ERTEngineerRedPreset
+  speciesBlacklist:
+    - Diona
+    - IPS
+    - IPC
+    - Dwarf
+    - KoboltSpecies
+    - Felinid
+  components:
+    - type: MindShield
+    - type: GhostRole
+      name: ghost-role-information-ert-engineer-name
+      description: ghost-role-information-ert-engineer-description
+      requirements:
+        - !type:DepartmentTimeRequirement
+          department: Engineering
+          time: 36000 # 10 hours
+        - !type:DepartmentTimeRequirement
+          department: Security
+          time: 36000 # 10 hours
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable
+    - type: AutoImplant
+      implants:
+      - TrackingImplant
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstERT
+      - NamesLastERT
+    - type: Loadout
+      prototypes: [ ERTEngineerGearRed ]
+    - type: InitialInfectedExempt
+
+### Gamma
+- type: entity
+  id: RandomHumanoidSpawnerERTEngineerGamma
+  parent: RandomHumanoidSpawnerERTEngineerAmber
+  name: ERT engineer gamma
+  components:
+    - type: RandomHumanoidSpawner
+      settings: ERTEngineerGammaPreset
+    - type: InitialInfectedExempt
+
+- type: randomHumanoidSettings
+  id: ERTEngineerGammaPreset
+  speciesBlacklist:
+    - Diona
+    - IPS
+    - IPC
+    - Dwarf
+    - KoboltSpecies
+    - Felinid
+  components:
+    - type: MindShield
+    - type: GhostRole
+      name: ghost-role-information-ert-engineer-name
+      description: ghost-role-information-ert-engineer-description
+      requirements:
+        - !type:DepartmentTimeRequirement
+          department: Engineering
+          time: 36000 # 10 hours
+        - !type:DepartmentTimeRequirement
+          department: Security
+          time: 36000 # 10 hours
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable
+    - type: AutoImplant
+      implants:
+      - TrackingImplant
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstERT
+      - NamesLastERT
+    - type: Loadout
+      prototypes: [ ERTEngineerGearGamma ]
+    - type: InitialInfectedExempt
+
+## CBURN Agent
+- type: entity
+  id: RandomHumanoidSpawnerCBURNAgent
+  parent: RandomHumanoidSpawnerCBURNLeader
+  name: CBURN Agent
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: cburn
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstERT
+      - NamesLastERT
+    - type: RandomHumanoidSpawner
+      settings: CBURNAgentPreset
+    - type: InitialInfectedExempt
+
+- type: randomHumanoidSettings
+  id: CBURNAgentPreset
+  speciesBlacklist:
+    - Diona
+    - IPS
+    - IPC
+    - Dwarf
+    - KoboltSpecies
+    - Felinid
+  components:
+    - type: MindShield
+    - type: GhostRole
+      name: ghost-role-information-cburn-agent-name
+      description: ghost-role-information-cburn-agent-description
+      requirements:
+        - !type:DepartmentTimeRequirement
+          department: Medical
+          time: 14400 # 4 hours
+        - !type:DepartmentTimeRequirement
+          department: Security
+          time: 50400 # 14 hours
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable
+    - type: AutoImplant
+      implants:
+      - TrackingImplant
+    - type: ZombieImmune
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstERT
+      - NamesLastERT
+    - type: Loadout
+      prototypes: [ CBURNAgentGear ]
+    - type: InitialInfectedExempt
+
+## CBURN Sierra Agent
+- type: entity
+  id: RandomHumanoidSpawnerCBURNSierraAgent
+  parent: RandomHumanoidSpawnerCBURNSierraLeader
+  name: CBURN Agent
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: cburn
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstERT
+      - NamesLastERT
+    - type: RandomHumanoidSpawner
+      settings: CBURNSierraAgentPreset
+    - type: InitialInfectedExempt
+
+- type: randomHumanoidSettings
+  id: CBURNSierraAgentPreset
+  speciesBlacklist:
+    - Diona
+    - IPS
+    - IPC
+    - Dwarf
+    - KoboltSpecies
+    - Felinid
+  components:
+    - type: MindShield
+    - type: GhostRole
+      name: ghost-role-information-cburn-agent-name
+      description: ghost-role-information-cburn-agent-description
+      requirements:
+        - !type:DepartmentTimeRequirement
+          department: Medical
+          time: 14400 # 4 hours
+        - !type:DepartmentTimeRequirement
+          department: Security
+          time: 50400 # 14 hours
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable
+    - type: AutoImplant
+      implants:
+      - TrackingImplant
+    - type: ZombieImmune
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstERT
+      - NamesLastERT
+    - type: Loadout
+      prototypes: [ CBURNSierraAgentGear ]
+    - type: InitialInfectedExempt
+
+# Central Command
+- type: entity
+  name: CentCom official
+  id: RandomHumanoidSpawnerCentcomOfficial
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: centcom
+    - type: RandomHumanoidSpawner
+      settings: CentcomOfficial
+    - type: InitialInfectedExempt
+
+- type: randomHumanoidSettings
+  id: CentcomOfficial
+  components:
+    - type: MindShield
+    - type: GhostRole
+      name: ghost-role-information-centcom-official-name
+      description: ghost-role-information-centcom-official-description
+      requirements:
+        - !type:OverallPlaytimeRequirement
+          time: 648000 # 180 hours
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable
+    - type: AutoImplant
+      implants:
+      - TrackingImplant
+    - type: Loadout
+      prototypes: [ CentcomGear ]
+    - type: InitialInfectedExempt
+
+# Syndicate
+- type: entity
+  id: RandomHumanoidSpawnerSyndicateAgent
+  name: syndicate agent
+  components:
+    - type: Sprite
+      sprite: Mobs/Species/Human/parts.rsi
+      state: full
+    - type: RandomMetadata
+      nameSegments: [ adt_nukeagent_names ]
+    - type: RandomHumanoidSpawner
+      settings: SyndicateAgent
+
+- type: randomHumanoidSettings
+  id: SyndicateAgent
+  components:
+    - type: Loadout
+      prototypes: [SyndicateOperativeGearExtremelyBasic]
+
+- type: entity
+  id: RandomHumanoidSpawnerNukeOp
+  name: Nuclear Operative
+  components:
+    - type: Sprite
+      sprite: Mobs/Species/Human/parts.rsi
+      state: full
+    - type: RandomHumanoidSpawner
+      settings: NukeOp
+
+- type: randomHumanoidSettings
+  id: NukeOp
+  components:
+    - type: NukeOperative
+
+- type: entity
+  id: RandomHumanoidSpawnerCluwne
+  name: Cluwne
+  suffix: spawns a cluwne
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: cluwne
+    - type: RandomHumanoidSpawner
+      settings: Cluwne
+    - type: RandomMetadata
+      nameSegments:
+      - names_first
+      - names_last_male
+
+- type: randomHumanoidSettings
+  id: Cluwne
+  randomizeName: false
+  components:
+    - type: GhostRole
+      name: ghost-role-information-cluwne-name
+      description: ghost-role-information-cluwne-description
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable
+    - type: Cluwne

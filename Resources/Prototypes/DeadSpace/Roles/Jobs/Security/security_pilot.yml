@@ -1,0 +1,35 @@
+- type: job
+  id: SecurityPilot
+  name: job-name-security-pilot
+  description: job-description-security-pilot
+  playTimeTracker: JobSecurityPilot
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 36000 # 10 hours
+    - !type:RoleTimeRequirement
+      role: JobSecurityOfficer
+      time: 7200 # 2 hours
+  startingGear: SecurityPilotGear
+  icon: "JobIconSecurityPilot"
+  supervisors: job-supervisors-hos
+  canBeAntag: false
+  access:
+  - Security
+  - Brig
+  - Maintenance
+  - Service
+  - External
+  - Cryogenics
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+
+- type: startingGear
+  id: SecurityPilotGear
+  equipment:
+    eyes: ClothingEyesGlassesSecurity
+    head: ClothingHeadHatBeret
+    outerClothing: ClothingOuterWinterSec
+    id: SecurityPilotPDA
+    ears: ClothingHeadsetSecurity
