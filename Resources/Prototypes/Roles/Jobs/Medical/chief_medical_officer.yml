@@ -1,0 +1,47 @@
+# Best job.
+
+- type: job
+  id: ChiefMedicalOfficer
+  name: job-name-cmo
+  description: job-description-cmo
+  playTimeTracker: JobChiefMedicalOfficer
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobChemist
+      time: 36000 # 10 hours
+    - !type:RoleTimeRequirement
+      role: JobMedicalDoctor
+      time: 72000 # 20 hours
+    - !type:OverallPlaytimeRequirement
+      time: 144000 # 40 hours
+  weight: 10
+  startingGear: CMOGear
+  icon: "JobIconChiefMedicalOfficer"
+  requireAdminNotify: true
+  supervisors: job-supervisors-captain
+  canBeAntag: false
+  access:
+  - Medical
+  - Command
+  - Maintenance
+  - Chemistry
+  - ChiefMedicalOfficer
+  - Brig
+  - Coroner
+  - Paramedic
+  - Cryogenics
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+
+- type: startingGear
+  id: CMOGear
+  equipment:
+    id: CMOPDA
+    eyes: ClothingEyesHudCMO
+    ears: ClothingHeadsetCMO
+    belt: ClothingBeltMedicalFilled
+    socks: ClothingUnderwearSocksCMO

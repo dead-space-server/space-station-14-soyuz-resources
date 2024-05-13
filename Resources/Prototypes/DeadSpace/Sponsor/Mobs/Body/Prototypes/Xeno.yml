@@ -1,0 +1,42 @@
+- type: body
+  id: Xenomorph
+  name: "Ксеноморф"
+  root: torso
+  slots:
+    head:
+      part: HeadXeno
+      connections:
+      - torso
+      organs:
+        brain: OrganXenoBrain
+    torso:
+      part: TorsoXeno
+      connections:
+      - left_arm
+      - right_arm
+      - left_leg
+      - right_leg
+    right_arm:
+      part: RightArmXeno
+      connections:
+      - right_hand
+    left_arm:
+      part: LeftArmXeno
+      connections:
+      - left_hand
+    right_hand:
+      part: RightHandXeno
+    left_hand:
+      part: LeftHandXeno
+    right_leg:
+      part: RightLegXeno
+      connections:
+      - right_foot
+    left_leg:
+      part: LeftLegXeno
+      connections:
+      - left_foot
+    right_foot:
+      part: RightFootXeno
+    left_foot:
+      part: LeftFootXeno

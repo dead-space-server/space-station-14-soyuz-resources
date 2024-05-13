@@ -1,0 +1,12 @@
+ent-ClothingHeadsetADTBrigMedic = гарнитура доктора милиции
+    .desc = гарнитура с допуском и к каналу милиции и к каналу врачей
+    .suffix = { "" }
+ent-ADTBrigMedicPDA = КПК доктора милиции
+    .desc = КПК Милицейского доктора
+    .suffix = { "" }
+ent-ADTBrigMedicIDCard = ID карта Милицейского доктора
+    .desc = ID карта доктора милиции
+    .suffix = { "" }
+ent-SpawnADTBrigMedic = спавн доктора милиции
+    .desc = спавн доктора милиции
+    .suffix = { "" }

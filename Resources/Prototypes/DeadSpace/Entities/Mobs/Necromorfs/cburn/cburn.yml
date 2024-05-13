@@ -1,0 +1,105 @@
+- type: entity
+  id: ClothingBackpackDuffelCBURNNECROFilled
+  parent: ClothingBackpackERTMedical
+  suffix: Заполненный
+  components:
+  - type: StorageFill
+    contents:
+    - id: BoxSurvivalEngineering
+    - id: WeaponShotgunBulldog
+    - id: MagazineShotgunIncendiary
+      amount: 8
+    - id: NECROMedipen
+      amount: 5
+    - id: ZetaTwoMedipen
+      amount: 2
+
+- type: startingGear
+  id: CBURNNECROLeaderGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorBrown
+    back: ClothingBackpackDuffelCBURNNECROFilled
+    mask: ClothingMaskGasERT
+    eyes: ClothingEyesGlassesSecurity
+    ears: ClothingHeadsetAltCentCom
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitCBURNNECROLeader
+    shoes: ClothingShoesBootsCombatFilled
+    id: CBURNPDA
+    pocket1: KukriKnife
+    pocket2: WeaponPulsePistol
+    suitstorage: OxygenTankFilled
+    belt: ClothingBeltBandolier
+
+- type: startingGear
+  id: CBURNNECROSoldierGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorBrown
+    back: ClothingBackpackDuffelCBURNNECROFilled
+    mask: ClothingMaskGasERT
+    eyes: ClothingEyesGlassesSecurity
+    ears: ClothingHeadsetAltCentCom
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitCBURNNECROSoldier
+    shoes: ClothingShoesBootsCombatFilled
+    id: CBURNPDA
+    pocket1: KukriKnife
+    pocket2: WeaponPulsePistol
+    suitstorage: OxygenTankFilled
+    belt: ClothingBeltBandolier
+
+- type: entity
+  id: RandomHumanoidSpawnerCBURNLeaderNECRO
+  name: лидер отряда ОПНУ
+  suffix: РХБЗЗ
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: cburn
+    - type: RandomHumanoidSpawner
+      settings: CBURNLeaderNECRO
+    - type: InitialInfectedExempt
+
+- type: randomHumanoidSettings
+  id: CBURNLeaderNECRO
+  components:
+    - type: MindShield
+    - type: Loadout
+      prototypes: [CBURNNECROLeaderGear]
+    - type: GhostRole
+      name: ghost-role-information-cburn-agent-name
+      description: ghost-role-information-cburn-agent-description
+    - type: GhostTakeoverAvailable
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitaryLeader
+      - NamesLastMilitary
+    - type: InitialInfectedExempt
+
+- type: entity
+  id: RandomHumanoidSpawnerCBURNSoldierNECRO
+  name: боец отряда ОПНУ
+  suffix: РХБЗЗ
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: cburn
+    - type: RandomHumanoidSpawner
+      settings: CBURNSoldierNECRO
+    - type: InitialInfectedExempt
+
+- type: randomHumanoidSettings
+  id: CBURNSoldierNECRO
+  components:
+    - type: MindShield
+    - type: Loadout
+      prototypes: [CBURNNECROSoldierGear]
+    - type: GhostRole
+      name: ghost-role-information-cburn-agent-name
+      description: ghost-role-information-cburn-agent-description
+    - type: GhostTakeoverAvailable
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitary
+      - NamesLastMilitary
+    - type: InitialInfectedExempt

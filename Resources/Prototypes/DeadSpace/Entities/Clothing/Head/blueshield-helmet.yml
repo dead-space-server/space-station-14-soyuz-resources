@@ -1,0 +1,13 @@
+- type: entity
+  parent: ClothingHeadHelmetHardsuitSecurityRed
+  id: ClothingHeadHelmetHardsuitBlueShield
+  noSpawn: true
+  name: BlueShield helmet
+  description: A robust, tactical helmet.
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Clothing/Head/Hardsuits/blue_shield.rsi
+  - type: Clothing
+    sprite: DeadSpace/Clothing/Head/Hardsuits/blue_shield.rsi
+  - type: PointLight
+    color: blue

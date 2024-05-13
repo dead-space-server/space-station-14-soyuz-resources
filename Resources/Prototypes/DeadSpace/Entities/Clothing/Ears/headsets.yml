@@ -1,0 +1,44 @@
+- type: entity
+  parent: ClothingHeadset
+  id: ClothingHeadsetLaw
+  name: гарнитура юридического отдела
+  description: Гарнитура, используемая членами юридического отдела.
+  components:
+    - type: ContainerFill
+      containers:
+        key_slots:
+        - EncryptionKeyLaw
+        - EncryptionKeySecurity
+        - EncryptionKeyCommon
+    - type: Sprite
+      sprite: Clothing/Ears/Headsets/servicesecurity.rsi
+
+- type: entity
+  parent: ClothingHeadset
+  id: ClothingHeadsetMerc
+  name: гарнитура наёмника
+  description: Гарнитура, используемая наёмниками.
+  components:
+    - type: ContainerFill
+      containers:
+        key_slots:
+        - EncryptionKeyMerc
+    - type: Sprite
+      sprite: Clothing/Ears/Headsets/freelance.rsi
+    - type: Clothing
+      sprite: Clothing/Ears/Headsets/freelance.rsi
+
+- type: entity
+  parent: ClothingHeadset
+  id: ClothingHeadsetSOC
+  name: гарнитура КГБ
+  description: Гарнитура, используемая КГБ.
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeySOC
+  - type: Sprite
+    sprite: Clothing/Ears/Headsets/centcom.rsi
+  - type: Clothing
+    sprite: Clothing/Ears/Headsets/centcom.rsi

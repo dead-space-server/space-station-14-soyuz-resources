@@ -1,0 +1,22 @@
+- type: entity
+  id: ActionSpawnAgainst
+  name: Заспавнить напротив
+  description: Спавнит выбранную сущность напротив.
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon: DeadSpace/Interface/Actions/create.png
+    event: !type:SpawnAgainstActionEvent
+    checkCanInteract: false
+
+- type: entity
+  id: ActionEvolution
+  name: Эволюционировать
+  description: Эволюционирует в выбранную сущность.
+  noSpawn: true
+  components:
+  - type: InstantAction
+    useDelay: 5
+    icon: { sprite: Interface/Actions/actions_mecha.rsi, state: mech_ivanov }
+    event: !type:EvolutionActionEvent
+    checkCanInteract: false

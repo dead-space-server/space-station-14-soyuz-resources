@@ -1,0 +1,9 @@
+player-tab-username = Пользователь
+player-tab-character = Персонаж
+player-tab-job = Должность
+player-tab-antagonist = Антагонист
+player-tab-show-disconnected = Показать отключившихся
+player-tab-sponsor = Спонсор
+player-tab-playtime = Игровое время
+player-tab-overlay = Оверлей
+player-tab-entry-tooltip = Общее игровое время представлено в формате дни:часы:минуты.

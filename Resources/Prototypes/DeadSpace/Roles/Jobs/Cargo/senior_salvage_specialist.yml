@@ -1,0 +1,25 @@
+- type: job
+  id: SeniorSalvageSpecialist
+  name: job-name-senior-salvagespec
+  description: job-description-senior-salvagespec
+  playTimeTracker: JobSeniorSalvageSpecialist
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobSalvageSpecialist
+      time: 216000 # 60 hours
+  startingGear: SeniorSalvageSpecialistGear
+  icon: "JobIconSeniorSalvageSpecialist"
+  supervisors: job-supervisors-qm
+  access:
+  - Cargo
+  - Salvage
+  - Maintenance
+  - External
+
+- type: startingGear
+  id: SeniorSalvageSpecialistGear
+  equipment:
+    id: SeniorSalvagePDA
+    ears: ClothingHeadsetMining
+    neck: ClothingNeckCloakMiner
+    jumpsuit: ClothingUniformJumpsuitSalvageSpecialist

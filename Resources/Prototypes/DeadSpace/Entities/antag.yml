@@ -1,0 +1,102 @@
+
+- type: entity
+  id: ActionUnitologObeliskSpawn
+  noSpawn: true
+  components:
+  - type: InstantAction
+    priority: -1
+    icon: DeadSpace/Interface/Actions/obelisk.png
+    event: !type:ObeliskActionEvent
+
+- type: entity
+  id: ActionUnitologTentacleSpawn
+  noSpawn: true
+  components:
+  - type: InstantAction
+    priority: -1
+    useDelay: 60
+    icon: DeadSpace/Mobs/Necromorfs/necrokudzu.rsi/kudzu_33.png
+    event: !type:TileSpawnActionEvent
+
+- type: entity
+  id: NecroTentacle
+  placement:
+    mode: SnapgridCenter
+    snap:
+      - Wall
+  components:
+    - type: TimedDespawn
+      lifetime: 45
+    - type: MeleeSound
+      soundGroups:
+        Brute:
+          path:
+            "/Audio/Weapons/slash.ogg"
+    - type: Sprite
+      sprite: Objects/Misc/fleshkudzu.rsi
+      state: kudzu_33
+      drawdepth: Overdoors
+    - type: Appearance
+    - type: KudzuVisuals
+    - type: Clickable
+    - type: Transform
+      anchored: true
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          hard: false
+          density: 7
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.5,-0.5,0.5,0.5"
+          layer:
+          - MidImpassable
+    - type: Damageable
+    - type: Destructible
+      thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 60
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+    - type: DamageContacts
+      damage:
+        types:
+          Slash: 6
+          Piercing: 2
+      ignoreWhitelist:
+        tags:
+        - Flesh
+    - type: Temperature
+      heatDamage:
+        types:
+          Heat: 10
+      coldDamage:
+        types:
+          Cold: 5 #per second, scales with temperature & other constants
+    - type: Barotrauma
+      damage:
+        types:
+          Blunt: 0.10 #per second, scales with pressure and other constants.
+    - type: Flammable
+      fireSpread: true
+      damage:
+       types:
+         Heat: 1
+    - type: AtmosExposed
+    - type: ActiveEdgeSpreader
+    - type: SpeedModifierContacts
+      walkSpeedModifier: 0.3
+      sprintSpeedModifier: 0.3
+      ignoreWhitelist:
+        tags:
+        - Flesh
+    - type: Respirator
+      damage:
+        types:
+          Asphyxiation: 0.25
+      damageRecovery:
+        types:
+          Asphyxiation: -0.25

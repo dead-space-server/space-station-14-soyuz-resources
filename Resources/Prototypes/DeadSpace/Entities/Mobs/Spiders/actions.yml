@@ -1,0 +1,62 @@
+
+- type: entity
+  id: ActionExplosionAfterDead
+  name: Взрыв.
+  description: Взорваться
+  noSpawn: true
+  components:
+  - type: InstantAction
+    useDelay: 5
+    icon:
+      sprite: Actions/Implants/implants.rsi
+      state: explosive
+    event: !type:ExplosionAfterDeadActionEvent
+
+- type: entity
+  id: ActionStunRadiusSpider
+  name: крик
+  description:  Пронзительный крик станит всех врагов поблизости.
+  noSpawn: true
+  components:
+  - type: InstantAction
+    useDelay: 60
+    icon:
+      sprite: Interface/Actions/voice-mask.rsi
+      state: icon
+    event: !type:StunRadiusActionEvent
+
+- type: entity
+  id: ActionInvisibility
+  name: невидимость
+  description: Вы становитесь невидимым.
+  noSpawn: true
+  components:
+  - type: InstantAction
+    useDelay: 15
+    icon: Interface/Actions/eyeclose.png
+    event: !type:InvisibilityActionEvent
+- type: entity
+  id: ActionSuckBlood
+  name: высосать кровь
+  description: Поглощает кровь у выбранной цели.
+  noSpawn: true
+  components:
+  - type: EntityTargetAction
+    useDelay: 1
+    icon:
+      sprite: Interface/Actions/devour.rsi
+      state: icon
+    event: !type:SuckBloodActionEvent
+
+- type: entity
+  id: ActionAutoInjectReagent
+  name: выделить вещества
+  description: Выделяет вещества и впрыскивает их в ваше тело.
+  noSpawn: true
+  components:
+  - type: InstantAction
+    useDelay: 5
+    icon:
+      sprite: Interface/Actions/actions_mecha.rsi
+      state: mech_damtype_toxin
+    event: !type:AutoInjectReagentActionEvent

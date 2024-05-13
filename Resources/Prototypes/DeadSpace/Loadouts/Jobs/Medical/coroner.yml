@@ -1,0 +1,56 @@
+# Jumpsuit
+- type: loadout
+  id: CoronerJumpsuit
+  equipment: CoronerJumpsuit
+
+- type: startingGear
+  id: CoronerJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCoroner
+
+- type: loadout
+  id: CoronerJumpskirt
+  equipment: CoronerJumpskirt
+
+- type: startingGear
+  id: CoronerJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCoroner
+
+# Back
+- type: loadout
+  id: CoronerBackpack
+  equipment: CoronerBackpack
+
+- type: startingGear
+  id: CoronerBackpack
+  equipment:
+    back: ClothingBackpackCoronerFilled
+
+- type: loadout
+  id: CoronerSatchel
+  equipment: CoronerSatchel
+
+- type: startingGear
+  id: CoronerSatchel
+  equipment:
+    back: ClothingBackpackSatchelCoronerFilled
+
+- type: loadout
+  id: CoronerDuffel
+  equipment: CoronerDuffel
+
+- type: startingGear
+  id: CoronerDuffel
+  equipment:
+    back: ClothingBackpackDuffelCoronerFilled
+
+# Head
+- type: loadout
+  id: CoronerHead
+  equipment: CoronerHead
+
+- type: startingGear
+  id: CoronerHead
+  equipment:
+    head: ClothingHeadHatCoroner

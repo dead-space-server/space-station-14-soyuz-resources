@@ -1,0 +1,12 @@
+ent-ClothingHeadsetMagistrat = гарнитура судьи
+    .desc = гарнитура судьи
+    .suffix = { "" }
+ent-MagistratPDA = КПК судьи
+    .desc = КПК судьи
+    .suffix = { "" }
+ent-MagistratIDCard = ID карта Судьи
+    .desc = ID карта Судьи
+    .suffix = { "" }
+ent-SpawnMagistrat = спавн Судьи
+    .desc = спавн Судьи
+    .suffix = { "" }

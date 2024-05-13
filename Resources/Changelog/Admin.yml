@@ -1,0 +1,209 @@
+AdminOnly: true
+Entries:
+- author: DrSmugleaf
+  changes:
+  - {message: 'Добавил список обновлений исключительно для админов.', type: Add}
+  id: 1
+  time: '2023-10-08T04:26:00.0000000+00:00'
+- author: DrSmugleaf
+  changes:
+  - {message: 'Добавил новый интерфейс для паник бункера в админ панели', type: Add}
+  - {message: 'Добавил кнопку автоматического включения паник бункера в зависимости от того, есть ли на сервере админы.', type: Add}
+  id: 2
+  time: '2023-10-12T22:46:00.0000000+00:00'
+- author: DrSmugleaf
+  changes:
+  - {message: 'Добавил колонку с общим временем игрока в заголовке АХелпа и во вкладке «Игроки» в Админ панели.', type: Add}
+  id: 3
+  time: '2023-10-14T08:55:00.0000000+00:00'
+- author: DrSmugleaf
+  changes:
+  - {message: 'Добавил кару «Стереть», а также добавил чекбокс «Стереть из панели банов».', type: Add}
+  id: 4
+  time: '2023-10-14T09:00:00.0000000+00:00'
+- author: DrSmugleaf
+  changes:
+  - {message: 'Теперь интерфейс паник бункера сам выставляет минимальное время с создания аккаунта/игровое время, когда меню ввода не в фокусе.', type: Tweak}
+  - {message: 'Added message tooltip to the erase verb.', type: Tweak}
+  id: 5
+  time: '2023-10-14T09:21:00.0000000+00:00'
+- author: DrSmugleaf
+  changes:
+  - {message: 'Добавил чпокающий звук, когда используется кара стирания.', type: Tweak}
+  id: 5
+  time: '2023-10-14T09:47:00.0000000+00:00'
+- author: DrSmugleaf
+  changes:
+  - {message: 'Исправил неработающую кнопку сортировки игроков во вкладке «Игроки» по наигранному времени.', type: Fix}
+  id: 6
+  time: '2023-10-14T23:52:00.0000000+00:00'
+- author: DrSmugleaf
+  changes:
+  - {message: 'Исправил неправильную сортировку по времени во вкладке «Игроки».', type: Fix}
+  id: 7
+  time: '2023-10-16T04:23:00.0000000+00:00'
+- author: DrSmugleaf
+  changes:
+  - {message: 'Исправлено то что комнда вайтлиста не довала фидбек если было передано 0 аргументов.', type: Fix}
+  - {message: 'Исправлено отсутствие обрезки начальных и конечных пробелов в именах команд вайтлиста.', type: Fix}
+  - {message: 'Добавлена \[player\] подсказка для команд вайтлиста.', type: Tweak}
+  id: 8
+  time: '2023-10-21T09:53:00.0000000+00:00'
+- author: DrSmugleaf
+  changes:
+  - {message: 'Исправлено то что функция стирания в некоторых случаях не удаляла сообщения.', type: Fix}
+  id: 9
+  time: '2023-10-30T01:28:00.0000000+00:00'
+- author: Vasilis
+  changes:
+  - {message: 'ДАМ и УЧ издают звуковой эффект, когда они перегружены. Аналогично сообщению факса.', type: Add}
+  id: 10
+  time: '2023-11-07T15:03:00.0000000+00:00'
+- author: nikthechampiongr
+  changes:
+    - {message: 'Исправлено то что кнопка респауна игрока респавнила админа, а не игрока.', type: Fix}
+  time: '2023-11-22T16:39:00.0000000+00:00'
+  id: 11
+- author: ahahahahha
+  changes:
+  - {message: 'Добавлена метка в оверлее и в F7 отображающая то что игрок наиграл менее дня на проекте, выглядит как красная звёздочка.', type: Add}
+  id: 1000
+  time: '2023-11-29T00:00:00.0000000+00:00'
+- author: ahahahahha
+  changes:
+  - {message: 'Метка спонсора убрана из оверлея.', type: Tweak}
+  id: 1001
+  time: '2023-11-29T00:00:00.0000000+00:00'
+- author: ahahahahha
+  changes:
+  - {message: 'Исправлено то что у игроков с подпиской синдикат не было маркера спонсора.', type: Fix}
+  id: 1003
+  time: '2023-11-29T00:00:00.0000000+00:00'
+- author: ahahahahha
+  changes:
+  - {message: 'Добавлено звуковое уведмоление при подключении человека с админ наблюдением.', type: Add}
+  id: 1004
+  time: '2023-11-29T00:00:00.0000000+00:00'
+- author: nikthechampiongr
+  changes:
+  - message: The Super Bonk smite is now available. Targets will bonk their head on
+      every single table.
+    type: Add
+  id: 12
+  time: '2023-12-12T11:54:00.0000000+00:00'
+- author: DrSmugleaf
+  changes:
+  - message: Fixed not being able to right click in AHelps and the players and objects
+      tabs.
+    type: Fix
+  id: 13
+  time: '2023-12-21T06:34:00.0000000+00:00'
+- author: Geekyhobo
+  changes:
+  - message: Fixed AGhosts not being able to drop items past the default range.
+    type: Fix
+  id: 14
+  time: '2024-1-4T01:30:00.0000000+00:00'
+- author: ahahahahha
+  changes:
+    - {message: 'Выдавать время теперь могут только админы с флагом хоста.', type: Fix}
+  id: 1000
+  time: '2024-02-12T00:00:00.0000000+00:00'
+- author: nikthechampiongr
+  changes:
+  - message: Players now leave logs when joining as observers.
+    type: Add
+  id: 15
+  time: '2024-03-13T22:46:41.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/26091
+- author: PJB3005
+  changes:
+  - message: Admin messages are now shown as "seen" even if the player dismisses them
+      only temporarily. Also, it is impossible for players to play without dismissing
+      the message (temporary or permanent).
+    type: Tweak
+  id: 16
+  time: '2024-03-21T15:15:46.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/26223
+- author: nikthechampiongr
+  changes:
+  - message: The stealthmin command has been added. Admins with the Stealth permission
+      can now hide themselves from adminwho except for other admins with that permission.
+    type: Add
+  id: 17
+  time: '2024-03-24T15:39:54.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/26263
+- author: lzk228
+  changes:
+  - message: Selected preset for secret is now sent to admin chat.
+    type: Tweak
+  id: 18
+  time: '2024-03-29T05:03:34.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/26500
+- author: Simyon
+  changes:
+  - message: The aghost command now accepts a optional username argument to aghost
+      other people.
+    type: Tweak
+  id: 19
+  time: '2024-03-31T02:05:44.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/26546
+- author: PJB3005
+  changes:
+  - message: The new "grant_connect_bypass" command grants a player the ability to
+      connect, bypassing whitelist, player cap and panic bunker.
+    type: Add
+  id: 20
+  time: '2024-04-09T15:25:21.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/26771
+- author: Aexxie
+  changes:
+  - message: Removed the bartender's roundstart incendiary shells on Meta.
+    type: Remove
+  id: 21
+  time: '2024-04-20T01:06:21.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/27142
+- author: nikthechampiongr
+  changes:
+  - message: Banpanel default values for ban severities, whether a server ban should
+      be applied with hwid/ip,  whether to use last available details, and whether
+      to erase the player on ban can now be configured through a Cvar.
+    type: Tweak
+  id: 22
+  time: '2024-04-20T16:18:26.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/27168
+- author: EmoGarbage404
+  changes:
+  - message: Fixed antag status being broken in overlay and UI.
+    type: Fix
+  id: 23
+  time: '2024-04-26T00:25:57.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/27319
+- author: Errant
+  changes:
+  - message: When spawning vox for admemes, they should be given/spawned in a nitrogen-filled
+      space if possible. If they must be placed in normal air, an alternate vox prototype
+      now comes with breathing gear and N2 tank already equipped, but the internals
+      must be turned on via right click and even if you do this instantly they will
+      still probably take ~4 poison damage from the air, so heal them afterwards.
+    type: Add
+  id: 24
+  time: '2024-04-27T10:33:35.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/26705
+- author: Tainakov
+  changes:
+  - message: +Adminchat flag is added. Now to gain access to the admin chat you will
+      need this flag.
+    type: Add
+  id: 25
+  time: '2024-04-27T11:17:47.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/26930
+- author: Titian3
+  changes:
+  - message: Added admin playtime tracking and included it in overall playtime tracking.
+    type: Add
+  id: 26
+  time: '2024-05-02T06:23:23.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/24945
+Name: Admin
+Order: 1

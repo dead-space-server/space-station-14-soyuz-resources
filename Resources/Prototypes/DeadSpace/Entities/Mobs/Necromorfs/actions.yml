@@ -1,0 +1,23 @@
+- type: entity
+  id: ActionAbsorptionDeadNecro
+  name: Поглотить некроморфа
+  description: Поглотите некроморфа, чтобы создать симбиоз
+  noSpawn: true
+  components:
+  - type: EntityTargetAction
+    useDelay: 5
+    icon:
+      sprite: Interface/Actions/devour.rsi
+      state: icon
+    event: !type:AbsorptionDeadNecroActionEvent
+
+- type: entity
+  id: ActionSpawnPointNecro
+  name: Призвать некроморфа
+  description: Отсоеденить ранее поглощенного некроморфа.
+  noSpawn: true
+  components:
+  - type: InstantAction
+    useDelay: 30
+    icon: DeadSpace/Interface/Actions/slash.png
+    event: !type:SpawnPointNecroActionEvent
