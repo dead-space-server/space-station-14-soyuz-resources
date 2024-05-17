@@ -11,6 +11,18 @@
   - Zombie
   - Xeno
 
+- type: damageModifierSet
+  id: Necromorf
+  coefficients:
+    Blunt: 0.75
+    Slash: 1.25
+    Piercing: 0.75
+    Shock: 1
+    Cold: 0.25
+    Heat: 0.9
+    Poison: 0.25
+    Radiation: 0.0
+
 - type: emoteSounds
   id: Necro
   sound:
@@ -23,19 +35,140 @@
       collection: NecroScreams
 
 - type: entity
-  parent: [SimpleSpaceMobBase, MobCombat]
-  noSpawn: true
+  parent: ClothingNeckBase
+  id: ClothingNecroClaws
+  name: клешни некроморфа
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Mobs/Necromorfs/claws.rsi
+  - type: Unremoveable
+
+- type: entity
+  parent: ClothingOuterBaseMedium
+  id: ClothingNecroRibs
+  name: рёбра
+  description: Мутировавшие рёбра
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Mobs/Necromorfs/tors.rsi
+  - type: Clothing
+    sprite: DeadSpace/Mobs/Necromorfs/tors.rsi
+  - type: Unremoveable
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.70
+        Slash: 0.70
+        Piercing: 0.70
+        Heat: 0.80
+  - type: ExplosionResistance
+    damageCoefficient: 0.90
+
+- type: entity
+  parent: ClothingOuterBaseMedium
+  id: ClothingNecroPregnantTors
+  name: рёбра
+  description: Мутировавшие рёбра
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Mobs/Necromorfs/torsPregnant.rsi
+  - type: Clothing
+    sprite: DeadSpace/Mobs/Necromorfs/torsPregnant.rsi
+  - type: Unremoveable
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+  - type: ExplosionResistance
+    damageCoefficient: 0.90
+
+- type: necromorf
+  id: NecroSlasher
+  damage:
+    groups:
+      Brute: 20
+    types:
+      Structural: 15
+  damageModifierSet: Necromorf
+  claws: ClothingNecroClaws
+  components:
+  - type: WallHack
+  - type: Unitology
+  - type: ZombieImmune
+  - type: IgnoreKudzu
+  - type: ReleaseGasPerSecond
+    gasID: 9
+
+- type: necromorf
+  id: NecroTwitcher
+  damage:
+    groups:
+      Brute: 20
+    types:
+      Structural: 15
+  damageModifierSet: Necromorf
+  claws: ClothingNecroClaws
+  hardsuit: ClothingNecroRibs
+  movementSpeedMultiply: 1.5
+  components:
+  - type: WallHack
+  - type: Unitology
+  - type: ZombieImmune
+  - type: IgnoreKudzu
+  - type: ReleaseGasPerSecond
+    gasID: 9
+
+- type: necromorf
+  id: NecroPregnant
+  damage:
+    groups:
+      Brute: 20
+    types:
+      Structural: 15
+  damageModifierSet: Necromorf
+  claws: ClothingNecroClaws
+  hardsuit: ClothingNecroPregnantTors
+  components:
+  - type: WallHack
+  - type: Unitology
+  - type: ZombieImmune
+  - type: IgnoreKudzu
+  - type: Pregnant
+  - type: ReleaseGasPerSecond
+    gasID: 9
+
+- type: necromorf
+  id: NecroTwitcherLvl2
+  damage:
+    groups:
+      Brute: 30
+    types:
+      Structural: 20
+  damageModifierSet: Necromorf
+  claws: ClothingNecroClaws
+  hardsuit: ClothingNecroRibs
+  movementSpeedMultiply: 3
+  components:
+  - type: WallHack
+  - type: Unitology
+  - type: ZombieImmune
+  - type: IgnoreKudzu
+  - type: StunAttack
+  - type: ReleaseGasPerSecond
+    gasID: 9
+
+- type: entity
   id: NecromorfMobBase
+  parent: [SimpleSpaceMobBase, MobCombat]
+  abstract: true
+  noSpawn: true
   components:
   - type: IgnoreKudzu
   - type: Unitology
   - type: ZombieImmune
-  - type: Sprite
-    drawdepth: Mobs
-    layers:
-    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
-      state: running
-      sprite: DeadSpace/Mobs/Spiders/guardian_terror.rsi
   - type: HTN
     rootTask:
       task: XenoCompound
@@ -91,6 +224,7 @@
       100: Critical
       200: Dead
   - type: MeleeWeapon
+    altDisarm: false
     angle: 0
     animation: WeaponArcBite
     soundHit:
@@ -141,55 +275,10 @@
       types:
         Poison: -1
       groups:
-        Brute: -1
-        Burn: -1
-
-
-- type: entity
-  parent: NecromorfMobBase
-  id: MobSlasher
-  components:
-  - type: Sprite
-    drawdepth: Mobs
-    sprite: DeadSpace/Mobs/Necromorfs/slasher.rsi
-    layers:
-    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
-      state: running
-  - type: GhostRole
-    makeSentient: true
-    name: ghost-role-information-slasher-name
-    description: ghost-role-information-slasher-description
-    rules: ghost-role-information-slasher-rules
-  - type: GhostTakeoverAvailable
-
-
-- type: entity
-  id: MobPregnant
-  parent: NecromorfMobBase
-  components:
-  - type: Sprite
-    drawdepth: Mobs
-    sprite: DeadSpace/Mobs/Necromorfs/pregnant.rsi
-    layers:
-    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
-      state: running
-  - type: Pregnant
-  - type: Gun
-    fireRate: 0.3
-    useKey: false
-    selectedMode: SemiAuto
-    availableModes:
-      - SemiAuto
-    soundGunshot: /Audio/DeadSpace/Necromorfs/bluet.ogg
-  - type: BallisticAmmoProvider
-    proto: BulletAcid
-    capacity: 500
-  - type: GhostRole
-    makeSentient: true
-    name: ghost-role-information-pregnant-name
-    description: ghost-role-information-pregnant-description
-    rules: ghost-role-information-pregnant-rules
-  - type: GhostTakeoverAvailable
+        Brute: -3
+        Burn: -3
+  - type: ReleaseGasPerSecond
+    gasID: 9
 
 - type: entity
   id: MobSlasherSmall
@@ -255,6 +344,7 @@
     description: ghost-role-information-brute-description
     rules: ghost-role-information-brute-rules
   - type: GhostTakeoverAvailable
+  - type: StunAttack
 
 - type: entity
   id: MobInfector
@@ -281,8 +371,14 @@
     description: ghost-role-information-infector-description
     rules: ghost-role-information-infector-rules
   - type: GhostTakeoverAvailable
-  - type: StunAtack
+  - type: StunAttack
   - type: MeleeWeapon
+    altDisarm: false
+    hidden: true
+    angle: 0
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    animation: WeaponArcBite
     damage:
       types:
         Blunt: 10
@@ -292,142 +388,85 @@
     - id: InfectorGland
       amount: 2
 
-- type: entity
-  id: MobDivader
-  parent: NecromorfMobBase
+- type: randomHumanoidSettings
+  id: RandomNecromorf
   components:
-  - type: Sprite
-    drawdepth: Mobs
-    sprite: DeadSpace/Mobs/Necromorfs/divader.rsi
-    layers:
-    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
-      state: running
-  - type: MovementSpeedModifier
-    baseWalkSpeed: 2.5
-    baseSprintSpeed: 4
-  - type: Divader
+  - type: InitialNecrofication
   - type: GhostRole
-    makeSentient: true
-    name: ghost-role-information-divader-name
-    description: ghost-role-information-divader-description
-    rules: ghost-role-information-divader-rules
+    name: Некроморф
+    description: Вы некроморф, убейте всех своих врагов.
+  - type: GhostTakeoverAvailable
+
+- type: randomHumanoidSettings
+  id: PregnantNecromorf
+  components:
+  - type: InitialNecrofication
+    necroPrototype: NecroPregnant
+  - type: GhostRole
+    name: Некроморф
+    description: Вы некроморф, убейте всех своих врагов.
+  - type: GhostTakeoverAvailable
+
+- type: randomHumanoidSettings
+  id: SlasherNecromorf
+  components:
+  - type: InitialNecrofication
+    necroPrototype: NecroSlasher
+  - type: GhostRole
+    name: Некроморф
+    description: Вы некроморф, убейте всех своих врагов.
+  - type: GhostTakeoverAvailable
+
+- type: randomHumanoidSettings
+  id: TwitcherNecromorf
+  components:
+  - type: InitialNecrofication
+    necroPrototype: NecroTwitcher
+  - type: GhostRole
+    name: Некроморф
+    description: Вы некроморф, убейте всех своих врагов.
   - type: GhostTakeoverAvailable
 
 - type: entity
-  id: MobDivaderLH
-  parent: NecromorfMobBase
+  id: RandomNecromorfSpawner
+  name: Некроморф
+  suffix: случайный некроморф
   components:
-  - type: Sprite
-    drawdepth: SmallMobs
-    sprite: DeadSpace/Mobs/Necromorfs/divader_left_hand.rsi
-    layers:
-    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
-      state: running
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeCircle
-          radius: 0.35
-        density: 80
-        mask:
-        - SmallMobMask
-        layer:
-        - SmallMobLayer
-  - type: MobThresholds
-    thresholds:
-      0: Alive
-      40: Dead
-  - type: MeleeWeapon
-    damage:
-      types:
-        Blunt: 10
+  - type: Icon
+    sprite: Mobs/Species/Human/parts.rsi
+    state: full
+  - type: RandomHumanoidSpawner
+    settings: RandomNecromorf
 
 - type: entity
-  id: MobDivaderRH
-  parent: NecromorfMobBase
+  id: SlasherNecromorfSpawner
+  name: Некроморф
+  suffix: некроморф расчленитель
   components:
-  - type: Sprite
-    drawdepth: SmallMobs
-    sprite: DeadSpace/Mobs/Necromorfs/divader_right_hand.rsi
-    layers:
-    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
-      state: running
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeCircle
-          radius: 0.35
-        density: 80
-        mask:
-        - SmallMobMask
-        layer:
-        - SmallMobLayer
-  - type: MobThresholds
-    thresholds:
-      0: Alive
-      40: Dead
-  - type: MeleeWeapon
-    damage:
-      types:
-        Blunt: 10
+  - type: Icon
+    sprite: Mobs/Species/Human/parts.rsi
+    state: full
+  - type: RandomHumanoidSpawner
+    settings: SlasherNecromorf
 
 - type: entity
-  id: MobDivaderH
-  parent: NecromorfMobBase
+  id: PregnantNecromorfSpawner
+  name: Некроморф
+  suffix: некроморф беременный
   components:
-  - type: Sprite
-    drawdepth: Mobs
-    sprite: DeadSpace/Mobs/Necromorfs/divader_head.rsi
-    layers:
-    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
-      state: running
-  - type: MobThresholds
-    thresholds:
-      0: Alive
-      40: Dead
-  - type: MeleeWeapon
-    damage:
-      types:
-        Blunt: 10
+  - type: Icon
+    sprite: Mobs/Species/Human/parts.rsi
+    state: full
+  - type: RandomHumanoidSpawner
+    settings: PregnantNecromorf
 
 - type: entity
-  id: MobTwitcher
-  parent: NecromorfMobBase
+  id: TwitcherecromorfSpawner
+  name: Некроморф
+  suffix: некроморф твичер
   components:
-  - type: Sprite
-    drawdepth: Mobs
-    sprite: DeadSpace/Mobs/Necromorfs/twitcher.rsi
-    layers:
-    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
-      state: running
-  - type: MovementSpeedModifier
-    baseWalkSpeed: 2.5
-    baseSprintSpeed: 4.5
-  - type: GhostRole
-    makeSentient: true
-    name: ghost-role-information-twitcher-name
-    description: ghost-role-information-twitcher-description
-    rules: ghost-role-information-twitcher-rules
-  - type: GhostTakeoverAvailable
-
-- type: entity
-  id: MobTwitcherlvl2
-  parent: NecromorfMobBase
-  components:
-  - type: Sprite
-    drawdepth: Mobs
-    sprite: DeadSpace/Mobs/Necromorfs/twitcherlvl2.rsi
-    layers:
-    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
-      state: running
-  - type: MobThresholds
-    thresholds:
-      0: Alive
-      250: Critical
-      400: Dead
-  - type: MovementSpeedModifier
-    baseWalkSpeed: 2.5
-    baseSprintSpeed: 5
-  - type: StunAtack
+  - type: Icon
+    sprite: Mobs/Species/Human/parts.rsi
+    state: full
+  - type: RandomHumanoidSpawner
+    settings: TwitcherNecromorf

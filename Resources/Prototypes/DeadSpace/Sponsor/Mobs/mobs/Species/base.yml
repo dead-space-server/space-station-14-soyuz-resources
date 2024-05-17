@@ -2,8 +2,8 @@
   save: false
   parent:
   - MobBloodstream
-  - BaseMobSpecies
   - MobFlammable
+  - BaseMobSpecies
   id: BaseMobSpeciesXenoSponsor
   abstract: true
   components:
@@ -29,18 +29,20 @@
     - StaminaModifier
   - type: Blindable
   - type: Temperature
-    heatDamageThreshold: 5000
+    heatDamageThreshold: 325
+    coldDamageThreshold: 260
     currentTemperature: 310.15
     specificHeat: 42
+    coldDamage:
+      types:
+        Cold: 0.5 #per second, scales with temperature & other constants
     heatDamage:
       types:
-        Heat : 1 #per second, scales with temperature & other constants
+        Heat: 1 #per second, scales with temperature & other constants
   - type: Barotrauma
     damage:
       types:
-        Blunt: 0.5 #per second, scales with pressure and other constants.
-  - type: Hunger
-  - type: Thirst
+        Blunt: 0.50 #per second, scales with pressure and other constants.
   - type: MobPrice
     price: 3000 # Kidnapping a living person and selling them for cred is a good move.
     deathPenalty: 0.1 # However they really ought to be living and intact, otherwise they're worth 100x less.
@@ -56,7 +58,7 @@
     - ScreamOnDamage
   - type: Damageable
     damageContainer: Biological
-    damageModifierSet: Xeno
+    damageModifierSet: XenoRace
   - type: DamageOnHighSpeedImpact
     damage:
       types:
@@ -68,13 +70,11 @@
     bloodReagent: FluorosulfuricAcid
     bloodlossDamage:
       types:
-        Bloodloss:
-          1
+        Bloodloss: 0.0
     bloodlossHealDamage:
       types:
-        Bloodloss:
-          -1
-    maxBleedAmount: 0
+        Bloodloss: -2
+    maxBleedAmount: 5
     chemicalMaxVolume: 0
   - type: DrawableSolution
     solution: bloodstream
@@ -100,9 +100,9 @@
   - type: Actions
   - type: Vocal
     sounds:
-      Male: UnisexXeno
-      Female: UnisexXeno
-      Unsexed: UnisexXeno
+      Male: UnisexXenoSponsor
+      Female: UnisexXenoSponsor
+      Unsexed: UnisexXenoSponsor
   - type: MeleeWeapon
     soundHit:
      collection: AlienClaw
@@ -111,8 +111,6 @@
       types:
         Slash: 6
   - type: MovementSpeedModifier
-    baseWalkSpeed: 2.6
-    baseSprintSpeed: 4.6
   - type: InteractionPopup
     successChance: 1.0
     interactSuccessString: petting-success-bingus
@@ -125,16 +123,17 @@
     spawned:
       - id: FoodMeatXeno
         amount: 5
+  - type: Sanity
 
 - type: damageModifierSet
-  id: Xeno
+  id: XenoRace
   coefficients:
-    Blunt: 0.8
-    Slash: 0.8
+    Blunt: 0.85
+    Slash: 0.75
     Piercing: 1
-    Shock: 1.2
-    Cold: 0.8
+    Shock: 1.25
+    Cold: 0.75
     Heat: 1.5
     Poison: 0
-    Radiation: 1
-    Caustic: 0.5
+    Radiation: 0
+    Caustic: 0

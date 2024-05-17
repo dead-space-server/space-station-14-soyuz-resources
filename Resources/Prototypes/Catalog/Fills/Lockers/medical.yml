@@ -44,6 +44,8 @@
   - type: StorageFill
     contents:
       - id: HandheldHealthAnalyzer
+      - id: ClothingHeadMirror
+        prob: 0.1
       - id: ClothingHandsGlovesLatex
       - id: ClothingHeadsetMedical
       - id: ClothingEyesHudMedical

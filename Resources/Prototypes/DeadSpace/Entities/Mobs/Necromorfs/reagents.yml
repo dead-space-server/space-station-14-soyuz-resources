@@ -29,7 +29,7 @@
         - !type:CauseInfectionDead
           conditions:
             - !type:ReagentThreshold
-              min: 5
+              min: 4
 
 - type: reagent
   id: SerumEnslaved

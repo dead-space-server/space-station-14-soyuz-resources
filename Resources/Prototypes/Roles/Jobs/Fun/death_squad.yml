@@ -69,6 +69,7 @@
         - id: PinpointerNuclear
         - id: BoxHandcuff
         - id: EnergyShield
+        - id: JawsOfLife
     - type: ExplosionResistance
       damageCoefficient: 0.05
 
@@ -84,7 +85,6 @@
         - id: PowerDrill
         - id: WelderExperimental
         - id: Multitool
-        - id: JawsOfLife
 
 - type: entity
   parent: ClothingHeadset

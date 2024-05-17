@@ -99,7 +99,7 @@
     thresholds:
       0: Alive
       100: Dead
-  - type: StunAtack
+  - type: StunAttack
   - type: Damageable
     damageModifierSet: SlaughterDemon
   - type: MovementSpeedModifier

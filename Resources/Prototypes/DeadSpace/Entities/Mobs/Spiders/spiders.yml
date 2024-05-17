@@ -213,7 +213,7 @@
   - type: Puller
     needsHands: false
   - type: Bloodsucker
-    maxCountReagent: 100 #Емкость
+    maxCountReagent: 0 #Емкость
     countReagent: 0 #Сколько реагента при спавне
     duration: 2 #Длительность сосания
     howMuchWillItSuck: 10 #Сколько высосет за один укус
@@ -461,14 +461,14 @@
       state: running
       sprite: DeadSpace/Mobs/Spiders/vdova.rsi
   - type: MeleeWeapon
-    attackRate: 0.1
+    attackRate: 1
     animation: WeaponArcBite
     soundHit:
       path: /Audio/Effects/bite.ogg
     damage:
       types:
-        Piercing: 3
-        Poison: 1
+        Piercing: 6
+        Poison: 3
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -572,8 +572,7 @@
     reagents: #Что впрыскивать
       Stimulants: 10
       Omnizine: 10
-      Bicaridine: 5
-      Puncturase: 5
+      Bicaridine: 15
   - type: AutoInjectReagentOnAllowedState #Автоиньектор при смене состояния сущности
     durationRegenReagents: 120 #кд способности
     allowedStates: #При каких состояниях
@@ -585,15 +584,3 @@
       Omnizine: 10
   - type: NeededBloodForAutoInject
     cost: 30 #Цена крови за действие
-  - type: PassiveDamage
-    allowedStates:
-    - Alive
-    - Critical
-    damageCap: 0
-    damage:
-      types:
-        Poison: -0.5
-      groups:
-        Brute: 1
-
-

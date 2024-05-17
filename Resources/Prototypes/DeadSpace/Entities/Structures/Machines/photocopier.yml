@@ -10,7 +10,7 @@
     drawdepth: SmallObjects
     layers:
     - state: icon
-      map: ["base"]
+      map: [ "enum.PhotocopierVisuals.VisualState" ]
   - type: Icon
     sprite: DeadSpace/Structures/Machines/photocopier.rsi
     state: icon
@@ -55,7 +55,6 @@
   - type: ContainerContainer
     containers:
       Paper: !type:ContainerSlot
-  # - type: Strap
 
 - type: entity
   parent: PhotocopierBase

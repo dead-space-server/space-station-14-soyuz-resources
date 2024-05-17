@@ -68,6 +68,7 @@ entities:
       name: map 100
     - type: Transform
     - type: Map
+      mapPaused: True
     - type: PhysicsMap
     - type: GridTree
     - type: MovedGrids
@@ -13185,7 +13186,7 @@ entities:
       pos: 46.5,-40.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -164910.06
+      secondsUntilStateChange: -164990.23
       state: Opening
   - uid: 4137
     components:
@@ -13622,7 +13623,7 @@ entities:
       pos: -3.5,-35.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -281077.44
+      secondsUntilStateChange: -281157.62
       state: Opening
   - uid: 1496
     components:
@@ -143534,36 +143535,6 @@ entities:
     - type: Transform
       pos: 56.344727,-11.3157215
       parent: 2
-  - uid: 23478
-    components:
-    - type: Transform
-      pos: 49.199795,-12.635495
-      parent: 2
-  - uid: 23479
-    components:
-    - type: Transform
-      pos: 33.942856,-34.471764
-      parent: 2
-  - uid: 23480
-    components:
-    - type: Transform
-      pos: 35.057438,-34.4301
-      parent: 2
-  - uid: 23481
-    components:
-    - type: Transform
-      pos: 34.974106,-34.315514
-      parent: 2
-  - uid: 23482
-    components:
-    - type: Transform
-      pos: 34.01577,-34.33635
-      parent: 2
-  - uid: 23483
-    components:
-    - type: Transform
-      pos: 42.16272,-40.47191
-      parent: 2
   - uid: 23484
     components:
     - type: Transform
@@ -143625,6 +143596,38 @@ entities:
     components:
     - type: Transform
       pos: -55.92037,3.5790596
+      parent: 2
+- proto: RadioHandheldSecurity
+  entities:
+  - uid: 23149
+    components:
+    - type: Transform
+      pos: 49.20945,-12.619825
+      parent: 2
+  - uid: 23150
+    components:
+    - type: Transform
+      pos: 34.065838,-34.394203
+      parent: 2
+  - uid: 23151
+    components:
+    - type: Transform
+      pos: 35.018963,-34.44108
+      parent: 2
+  - uid: 23152
+    components:
+    - type: Transform
+      pos: 35.097088,-34.550453
+      parent: 2
+  - uid: 23153
+    components:
+    - type: Transform
+      pos: 33.956463,-34.56608
+      parent: 2
+  - uid: 23154
+    components:
+    - type: Transform
+      pos: 42.155304,-40.218437
       parent: 2
 - proto: RagItem
   entities:
@@ -182913,7 +182916,7 @@ entities:
       pos: 24.5,2.5
       parent: 21002
     - type: Door
-      secondsUntilStateChange: -59209.29
+      secondsUntilStateChange: -59289.46
       state: Opening
 - proto: WoodenBench
   entities:

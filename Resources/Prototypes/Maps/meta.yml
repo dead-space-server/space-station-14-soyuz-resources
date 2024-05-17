@@ -75,3 +75,4 @@
             SeniorSalvageSpecialist: [ 1, 1 ]
             SeniorAdministrator: [ 1, 1 ]
             SecurityPilot: [ 1, 1 ]
+            SAI: [ 1, 1 ] # backmen-SAI

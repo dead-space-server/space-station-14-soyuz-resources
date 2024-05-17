@@ -49,11 +49,14 @@
       - id: ClothingNeckMantleCMO
       - id: ClothingCloakCmo
       - id: ClothingOuterCoatLabCmo
+      - id: ClothingUniformJumpsuitCMOTurtle
+      - id: ClothingUniformJumpskirtCMOTurtle
       - id: ClothingHeadHatBeretCmo
       - id: ClothingUnderwearSocksCMO # DS14-Socks
       - id: ClothingUnderwearBottomBoxersCMO # DS14-Underwear
       - id: ClothingUnderwearTopBraCMO # DS14-Underwear
       - id: ClothingUnderwearBottomPantiesCMO # DS14-Underwear
+      - id: ClothingHeadMirror
       - id: ClothingEyesGlasses
       - id: ClothingOuterWinterCMO
 

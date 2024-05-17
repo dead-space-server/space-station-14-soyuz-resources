@@ -11,6 +11,6 @@
       time: 54000 # 15 hours
   canBeAntag: false
   icon: JobIconBorg
-  supervisors: job-supervisors-security-borg
+  supervisors: job-supervisors-sai
   jobEntity: PlayerBorgChassisSecurity
   startingGear: RobotGear # for char preview only

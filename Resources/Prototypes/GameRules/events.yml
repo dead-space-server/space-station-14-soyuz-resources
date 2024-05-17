@@ -81,7 +81,7 @@
   noSpawn: true
   components:
   - type: StationEvent
-    weight: 6
+    weight: 8
     duration: 1
     minimumPlayers: 5
   - type: RandomEntityStorageSpawnRule
@@ -93,7 +93,7 @@
   noSpawn: true
   components:
   - type: StationEvent
-    weight: 2
+    weight: 3
     duration: 1
     earliestStart: 90
     reoccurrenceDelay: 60
@@ -107,10 +107,10 @@
   noSpawn: true
   components:
   - type: StationEvent
-    weight: 5
+    weight: 3
     duration: 1
-    earliestStart: 30
-    reoccurrenceDelay: 20
+    earliestStart: 75
+    reoccurrenceDelay: 30
     minimumPlayers: 30
   - type: NinjaSpawnRule
 
@@ -120,7 +120,7 @@
   noSpawn: true
   components:
   - type: StationEvent
-    weight: 7.5
+    weight: 6
     duration: 1
     earliestStart: 45
     minimumPlayers: 20
@@ -189,7 +189,7 @@
       params:
         volume: -4
     endAudio:
-      path: /AudioDeadSpace//Announcements/meteors_end.ogg # DeadSpace-Announcements
+      path: /Audio/DeadSpace/Announcements/meteors_end.ogg # DeadSpace-Announcements
       params:
         volume: -4
     duration: null #ending is handled by MeteorSwarmRule
@@ -248,17 +248,11 @@
   noSpawn: true
   components:
   - type: StationEvent
-    weight: 5
+    weight: 8
     startAnnouncement: station-event-power-grid-check-start-announcement
     endAnnouncement: station-event-power-grid-check-end-announcement
     startAudio:
       path: /Audio/DeadSpace/Announcements/poweroff1.ogg # DeadSpace-Announcements
-      params:
-       volume: -4
-    endAudio:
-      path: /Audio/DeadSpace/Announcements/poweron1.ogg # DeadSpace-Announcements
-      params:
-        volume: -4
     startDelay: 24
     duration: 60
     maxDuration: 120
@@ -319,8 +313,6 @@
     startAnnouncement: station-event-vent-clog-start-announcement
     startAudio:
       path: /Audio/DeadSpace/Announcements/ventclog.ogg # DeadSpace-Announcements
-      params:
-        volume: -4
     earliestStart: 15
     minimumPlayers: 15
     weight: 5
@@ -435,7 +427,7 @@
     reoccurrenceDelay: 30
     duration: 1
   - type: LoadMapRule
-    mapPath: /Maps/Shuttles/striker.yml
+    preloadedGrid: ShuttleStriker
   - type: NukeopsRule
     roundEndBehavior: Nothing
   - type: AntagSelection
@@ -465,14 +457,12 @@
   components:
   - type: StationEvent
     earliestStart: 15
-    weight: 6
+    weight: 4
     minimumPlayers: 25
     reoccurrenceDelay: 60
     startAnnouncement: station-event-communication-interception
     startAudio:
       path: /Audio/DeadSpace/Announcements/ionstorm.ogg # DeadSpace-Announcements
-      params:
-        volume: -4
   - type: AlertLevelInterceptionRule
   - type: TraitorRule
   - type: AntagSelection
