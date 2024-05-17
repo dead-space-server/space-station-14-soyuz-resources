@@ -50,7 +50,7 @@
 - type: entity
   id: RandomHumanoidSpawnerCBURNLeaderSCST
   name: лидер отряда ОППУ
-  suffix: РХБЗЗ
+  suffix: РХБЗ
   components:
     - type: Sprite
       sprite: Markers/jobs.rsi
@@ -78,7 +78,7 @@
 - type: entity
   id: RandomHumanoidSpawnerCBURNSoldierSCST
   name: боец отряда ОППУ
-  suffix: РХБЗЗ
+  suffix: РХБЗ
   components:
     - type: Sprite
       sprite: Markers/jobs.rsi

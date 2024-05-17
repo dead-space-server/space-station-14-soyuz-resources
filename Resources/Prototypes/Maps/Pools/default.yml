@@ -5,7 +5,7 @@
   - Meta
   - Packed
   - Cluster
-  - Oasis
+  # - Oasis # Ожидает ремаппа под билд
   - Omega
   - Bagel
   - Origin
@@ -21,7 +21,7 @@
   - CorvaxSilly
   - CorvaxPaper
   - CorvaxAstra
-  - CorvaxIshimura
+  # - CorvaxIshimura # Ожидает ремаппа под билд
   - CorvaxSpectrum
   - Gemini
   - Train

@@ -64,7 +64,7 @@
     description: ghost-role-information-MobCorpseCollector-description
     rules: ghost-role-information-MobCorpseCollector-rules
   - type: CorpseCollector
-  - type: StunAtack
+  - type: StunAttack
   - type: Damageable
     damageModifierSet: CorpseCollectorLvl1
   - type: InfectorDead
@@ -72,3 +72,13 @@
     bloodReagent: NecromorfBlood
     bloodMaxVolume: 200
     bloodlossThreshold: 0.4
+  - type: MeleeWeapon
+    altDisarm: false
+    hidden: true
+    angle: 0
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    animation: WeaponArcBite
+    damage:
+      types:
+        Blunt: 15

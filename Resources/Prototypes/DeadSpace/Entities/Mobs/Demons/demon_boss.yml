@@ -112,7 +112,7 @@
     baseWalkSpeed: 1.5
     baseSprintSpeed: 1.5
   - type: Herald
-  - type: StunAtack
+  - type: StunAttack
   - type: GhostRole
     allowMovement: true
     allowSpeech: true

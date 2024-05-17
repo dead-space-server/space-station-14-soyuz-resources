@@ -51,7 +51,7 @@
 - type: entity
   id: RandomHumanoidSpawnerCBURNLeaderNECRO
   name: лидер отряда ОПНУ
-  suffix: РХБЗЗ
+  suffix: РХБЗ
   components:
     - type: Sprite
       sprite: Markers/jobs.rsi
@@ -79,7 +79,7 @@
 - type: entity
   id: RandomHumanoidSpawnerCBURNSoldierNECRO
   name: боец отряда ОПНУ
-  suffix: РХБЗЗ
+  suffix: РХБЗ
   components:
     - type: Sprite
       sprite: Markers/jobs.rsi

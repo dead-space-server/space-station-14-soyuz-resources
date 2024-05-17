@@ -235,6 +235,7 @@
           state: not_in_eye
     - type: Visibility
     - type: CriminalRecordsConsole
+    - type: CrewMonitoringConsole
     - type: UserInterface
       interfaces:
         enum.CommunicationsConsoleUiKey.Key:
@@ -245,12 +246,16 @@
           type: SiliconLawBoundUserInterface
         enum.StrippingUiKey.Key:
           type: StrippableBoundUserInterface
+        enum.CrewMonitoringUIKey.Key:
+          type: CrewMonitoringBoundUserInterface
         enum.CriminalRecordsConsoleKey.Key:
           type: CriminalRecordsConsoleBoundUserInterface
     - type: IntrinsicUI
       uis:
         enum.CommunicationsConsoleUiKey.Key:
           toggleAction: ActionAIShowCommunications
+        enum.CrewMonitoringUIKey.Key:
+          toggleAction: ActionAiShowCrewMonitoring
         enum.CriminalRecordsConsoleKey.Key:
           toggleAction: ActionAiShowCriminalRecords
     - type: ContainerContainer
@@ -262,6 +267,9 @@
       color: "#93e2ff"
       global: false
     # Innate door remotes (bolting, emergency access, etc)
+    - type: DeviceNetwork
+      deviceNetId: Wireless
+      receiveFrequencyId: CrewMonitor
     - type: InnateItem
       afterInteract: false
       startingPriority: 25
@@ -326,10 +334,10 @@
 - type: entity
   parent: AICore
   id: AICoreShip
-  name: AI Core
-  suffix: ship
+  name: ядро ИИ
+  suffix: Корабельный
   save: false
-  description: Ship core AI
+  description: Ядро корабельного Искусственного Интеллекта.
   components:
   - type: NavMapBeacon
     color: "#ff0000"
@@ -373,8 +381,8 @@
   save: false
   parent: AIBase
   id: AICore
-  name: AI Core
-  description: Host for an AI. Likely more A than I.
+  name: ядро ИИ
+  description: Главный сервер Искусственного Интеллекта станции. Скорее Искусственного, чем Интеллекта.
   components:
     - type: BorgAINT
     - type: Repairable
@@ -477,7 +485,7 @@
 - type: entity
   id: AIEye
   parent: AIBase
-  name: Invalid AI name
+  name: некорректное имя ИИ
   noSpawn: true
   save: false
   components:

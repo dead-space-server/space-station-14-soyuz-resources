@@ -41,7 +41,7 @@ slave-initial-count = {$initialCount ->
 
 ## General
 
-uni-title = Юнитологи
+uni-title = Юнитологи (Временно не использовать)
 uni-description = Культ юнитологов, задачей которого является распространение некро-заразы.
 
 uni-not-enough-ready-players = Недостаточно игроков для игры. Было подготовлено {$readyPlayersCount} из минимального количества {$minimumPlayers} нужных игроков. Нельзя начать событие.

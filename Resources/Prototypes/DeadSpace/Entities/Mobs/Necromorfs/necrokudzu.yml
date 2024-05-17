@@ -40,7 +40,6 @@
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
     - type: Kudzu
-      growthTickChance: 0.05
       spreadChance: 0.1
       # Heals each time it manages to do a growth tick:
       damageRecovery:

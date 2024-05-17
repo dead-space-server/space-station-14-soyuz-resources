@@ -15,15 +15,17 @@
     emptySpriteName: microstimpen_empty
   - type: Hypospray
     solutionName: pen
-    transferAmount: 20
+    transferAmount: 30
   - type: SolutionContainerManager
     solutions:
       pen:
-        maxVol: 20
+        maxVol: 30
         reagents:
           - ReagentId: Omnizine
             Quantity: 10
-          - ReagentId: Puncturase
+          - ReagentId: Bicaridine
+            Quantity: 10
+          - ReagentId: DexalinPlus
             Quantity: 10
   - type: StaticPrice
     price: 300

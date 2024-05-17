@@ -25,7 +25,7 @@
     event: !type:HeraldSpawnActionEvent
 
 - type: entity
-  id: ActionStunAtack
+  id: ActionStunAttack
   name: Оглушающая атака
   description: Ваша следующая атака собьёт жертву с ног.
   noSpawn: true
@@ -35,7 +35,7 @@
     icon:
       sprite: Interface/Actions/actions_mecha.rsi
       state: mech_damtype_brute
-    event: !type:StunAtackActionEvent
+    event: !type:StunAttackActionEvent
 
 - type: entity
   id: ActionStunRadius
