@@ -577,7 +577,7 @@
     announcementSound:
       path: /Audio/DeadSpace/Announcements/announce.ogg # DeadSpace-Announcements
       params:
-        volume: -5
+        volume: -2
     firstPrivilegedIdSlot:
       name: id-card-console-privileged-id
       ejectSound: /Audio/Machines/id_swipe.ogg
@@ -644,7 +644,7 @@
     canCallShuttle: false
     canCallERT: false
     global: true #announce to everyone they're about to fuck shit up
-    announcementSound: /Audio/DeadSpace/Announcements/attention.ogg
+    announcementSound: /Audio/Announcements/war.ogg
   - type: Computer
     board: SyndicateCommsComputerCircuitboard
   - type: PointLight

@@ -51,6 +51,12 @@
   - Kitchen
   - Chapel
   - Hydroponics
+  #start-backmen: currency
+  minBankBalance: 150
+  maxBankBalance: 250
+  wageDepartment: Civilian
+  wage: 100
+  #end-backmen: currency
 
 - type: startingGear
   id: SeniorAdministratorGear

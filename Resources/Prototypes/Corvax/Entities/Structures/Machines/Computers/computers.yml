@@ -11,4 +11,4 @@
       announcementSound:
         path: /Audio/DeadSpace/Announcements/centcomm.ogg # DeadSpace-Announcements
         params:
-          volume: -4
+          volume: -2

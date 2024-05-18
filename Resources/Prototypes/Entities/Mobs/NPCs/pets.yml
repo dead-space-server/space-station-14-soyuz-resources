@@ -317,7 +317,6 @@
     - CannotSuicide
     - VimPilot
   - type: AnimalInfectionDead
-  - type: Sanity
   - type: StealTarget
     stealGroup: AnimalMcGriff
   - type: Speech
@@ -445,7 +444,6 @@
     - CannotSuicide
     - VimPilot
   - type: AnimalInfectionDead
-  - type: Sanity
   - type: StealTarget
     stealGroup: AnimalMorty
 
@@ -513,7 +511,6 @@
     - CannotSuicide
     - VimPilot
   - type: AnimalInfectionDead
-  - type: Sanity
 
 - type: entity
   name: Alexander
@@ -544,7 +541,6 @@
   - type: TTS
     voice: Chen
   - type: AnimalInfectionDead
-  - type: Sanity
 
 - type: entity
   name: Renault
@@ -574,7 +570,6 @@
     - CannotSuicide
     - VimPilot
   - type: AnimalInfectionDead
-  - type: Sanity
   - type: StealTarget
     stealGroup: AnimalRenault
 
@@ -693,7 +688,6 @@
     - DoorBumpOpener
     - FootstepSound
   - type: AnimalInfectionDead
-  - type: Sanity
   - type: StealTarget
     stealGroup: AnimalShiva
 
@@ -727,7 +721,6 @@
   - type: Loadout
     prototypes: [ BoxingKangarooGear ]
   - type: AnimalInfectionDead
-  - type: Sanity
 
 - type: entity
   name: Smile

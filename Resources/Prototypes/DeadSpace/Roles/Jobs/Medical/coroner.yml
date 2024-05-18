@@ -16,6 +16,12 @@
   - Medical
   - Maintenance
   - Coroner
+  #start-backmen: currency
+  minBankBalance: 150
+  maxBankBalance: 250
+  wageDepartment: Medical
+  wage: 50
+  #end-backmen: currency
 
 - type: startingGear
   id: CoronerGear

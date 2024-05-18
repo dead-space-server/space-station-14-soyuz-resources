@@ -28,6 +28,12 @@
       interval: 10
   - !type:AddImplantSpecial
     implants: [ SadTromboneImplant ]
+  #start-backmen: currency
+  minBankBalance: 150
+  maxBankBalance: 250
+  wageDepartment: Civilian
+  wage: 50
+  #end-backmen: currency
 
 - type: startingGear
   id: ClownGear
