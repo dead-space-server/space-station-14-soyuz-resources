@@ -25,6 +25,12 @@
     - Lawyer
     - Brig
     - Maintenance
+  #start-backmen: currency
+  minBankBalance: 800
+  maxBankBalance: 1200
+  wageDepartment: Specific
+  wage: 400
+  #end-backmen: currency
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]

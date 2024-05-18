@@ -95,12 +95,7 @@
   damageModifierSet: Necromorf
   claws: ClothingNecroClaws
   components:
-  - type: WallHack
-  - type: Unitology
-  - type: ZombieImmune
   - type: IgnoreKudzu
-  - type: ReleaseGasPerSecond
-    gasID: 9
 
 - type: necromorf
   id: NecroTwitcher
@@ -114,12 +109,7 @@
   hardsuit: ClothingNecroRibs
   movementSpeedMultiply: 1.5
   components:
-  - type: WallHack
-  - type: Unitology
-  - type: ZombieImmune
   - type: IgnoreKudzu
-  - type: ReleaseGasPerSecond
-    gasID: 9
 
 - type: necromorf
   id: NecroPregnant
@@ -132,33 +122,22 @@
   claws: ClothingNecroClaws
   hardsuit: ClothingNecroPregnantTors
   components:
-  - type: WallHack
-  - type: Unitology
-  - type: ZombieImmune
-  - type: IgnoreKudzu
   - type: Pregnant
-  - type: ReleaseGasPerSecond
-    gasID: 9
 
-- type: necromorf
-  id: NecroTwitcherLvl2
-  damage:
+- type: necromorf #Прототип некроморфа
+  id: NecroTwitcherLvl2 #Идентификатор
+  damage: #Урон наносимый некроморфом
     groups:
       Brute: 30
     types:
       Structural: 20
-  damageModifierSet: Necromorf
-  claws: ClothingNecroClaws
-  hardsuit: ClothingNecroRibs
-  movementSpeedMultiply: 3
-  components:
-  - type: WallHack
-  - type: Unitology
-  - type: ZombieImmune
-  - type: IgnoreKudzu
+  damageModifierSet: Necromorf #Модификатор получаемого урона
+  claws: ClothingNecroClaws #Клешни
+  isCanSpawnInfectionDead: false #Может появиться с помощью зараженя, или нет
+  hardsuit: ClothingNecroRibs #Верхняя одежда некроморфа
+  movementSpeedMultiply: 3 #Модификатор скорости
+  components: #Доп. компоненты
   - type: StunAttack
-  - type: ReleaseGasPerSecond
-    gasID: 9
 
 - type: entity
   id: NecromorfMobBase

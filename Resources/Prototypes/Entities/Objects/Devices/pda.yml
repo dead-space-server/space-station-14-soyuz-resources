@@ -75,6 +75,7 @@
       - CrewManifestCartridge
       - NotekeeperCartridge
       - NewsReaderCartridge
+      - BankCartridge
     cartridgeSlot:
       priority: -1
       name: device-pda-slot-component-slot-name-cartridge
@@ -671,6 +672,7 @@
       - NotekeeperCartridge
       - NewsReaderCartridge
       - LogProbeCartridge
+      - BankCartridge
 
 - type: entity
   parent: CentcomPDA
@@ -753,6 +755,7 @@
     uiKey: enum.PdaUiKey.Key
     preinstalled:
       - NotekeeperCartridge
+      - BankCartridge
     cartridgeSlot:
       priority: -1
       name: Cartridge
@@ -1130,6 +1133,7 @@
     uiKey: enum.PdaUiKey.Key
     preinstalled:
       - NotekeeperCartridge
+      - BankCartridge
     cartridgeSlot:
       priority: -1
       name: Cartridge

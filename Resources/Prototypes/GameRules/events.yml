@@ -10,7 +10,7 @@
     startAudio:
       path: /Audio/DeadSpace/Announcements/flux.ogg # DeadSpace-Announcements
       params:
-        volume: -4
+        volume: -2
   - type: AnomalySpawnRule
 
 - type: entity
@@ -25,7 +25,7 @@
     startAudio:
       path: /Audio/DeadSpace/Announcements/blusp_anomalies.ogg # DeadSpace-Announcements
       params:
-        volume: -4
+        volume: -2
   - type: BluespaceArtifactRule
 
 - type: entity
@@ -46,7 +46,7 @@
   noSpawn: true
   components:
   - type: StationEvent
-    weight: 7
+    weight: 8
     duration: 1
     minimumPlayers: 15
   - type: BreakerFlipRule
@@ -59,7 +59,7 @@
   - type: StationEvent
     startAnnouncement: station-event-bureaucratic-error-announcement
     minimumPlayers: 25
-    weight: 3
+    weight: 4
     duration: 1
   - type: BureaucraticErrorRule
 
@@ -70,8 +70,8 @@
   components:
   - type: StationEvent
     startAnnouncement: station-event-clerical-error-announcement
-    minimumPlayers: 15
-    weight: 1
+    minimumPlayers: 25
+    weight: 2
     duration: 1
   - type: ClericalErrorRule
 
@@ -93,7 +93,12 @@
   noSpawn: true
   components:
   - type: StationEvent
-    weight: 3
+    startAnnouncement: station-event-dragon-spawn-announcement
+    startAudio:
+      path: /Audio/DeadSpace/Announcements/carps.ogg # DeadSpace-Announcements
+      params:
+        volume: -2
+    weight: 2
     duration: 1
     earliestStart: 90
     reoccurrenceDelay: 60
@@ -107,11 +112,11 @@
   noSpawn: true
   components:
   - type: StationEvent
-    weight: 3
+    weight: 2
     duration: 1
     earliestStart: 75
     reoccurrenceDelay: 30
-    minimumPlayers: 30
+    minimumPlayers: 40
   - type: NinjaSpawnRule
 
 - type: entity
@@ -148,15 +153,15 @@
     startAudio:
       path: /Audio/DeadSpace/Announcements/gasleak_start.ogg # DeadSpace-Announcements
       params:
-        volume: -4
+        volume: -2
     endAnnouncement: station-event-gas-leak-end-announcement
     endAudio:
       path: /Audio/DeadSpace/Announcements/gasleak_end.ogg # DeadSpace-Announcements
       params:
-        volume: -4
+        volume: -2
     earliestStart: 10
     minimumPlayers: 5
-    weight: 8
+    weight: 10
     startDelay: 20
   - type: GasLeakRule
 
@@ -180,18 +185,18 @@
   components:
   - type: StationEvent
     earliestStart: 30
-    weight: 7.5
+    weight: 7
     minimumPlayers: 10 #Enough to hopefully have at least one engineering guy
     startAnnouncement: station-event-meteor-swarm-start-announcement
     endAnnouncement: station-event-meteor-swarm-end-announcement
     startAudio:
       path: /Audio/DeadSpace/Announcements/meteors_start.ogg # DeadSpace-Announcements
       params:
-        volume: -4
+        volume: -2
     endAudio:
       path: /Audio/DeadSpace/Announcements/meteors_end.ogg # DeadSpace-Announcements
       params:
-        volume: -4
+        volume: -2
     duration: null #ending is handled by MeteorSwarmRule
     startDelay: 30
   - type: MeteorSwarmRule
@@ -205,6 +210,8 @@
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
       path: /Audio/DeadSpace/Announcements/lifesigns.ogg # DeadSpace-Announcements
+      params:
+        volume: -2
     startDelay: 10
     earliestStart: 15
     weight: 6
@@ -232,6 +239,8 @@
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
       path: /Audio/DeadSpace/Announcements/lifesigns.ogg # DeadSpace-Announcements
+      params:
+        volume: -2
     startDelay: 10
     weight: 6
     duration: 50
@@ -253,6 +262,8 @@
     endAnnouncement: station-event-power-grid-check-end-announcement
     startAudio:
       path: /Audio/DeadSpace/Announcements/poweroff1.ogg # DeadSpace-Announcements
+      params:
+       volume: -2
     startDelay: 24
     duration: 60
     maxDuration: 120
@@ -270,7 +281,7 @@
     startAudio:
       path: /Audio/DeadSpace/Announcements/sentience.ogg # DeadSpace-Announcements
       params:
-        volume: -4
+        volume: -2
   - type: RandomSentienceRule
 
 - type: entity
@@ -285,7 +296,7 @@
     startAudio:
       path: /Audio/DeadSpace/Announcements/comms_blackout.ogg # DeadSpace-Announcements
       params:
-        volume: -4
+        volume: -2
     duration: 120
     maxDuration: 240
   - type: SolarFlareRule
@@ -313,6 +324,8 @@
     startAnnouncement: station-event-vent-clog-start-announcement
     startAudio:
       path: /Audio/DeadSpace/Announcements/ventclog.ogg # DeadSpace-Announcements
+      params:
+        volume: -2
     earliestStart: 15
     minimumPlayers: 15
     weight: 5
@@ -329,6 +342,8 @@
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
       path: /Audio/DeadSpace/Announcements/lifesigns.ogg # DeadSpace-Announcements
+      params:
+        volume: -2
     startDelay: 10
     earliestStart: 20
     minimumPlayers: 15
@@ -352,6 +367,8 @@
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
       path: /Audio/DeadSpace/Announcements/lifesigns.ogg # DeadSpace-Announcements
+      params:
+        volume: -2
     startDelay: 10
     earliestStart: 20
     minimumPlayers: 15
@@ -371,6 +388,8 @@
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
       path: /Audio/DeadSpace/Announcements/lifesigns.ogg # DeadSpace-Announcements
+      params:
+        volume: -2
     startDelay: 10
     earliestStart: 20
     minimumPlayers: 130 # Soyuz
@@ -463,6 +482,8 @@
     startAnnouncement: station-event-communication-interception
     startAudio:
       path: /Audio/DeadSpace/Announcements/ionstorm.ogg # DeadSpace-Announcements
+      params:
+        volume: -2
   - type: AlertLevelInterceptionRule
   - type: TraitorRule
   - type: AntagSelection
@@ -501,6 +522,8 @@
     startAnnouncement: station-event-immovable-rod-start-announcement
     startAudio:
       path: /Audio/DeadSpace/Announcements/attention.ogg # DeadSpace-Announcements
+      params:
+        volume: -2
     weight: 3.5
     duration: 1
     earliestStart: 30
@@ -544,7 +567,7 @@
     startAudio:
       path: /Audio/DeadSpace/Announcements/i-storm3.ogg # DeadSpace-Announcements
       params:
-        volume: -4
+        volume: -2
     duration: 1
   - type: IonStormRule
 

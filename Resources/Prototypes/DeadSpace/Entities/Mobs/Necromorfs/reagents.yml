@@ -33,7 +33,7 @@
 
 - type: reagent
   id: SerumEnslaved
-  name: entity-name-serum-enslaved
+  name: reagent-name-vent-crud
   group: Toxins
   desc: reagent-desc-serum-enslaved
   physicalDesc: reagent-physical-desc-thick

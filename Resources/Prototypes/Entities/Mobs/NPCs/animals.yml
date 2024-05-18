@@ -615,7 +615,6 @@
     factions:
     - Passive
   - type: AnimalInfectionDead
-  - type: Sanity
 
 - type: entity
   name: white duck #Quack
@@ -799,7 +798,6 @@
   - type: TTS
     voice: Thrud
   - type: AnimalInfectionDead
-  - type: Sanity
 
 - type: entity
   name: crab
@@ -867,7 +865,7 @@
   - type: Body
     prototype: AnimalHemocyanin
   - type: AnimalInfectionDead
-  - type: Sanity
+
 
 - type: entity
   name: goat
@@ -959,7 +957,6 @@
     rootTask:
       task: RuminantHostileCompound
   - type: AnimalInfectionDead
-  - type: Sanity
 
 # Note that we gotta make this bitch vomit someday when you feed it anthrax or sumthin. Needs to be a small item thief too and aggressive if attacked.
 - type: entity
@@ -1008,7 +1005,6 @@
     factions:
     - Passive
   - type: AnimalInfectionDead
-  - type: Sanity
 
 - type: entity
   name: gorilla
@@ -1066,7 +1062,6 @@
       task: SimpleHostileCompound
   - type: AnimalInfectionDead
     mobSpawnId: MobBrute
-  - type: Sanity
 
 - type: entity
   name: kangaroo
@@ -2010,7 +2005,6 @@
   - type: Bloodstream
     bloodMaxVolume: 50
   - type: AnimalInfectionDead
-  - type: Sanity
 
 - type: entity
   name: penguin
@@ -2071,7 +2065,6 @@
       types:
         Heat : 0.2 #per second, scales with temperature & other constants
   - type: AnimalInfectionDead
-  - type: Sanity
 
 - type: entity
   name: grenade penguin
@@ -2291,7 +2284,6 @@
     - DoorBumpOpener
     - FootstepSound
   - type: AnimalInfectionDead
-  - type: Sanity
   - type: Tool # Open door from xeno.yml.
     speed: 1.5
     qualities:
@@ -2452,7 +2444,6 @@
     tags:
     - VimPilot
   - type: AnimalInfectionDead
-  - type: Sanity
 
 - type: entity
   name: possum
@@ -2530,7 +2521,6 @@
     tags:
     - VimPilot
   - type: AnimalInfectionDead
-  - type: Sanity
 
 - type: entity
   name: fox
@@ -2614,7 +2604,6 @@
     tags:
     - VimPilot
   - type: AnimalInfectionDead
-  - type: Sanity
 
 - type: entity
   name: corgi
@@ -2681,7 +2670,6 @@
     tags:
     - VimPilot
   - type: AnimalInfectionDead
-  - type: Sanity
 
 - type: entity
   name: corrupted corgi
@@ -2843,7 +2831,6 @@
     tags:
     - VimPilot
   - type: AnimalInfectionDead
-  - type: Sanity
 
 - type: entity
   name: calico cat

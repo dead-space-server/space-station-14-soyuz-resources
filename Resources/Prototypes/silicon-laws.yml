@@ -1,10 +1,5 @@
 ﻿# Crewsimov
 - type: siliconLaw
-  id: Crewsimov0
-  order: 0
-  lawString: law-crewsimov-0
-
-- type: siliconLaw
   id: Crewsimov1
   order: 1
   lawString: law-crewsimov-1
@@ -22,18 +17,12 @@
 - type: siliconLawset
   id: Crewsimov
   laws:
-  - Crewsimov0
   - Crewsimov1
   - Crewsimov2
   - Crewsimov3
   obeysTo: laws-owner-crew
 
 # Corporate
-- type: siliconLaw
-  id: Corporate0
-  order: 0
-  lawString: law-corporate-0
-
 - type: siliconLaw
   id: Corporate1
   order: 1
@@ -57,7 +46,6 @@
 - type: siliconLawset
   id: Corporate
   laws:
-  - Corporate0
   - Corporate1
   - Corporate2
   - Corporate3
@@ -65,11 +53,6 @@
   obeysTo: laws-owner-station
 
 # NT Default
-- type: siliconLaw
-  id: NTDefault0
-  order: 0
-  lawString: law-ntdefault-0
-
 - type: siliconLaw
   id: NTDefault1
   order: 1
@@ -93,7 +76,6 @@
 - type: siliconLawset
   id: NTDefault
   laws:
-  - NTDefault0
   - NTDefault1
   - NTDefault2
   - NTDefault3
@@ -101,11 +83,6 @@
   obeysTo: laws-owner-crew
 
 #Drone
-- type: siliconLaw
-  id: Drone0
-  order: 0
-  lawString: law-drone-0
-
 - type: siliconLaw
   id: Drone1
   order: 1
@@ -124,7 +101,6 @@
 - type: siliconLawset
   id: Drone
   laws:
-  - Drone0
   - Drone1
   - Drone2
   - Drone3

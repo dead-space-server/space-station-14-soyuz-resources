@@ -16,3 +16,10 @@
 #     - MobMouse2
 #     playersPerCarrierBlob: 40
 #     maxCarrierBlob: 1
+
+- type: entity
+  id: WageScheduler
+  parent: BaseGameRule
+  noSpawn: true
+  components:
+  - type: WageSchedulerRule
