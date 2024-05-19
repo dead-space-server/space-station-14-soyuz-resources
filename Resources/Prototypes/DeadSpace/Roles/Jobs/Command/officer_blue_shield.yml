@@ -57,6 +57,7 @@
 - type: entity
   parent: BasePDA
   id: BlueShieldOfficerPDA
+  name: КПК оперативника КГБ
   components:
     - type: Pda
       id: ADTBlueShieldOfficerIDCard
@@ -83,8 +84,8 @@
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackBlueShield
-  name: модифицированный рюкзак офицера "Синий Щит"
-  description: Рюкзак офицера "Синий Щит" с функцией РИГ.
+  name: модифицированный рюкзак оперативника КГБ
+  description: Рюкзак оперативника КГБ с функцией РИГ.
   components:
   - type: Sprite
     sprite: DeadSpace/Clothing/Back/blue_shield.rsi
