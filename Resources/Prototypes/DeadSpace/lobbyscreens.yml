@@ -130,9 +130,9 @@
   id: FirstSqaud
   background: /Textures/LobbyScreens/Soyuz/first_squad.png
 
-- type: lobbyBackground
-  id: NewYearUSSPMoth1
-  background: /Textures/LobbyScreens/Soyuz/ds_newyear1_moth.png
+# - type: lobbyBackground
+#   id: NewYearUSSPMoth1
+#   background: /Textures/LobbyScreens/Soyuz/ds_newyear1_moth.png
 
 - type: lobbyBackground
   id: NewYearUSSPMoth2
