@@ -15363,6 +15363,169 @@ entities:
     - type: Transform
       pos: 63.5,-7.5
       parent: 8364
+- proto: BackmenVendingMachineChang
+  entities:
+  - uid: 5238
+    components:
+    - type: Transform
+      pos: 57.5,-37.5
+      parent: 8364
+  - uid: 17860
+    components:
+    - type: Transform
+      pos: 44.5,-31.5
+      parent: 8364
+- proto: BackmenVendingMachineCigs
+  entities:
+  - uid: 940
+    components:
+    - type: Transform
+      pos: -13.5,-12.5
+      parent: 8364
+  - uid: 5231
+    components:
+    - type: Transform
+      pos: 68.5,-47.5
+      parent: 8364
+  - uid: 5594
+    components:
+    - type: Transform
+      pos: 16.5,39.5
+      parent: 8364
+  - uid: 5690
+    components:
+    - type: Transform
+      pos: 5.5,-12.5
+      parent: 8364
+  - uid: 12244
+    components:
+    - type: Transform
+      pos: -38.5,5.5
+      parent: 8364
+  - uid: 12710
+    components:
+    - type: Transform
+      pos: -55.5,-0.5
+      parent: 8364
+  - uid: 14096
+    components:
+    - type: Transform
+      pos: -54.5,-8.5
+      parent: 8364
+  - uid: 14233
+    components:
+    - type: Transform
+      pos: -38.5,-4.5
+      parent: 8364
+  - uid: 14561
+    components:
+    - type: Transform
+      pos: -18.5,-9.5
+      parent: 8364
+  - uid: 21327
+    components:
+    - type: Transform
+      pos: 53.5,-37.5
+      parent: 8364
+- proto: BackmenVendingMachineCoffee
+  entities:
+  - uid: 5232
+    components:
+    - type: Transform
+      pos: 68.5,-43.5
+      parent: 8364
+  - uid: 8465
+    components:
+    - type: Transform
+      pos: 15.5,19.5
+      parent: 8364
+  - uid: 10826
+    components:
+    - type: Transform
+      pos: 55.5,-10.5
+      parent: 8364
+  - uid: 12463
+    components:
+    - type: Transform
+      pos: -74.5,8.5
+      parent: 8364
+  - uid: 17894
+    components:
+    - type: Transform
+      pos: 44.5,-32.5
+      parent: 8364
+  - uid: 18745
+    components:
+    - type: Transform
+      pos: 9.5,-51.5
+      parent: 8364
+  - uid: 21744
+    components:
+    - type: Transform
+      pos: -32.5,-72.5
+      parent: 8364
+- proto: BackmenVendingMachineCola
+  entities:
+  - uid: 6451
+    components:
+    - type: Transform
+      pos: 7.5,0.5
+      parent: 8364
+  - uid: 14564
+    components:
+    - type: Transform
+      pos: -18.5,-10.5
+      parent: 8364
+- proto: BackmenVendingMachineDiscount
+  entities:
+  - uid: 12690
+    components:
+    - type: Transform
+      pos: -71.5,-16.5
+      parent: 8364
+- proto: BackmenVendingMachineDonut
+  entities:
+  - uid: 11797
+    components:
+    - type: Transform
+      pos: 82.5,-1.5
+      parent: 8364
+  - uid: 21790
+    components:
+    - type: Transform
+      pos: 6.5,33.5
+      parent: 8364
+- proto: BackmenVendingMachineHappyHonk
+  entities:
+  - uid: 10646
+    components:
+    - type: Transform
+      pos: 35.5,0.5
+      parent: 8364
+- proto: BackmenVendingMachineSnack
+  entities:
+  - uid: 6450
+    components:
+    - type: Transform
+      pos: 7.5,1.5
+      parent: 8364
+  - uid: 12473
+    components:
+    - type: Transform
+      pos: -73.5,-3.5
+      parent: 8364
+- proto: BackmenVendingMachineSovietSoda
+  entities:
+  - uid: 21642
+    components:
+    - type: Transform
+      pos: 61.5,19.5
+      parent: 8364
+  - uid: 26548
+    components:
+    - type: Transform
+      pos: -24.5,45.5
+      parent: 8364
 - proto: BagpipeInstrument
   entities:
   - uid: 26004
@@ -64145,23 +64308,6 @@ entities:
     - type: Transform
       pos: 14.5,10.5
       parent: 8364
-- proto: chem_master
-  entities:
-  - uid: 18770
-    components:
-    - type: Transform
-      pos: 22.5,-20.5
-      parent: 8364
-  - uid: 18771
-    components:
-    - type: Transform
-      pos: 22.5,-16.5
-      parent: 8364
-  - uid: 18775
-    components:
-    - type: Transform
-      pos: 18.5,-16.5
-      parent: 8364
 - proto: ChemDispenser
   entities:
   - uid: 18610
@@ -64185,6 +64331,23 @@ entities:
     components:
     - type: Transform
       pos: 18.5,-17.5
+      parent: 8364
+- proto: ChemMaster
+  entities:
+  - uid: 18770
+    components:
+    - type: Transform
+      pos: 22.5,-20.5
+      parent: 8364
+  - uid: 18771
+    components:
+    - type: Transform
+      pos: 22.5,-16.5
+      parent: 8364
+  - uid: 18775
+    components:
+    - type: Transform
+      pos: 18.5,-16.5
       parent: 8364
 - proto: ChessBoard
   entities:
@@ -142806,7 +142969,7 @@ entities:
     - type: Transform
       pos: 10.464365,-22.554323
       parent: 8364
-- proto: soda_dispenser
+- proto: SodaDispenser
   entities:
   - uid: 7256
     components:
@@ -150964,18 +151127,6 @@ entities:
     - type: Transform
       pos: -8.5,-21.5
       parent: 8364
-- proto: VendingMachineChang
-  entities:
-  - uid: 5238
-    components:
-    - type: Transform
-      pos: 57.5,-37.5
-      parent: 8364
-  - uid: 17860
-    components:
-    - type: Transform
-      pos: 44.5,-31.5
-      parent: 8364
 - proto: VendingMachineChapel
   entities:
   - uid: 11147
@@ -151011,58 +151162,6 @@ entities:
     - type: Transform
       pos: 22.5,-21.5
       parent: 8364
-- proto: VendingMachineCigs
-  entities:
-  - uid: 940
-    components:
-    - type: Transform
-      pos: -13.5,-12.5
-      parent: 8364
-  - uid: 5231
-    components:
-    - type: Transform
-      pos: 68.5,-47.5
-      parent: 8364
-  - uid: 5594
-    components:
-    - type: Transform
-      pos: 16.5,39.5
-      parent: 8364
-  - uid: 5690
-    components:
-    - type: Transform
-      pos: 5.5,-12.5
-      parent: 8364
-  - uid: 12244
-    components:
-    - type: Transform
-      pos: -38.5,5.5
-      parent: 8364
-  - uid: 12710
-    components:
-    - type: Transform
-      pos: -55.5,-0.5
-      parent: 8364
-  - uid: 14096
-    components:
-    - type: Transform
-      pos: -54.5,-8.5
-      parent: 8364
-  - uid: 14233
-    components:
-    - type: Transform
-      pos: -38.5,-4.5
-      parent: 8364
-  - uid: 14561
-    components:
-    - type: Transform
-      pos: -18.5,-9.5
-      parent: 8364
-  - uid: 21327
-    components:
-    - type: Transform
-      pos: 53.5,-37.5
-      parent: 8364
 - proto: VendingMachineClothing
   entities:
   - uid: 6924
@@ -151074,55 +151173,6 @@ entities:
     components:
     - type: Transform
       pos: -39.5,-4.5
-      parent: 8364
-- proto: VendingMachineCoffee
-  entities:
-  - uid: 5232
-    components:
-    - type: Transform
-      pos: 68.5,-43.5
-      parent: 8364
-  - uid: 8465
-    components:
-    - type: Transform
-      pos: 15.5,19.5
-      parent: 8364
-  - uid: 10826
-    components:
-    - type: Transform
-      pos: 55.5,-10.5
-      parent: 8364
-  - uid: 12463
-    components:
-    - type: Transform
-      pos: -74.5,8.5
-      parent: 8364
-  - uid: 17894
-    components:
-    - type: Transform
-      pos: 44.5,-32.5
-      parent: 8364
-  - uid: 18745
-    components:
-    - type: Transform
-      pos: 9.5,-51.5
-      parent: 8364
-  - uid: 21744
-    components:
-    - type: Transform
-      pos: -32.5,-72.5
-      parent: 8364
-- proto: VendingMachineCola
-  entities:
-  - uid: 6451
-    components:
-    - type: Transform
-      pos: 7.5,0.5
-      parent: 8364
-  - uid: 14564
-    components:
-    - type: Transform
-      pos: -18.5,-10.5
       parent: 8364
 - proto: VendingMachineCondiments
   entities:
@@ -151152,25 +151202,6 @@ entities:
     - type: Transform
       pos: 35.5,-4.5
       parent: 8364
-- proto: VendingMachineDiscount
-  entities:
-  - uid: 12690
-    components:
-    - type: Transform
-      pos: -71.5,-16.5
-      parent: 8364
-- proto: VendingMachineDonut
-  entities:
-  - uid: 11797
-    components:
-    - type: Transform
-      pos: 82.5,-1.5
-      parent: 8364
-  - uid: 21790
-    components:
-    - type: Transform
-      pos: 6.5,33.5
-      parent: 8364
 - proto: VendingMachineEngiDrobe
   entities:
   - uid: 9189
@@ -151198,13 +151229,6 @@ entities:
     components:
     - type: Transform
       pos: 44.5,-22.5
-      parent: 8364
-- proto: VendingMachineHappyHonk
-  entities:
-  - uid: 10646
-    components:
-    - type: Transform
-      pos: 35.5,0.5
       parent: 8364
 - proto: VendingMachineHydrobe
   entities:
@@ -151328,30 +151352,6 @@ entities:
     components:
     - type: Transform
       pos: 4.5,51.5
-      parent: 8364
-- proto: VendingMachineSnack
-  entities:
-  - uid: 6450
-    components:
-    - type: Transform
-      pos: 7.5,1.5
-      parent: 8364
-  - uid: 12473
-    components:
-    - type: Transform
-      pos: -73.5,-3.5
-      parent: 8364
-- proto: VendingMachineSovietSoda
-  entities:
-  - uid: 21642
-    components:
-    - type: Transform
-      pos: 61.5,19.5
-      parent: 8364
-  - uid: 26548
-    components:
-    - type: Transform
-      pos: -24.5,45.5
       parent: 8364
 - proto: VendingMachineSustenance
   entities:

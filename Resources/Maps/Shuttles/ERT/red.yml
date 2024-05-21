@@ -2396,6 +2396,60 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -18.5,-6.5
       parent: 1
+- proto: BackmenVendingMachineCoffee
+  entities:
+  - uid: 28
+    components:
+    - type: Transform
+      pos: -1.5,-4.5
+      parent: 1
+    - type: VendingMachine
+      actionEntity: 29
+    - type: Actions
+      actions:
+      - 29
+    - type: ActionsContainer
+    - type: ContainerContainer
+      containers:
+        actions: !type:Container
+          ents:
+          - 29
+- proto: BackmenVendingMachineColaRed
+  entities:
+  - uid: 40
+    components:
+    - type: Transform
+      pos: 15.5,-7.5
+      parent: 1
+    - type: VendingMachine
+      actionEntity: 41
+    - type: Actions
+      actions:
+      - 41
+    - type: ActionsContainer
+    - type: ContainerContainer
+      containers:
+        actions: !type:Container
+          ents:
+          - 41
+- proto: BackmenVendingMachineSnack
+  entities:
+  - uid: 38
+    components:
+    - type: Transform
+      pos: -14.5,-7.5
+      parent: 1
+    - type: VendingMachine
+      actionEntity: 39
+    - type: Actions
+      actions:
+      - 39
+    - type: ActionsContainer
+    - type: ContainerContainer
+      containers:
+        actions: !type:Container
+          ents:
+          - 39
 - proto: BannerEngineering
   entities:
   - uid: 102
@@ -5043,37 +5097,6 @@ entities:
     - type: Transform
       pos: 15.5,-4.5
       parent: 1
-- proto: chem_master
-  entities:
-  - uid: 110
-    components:
-    - type: Transform
-      pos: -13.5,-11.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        beakerSlot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        outputSlot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        machine_board: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 115
-        machine_parts: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 114
-          - 116
-          - 113
-          - 111
-          - 112
 - proto: ChemBag
   entities:
   - uid: 163
@@ -5213,6 +5236,37 @@ entities:
           - 643
           - 644
           - 646
+- proto: ChemMaster
+  entities:
+  - uid: 110
+    components:
+    - type: Transform
+      pos: -13.5,-11.5
+      parent: 1
+    - type: ContainerContainer
+      containers:
+        beakerSlot: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+        outputSlot: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+        machine_board: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 115
+        machine_parts: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 114
+          - 116
+          - 113
+          - 111
+          - 112
 - proto: ChemMasterMachineCircuitboard
   entities:
   - uid: 115
@@ -12505,7 +12559,7 @@ entities:
       parent: 654
     - type: Physics
       canCollide: False
-- proto: soda_dispenser
+- proto: SodaDispenser
   entities:
   - uid: 181
     components:
@@ -13784,42 +13838,6 @@ entities:
         actions: !type:Container
           ents:
           - 19
-- proto: VendingMachineCoffee
-  entities:
-  - uid: 28
-    components:
-    - type: Transform
-      pos: -1.5,-4.5
-      parent: 1
-    - type: VendingMachine
-      actionEntity: 29
-    - type: Actions
-      actions:
-      - 29
-    - type: ActionsContainer
-    - type: ContainerContainer
-      containers:
-        actions: !type:Container
-          ents:
-          - 29
-- proto: VendingMachineColaRed
-  entities:
-  - uid: 40
-    components:
-    - type: Transform
-      pos: 15.5,-7.5
-      parent: 1
-    - type: VendingMachine
-      actionEntity: 41
-    - type: Actions
-      actions:
-      - 41
-    - type: ActionsContainer
-    - type: ContainerContainer
-      containers:
-        actions: !type:Container
-          ents:
-          - 41
 - proto: VendingMachineEngivend
   entities:
   - uid: 32
@@ -13874,24 +13892,6 @@ entities:
         actions: !type:Container
           ents:
           - 35
-- proto: VendingMachineSnack
-  entities:
-  - uid: 38
-    components:
-    - type: Transform
-      pos: -14.5,-7.5
-      parent: 1
-    - type: VendingMachine
-      actionEntity: 39
-    - type: Actions
-      actions:
-      - 39
-    - type: ActionsContainer
-    - type: ContainerContainer
-      containers:
-        actions: !type:Container
-          ents:
-          - 39
 - proto: VendingMachineSustenance
   entities:
   - uid: 36

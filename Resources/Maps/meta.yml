@@ -61,6 +61,7 @@ entities:
       name: meta_remap - sakuto
     - type: Transform
     - type: Map
+      mapPaused: True
     - type: PhysicsMap
     - type: GridTree
     - type: MovedGrids
@@ -14523,6 +14524,269 @@ entities:
     components:
     - type: Transform
       pos: -16.5,-46.5
+      parent: 2
+- proto: BackmenVendingMachineChang
+  entities:
+  - uid: 22536
+    components:
+    - type: Transform
+      pos: -23.5,-54.5
+      parent: 2
+- proto: BackmenVendingMachineCigs
+  entities:
+  - uid: 22542
+    components:
+    - type: MetaData
+      name: cigarette machine
+    - type: Transform
+      pos: 6.5,-3.5
+      parent: 2
+  - uid: 22543
+    components:
+    - type: MetaData
+      name: cigarette machine
+    - type: Transform
+      pos: -19.5,6.5
+      parent: 2
+  - uid: 22544
+    components:
+    - type: MetaData
+      name: cigarette machine
+    - type: Transform
+      pos: 1.5,-5.5
+      parent: 2
+  - uid: 22545
+    components:
+    - type: MetaData
+      name: cigarette machine
+    - type: Transform
+      pos: -10.5,-17.5
+      parent: 2
+  - uid: 22546
+    components:
+    - type: MetaData
+      name: cigarette machine
+    - type: Transform
+      pos: 34.5,-7.5
+      parent: 2
+  - uid: 22547
+    components:
+    - type: MetaData
+      name: cigarette machine
+    - type: Transform
+      pos: -17.5,15.5
+      parent: 2
+  - uid: 22548
+    components:
+    - type: MetaData
+      name: cigarette machine
+    - type: Transform
+      pos: 8.5,15.5
+      parent: 2
+  - uid: 22549
+    components:
+    - type: MetaData
+      name: cigarette machine
+    - type: Transform
+      pos: -27.5,23.5
+      parent: 2
+  - uid: 22550
+    components:
+    - type: MetaData
+      name: cigarette machine
+    - type: Transform
+      pos: 12.5,47.5
+      parent: 2
+  - uid: 22551
+    components:
+    - type: MetaData
+      name: cigarette machine
+    - type: Transform
+      pos: -49.5,-31.5
+      parent: 2
+  - uid: 22552
+    components:
+    - type: MetaData
+      name: cigarette machine
+    - type: Transform
+      pos: -40.5,-4.5
+      parent: 2
+  - uid: 22553
+    components:
+    - type: MetaData
+      name: cigarette machine
+    - type: Transform
+      pos: 2.5,-46.5
+      parent: 2
+  - uid: 22554
+    components:
+    - type: MetaData
+      name: cigarette machine
+    - type: Transform
+      pos: 37.5,-18.5
+      parent: 2
+  - uid: 22555
+    components:
+    - type: MetaData
+      name: cigarette machine
+    - type: Transform
+      pos: -31.5,33.5
+      parent: 2
+  - uid: 22556
+    components:
+    - type: Transform
+      pos: 55.5,5.5
+      parent: 2
+  - uid: 22557
+    components:
+    - type: Transform
+      pos: 3.5,49.5
+      parent: 2
+- proto: BackmenVendingMachineCoffee
+  entities:
+  - uid: 22560
+    components:
+    - type: MetaData
+      name: Hot drinks machine
+    - type: Transform
+      pos: -6.5,-5.5
+      parent: 2
+  - uid: 22561
+    components:
+    - type: MetaData
+      name: Hot drinks machine
+    - type: Transform
+      pos: -18.5,-5.5
+      parent: 2
+  - uid: 22562
+    components:
+    - type: MetaData
+      name: Hot drinks machine
+    - type: Transform
+      pos: -31.5,10.5
+      parent: 2
+  - uid: 22563
+    components:
+    - type: MetaData
+      name: Hot drinks machine
+    - type: Transform
+      pos: 0.5,15.5
+      parent: 2
+  - uid: 22564
+    components:
+    - type: MetaData
+      name: Hot drinks machine
+    - type: Transform
+      pos: 8.5,42.5
+      parent: 2
+  - uid: 22565
+    components:
+    - type: MetaData
+      name: Hot drinks machine
+    - type: Transform
+      pos: -15.5,-53.5
+      parent: 2
+  - uid: 22566
+    components:
+    - type: MetaData
+      name: Hot drinks machine
+    - type: Transform
+      pos: -26.5,-6.5
+      parent: 2
+  - uid: 22567
+    components:
+    - type: MetaData
+      name: Hot drinks machine
+    - type: Transform
+      pos: 17.5,-37.5
+      parent: 2
+  - uid: 22568
+    components:
+    - type: MetaData
+      name: Hot drinks machine
+    - type: Transform
+      pos: -4.5,-55.5
+      parent: 2
+  - uid: 22569
+    components:
+    - type: Transform
+      pos: 46.5,14.5
+      parent: 2
+- proto: BackmenVendingMachineCola
+  entities:
+  - uid: 22570
+    components:
+    - type: Transform
+      pos: -0.5,-1.5
+      parent: 2
+  - uid: 22571
+    components:
+    - type: Transform
+      pos: -17.5,14.5
+      parent: 2
+  - uid: 22572
+    components:
+    - type: Transform
+      pos: -24.5,-54.5
+      parent: 2
+  - uid: 22573
+    components:
+    - type: Transform
+      pos: 2.5,-44.5
+      parent: 2
+- proto: BackmenVendingMachineDiscount
+  entities:
+  - uid: 22578
+    components:
+    - type: Transform
+      pos: -49.5,-30.5
+      parent: 2
+- proto: BackmenVendingMachineDonut
+  entities:
+  - uid: 22579
+    components:
+    - type: MetaData
+      name: Donut
+    - type: Transform
+      pos: 7.5,42.5
+      parent: 2
+  - uid: 22580
+    components:
+    - type: MetaData
+      name: Donut
+    - type: Transform
+      pos: -4.5,-54.5
+      parent: 2
+- proto: BackmenVendingMachineHappyHonk
+  entities:
+  - uid: 22587
+    components:
+    - type: Transform
+      pos: 31.5,-13.5
+      parent: 2
+- proto: BackmenVendingMachineSnack
+  entities:
+  - uid: 22609
+    components:
+    - type: Transform
+      pos: -4.5,-1.5
+      parent: 2
+  - uid: 22610
+    components:
+    - type: Transform
+      pos: -24.5,12.5
+      parent: 2
+  - uid: 22611
+    components:
+    - type: Transform
+      pos: 17.5,-38.5
+      parent: 2
+- proto: BackmenVendingMachineSovietSoda
+  entities:
+  - uid: 22612
+    components:
+    - type: Transform
+      pos: 34.5,-25.5
       parent: 2
 - proto: BananaPhoneInstrument
   entities:
@@ -58390,23 +58654,6 @@ entities:
     - type: Transform
       pos: -14.570036,-28.313492
       parent: 2
-- proto: chem_master
-  entities:
-  - uid: 9490
-    components:
-    - type: Transform
-      pos: -18.5,-22.5
-      parent: 2
-  - uid: 9491
-    components:
-    - type: Transform
-      pos: -14.5,-26.5
-      parent: 2
-  - uid: 9492
-    components:
-    - type: Transform
-      pos: -18.5,-24.5
-      parent: 2
 - proto: ChemistryEmptyBottle01
   entities:
   - uid: 9493
@@ -58435,6 +58682,23 @@ entities:
     components:
     - type: Transform
       pos: -23.5,-25.5
+      parent: 2
+- proto: ChemMaster
+  entities:
+  - uid: 9490
+    components:
+    - type: Transform
+      pos: -18.5,-22.5
+      parent: 2
+  - uid: 9491
+    components:
+    - type: Transform
+      pos: -14.5,-26.5
+      parent: 2
+  - uid: 9492
+    components:
+    - type: Transform
+      pos: -18.5,-24.5
       parent: 2
 - proto: ChessBoard
   entities:
@@ -63334,6 +63598,14 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 19.5,-38.5
+      parent: 2
+- proto: ComputerRoboticsControl
+  entities:
+  - uid: 26102
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 4.5,-30.5
       parent: 2
 - proto: ComputerSalvageExpedition
   entities:
@@ -139105,7 +139377,7 @@ entities:
     - type: Transform
       pos: 7.5,2.5
       parent: 2
-- proto: soda_dispenser
+- proto: SodaDispenser
   entities:
   - uid: 20992
     components:
@@ -148184,13 +148456,6 @@ entities:
     - type: Transform
       pos: -14.5,-0.5
       parent: 2
-- proto: VendingMachineChang
-  entities:
-  - uid: 22536
-    components:
-    - type: Transform
-      pos: -23.5,-54.5
-      parent: 2
 - proto: VendingMachineChapel
   entities:
   - uid: 22537
@@ -148226,116 +148491,6 @@ entities:
     - type: Transform
       pos: -20.5,-22.5
       parent: 2
-- proto: VendingMachineCigs
-  entities:
-  - uid: 22542
-    components:
-    - type: MetaData
-      name: cigarette machine
-    - type: Transform
-      pos: 6.5,-3.5
-      parent: 2
-  - uid: 22543
-    components:
-    - type: MetaData
-      name: cigarette machine
-    - type: Transform
-      pos: -19.5,6.5
-      parent: 2
-  - uid: 22544
-    components:
-    - type: MetaData
-      name: cigarette machine
-    - type: Transform
-      pos: 1.5,-5.5
-      parent: 2
-  - uid: 22545
-    components:
-    - type: MetaData
-      name: cigarette machine
-    - type: Transform
-      pos: -10.5,-17.5
-      parent: 2
-  - uid: 22546
-    components:
-    - type: MetaData
-      name: cigarette machine
-    - type: Transform
-      pos: 34.5,-7.5
-      parent: 2
-  - uid: 22547
-    components:
-    - type: MetaData
-      name: cigarette machine
-    - type: Transform
-      pos: -17.5,15.5
-      parent: 2
-  - uid: 22548
-    components:
-    - type: MetaData
-      name: cigarette machine
-    - type: Transform
-      pos: 8.5,15.5
-      parent: 2
-  - uid: 22549
-    components:
-    - type: MetaData
-      name: cigarette machine
-    - type: Transform
-      pos: -27.5,23.5
-      parent: 2
-  - uid: 22550
-    components:
-    - type: MetaData
-      name: cigarette machine
-    - type: Transform
-      pos: 12.5,47.5
-      parent: 2
-  - uid: 22551
-    components:
-    - type: MetaData
-      name: cigarette machine
-    - type: Transform
-      pos: -49.5,-31.5
-      parent: 2
-  - uid: 22552
-    components:
-    - type: MetaData
-      name: cigarette machine
-    - type: Transform
-      pos: -40.5,-4.5
-      parent: 2
-  - uid: 22553
-    components:
-    - type: MetaData
-      name: cigarette machine
-    - type: Transform
-      pos: 2.5,-46.5
-      parent: 2
-  - uid: 22554
-    components:
-    - type: MetaData
-      name: cigarette machine
-    - type: Transform
-      pos: 37.5,-18.5
-      parent: 2
-  - uid: 22555
-    components:
-    - type: MetaData
-      name: cigarette machine
-    - type: Transform
-      pos: -31.5,33.5
-      parent: 2
-  - uid: 22556
-    components:
-    - type: Transform
-      pos: 55.5,5.5
-      parent: 2
-  - uid: 22557
-    components:
-    - type: Transform
-      pos: 3.5,49.5
-      parent: 2
 - proto: VendingMachineClothing
   entities:
   - uid: 22558
@@ -148347,98 +148502,6 @@ entities:
     components:
     - type: Transform
       pos: 28.5,25.5
-      parent: 2
-- proto: VendingMachineCoffee
-  entities:
-  - uid: 22560
-    components:
-    - type: MetaData
-      name: Hot drinks machine
-    - type: Transform
-      pos: -6.5,-5.5
-      parent: 2
-  - uid: 22561
-    components:
-    - type: MetaData
-      name: Hot drinks machine
-    - type: Transform
-      pos: -18.5,-5.5
-      parent: 2
-  - uid: 22562
-    components:
-    - type: MetaData
-      name: Hot drinks machine
-    - type: Transform
-      pos: -31.5,10.5
-      parent: 2
-  - uid: 22563
-    components:
-    - type: MetaData
-      name: Hot drinks machine
-    - type: Transform
-      pos: 0.5,15.5
-      parent: 2
-  - uid: 22564
-    components:
-    - type: MetaData
-      name: Hot drinks machine
-    - type: Transform
-      pos: 8.5,42.5
-      parent: 2
-  - uid: 22565
-    components:
-    - type: MetaData
-      name: Hot drinks machine
-    - type: Transform
-      pos: -15.5,-53.5
-      parent: 2
-  - uid: 22566
-    components:
-    - type: MetaData
-      name: Hot drinks machine
-    - type: Transform
-      pos: -26.5,-6.5
-      parent: 2
-  - uid: 22567
-    components:
-    - type: MetaData
-      name: Hot drinks machine
-    - type: Transform
-      pos: 17.5,-37.5
-      parent: 2
-  - uid: 22568
-    components:
-    - type: MetaData
-      name: Hot drinks machine
-    - type: Transform
-      pos: -4.5,-55.5
-      parent: 2
-  - uid: 22569
-    components:
-    - type: Transform
-      pos: 46.5,14.5
-      parent: 2
-- proto: VendingMachineCola
-  entities:
-  - uid: 22570
-    components:
-    - type: Transform
-      pos: -0.5,-1.5
-      parent: 2
-  - uid: 22571
-    components:
-    - type: Transform
-      pos: -17.5,14.5
-      parent: 2
-  - uid: 22572
-    components:
-    - type: Transform
-      pos: -24.5,-54.5
-      parent: 2
-  - uid: 22573
-    components:
-    - type: Transform
-      pos: 2.5,-44.5
       parent: 2
 - proto: VendingMachineCondiments
   entities:
@@ -148469,29 +148532,6 @@ entities:
       name: Dinnerware
     - type: Transform
       pos: 26.5,-12.5
-      parent: 2
-- proto: VendingMachineDiscount
-  entities:
-  - uid: 22578
-    components:
-    - type: Transform
-      pos: -49.5,-30.5
-      parent: 2
-- proto: VendingMachineDonut
-  entities:
-  - uid: 22579
-    components:
-    - type: MetaData
-      name: Donut
-    - type: Transform
-      pos: 7.5,42.5
-      parent: 2
-  - uid: 22580
-    components:
-    - type: MetaData
-      name: Donut
-    - type: Transform
-      pos: -4.5,-54.5
       parent: 2
 - proto: VendingMachineEngiDrobe
   entities:
@@ -148530,13 +148570,6 @@ entities:
     components:
     - type: Transform
       pos: 4.5,-55.5
-      parent: 2
-- proto: VendingMachineHappyHonk
-  entities:
-  - uid: 22587
-    components:
-    - type: Transform
-      pos: 31.5,-13.5
       parent: 2
 - proto: VendingMachineHydrobe
   entities:
@@ -148670,30 +148703,6 @@ entities:
     components:
     - type: Transform
       pos: -2.5,55.5
-      parent: 2
-- proto: VendingMachineSnack
-  entities:
-  - uid: 22609
-    components:
-    - type: Transform
-      pos: -4.5,-1.5
-      parent: 2
-  - uid: 22610
-    components:
-    - type: Transform
-      pos: -24.5,12.5
-      parent: 2
-  - uid: 22611
-    components:
-    - type: Transform
-      pos: 17.5,-38.5
-      parent: 2
-- proto: VendingMachineSovietSoda
-  entities:
-  - uid: 22612
-    components:
-    - type: Transform
-      pos: 34.5,-25.5
       parent: 2
 - proto: VendingMachineSustenance
   entities:
@@ -166874,11 +166883,6 @@ entities:
     - type: Transform
       pos: -46.5,-40.5
       parent: 2
-  - uid: 26102
-    components:
-    - type: Transform
-      pos: 4.5,-30.5
-      parent: 2
   - uid: 26103
     components:
     - type: Transform
@@ -166918,6 +166922,11 @@ entities:
     components:
     - type: Transform
       pos: 62.5,7.5
+      parent: 2
+  - uid: 27188
+    components:
+    - type: Transform
+      pos: 4.5,-28.5
       parent: 2
 - proto: WetFloorSign
   entities:

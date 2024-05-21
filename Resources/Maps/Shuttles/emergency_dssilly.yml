@@ -435,6 +435,20 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 3.5,8.5
       parent: 1
+- proto: BackmenVendingMachineCola
+  entities:
+  - uid: 137
+    components:
+    - type: Transform
+      pos: -0.5,-2.5
+      parent: 1
+- proto: BackmenVendingMachineSnackBlue
+  entities:
+  - uid: 138
+    components:
+    - type: Transform
+      pos: -0.5,-1.5
+      parent: 1
 - proto: BlastDoorOpen
   entities:
   - uid: 8
@@ -1648,7 +1662,7 @@ entities:
     - type: Transform
       pos: -2.2284307,5.7439976
       parent: 1
-- proto: soda_dispenser
+- proto: SodaDispenser
   entities:
   - uid: 119
     components:
@@ -1794,20 +1808,6 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -0.5,-8.5
-      parent: 1
-- proto: VendingMachineCola
-  entities:
-  - uid: 137
-    components:
-    - type: Transform
-      pos: -0.5,-2.5
-      parent: 1
-- proto: VendingMachineSnackBlue
-  entities:
-  - uid: 138
-    components:
-    - type: Transform
-      pos: -0.5,-1.5
       parent: 1
 - proto: VendingMachineWallMedical
   entities:

@@ -895,6 +895,13 @@ entities:
     - type: Transform
       pos: 2.5,-14.5
       parent: 2
+- proto: BackmenVendingMachineSovietSoda
+  entities:
+  - uid: 239
+    components:
+    - type: Transform
+      pos: 10.5,4.5
+      parent: 2
 - proto: BoxFolderClipboard
   entities:
   - uid: 779
@@ -3884,13 +3891,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 6.5,-5.5
-      parent: 2
-- proto: VendingMachineSovietSoda
-  entities:
-  - uid: 239
-    components:
-    - type: Transform
-      pos: 10.5,4.5
       parent: 2
 - proto: WallReinforced
   entities:

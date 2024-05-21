@@ -8725,7 +8725,7 @@ entities:
       parent: 448
     - type: Physics
       canCollide: False
-- proto: soda_dispenser
+- proto: SodaDispenser
   entities:
   - uid: 82
     components:

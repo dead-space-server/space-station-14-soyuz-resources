@@ -69,6 +69,7 @@ entities:
       name: Bagel station
     - type: Transform
     - type: Map
+      mapPaused: True
     - type: PhysicsMap
     - type: GridTree
     - type: MovedGrids
@@ -171,7 +172,7 @@ entities:
           version: 6
         3,-2:
           ind: 3,-2
-          tiles: cwAAAAACcwAAAAADcwAAAAAAfAAAAAABcwAAAAABggAAAAAAAAAAAAAAAAAAAAAAggAAAAAAbwAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAgAAAAAAAcwAAAAACcwAAAAACcwAAAAAAfAAAAAABcwAAAAADggAAAAAAAAAAAAAAAAAAAAAAggAAAAAAbwAAAAAAggAAAAAAggAAAAAAfQAAAAABggAAAAAAggAAAAAAgAAAAAAAeAAAAAABeAAAAAACcwAAAAABfAAAAAACcwAAAAACggAAAAAAAAAAAAAAAAAAAAAAggAAAAAAbwAAAAAAggAAAAAAggAAAAAAggAAAAAAfQAAAAAAggAAAAAAgAAAAAAAeAAAAAAAeAAAAAACcwAAAAAAfAAAAAAAcwAAAAAAggAAAAAAgAAAAAAAAAAAAAAAggAAAAAAbwAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAgAAAAAAAeAAAAAACeAAAAAACcwAAAAAAfAAAAAAAcwAAAAAAggAAAAAAAAAAAAAAAAAAAAAAggAAAAAAbwAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAgAAAAAAAcwAAAAAAcwAAAAAAcwAAAAADfAAAAAADcwAAAAADggAAAAAAAAAAAAAAAAAAAAAAggAAAAAAbwAAAAAAggAAAAAAggAAAAAAfQAAAAABggAAAAAAggAAAAAAgAAAAAAAcwAAAAADcwAAAAABcwAAAAAAcwAAAAAAcwAAAAADggAAAAAAgAAAAAAAgAAAAAAAggAAAAAAbwAAAAAAggAAAAAAggAAAAAAfQAAAAACfQAAAAACggAAAAAAgAAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAgAAAAAAAKQAAAAABKQAAAAAAKQAAAAABKQAAAAAAggAAAAAAbwAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAgAAAAAAAggAAAAAAAAAAAAAAgAAAAAAAKQAAAAADKQAAAAABKQAAAAADKQAAAAAAggAAAAAAbwAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAgAAAAAAAggAAAAAAAAAAAAAAgAAAAAAAKQAAAAABKQAAAAABKQAAAAACKQAAAAADggAAAAAAbwAAAAAAggAAAAAAbwAAAAAAbwAAAAAAbwAAAAAAbwAAAAAAggAAAAAAgAAAAAAAggAAAAAAAAAAAAAAgAAAAAAAYAAAAAABUAAAAAABYAAAAAACYAAAAAAAggAAAAAAbwAAAAAAggAAAAAAggAAAAAAbwAAAAAAggAAAAAAggAAAAAAggAAAAAAgAAAAAAAggAAAAAAAAAAAAAAgAAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAbwAAAAAAggAAAAAAggAAAAAAggAAAAAAgAAAAAAAggAAAAAAAAAAAAAAgAAAAAAAcwAAAAACcwAAAAADggAAAAAAgAAAAAAAgAAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAfAAAAAABcwAAAAABggAAAAAAAAAAAAAAgAAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAcwAAAAACcwAAAAAAggAAAAAAAAAAAAAAgAAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA
+          tiles: cwAAAAACcwAAAAADcwAAAAAAfAAAAAABcwAAAAABggAAAAAAgAAAAAAAAAAAAAAAggAAAAAAbwAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAgAAAAAAAcwAAAAACcwAAAAACcwAAAAAAfAAAAAABcwAAAAADggAAAAAAAAAAAAAAAAAAAAAAggAAAAAAbwAAAAAAggAAAAAAggAAAAAAfQAAAAABggAAAAAAggAAAAAAgAAAAAAAeAAAAAABeAAAAAACcwAAAAABfAAAAAACcwAAAAACggAAAAAAAAAAAAAAAAAAAAAAggAAAAAAbwAAAAAAggAAAAAAggAAAAAAggAAAAAAfQAAAAAAggAAAAAAgAAAAAAAeAAAAAAAeAAAAAACcwAAAAAAfAAAAAAAcwAAAAAAggAAAAAAgAAAAAAAAAAAAAAAggAAAAAAbwAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAgAAAAAAAeAAAAAACeAAAAAACcwAAAAAAfAAAAAAAcwAAAAAAggAAAAAAAAAAAAAAAAAAAAAAggAAAAAAbwAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAgAAAAAAAcwAAAAAAcwAAAAAAcwAAAAADfAAAAAADcwAAAAADggAAAAAAAAAAAAAAAAAAAAAAggAAAAAAbwAAAAAAggAAAAAAggAAAAAAfQAAAAABggAAAAAAggAAAAAAgAAAAAAAcwAAAAADcwAAAAABcwAAAAAAcwAAAAAAcwAAAAADggAAAAAAgAAAAAAAgAAAAAAAggAAAAAAbwAAAAAAggAAAAAAggAAAAAAfQAAAAACfQAAAAACggAAAAAAgAAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAgAAAAAAAKQAAAAABKQAAAAAAKQAAAAABKQAAAAAAggAAAAAAbwAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAgAAAAAAAggAAAAAAAAAAAAAAgAAAAAAAKQAAAAADKQAAAAABKQAAAAADKQAAAAAAggAAAAAAbwAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAgAAAAAAAggAAAAAAAAAAAAAAgAAAAAAAKQAAAAABKQAAAAABKQAAAAACKQAAAAADggAAAAAAbwAAAAAAggAAAAAAbwAAAAAAbwAAAAAAbwAAAAAAbwAAAAAAggAAAAAAgAAAAAAAggAAAAAAAAAAAAAAgAAAAAAAYAAAAAABUAAAAAABYAAAAAACYAAAAAAAggAAAAAAbwAAAAAAggAAAAAAggAAAAAAbwAAAAAAggAAAAAAggAAAAAAggAAAAAAgAAAAAAAggAAAAAAAAAAAAAAgAAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAbwAAAAAAggAAAAAAggAAAAAAggAAAAAAgAAAAAAAggAAAAAAAAAAAAAAgAAAAAAAcwAAAAACcwAAAAADggAAAAAAgAAAAAAAgAAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAfAAAAAABcwAAAAABggAAAAAAAAAAAAAAgAAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAcwAAAAACcwAAAAAAggAAAAAAAAAAAAAAgAAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAggAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA
           version: 6
         2,-1:
           ind: 2,-1
@@ -8889,8 +8890,8 @@ entities:
           id: docking2642373
           localAnchorB: 0.49999997,-1
           localAnchorA: -81.5,-6
-          damping: 605.1709
-          stiffness: 5432.002
+          damping: 605.1711
+          stiffness: 5432.003
   - uid: 24099
     components:
     - type: MetaData
@@ -10468,11 +10469,6 @@ entities:
     - type: Transform
       pos: -19.5,30.5
       parent: 2
-  - uid: 95
-    components:
-    - type: Transform
-      pos: -119.5,19.5
-      parent: 2
   - uid: 96
     components:
     - type: Transform
@@ -10692,12 +10688,6 @@ entities:
       name: Brig
     - type: Transform
       pos: -25.5,-17.5
-      parent: 2
-  - uid: 24455
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -75.5,-8.5
       parent: 2
 - proto: AirlockCaptainGlassLocked
   entities:
@@ -13187,6 +13177,18 @@ entities:
       rot: 3.141592653589793 rad
       pos: -32.5,0.5
       parent: 2
+  - uid: 9362
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -75.5,-8.5
+      parent: 2
+  - uid: 9363
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -79.5,-8.5
+      parent: 2
   - uid: 24456
     components:
     - type: Transform
@@ -13210,12 +13212,6 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -62.5,-5.5
-      parent: 2
-  - uid: 24502
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -79.5,-8.5
       parent: 2
 - proto: AirlockServiceLocked
   entities:
@@ -14244,6 +14240,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 50.5,-11.5
       parent: 2
+    - type: Apc
+      hasAccess: True
+      lastExternalState: Good
+      lastChargeState: Full
   - uid: 611
     components:
     - type: MetaData
@@ -15075,6 +15075,194 @@ entities:
     components:
     - type: Transform
       pos: 37.5,-10.5
+      parent: 2
+- proto: BackmenVendingMachineChang
+  entities:
+  - uid: 20293
+    components:
+    - type: Transform
+      pos: -17.5,-53.5
+      parent: 2
+  - uid: 20294
+    components:
+    - type: Transform
+      pos: 4.5,11.5
+      parent: 2
+  - uid: 20295
+    components:
+    - type: Transform
+      pos: 19.5,-15.5
+      parent: 2
+- proto: BackmenVendingMachineCigs
+  entities:
+  - uid: 20301
+    components:
+    - type: MetaData
+      name: cigarette machine
+    - type: Transform
+      pos: -61.5,-11.5
+      parent: 2
+  - uid: 20302
+    components:
+    - type: Transform
+      pos: -46.5,-21.5
+      parent: 2
+  - uid: 20303
+    components:
+    - type: MetaData
+      name: cigarette machine
+    - type: Transform
+      pos: 29.5,-22.5
+      parent: 2
+  - uid: 20304
+    components:
+    - type: MetaData
+      name: cigarette machine
+    - type: Transform
+      pos: 18.5,-26.5
+      parent: 2
+  - uid: 20305
+    components:
+    - type: MetaData
+      name: cigarette machine
+    - type: Transform
+      pos: -24.5,-13.5
+      parent: 2
+  - uid: 20306
+    components:
+    - type: MetaData
+      name: cigarette machine
+    - type: Transform
+      pos: 13.5,11.5
+      parent: 2
+  - uid: 20307
+    components:
+    - type: MetaData
+      name: cigarette machine
+    - type: Transform
+      pos: -61.5,25.5
+      parent: 2
+  - uid: 20308
+    components:
+    - type: MetaData
+      name: cigarette machine
+    - type: Transform
+      pos: -15.5,-48.5
+      parent: 2
+  - uid: 20309
+    components:
+    - type: MetaData
+      name: cigarette machine
+    - type: Transform
+      pos: -27.5,9.5
+      parent: 2
+  - uid: 20310
+    components:
+    - type: MetaData
+      name: cigarette machine
+    - type: Transform
+      pos: 30.5,26.5
+      parent: 2
+  - uid: 20311
+    components:
+    - type: MetaData
+      name: cigarette machine
+    - type: Transform
+      pos: 26.5,-7.5
+      parent: 2
+- proto: BackmenVendingMachineCoffee
+  entities:
+  - uid: 20315
+    components:
+    - type: MetaData
+      name: Hot drinks machine
+    - type: Transform
+      pos: 14.5,-11.5
+      parent: 2
+  - uid: 20316
+    components:
+    - type: MetaData
+      name: Hot drinks machine
+    - type: Transform
+      pos: -3.5,11.5
+      parent: 2
+  - uid: 20317
+    components:
+    - type: MetaData
+      name: Hot drinks machine
+    - type: Transform
+      pos: 2.5,-44.5
+      parent: 2
+  - uid: 20318
+    components:
+    - type: Transform
+      pos: -40.5,-21.5
+      parent: 2
+  - uid: 20319
+    components:
+    - type: MetaData
+      name: Hot drinks machine
+    - type: Transform
+      pos: 56.5,-10.5
+      parent: 2
+  - uid: 20320
+    components:
+    - type: MetaData
+      name: Hot drinks machine
+    - type: Transform
+      pos: -47.5,-8.5
+      parent: 2
+  - uid: 20321
+    components:
+    - type: MetaData
+      name: Hot drinks machine
+    - type: Transform
+      pos: 3.5,21.5
+      parent: 2
+  - uid: 20322
+    components:
+    - type: Transform
+      pos: 14.5,-26.5
+      parent: 2
+- proto: BackmenVendingMachineDiscount
+  entities:
+  - uid: 20327
+    components:
+    - type: Transform
+      pos: 21.5,-40.5
+      parent: 2
+- proto: BackmenVendingMachineDonut
+  entities:
+  - uid: 20328
+    components:
+    - type: Transform
+      pos: -29.5,-18.5
+      parent: 2
+- proto: BackmenVendingMachineHappyHonk
+  entities:
+  - uid: 20333
+    components:
+    - type: Transform
+      pos: 25.5,-40.5
+      parent: 2
+- proto: BackmenVendingMachineSnack
+  entities:
+  - uid: 20352
+    components:
+    - type: Transform
+      pos: -57.5,25.5
+      parent: 2
+- proto: BackmenVendingMachineSovietSoda
+  entities:
+  - uid: 20353
+    components:
+    - type: Transform
+      pos: 45.5,-36.5
+      parent: 2
+  - uid: 20354
+    components:
+    - type: Transform
+      pos: -40.5,16.5
       parent: 2
 - proto: BananaPhoneInstrument
   entities:
@@ -41456,6 +41644,11 @@ entities:
     - type: Transform
       pos: -34.5,4.5
       parent: 2
+  - uid: 13808
+    components:
+    - type: Transform
+      pos: -119.5,19.5
+      parent: 2
   - uid: 19527
     components:
     - type: Transform
@@ -56824,7 +57017,14 @@ entities:
     - type: Transform
       pos: 45.485657,-24.447033
       parent: 2
-- proto: chem_master
+- proto: ChemistryHotplate
+  entities:
+  - uid: 8699
+    components:
+    - type: Transform
+      pos: 40.5,-28.5
+      parent: 2
+- proto: ChemMaster
   entities:
   - uid: 8697
     components:
@@ -56835,13 +57035,6 @@ entities:
     components:
     - type: Transform
       pos: 41.5,-29.5
-      parent: 2
-- proto: ChemistryHotplate
-  entities:
-  - uid: 8699
-    components:
-    - type: Transform
-      pos: 40.5,-28.5
       parent: 2
 - proto: ChessBoard
   entities:
@@ -60805,6 +60998,8 @@ entities:
       rot: 3.141592653589793 rad
       pos: -53.5,-6.5
       parent: 2
+- proto: ComputerRoboticsControl
+  entities:
   - uid: 9109
     components:
     - type: Transform
@@ -62884,18 +63079,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 38.5,-26.5
       parent: 2
-  - uid: 9362
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 50.5,-32.5
-      parent: 2
-  - uid: 9363
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 44.5,-32.5
-      parent: 2
   - uid: 9364
     components:
     - type: Transform
@@ -63205,6 +63388,12 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 37.5,4.5
       parent: 2
+  - uid: 9708
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 44.5,-26.5
+      parent: 2
 - proto: DisposalJunction
   entities:
   - uid: 9418
@@ -63275,12 +63464,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 33.5,-23.5
-      parent: 2
-  - uid: 9430
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 44.5,-26.5
       parent: 2
   - uid: 9431
     components:
@@ -64818,31 +65001,19 @@ entities:
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
-      pos: 48.5,-32.5
-      parent: 2
-  - uid: 9702
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 49.5,-32.5
+      pos: 53.5,-31.5
       parent: 2
   - uid: 9703
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
-      pos: 46.5,-32.5
+      pos: 51.5,-31.5
       parent: 2
   - uid: 9704
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
-      pos: 47.5,-32.5
-      parent: 2
-  - uid: 9705
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 44.5,-31.5
+      pos: 52.5,-31.5
       parent: 2
   - uid: 9706
     components:
@@ -64856,41 +65027,11 @@ entities:
       rot: 3.141592653589793 rad
       pos: 44.5,-25.5
       parent: 2
-  - uid: 9708
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 44.5,-27.5
-      parent: 2
-  - uid: 9709
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 44.5,-28.5
-      parent: 2
-  - uid: 9710
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 44.5,-29.5
-      parent: 2
-  - uid: 9711
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 44.5,-30.5
-      parent: 2
   - uid: 9712
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -38.5,9.5
-      parent: 2
-  - uid: 9713
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 45.5,-32.5
       parent: 2
   - uid: 9714
     components:
@@ -66853,6 +66994,24 @@ entities:
       parent: 2
 - proto: DisposalTrunk
   entities:
+  - uid: 9430
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 45.5,-26.5
+      parent: 2
+  - uid: 9702
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 54.5,-31.5
+      parent: 2
+  - uid: 9705
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 50.5,-31.5
+      parent: 2
   - uid: 10053
     components:
     - type: Transform
@@ -66924,17 +67083,6 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 37.5,-26.5
-      parent: 2
-  - uid: 10066
-    components:
-    - type: Transform
-      pos: 50.5,-31.5
-      parent: 2
-  - uid: 10067
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 45.5,-26.5
       parent: 2
   - uid: 10068
     components:
@@ -74460,10 +74608,8 @@ entities:
     components:
     - type: Transform
       rot: 3.141592653589793 rad
-      pos: -119.5,17.5
+      pos: -118.5,17.5
       parent: 2
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
   - uid: 11202
     components:
     - type: Transform
@@ -94747,14 +94893,6 @@ entities:
       parent: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
-  - uid: 13808
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -118.5,17.5
-      parent: 2
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
   - uid: 13809
     components:
     - type: Transform
@@ -95035,11 +95173,6 @@ entities:
     - type: Transform
       pos: -118.5,19.5
       parent: 2
-  - uid: 13846
-    components:
-    - type: Transform
-      pos: -119.5,19.5
-      parent: 2
   - uid: 13847
     components:
     - type: Transform
@@ -95252,13 +95385,6 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -20.5,30.5
-      parent: 2
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 13875
-    components:
-    - type: Transform
-      pos: -119.5,18.5
       parent: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
@@ -98474,6 +98600,16 @@ entities:
       parent: 2
 - proto: GeneratorBasic15kW
   entities:
+  - uid: 95
+    components:
+    - type: Transform
+      pos: -119.5,19.5
+      parent: 2
+  - uid: 13846
+    components:
+    - type: Transform
+      pos: -120.5,18.5
+      parent: 2
   - uid: 14282
     components:
     - type: Transform
@@ -100987,11 +101123,6 @@ entities:
     components:
     - type: Transform
       pos: 52.5,-55.5
-      parent: 2
-  - uid: 14768
-    components:
-    - type: Transform
-      pos: 53.5,-55.5
       parent: 2
   - uid: 14769
     components:
@@ -105902,6 +106033,12 @@ entities:
       parent: 24644
 - proto: GrilleBroken
   entities:
+  - uid: 9709
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 53.5,-55.5
+      parent: 2
   - uid: 15718
     components:
     - type: Transform
@@ -106094,12 +106231,6 @@ entities:
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
-      pos: 54.5,-55.5
-      parent: 2
-  - uid: 15752
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
       pos: 54.5,-55.5
       parent: 2
   - uid: 15753
@@ -127542,10 +127673,11 @@ entities:
       parent: 2
 - proto: SignRedFive
   entities:
-  - uid: 18792
+  - uid: 9711
     components:
     - type: Transform
-      pos: -56.5,25.5
+      rot: 3.141592653589793 rad
+      pos: -56.5,21.5
       parent: 2
   - uid: 18793
     components:
@@ -127554,6 +127686,12 @@ entities:
       parent: 2
 - proto: SignRedFour
   entities:
+  - uid: 9710
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -56.5,25.5
+      parent: 2
   - uid: 18794
     components:
     - type: Transform
@@ -127571,13 +127709,6 @@ entities:
     components:
     - type: Transform
       pos: -19.5,-8.5
-      parent: 2
-- proto: SignRedSix
-  entities:
-  - uid: 18797
-    components:
-    - type: Transform
-      pos: -56.5,21.5
       parent: 2
 - proto: SignRedThree
   entities:
@@ -128170,7 +128301,7 @@ entities:
     - type: Transform
       pos: -2.5112958,-11.444662
       parent: 2
-- proto: soda_dispenser
+- proto: SodaDispenser
   entities:
   - uid: 18892
     components:
@@ -131950,7 +132081,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: AI Upload
+      id: Консоли спутника ИИ
   - uid: 19564
     components:
     - type: Transform
@@ -132037,7 +132168,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: AI Core Entrance Ext
+      id: Внешний проход в спутник ИИ
   - uid: 19572
     components:
     - type: Transform
@@ -132048,7 +132179,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: AI Core Foyer
+      id: Вход в спутник ИИ
   - uid: 19573
     components:
     - type: Transform
@@ -132059,7 +132190,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: AI Core NE Walkway
+      id: Северо-восточная сторона спутника ИИ
   - uid: 19574
     components:
     - type: Transform
@@ -132069,7 +132200,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: AI Core N Walkway
+      id: Северная сторона спутника ИИ
   - uid: 19575
     components:
     - type: Transform
@@ -132080,7 +132211,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: AI Core NW Walkway
+      id: Северо-западная сторона спутника ИИ
   - uid: 19576
     components:
     - type: Transform
@@ -132091,7 +132222,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: AI Core W Walkway
+      id: Западная сторона спутника ИИ
   - uid: 19577
     components:
     - type: Transform
@@ -132102,7 +132233,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: AI Core SW Walkway
+      id: Юго-западная сторона спутника ИИ
   - uid: 19578
     components:
     - type: Transform
@@ -132113,7 +132244,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: AI Core SE Walkway
+      id: Юго-восточная сторона спутника ИИ
   - uid: 19579
     components:
     - type: Transform
@@ -132124,7 +132255,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: 'AI Core Maintenance '
+      id: Энергосистема ядра ИИ
   - uid: 19580
     components:
     - type: Transform
@@ -132135,7 +132266,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: AI Core Central Room
+      id: Центральная комната спутника ИИ
   - uid: 19581
     components:
     - type: Transform
@@ -132145,7 +132276,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: AI Chamber South
+      id: Южная часть комнаты ядра ИИ
   - uid: 19582
     components:
     - type: Transform
@@ -132156,7 +132287,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: AI Chamber North
+      id: Северная часть комнаты ядра ИИ
   - uid: 19583
     components:
     - type: Transform
@@ -132166,7 +132297,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: AI Sat Entrance
+      id: Внешний вход в спутник ИИ
   - uid: 19584
     components:
     - type: Transform
@@ -132177,7 +132308,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: AI Sat Tunnel
+      id: Выход к ИИ
   - uid: 19585
     components:
     - type: Transform
@@ -132211,8 +132342,23 @@ entities:
       - SurveillanceCameraCommand
       nameSet: True
       id: Captain's Bathroom
+  - uid: 23728
+    components:
+    - type: Transform
+      pos: -111.5,2.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Южная сторона спутника ИИ
 - proto: SurveillanceCameraEngineering
   entities:
+  - uid: 18792
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 9.5,21.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Офис старшего инженера
   - uid: 19588
     components:
     - type: Transform
@@ -132255,7 +132401,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: TEG Cooling Loop
+      id: Помещение ТЭГа
   - uid: 19592
     components:
     - type: Transform
@@ -132265,7 +132411,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: TEG Entrance
+      id: Вход в помещение ТЭГ
   - uid: 19593
     components:
     - type: Transform
@@ -132276,7 +132422,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: TEG
+      id: ТЭГ
   - uid: 19594
     components:
     - type: Transform
@@ -132287,7 +132433,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: TEG Hot Loop
+      id: Камеры сгорания ТЭГа
   - uid: 19595
     components:
     - type: Transform
@@ -132309,7 +132455,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: AME Room
+      id: Комната ДАМа
   - uid: 19597
     components:
     - type: Transform
@@ -132331,7 +132477,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: Atmos North
+      id: Северный атмос
   - uid: 19599
     components:
     - type: Transform
@@ -132342,7 +132488,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: Atmos South
+      id: Южный атмос
   - uid: 19600
     components:
     - type: Transform
@@ -132353,7 +132499,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: Atmos Lobby
+      id: Стойка атмоса
   - uid: 19601
     components:
     - type: Transform
@@ -132374,7 +132520,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: Atmos Foyeur
+      id: Раздевалка атмоса
   - uid: 19603
     components:
     - type: Transform
@@ -132385,7 +132531,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: Atmos Storage
+      id: Хранилища атмоса
   - uid: 19604
     components:
     - type: Transform
@@ -132395,7 +132541,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: Atmos Mixer
+      id: Смеситель атмоса
   - uid: 19605
     components:
     - type: Transform
@@ -132451,8 +132597,64 @@ entities:
       - SurveillanceCameraEngineering
       nameSet: True
       id: Engi Main Hall
+  - uid: 22548
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 13.5,19.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Каюта старшего инженера
+  - uid: 23640
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -1.5,25.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: СМЭСы
 - proto: SurveillanceCameraGeneral
   entities:
+  - uid: 9713
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -53.5,21.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Комната дорм 5
+  - uid: 10067
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 7.5,13.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Инструментальная инженерии
+  - uid: 14768
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 17.5,27.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Выход в космос у отбытия
+  - uid: 15752
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -2.5,15.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Раздевалка инженеров
+  - uid: 18797
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -53.5,25.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Комната дорм 4
   - uid: 19610
     components:
     - type: Transform
@@ -132538,7 +132740,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Library
+      id: Библиотека
   - uid: 19618
     components:
     - type: Transform
@@ -132582,7 +132784,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Dorm Room 2
+      id: Комната дорм 1
   - uid: 19622
     components:
     - type: Transform
@@ -132593,7 +132795,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Dorm Room 3
+      id: Комната дорм 2
   - uid: 19623
     components:
     - type: Transform
@@ -132604,7 +132806,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Dorm Room 4
+      id: Комната дорм 3
   - uid: 19624
     components:
     - type: Transform
@@ -132789,7 +132991,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Bar
+      id: Бар
   - uid: 19641
     components:
     - type: Transform
@@ -132845,6 +133047,43 @@ entities:
       - SurveillanceCameraGeneral
       nameSet: True
       id: Main Hall Detective Office
+  - uid: 24021
+    components:
+    - type: Transform
+      pos: -31.5,19.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Капсулы криосна
+  - uid: 24455
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -38.5,20.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Раздевалка дорм
+  - uid: 24836
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 13.5,-33.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Стойка барменов
+  - uid: 24837
+    components:
+    - type: Transform
+      pos: 12.5,-32.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Северная стойка барменов
+  - uid: 24838
+    components:
+    - type: Transform
+      pos: 19.5,-38.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Южная часть бара
 - proto: SurveillanceCameraMedical
   entities:
   - uid: 19646
@@ -132890,7 +133129,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraMedical
       nameSet: True
-      id: Virology
+      id: Вирусология
   - uid: 19650
     components:
     - type: Transform
@@ -132901,7 +133140,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraMedical
       nameSet: True
-      id: Medbay North
+      id: Верхняя часть лобби
   - uid: 19651
     components:
     - type: Transform
@@ -132912,7 +133151,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraMedical
       nameSet: True
-      id: Morgue
+      id: Морг
   - uid: 19652
     components:
     - type: Transform
@@ -132933,7 +133172,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraMedical
       nameSet: True
-      id: Surgery
+      id: Операционная
   - uid: 19654
     components:
     - type: Transform
@@ -132944,7 +133183,71 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraMedical
       nameSet: True
-      id: CMO's Office
+      id: Офис главного врача
+  - uid: 24841
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 41.5,-17.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Общая палата
+  - uid: 24842
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 30.5,-16.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Верхняя палата меда
+  - uid: 24843
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 30.5,-19.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Нижняя палата меда
+  - uid: 24844
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 29.5,-13.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Каюта главного врача
+  - uid: 24845
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 33.5,-9.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Приёмная главного врача
+  - uid: 24846
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 35.5,-17.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Входы в палаты
+  - uid: 24847
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 45.5,-19.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Нижняя часть лобби
+  - uid: 24848
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 47.5,-11.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: раздевалка медицинского персонала
 - proto: SurveillanceCameraRouterCommand
   entities:
   - uid: 19655
@@ -133011,7 +133314,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraScience
       nameSet: True
-      id: Robotics
+      id: Робототехника
   - uid: 19664
     components:
     - type: Transform
@@ -133022,7 +133325,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraScience
       nameSet: True
-      id: Anomaly Lab
+      id: Лаборатория аномалий
   - uid: 19665
     components:
     - type: Transform
@@ -133033,7 +133336,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraScience
       nameSet: True
-      id: Outside RD Office
+      id: Общий коридор НИО
   - uid: 19666
     components:
     - type: Transform
@@ -133043,7 +133346,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraScience
       nameSet: True
-      id: Artifact Lab
+      id: Лаборатория артефактов
   - uid: 19667
     components:
     - type: Transform
@@ -133054,7 +133357,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraScience
       nameSet: True
-      id: Sci Locker Room
+      id: Раздевалка учёных
   - uid: 19668
     components:
     - type: Transform
@@ -133065,7 +133368,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraScience
       nameSet: True
-      id: RD Office
+      id: Офис научного руководителя
   - uid: 19669
     components:
     - type: Transform
@@ -133096,7 +133399,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraScience
       nameSet: True
-      id: Sci Entrance Room
+      id: Проходная НИО
   - uid: 19672
     components:
     - type: Transform
@@ -133107,7 +133410,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraScience
       nameSet: True
-      id: Sci RND Hall
+      id: Вход в НИО
   - uid: 19673
     components:
     - type: Transform
@@ -133118,7 +133421,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraScience
       nameSet: True
-      id: Sci Hall
+      id: Вход в НИО
   - uid: 19674
     components:
     - type: Transform
@@ -133140,7 +133443,54 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraScience
       nameSet: True
-      id: Robotics Bay
+      id: Лобби робототехники
+  - uid: 19680
+    components:
+    - type: Transform
+      pos: -59.5,1.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Генератор аномалий
+  - uid: 23830
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -51.5,8.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Серверы НИО
+  - uid: 23873
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -44.5,8.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Каюта научного руководителя
+  - uid: 23915
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -40.5,8.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Спальня научного руководителя
+  - uid: 23970
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -45.5,16.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Консоль артефактной
+  - uid: 24832
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -49.5,-6.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Зона отдыха учёных
 - proto: SurveillanceCameraSecurity
   entities:
   - uid: 10321
@@ -133149,6 +133499,8 @@ entities:
       rot: 3.141592653589793 rad
       pos: -32.5,5.5
       parent: 2
+    - type: SurveillanceCamera
+      id: Зона отдыха СБ
   - uid: 19676
     components:
     - type: Transform
@@ -133159,7 +133511,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Security Entrance
+      id: Вход в бриг
   - uid: 19677
     components:
     - type: Transform
@@ -133170,7 +133522,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Lawyer Office
+      id: Офис юристов
   - uid: 19678
     components:
     - type: Transform
@@ -133181,18 +133533,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: HoS Office
-  - uid: 19680
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -7.5,-14.5
-      parent: 2
-    - type: SurveillanceCamera
-      setupAvailableNetworks:
-      - SurveillanceCameraSecurity
-      nameSet: True
-      id: Perma Brig
+      id: Офис ГСБ
   - uid: 19681
     components:
     - type: Transform
@@ -133203,7 +133544,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Perma Entrance
+      id: Вход в пермабриг
   - uid: 19682
     components:
     - type: Transform
@@ -133213,7 +133554,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Sec North
+      id: Северная часть брига
   - uid: 19683
     components:
     - type: Transform
@@ -133224,7 +133565,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Armory
+      id: Оружейная
   - uid: 19684
     components:
     - type: Transform
@@ -133278,7 +133619,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Sec Entrance
+      id: Комната ожидания в бриг
   - uid: 19689
     components:
     - type: Transform
@@ -133289,7 +133630,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Court Room
+      id: Суд
   - uid: 19690
     components:
     - type: Transform
@@ -133300,7 +133641,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Interrogation
+      id: Допросная
   - uid: 19691
     components:
     - type: Transform
@@ -133311,7 +133652,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Security Checkpoint
+      id: КПП прибытия
   - uid: 19692
     components:
     - type: Transform
@@ -133322,7 +133663,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Detective Office
+      id: Офис детектива
   - uid: 19693
     components:
     - type: Transform
@@ -133333,7 +133674,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Security Locker Room
+      id: Раздевалка СБ
   - uid: 19694
     components:
     - type: Transform
@@ -133343,7 +133684,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Security South
+      id: Южная часть брига
   - uid: 19695
     components:
     - type: Transform
@@ -133353,7 +133694,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Perma Brig Locker Room
+      id: Раздевалка пермабрига
   - uid: 19696
     components:
     - type: Transform
@@ -133364,7 +133705,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Warden's Office
+      id: Комната смотрителя
   - uid: 19697
     components:
     - type: Transform
@@ -133375,7 +133716,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Cell 1
+      id: Камера 1
   - uid: 19698
     components:
     - type: Transform
@@ -133386,7 +133727,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Cell 2
+      id: Камера 2
   - uid: 19699
     components:
     - type: Transform
@@ -133397,7 +133738,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Cell 3
+      id: Камера 3
   - uid: 19700
     components:
     - type: Transform
@@ -133408,7 +133749,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Cell 4
+      id: Камера 4
   - uid: 19701
     components:
     - type: Transform
@@ -133419,7 +133760,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Cell 5
+      id: Камера 5
   - uid: 19702
     components:
     - type: Transform
@@ -133430,7 +133771,77 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Cell Med
+      id: Комната бригмедика
+  - uid: 23659
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -10.5,-15.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Пермабриг
+  - uid: 24502
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -65.5,-8.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Ящики пилота СБ
+  - uid: 24828
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -68.5,-5.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Комната пилота СБ
+  - uid: 24829
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -63.5,-4.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Вход к пилоту СБ
+  - uid: 24830
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -81.5,-7.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Стыковочный док шаттла СБ
+  - uid: 24831
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -71.5,-8.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Проход к стыковочному доку СБ
+  - uid: 24833
+    components:
+    - type: Transform
+      pos: -43.5,-21.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Присяженные суда
+  - uid: 24834
+    components:
+    - type: Transform
+      pos: -18.5,-7.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Палата бригмедика
+  - uid: 24835
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -7.5,-44.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Камера КПП прибытия
 - proto: SurveillanceCameraService
   entities:
   - uid: 19703
@@ -133443,7 +133854,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraService
       nameSet: True
-      id: Freezer
+      id: Холодильник
   - uid: 19704
     components:
     - type: Transform
@@ -133465,7 +133876,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraService
       nameSet: True
-      id: Kitchen
+      id: Кухня
   - uid: 19706
     components:
     - type: Transform
@@ -133476,7 +133887,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraService
       nameSet: True
-      id: Hydroponics
+      id: Гидропоника
   - uid: 19707
     components:
     - type: Transform
@@ -133487,7 +133898,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraService
       nameSet: True
-      id: Bartender Room
+      id: Комната барменов
   - uid: 19708
     components:
     - type: Transform
@@ -133499,6 +133910,22 @@ entities:
       - SurveillanceCameraService
       nameSet: True
       id: Janitor's Office
+  - uid: 24839
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 35.5,-36.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Раздевалка ботаников
+  - uid: 24840
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 30.5,-35.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Загон
 - proto: SurveillanceCameraSupply
   entities:
   - uid: 19709
@@ -137053,23 +137480,6 @@ entities:
     - type: Transform
       pos: 8.5,-27.5
       parent: 2
-- proto: VendingMachineChang
-  entities:
-  - uid: 20293
-    components:
-    - type: Transform
-      pos: -17.5,-53.5
-      parent: 2
-  - uid: 20294
-    components:
-    - type: Transform
-      pos: 4.5,11.5
-      parent: 2
-  - uid: 20295
-    components:
-    - type: Transform
-      pos: 19.5,-15.5
-      parent: 2
 - proto: VendingMachineChapel
   entities:
   - uid: 20296
@@ -137105,83 +137515,6 @@ entities:
     - type: Transform
       pos: 37.5,-30.5
       parent: 2
-- proto: VendingMachineCigs
-  entities:
-  - uid: 20301
-    components:
-    - type: MetaData
-      name: cigarette machine
-    - type: Transform
-      pos: -61.5,-11.5
-      parent: 2
-  - uid: 20302
-    components:
-    - type: Transform
-      pos: -46.5,-21.5
-      parent: 2
-  - uid: 20303
-    components:
-    - type: MetaData
-      name: cigarette machine
-    - type: Transform
-      pos: 29.5,-22.5
-      parent: 2
-  - uid: 20304
-    components:
-    - type: MetaData
-      name: cigarette machine
-    - type: Transform
-      pos: 18.5,-26.5
-      parent: 2
-  - uid: 20305
-    components:
-    - type: MetaData
-      name: cigarette machine
-    - type: Transform
-      pos: -24.5,-13.5
-      parent: 2
-  - uid: 20306
-    components:
-    - type: MetaData
-      name: cigarette machine
-    - type: Transform
-      pos: 13.5,11.5
-      parent: 2
-  - uid: 20307
-    components:
-    - type: MetaData
-      name: cigarette machine
-    - type: Transform
-      pos: -61.5,25.5
-      parent: 2
-  - uid: 20308
-    components:
-    - type: MetaData
-      name: cigarette machine
-    - type: Transform
-      pos: -15.5,-48.5
-      parent: 2
-  - uid: 20309
-    components:
-    - type: MetaData
-      name: cigarette machine
-    - type: Transform
-      pos: -27.5,9.5
-      parent: 2
-  - uid: 20310
-    components:
-    - type: MetaData
-      name: cigarette machine
-    - type: Transform
-      pos: 30.5,26.5
-      parent: 2
-  - uid: 20311
-    components:
-    - type: MetaData
-      name: cigarette machine
-    - type: Transform
-      pos: 26.5,-7.5
-      parent: 2
 - proto: VendingMachineClothing
   entities:
   - uid: 20312
@@ -137198,60 +137531,6 @@ entities:
     components:
     - type: Transform
       pos: 13.5,-71.5
-      parent: 2
-- proto: VendingMachineCoffee
-  entities:
-  - uid: 20315
-    components:
-    - type: MetaData
-      name: Hot drinks machine
-    - type: Transform
-      pos: 14.5,-11.5
-      parent: 2
-  - uid: 20316
-    components:
-    - type: MetaData
-      name: Hot drinks machine
-    - type: Transform
-      pos: -3.5,11.5
-      parent: 2
-  - uid: 20317
-    components:
-    - type: MetaData
-      name: Hot drinks machine
-    - type: Transform
-      pos: 2.5,-44.5
-      parent: 2
-  - uid: 20318
-    components:
-    - type: Transform
-      pos: -40.5,-21.5
-      parent: 2
-  - uid: 20319
-    components:
-    - type: MetaData
-      name: Hot drinks machine
-    - type: Transform
-      pos: 56.5,-10.5
-      parent: 2
-  - uid: 20320
-    components:
-    - type: MetaData
-      name: Hot drinks machine
-    - type: Transform
-      pos: -47.5,-8.5
-      parent: 2
-  - uid: 20321
-    components:
-    - type: MetaData
-      name: Hot drinks machine
-    - type: Transform
-      pos: 3.5,21.5
-      parent: 2
-  - uid: 20322
-    components:
-    - type: Transform
-      pos: 14.5,-26.5
       parent: 2
 - proto: VendingMachineCondiments
   entities:
@@ -137281,20 +137560,6 @@ entities:
     - type: Transform
       pos: 27.5,-35.5
       parent: 2
-- proto: VendingMachineDiscount
-  entities:
-  - uid: 20327
-    components:
-    - type: Transform
-      pos: 21.5,-40.5
-      parent: 2
-- proto: VendingMachineDonut
-  entities:
-  - uid: 20328
-    components:
-    - type: Transform
-      pos: -29.5,-18.5
-      parent: 2
 - proto: VendingMachineEngiDrobe
   entities:
   - uid: 20329
@@ -137322,13 +137587,6 @@ entities:
     components:
     - type: Transform
       pos: 50.5,-8.5
-      parent: 2
-- proto: VendingMachineHappyHonk
-  entities:
-  - uid: 20333
-    components:
-    - type: Transform
-      pos: 25.5,-40.5
       parent: 2
 - proto: VendingMachineHydrobe
   entities:
@@ -137449,25 +137707,6 @@ entities:
     components:
     - type: Transform
       pos: -10.5,-11.5
-      parent: 2
-- proto: VendingMachineSnack
-  entities:
-  - uid: 20352
-    components:
-    - type: Transform
-      pos: -57.5,25.5
-      parent: 2
-- proto: VendingMachineSovietSoda
-  entities:
-  - uid: 20353
-    components:
-    - type: Transform
-      pos: 45.5,-36.5
-      parent: 2
-  - uid: 20354
-    components:
-    - type: Transform
-      pos: -40.5,16.5
       parent: 2
 - proto: VendingMachineTankDispenserEVA
   entities:
@@ -147947,6 +148186,12 @@ entities:
       parent: 24644
 - proto: WallSolid
   entities:
+  - uid: 10066
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 53.5,-43.5
+      parent: 2
   - uid: 22238
     components:
     - type: Transform
@@ -149598,11 +149843,6 @@ entities:
     components:
     - type: Transform
       pos: 56.5,-43.5
-      parent: 2
-  - uid: 22548
-    components:
-    - type: Transform
-      pos: 53.5,-43.5
       parent: 2
   - uid: 22549
     components:
@@ -155781,12 +156021,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -99.5,19.5
       parent: 2
-  - uid: 23640
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -99.5,20.5
-      parent: 2
   - uid: 23641
     components:
     - type: Transform
@@ -155891,12 +156125,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -102.5,29.5
-      parent: 2
-  - uid: 23659
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -102.5,30.5
       parent: 2
   - uid: 23660
     components:
@@ -156297,11 +156525,6 @@ entities:
     components:
     - type: Transform
       pos: -112.5,35.5
-      parent: 2
-  - uid: 23728
-    components:
-    - type: Transform
-      pos: -111.5,35.5
       parent: 2
   - uid: 23729
     components:
@@ -156882,12 +157105,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -120.5,29.5
       parent: 2
-  - uid: 23830
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -120.5,30.5
-      parent: 2
   - uid: 23831
     components:
     - type: Transform
@@ -157134,12 +157351,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -123.5,21.5
       parent: 2
-  - uid: 23873
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -123.5,20.5
-      parent: 2
   - uid: 23874
     components:
     - type: Transform
@@ -157373,12 +157584,6 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -118.5,6.5
-      parent: 2
-  - uid: 23915
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -118.5,7.5
       parent: 2
   - uid: 23916
     components:
@@ -157691,11 +157896,6 @@ entities:
     - type: Transform
       pos: -112.5,2.5
       parent: 2
-  - uid: 23970
-    components:
-    - type: Transform
-      pos: -111.5,2.5
-      parent: 2
   - uid: 23971
     components:
     - type: Transform
@@ -157982,12 +158182,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -104.5,6.5
-      parent: 2
-  - uid: 24021
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -104.5,7.5
       parent: 2
   - uid: 24022
     components:

@@ -818,6 +818,13 @@ entities:
     - type: Transform
       pos: -8.5,-1.5
       parent: 179
+- proto: BackmenVendingMachineCigs
+  entities:
+  - uid: 870
+    components:
+    - type: Transform
+      pos: -14.5,4.5
+      parent: 179
 - proto: BaseUplinkRadio25TC
   entities:
   - uid: 1238
@@ -2762,13 +2769,6 @@ entities:
     - type: Transform
       pos: 24.5,5.5
       parent: 179
-- proto: chem_master
-  entities:
-  - uid: 311
-    components:
-    - type: Transform
-      pos: 8.5,11.5
-      parent: 179
 - proto: ChemDispenser
   entities:
   - uid: 583
@@ -2805,6 +2805,13 @@ entities:
     components:
     - type: Transform
       pos: 6.4651074,9.828774
+      parent: 179
+- proto: ChemMaster
+  entities:
+  - uid: 311
+    components:
+    - type: Transform
+      pos: 8.5,11.5
       parent: 179
 - proto: ChemMasterMachineCircuitboard
   entities:
@@ -5350,7 +5357,7 @@ entities:
     - type: Transform
       pos: -6.5,-12.5
       parent: 179
-- proto: soda_dispenser
+- proto: SodaDispenser
   entities:
   - uid: 751
     components:
@@ -6052,13 +6059,6 @@ entities:
     components:
     - type: Transform
       pos: -2.5,0.5
-      parent: 179
-- proto: VendingMachineCigs
-  entities:
-  - uid: 870
-    components:
-    - type: Transform
-      pos: -14.5,4.5
       parent: 179
 - proto: VendingMachineClothing
   entities:

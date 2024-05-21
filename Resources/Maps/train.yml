@@ -67,6 +67,7 @@ entities:
       name: Train station
     - type: Transform
     - type: Map
+      mapPaused: True
     - type: PhysicsMap
     - type: GridTree
     - type: MovedGrids
@@ -10684,6 +10685,63 @@ entities:
     components:
     - type: Transform
       pos: 6.5271845,-122.9964
+      parent: 2
+- proto: BackmenVendingMachineCigs
+  entities:
+  - uid: 14019
+    components:
+    - type: Transform
+      pos: 3.5,-80.5
+      parent: 2
+  - uid: 14020
+    components:
+    - type: Transform
+      pos: 3.5,-47.5
+      parent: 2
+  - uid: 14021
+    components:
+    - type: Transform
+      pos: 3.5,-188.5
+      parent: 2
+- proto: BackmenVendingMachineCoffee
+  entities:
+  - uid: 14023
+    components:
+    - type: Transform
+      pos: 16.5,-63.5
+      parent: 2
+- proto: BackmenVendingMachineDonut
+  entities:
+  - uid: 14028
+    components:
+    - type: Transform
+      pos: 2.5,-356.5
+      parent: 2
+- proto: BackmenVendingMachineHappyHonk
+  entities:
+  - uid: 14034
+    components:
+    - type: Transform
+      pos: 6.5,-17.5
+      parent: 2
+- proto: BackmenVendingMachineSnackOrange
+  entities:
+  - uid: 14052
+    components:
+    - type: Transform
+      pos: -2.5,-242.5
+      parent: 2
+  - uid: 14053
+    components:
+    - type: Transform
+      pos: 17.5,-63.5
+      parent: 2
+- proto: BackmenVendingMachineSovietSoda
+  entities:
+  - uid: 14054
+    components:
+    - type: Transform
+      pos: 4.5,-56.5
       parent: 2
 - proto: BananaPhoneInstrument
   entities:
@@ -35304,7 +35362,14 @@ entities:
     - type: Transform
       pos: 4.5698934,-180.42856
       parent: 2
-- proto: chem_master
+- proto: ChemistryHotplate
+  entities:
+  - uid: 5349
+    components:
+    - type: Transform
+      pos: 4.5,-167.5
+      parent: 2
+- proto: ChemMaster
   entities:
   - uid: 5347
     components:
@@ -35315,13 +35380,6 @@ entities:
     components:
     - type: Transform
       pos: 7.5,-167.5
-      parent: 2
-- proto: ChemistryHotplate
-  entities:
-  - uid: 5349
-    components:
-    - type: Transform
-      pos: 4.5,-167.5
       parent: 2
 - proto: ChessBoard
   entities:
@@ -37332,6 +37390,14 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -2.5,-316.5
+      parent: 2
+- proto: ComputerRoboticsControl
+  entities:
+  - uid: 7630
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 7.5,-313.5
       parent: 2
 - proto: ComputerSalvageExpedition
   entities:
@@ -49633,11 +49699,11 @@ entities:
       parent: 2
 - proto: ForkPlastic
   entities:
-  - uid: 7630
+  - uid: 13781
     components:
     - type: Transform
       rot: 3.141592653589793 rad
-      pos: 7.582423,-313.33093
+      pos: 7.449305,-314.24872
       parent: 2
 - proto: FuelDispenser
   entities:
@@ -68129,17 +68195,17 @@ entities:
     - type: Transform
       pos: 3.3926184,-171.42528
       parent: 2
-- proto: GeneratorBasic
+- proto: GeneratorBasic15kW
   entities:
-  - uid: 9981
-    components:
-    - type: Transform
-      pos: 21.5,-306.5
-      parent: 2
   - uid: 9982
     components:
     - type: Transform
       pos: 21.5,-308.5
+      parent: 2
+  - uid: 17225
+    components:
+    - type: Transform
+      pos: 21.5,-306.5
       parent: 2
 - proto: GeneratorRTG
   entities:
@@ -75531,7 +75597,7 @@ entities:
       pos: 8.5,-176.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -139800.56
+      secondsUntilStateChange: -140248.75
       state: Closing
   - uid: 11355
     components:
@@ -78464,8 +78530,7 @@ entities:
   - uid: 11817
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 7.686648,-313.90622
+      pos: 7.4859967,-314.63397
       parent: 2
 - proto: PlushieRouny
   entities:
@@ -88851,7 +88916,7 @@ entities:
     - type: Transform
       pos: 3.2005093,-101.69577
       parent: 2
-- proto: soda_dispenser
+- proto: SodaDispenser
   entities:
   - uid: 13257
     components:
@@ -90653,6 +90718,13 @@ entities:
       parent: 2
 - proto: SurveillanceCameraCommand
   entities:
+  - uid: 9981
+    components:
+    - type: Transform
+      pos: 28.5,-308.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Ядро ИИ
   - uid: 13548
     components:
     - type: Transform
@@ -90709,6 +90781,52 @@ entities:
       rot: 3.141592653589793 rad
       pos: -0.5,-119.5
       parent: 2
+  - uid: 17226
+    components:
+    - type: Transform
+      pos: 21.5,-311.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Вход в маршрутизаторную спутника ИИ
+  - uid: 17227
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 23.5,-303.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Вход в телекомы спутника ИИ
+  - uid: 17228
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 18.5,-306.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Вход в спутник ИИ
+  - uid: 17229
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 25.5,-307.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Вход в ядро ИИ
+  - uid: 17230
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 22.5,-297.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Телекомы спутника ИИ
+  - uid: 17231
+    components:
+    - type: Transform
+      pos: 22.5,-317.5
+      parent: 2
+    - type: SurveillanceCamera
+      id: Маршрутизаторная спутника ИИ
 - proto: SurveillanceCameraEngineering
   entities:
   - uid: 13558
@@ -91998,11 +92116,6 @@ entities:
     components:
     - type: Transform
       pos: 7.5,-312.5
-      parent: 2
-  - uid: 13781
-    components:
-    - type: Transform
-      pos: 7.5,-313.5
       parent: 2
   - uid: 13782
     components:
@@ -93404,7 +93517,7 @@ entities:
   - uid: 13984
     components:
     - type: Transform
-      pos: 7.126124,-314.31253
+      pos: 6.5870476,-314.4322
       parent: 2
 - proto: ToyFigurineSecurity
   entities:
@@ -93712,36 +93825,12 @@ entities:
     - type: Transform
       pos: 3.5,-169.5
       parent: 2
-- proto: VendingMachineCigs
-  entities:
-  - uid: 14019
-    components:
-    - type: Transform
-      pos: 3.5,-80.5
-      parent: 2
-  - uid: 14020
-    components:
-    - type: Transform
-      pos: 3.5,-47.5
-      parent: 2
-  - uid: 14021
-    components:
-    - type: Transform
-      pos: 3.5,-188.5
-      parent: 2
 - proto: VendingMachineClothing
   entities:
   - uid: 14022
     components:
     - type: Transform
       pos: 4.5,-126.5
-      parent: 2
-- proto: VendingMachineCoffee
-  entities:
-  - uid: 14023
-    components:
-    - type: Transform
-      pos: 16.5,-63.5
       parent: 2
 - proto: VendingMachineCondiments
   entities:
@@ -93770,13 +93859,6 @@ entities:
     components:
     - type: Transform
       pos: 1.5,-92.5
-      parent: 2
-- proto: VendingMachineDonut
-  entities:
-  - uid: 14028
-    components:
-    - type: Transform
-      pos: 2.5,-356.5
       parent: 2
 - proto: VendingMachineEngiDrobe
   entities:
@@ -93808,13 +93890,6 @@ entities:
     components:
     - type: Transform
       pos: 13.5,-80.5
-      parent: 2
-- proto: VendingMachineHappyHonk
-  entities:
-  - uid: 14034
-    components:
-    - type: Transform
-      pos: 6.5,-17.5
       parent: 2
 - proto: VendingMachineHydrobe
   entities:
@@ -93933,25 +94008,6 @@ entities:
     components:
     - type: Transform
       pos: 6.5,-373.5
-      parent: 2
-- proto: VendingMachineSnackOrange
-  entities:
-  - uid: 14052
-    components:
-    - type: Transform
-      pos: -2.5,-242.5
-      parent: 2
-  - uid: 14053
-    components:
-    - type: Transform
-      pos: 17.5,-63.5
-      parent: 2
-- proto: VendingMachineSovietSoda
-  entities:
-  - uid: 14054
-    components:
-    - type: Transform
-      pos: 4.5,-56.5
       parent: 2
 - proto: VendingMachineSustenance
   entities:

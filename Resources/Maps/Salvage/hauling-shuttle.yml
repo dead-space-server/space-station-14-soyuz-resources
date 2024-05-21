@@ -277,6 +277,20 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 0.5,-5.5
       parent: 1
+- proto: BackmenVendingMachineSnack
+  entities:
+  - uid: 128
+    components:
+    - type: Transform
+      pos: 4.5,-4.5
+      parent: 1
+- proto: BackmenVendingMachineSovietSoda
+  entities:
+  - uid: 126
+    components:
+    - type: Transform
+      pos: 4.5,-3.5
+      parent: 1
 - proto: CableApcExtension
   entities:
   - uid: 147
@@ -1125,20 +1139,6 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 8.5,-2.5
-      parent: 1
-- proto: VendingMachineSnack
-  entities:
-  - uid: 128
-    components:
-    - type: Transform
-      pos: 4.5,-4.5
-      parent: 1
-- proto: VendingMachineSovietSoda
-  entities:
-  - uid: 126
-    components:
-    - type: Transform
-      pos: 4.5,-3.5
       parent: 1
 - proto: WallShuttle
   entities:

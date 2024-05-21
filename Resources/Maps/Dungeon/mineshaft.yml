@@ -375,6 +375,13 @@ entities:
       rot: 3.141592653589793 rad
       pos: 29.510723,32.467716
       parent: 2
+- proto: BackmenVendingMachineSovietSoda
+  entities:
+  - uid: 304
+    components:
+    - type: Transform
+      pos: 3.5,21.5
+      parent: 2
 - proto: BarricadeBlock
   entities:
   - uid: 596
@@ -4716,13 +4723,6 @@ entities:
     components:
     - type: Transform
       pos: 41.5,15.5
-      parent: 2
-- proto: VendingMachineSovietSoda
-  entities:
-  - uid: 304
-    components:
-    - type: Transform
-      pos: 3.5,21.5
       parent: 2
 - proto: WallCobblebrick
   entities:

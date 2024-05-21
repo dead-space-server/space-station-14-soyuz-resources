@@ -14897,6 +14897,66 @@ entities:
     - type: Transform
       pos: 4.5,16.5
       parent: 2
+- proto: BackmenVendingMachineCigs
+  entities:
+  - uid: 12686
+    components:
+    - type: Transform
+      pos: -9.5,34.5
+      parent: 2
+  - uid: 12687
+    components:
+    - type: Transform
+      pos: -31.5,23.5
+      parent: 2
+  - uid: 12688
+    components:
+    - type: Transform
+      pos: 19.5,4.5
+      parent: 2
+  - uid: 12689
+    components:
+    - type: Transform
+      pos: -18.5,3.5
+      parent: 2
+  - uid: 12690
+    components:
+    - type: Transform
+      pos: -67.5,45.5
+      parent: 2
+  - uid: 12691
+    components:
+    - type: Transform
+      pos: -72.5,39.5
+      parent: 2
+- proto: BackmenVendingMachineCola
+  entities:
+  - uid: 12693
+    components:
+    - type: Transform
+      pos: -4.5,7.5
+      parent: 2
+- proto: BackmenVendingMachineDiscount
+  entities:
+  - uid: 12698
+    components:
+    - type: Transform
+      pos: -8.5,34.5
+      parent: 2
+- proto: BackmenVendingMachineDonut
+  entities:
+  - uid: 12699
+    components:
+    - type: Transform
+      pos: -56.5,65.5
+      parent: 2
+- proto: BackmenVendingMachineHappyHonk
+  entities:
+  - uid: 12703
+    components:
+    - type: Transform
+      pos: -34.5,47.5
+      parent: 2
 - proto: BananaPhoneInstrument
   entities:
   - uid: 559
@@ -38665,18 +38725,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -69.5,39.5
       parent: 2
-- proto: chem_master
-  entities:
-  - uid: 5106
-    components:
-    - type: Transform
-      pos: -2.5,27.5
-      parent: 2
-  - uid: 5107
-    components:
-    - type: Transform
-      pos: -4.5,25.5
-      parent: 2
 - proto: ChemDispenserMachineCircuitboard
   entities:
   - uid: 5108
@@ -38690,6 +38738,18 @@ entities:
     components:
     - type: Transform
       pos: 0.5,27.5
+      parent: 2
+- proto: ChemMaster
+  entities:
+  - uid: 5106
+    components:
+    - type: Transform
+      pos: -2.5,27.5
+      parent: 2
+  - uid: 5107
+    components:
+    - type: Transform
+      pos: -4.5,25.5
       parent: 2
 - proto: ChessBoard
   entities:
@@ -86506,7 +86566,7 @@ entities:
     - type: Transform
       pos: -34.481266,49.461258
       parent: 2
-- proto: soda_dispenser
+- proto: SodaDispenser
   entities:
   - uid: 11889
     components:
@@ -91494,51 +91554,12 @@ entities:
     - type: Transform
       pos: -4.5,26.5
       parent: 2
-- proto: VendingMachineCigs
-  entities:
-  - uid: 12686
-    components:
-    - type: Transform
-      pos: -9.5,34.5
-      parent: 2
-  - uid: 12687
-    components:
-    - type: Transform
-      pos: -31.5,23.5
-      parent: 2
-  - uid: 12688
-    components:
-    - type: Transform
-      pos: 19.5,4.5
-      parent: 2
-  - uid: 12689
-    components:
-    - type: Transform
-      pos: -18.5,3.5
-      parent: 2
-  - uid: 12690
-    components:
-    - type: Transform
-      pos: -67.5,45.5
-      parent: 2
-  - uid: 12691
-    components:
-    - type: Transform
-      pos: -72.5,39.5
-      parent: 2
 - proto: VendingMachineClothing
   entities:
   - uid: 12692
     components:
     - type: Transform
       pos: -6.5,28.5
-      parent: 2
-- proto: VendingMachineCola
-  entities:
-  - uid: 12693
-    components:
-    - type: Transform
-      pos: -4.5,7.5
       parent: 2
 - proto: VendingMachineCondiments
   entities:
@@ -91568,20 +91589,6 @@ entities:
     - type: Transform
       pos: -33.5,47.5
       parent: 2
-- proto: VendingMachineDiscount
-  entities:
-  - uid: 12698
-    components:
-    - type: Transform
-      pos: -8.5,34.5
-      parent: 2
-- proto: VendingMachineDonut
-  entities:
-  - uid: 12699
-    components:
-    - type: Transform
-      pos: -56.5,65.5
-      parent: 2
 - proto: VendingMachineEngiDrobe
   entities:
   - uid: 12700
@@ -91602,13 +91609,6 @@ entities:
     components:
     - type: Transform
       pos: -22.5,18.5
-      parent: 2
-- proto: VendingMachineHappyHonk
-  entities:
-  - uid: 12703
-    components:
-    - type: Transform
-      pos: -34.5,47.5
       parent: 2
 - proto: VendingMachineHydrobe
   entities:

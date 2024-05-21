@@ -920,6 +920,8 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -0.5,2.5
       parent: 1
+    - type: PointLight
+      enabled: False
     - type: ApcPowerReceiver
       powerLoad: 0
   - uid: 121
@@ -928,6 +930,8 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -4.5,2.5
       parent: 1
+    - type: PointLight
+      enabled: False
     - type: ApcPowerReceiver
       powerLoad: 0
   - uid: 122
@@ -936,6 +940,8 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -3.5,7.5
       parent: 1
+    - type: PointLight
+      enabled: False
     - type: ApcPowerReceiver
       powerLoad: 0
   - uid: 123
@@ -944,6 +950,8 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -1.5,7.5
       parent: 1
+    - type: PointLight
+      enabled: False
     - type: ApcPowerReceiver
       powerLoad: 0
 - proto: RandomPosterAny

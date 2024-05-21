@@ -596,6 +596,22 @@ entities:
     - type: Transform
       pos: 8.5,2.5
       parent: 1
+- proto: BackmenVendingMachineCigs
+  entities:
+  - uid: 617
+    components:
+    - type: MetaData
+      name: cigarette machine
+    - type: Transform
+      pos: -6.5,-5.5
+      parent: 1
+- proto: BackmenVendingMachineSovietSoda
+  entities:
+  - uid: 618
+    components:
+    - type: Transform
+      pos: -9.5,-0.5
+      parent: 1
 - proto: Bed
   entities:
   - uid: 29
@@ -3683,7 +3699,7 @@ entities:
     - type: Transform
       pos: -3.5,-1.5
       parent: 1
-- proto: soda_dispenser
+- proto: SodaDispenser
   entities:
   - uid: 549
     components:
@@ -4094,22 +4110,6 @@ entities:
       name: turret box
     - type: Transform
       pos: -1.6820242,4.308466
-      parent: 1
-- proto: VendingMachineCigs
-  entities:
-  - uid: 617
-    components:
-    - type: MetaData
-      name: cigarette machine
-    - type: Transform
-      pos: -6.5,-5.5
-      parent: 1
-- proto: VendingMachineSovietSoda
-  entities:
-  - uid: 618
-    components:
-    - type: Transform
-      pos: -9.5,-0.5
       parent: 1
 - proto: VendingMachineTankDispenserEVA
   entities:

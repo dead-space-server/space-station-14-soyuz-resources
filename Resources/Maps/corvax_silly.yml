@@ -66,6 +66,7 @@ entities:
       name: Silly station
     - type: Transform
     - type: Map
+      mapPaused: True
     - type: PhysicsMap
     - type: GridTree
     - type: MovedGrids
@@ -5440,6 +5441,30 @@ entities:
     components:
     - type: Transform
       pos: 14.5,-6.5
+      parent: 2
+- proto: BackmenVendingMachineCigs
+  entities:
+  - uid: 4588
+    components:
+    - type: Transform
+      pos: -4.5,5.5
+      parent: 2
+  - uid: 5694
+    components:
+    - type: Transform
+      pos: 9.5,-2.5
+      parent: 5016
+- proto: BackmenVendingMachineDonut
+  entities:
+  - uid: 1420
+    components:
+    - type: Transform
+      pos: 23.5,-4.5
+      parent: 2
+  - uid: 3681
+    components:
+    - type: Transform
+      pos: -8.5,8.5
       parent: 2
 - proto: Barricade
   entities:
@@ -15740,13 +15765,6 @@ entities:
     - type: Transform
       pos: -7.7343435,-3.0232773
       parent: 2
-- proto: chem_master
-  entities:
-  - uid: 4886
-    components:
-    - type: Transform
-      pos: 2.5,7.5
-      parent: 2
 - proto: ChemDispenserMachineCircuitboard
   entities:
   - uid: 4272
@@ -15760,6 +15778,13 @@ entities:
     components:
     - type: Transform
       pos: 1.5,7.5
+      parent: 2
+- proto: ChemMaster
+  entities:
+  - uid: 4886
+    components:
+    - type: Transform
+      pos: 2.5,7.5
       parent: 2
 - proto: CigarCase
   entities:
@@ -16899,6 +16924,14 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 13.5,-4.5
       parent: 2
+- proto: ComputerRoboticsControl
+  entities:
+  - uid: 6571
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 16.5,-4.5
+      parent: 2
 - proto: ComputerSalvageExpedition
   entities:
   - uid: 1701
@@ -17437,7 +17470,7 @@ entities:
       pos: -24.5,-8.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -9163.36
+      secondsUntilStateChange: -9193.577
       state: Opening
   - uid: 4986
     components:
@@ -33691,7 +33724,7 @@ entities:
     - type: Transform
       pos: -17.499945,9.240566
       parent: 2
-- proto: soda_dispenser
+- proto: SodaDispenser
   entities:
   - uid: 3379
     components:
@@ -36905,18 +36938,6 @@ entities:
       parent: 5016
     missingComponents:
     - PointLight
-- proto: VendingMachineCigs
-  entities:
-  - uid: 4588
-    components:
-    - type: Transform
-      pos: -4.5,5.5
-      parent: 2
-  - uid: 5694
-    components:
-    - type: Transform
-      pos: 9.5,-2.5
-      parent: 5016
 - proto: VendingMachineClothing
   entities:
   - uid: 3675
@@ -36942,18 +36963,6 @@ entities:
     components:
     - type: Transform
       pos: 15.5,-8.5
-      parent: 2
-- proto: VendingMachineDonut
-  entities:
-  - uid: 1420
-    components:
-    - type: Transform
-      pos: 23.5,-4.5
-      parent: 2
-  - uid: 3681
-    components:
-    - type: Transform
-      pos: -8.5,8.5
       parent: 2
 - proto: VendingMachineEngiDrobe
   entities:

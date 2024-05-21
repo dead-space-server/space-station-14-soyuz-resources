@@ -306,6 +306,13 @@ entities:
     - type: Transform
       pos: 3.5,1.5
       parent: 222
+- proto: BackmenVendingMachineSnack
+  entities:
+  - uid: 208
+    components:
+    - type: Transform
+      pos: 2.5,-0.5
+      parent: 222
 - proto: BoxShotgunFlare
   entities:
   - uid: 25
@@ -1073,13 +1080,6 @@ entities:
     components:
     - type: Transform
       pos: -0.48346323,3.4946802
-      parent: 222
-- proto: VendingMachineSnack
-  entities:
-  - uid: 208
-    components:
-    - type: Transform
-      pos: 2.5,-0.5
       parent: 222
 - proto: WallPlastitanium
   entities:
