@@ -2761,6 +2761,32 @@ entities:
       rot: 3.141592653589793 rad
       pos: 19.5,47.5
       parent: 588
+- proto: BackmenVendingMachineCigs
+  entities:
+  - uid: 720
+    components:
+    - type: Transform
+      pos: 22.5,22.5
+      parent: 588
+- proto: BackmenVendingMachineCoffee
+  entities:
+  - uid: 765
+    components:
+    - type: Transform
+      pos: 10.5,22.5
+      parent: 588
+  - uid: 1285
+    components:
+    - type: Transform
+      pos: 18.5,40.5
+      parent: 588
+- proto: BackmenVendingMachineDonut
+  entities:
+  - uid: 538
+    components:
+    - type: Transform
+      pos: 16.5,16.5
+      parent: 588
 - proto: BannerSecurity
   entities:
   - uid: 553
@@ -11802,25 +11828,6 @@ entities:
     - type: Transform
       pos: 18.5,12.5
       parent: 588
-- proto: VendingMachineCigs
-  entities:
-  - uid: 720
-    components:
-    - type: Transform
-      pos: 22.5,22.5
-      parent: 588
-- proto: VendingMachineCoffee
-  entities:
-  - uid: 765
-    components:
-    - type: Transform
-      pos: 10.5,22.5
-      parent: 588
-  - uid: 1285
-    components:
-    - type: Transform
-      pos: 18.5,40.5
-      parent: 588
 - proto: VendingMachineDetDrobe
   entities:
   - uid: 582
@@ -11834,13 +11841,6 @@ entities:
     components:
     - type: Transform
       pos: 30.5,46.5
-      parent: 588
-- proto: VendingMachineDonut
-  entities:
-  - uid: 538
-    components:
-    - type: Transform
-      pos: 16.5,16.5
       parent: 588
 - proto: VendingMachineLawDrobe
   entities:

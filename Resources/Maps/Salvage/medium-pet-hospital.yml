@@ -437,6 +437,13 @@ entities:
     - type: Transform
       pos: 2.5,-3.5
       parent: 289
+- proto: BackmenVendingMachineCoffee
+  entities:
+  - uid: 136
+    components:
+    - type: Transform
+      pos: 5.5,-8.5
+      parent: 289
 - proto: BlastDoor
   entities:
   - uid: 80
@@ -1564,13 +1571,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 2.5,-2.5
-      parent: 289
-- proto: VendingMachineCoffee
-  entities:
-  - uid: 136
-    components:
-    - type: Transform
-      pos: 5.5,-8.5
       parent: 289
 - proto: WallReinforced
   entities:

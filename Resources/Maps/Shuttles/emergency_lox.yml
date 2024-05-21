@@ -915,6 +915,13 @@ entities:
     - type: Transform
       pos: -7.5,5.5
       parent: 670
+- proto: BackmenVendingMachineCigs
+  entities:
+  - uid: 262
+    components:
+    - type: Transform
+      pos: -1.5,8.5
+      parent: 670
 - proto: BedsheetMedical
   entities:
   - uid: 263
@@ -4056,13 +4063,6 @@ entities:
     components:
     - type: Transform
       pos: 0.5,14.5
-      parent: 670
-- proto: VendingMachineCigs
-  entities:
-  - uid: 262
-    components:
-    - type: Transform
-      pos: -1.5,8.5
       parent: 670
 - proto: VendingMachineMedical
   entities:

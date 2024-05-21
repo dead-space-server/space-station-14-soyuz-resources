@@ -3,7 +3,7 @@
   id: Trinkets
   name: loadout-group-trinkets
   minLimit: 0
-  maxLimit: 1
+  maxLimit: 3
   loadouts:
   - PlushieLizard
   - PlushieSpaceLizard

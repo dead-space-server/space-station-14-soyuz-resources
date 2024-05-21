@@ -859,7 +859,6 @@
   name: tts-voice-name-spy
   sex: Male
   speaker: spy
-  sponsorOnly: true
 
 - type: ttsVoice
   id: Admiral
@@ -3024,6 +3023,7 @@
   name: tts-voice-name-thrud
   sex: Male
   speaker: thrud
+  sponsorOnly: true
 
 - type: ttsVoice
   id: Lazul

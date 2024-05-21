@@ -708,6 +708,46 @@ entities:
     - type: Transform
       pos: -4.5,-4.5
       parent: 1
+- proto: BackmenVendingMachineCola
+  entities:
+  - uid: 967
+    components:
+    - type: Transform
+      pos: 3.5,-7.5
+      parent: 1
+- proto: BackmenVendingMachineSnackBlue
+  entities:
+  - uid: 972
+    components:
+    - type: Transform
+      pos: 3.5,-12.5
+      parent: 1
+- proto: BackmenVendingMachineSnackGreen
+  entities:
+  - uid: 973
+    components:
+    - type: Transform
+      pos: -2.5,-12.5
+      parent: 1
+  - uid: 974
+    components:
+    - type: Transform
+      pos: -3.5,-21.5
+      parent: 1
+- proto: BackmenVendingMachineSnackTeal
+  entities:
+  - uid: 975
+    components:
+    - type: Transform
+      pos: 6.5,-21.5
+      parent: 1
+- proto: BackmenVendingMachineSpaceUp
+  entities:
+  - uid: 976
+    components:
+    - type: Transform
+      pos: -2.5,-7.5
+      parent: 1
 - proto: Beaker
   entities:
   - uid: 34
@@ -3400,7 +3440,7 @@ entities:
     - type: Transform
       pos: -1.5,-7.5
       parent: 1
-- proto: chem_master
+- proto: ChemMaster
   entities:
   - uid: 44
     components:
@@ -7367,13 +7407,6 @@ entities:
     - type: Transform
       pos: -0.5,-18.5
       parent: 1
-- proto: VendingMachineCola
-  entities:
-  - uid: 967
-    components:
-    - type: Transform
-      pos: 3.5,-7.5
-      parent: 1
 - proto: VendingMachineEngivend
   entities:
   - uid: 968
@@ -7399,39 +7432,6 @@ entities:
     components:
     - type: Transform
       pos: -1.5,-3.5
-      parent: 1
-- proto: VendingMachineSnackBlue
-  entities:
-  - uid: 972
-    components:
-    - type: Transform
-      pos: 3.5,-12.5
-      parent: 1
-- proto: VendingMachineSnackGreen
-  entities:
-  - uid: 973
-    components:
-    - type: Transform
-      pos: -2.5,-12.5
-      parent: 1
-  - uid: 974
-    components:
-    - type: Transform
-      pos: -3.5,-21.5
-      parent: 1
-- proto: VendingMachineSnackTeal
-  entities:
-  - uid: 975
-    components:
-    - type: Transform
-      pos: 6.5,-21.5
-      parent: 1
-- proto: VendingMachineSpaceUp
-  entities:
-  - uid: 976
-    components:
-    - type: Transform
-      pos: -2.5,-7.5
       parent: 1
 - proto: VendingMachineTankDispenserEVA
   entities:

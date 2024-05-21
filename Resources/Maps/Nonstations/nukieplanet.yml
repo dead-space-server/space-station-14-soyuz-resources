@@ -6534,6 +6534,41 @@ entities:
     - type: Transform
       pos: 19.5,24.5
       parent: 104
+- proto: BackmenVendingMachineChang
+  entities:
+  - uid: 1208
+    components:
+    - type: Transform
+      pos: -10.5,7.5
+      parent: 104
+- proto: BackmenVendingMachineCigs
+  entities:
+  - uid: 117
+    components:
+    - type: MetaData
+      name: cigarette machine
+    - type: Transform
+      pos: 7.5,0.5
+      parent: 104
+- proto: BackmenVendingMachineCola
+  entities:
+  - uid: 116
+    components:
+    - type: Transform
+      pos: 5.5,0.5
+      parent: 104
+  - uid: 1244
+    components:
+    - type: Transform
+      pos: -9.5,7.5
+      parent: 104
+- proto: BackmenVendingMachineSnack
+  entities:
+  - uid: 2442
+    components:
+    - type: Transform
+      pos: 6.5,0.5
+      parent: 104
 - proto: BalloonSyn
   entities:
   - uid: 1327
@@ -10193,13 +10228,6 @@ entities:
     - type: Transform
       pos: -0.5,-1.5
       parent: 104
-- proto: chem_master
-  entities:
-  - uid: 2444
-    components:
-    - type: Transform
-      pos: 5.5,-10.5
-      parent: 104
 - proto: ChemicalPayload
   entities:
   - uid: 2380
@@ -10218,6 +10246,13 @@ entities:
     components:
     - type: Transform
       pos: 4.5,-12.5
+      parent: 104
+- proto: ChemMaster
+  entities:
+  - uid: 2444
+    components:
+    - type: Transform
+      pos: 5.5,-10.5
       parent: 104
 - proto: ChessBoard
   entities:
@@ -12959,7 +12994,7 @@ entities:
     - type: Transform
       pos: 23.5,-18.5
       parent: 104
-- proto: soda_dispenser
+- proto: SodaDispenser
   entities:
   - uid: 225
     components:
@@ -13786,13 +13821,6 @@ entities:
     - type: Transform
       pos: -0.5,-8.5
       parent: 104
-- proto: VendingMachineChang
-  entities:
-  - uid: 1208
-    components:
-    - type: Transform
-      pos: -10.5,7.5
-      parent: 104
 - proto: VendingMachineChemicalsSyndicate
   entities:
   - uid: 1335
@@ -13800,40 +13828,12 @@ entities:
     - type: Transform
       pos: 4.5,-10.5
       parent: 104
-- proto: VendingMachineCigs
-  entities:
-  - uid: 117
-    components:
-    - type: MetaData
-      name: cigarette machine
-    - type: Transform
-      pos: 7.5,0.5
-      parent: 104
 - proto: VendingMachineClothing
   entities:
   - uid: 1617
     components:
     - type: Transform
       pos: 13.5,0.5
-      parent: 104
-- proto: VendingMachineCola
-  entities:
-  - uid: 116
-    components:
-    - type: Transform
-      pos: 5.5,0.5
-      parent: 104
-  - uid: 1244
-    components:
-    - type: Transform
-      pos: -9.5,7.5
-      parent: 104
-- proto: VendingMachineSnack
-  entities:
-  - uid: 2442
-    components:
-    - type: Transform
-      pos: 6.5,0.5
       parent: 104
 - proto: VendingMachineSyndieDrobe
   entities:

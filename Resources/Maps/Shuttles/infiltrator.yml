@@ -4547,7 +4547,7 @@ entities:
     - type: Transform
       pos: 2.4424396,-17.430403
       parent: 1
-- proto: soda_dispenser
+- proto: SodaDispenser
   entities:
   - uid: 626
     components:

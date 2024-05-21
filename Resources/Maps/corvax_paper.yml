@@ -60,6 +60,7 @@ entities:
       name: Paper station
     - type: Transform
     - type: Map
+      mapPaused: True
     - type: PhysicsMap
     - type: GridTree
     - type: MovedGrids
@@ -8208,7 +8209,7 @@ entities:
       pos: 59.5,48.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -61169.047
+      secondsUntilStateChange: -61206.11
       state: Opening
   - uid: 28123
     components:
@@ -11458,6 +11459,103 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 14.539679,-1.9516239
+      parent: 2
+- proto: BackmenVendingMachineChang
+  entities:
+  - uid: 2567
+    components:
+    - type: Transform
+      pos: 40.5,-2.5
+      parent: 2
+  - uid: 7511
+    components:
+    - type: Transform
+      pos: 12.5,66.5
+      parent: 2
+  - uid: 9755
+    components:
+    - type: Transform
+      pos: 15.5,77.5
+      parent: 2
+- proto: BackmenVendingMachineCigs
+  entities:
+  - uid: 807
+    components:
+    - type: Transform
+      pos: 22.5,26.5
+      parent: 2
+  - uid: 1419
+    components:
+    - type: Transform
+      pos: 52.5,15.5
+      parent: 2
+  - uid: 4171
+    components:
+    - type: Transform
+      pos: 46.5,21.5
+      parent: 2
+  - uid: 4947
+    components:
+    - type: Transform
+      pos: 6.5,31.5
+      parent: 2
+  - uid: 8640
+    components:
+    - type: Transform
+      pos: 12.5,67.5
+      parent: 2
+- proto: BackmenVendingMachineCoffee
+  entities:
+  - uid: 799
+    components:
+    - type: Transform
+      pos: 26.5,26.5
+      parent: 2
+  - uid: 837
+    components:
+    - type: Transform
+      pos: 15.5,16.5
+      parent: 2
+  - uid: 2566
+    components:
+    - type: Transform
+      pos: 41.5,-2.5
+      parent: 2
+  - uid: 3215
+    components:
+    - type: Transform
+      pos: 47.5,17.5
+      parent: 2
+  - uid: 4591
+    components:
+    - type: Transform
+      pos: 29.5,40.5
+      parent: 2
+- proto: BackmenVendingMachineDonut
+  entities:
+  - uid: 3384
+    components:
+    - type: Transform
+      pos: 44.5,24.5
+      parent: 2
+- proto: BackmenVendingMachineSnackGreen
+  entities:
+  - uid: 27992
+    components:
+    - type: Transform
+      pos: 86.5,14.5
+      parent: 2
+- proto: BackmenVendingMachineSovietSoda
+  entities:
+  - uid: 6985
+    components:
+    - type: Transform
+      pos: 15.5,83.5
+      parent: 2
+  - uid: 9759
+    components:
+    - type: Transform
+      pos: 15.5,76.5
       parent: 2
 - proto: BalloonCorgi
   entities:
@@ -36628,7 +36726,14 @@ entities:
     - type: Transform
       pos: 62.25489,29.328365
       parent: 2
-- proto: chem_master
+- proto: ChemistryHotplate
+  entities:
+  - uid: 2305
+    components:
+    - type: Transform
+      pos: 44.5,8.5
+      parent: 2
+- proto: ChemMaster
   entities:
   - uid: 2289
     components:
@@ -36639,13 +36744,6 @@ entities:
     components:
     - type: Transform
       pos: 42.5,6.5
-      parent: 2
-- proto: ChemistryHotplate
-  entities:
-  - uid: 2305
-    components:
-    - type: Transform
-      pos: 44.5,8.5
       parent: 2
 - proto: ChessBoard
   entities:
@@ -38741,6 +38839,14 @@ entities:
     components:
     - type: Transform
       pos: 18.5,6.5
+      parent: 2
+- proto: ComputerRoboticsControl
+  entities:
+  - uid: 15101
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 30.5,0.5
       parent: 2
 - proto: ComputerSalvageExpedition
   entities:
@@ -47886,7 +47992,7 @@ entities:
       pos: 30.5,11.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -7050.5635
+      secondsUntilStateChange: -7087.6245
       state: Closing
     - type: DeviceNetwork
       deviceLists:
@@ -84696,7 +84802,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 14.614399,-4.3779707
       parent: 2
-- proto: soda_dispenser
+- proto: SodaDispenser
   entities:
   - uid: 4619
     components:
@@ -89923,23 +90029,6 @@ entities:
     - type: Transform
       pos: 17.5,19.5
       parent: 2
-- proto: VendingMachineChang
-  entities:
-  - uid: 2567
-    components:
-    - type: Transform
-      pos: 40.5,-2.5
-      parent: 2
-  - uid: 7511
-    components:
-    - type: Transform
-      pos: 12.5,66.5
-      parent: 2
-  - uid: 9755
-    components:
-    - type: Transform
-      pos: 15.5,77.5
-      parent: 2
 - proto: VendingMachineChapel
   entities:
   - uid: 5826
@@ -89975,33 +90064,6 @@ entities:
     - type: Transform
       pos: 44.5,9.5
       parent: 2
-- proto: VendingMachineCigs
-  entities:
-  - uid: 807
-    components:
-    - type: Transform
-      pos: 22.5,26.5
-      parent: 2
-  - uid: 1419
-    components:
-    - type: Transform
-      pos: 52.5,15.5
-      parent: 2
-  - uid: 4171
-    components:
-    - type: Transform
-      pos: 46.5,21.5
-      parent: 2
-  - uid: 4947
-    components:
-    - type: Transform
-      pos: 6.5,31.5
-      parent: 2
-  - uid: 8640
-    components:
-    - type: Transform
-      pos: 12.5,67.5
-      parent: 2
 - proto: VendingMachineClothing
   entities:
   - uid: 4562
@@ -90013,33 +90075,6 @@ entities:
     components:
     - type: Transform
       pos: 9.5,34.5
-      parent: 2
-- proto: VendingMachineCoffee
-  entities:
-  - uid: 799
-    components:
-    - type: Transform
-      pos: 26.5,26.5
-      parent: 2
-  - uid: 837
-    components:
-    - type: Transform
-      pos: 15.5,16.5
-      parent: 2
-  - uid: 2566
-    components:
-    - type: Transform
-      pos: 41.5,-2.5
-      parent: 2
-  - uid: 3215
-    components:
-    - type: Transform
-      pos: 47.5,17.5
-      parent: 2
-  - uid: 4591
-    components:
-    - type: Transform
-      pos: 29.5,40.5
       parent: 2
 - proto: VendingMachineCondiments
   entities:
@@ -90068,13 +90103,6 @@ entities:
     components:
     - type: Transform
       pos: 14.5,50.5
-      parent: 2
-- proto: VendingMachineDonut
-  entities:
-  - uid: 3384
-    components:
-    - type: Transform
-      pos: 44.5,24.5
       parent: 2
 - proto: VendingMachineEngiDrobe
   entities:
@@ -90230,25 +90258,6 @@ entities:
     components:
     - type: Transform
       pos: 66.5,30.5
-      parent: 2
-- proto: VendingMachineSnackGreen
-  entities:
-  - uid: 27992
-    components:
-    - type: Transform
-      pos: 86.5,14.5
-      parent: 2
-- proto: VendingMachineSovietSoda
-  entities:
-  - uid: 6985
-    components:
-    - type: Transform
-      pos: 15.5,83.5
-      parent: 2
-  - uid: 9759
-    components:
-    - type: Transform
-      pos: 15.5,76.5
       parent: 2
 - proto: VendingMachineSustenance
   entities:
@@ -102987,7 +102996,7 @@ entities:
       pos: 26.5,62.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -2556.1213
+      secondsUntilStateChange: -2593.1824
       state: Opening
   - uid: 5710
     components:

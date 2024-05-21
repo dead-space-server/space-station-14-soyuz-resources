@@ -200,6 +200,13 @@ entities:
     - type: Transform
       pos: -2.5,-3.5
       parent: 2
+- proto: BackmenVendingMachineSnack
+  entities:
+  - uid: 310
+    components:
+    - type: Transform
+      pos: -1.5,-4.5
+      parent: 2
 - proto: Bed
   entities:
   - uid: 329
@@ -1693,13 +1700,6 @@ entities:
     components:
     - type: Transform
       pos: 1.5,0.5
-      parent: 2
-- proto: VendingMachineSnack
-  entities:
-  - uid: 310
-    components:
-    - type: Transform
-      pos: -1.5,-4.5
       parent: 2
 - proto: WallSolid
   entities:

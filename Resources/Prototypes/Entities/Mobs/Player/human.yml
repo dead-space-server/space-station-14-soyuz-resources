@@ -15,8 +15,8 @@
       prototypes: [SyndicateOperativeGearExtremelyBasic]
     - type: RandomMetadata
       nameSegments:
-      - SyndicateNamesPrefix
-      - SyndicateNamesNormal
+      - names_first_male
+      - names_last_male
     - type: NpcFactionMember
       factions:
       - Syndicate

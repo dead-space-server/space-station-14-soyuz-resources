@@ -1072,7 +1072,7 @@
     - type: RandomMetadata
       nameSegments:
       - names_first
-      - names_last
+      - names_last_male
 
 # Clown troupe
 
@@ -1185,7 +1185,7 @@
     - type: RandomMetadata
       nameSegments:
       - names_first
-      - names_last
+      - names_last_male
 
 # Disaster victim
 
@@ -1248,7 +1248,7 @@
     - type: RandomMetadata
       nameSegments:
       - names_first
-      - names_last
+      - names_last_male
 
 - type: randomHumanoidSettings
   id: DisasterVictimCMO
@@ -1266,7 +1266,7 @@
     - type: RandomMetadata
       nameSegments:
       - names_first
-      - names_last
+      - names_last_male
 
 - type: randomHumanoidSettings
   id: DisasterVictimCaptain
@@ -1284,7 +1284,7 @@
     - type: RandomMetadata
       nameSegments:
       - names_first
-      - names_last
+      - names_last_male
 
 # Syndie Disaster Victim
 
@@ -1331,4 +1331,4 @@
     - type: RandomMetadata
       nameSegments:
       - names_first
-      - names_last
+      - names_last_male

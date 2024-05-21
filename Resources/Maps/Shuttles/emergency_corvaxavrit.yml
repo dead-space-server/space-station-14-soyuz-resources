@@ -1136,6 +1136,20 @@ entities:
     - type: Transform
       pos: -6.5,-5.5
       parent: 656
+- proto: BackmenVendingMachineCigs
+  entities:
+  - uid: 600
+    components:
+    - type: Transform
+      pos: 4.5,9.5
+      parent: 656
+- proto: BackmenVendingMachineCola
+  entities:
+  - uid: 1357
+    components:
+    - type: Transform
+      pos: 6.5,6.5
+      parent: 656
 - proto: BedsheetMedical
   entities:
   - uid: 267
@@ -8118,7 +8132,7 @@ entities:
     - type: Transform
       pos: 7.5,-16.5
       parent: 656
-- proto: soda_dispenser
+- proto: SodaDispenser
   entities:
   - uid: 619
     components:
@@ -8567,20 +8581,6 @@ entities:
     components:
     - type: Transform
       pos: 5.5,-0.5
-      parent: 656
-- proto: VendingMachineCigs
-  entities:
-  - uid: 600
-    components:
-    - type: Transform
-      pos: 4.5,9.5
-      parent: 656
-- proto: VendingMachineCola
-  entities:
-  - uid: 1357
-    components:
-    - type: Transform
-      pos: 6.5,6.5
       parent: 656
 - proto: VendingMachineGames
   entities:

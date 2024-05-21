@@ -654,6 +654,20 @@ entities:
     - type: Transform
       pos: 3.5,-14.5
       parent: 768
+- proto: BackmenVendingMachineCoffee
+  entities:
+  - uid: 628
+    components:
+    - type: Transform
+      pos: 3.5,6.5
+      parent: 768
+- proto: BackmenVendingMachineDiscount
+  entities:
+  - uid: 679
+    components:
+    - type: Transform
+      pos: 0.5,2.5
+      parent: 768
 - proto: Bed
   entities:
   - uid: 355
@@ -4224,20 +4238,6 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 3.5,-11.5
-      parent: 768
-- proto: VendingMachineCoffee
-  entities:
-  - uid: 628
-    components:
-    - type: Transform
-      pos: 3.5,6.5
-      parent: 768
-- proto: VendingMachineDiscount
-  entities:
-  - uid: 679
-    components:
-    - type: Transform
-      pos: 0.5,2.5
       parent: 768
 - proto: VendingMachineGames
   entities:
