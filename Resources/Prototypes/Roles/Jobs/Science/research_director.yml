@@ -41,3 +41,10 @@
     id: RnDPDA
     eyes: ClothingEyesGlassesSunglasses
     ears: ClothingHeadsetRD
+    underwearb: ClothingUnderwearBottomBoxersResearchDirector # DS14-Underwear
+  underweart: ClothingUnderwearTopBraResearchDirector # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesResearchDirector # DS14-Underwear
+  storage:
+    back:
+    - BoxSurvival
+    - Flash

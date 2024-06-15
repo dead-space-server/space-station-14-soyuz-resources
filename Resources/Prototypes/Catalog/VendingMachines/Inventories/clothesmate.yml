@@ -142,9 +142,9 @@
     ClothingNeckWingsAngel: 1 # DS14
     ClothingNeckWingsSkeleton: 1 # DS14
     ClothingNeckWingsSkeletonBlack: 1 # DS14
-  contrabandInventory:
+  emaggedInventory:
     ClothingMaskNeckGaiter: 2
     ClothingUniformJumpsuitTacticool: 1
     ClothingUniformJumpskirtTacticool: 1
-    ADTClothingNeckSyndicateCloak: 1 
+    ADTClothingNeckSyndicateCloak: 1
     ClothingOuterCoatLettermanS: 4 # DS14

@@ -19,7 +19,7 @@
   id: ERTLeaderGearAmber
   equipment:
     jumpsuit: ClothingUniformJumpsuitERTLeader
-    back: ClothingBackpackERTLeaderFilledAmber
+    back: ClothingBackpackERTLeader
     mask: ClothingMaskGasERT
     eyes: ADTClothingEyesHudAdvanced
     ears: ClothingHeadsetAltCSO
@@ -31,36 +31,26 @@
     head: ClothingHeadHelmetERTLeader
     id: ERTLeaderPDA
     belt: ClothingBeltSecurityFilled
-    underwearb: ClothingUnderwearBottomBoxersERT # Sirena-Underwear
-  underweart: ClothingUnderwearTopBraERT # Sirena-Underwear
-  underwearb: ClothingUnderwearBottomPantiesERT # Sirena-Underwear
+    underwearb: ClothingUnderwearBottomBoxersERT # DS14-Underwear
+  underweart: ClothingUnderwearTopBraERT # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesERT # DS14-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtColorBlack
-  satchel: ClothingBackpackERTLeaderFilledAmber
-  duffelbag: ClothingBackpackERTLeaderFilledAmber
-
-- type: entity
-  parent: ClothingBackpackERTLeader
-  id: ClothingBackpackERTLeaderFilledAmber
-  name: рюкзак командира СОБР
-  description: Вместительный рюкзак с множеством карманов, который носит командир отряда быстрого реагирования.
-  suffix: Заполненный, Эмбер
-  components:
-    - type: StorageFill
-      contents:
-        - id: WeaponLaserCannon
-        - id: WeaponSubMachineGunWt550
-        - id: MagazinePistolSubMachineGunTopMounted
-          amount: 2
-        - id: BoxMRE
-        - id: WeaponDisabler
-        - id: CrowbarRed
-        - id: FlashlightSeclite
-        - id: ADTtelescopicBaton
-        - id: PinpointerNuclear
-        - id: Flash
-        - id: Flare
-        - id: EmergencyMedipen
-        - id: Truncheon
+  storage:
+    back:
+    - WeaponLaserCannon
+    - WeaponSubMachineGunWt550
+    - MagazinePistolSubMachineGunTopMounted
+    - MagazinePistolSubMachineGunTopMounted
+    - BoxMRE
+    - WeaponDisabler
+    - CrowbarRed
+    - FlashlightSeclite
+    - ADTtelescopicBaton
+    - PinpointerNuclear
+    - Flash
+    - Flare
+    - EmergencyMedipen
+    - Truncheon
 
 ## Red
 - type: job
@@ -80,7 +70,7 @@
   id: ERTLeaderGearRed
   equipment:
     jumpsuit: ClothingUniformJumpsuitERTLeader
-    back: ClothingBackpackERTLeaderFilledRed
+    back: ClothingBackpackERTLeader
     mask: ClothingMaskGasERT
     eyes: ADTClothingEyesHudAdvanced
     ears: ClothingHeadsetAltCSO
@@ -91,36 +81,27 @@
     shoes: ADTClothingShoesBootsMagERT
     id: ERTLeaderPDA
     belt: ClothingBeltSecurityFilled
-    underwearb: ClothingUnderwearBottomBoxersERT # Sirena-Underwear
-  underweart: ClothingUnderwearTopBraERT # Sirena-Underwear
-  underwearb: ClothingUnderwearBottomPantiesERT # Sirena-Underwear
+    underwearb: ClothingUnderwearBottomBoxersERT # DS14-Underwear
+  underweart: ClothingUnderwearTopBraERT # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesERT # DS14-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtColorBlack
-  satchel: ClothingBackpackERTLeaderFilledRed
-  duffelbag: ClothingBackpackERTLeaderFilledRed
-
-- type: entity
-  parent: ClothingBackpackERTLeader
-  id: ClothingBackpackERTLeaderFilledRed
-  name: рюкзак командира СОБР
-  description: Вместительный рюкзак с множеством карманов, который носит командир отряда быстрого реагирования.
-  suffix: Заполненный, Красный
-  components:
-    - type: StorageFill
-      contents:
-        - id: WeaponXrayCannon
-        - id: WeaponSubMachineGunDrozd
-        - id: MagazinePistolSubMachineGun
-          amount: 3
-        - id: BoxMRE
-        - id: PinpointerNuclear
-        - id: CrowbarRed
-        - id: DoorRemoteAll
-        - id: Flare
-        - id: EmergencyMedipen
-        - id: ADTtelescopicBaton
-        - id: Flash
-        - id: WeaponDisabler
-        - id: Truncheon
+  storage:
+    back:
+    - WeaponXrayCannon
+    - WeaponSubMachineGunDrozd
+    - MagazinePistolSubMachineGun
+    - MagazinePistolSubMachineGun
+    - MagazinePistolSubMachineGun
+    - BoxMRE
+    - PinpointerNuclear
+    - CrowbarRed
+    - DoorRemoteAll
+    - Flare
+    - EmergencyMedipen
+    - ADTtelescopicBaton
+    - Flash
+    - WeaponDisabler
+    - Truncheon
 
 ## Gamma
 - type: job
@@ -140,7 +121,7 @@
   id: ERTLeaderGearGamma
   equipment:
     jumpsuit: ClothingUniformJumpsuitERTLeader
-    back: ClothingBackpackERTLeaderFilledGamma
+    back: ClothingBackpackERTLeader
     mask: ClothingMaskGasERT
     eyes: ADTClothingEyesHudAdvanced
     ears: ClothingHeadsetAltCSO
@@ -151,35 +132,27 @@
     shoes: ADTClothingShoesBootsMagERT
     id: ERTLeaderPDA
     belt: ClothingBeltSecurityFilled
-    underwearb: ClothingUnderwearBottomBoxersERT # Sirena-Underwear
-  underweart: ClothingUnderwearTopBraERT # Sirena-Underwear
-  underwearb: ClothingUnderwearBottomPantiesERT # Sirena-Underwear
+    underwearb: ClothingUnderwearBottomBoxersERT # DS14-Underwear
+  underweart: ClothingUnderwearTopBraERT # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesERT # DS14-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtColorBlack
-  satchel: ClothingBackpackERTLeaderFilledGamma
-  duffelbag: ClothingBackpackERTLeaderFilledGamma
-
-- type: entity
-  parent: ClothingBackpackERTLeader
-  id: ClothingBackpackERTLeaderFilledGamma
-  name: рюкзак командира СОБР
-  description: Вместительный рюкзак с множеством карманов, который носит командир отряда быстрого реагирования.
-  suffix: Заполненный, Гамма
-  components:
-    - type: StorageFill
-      contents:
-        - id: PinpointerNuclear
-        - id: WeaponDisabler
-        - id: CrowbarRed
-        - id: WeaponPulseCarbine
-        - id: DoorRemoteAll
-        - id: WeaponSubMachineGunVector
-        - id: MagazinePistolSubMachineGun
-          amount: 4
-        - id: EmergencyMedipen
-        - id: BoxMRE
-        - id: Flash
-        - id: Flare
-        - id: Truncheon
+  storage:
+    back:
+    - PinpointerNuclear
+    - WeaponDisabler
+    - CrowbarRed
+    - WeaponPulseCarbine
+    - DoorRemoteAll
+    - WeaponSubMachineGunVector
+    - MagazinePistolSubMachineGun
+    - MagazinePistolSubMachineGun
+    - MagazinePistolSubMachineGun
+    - MagazinePistolSubMachineGun
+    - EmergencyMedipen
+    - BoxMRE
+    - Flash
+    - Flare
+    - Truncheon
 
 ## CBURN Leader
 - type: job
@@ -199,7 +172,7 @@
   id: CBURNLeaderGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitColorBrown
-    back: ClothingMilitaryBackpackCBURNLeader
+    back: ClothingMilitaryBackpack
     mask: ClothingMaskGasExplorer
     eyes: ADTClothingEyesHudAdvanced
     ears: ClothingHeadsetAltCSO
@@ -210,41 +183,31 @@
     id: CBURNLeaderPDA
     suitstorage: AirTankFilled
     belt: ClothingBeltMilitaryWebbing
-    underwearb: ClothingUnderwearBottomBoxersCBURN # Sirena-Underwear
-  underweart: ClothingUnderwearTopBraCBURN # Sirena-Underwear
-  underwearb: ClothingUnderwearBottomPantiesCBURN # Sirena-Underwear
+    underwearb: ClothingUnderwearBottomBoxersCBURN # DS14-Underwear
+  underweart: ClothingUnderwearTopBraCBURN # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesCBURN # DS14-Underwear
   innerClothingSkirt: ClothingUniformJumpsuitColorBrown
-  satchel: ClothingMilitaryBackpackCBURNLeader
-  duffelbag: ClothingMilitaryBackpackCBURNLeader
-
-- type: entity
-  parent: ClothingMilitaryBackpack
-  id: ClothingMilitaryBackpackCBURNLeader
-  name: рюкзак лидера РХБЗЗ
-  description: Рюкзак, содержащий различное оборудование для сдерживания биологической угрозы.
-  suffix: Заполненный, РХБЗЗ, Лидер
-  components:
-  - type: StorageFill
-    contents:
-      - id: WeaponShotgunKammerer
-      - id: GrenadeIncendiary
-      - id: PillCanisterCBURN
-      - id: CrowbarRed
-      - id: WeaponFlareGun
-      - id: BoxShotgunFlare
-      - id: MagazineShotgun
-        amount: 2
-      - id: MagazineShotgunSlug
-      - id: MagazineShotgunIncendiary
-      - id: MagazineShotgunBeanbag
-      - id: Flash
-      - id: DoorRemoteAll
-      - id: EmergencyMedipen
-      - id: BoxMRE
-      - id: PinpointerNuclear
-      - id: WeaponLaserSvalinn
-      - id: PowerCellSmall
-      - id: PowerCellMedium
+  storage:
+    back:
+    - WeaponShotgunKammerer
+    - GrenadeIncendiary
+    - PillCanisterCBURN
+    - CrowbarRed
+    - WeaponFlareGun
+    - BoxShotgunFlare
+    - MagazineShotgun
+    - MagazineShotgun
+    - MagazineShotgunSlug
+    - MagazineShotgunIncendiary
+    - MagazineShotgunBeanbag
+    - Flash
+    - DoorRemoteAll
+    - EmergencyMedipen
+    - BoxMRE
+    - PinpointerNuclear
+    - WeaponLaserSvalinn
+    - PowerCellSmall
+    - PowerCellMedium
 
 ## CBURN Sierra Leader
 - type: job
@@ -264,7 +227,7 @@
   id: CBURNSierraLeaderGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitColorBrown
-    back: ClothingMilitaryBackpackCBURNLeaderSierra
+    back: ClothingMilitaryBackpack
     mask: ClothingMaskGasExplorer
     eyes: ADTClothingEyesHudAdvanced
     ears: ClothingHeadsetAltCSO
@@ -275,44 +238,36 @@
     id: CBURNLeaderPDA
     suitstorage: AirTankFilled
     belt: ClothingBeltMilitaryWebbing
-    underwearb: ClothingUnderwearBottomBoxersCBURN # Sirena-Underwear
-  underweart: ClothingUnderwearTopBraCBURN # Sirena-Underwear
-  underwearb: ClothingUnderwearBottomPantiesCBURN # Sirena-Underwear
+    underwearb: ClothingUnderwearBottomBoxersCBURN # DS14-Underwear
+  underweart: ClothingUnderwearTopBraCBURN # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesCBURN # DS14-Underwear
   innerClothingSkirt: ClothingUniformJumpsuitColorBrown
-  satchel: ClothingMilitaryBackpackCBURNLeaderSierra
-  duffelbag: ClothingMilitaryBackpackCBURNLeaderSierra
-
-- type: entity
-  parent: ClothingMilitaryBackpack
-  id: ClothingMilitaryBackpackCBURNLeaderSierra
-  name: рюкзак лидера РХБЗЗ
-  description: Рюкзак, содержащий различное оборудование для сдерживания биологической угрозы.
-  suffix: Заполненный, РХБЗЗ, Некроморфы, Лидер
-  components:
-  - type: StorageFill
-    contents:
-      - id: WeaponShotgunEnforcer
-      - id: GrenadeIncendiary
-      - id: CrowbarRed
-      - id: WeaponFlareGun
-      - id: BoxShotgunFlare
-      - id: MagazineShotgun
-        amount: 4
-      - id: MagazineShotgunSlug
-      - id: MagazineShotgunIncendiary
-        amount: 2
-      - id: MagazineShotgunBeanbag
-      - id: ZetaTwoMedipen
-        amount: 2
-      - id: TelescopicShield
-      - id: WeaponLaserSvalinn
-      - id: Flash
-      - id: DoorRemoteAll
-      - id: EmergencyMedipen
-      - id: BoxMRE
-      - id: PinpointerNuclear
-      - id: PowerCellSmall
-      - id: PowerCellMedium
+  storage:
+    back:
+    - WeaponShotgunEnforcer
+    - GrenadeIncendiary
+    - CrowbarRed
+    - WeaponFlareGun
+    - BoxShotgunFlare
+    - MagazineShotgun
+    - MagazineShotgun
+    - MagazineShotgun
+    - MagazineShotgun
+    - MagazineShotgunSlug
+    - MagazineShotgunIncendiary
+    - MagazineShotgunIncendiary
+    - MagazineShotgunBeanbag
+    - ZetaTwoMedipen
+    - ZetaTwoMedipen
+    - TelescopicShield
+    - WeaponLaserSvalinn
+    - Flash
+    - DoorRemoteAll
+    - EmergencyMedipen
+    - BoxMRE
+    - PinpointerNuclear
+    - PowerCellSmall
+    - PowerCellMedium
 
 # Security
 ## Amber
@@ -333,7 +288,7 @@
   id: ERTSecurityGearAmber
   equipment:
     jumpsuit: ClothingUniformJumpsuitERTSecurity
-    back: ClothingBackpackERTSecurityFilledAmber
+    back: ClothingBackpackERTSecurity
     mask: ClothingMaskGasERT
     eyes: ADTClothingEyesHudAdvanced
     ears: ClothingHeadsetAltCSO
@@ -344,34 +299,25 @@
     head: ClothingHeadHelmetERTSecurity
     id: ERTSecurityPDA
     belt: ClothingBeltSecurityFilled
-    underwearb: ClothingUnderwearBottomBoxersERT # Sirena-Underwear
-  underweart: ClothingUnderwearTopBraERT # Sirena-Underwear
-  underwearb: ClothingUnderwearBottomPantiesERT # Sirena-Underwear
+    underwearb: ClothingUnderwearBottomBoxersERT # DS14-Underwear
+  underweart: ClothingUnderwearTopBraERT # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesERT # DS14-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtColorBlack
-  satchel: ClothingBackpackERTSecurityFilledAmber
-  duffelbag: ClothingBackpackERTSecurityFilledAmber
+  storage:
+    back:
+    - TelescopicShield
+    - FlashlightSeclite
+    - WeaponDisabler
+    - CrowbarRed
+    - EmergencyMedipen
+    - BoxMRE
+    - WeaponLaserCannon
+    - WeaponSubMachineGunWt550
+    - MagazinePistolSubMachineGunTopMounted
+    - MagazinePistolSubMachineGunTopMounted
+    - Flare
+    - Truncheon
 
-- type: entity
-  parent: ClothingBackpackERTSecurity
-  id: ClothingBackpackERTSecurityFilledAmber
-  name: рюкзак офицера безопасности СОБР
-  description: Вместительный рюкзак с множеством карманов, который носят офицеры безопасности отряда быстрого реагирования.
-  suffix: Заполненный, Эмбер
-  components:
-    - type: StorageFill
-      contents:
-        - id: TelescopicShield
-        - id: FlashlightSeclite
-        - id: WeaponDisabler
-        - id: CrowbarRed
-        - id: EmergencyMedipen
-        - id: BoxMRE
-        - id: WeaponLaserCannon
-        - id: WeaponSubMachineGunWt550
-        - id: MagazinePistolSubMachineGunTopMounted
-          amount: 2
-        - id: Flare
-        - id: Truncheon
 ## Red
 - type: job
   id: ERTSecurityRed
@@ -390,7 +336,7 @@
   id: ERTSecurityGearRed
   equipment:
     jumpsuit: ClothingUniformJumpsuitERTSecurity
-    back: ClothingBackpackERTSecurityFilledRed
+    back: ClothingBackpackERTSecurity
     mask: ClothingMaskGasERT
     eyes: ADTClothingEyesHudAdvanced
     ears: ClothingHeadsetAltCSO
@@ -400,34 +346,25 @@
     shoes: ADTClothingShoesBootsMagERT
     id: ERTSecurityPDA
     belt: ClothingBeltSecurityFilled
-    underwearb: ClothingUnderwearBottomBoxersERT # Sirena-Underwear
-  underweart: ClothingUnderwearTopBraERT # Sirena-Underwear
-  underwearb: ClothingUnderwearBottomPantiesERT # Sirena-Underwear
+    underwearb: ClothingUnderwearBottomBoxersERT # DS14-Underwear
+  underweart: ClothingUnderwearTopBraERT # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesERT # DS14-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtColorBlack
-  satchel: ClothingBackpackERTSecurityFilledRed
-  duffelbag: ClothingBackpackERTSecurityFilledRed
-
-- type: entity
-  parent: ClothingBackpackERTSecurity
-  id: ClothingBackpackERTSecurityFilledRed
-  name: рюкзак офицера безопасности СОБР
-  description: Вместительный рюкзак с множеством карманов, который носят офицеры безопасности отряда быстрого реагирования.
-  suffix: Заполненный, Красный
-  components:
-    - type: StorageFill
-      contents:
-        - id: TelescopicShield
-        - id: WeaponDisabler
-        - id: WeaponXrayCannon
-        - id: EmergencyMedipen
-        - id: BoxMRE
-        - id: WeaponSubMachineGunDrozd
-        - id: MagazinePistolSubMachineGun
-          amount: 3
-        - id: CrowbarRed
-        - id: Flare
-        - id: Truncheon
-        - id: PinpointerNuclear
+  storage:
+    back:
+    - TelescopicShield
+    - WeaponDisabler
+    - WeaponXrayCannon
+    - EmergencyMedipen
+    - BoxMRE
+    - WeaponSubMachineGunDrozd
+    - MagazinePistolSubMachineGun
+    - MagazinePistolSubMachineGun
+    - MagazinePistolSubMachineGun
+    - CrowbarRed
+    - Flare
+    - Truncheon
+    - PinpointerNuclear
 
 ## Gamma
 - type: job
@@ -447,7 +384,7 @@
   id: ERTSecurityGearGamma
   equipment:
     jumpsuit: ClothingUniformJumpsuitERTSecurity
-    back: ClothingBackpackERTSecurityFilledGamma
+    back: ClothingBackpackERTSecurity
     mask: ClothingMaskGasERT
     eyes: ADTClothingEyesHudAdvanced
     ears: ClothingHeadsetAltCSO
@@ -457,34 +394,26 @@
     shoes: ADTClothingShoesBootsMagERT
     id: ERTSecurityPDA
     belt: ClothingBeltSecurityFilled
-    underwearb: ClothingUnderwearBottomBoxersERT # Sirena-Underwear
-  underweart: ClothingUnderwearTopBraERT # Sirena-Underwear
-  underwearb: ClothingUnderwearBottomPantiesERT # Sirena-Underwear
+    underwearb: ClothingUnderwearBottomBoxersERT # DS14-Underwear
+  underweart: ClothingUnderwearTopBraERT # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesERT # DS14-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtColorBlack
-  satchel: ClothingBackpackERTSecurityFilledGamma
-  duffelbag: ClothingBackpackERTSecurityFilledGamma
-
-- type: entity
-  parent: ClothingBackpackERTSecurity
-  id: ClothingBackpackERTSecurityFilledGamma
-  name: рюкзак офицера безопасности СОБР
-  description: Вместительный рюкзак с множеством карманов, который носят офицеры безопасности отряда быстрого реагирования.
-  suffix: Заполненный, Гамма
-  components:
-    - type: StorageFill
-      contents:
-        - id: TelescopicShield
-        - id: WeaponDisabler
-        - id: CrowbarRed
-        - id: WeaponPulseCarbine
-        - id: WeaponSubMachineGunVector
-        - id: MagazinePistolSubMachineGun
-          amount: 4
-        - id: EmergencyMedipen
-        - id: BoxMRE
-        - id: Flare
-        - id: Truncheon
-        - id: PinpointerNuclear
+  storage:
+    back:
+    - TelescopicShield
+    - WeaponDisabler
+    - CrowbarRed
+    - WeaponPulseCarbine
+    - WeaponSubMachineGunVector
+    - MagazinePistolSubMachineGun
+    - MagazinePistolSubMachineGun
+    - MagazinePistolSubMachineGun
+    - MagazinePistolSubMachineGun
+    - EmergencyMedipen
+    - BoxMRE
+    - Flare
+    - Truncheon
+    - PinpointerNuclear
 
 # Medical
 ## Amber
@@ -505,7 +434,7 @@
   id: ERTMedicalGearAmber
   equipment:
     jumpsuit: ClothingUniformJumpsuitERTMedic
-    back: ClothingBackpackERTMedicalFilledAmber
+    back: ClothingBackpackERTMedical
     mask: ClothingMaskGasERT
     eyes: ADTClothingEyesHudAdvanced
     ears: ClothingHeadsetAltCSO
@@ -516,38 +445,28 @@
     head: ClothingHeadHelmetERTMedic
     id: ERTMedicPDA
     belt: ClothingBeltMedicalFilled
-    underwearb: ClothingUnderwearBottomBoxersERT # Sirena-Underwear
-  underweart: ClothingUnderwearTopBraERT # Sirena-Underwear
-  underwearb: ClothingUnderwearBottomPantiesERT # Sirena-Underwear
+    underwearb: ClothingUnderwearBottomBoxersERT # DS14-Underwear
+  underweart: ClothingUnderwearTopBraERT # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesERT # DS14-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtColorBlack
-  satchel: ClothingBackpackERTMedicalFilledAmber
-  duffelbag: ClothingBackpackERTMedicalFilledAmber
-
-- type: entity
-  parent: ClothingBackpackERTMedical
-  id: ClothingBackpackERTMedicalFilledAmber
-  name: рюкзак медика СОБР
-  description: Вместительный рюкзак с множеством карманов, который носят медики отряда быстрого реагирования.
-  suffix: Заполненный, Эмбер
-  components:
-    - type: StorageFill
-      contents:
-        - id: Defibrillator
-        - id: BoxMRE
-        - id: WeaponPistolMk58
-        - id: MagazinePistol
-          amount: 2
-        - id: WeaponLaserCarbine
-        - id: Flare
-        - id: WeaponDisabler
-        - id: HandheldHealthAnalyzer
-        - id: OmnizineChemistryBottle
-        - id: EpinephrineChemistryBottle
-        - id: Cautery
-        - id: FlashlightLantern
-        - id: CrowbarRed
-        - id: ADTCombatHypo
-        - id: EmergencyMedipen
+  storage:
+    back:
+    - Defibrillator
+    - BoxMRE
+    - WeaponPistolMk58
+    - MagazinePistol
+    - MagazinePistol
+    - WeaponLaserCarbine
+    - Flare
+    - WeaponDisabler
+    - HandheldHealthAnalyzer
+    - OmnizineChemistryBottle
+    - EpinephrineChemistryBottle
+    - Cautery
+    - FlashlightLantern
+    - CrowbarRed
+    - ADTCombatHypo
+    - EmergencyMedipen
 
 ## Red
 - type: job
@@ -567,7 +486,7 @@
   id: ERTMedicalGearRed
   equipment:
     jumpsuit: ClothingUniformJumpsuitERTMedic
-    back: ClothingBackpackERTMedicalFilledRed
+    back: ClothingBackpackERTMedical
     mask: ClothingMaskGasERT
     eyes: ADTClothingEyesHudAdvanced
     ears: ClothingHeadsetAltCSO
@@ -577,39 +496,30 @@
     shoes: ADTClothingShoesBootsMagERT
     id: ERTMedicPDA
     belt: ClothingBeltMedicalFilled # Тут должен быть портативный дефибриллятор, которого пока нет.
-    underwearb: ClothingUnderwearBottomBoxersERT # Sirena-Underwear
-  underweart: ClothingUnderwearTopBraERT # Sirena-Underwear
-  underwearb: ClothingUnderwearBottomPantiesERT # Sirena-Underwear
+    underwearb: ClothingUnderwearBottomBoxersERT # DS14-Underwear
+  underweart: ClothingUnderwearTopBraERT # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesERT # DS14-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtColorBlack
-  satchel: ClothingBackpackERTMedicalFilledRed
-  duffelbag: ClothingBackpackERTMedicalFilledRed
-
-- type: entity
-  parent: ClothingBackpackERTMedical
-  id: ClothingBackpackERTMedicalFilledRed
-  name: рюкзак медика СОБР
-  description: Вместительный рюкзак с множеством карманов, который носят медики отряда быстрого реагирования.
-  suffix: Заполненный, Красный
-  components:
-    - type: StorageFill
-      contents:
-        - id: OmnizineChemistryBottle
-          amount: 2
-        - id: EpinephrineChemistryBottle
-          amount: 2
-        - id: Cautery
-        - id: CrowbarRed
-        - id: Flare
-        - id: ADTCombatHypo
-        - id: WeaponLaserGun
-        - id: EmergencyMedipen
-        - id: BoxMRE
-        - id: WeaponRevolverUnica
-        - id: SpeedLoader357
-          amount: 3
-        - id: Defibrillator
-        - id: WeaponDisabler
-        - id: HandheldHealthAnalyzer
+  storage:
+    back:
+    - OmnizineChemistryBottle
+    - OmnizineChemistryBottle
+    - EpinephrineChemistryBottle
+    - EpinephrineChemistryBottle
+    - Cautery
+    - CrowbarRed
+    - Flare
+    - ADTCombatHypo
+    - WeaponLaserGun
+    - EmergencyMedipen
+    - BoxMRE
+    - WeaponRevolverUnica
+    - SpeedLoader357
+    - SpeedLoader357
+    - SpeedLoader357
+    - Defibrillator
+    - WeaponDisabler
+    - HandheldHealthAnalyzer
 
 ## Gamma
 - type: job
@@ -629,7 +539,7 @@
   id: ERTMedicalGearGamma
   equipment:
     jumpsuit: ClothingUniformJumpsuitERTMedic
-    back: ClothingBackpackERTMedicalFilledGamma
+    back: ClothingBackpackERTMedical
     mask: ClothingMaskGasERT
     eyes: ADTClothingEyesHudAdvanced
     ears: ClothingHeadsetAltCSO
@@ -639,39 +549,33 @@
     shoes: ADTClothingShoesBootsMagERT
     id: ERTMedicPDA
     belt: ClothingBeltMedicalFilled
-    underwearb: ClothingUnderwearBottomBoxersERT # Sirena-Underwear
-  underweart: ClothingUnderwearTopBraERT # Sirena-Underwear
-  underwearb: ClothingUnderwearBottomPantiesERT # Sirena-Underwear
+    underwearb: ClothingUnderwearBottomBoxersERT # DS14-Underwear
+  underweart: ClothingUnderwearTopBraERT # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesERT # DS14-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtColorBlack
-  satchel: ClothingBackpackERTMedicalFilledGamma
-  duffelbag: ClothingBackpackERTMedicalFilledGamma
-
-- type: entity
-  parent: ClothingBackpackERTMedical
-  id: ClothingBackpackERTMedicalFilledGamma
-  name: рюкзак медика СОБР
-  description: Вместительный рюкзак с множеством карманов, который носят медики отряда быстрого реагирования.
-  suffix: Заполненный, Гамма
-  components:
-    - type: StorageFill
-      contents:
-        - id: OmnizineChemistryBottle
-          amount: 3
-        - id: EpinephrineChemistryBottle
-          amount: 3
-        - id: Cautery
-        - id: CrowbarRed
-        - id: ADTCombatHypo
-        - id: WeaponPulsePistol
-        - id: EmergencyMedipen
-        - id: BoxMRE
-        - id: Defibrillator
-        - id: WeaponPistolN1984
-        - id: MagazineMagnum
-          amount: 4
-        - id: WeaponDisabler
-        - id: HandheldHealthAnalyzer
-        - id: PinpointerNuclear
+  storage:
+    back:
+    - OmnizineChemistryBottle
+    - OmnizineChemistryBottle
+    - OmnizineChemistryBottle
+    - EpinephrineChemistryBottle
+    - EpinephrineChemistryBottle
+    - EpinephrineChemistryBottle
+    - Cautery
+    - CrowbarRed
+    - ADTCombatHypo
+    - WeaponPulsePistol
+    - EmergencyMedipen
+    - BoxMRE
+    - Defibrillator
+    - WeaponPistolN1984
+    - MagazineMagnum
+    - MagazineMagnum
+    - MagazineMagnum
+    - MagazineMagnum
+    - WeaponDisabler
+    - HandheldHealthAnalyzer
+    - PinpointerNuclear
 
 # Engineer
 ## Amber
@@ -692,7 +596,7 @@
   id: ERTEngineerGearAmber
   equipment:
     jumpsuit: ClothingUniformJumpsuitERTEngineer
-    back: ClothingBackpackERTEngineerFilledAmber
+    back: ClothingBackpackERTEngineer
     mask: ClothingMaskGasERT
     eyes: ADTClothingEyesHudAdvanced
     ears: ClothingHeadsetAltCSO
@@ -703,31 +607,21 @@
     head: ClothingHeadHelmetERTEngineer
     id: ERTEngineerPDA
     belt: ClothingBeltUtilityEngineering
-    underwearb: ClothingUnderwearBottomBoxersERT # Sirena-Underwear
-  underweart: ClothingUnderwearTopBraERT # Sirena-Underwear
-  underwearb: ClothingUnderwearBottomPantiesERT # Sirena-Underwear
+    underwearb: ClothingUnderwearBottomBoxersERT # DS14-Underwear
+  underweart: ClothingUnderwearTopBraERT # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesERT # DS14-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtColorBlack
-  satchel: ClothingBackpackERTEngineerFilledAmber
-  duffelbag: ClothingBackpackERTEngineerFilledAmber
-
-- type: entity
-  parent: ClothingBackpackERTEngineer
-  id: ClothingBackpackERTEngineerFilledAmber
-  name: рюкзак инженера СОБР
-  suffix: Заполненный, Эмбер
-  description: Вместительный рюкзак с множеством карманов, который носят инженеры отряда быстрого реагирования.
-  components:
-    - type: StorageFill
-      contents:
-        - id: FlashlightLantern
-        - id: WeaponDisabler
-        - id: EmergencyMedipen
-        - id: BoxMRE
-        - id: WeaponPistolMk58
-        - id: MagazinePistol
-          amount: 2
-        - id: WeaponLaserCarbine
-        - id: Flare
+  storage:
+    back:
+    - FlashlightLantern
+    - WeaponDisabler
+    - EmergencyMedipen
+    - BoxMRE
+    - WeaponPistolMk58
+    - MagazinePistol
+    - MagazinePistol
+    - WeaponLaserCarbine
+    - Flare
 
 ## Red
 - type: job
@@ -747,7 +641,7 @@
   id: ERTEngineerGearRed
   equipment:
     jumpsuit: ClothingUniformJumpsuitERTEngineer
-    back: ClothingBackpackERTEngineerFilledRed
+    back: ClothingBackpackERTEngineer
     mask: ClothingMaskGasERT
     eyes: ADTClothingEyesHudAdvanced
     ears: ClothingHeadsetAltCSO
@@ -757,34 +651,25 @@
     shoes: ADTClothingShoesBootsMagERT
     id: ERTEngineerPDA
     belt: ClothingBeltChiefEngineerFilled
-    underwearb: ClothingUnderwearBottomBoxersERT # Sirena-Underwear
-  underweart: ClothingUnderwearTopBraERT # Sirena-Underwear
-  underwearb: ClothingUnderwearBottomPantiesERT # Sirena-Underwear
+    underwearb: ClothingUnderwearBottomBoxersERT # DS14-Underwear
+  underweart: ClothingUnderwearTopBraERT # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesERT # DS14-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtColorBlack
-  satchel: ClothingBackpackERTEngineerFilledRed
-  duffelbag: ClothingBackpackERTEngineerFilledRed
-
-- type: entity
-  parent: ClothingBackpackERTEngineer
-  id: ClothingBackpackERTEngineerFilledRed
-  name: рюкзак инженера СОБР
-  description: Вместительный рюкзак с множеством карманов, который носят инженеры отряда быстрого реагирования.
-  suffix: Заполненный, Красный
-  components:
-    - type: StorageFill
-      contents:
-        - id: RCD
-        - id: RCDAmmo
-          amount: 2
-        - id: WeaponLaserGun
-        - id: EmergencyMedipen
-        - id: BoxMRE
-        - id: WeaponRevolverUnica
-        - id: SpeedLoader357
-          amount: 3
-        - id: RemoteSignaller
-        - id: Flare
-        - id: WeaponDisabler
+  storage:
+    back:
+    - RCD
+    - RCDAmmo
+    - RCDAmmo
+    - WeaponLaserGun
+    - EmergencyMedipen
+    - BoxMRE
+    - WeaponRevolverUnica
+    - SpeedLoader357
+    - SpeedLoader357
+    - SpeedLoader357
+    - RemoteSignaller
+    - Flare
+    - WeaponDisabler
 
 ## Gamma
 - type: job
@@ -804,7 +689,7 @@
   id: ERTEngineerGearGamma
   equipment:
     jumpsuit: ClothingUniformJumpsuitERTEngineer
-    back: ClothingBackpackERTEngineerFilledGamma
+    back: ClothingBackpackERTEngineer
     mask: ClothingMaskGasERT
     eyes: ADTClothingEyesHudAdvanced
     ears: ClothingHeadsetAltCSO
@@ -814,37 +699,31 @@
     shoes: ADTClothingShoesBootsMagERT
     id: ERTEngineerPDA
     belt: ClothingBeltChiefEngineerFilled
-    underwearb: ClothingUnderwearBottomBoxersERT # Sirena-Underwear
-  underweart: ClothingUnderwearTopBraERT # Sirena-Underwear
-  underwearb: ClothingUnderwearBottomPantiesERT # Sirena-Underwear
+    underwearb: ClothingUnderwearBottomBoxersERT # DS14-Underwear
+  underweart: ClothingUnderwearTopBraERT # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesERT # DS14-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtColorBlack
-  satchel: ClothingBackpackERTEngineerFilledGamma
-  duffelbag: ClothingBackpackERTEngineerFilledGamma
-
-- type: entity
-  parent: ClothingBackpackERTEngineer
-  id: ClothingBackpackERTEngineerFilledGamma
-  name: рюкзак инженера СОБР
-  description: Вместительный рюкзак с множеством карманов, который носят инженеры отряда быстрого реагирования.
-  suffix: Заполненный, Гамма
-  components:
-    - type: StorageFill
-      contents:
-        - id: WeaponDisabler
-        - id: RCDRecharging
-        - id: RCDAmmo
-          amount: 2
-        - id: C4
-          amount: 4
-        - id: RemoteSignallerAdvanced
-        - id: WeaponPulsePistol
-        - id: EmergencyMedipen
-        - id: BoxMRE
-        - id: WeaponPistolN1984
-        - id: MagazineMagnum
-          amount: 4
-        - id: Flare
-        - id: PinpointerNuclear
+  storage:
+    back:
+    - WeaponDisabler
+    - RCDRecharging
+    - RCDAmmo
+    - RCDAmmo
+    - C4
+    - C4
+    - C4
+    - C4
+    - RemoteSignallerAdvanced
+    - WeaponPulsePistol
+    - EmergencyMedipen
+    - BoxMRE
+    - WeaponPistolN1984
+    - MagazineMagnum
+    - MagazineMagnum
+    - MagazineMagnum
+    - MagazineMagnum
+    - Flare
+    - PinpointerNuclear
 
 # Janitor
 ## Amber
@@ -865,7 +744,7 @@
   id: ERTJanitorGearAmber
   equipment:
     jumpsuit: ClothingUniformJumpsuitERTJanitor
-    back: ClothingBackpackERTJanitorFilledAmber
+    back: ClothingBackpackERTJanitor
     mask: ClothingMaskGasERT
     eyes: ADTClothingEyesHudAdvanced
     ears: ClothingHeadsetAltCSO
@@ -876,35 +755,25 @@
     head: ClothingHeadHelmetERTJanitor
     id: ERTJanitorPDA
     belt: ClothingBeltJanitorFilled
-    underwearb: ClothingUnderwearBottomBoxersERT # Sirena-Underwear
-  underweart: ClothingUnderwearTopBraERT # Sirena-Underwear
-  underwearb: ClothingUnderwearBottomPantiesERT # Sirena-Underwear
+    underwearb: ClothingUnderwearBottomBoxersERT # DS14-Underwear
+  underweart: ClothingUnderwearTopBraERT # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesERT # DS14-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtColorBlack
-  satchel: ClothingBackpackERTJanitorFilledAmber
-  duffelbag: ClothingBackpackERTJanitorFilledAmber
-
-- type: entity
-  parent: ClothingBackpackERTJanitor
-  id: ClothingBackpackERTJanitorFilledAmber
-  name: рюкзак уборщика СОБР
-  description: Вместительный рюкзак с множеством карманов, который носят уборщики отряда быстрого реагирования.
-  suffix: Заполненный, Эмбер
-  components:
-    - type: StorageFill
-      contents:
-        - id: SoapNT
-        - id: MopItem
-        - id: LightReplacer
-        - id: Holoprojector
-        - id: CrowbarRed
-        - id: EmergencyMedipen
-        - id: BoxMRE
-        - id: WeaponPistolMk58
-        - id: MagazinePistol
-          amount: 2
-        - id: WeaponLaserCarbine
-        - id: Flare
-        - id: WeaponDisabler
+  storage:
+    back:
+    - SoapNT
+    - MopItem
+    - LightReplacer
+    - Holoprojector
+    - CrowbarRed
+    - EmergencyMedipen
+    - BoxMRE
+    - WeaponPistolMk58
+    - MagazinePistol
+    - MagazinePistol
+    - WeaponLaserCarbine
+    - Flare
+    - WeaponDisabler
 
 ## Red
 - type: job
@@ -924,7 +793,7 @@
   id: ERTJanitorGearRed
   equipment:
     jumpsuit: ClothingUniformJumpsuitERTJanitor
-    back: ClothingBackpackERTJanitorFilledRed
+    back: ClothingBackpackERTJanitor
     mask: ClothingMaskGasERT
     eyes: ADTClothingEyesHudAdvanced
     ears: ClothingHeadsetAltCSO
@@ -934,36 +803,27 @@
     shoes: ADTClothingShoesBootsMagERT
     id: ERTJanitorPDA
     belt: ClothingBeltJanitorFilled
-    underwearb: ClothingUnderwearBottomBoxersERT # Sirena-Underwear
-  underweart: ClothingUnderwearTopBraERT # Sirena-Underwear
-  underwearb: ClothingUnderwearBottomPantiesERT # Sirena-Underwear
+    underwearb: ClothingUnderwearBottomBoxersERT # DS14-Underwear
+  underweart: ClothingUnderwearTopBraERT # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesERT # DS14-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtColorBlack
-  satchel: ClothingBackpackERTJanitorFilledRed
-  duffelbag: ClothingBackpackERTJanitorFilledRed
-
-- type: entity
-  parent: ClothingBackpackERTJanitor
-  id: ClothingBackpackERTJanitorFilledRed
-  name: рюкзак уборщика СОБР
-  description: Вместительный рюкзак с множеством карманов, который носят уборщики отряда быстрого реагирования.
-  suffix: Заполненный, Красный
-  components:
-    - type: StorageFill
-      contents:
-        - id: SoapNT
-        - id: AdvMopItem
-        - id: LightReplacer
-        - id: Holoprojector
-        - id: CrowbarRed
-        - id: WeaponLaserGun
-        - id: EmergencyMedipen
-        - id: BoxMRE
-        - id: WeaponRevolverUnica
-        - id: SpeedLoader357
-          amount: 3
-        - id: TrashBagBlue
-        - id: Flare
-        - id: WeaponDisabler
+  storage:
+    back:
+    - SoapNT
+    - AdvMopItem
+    - LightReplacer
+    - Holoprojector
+    - CrowbarRed
+    - WeaponLaserGun
+    - EmergencyMedipen
+    - BoxMRE
+    - WeaponRevolverUnica
+    - SpeedLoader357
+    - SpeedLoader357
+    - SpeedLoader357
+    - TrashBagBlue
+    - Flare
+    - WeaponDisabler
 
 ## Gamma
 - type: job
@@ -983,7 +843,7 @@
   id: ERTJanitorGearGamma
   equipment:
     jumpsuit: ClothingUniformJumpsuitERTJanitor
-    back: ClothingBackpackERTJanitorFilledGamma
+    back: ClothingBackpackERTJanitor
     mask: ClothingMaskGasERT
     eyes: ADTClothingEyesHudAdvanced
     ears: ClothingHeadsetAltCSO
@@ -993,37 +853,29 @@
     shoes: ADTClothingShoesBootsMagERT
     id: ERTJanitorPDA
     belt: ClothingBeltJanitorFilled
-    underwearb: ClothingUnderwearBottomBoxersERT # Sirena-Underwear
-  underweart: ClothingUnderwearTopBraERT # Sirena-Underwear
-  underwearb: ClothingUnderwearBottomPantiesERT # Sirena-Underwear
+    underwearb: ClothingUnderwearBottomBoxersERT # DS14-Underwear
+  underweart: ClothingUnderwearTopBraERT # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesERT # DS14-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtColorBlack
-  satchel: ClothingBackpackERTJanitorFilledGamma
-  duffelbag: ClothingBackpackERTJanitorFilledGamma
-
-- type: entity
-  parent: ClothingBackpackERTJanitor
-  id: ClothingBackpackERTJanitorFilledGamma
-  name: рюкзак уборщика СОБР
-  description: Вместительный рюкзак с множеством карманов, который носят уборщики отряда быстрого реагирования.
-  suffix: Заполненный, Гамма
-  components:
-    - type: StorageFill
-      contents:
-        - id: SoapOmega
-        - id: AdvMopItem
-        - id: LightReplacer
-        - id: Holoprojector
-        - id: Zipties
-        - id: WeaponPulsePistol
-        - id: EmergencyMedipen
-        - id: BoxMRE
-        - id: WeaponPistolN1984
-        - id: MagazineMagnum
-          amount: 4
-        - id: CrowbarRed
-        - id: WeaponDisabler
-        - id: TrashBagBlue
-        - id: PinpointerNuclear
+  storage:
+    back:
+    - SoapOmega
+    - AdvMopItem
+    - LightReplacer
+    - Holoprojector
+    - Zipties
+    - WeaponPulsePistol
+    - EmergencyMedipen
+    - BoxMRE
+    - WeaponPistolN1984
+    - MagazineMagnum
+    - MagazineMagnum
+    - MagazineMagnum
+    - MagazineMagnum
+    - CrowbarRed
+    - WeaponDisabler
+    - TrashBagBlue
+    - PinpointerNuclear
 
 # CBURN Agent
 - type: job
@@ -1043,7 +895,7 @@
   id: CBURNAgentGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitColorBrown
-    back: ClothingMilitaryBackpackCBURN
+    back: ClothingMilitaryBackpack
     mask: ClothingMaskGasExplorer
     eyes: ADTClothingEyesHudAdvanced
     ears: ClothingHeadsetAltCSO
@@ -1053,38 +905,28 @@
     id: CBURNPDA
     suitstorage: AirTankFilled
     belt: ClothingBeltMilitaryWebbing
-    underwearb: ClothingUnderwearBottomBoxersCBURN # Sirena-Underwear
-  underweart: ClothingUnderwearTopBraCBURN # Sirena-Underwear
-  underwearb: ClothingUnderwearBottomPantiesCBURN # Sirena-Underwear
+    underwearb: ClothingUnderwearBottomBoxersCBURN # DS14-Underwear
+  underweart: ClothingUnderwearTopBraCBURN # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesCBURN # DS14-Underwear
   innerClothingSkirt: ClothingUniformJumpsuitColorBrown
-  satchel: ClothingMilitaryBackpackCBURN
-  duffelbag: ClothingMilitaryBackpackCBURN
-
-- type: entity
-  parent: ClothingMilitaryBackpack
-  id: ClothingMilitaryBackpackCBURN
-  name: рюкзак бойца РХБЗЗ
-  description: Рюкзак, содержащий различное оборудование для сдерживания биологической угрозы.
-  suffix: Заполненный, РХБЗЗ, Боец
-  components:
-  - type: StorageFill
-    contents:
-      - id: WeaponShotgunKammerer
-      - id: GrenadeIncendiary
-      - id: CrowbarRed
-      - id: WeaponFlareGun
-      - id: BoxShotgunFlare
-      - id: MagazineShotgun
-        amount: 2
-      - id: MagazineShotgunSlug
-      - id: MagazineShotgunIncendiary
-      - id: MagazineShotgunBeanbag
-      - id: EmergencyMedipen
-      - id: BoxMRE
-      - id: WeaponDisabler
-      - id: WeaponLaserSvalinn
-      - id: PowerCellSmall
-      - id: PowerCellMedium
+  storage:
+    back:
+    - WeaponShotgunKammerer
+    - GrenadeIncendiary
+    - CrowbarRed
+    - WeaponFlareGun
+    - BoxShotgunFlare
+    - MagazineShotgun
+    - MagazineShotgun
+    - MagazineShotgunSlug
+    - MagazineShotgunIncendiary
+    - MagazineShotgunBeanbag
+    - EmergencyMedipen
+    - BoxMRE
+    - WeaponDisabler
+    - WeaponLaserSvalinn
+    - PowerCellSmall
+    - PowerCellMedium
 
 # CBURN Sierra Agent
 - type: job
@@ -1104,7 +946,7 @@
   id: CBURNSierraAgentGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitColorBrown
-    back: ClothingMilitaryBackpackCBURNSierra
+    back: ClothingMilitaryBackpack
     mask: ClothingMaskGasExplorer
     eyes: ADTClothingEyesHudAdvanced
     ears: ClothingHeadsetAltCSO
@@ -1114,42 +956,34 @@
     id: CBURNPDA
     suitstorage: AirTankFilled
     belt: ClothingBeltMilitaryWebbing
-    underwearb: ClothingUnderwearBottomBoxersCBURN # Sirena-Underwear
-  underweart: ClothingUnderwearTopBraCBURN # Sirena-Underwear
-  underwearb: ClothingUnderwearBottomPantiesCBURN # Sirena-Underwear
+    underwearb: ClothingUnderwearBottomBoxersCBURN # DS14-Underwear
+  underweart: ClothingUnderwearTopBraCBURN # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesCBURN # DS14-Underwear
   innerClothingSkirt: ClothingUniformJumpsuitColorBrown
-  satchel: ClothingMilitaryBackpackCBURNSierra
-  duffelbag: ClothingMilitaryBackpackCBURNSierra
-
-- type: entity
-  parent: ClothingMilitaryBackpack
-  id: ClothingMilitaryBackpackCBURNSierra
-  name: рюкзак бойца РХБЗЗ
-  description: Рюкзак, содержащий различное оборудование для сдерживания биологической угрозы.
-  suffix: Заполненный, РХБЗЗ, Некроморфы, Боец
-  components:
-  - type: StorageFill
-    contents:
-    - id: WeaponShotgunEnforcer
-    - id: GrenadeIncendiary
-    - id: CrowbarRed
-    - id: WeaponFlareGun
-    - id: BoxShotgunFlare
-    - id: MagazineShotgun
-      amount: 4
-    - id: MagazineShotgunSlug
-    - id: MagazineShotgunIncendiary
-      amount: 2
-    - id: MagazineShotgunBeanbag
-    - id: ZetaTwoMedipen
-      amount: 2
-    - id: TelescopicShield
-    - id: EmergencyMedipen
-    - id: BoxMRE
-    - id: WeaponDisabler
-    - id: WeaponLaserSvalinn
-    - id: PowerCellSmall
-    - id: PowerCellMedium
+  storage:
+    back:
+    - WeaponShotgunEnforcer
+    - GrenadeIncendiary
+    - CrowbarRed
+    - WeaponFlareGun
+    - BoxShotgunFlare
+    - MagazineShotgun
+    - MagazineShotgun
+    - MagazineShotgun
+    - MagazineShotgun
+    - MagazineShotgunSlug
+    - MagazineShotgunIncendiary
+    - MagazineShotgunIncendiary
+    - MagazineShotgunBeanbag
+    - ZetaTwoMedipen
+    - ZetaTwoMedipen
+    - TelescopicShield
+    - EmergencyMedipen
+    - BoxMRE
+    - WeaponDisabler
+    - WeaponLaserSvalinn
+    - PowerCellSmall
+    - PowerCellMedium
 
 # Other
 - type: entity

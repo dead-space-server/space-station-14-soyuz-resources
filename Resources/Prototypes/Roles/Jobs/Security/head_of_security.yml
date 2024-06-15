@@ -51,3 +51,12 @@
     gloves: ClothingHandsGlovesCombat
     ears: ClothingHeadsetAltSecurity
     socks: ClothingUnderwearSocksHeadOfSecurity
+    underwearb: ClothingUnderwearBottomBoxersHeadofSecurity # DS14-Underwear
+  underweart: ClothingUnderwearTopBraHeadofSecurity # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesHeadofSecurity # DS14-Underwear
+  storage:
+    back:
+    - BoxSurvivalSecurity
+    - Flash
+    - HyperLinkBookCorporateLaw
+    - HyperLinkBookSOPSecurity

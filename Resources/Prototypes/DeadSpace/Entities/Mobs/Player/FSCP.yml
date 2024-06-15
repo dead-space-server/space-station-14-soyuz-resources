@@ -131,9 +131,9 @@
     pocket1: FSCPKnife
     pocket2: ADTDrinkArmyFlask
     back: ClothingBackpackFSCPRecruitFilled
-    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
-  underweart: ClothingUnderwearTopBraSportsAlternative # Sirena-Underwear
-  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
+    underwearb: ClothingUnderwearBottomBoxersWhite # DS14-Underwear
+  underweart: ClothingUnderwearTopBraSportsAlternative # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # DS14-Underwear
   innerClothingSkirt: ClothingUniformJumpsuitFSCPRecruit
   satchel: ClothingBackpackFSCPRecruitFilled
   duffelbag: ClothingBackpackFSCPRecruitFilled
@@ -242,9 +242,9 @@
     pocket1: ScalpelAdvanced
     pocket2: ADTDrinkArmyFlask
     back: ClothingBackpackFSCPCorporalFilled
-    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
-  underweart: ClothingUnderwearTopBraSportsAlternative # Sirena-Underwear
-  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
+    underwearb: ClothingUnderwearBottomBoxersWhite # DS14-Underwear
+  underweart: ClothingUnderwearTopBraSportsAlternative # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # DS14-Underwear
   innerClothingSkirt: ClothingUniformJumpsuitFSCPCorporal
   satchel: ClothingBackpackFSCPCorporalFilled
   duffelbag: ClothingBackpackFSCPCorporalFilled
@@ -340,9 +340,9 @@
     pocket1: FSCPKnife
     pocket2: ADTDrinkArmyFlask
     back: ClothingBackpackFSCPSergeantFilled
-    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
-  underweart: ClothingUnderwearTopBraSportsAlternative # Sirena-Underwear
-  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
+    underwearb: ClothingUnderwearBottomBoxersWhite # DS14-Underwear
+  underweart: ClothingUnderwearTopBraSportsAlternative # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # DS14-Underwear
   innerClothingSkirt: ClothingUniformJumpsuitFSCPSergeant
   satchel: ClothingBackpackFSCPSergeantFilled
   duffelbag: ClothingBackpackFSCPSergeantFilled

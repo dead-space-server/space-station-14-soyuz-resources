@@ -9,6 +9,8 @@
       name: ghost-role-information-blob-name
       description: ghost-role-information-blob-description
       rules: You are an antagonist, destroy the station!
+      raffle:
+        settings: default
     - type: GhostTakeoverAvailable
     - type: Sprite
       sprite: Markers/jobs.rsi
@@ -23,7 +25,7 @@
   name: Blob pod
   description: An ordinary person fighting opponents, not like a thing attached to a tile, zombifies corpses.
   parent: SimpleSpaceMobBase
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
     - type: ZombieImmune
     - type: TriggerOnMobstateChange
@@ -122,7 +124,7 @@
   name: Blobbernaut
   description: Juggernaut, but blob! when the station crew shows full hatred of you, with the help of such strong men you can organize a blitzkriek if you tell them the plan in advance.
   parent: SimpleSpaceMobBase
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
     - type: ZombieImmune
     - type: Damageable
@@ -135,6 +137,8 @@
       name: ghost-role-information-blobbernaut-name
       description: ghost-role-information-blobbernaut-description
       rules: You are an antagonist, defend your blob core!
+      raffle:
+        settings: default
     - type: GhostTakeoverAvailable
     - type: Blobbernaut
     - type: BlobSpeak
@@ -201,9 +205,9 @@
         - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
           state: nautdamage
           shader: unshaded
-    #- type: NightVision
-    #  isToggle: true
-    #  color: "#808080"
+    # - type: NightVision
+    #   isToggle: true
+    #   color: "#808080"
 
 - type: entity
   id: BaseBlob
@@ -215,7 +219,16 @@
       - Wall
   components:
     - type: ZombieImmune
-    - type: Flashable
+    - type: StatusEffects
+      allowed:
+      - Stun
+      - KnockedDown
+      - SlowedDown
+      - Electrocution
+      - PressureImmunity
+      - StaminaModifier
+      - SeeAll
+      - Flashed
     - type: Reactive
       groups:
         Flammable: [Touch]
@@ -247,7 +260,7 @@
   parent: BaseBlob
   id: NormalBlobTile
   name: Normal Blob
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   description: An ordinary part of yours required for the construction of more advanced tiles.
   components:
   - type: Temperature
@@ -310,7 +323,7 @@
   parent: BaseBlob
   id: CoreBlobTile
   name: Core Blob
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   description: The most important part of you. This is the brain and heart of the Blob. You cannot have more than one core (if you have a second one, it is not controlled by you), so you must protect it at all costs, otherwise you will die. The core itself restores health over time; with the regenerative chemical, health is restored 10 times faster. The core produces FIVE resource points per two seconds.
   save: false
   components:
@@ -373,6 +386,8 @@
       description: ghost-role-information-blob-description
       rules: You are an antagonist, destroy the station!
       reregister: false
+      raffle:
+        settings: default
     - type: GhostTakeoverAvailable
 
 
@@ -381,7 +396,7 @@
   id: FactoryBlobTile
   name: Factory Blob
   description: The so-called BlobPods come out of the factory and attack passers-by and zombify the corpses of these same passers-by. One factory produces 3 of these BlobPods; they cannot be placed next to each other at a distance of 7 tiles; one factory can produce only one Blobbernaut.
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
     - type: Temperature
       heatDamage:
@@ -420,7 +435,7 @@
   parent: BaseBlob
   id: ResourceBlobTile
   name: Resource Blob
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
     - type: Temperature
       heatDamage:
@@ -460,7 +475,7 @@
   id: NodeBlobTile
   name: Node Blob
   description: The second, but mini, Blob core, near which you can place factories and resource blobs. Required to split the core.
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
     - type: Temperature
       heatDamage:
@@ -501,7 +516,7 @@
   id: StrongBlobTile
   name: StrongBlobTile
   description: The basis of defensive positions has not only a strength of 6 times, this tile is also capable of withstanding various gases in order to become an atmospheric technician to protect the core, for example, from plasma that the enemy can set on fire.
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
     - type: BlobTile
       tileType: Strong
@@ -530,7 +545,7 @@
   id: ReflectiveBlobTile
   name: ReflectiveBlobTile
   description: Upgrading a fortified cell in which they pay less strength for the ability to reflect only energy projectiles and lasers with a 90% chance.
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
     - type: Damageable
       damageContainer: Blob
@@ -566,7 +581,7 @@
 #  parent: BaseStructure
 #  id: BlobBorder
 #  name: debug wall
-#  noSpawn: true
+#  categories: [ HideSpawnMenu ]
 #  suffix: DONTMAP
 #  placement:
 #    mode: SnapgridCenter
@@ -599,9 +614,24 @@
 #      base: debug
 
 - type: entity
+  id: MobObserverBlobController
+  name: Blob observer controller
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Backmen/Mobs/Aliens/blob.rsi
+    state: marker
+  - type: Item
+    sprite: Backmen/Mobs/Aliens/blob.rsi
+    state: marker
+    size: Ginormous
+  - type: Unremoveable
+    deleteOnDrop: true
+
+- type: entity
   id: MobObserverBlob
   name: Blob observer
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   save: false
   components:
     - type: UserInterface
@@ -612,6 +642,8 @@
     - type: Alerts
     - type: ReplacementAccent
       accent: genericAggressive
+    - type: Hands
+      showInHands: true
     - type: BlobObserver
     - type: BlobSpeak
       overrideName: false

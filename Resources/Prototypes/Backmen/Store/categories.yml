@@ -42,13 +42,13 @@
   id: VendingYouTool
   name: store-category-vendingyoutool
 
-- type: storeCategory
-  id: VendingLootboxInventory
-  name: store-category-lootbox
-  
-- type: storeCategory
-  id: VendingLootboxInventoryEmag
-  name: store-category-emag
+# - type: storeCategory
+#   id: VendingLootboxInventory
+#   name: store-category-lootbox
+
+# - type: storeCategory
+#   id: VendingLootboxInventoryEmag
+#   name: store-category-emag
 
 - type: storeCategory
   id: SpaceUpInventory
@@ -78,10 +78,10 @@
   id: HappyHonkInventory
   name: store-category-HappyHonk
 
-- type: storeCategory
-  id: BoxingDrobeInventory
-  name: store-category-vendingmachineboxingdrobe
-  
+# - type: storeCategory
+#   id: BoxingDrobeInventory
+#   name: store-category-vendingmachineboxingdrobe
+
 - type: storeCategory
   id: BoxingDrobeInventoryEmag
   name: store-category-emag

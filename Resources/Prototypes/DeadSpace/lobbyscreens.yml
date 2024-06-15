@@ -34,7 +34,7 @@
 
 # - type: lobbyBackground
 #   id: Pharmacy
-#   background: /Textures/LobbyScreens/Fobos/pharmacy.png
+#   background: /Textures/LobbyScreens/Fobos/pharmacy.webp
 
 # - type: lobbyBackground
 #   id: Singu
@@ -54,7 +54,7 @@
 
 # - type: lobbyBackground
 #   id: Warden
-#   background: /Textures/LobbyScreens/Fobos/warden.png
+#   background: /Textures/LobbyScreens/Fobos/warden.webp
 
 # - type: lobbyBackground
 #   id: Susstation
@@ -108,17 +108,35 @@
 #   id: meteorit
 #   background: /Textures/LobbyScreens/Fobos/meteorit.png
 
-- type: lobbyBackground
-  id: Behonker
-  background: /Textures/LobbyScreens/Fobos/behonker.webp
+# - type: lobbyBackground
+#   id: Behonker
+#   background: /Textures/LobbyScreens/Fobos/behonker.webp
 
-- type: lobbyBackground
-  id: TerminalStation
-  background: /Textures/LobbyScreens/Fobos/terminalstation.webp
+# - type: lobbyBackground
+#   id: TerminalStation
+#   background: /Textures/LobbyScreens/Fobos/terminalstation.webp
 
-- type: lobbyBackground
-  id: JustAWeekAway
-  background: /Textures/LobbyScreens/Fobos/justaweekaway.webp
+# - type: lobbyBackground
+#   id: JustAWeekAway
+#   background: /Textures/LobbyScreens/Fobos/justaweekaway.webp
+
+# - type: lobbyBackground
+#   id: Mia
+#   background: /Textures/LobbyScreens/Fobos/mia.png
+
+# - type: lobbyBackground
+#   id: Obed
+#   background: /Textures/LobbyScreens/Fobos/obed.png
+
+# - type: lobbyBackground
+#   id: JaniShootout
+#   background: /Textures/LobbyScreens/Fobos/janishootout.webp
+
+# Titan
+
+# - type: lobbyBackground
+#   id: ArtNaTitan
+#   background: /Textures/LobbyScreens/Fobos/art_na_titan.png
 
 # Soyuz
 

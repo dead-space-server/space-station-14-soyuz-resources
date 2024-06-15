@@ -37,3 +37,12 @@
     eyes: ClothingEyesGlassesSecurity
     id: WardenPDA
     ears: ClothingHeadsetSecurity
+    underwearb: ClothingUnderwearBottomBoxersWarden # DS14-Underwear
+  underweart: ClothingUnderwearTopBraWarden # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWarden # DS14-Underwear
+  storage:
+    back:
+    - BoxSurvivalSecurity
+    - Flash
+    - HyperLinkBookCorporateLaw
+    - HyperLinkBookSOPSecurity

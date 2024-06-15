@@ -21,7 +21,7 @@
     RadioHandheldSecurity: 6
     RadioHandheld: 6
   # security officers need to follow a diet regimen!
-  contrabandInventory:
+  emaggedInventory:
     FoodDonutHomer: 12
     FoodBoxDonut: 2
     #box evidence

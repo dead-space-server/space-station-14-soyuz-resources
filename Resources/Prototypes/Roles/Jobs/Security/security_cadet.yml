@@ -39,3 +39,11 @@
     id: SecurityCadetPDA
     ears: ClothingHeadsetSecurity
     belt: ClothingBeltSecurityFilled
+    underwearb: ClothingUnderwearBottomBoxersCadet # DS14-Underwear
+  underweart: ClothingUnderwearTopBraCadet # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesCadet # DS14-Underwear
+  storage:
+    back:
+    - BoxSurvivalSecurity
+    - HyperLinkBookCorporateLaw
+    - HyperLinkBookSOPSecurity

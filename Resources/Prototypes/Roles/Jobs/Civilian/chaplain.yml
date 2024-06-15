@@ -30,3 +30,11 @@
     shoes: ClothingShoesColorBlack
     id: ChaplainPDA
     ears: ClothingHeadsetService
+    underwearb: ClothingUnderwearBottomBoxersChaplain # DS14-Underwear
+  underweart: ClothingUnderwearTopBraChaplain # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesChaplain # DS14-Underwear
+  storage:
+    back:
+    - BoxSurvival
+    - Bible
+    - RubberStampChaplain

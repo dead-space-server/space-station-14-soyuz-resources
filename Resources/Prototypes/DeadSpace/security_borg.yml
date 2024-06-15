@@ -126,6 +126,7 @@
     - Stun
     - KnockedDown
     - SlowedDown
+    - Flashed
   - type: TypingIndicator
     proto: robot
   - type: Speech
@@ -140,7 +141,6 @@
   - type: Lock
     locked: true
   - type: ActivatableUIRequiresLock
-  - type: Flashable
   - type: Damageable
     damageContainer: Silicon
   - type: Destructible
@@ -320,6 +320,7 @@
           - PositronicBrain
         borg_module:
           - BorgModuleArrestSecurity
+          - BorgModulEnergySecurity
     - type: ItemSlots
       slots:
         cell_slot:

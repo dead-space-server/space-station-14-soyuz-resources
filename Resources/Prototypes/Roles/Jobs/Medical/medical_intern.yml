@@ -30,3 +30,9 @@
     id: MedicalInternPDA
     ears: ClothingHeadsetMedical
     belt: ClothingBeltMedicalFilled
+    underwearb: ClothingUnderwearBottomBoxersIntern # DS14-Underwear
+  underweart: ClothingUnderwearTopBraIntern # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesIntern # DS14-Underwear
+  storage:
+    back:
+    - BoxSurvivalMedical

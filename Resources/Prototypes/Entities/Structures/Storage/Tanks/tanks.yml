@@ -25,8 +25,7 @@
   - type: ReagentTank
     tankType: Fuel
   - type: DamageOnToolInteract
-    tools:
-    - Welding
+    tools: Welding
     weldingDamage:
       types:
         Heat: 10
@@ -75,7 +74,7 @@
         maxVol: 5000
   - type: Explosive
     explosionType: Default
-    totalIntensity: 80
+    totalIntensity: 120
 
 # Water
 
@@ -217,4 +216,3 @@
       fillBaseName: watertank-2-
     - type: ExaminableSolution
       solution: tank
-

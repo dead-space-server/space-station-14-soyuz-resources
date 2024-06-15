@@ -1,6 +1,6 @@
 - type: entity
   abstract: true
-  parent: BaseItem
+  parent: [ BaseItem, StorePresetUplink ] #PDA's have uplinks so they have to inherit the data.
   id: BasePDA
   name: PDA
   description: Personal Data Assistant.
@@ -171,7 +171,7 @@
     state: pda-interncadet
   - type: PdaBorderColor
     borderColor: "#717059"
-    accentVColor: "#A32D26"
+    accentVColor: "#005E72"
   - type: Icon
     state: pda-interncadet
 
@@ -602,7 +602,7 @@
     id: HoSIDCard
     state: pda-hos
   - type: PdaBorderColor
-    borderColor: "#A32D26"
+    borderColor: "#005E72"
     accentHColor: "#447987"
   - type: Icon
     state: pda-hos
@@ -617,7 +617,7 @@
     id: WardenIDCard
     state: pda-warden
   - type: PdaBorderColor
-    borderColor: "#A32D26"
+    borderColor: "#005E72"
     accentVColor: "#949137"
   - type: Icon
     state: pda-warden
@@ -632,7 +632,7 @@
     id: SecurityIDCard
     state: pda-security
   - type: PdaBorderColor
-    borderColor: "#A32D26"
+    borderColor: "#005E72"
   - type: Icon
     state: pda-security
 
@@ -659,10 +659,11 @@
   parent: CentcomPDA
   id: AdminPDA
   name: Admin PDA
+  suffix: Admin
   description: If you are not an admin please return this PDA to the nearest admin.
   components:
   - type: Pda
-    id: PassengerIDCard
+    id: UniversalIDCard
   - type: HealthAnalyzer
     scanDelay: 0
   - type: CartridgeLoader
@@ -952,9 +953,9 @@
     id: BrigmedicIDCard
     state: pda-brigmedic
   - type: PdaBorderColor
-    borderColor: "#A32D26"
-    accentHColor: "#d7d7d0"
-    accentVColor: "#d7d7d0"
+    borderColor: "#005E72"
+    accentHColor: "#D7D7d0"
+    accentVColor: "#D7D7D0"
   - type: Icon
     state: pda-brigmedic
 

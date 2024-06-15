@@ -57,3 +57,19 @@
     layers:
     - state: crypt_silver
     - state: nano_label
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyTypan
+  name: красный ключ шифрования
+  description: Ключ шифрования, используемый... хм... кем же?
+  suffix: Тайпан
+  components:
+  - type: EncryptionKey
+    channels:
+    - Typan
+    defaultChannel: Typan
+  - type: Sprite
+    sprite: DeadSpace/Objects/Devices/Encryption_keys/typankey.rsi
+    layers:
+    - state: crypt_typ

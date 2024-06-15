@@ -1,3 +1,7 @@
+ent-ShowSecurityIcons = { "" }
+    .desc = { "" }
+ent-ShowMedicalIcons = { "" }
+    .desc = { "" }
 ent-ClothingEyesHudDiagnostic = диагностический визор
     .desc = Окуляр с индикатором на стекле, способный анализировать целостность и состояние роботов и машинных членов экипажа.
 ent-ClothingEyesHudMedical = медицинский визор

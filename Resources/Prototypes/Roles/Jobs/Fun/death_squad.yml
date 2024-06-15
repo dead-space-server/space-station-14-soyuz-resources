@@ -28,12 +28,10 @@
     id: CentcomIDCardDeathsquad
     pocket1: EnergySword
     belt: ClothingBeltDeathSquadWebbingFilled
-    underwearb: ClothingUnderwearBottomBoxersDeathSquad # Sirena-Underwear
-  underweart: ClothingUnderwearTopBraDeathSquad # Sirena-Underwear
-  underwearb: ClothingUnderwearBottomPantiesDeathSquad # Sirena-Underwear
+    underwearb: ClothingUnderwearBottomBoxersDeathSquad # DS14-Underwear
+  underweart: ClothingUnderwearTopBraDeathSquad # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesDeathSquad # DS14-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtColorBlack
-  satchel: ClothingDeathSquadBackpackFilled
-  duffelbag: ClothingDeathSquadBackpackFilled
 
 - type: entity
   parent: WeaponRevolverMateba

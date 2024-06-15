@@ -66,15 +66,17 @@ petting-failure-cleanbot = Вы тянетесь погладить { $target },
 petting-failure-mimebot = Вы тянетесь погладить { $target }, но { $target } занят мимированием!
 petting-failure-medibot = Вы тянетесь погладить { $target }, но { $target } едва не пронзает вашу руку шприцом!
 
-# Shown when knocking on a window
-comp-window-knock = *тук-тук*
+## Rattling fences
+
+fence-rattle-success = *бдзынь*
+
+## Hugging players
+
 hugging-success-generic = Вы обнимаете { $target }.
 hugging-success-generic-others = { CAPITALIZE($user) } обнимает { $target }.
-fence-rattle-success = *бдзынь*
 hugging-success-generic-target = { CAPITALIZE($user) } обнимает вас.
 
 ## Other
 
 petting-success-tesla = Вы гладите { $target }, нарушая законы природы и физики.
-
 petting-failure-tesla = Вы тянетесь погладить { $target }, но { $target } ударяет вас током в ответ!

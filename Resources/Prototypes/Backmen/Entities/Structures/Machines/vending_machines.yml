@@ -20,55 +20,55 @@
         enum.StoreUiKey.Key:
           type: StoreBoundUserInterface
 
-- type: entity
-  parent: VendingMachine
-  id: BackmenVendingLootBox
-  name: ЛутБоксы
-  suffix: backmen
-  description: Испытайте удачу и откройте свой лутбокс!
-  components:
-    - type: VendingMachine
-      pack: VendingLootboxInventory
-      dispenseOnHitChance: 0.01
-      dispenseOnHitThreshold: 50
-      offState: off
-      brokenState: broken
-      normalState: normal-unshaded
-    - type: Advertise
-      pack: AmmoVendAds
-    - type: Speech
-    - type: Sprite
-      sprite: Backmen/Structures/Machines/VendingMachines/lootbox.rsi
-      layers:
-        - state: "off"
-          map: ["enum.VendingMachineVisualLayers.Base"]
-        - state: "off"
-          map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
-          shader: unshaded
-        - state: panel
-          map: ["enum.WiresVisualLayers.MaintenancePanel"]
-    - type: PointLight
-      radius: 1.5
-      energy: 1.6
-      color: "#6148c7"
-    - type: Store
-      categories:
-        - VendingLootboxInventory
-      currencyWhitelist:
-        - SpaceCash
-      balance:
-        SpaceCash: 0
-    - type: BuyStoreBank
-      emagCategories:
-        - VendingLootboxInventoryEmag
-    - type: ActivatableUI
-      key: enum.StoreUiKey.Key
-      singleUser: true
-    - type: ActivatableUIRequiresPower
-    - type: UserInterface
-      interfaces:
-        enum.StoreUiKey.Key:
-          type: StoreBoundUserInterface
+# - type: entity
+#   parent: VendingMachine
+#   id: BackmenVendingLootBox
+#   name: ЛутБоксы
+#   suffix: backmen
+#   description: Испытайте удачу и откройте свой лутбокс!
+#   components:
+#     - type: VendingMachine
+#       pack: VendingLootboxInventory
+#       dispenseOnHitChance: 0.01
+#       dispenseOnHitThreshold: 50
+#       offState: off
+#       brokenState: broken
+#       normalState: normal-unshaded
+#     - type: Advertise
+#       pack: AmmoVendAds
+#     - type: Speech
+#     - type: Sprite
+#       sprite: Backmen/Structures/Machines/VendingMachines/lootbox.rsi
+#       layers:
+#         - state: "off"
+#           map: ["enum.VendingMachineVisualLayers.Base"]
+#         - state: "off"
+#           map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+#           shader: unshaded
+#         - state: panel
+#           map: ["enum.WiresVisualLayers.MaintenancePanel"]
+#     - type: PointLight
+#       radius: 1.5
+#       energy: 1.6
+#       color: "#6148c7"
+#     - type: Store
+#       categories:
+#         - VendingLootboxInventory
+#       currencyWhitelist:
+#         - SpaceCash
+#       balance:
+#         SpaceCash: 0
+#     - type: BuyStoreBank
+#       emagCategories:
+#         - VendingLootboxInventoryEmag
+#     - type: ActivatableUI
+#       key: enum.StoreUiKey.Key
+#       singleUser: true
+#     - type: ActivatableUIRequiresPower
+#     - type: UserInterface
+#       interfaces:
+#         enum.StoreUiKey.Key:
+#           type: StoreBoundUserInterface
 
 - type: entity
   parent: VendingMachineCigs
@@ -534,43 +534,43 @@
         enum.StoreUiKey.Key:
           type: StoreBoundUserInterface
 
-- type: entity
-  parent: VendingMachine
-  id: VendingMachineBoxingDrobe
-  suffix: backmen
-  components:
-  - type: VendingMachine
-    pack: VendingLootboxInventory
-    dispenseOnHitChance: 0.01
-    dispenseOnHitThreshold: 50
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
-  - type: Sprite
-    sprite: Backmen/Structures/Machines/VendingMachines/boxingdrobe.rsi
-    layers:
-    - state: off
-      map: ["enum.VendingMachineVisualLayers.Base"]
-    - state: normal-unshaded
-      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
-      shader: unshaded
-    - state: panel
-      map: ["enum.WiresVisualLayers.MaintenancePanel"]
-  - type: Store
-    categories:
-      - BoxingDrobeInventory
-    currencyWhitelist:
-      - SpaceCash
-    balance:
-      SpaceCash: 0
-  - type: BuyStoreBank
-    emagCategories:
-      - BoxingDrobeInventoryEmag
-  - type: ActivatableUI
-    key: enum.StoreUiKey.Key
-    singleUser: true
-  - type: ActivatableUIRequiresPower
-  - type: UserInterface
-    interfaces:
-      enum.StoreUiKey.Key:
-        type: StoreBoundUserInterface
+# - type: entity
+#   parent: VendingMachine
+#   id: VendingMachineBoxingDrobe
+#   suffix: backmen
+#   components:
+#   - type: VendingMachine
+#     pack: VendingLootboxInventory
+#     dispenseOnHitChance: 0.01
+#     dispenseOnHitThreshold: 50
+#     offState: off
+#     brokenState: broken
+#     normalState: normal-unshaded
+#   - type: Sprite
+#     sprite: Backmen/Structures/Machines/VendingMachines/boxingdrobe.rsi
+#     layers:
+#     - state: off
+#       map: ["enum.VendingMachineVisualLayers.Base"]
+#     - state: normal-unshaded
+#       map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+#       shader: unshaded
+#     - state: panel
+#       map: ["enum.WiresVisualLayers.MaintenancePanel"]
+#   - type: Store
+#     categories:
+#       - BoxingDrobeInventory
+#     currencyWhitelist:
+#       - SpaceCash
+#     balance:
+#       SpaceCash: 0
+#   - type: BuyStoreBank
+#     emagCategories:
+#       - BoxingDrobeInventoryEmag
+#   - type: ActivatableUI
+#     key: enum.StoreUiKey.Key
+#     singleUser: true
+#   - type: ActivatableUIRequiresPower
+#   - type: UserInterface
+#     interfaces:
+#       enum.StoreUiKey.Key:
+#         type: StoreBoundUserInterface

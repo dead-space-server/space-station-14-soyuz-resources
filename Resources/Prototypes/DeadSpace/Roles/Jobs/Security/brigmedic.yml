@@ -35,10 +35,17 @@
   id: BrigmedicGear
   equipment:
     outerClothing: ClothingOuterVestSecurityMedic
-    back: ClothingBackpackBrigmedicFilled
     shoes: ClothingShoesColorRed
     eyes: ClothingEyesHudMedical
     head: ClothingHeadHatBeretBrigmedic
     id: BrigmedicPDA
     ears: ClothingHeadsetBrigmedic
     belt: ClothingBeltMedicalFilled
+    underwearb: ClothingUnderwearBottomBoxersBrigmedic # DS14-Underwear
+  underweart: ClothingUnderwearTopBraBrigmedic # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesBrigmedic # DS14-Underwear
+  storage:
+    back:
+    - BoxSurvivalBrigmedic
+    - Flash
+    - ADTtelescopicBaton

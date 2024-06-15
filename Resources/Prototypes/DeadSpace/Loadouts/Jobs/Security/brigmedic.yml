@@ -25,7 +25,7 @@
 - type: startingGear
   id: BrigmedicBackpack
   equipment:
-    back: ClothingBackpackBrigmedicFilled
+    back: ClothingBackpackBrigmedic
 
 - type: loadout
   id: BrigmedicSatchel
@@ -34,7 +34,7 @@
 - type: startingGear
   id: BrigmedicSatchel
   equipment:
-    back: ClothingBackpackSatchelBrigmedicFilled
+    back: ClothingBackpackSatchelBrigmedic
 
 - type: loadout
   id: BrigmedicDuffel
@@ -43,4 +43,4 @@
 - type: startingGear
   id: BrigmedicDuffel
   equipment:
-    back: ClothingBackpackDuffelBrigmedicFilled
+    back: ClothingBackpackDuffelBrigmedic

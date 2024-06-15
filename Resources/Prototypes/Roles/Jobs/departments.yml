@@ -13,6 +13,7 @@
   - Quartermaster
   - Magistrat
   primary: false
+  accountNumber: 1317 #backmen: currency
 
 - type: department
   id: Law
@@ -22,6 +23,7 @@
   - Magistrat
   - IAA
   - Lawyer
+  accountNumber: 1323  #backmen: currency
 
 - type: department
   id: Security
@@ -36,6 +38,7 @@
   - SecurityOfficer
   - Brigmedic
   - SecurityCadet
+  accountNumber: 1320  #backmen: currency
 
 - type: department
   id: Medical
@@ -50,6 +53,7 @@
   - MedicalDoctor
   - MedicalIntern
   - Psychologist
+  accountNumber: 1319 #backmen: currency
 
 - type: department
   id: Science
@@ -60,6 +64,7 @@
   - SeniorResearcher
   - Scientist
   - ResearchAssistant
+  accountNumber: 1321  #backmen: currency
 
 - type: department
   id: Engineering
@@ -71,6 +76,7 @@
   - AtmosphericTechnician
   - StationEngineer
   - TechnicalAssistant
+  accountNumber: 1318 #backmen: currency
 
 - type: department
   id: Cargo
@@ -81,6 +87,7 @@
   - SeniorSalvageSpecialist
   - SalvageSpecialist
   - CargoTechnician
+  accountNumber: 1315 #backmen: currency
 
 - type: department
   id: Civilian
@@ -105,6 +112,7 @@
   - Visitor
   - Zookeeper
   - ServiceWorker
+  accountNumber: 1316 #backmen: currency
 
 - type: department
   id: Specific
@@ -118,3 +126,4 @@
   - SecurityPilot
   - SAI
   primary: false
+  accountNumber: 1322  #backmen: currency

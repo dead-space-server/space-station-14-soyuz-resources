@@ -1129,7 +1129,7 @@
   name: uplink-mobcat-microbomb-name
   description: uplink-mobcat-microbomb-desc
   icon: { sprite: /Textures/Mobs/Pets/cat.rsi, state: syndicat }
-  productEntity: MobCatSyndy
+  productEntity: ReinforcementRadioSyndicateSyndiCat
   cost:
     Telecrystal: 4
   categories:

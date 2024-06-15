@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "poster 'absk' by shaxid22 (Discord) for Space Station 14 server Dead Space, poster 'meow' by chuiomoio (discord) for Space Station 14 server Dead Space",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "absk"
+    },
+    {
+      "name": "meow"
+    }
+  ]
+}

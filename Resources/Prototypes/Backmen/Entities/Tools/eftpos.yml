@@ -112,3 +112,14 @@
       presetAccountName: Specific
       canChangeAccountNumber: false
       currencyType: SpaceCash
+
+- type: entity
+  parent: Eftpos
+  id: EftposLaw
+  suffix: Law
+  components:
+    - type: Eftpos
+      presetAccountNumber: 1323
+      presetAccountName: Law
+      canChangeAccountNumber: false
+      currencyType: SpaceCash

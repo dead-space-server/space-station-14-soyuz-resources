@@ -32,3 +32,9 @@
     shoes: ClothingShoesColorBlack
     id: ServiceWorkerPDA
     ears: ClothingHeadsetService
+    underwearb: ClothingUnderwearBottomBoxersService # DS14-Underwear
+  underweart: ClothingUnderwearTopBraService # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesService # DS14-Underwear
+  storage:
+    back:
+    - BoxSurvival

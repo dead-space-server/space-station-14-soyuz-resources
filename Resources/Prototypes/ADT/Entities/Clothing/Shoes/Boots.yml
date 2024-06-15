@@ -27,7 +27,6 @@
 - type: entity
   id: ActionToggleADTMagboots
   parent: ActionBaseToggleMagboots
-  noSpawn: true
   components:
     - type: InstantAction
       icon: { sprite: ADT/Clothing/Shoes/Boots/advanced.rsi, state: icon }
@@ -37,7 +36,6 @@
   id: ActionToggleADTGasTank
   name: action-name-internals-toggle
   description: action-description-internals-toggle
-  noSpawn: true
   components:
     - type: InstantAction
       icon:
@@ -53,7 +51,6 @@
   id: ActionToggleADTJetpack
   name: action-name-jetpack-toggle
   description: action-description-jetpack-toggle
-  noSpawn: true
   components:
     - type: InstantAction
       icon:

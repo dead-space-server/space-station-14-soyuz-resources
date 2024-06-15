@@ -19,4 +19,6 @@
   - type: Tag
     tags:
     - HudMedical
+    - HighRiskItem
   - type: FlashImmunity
+  - type: SolutionScanner

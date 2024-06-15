@@ -17,3 +17,9 @@
     ears: ClothingHeadsetService
     shoes: ClothingShoesColorRed
     belt: ClothingBeltChampion
+    underwearb: ClothingUnderwearBottomBoxersBoxer # DS14-Underwear
+  underweart: ClothingUnderwearTopBraBoxer # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesBoxer # DS14-Underwear
+  storage:
+    back:
+    - BoxSurvival

@@ -782,6 +782,10 @@
       {
         "name": "tailed",
         "directions": 4
+      },
+      {
+        "name": "spikyponytail2",
+        "directions": 4
       }
     ]
   }

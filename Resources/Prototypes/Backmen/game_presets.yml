@@ -1,13 +1,13 @@
 - type: gamePreset
   id: Blob
   alias:
-  - blab
+    - blob
   name: blob-title
+  showInVote: true
   description: blob-description
-  showInVote: false
   rules:
-  - BlobGameMode
-  - BasicStationEventScheduler
-  - BasicRoundstartVariation
-  - SubGamemodesRule
-  - WageScheduler #backmen: currency
+    - BlobGameMode
+    - BasicStationEventScheduler
+    - BasicRoundstartVariation
+    - SubGamemodesRule
+    - WageScheduler #backmen: currency

@@ -6,9 +6,21 @@
   startingGear: PassengerGear
   icon: "JobIconPassenger"
   supervisors: job-supervisors-everyone
+  #start-backmen: currency
+  minBankBalance: 150
+  maxBankBalance: 250
+  wageDepartment: Civilian
+  wage: 50
+  #end-backmen: currency
 
 - type: startingGear
   id: PassengerGear
   equipment:
     id: PassengerPDA
     ears: ClothingHeadsetGrey
+    underwearb: ClothingUnderwearBottomBoxersWhite # DS14-Underwear
+  underweart: ClothingUnderwearTopBraWhite # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # DS14-Underwear
+  storage:
+    back:
+    - BoxSurvival

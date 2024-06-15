@@ -29,3 +29,9 @@
     id: AtmosPDA
     belt: ClothingBeltUtilityEngineering
     ears: ClothingHeadsetEngineering
+    underwearb: ClothingUnderwearBottomBoxersAtmosphericTechnician # DS14-Underwear
+  underweart: ClothingUnderwearTopBraAtmosphericTechnician # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesAtmosphericTechnician # DS14-Underwear
+  storage:
+    back:
+    - BoxSurvivalEngineering

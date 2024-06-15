@@ -15,8 +15,6 @@
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Shuttles/emergency_box.yml
         - type: StationJobs
-          overflowJobs:
-            - Passenger
           availableJobs:
             #service
             Captain: [ 1, 1 ]
@@ -71,7 +69,7 @@
             Magistrat: [ 1, 1 ]
             Lawyer: [ 4, 4 ]
             Brigmedic: [ 1, 1 ]
-            ClownSponsor: [ 0, -1 ]
+            ClownSponsor: [ 0, 2 ]
             Coroner: [ 1, 1 ]
             SeniorSalvageSpecialist: [ 1, 1 ]
             SeniorAdministrator: [ 1, 1 ]

@@ -17,6 +17,12 @@
   - Coroner
   extendedAccess:
   - Chemistry
+  #start-backmen: currency
+  minBankBalance: 150
+  maxBankBalance: 250
+  wageDepartment: Medical
+  wage: 25
+  #end-backmen: currency
 
 - type: startingGear
   id: ParamedicGear
@@ -24,3 +30,10 @@
     id: ParamedicPDA
     ears: ClothingHeadsetMedical
     belt: ClothingBeltMedicalEMTFilled
+    underwearb: ClothingUnderwearBottomBoxersParamedic # DS14-Underwear
+  underweart: ClothingUnderwearTopBraParamedic # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesParamedic # DS14-Underwear
+  storage:
+    back:
+    - BoxSurvivalMedical
+    - EmergencyRollerBedSpawnFolded

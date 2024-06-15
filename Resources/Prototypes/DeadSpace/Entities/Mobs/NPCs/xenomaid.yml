@@ -104,7 +104,6 @@
   - type: NoSlip
   - type: TTS
     voice: Magess
-  - type: Flashable
   - type: Puller
     needsHands: false
   - type: Hands

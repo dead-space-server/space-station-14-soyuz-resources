@@ -12,3 +12,5 @@ bwoink-system-typing-indicator =
        *[other] печатают
     }...
 admin-bwoink-play-sound = Звук?
+
+bwoink-title-none-selected = Ничего не выбрано

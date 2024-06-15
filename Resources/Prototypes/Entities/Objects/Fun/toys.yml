@@ -1222,6 +1222,7 @@
     - type: StaminaDamageOnHit
       damage: 8
     - type: MeleeWeapon
+      wideAnimationRotation: -135
       damage:
         types:
           Blunt: 0
@@ -1464,15 +1465,6 @@
   - type: Tag
     tags:
       - DrinkSpaceGlue
-
-- type: entity
-  parent: BasePlushie
-  id: PlushieJokerge
-  name: jokerge plushie
-  description: I use arch btw!
-  components:
-  - type: Sprite
-    state: jokerge
 
 - type: entity
   parent: BaseItem

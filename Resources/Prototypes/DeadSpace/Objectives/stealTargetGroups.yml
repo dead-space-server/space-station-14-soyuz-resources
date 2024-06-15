@@ -1,0 +1,6 @@
+- type: stealTargetGroup
+  id: BestGlassesForCMO
+  name: med best glasses
+  sprite:
+    sprite: Clothing/Eyes/Glasses/science.rsi
+    state: icon

@@ -1,6 +1,6 @@
 - type: gameMap
   id: CorvaxIshimura
-  mapName: 'USG Ishimura (НЕ СТАВИТЬ)'
+  mapName: 'USG Ishimura'
   mapPath: /Maps/corvax_ishimura.yml
   minPlayers: 20
   maxPlayers: 60
@@ -77,8 +77,9 @@
             Magistrat: [ 1, 1 ]
             Lawyer: [ 4, 4 ]
             Brigmedic: [ 1, 1 ]
-            ClownSponsor: [ 0, -1 ]
+            ClownSponsor: [ 0, 2 ]
             Coroner: [ 1, 1 ]
             SeniorSalvageSpecialist: [ 1, 1 ]
             SeniorAdministrator: [ 1, 1 ]
             SecurityPilot: [ 1, 1 ]
+            SAI: [ 1, 1 ] # backmen-SAI

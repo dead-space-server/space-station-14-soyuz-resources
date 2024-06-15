@@ -30,3 +30,9 @@
     jumpsuit: ClothingUniformJumpsuitSalvageSpecialist
     id: SalvagePDA
     ears: ClothingHeadsetCargo
+    underwearb: ClothingUnderwearBottomBoxersSalvageSpecialist # DS14-Underwear
+  underweart: ClothingUnderwearTopBraSalvageSpecialist # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesSalvageSpecialist # DS14-Underwear
+  storage:
+    back:
+    - BoxSurvival

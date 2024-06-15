@@ -24,3 +24,9 @@
   id: SeniorResearcherGear
   equipment:
     ears: ClothingHeadsetScience
+    underwearb: ClothingUnderwearBottomBoxersSeniorResearcher # DS14-Underwear
+  underweart: ClothingUnderwearTopBraSeniorResearcher # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesSeniorResearcher # DS14-Underwear
+  storage:
+    back:
+    - BoxSurvival

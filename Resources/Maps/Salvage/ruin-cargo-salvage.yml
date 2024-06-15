@@ -3233,13 +3233,6 @@ entities:
     - type: Transform
       pos: -7.5,-1.5
       parent: 16
-- proto: WeaponGrapplingGun
-  entities:
-  - uid: 271
-    components:
-    - type: Transform
-      pos: -1.400831,-7.5095
-      parent: 16
 - proto: WeaponProtoKineticAccelerator
   entities:
   - uid: 270

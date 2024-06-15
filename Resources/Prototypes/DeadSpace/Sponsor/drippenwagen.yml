@@ -3,6 +3,12 @@
   entity: ClothingBackpackdrippenwagen
   sponsorOnly: true
 
+- type: sponsorLoadout
+  id: drippenwagenProtoKinetic
+  entity: WeaponProtoKineticAcceleratordrippenwagen
+  sponsorOnly: true
+  whitelistJobs: [SalvageSpecialist, SeniorSalvageSpecialist]
+
 # Backpack
 - type: entity
   parent: ClothingBackpack
@@ -28,7 +34,6 @@
       - id: DominatorMedkitAdvanced
       - id: SpaceCash1000
       - id: ClothingOuterCoatExpensive
-      - id: WeaponProtoKineticAcceleratordrippenwagen
       - id: ClothingMaskBreathMedicalSecuritydrippenwagen
       - id: ClothingEyesHudMedSec
       - id: PaperLawdrippenwagen
@@ -77,6 +82,9 @@
     sprite: DeadSpace/Sponsor/vjlados/gloves.rsi
   - type: Clothing
     sprite: DeadSpace/Sponsor/vjlados/gloves.rsi
+  - type: Fiber
+    fiberMaterial: fibers-insulative
+    fiberColor: fibers-white
 
 # Hardsuit
 - type: entity
@@ -264,5 +272,5 @@
     - stampedColor: '#006600FF'
       stampedName: Центральное Командование
     - stampedColor: '#00BE00FF'
-      stampedName: Одобрено 
+      stampedName: Одобрено
     content: paper-law-drippenwagen
