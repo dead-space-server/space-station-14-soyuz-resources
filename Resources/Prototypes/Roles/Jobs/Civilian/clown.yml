@@ -43,3 +43,11 @@
     pocket2: ClownRecorder
     id: ClownPDA
     ears: ClothingHeadsetService
+    underwearb: ClothingUnderwearBottomBoxersClown # DS14-Underwear
+  underweart: ClothingUnderwearTopBraClown # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesClown # DS14-Underwear
+  storage:
+    back:
+    - BoxHug
+    - RubberStampClown
+    - CrayonRainbow

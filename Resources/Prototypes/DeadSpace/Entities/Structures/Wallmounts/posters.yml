@@ -1,0 +1,21 @@
+# АБСК
+- type: entity
+  parent: PosterBase
+  id: PosterABSK
+  name: плакат "АБСК"
+  description: Плакат с символом доблестных вульпканинов спасателей из "Ассамблейской Благотворительно-Спасательной Компании" - сокращёно АБСК. Они вас из огня и лап ксеноморфов вытащат.
+  components:
+    - type: Sprite
+      sprite: DeadSpace/Structures/Wallmounts/posters.rsi
+      state: absk
+
+# Мяу! by chuiomoio
+- type: entity
+  parent: PosterBase
+  id: PosterMeow
+  name: Мяу!
+  description: Постер с рекламой какой-то ЧВК. Кажется, вы слышали какие-то новости о провалившихся переговорах руководства Nanotrasen с этой организацией.
+  components:
+    - type: Sprite
+      sprite: DeadSpace/Structures/Wallmounts/posters.rsi
+      state: meow

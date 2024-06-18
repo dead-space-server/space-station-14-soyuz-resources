@@ -1,0 +1,113 @@
+- type: entity
+  parent: IDCardStandard
+  id: TypanIDCardCargo
+  name: ID карта 
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Objects/Misc/typancargo.rsi
+    layers:
+    - state: typancardcargo
+  - type: Access
+    tags:
+    - Cargo
+    - SyndicateAgent
+    - Quartermaster
+
+- type: entity
+  parent: IDCardStandard
+  id: TypanIDCardCom
+  name: ID карта 
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Objects/Misc/typansec.rsi
+    layers:
+    - state: typancardcom
+  - type: Access
+    tags:
+    - Armory
+    - Cargo
+    - Medical
+    - Engineering
+    - Research
+    - Service
+    - SyndicateAgent
+    - Quartermaster
+    - ResearchDirector
+    - NukeOperative
+
+- type: entity
+  parent: IDCardStandard
+  id: TypanIDCardEng
+  name: ID карта 
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Objects/Misc/typaneng.rsi
+    layers:
+    - state: typancardeng
+  - type: Access
+    tags:
+    - Engineering
+    - SyndicateAgent
+
+- type: entity
+  parent: IDCardStandard
+  id: TypanIDCardMed
+  name: ID карта 
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Objects/Misc/typanmed.rsi
+    layers:
+    - state: typancardmed
+  - type: Access
+    tags:
+    - Cargo
+    - SyndicateAgent
+
+- type: entity
+  parent: IDCardStandard
+  id: TypanIDCardRd
+  name: ID карта 
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Objects/Misc/typanrd.rsi
+    layers:
+    - state: typancardrd
+  - type: Access
+    tags:
+    - Armory
+    - Cargo
+    - Medical
+    - Engineering
+    - Research
+    - Service
+    - SyndicateAgent
+    - Quartermaster
+    - ResearchDirector
+
+- type: entity
+  parent: IDCardStandard
+  id: TypanIDCardScience
+  name: ID карта 
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Objects/Misc/typanscien.rsi
+    layers:
+    - state: typancardscience
+  - type: Access
+    tags:
+    - Research
+    - SyndicateAgent
+
+- type: entity
+  parent: IDCardStandard
+  id: TypanIDCardService
+  name: ID карта 
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Objects/Misc/typanserv.rsi
+    layers:
+    - state: typancardservice
+  - type: Access
+    tags:
+    - Service
+    - SyndicateAgent

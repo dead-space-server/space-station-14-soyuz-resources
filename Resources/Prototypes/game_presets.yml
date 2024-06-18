@@ -5,7 +5,6 @@
   name: survival-title
   showInVote: true
   description: survival-description
-  minPlayers: 15
   rules:
     - RampingStationEventScheduler
     - BasicRoundstartVariation
@@ -32,21 +31,21 @@
   showInVote: true
   description: extended-description
   rules:
-  - BasicStationEventScheduler
-  - BasicRoundstartVariation
-  - WageScheduler #backmen: currency
+    - SubGamemodesRule
+    - BasicStationEventScheduler
+    - BasicRoundstartVariation
+    - WageScheduler #backmen: currency
 
 - type: gamePreset
   id: Greenshift
   alias:
   - greenshift
-  - shittersafarideluxeedition
   name: greenshift-title
   showInVote: false #4boring4vote
   description: greenshift-description
   rules:
-  - BasicRoundstartVariation
-  - WageScheduler #backmen: currency
+    - BasicRoundstartVariation
+    - WageScheduler #backmen: currency
 
 - type: gamePreset
   id: Secret
@@ -66,7 +65,9 @@
   showInVote: false #Admin Use
   description: secret-description
   rules:
+    - SubGamemodesRule
     - BasicStationEventScheduler
+    - BasicRoundstartVariation
     - WageScheduler #backmen: currency
 
 - type: gamePreset
@@ -77,7 +78,8 @@
   showInVote: false #Admin Use
   description: secret-description
   rules:
-  - WageScheduler #backmen: currency
+    - BasicRoundstartVariation
+    - WageScheduler #backmen: currency
 
 - type: gamePreset
   id: Sandbox
@@ -96,7 +98,6 @@
     - traitor
   name: traitor-title
   description: traitor-description
-  minPlayers: 15
   showInVote: true
   rules:
     - Traitor
@@ -111,7 +112,6 @@
     - deathmatch
   name: death-match-title
   description: death-match-description
-  maxPlayers: 10
   showInVote: true
   supportedMaps: DeathMatchMapPool
   rules:
@@ -124,7 +124,7 @@
   name: nukeops-title
   description: nukeops-description
   minPlayers: 40
-  # showInVote: true # Soyuz requested by ilryaz
+  showInVote: false # Soyuz
   rules:
     - Nukeops
     - SubGamemodesRule
@@ -138,7 +138,6 @@
     - revolutionary
   name: rev-title
   description: rev-description
-  minPlayers: 40
   showInVote: true
   rules:
     - Revolutionary
@@ -153,24 +152,10 @@
     - zombie
   name: zombie-title
   description: zombie-description
-  minPlayers: 45
   showInVote: true
   rules:
-  - Zombie
-  - BasicStationEventScheduler
-  - BasicRoundstartVariation
-  - WageScheduler #backmen: currency
-
-- type: gamePreset
-  id: Unitology
-  alias:
-    - unitology
-  name: uni-title
-  description: uni-description
-  minPlayers: 40
-  showInVote: true
-  rules:
-    - Unitology
+    - Zombie
+    - SubGamemodesRule
     - BasicStationEventScheduler
     - BasicRoundstartVariation
     - WageScheduler #backmen: currency

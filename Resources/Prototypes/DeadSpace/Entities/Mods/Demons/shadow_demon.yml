@@ -1,0 +1,100 @@
+- type: entity
+  id: MobDemonShadow
+  parent: [SimpleSpaceMobBase, FlyingMobBase]
+  name: теневой демон
+  description: Жуткий демон.
+  components:
+  - type: Tag
+    tags:
+      - CannotSuicide
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 4
+    baseSprintSpeed: 4
+  - type: Bloodstream
+    bloodReagent: DemonsBlood
+    bloodMaxVolume: 200
+    bloodlossThreshold: 0.4
+  - type: Clickable
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: DeadSpace/Mods/Demons/demon_shadow.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: running
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: running
+      Dead:
+        Base: running
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.40
+        density: 80
+        mask:
+        - GhostImpassable
+  - type: Damageable
+    damageContainer: Biological
+  - type: NoSlip
+  - type: Eye
+    visMask:
+      - Normal
+      - Ghost
+  - type: Visibility
+    layer: 2
+  - type: ContentEye
+    maxZoom: 1.2, 1.2
+  - type: Speech
+    speechVerb: Ghost
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      300: Dead
+  - type: DemonShadow
+  - type: Demon
+  - type: MeleeWeapon
+    altDisarm: false
+    hidden: true
+    angle: 45
+    soundHit:
+        path: /Audio/Effects/demon_attack1.ogg
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 2
+        Blunt: 3
+        Piercing: 1
+        Heat: 5
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: WallHack
+  - type: AutoDeleteOnDeath
+  - type: ZombieImmune
+  - type: ImmunitetInfectionDead
+  - type: Stamina
+  # - type: GhostRole
+  #   allowMovement: true
+  #   allowSpeech: true
+  #   makeSentient: true
+  #   name: ghost-role-information-shadow-name
+  #   description: ghost-role-information-shadow-description
+  #   rules: ghost-role-information-shadow-rules
+
+- type: entity
+  name: lightning
+  id: ShadowHand
+  parent: BaseLightning
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: /Textures/DeadSpace/Mods/Demons/shadow_hand.rsi
+    drawdepth: Effects
+    layers:
+    - state: "hand"
+      shader: unshaded
+  - type: Beam
+    sound: /Audio/DeadSpace/Demons/shadow_hand.ogg

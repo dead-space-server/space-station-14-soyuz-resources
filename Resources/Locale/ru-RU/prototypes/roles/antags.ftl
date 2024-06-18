@@ -31,5 +31,5 @@ roles-antag-space-ninja-objective = Используйте свою скрытн
 roles-antag-thief-name = Вор
 roles-antag-thief-objective = Пополните свою личную коллекцию имуществом NanoTrasen не прибегая к насилию!
 
-roles-antag-terminator-name = Терминатор
-roles-antag-terminator-objective = Убейте цель любой ценой, от этого зависит будущее.
+roles-antag-dragon-name = Космический дракон
+roles-antag-dragon-objective = Создайте армию карпов для захвата квадранта.

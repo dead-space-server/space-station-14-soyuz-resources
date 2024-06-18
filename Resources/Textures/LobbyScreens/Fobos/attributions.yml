@@ -1,4 +1,4 @@
-- files: ["warden.png", "pharmacy.png"]
+- files: ["warden.webp", "pharmacy.webp"]
   license: "CC-BY-NC-SA-3.0"
   copyright: "Solbusaur#4343 (220208697429852160) on discord"
   source: "https://github.com/space-wizards/space-station-14"
@@ -116,4 +116,19 @@
 - files: ["terminalstation.webp"]
   license: "CC-BY-SA-3.0"
   copyright: "aserovich on discord"
+  source: "https://github.com/space-wizards/space-station-14"
+
+- files: ["art_na_titan.png", "mia.png"]
+  license: "CC-BY-SA-3.0"
+  copyright: "doner4037 on discord for Space Station 14 server Dead Space (Мёртвый космос)"
+  source: "https://discord.gg/ds14"
+
+- files: ["obed.png"]
+  license: "CC-BY-SA-3.0"
+  copyright: "gachikarp on discord for Space Station 14 server Dead Space (Мёртвый космос)"
+  source: "https://discord.gg/ds14"
+
+- files: ["janishootout.webp"]
+  license: "CC0-1.0"
+  copyright: "psychpsyo on Github/Twitter"
   source: "https://github.com/space-wizards/space-station-14"

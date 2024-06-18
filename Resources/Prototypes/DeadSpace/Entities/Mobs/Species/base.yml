@@ -6,8 +6,6 @@
   id: BaseMobSpeciesComputer
   abstract: true
   components:
-  - type: Flashable
-  # Organs
   - type: StatusEffects
     allowed:
     - Stun
@@ -23,6 +21,7 @@
     - TemporaryBlindness
     - Pacified
     - StaminaModifier
+    - Flashed
   - type: Blindable
   - type: Temperature
     heatDamageThreshold: 5000
@@ -53,17 +52,22 @@
   - type: ZombieImmune
   - type: Repairable
     doAfterDelay: 30
-    fuelCost: 10
+    fuelcost: 10
     allowSelfRepair: false
   - type: Damageable
-    damageContainer: Inorganic
+    damageContainer: StructuralInorganic
   - type: DamageOnHighSpeedImpact
     damage:
       types:
         Blunt: 5
     soundHit:
-      path: /Audio/Effects/hit_kick.ogg
+      collection: MetalThud
   - type: InteractionOutline
+  - type: MobStateActions
+    actions:
+      Critical:
+      - ActionCritSuccumb
+      - ActionCritFakeDeath
   - type: Bloodstream
     bloodReagent: Oil
     bloodlossDamage:
@@ -76,8 +80,6 @@
           -1
     maxBleedAmount: 0
     chemicalMaxVolume: 0
-  - type: DrawableSolution
-    solution: bloodstream
   - type: Fixtures
     fixtures:
       fix1:
@@ -89,6 +91,17 @@
         - MobMask
         layer:
         - MobLayer
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      100: Critical
+      200: Dead
+    stateAlertDict:
+      Alive: BorgHealth
+      Critical: BorgCrit
+      Dead: BorgDead
+    showOverlays: true
+    allowRevives: true
   - type: HealthExaminable
     examinableTypes:
       - Blunt

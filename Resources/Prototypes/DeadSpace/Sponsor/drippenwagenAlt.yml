@@ -1,0 +1,346 @@
+- type: sponsorLoadout
+  id: drippenwagenAlt
+  entity: ClothingBackpackdrippenwagenAlt
+  sponsorOnly: true
+
+# Backpack
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackdrippenwagenAlt
+  name: армейский рюкзак Серебряной Лисы
+  description: Рюкзак изготовленый из влагостойкого материала, обеспечивающего сохранность вещей.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/backpack.rsi
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,16,6
+  - type: StorageFill
+    contents:
+      - id: ClothingBeltdrippenwagenAltFilled
+      - id: ClothingNeckCloakdrippenwagenAlt
+      - id: ClothingHandsGlovesdrippenwagenAlt
+      - id: ClothingOuterHardsuitdrippenwagenAlt
+      - id: ClothingUniformJumpsuitdrippenwagenAlt
+      - id: ClothingShoesBootsMagdrippenwagenAlt
+      - id: ClothingHeadsetdrippenwagenAlt
+      - id: ClothingEyesHudMedicaldrippenwagenAlt
+      - id: JetpackVoidFilled
+      - id: ClothingMaskdrippenwagenAlt
+      - id: ClothingHeadHatBeretdrippenwagenAlt
+      - id: MedkitAdvancedFilled
+      - id: PDAdrippenwagenAlt
+      - id: ADTtelescopicBaton
+      - id: SpaceCash1000
+      - id: PaperLawsdrippenwagenAlt
+
+# Other
+- type: entity
+  parent: PaperPrintedCentcomm
+  id: PaperLawsdrippenwagenAlt
+  name: распечатанный документ
+  description: Лист бумаги с заголовком центкома. Страшно даже смотреть на него.
+  noSpawn: true
+  components:
+  - type: Paper
+    stampState: paper_stamp-centcom
+    stampedBy:
+    - stampedColor: '#006600FF'
+      stampedName: Центральное Командование
+    - stampedColor: '#00BE00FF'
+      stampedName: Одобрено
+    content: paper-law-valadar
+
+# Belt
+- type: entity
+  parent: ClothingBeltChiefEngineer
+  id: ClothingBeltdrippenwagenAltFilled
+  name: РПС Серебряной Лисы
+  description: Разгрузочные поясные сумки изготовленные из материалов, обеспечивающих сохранность инструментов в условиях повышенной влажности.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/belt.rsi
+  - type: Clothing
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/belt.rsi
+  - type: Item
+    size: Huge
+  - type: StorageFill
+    contents:
+      - id: PowerDrilldrippenwagenAlt
+      - id: SyndicateJawsOfLifedrippenwagenAlt
+      - id: WelderExperimentaldrippenwagenAlt
+      - id: MultitooldrippenwagenAlt
+
+# Cloak
+- type: entity
+  parent: ClothingNeckCloakGoliathCloak
+  id: ClothingNeckCloakdrippenwagenAlt
+  name: плащ "Серебряной лисы"
+  description: Водонепроницаемый плащ с капюшоном. Обеспечивает защиту от дождя и сильного ветра.
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/cloack.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHooddrippenwagenAlt
+    requiredSlot:
+    - neck
+    slot: head
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatHooddrippenwagenAlt
+  name: накидка "Серебряной лисы"
+  description: Водонепроницаемый плащ с капюшоном. Обеспечивает защиту от дождя и сильного ветра.
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/cloackhead.rsi
+  - type: Clothing
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/cloackhead.rsi
+
+# Gloves
+- type: entity
+  parent: ClothingHandsGlovesCombat
+  id: ClothingHandsGlovesdrippenwagenAlt
+  name: перчатки оперативника Серебряной Лисы
+  description: Перчатки изготовленные из ударопрочных материалов, обеспечивающие надлежащим уровень защиты, при этом не сковывая движение запястьев и пальцев.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/gloves.rsi
+  - type: Clothing
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/gloves.rsi
+
+# Hardsuit
+- type: entity
+  parent: ClothingOuterHardsuitAtmos
+  id: ClothingOuterHardsuitdrippenwagenAlt
+  name: cкафандр разведчика "Егерь"
+  description: Скафандр старой модели, использовавшийся в рядах наёмников Лагстанта несколько десятилетий назад. По прежнему обеспечивает достойную защиту и мобильность.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/hardsuits.rsi
+  - type: Clothing
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/hardsuits.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitdrippenwagenAlt
+  - type: Item
+    size: Huge
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetHardsuitdrippenwagenAlt
+  noSpawn: true
+  name: шлем скафандра разведчика
+  description: Шлем изолирующий владельца от страшного вакуума снаружи.
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/helmet.rsi
+  - type: Clothing
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/helmet.rsi
+  - type: PointLight
+    color: "#5b73eb"
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+
+# Jumpsuit
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitdrippenwagenAlt
+  name: костюм оперативника Серебряной Лисы
+  description: Изготовлены под заказ костюм наёмника, обеспечивающий защиту от факторов внешней среды, а так же не сковывающий движения во время движения.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/jumpsuit.rsi
+  - type: Clothing
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/jumpsuit.rsi
+
+# Magboots
+- type: entity
+  parent: ClothingShoesBootsMag
+  id: ClothingShoesBootsMagdrippenwagenAlt
+  name: сапоги оперативника Серебряной Лисы
+  description: Модифицированные подкованные сапоги позволяющие без помех передвигатся в местах повышенной опасности падения и зонах низкой гравитации.
+  noSpawn: true
+  components:
+    - type: Sprite
+      sprite: DeadSpace/Sponsor/drippenwagenAlt/magboots.rsi
+      layers:
+      - state: icon
+        map: [ "enum.ToggleVisuals.Layer" ]
+    - type: Clothing
+      sprite: DeadSpace/Sponsor/drippenwagenAlt/magboots.rsi
+    - type: Magboots
+      toggleAction: ActionToggleMagbootsdrippenwagenAlt
+    - type: ClothingSpeedModifier
+      walkModifier: 1
+      sprintModifier: 1
+      enabled: false
+
+- type: entity
+  id: ActionToggleMagbootsdrippenwagenAlt
+  parent: ActionBaseToggleMagboots
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon: { sprite: DeadSpace/Sponsor/drippenwagenAlt/magboots.rsi, state: icon }
+    iconOn: DeadSpace/Sponsor/drippenwagenAlt/magboots.rsi/icon-on.png
+
+# Gasmask
+- type: entity
+  parent: ClothingMaskGasSyndicate
+  id: ClothingMaskdrippenwagenAlt
+  name: ударостойкий респиратор Серебряной Лисы
+  description: Модифицированный противогаз исполненый в виде лисьей морды.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/mask.rsi
+  - type: Clothing
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/mask.rsi
+
+# Eyes
+
+- type: entity
+  parent: ClothingEyesHudMedical
+  id: ClothingEyesHudMedicaldrippenwagenAlt
+  name: тактический визор Серебряной Лисы
+  description: Визор военного образца прошедший через несколько модификаций.
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/eyes.rsi
+  - type: Clothing
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/eyes.rsi
+
+# PDA
+- type: entity
+  parent: BaseMedicalPDA
+  id: PDAdrippenwagenAlt
+  name: КПК наёмника Лагстанта
+  description: Цифровой КПК, пользующийся популярностью среди наёмников.
+  noSpawn: true
+  components:
+  - type: Icon
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/pda.rsi
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/pda.rsi
+
+# HeadSet
+- type: entity
+  parent: ClothingHeadset
+  id: ClothingHeadsetdrippenwagenAlt
+  name: гарнитура наёмника Лагстанта
+  description: Полноразмерная гарнитура, пользующаяся популярностью среди наёмников.
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/headset.rsi
+
+# Tools
+
+- type: entity
+  parent: WelderExperimental
+  id: WelderExperimentaldrippenwagenAlt
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/welder_experimental.rsi
+  - type: Item
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/welder_experimental.rsi
+
+- type: entity
+  name: челюсти жизни
+  parent: SyndicateJawsOfLife
+  id: SyndicateJawsOfLifedrippenwagenAlt
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/jaws_of_life.rsi
+    state: jaws_pry
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      right:
+      - state: inhand-right
+    size: Normal
+  - type: MultipleTool
+    entries:
+      - behavior: Prying
+        sprite:
+          sprite: DeadSpace/Sponsor/drippenwagenAlt/jaws_of_life.rsi
+          state: jaws_pry
+        useSound: /Audio/Items/jaws_pry.ogg
+        changeSound: /Audio/Items/change_jaws.ogg
+      - behavior: Cutting
+        sprite:
+          sprite: DeadSpace/Sponsor/drippenwagenAlt/jaws_of_life.rsi
+          state: jaws_cutter
+        useSound: /Audio/Items/jaws_cut.ogg
+        changeSound: /Audio/Items/change_jaws.ogg
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 14
+
+- type: entity
+  parent: Multitool
+  id: MultitooldrippenwagenAlt
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/multitool.rsi
+    layers:
+    - state: icon
+    - state: green-unlit
+      shader: unshaded
+  - type: Clothing
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/multitool.rsi
+    quickEquip: false
+    slots:
+    - Belt
+
+- type: entity
+  parent: PowerDrill
+  id: PowerDrilldrippenwagenAlt
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/drill.rsi
+    state: drill_screw
+  - type: Item
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/drill.rsi
+    size: Small
+  - type: MultipleTool
+    statusShowBehavior: true
+    entries:
+      - behavior: Screwing
+        sprite:
+          sprite: DeadSpace/Sponsor/drippenwagenAlt/drill.rsi
+          state: drill_screw
+        useSound:
+          path: /Audio/Items/drill_use.ogg
+        changeSound:
+          path: /Audio/Items/change_drill.ogg
+      - behavior: Anchoring
+        sprite:
+          sprite: DeadSpace/Sponsor/drippenwagenAlt/drill.rsi
+          state: drill_bolt
+        useSound:
+          path: /Audio/Items/drill_use.ogg
+        changeSound:
+          path: /Audio/Items/change_drill.ogg
+
+# Hat
+
+- type: entity
+  parent: ClothingHeadHatBeret
+  id: ClothingHeadHatBeretdrippenwagenAlt
+  name: берет оперативника Серебряной Лисы
+  description: Берет, символизирующий принадлежность к элитному подразделению наёмников, известному своей смелостью и высоким профессионализмом.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/head.rsi
+  - type: Clothing
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/head.rsi

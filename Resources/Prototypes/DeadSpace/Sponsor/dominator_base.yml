@@ -86,6 +86,9 @@
     sprite: DeadSpace/Sponsor/vjlados/gloves.rsi
   - type: Clothing
     sprite: DeadSpace/Sponsor/vjlados/gloves.rsi
+  - type: Fiber
+    fiberMaterial: fibers-insulative
+    fiberColor: fibers-white
 
 # Hardsuit
 - type: entity

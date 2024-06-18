@@ -22,10 +22,8 @@
     # Corvax-LawyerDrip-End
     EncryptionKeyLaw: 2
     LuxuryPen: 2
-  contrabandInventory:
-    ClothingOuterRobesJudge: 1
-    ClothingHeadHatPwig: 1
-    # "Legally" obtained currency
-    SpaceCash10000: 1
+    HyperLinkBookCorporateLaw: 2
+    HyperLinkBookSOPSecurity: 2
+    HyperLinkBookSOPLaw: 2
   emaggedInventory:
     CyberPen: 2

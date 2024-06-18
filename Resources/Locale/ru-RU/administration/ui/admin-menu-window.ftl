@@ -8,5 +8,6 @@ admin-menu-round-tab = Раунд
 admin-menu-server-tab = Сервер
 admin-menu-sponsor-tab = Спонсор
 admin-menu-panic-bunker-tab = Бункер
+admin-menu-baby-jail-tab = Baby Jail
 admin-menu-players-tab = Игроки
 admin-menu-objects-tab = Объекты

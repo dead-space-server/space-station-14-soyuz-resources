@@ -1,0 +1,46 @@
+- type: entity
+  parent: BasePlushie
+  id: DiscordToy
+  name: плюшевый Клайд
+  description: На бирке красуется надпись "Слава Мёртвому Космосу!"
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Items/Toys/discord.rsi
+    state: blue
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/DeadSpace/Items/Toys/DiscordToy/discord-notification1.ogg
+      volume: -5
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/DeadSpace/Items/Toys/DiscordToy/user_join.ogg
+      volume: -5
+  - type: Food
+    requiresSpecialDigestion: true
+    useSound:
+      path: /Audio/DeadSpace/Items/Toys/DiscordToy/call_ringing.ogg
+      volume: -5
+  - type: Item
+    heldPrefix: blue
+    storedRotation: -90
+    size: Normal
+  - type: UseDelay
+    delay: 2.0
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/DeadSpace/Items/Toys/DiscordToy/user_join.ogg
+      volume: -5
+  - type: EmitSoundOnCollide
+    sound:
+      path: /Audio/DeadSpace/Items/Toys/DiscordToy/user_leave.ogg
+      volume: -5
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieJokerge
+  name: плюшевый jokerge
+  description: Увы...
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Items/Toys/jokerge.rsi
+    state: jokerge

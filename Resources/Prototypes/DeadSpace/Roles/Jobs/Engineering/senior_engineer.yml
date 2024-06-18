@@ -34,3 +34,9 @@
     eyes: ClothingEyesGlassesMeson
     belt: ClothingBeltUtilityEngineering
     ears: ClothingHeadsetEngineering
+    underwearb: ClothingUnderwearBottomBoxersSeniorEngineer # DS14-Underwear
+  underweart: ClothingUnderwearTopBraSeniorEngineer # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesSeniorEngineer # DS14-Underwear
+  storage:
+    back:
+    - BoxSurvivalEngineering

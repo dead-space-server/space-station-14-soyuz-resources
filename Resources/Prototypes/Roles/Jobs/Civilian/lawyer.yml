@@ -34,5 +34,14 @@
     shoes: ClothingShoesBootsLaceup
     id: LawyerPDA
     ears: ClothingHeadsetLaw
+    underwearb: ClothingUnderwearBottomBoxersLawyer # DS14-Underwear
+  underweart: ClothingUnderwearTopBraLawyer # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesLawyer # DS14-Underwear
   inhand:
     - BriefcaseLawyerFilled
+  storage:
+    back:
+    - BoxSurvival
+    - HyperLinkBookCorporateLaw
+    - HyperLinkBookSOPSecurity
+    - HyperLinkBookSOPLaw

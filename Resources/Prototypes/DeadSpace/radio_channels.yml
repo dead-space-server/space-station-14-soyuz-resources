@@ -28,3 +28,11 @@
   frequency: 1307
   color: "#00fa9a"
   longRange: true
+
+- type: radioChannel
+  id: Typan
+  name: Тайпан
+  keycode: 'й' 
+  frequency: 6542
+  color: "#8f0d4b"
+  longRange: true

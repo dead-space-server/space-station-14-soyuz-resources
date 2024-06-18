@@ -54,6 +54,9 @@
     Arms:
       points: 0
       required: false
+    Head:
+      points: 1
+      required: false
 
 - type: humanoidBaseSprite
   id: MobIPSEyes

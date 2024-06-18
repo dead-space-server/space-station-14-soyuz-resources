@@ -16,9 +16,9 @@
   - type: LeechOnMarker
     leech:
       groups:
-        Brute: -25
-        Burn: -25
-        Airloss: -25
+        Brute: -15
+        Burn: -15
+        Airloss: -15
   - type: Gun
     soundGunshot: /Audio/Weapons/plasma_cutter.ogg
     fireRate: 0.5

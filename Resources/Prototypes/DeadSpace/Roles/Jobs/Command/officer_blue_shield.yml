@@ -35,6 +35,12 @@
   - Medical
   - Engineering
   - Cargo
+  #start-backmen: currency
+  minBankBalance: 800
+  maxBankBalance: 1200
+  wageDepartment: Specific
+  wage: 400
+  #end-backmen: currency
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
@@ -52,7 +58,9 @@
     gloves: ClothingHandsGlovesCombat
     id: BlueShieldOfficerPDA
     pocket1: PistolBlueShield
-    pocket2: HandheldCrewMonitor
+    underwearb: ClothingUnderwearBottomBoxersBlueShieldOfficer # DS14-Underwear
+  underweart: ClothingUnderwearTopBraBlueShieldOfficer # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesBlueShieldOfficer # DS14-Underwear
 
 - type: entity
   parent: BasePDA
@@ -108,5 +116,6 @@
       - id: MagazinePistolSubMachineGun
         amount: 4
       - id: WeaponSubMachineGunDrozd
+      - id: HandheldCrewMonitor
   - type: ExplosionResistance
-    damageCoefficient: 0.6    
+    damageCoefficient: 0.6

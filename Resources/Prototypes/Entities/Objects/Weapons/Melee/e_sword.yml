@@ -128,7 +128,7 @@
         shader: unshaded
         map: [ "blade" ]
   - type: MeleeWeapon
-    wideAnimationRotation: -135
+    wideAnimationRotation: 145
     attackRate: 1
     hidden: true
     damage:
@@ -240,9 +240,9 @@
         variation: 0.250
     activatedDamage:
         types:
-            Slash: 12
-            Heat: 12
-            Structural: 15
+            Slash: 15
+            Heat: 15
+            Structural: 20
   - type: ItemToggleActiveSound
     activeSound:
       path: /Audio/Weapons/ebladehum.ogg

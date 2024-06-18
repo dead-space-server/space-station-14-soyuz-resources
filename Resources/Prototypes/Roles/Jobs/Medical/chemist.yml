@@ -29,3 +29,9 @@
     belt: ChemBag
     pocket1: HandLabeler
     eyes: ClothingEyesGlassesChemical
+    underwearb: ClothingUnderwearBottomBoxersChemist # DS14-Underwear
+  underweart: ClothingUnderwearTopBraChemist # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesChemist # DS14-Underwear
+  storage:
+    back:
+    - BoxSurvivalMedical

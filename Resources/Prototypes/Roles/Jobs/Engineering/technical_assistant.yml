@@ -31,3 +31,9 @@
     id: TechnicalAssistantPDA
     belt: ClothingBeltUtilityEngineering
     ears: ClothingHeadsetEngineering
+    underwearb: ClothingUnderwearBottomBoxersTechnicalAssistant # DS14-Underwear
+  underweart: ClothingUnderwearTopBraTechnicalAssistant # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesTechnicalAssistant # DS14-Underwear
+  storage:
+    back:
+    - BoxSurvivalEngineering

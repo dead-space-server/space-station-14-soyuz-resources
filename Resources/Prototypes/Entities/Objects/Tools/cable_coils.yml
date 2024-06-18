@@ -196,6 +196,14 @@
           Quantity: 3
         - ReagentId: Copper
           Quantity: 2
+  - type: Healing
+    damageContainers:
+      - StructuralInorganic
+    damage:
+      types:
+        Slash: -5
+    healingEndSound:
+      path: "/Audio/Items/wirecutter.ogg"
 
 - type: entity
   parent: CableApcStack

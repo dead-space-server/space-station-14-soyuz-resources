@@ -30,6 +30,14 @@ ghost-role-information-jaunt-rules =
     Вам [color=red]НЕ[/color] разрешается помнить, имя, внешность и т.д. вашего предыдущего персонажа.
     Вы антагонист, найдите и убейте всех выживших
 
+ghost-role-information-shadow-name = теневой демон
+ghost-role-information-shadow-description = Вы демоническое отродье, да воцарится ад!
+ghost-role-information-shadow-rules =
+    Вы не помните ничего из своей предыдущей жизни, если администратор не сказал вам обратное.
+    Вам разрешается помнить знания об игре в целом, например, как готовить, как использовать предметы и т.д.
+    Вам [color=red]НЕ[/color] разрешается помнить, имя, внешность и т.д. вашего предыдущего персонажа.
+    Вы антагонист, найдите и убейте всех выживших
+
 ghost-role-information-heraldghost-name = демон вестник
 ghost-role-information-heraldghost-description = Откройте портал и начните вторжение, да воцарится ад!
 ghost-role-information-heraldghost-rules =

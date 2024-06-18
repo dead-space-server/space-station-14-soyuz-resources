@@ -1060,15 +1060,6 @@
     - type: Sprite
       state: poster51_legit
 
-- type: entity
-  parent: PosterBase
-  id: PosterMeow
-  name: Мяу!
-  description: "Постер с рекламой какой-то ЧВК. Кажется, вы слышали какие-то новости о провалившихся переговорах руководства Nanotrasen с этой организацией."
-  components:
-    - type: Sprite
-      state: meow
-
 #maps
 
 - type: entity

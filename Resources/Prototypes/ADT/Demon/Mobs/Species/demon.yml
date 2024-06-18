@@ -1,6 +1,4 @@
 - type: entity
-  save: false
-  name: Urist McDemon
   parent: BaseMobSpeciesOrganic
   id: BaseMobDemon
   abstract: true

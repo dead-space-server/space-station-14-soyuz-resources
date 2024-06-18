@@ -17,6 +17,12 @@
   - Maintenance
   - Service
   - Detective
+  #start-backmen: currency
+  minBankBalance: 150
+  maxBankBalance: 250
+  wageDepartment: Security
+  wage: 25
+  #end-backmen: currency
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
@@ -28,3 +34,12 @@
     id: DetectivePDA
     ears: ClothingHeadsetSecurity
     belt: ClothingBeltHolsterFilled
+    underwearb: ClothingUnderwearBottomBoxersDetective # DS14-Underwear
+  underweart: ClothingUnderwearTopBraDetective # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesDetective # DS14-Underwear
+  storage:
+    back:
+    - BoxSurvivalSecurity
+    - Flash
+    - ForensicPad
+    - ForensicScanner

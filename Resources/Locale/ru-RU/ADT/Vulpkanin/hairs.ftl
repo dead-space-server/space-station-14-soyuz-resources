@@ -191,3 +191,5 @@ marking-ADTVulpkaninVeryshortovereyealternate = Очень короткая (Ч�
 marking-ADTVulpkaninVlongfringe = Очень короткая (Челка)
 marking-ADTVulpkaninVolaju = Воладзю
 marking-ADTVulpkaninWisp = Пряди
+marking-ADTVulpkaninFloorlengthBedhead2 = Небрежная до пола (Альт)
+marking-ADTVulpkaninLongBedhead2 = Небрежная длинная (Альт)

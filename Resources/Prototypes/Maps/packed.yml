@@ -14,8 +14,6 @@
             !type:NanotrasenNameGenerator
             prefixCreator: 'VG'
         - type: StationJobs
-          overflowJobs:
-            - Passenger
           availableJobs:
             #service
             Captain: [ 1, 1 ]
@@ -69,7 +67,7 @@
             BorgSecurity: [ 1, 1 ]
             Magistrat: [ 1, 1 ]
             Brigmedic: [ 1, 1 ]
-            ClownSponsor: [ 0, -1 ]
+            ClownSponsor: [ 0, 2 ]
             Coroner: [ 1, 1 ]
             SeniorSalvageSpecialist: [ 1, 1 ]
             SeniorAdministrator: [ 1, 1 ]

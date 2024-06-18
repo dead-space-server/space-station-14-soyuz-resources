@@ -1,8 +1,8 @@
 - type: entity
   parent: ClothingOuterHardsuitBase
   id: ADTClothingOuterHardsuitCerber
-  name: cerber hardsuit
-  description: A specialized black spacesuit used in 19th century Asian countries by the central police.
+  name: скафандр броне отряда "Церберы"
+  description: Специализированный черный скафандр, который использовался в азиатских странах 19 века, центральной полицией.
   components:
   - type: Sprite
     sprite: ADT/Clothing/OuterClothing/Hardsuits/cerber.rsi

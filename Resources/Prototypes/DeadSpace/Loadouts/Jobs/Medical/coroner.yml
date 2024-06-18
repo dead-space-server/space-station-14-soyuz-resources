@@ -25,7 +25,7 @@
 - type: startingGear
   id: CoronerBackpack
   equipment:
-    back: ClothingBackpackCoronerFilled
+    back: ClothingBackpackCoroner
 
 - type: loadout
   id: CoronerSatchel
@@ -34,7 +34,7 @@
 - type: startingGear
   id: CoronerSatchel
   equipment:
-    back: ClothingBackpackSatchelCoronerFilled
+    back: ClothingBackpackSatchelCoroner
 
 - type: loadout
   id: CoronerDuffel
@@ -43,7 +43,7 @@
 - type: startingGear
   id: CoronerDuffel
   equipment:
-    back: ClothingBackpackDuffelCoronerFilled
+    back: ClothingBackpackDuffelCoroner
 
 # Head
 - type: loadout

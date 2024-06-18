@@ -15,6 +15,7 @@
           Slash: 0.6
           Piercing: 0.4
           Heat: 0.6
+          Caustic: 0.75
 
 - type: entity
   parent: ClothingOuterStorageBase

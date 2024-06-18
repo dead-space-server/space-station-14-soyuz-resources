@@ -29,3 +29,9 @@
     shoes: ClothingShoesBootsJackCoroner
     id: CoronerPDA
     ears: ClothingHeadsetMedicalScience
+    underwearb: ClothingUnderwearBottomBoxersCoroner # DS14-Underwear
+  underweart: ClothingUnderwearTopBraCoroner # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesCoroner # DS14-Underwear
+  storage:
+    back:
+    - BoxSurvivalMedical

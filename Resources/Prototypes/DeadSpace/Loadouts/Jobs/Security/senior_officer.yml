@@ -25,7 +25,7 @@
 - type: startingGear
   id: SeniorOfficerBackpack
   equipment:
-    back: ADTClothingBackpackSeniorSecurityFilled
+    back: ClothingBackpackSecurity
 
 - type: loadout
   id: SeniorOfficerSatchel
@@ -34,7 +34,7 @@
 - type: startingGear
   id: SeniorOfficerSatchel
   equipment:
-    back: ADTClothingBackpackSatchelSeniorSecurityFilled
+    back: ClothingBackpackSatchelSecurity
 
 - type: loadout
   id: SeniorOfficerDuffel
@@ -43,7 +43,7 @@
 - type: startingGear
   id: SeniorOfficerDuffel
   equipment:
-    back: ADTClothingBackpackDuffelSeniorSecurityFilled
+    back: ClothingBackpackDuffelSecurity
 
 # PDA
 - type: loadout

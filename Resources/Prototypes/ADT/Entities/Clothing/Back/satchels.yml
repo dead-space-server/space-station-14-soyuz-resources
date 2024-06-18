@@ -8,17 +8,3 @@
     sprite: ADT/Clothing/Back/ninjasatchel.rsi
   - type: Storage
     maxItemSize: Huge
-
-- type: entity
-  parent: ADTClothingBackpackSatchelninja
-  id: ADTClothingBackpackSatchelninjaTools
-  components:
-  - type: StorageFill
-    contents:
-      - id: BoxSurvival
-      - id: Crowbar
-      - id: Wrench
-      - id: Screwdriver
-      - id: Wirecutter
-      - id: Welder
-      - id: Multitool

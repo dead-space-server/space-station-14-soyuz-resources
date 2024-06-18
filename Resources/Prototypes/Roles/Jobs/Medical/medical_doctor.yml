@@ -28,3 +28,9 @@
   equipment:
     ears: ClothingHeadsetMedical
     belt: ClothingBeltMedicalFilled
+    underwearb: ClothingUnderwearBottomBoxersDoctor # DS14-Underwear
+  underweart: ClothingUnderwearTopBraDoctor # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesDoctor # DS14-Underwear
+  storage:
+    back:
+    - BoxSurvivalMedical

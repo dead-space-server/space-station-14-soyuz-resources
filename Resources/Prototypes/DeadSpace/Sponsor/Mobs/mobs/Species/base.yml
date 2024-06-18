@@ -8,7 +8,6 @@
   abstract: true
   components:
   - type: EmotePanel
-  - type: Flashable
   # Organs
   - type: StatusEffects
     allowed:
@@ -27,6 +26,7 @@
     - Muted
     - Pacified
     - StaminaModifier
+    - Flashed
   - type: Blindable
   - type: Temperature
     heatDamageThreshold: 325

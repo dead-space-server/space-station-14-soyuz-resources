@@ -25,3 +25,9 @@
     id: ZookeeperPDA
     ears: ClothingHeadsetService
     pocket1: HandheldHealthAnalyzer
+    underwearb: ClothingUnderwearBottomBoxersZoo # DS14-Underwear
+  underweart: ClothingUnderwearTopBraZoo # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesZoo # DS14-Underwear
+  storage:
+    back:
+    - BoxSurvival

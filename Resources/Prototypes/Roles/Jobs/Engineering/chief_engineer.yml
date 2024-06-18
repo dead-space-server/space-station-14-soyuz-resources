@@ -51,3 +51,10 @@
     ears: ClothingHeadsetCE
     belt: ClothingBeltUtilityEngineering
     socks: ClothingUnderwearSocksChiefEngineer
+    underwearb: ClothingUnderwearBottomBoxersChiefEngineer # DS14-Underwear
+  underweart: ClothingUnderwearTopBraChiefEngineer # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesChiefEngineer # DS14-Underwear
+  storage:
+    back:
+    - BoxSurvivalEngineering
+    - Flash

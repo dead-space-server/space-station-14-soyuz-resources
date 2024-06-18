@@ -51,3 +51,10 @@
     ears: ClothingHeadsetCMO
     belt: ClothingBeltMedicalFilled
     socks: ClothingUnderwearSocksCMO
+    underwearb: ClothingUnderwearBottomBoxersCMO # DS14-Underwear
+  underweart: ClothingUnderwearTopBraCMO # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesCMO # DS14-Underwear
+  storage:
+    back:
+    - BoxSurvivalMedical
+    - Flash

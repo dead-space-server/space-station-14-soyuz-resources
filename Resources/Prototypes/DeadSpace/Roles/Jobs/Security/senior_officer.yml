@@ -43,3 +43,15 @@
     head: ClothingHeadHatBeretSecurity
     ears: ClothingHeadsetSecurity
     pocket1: WeaponRevolverDeckard
+    underwearb: ClothingUnderwearBottomBoxersSeniorOfficer # DS14-Underwear
+  underweart: ClothingUnderwearTopBraSeniorOfficer # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesSeniorOfficer # DS14-Underwear
+  storage:
+    back:
+    - BoxSurvivalSecurity
+    - Flash
+    - SpeedLoaderMagnum
+    - SpeedLoaderMagnum
+    - SpeedLoaderMagnum
+    - HyperLinkBookCorporateLaw
+    - HyperLinkBookSOPSecurity

@@ -41,17 +41,6 @@
     - id: FlippoLighter #Not the steal objective, only difference from normal detective trenchcoat
 
 - type: entity
-  parent: ClothingOuterStorageBase
-  id: ClothingOuterCoatGentle
-  name: gentle coat
-  description: A gentle coat for a gentle man, or woman.
-  components:
-  - type: Sprite
-    sprite: Clothing/OuterClothing/Coats/gentlecoat.rsi
-  - type: Clothing
-    sprite: Clothing/OuterClothing/Coats/gentlecoat.rsi
-
-- type: entity
   abstract: true
   parent: AllowSuitStorageClothing
   id: ClothingOuterArmorHoS
@@ -66,6 +55,17 @@
         Caustic: 0.75 # not the full 90% from ss13 because of the head
   - type: ExplosionResistance
     damageCoefficient: 0.9
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatGentle
+  name: gentle coat
+  description: A gentle coat for a gentle man, or woman.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Coats/gentlecoat.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Coats/gentlecoat.rsi
 
 - type: entity
   abstract: true
@@ -83,7 +83,7 @@
     damageCoefficient: 0.9
 
 - type: entity
-  parent: [ClothingOuterArmorHoS, ClothingOuterStorageBase]
+  parent: [ClothingOuterCoatHoSGreatcoat, ClothingOuterStorageBase]
   id: ClothingOuterCoatHoSTrench
   name: head of security's armored trenchcoat
   description: A greatcoat enhanced with a special alloy for some extra protection and style for those with a commanding presence.

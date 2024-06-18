@@ -29,3 +29,9 @@
     shoes: ClothingShoesLeather
     id: PsychologistPDA
     ears: ClothingHeadsetMedical
+    underwearb: ClothingUnderwearBottomBoxersPsychologist # DS14-Underwear
+  underweart: ClothingUnderwearTopBraPsychologist # DS14-Underwear
+  underwearb: ClothingUnderwearBottomPantiesPsychologist # DS14-Underwear
+  storage:
+    back:
+    - BoxSurvivalMedical
