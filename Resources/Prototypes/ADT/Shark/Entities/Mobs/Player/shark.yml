@@ -1,6 +1,6 @@
 - type: entity
   save: false
-  name: "Плафеим"
+  name: Плафеим
   parent: BaseMobPlaf
   id: MobPlaf
   components:

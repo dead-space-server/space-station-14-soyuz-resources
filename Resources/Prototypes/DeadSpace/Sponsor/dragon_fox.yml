@@ -12,12 +12,12 @@
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackDragonFox
-  name: зелёный украшенный блюспейс рюкзак
-  description: Рюкзак использующий технологию блюспейса для увелечения своего максимального объёма. Окрашен в зелёный цвет. Принадлежит члену экипажа, находящемуся под покровительством спонсорской организации.
+  name: однолямочный блюспейс рюкзак
+  description: Однолямочный рюкзак использующий технологию блюспейса для увелечения своего максимального объёма. Окрашен в зелёный хаки.
   noSpawn: true
   components:
   - type: Sprite
-    sprite: DeadSpace/Sponsor/vjlados/backpack.rsi
+    sprite: DeadSpace/Sponsor/DragonFox/backpack.rsi
   - type: Storage
     maxItemSize: Huge
     grid:
@@ -264,3 +264,13 @@
     - stampedColor: '#00BE00FF'
       stampedName: Одобрено
     content: paper-law-dragon_fox
+
+#Backpack для ивент отдела
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackSingleStrapКhaki
+  name: однолямочный  рюкзак
+  description: Однолямочный рюкзак для хранения вещей. Окрашен в зелёный хаки. 
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/DragonFox/backpack.rsi

@@ -1,6 +1,6 @@
 - type: entity
   save: false
-  name: "Вульпканин"
+  name: Вульпканин
   parent: BaseMobVulpkanin
   id: MobVulpkanin
   components:

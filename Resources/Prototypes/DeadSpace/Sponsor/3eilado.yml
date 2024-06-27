@@ -3,6 +3,11 @@
   entity: ClothingBackpack3eilado
   sponsorOnly: true
 
+- type: sponsorLoadout
+  id: 3eilado1Part2
+  entity: ClothingBackpackSecond3eilado
+  sponsorOnly: true
+
 # Backpack
 - type: entity
   parent: ClothingBackpack
@@ -19,21 +24,36 @@
     - 0,0,13,5
   - type: StorageFill
     contents:
-      - id: ClothingBelt3eiladoFilled
       - id: ClothingNeckCloak3eilado
       - id: ClothingHandsGloves3eilado
-      - id: ClothingOuterHardsuit3eilado
       - id: ClothingHeadHat3eilado
       - id: ClothingUniformJumpsuit3eilado
       - id: ClothingShoesBootsMag3eilado
       - id: ClothingUnderSocks3eilado
+      - id: ClothingOuterCoatUSSPOvercoatBlack
+      - id: ClothingShoesUSSPBlack
+      - id: ClothingUniformJumpsuitUSSPBlack
+      - id: ClothingHandsGlovesLeatherUSSPBlack
+      - id: ClothingHeadHatCapUSSPBlack
       - id: JetpackVoidFilled
       - id: DominatorMedkitAdvanced
       - id: ADTtelescopicBaton
-      - id: ToySword
       - id: SpaceCash1000
       - id: WeaponDisablerToySponsor
       - id: PaperLaw3eilado
+      - id: ToyScythe3eilado
+      - id: ClothingEyesGlassesMeson3eilado
+      - id: PlushieMoth3eilado
+
+- type: entity
+  parent: CrateGenericSteel
+  id: ClothingBackpackSecond3eilado
+  noSpawn: true
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingBelt3eiladoFilled
+      - id: ClothingOuterHardsuit3eilado
 
 # Belt
 - type: entity
@@ -51,10 +71,11 @@
     size: Huge
   - type: StorageFill
     contents:
-      - id: PowerDrill
-      - id: JawsOfLife
-      - id: WelderExperimental
+      - id: PowerDrill3eilado
+      - id: SyndicateJawsOfLife3eilado
+      - id: WelderExperimental3eilado
       - id: Multitool
+      - id: PDA3eilado
 
 # Cloak
 - type: entity
@@ -64,8 +85,27 @@
   description: От этого плаща не оторвать глаз.
   noSpawn: true
   components:
+  - type: Foldable
+    canFoldInsideContainer: true
+    unfoldVerbText: fold-zip-verb
+    foldVerbText: fold-unzip-verb
+    folded: true
+  - type: FoldableClothing
+    foldedEquippedPrefix: open
+    foldedHeldPrefix: open
+  - type: Item
+    heldPrefix: open
+  - type: Clothing
+    equippedPrefix: open
   - type: Sprite
     sprite: DeadSpace/Sponsor/3eilado/cloak.rsi
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+      visible: true
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
 
 # Gloves
 - type: entity
@@ -88,7 +128,7 @@
   parent: ClothingOuterHardsuitAtmos
   id: ClothingOuterHardsuit3eilado
   name: скафандр Warden
-  description: От этого скафандра не оторвать глаз. Принадлежит члену экипажа, находящемуся под покровительством тайной организации «Зодиак». Характеристики идентичны скафандру атмос-техника.
+  description: Собственность Ван'Астрея. От этого скафандра не оторвать глаз. Принадлежит члену экипажа, находящемуся под покровительством тайной организации «Зодиак». Характеристики идентичны скафандру атмос-техника.
   noSpawn: true
   components:
   - type: Sprite
@@ -200,3 +240,155 @@
     - stampedColor: '#00BE00FF'
       stampedName: Одобрено
     content: paper-law-3eilado
+
+# Tools
+- type: entity
+  parent: WelderExperimental
+  id: WelderExperimental3eilado
+  name: пурпурно-синий экспериментальный сварочный аппарат
+  description: Принадлежит члену экипажа, находящемуся под покровительством спонсорской организации.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/3eilado/welder_experimental.rsi
+  - type: Item
+    sprite: DeadSpace/Sponsor/3eilado/welder_experimental.rsi
+
+- type: entity
+  name: пурпурно-синие челюсти жизни
+  description: Принадлежит члену экипажа, находящемуся под покровительством спонсорской организации.
+  parent: SyndicateJawsOfLife
+  id: SyndicateJawsOfLife3eilado
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/3eilado/jaws_of_life.rsi
+    state: jaws_pry
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      right:
+      - state: inhand-right
+    size: Normal
+  - type: MultipleTool
+    entries:
+      - behavior: Prying
+        sprite:
+          sprite: DeadSpace/Sponsor/3eilado/jaws_of_life.rsi
+          state: jaws_pry
+        useSound: /Audio/Items/jaws_pry.ogg
+        changeSound: /Audio/Items/change_jaws.ogg
+      - behavior: Cutting
+        sprite:
+          sprite: DeadSpace/Sponsor/3eilado/jaws_of_life.rsi
+          state: jaws_cutter
+        useSound: /Audio/Items/jaws_cut.ogg
+        changeSound: /Audio/Items/change_jaws.ogg
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 14
+
+- type: entity
+  parent: PowerDrill
+  id: PowerDrill3eilado
+  name: пурпурно-синяя дрель
+  description: Принадлежит члену экипажа, находящемуся под покровительством спонсорской организации.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/3eilado/drill.rsi
+    state: drill_screw
+  - type: Item
+    sprite: DeadSpace/Sponsor/3eilado/drill.rsi
+    size: Small
+  - type: MultipleTool
+    statusShowBehavior: true
+    entries:
+      - behavior: Screwing
+        sprite:
+          sprite: DeadSpace/Sponsor/3eilado/drill.rsi
+          state: drill_screw
+        useSound:
+          path: /Audio/Items/drill_use.ogg
+        changeSound:
+          path: /Audio/Items/change_drill.ogg
+      - behavior: Anchoring
+        sprite:
+          sprite: DeadSpace/Sponsor/3eilado/drill.rsi
+          state: drill_bolt
+        useSound:
+          path: /Audio/Items/drill_use.ogg
+        changeSound:
+          path: /Audio/Items/change_drill.ogg
+
+# E_Scythe
+- type: entity
+  parent: ToySword
+  id: ToyScythe3eilado
+  name: энергетическая коса Жнеца
+  description: Очень громкая коса с лучом чистой, концентрированной плазмы. На удивление совершенно безобидна.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/3eilado/e_scythe.rsi
+    layers:
+      - state: e_sword
+      - state: e_sword_blade
+        color: "#BA55D3FF"
+        visible: false
+        shader: unshaded
+        map: [ "blade" ]
+  - type: Item
+    size: Normal
+    sprite: DeadSpace/Sponsor/3eilado/e_scythe.rsi
+
+#glasses
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesGlassesMeson3eilado
+  name: искрящие очки
+  description: Гравировка говорит о том что это собственность Ван'Астрея.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/3eilado/engi_glasses.rsi
+  - type: Clothing
+    sprite: DeadSpace/Sponsor/3eilado/engi_glasses.rsi
+  - type: EyeProtection
+
+#Plushie
+- type: entity
+  parent: PlushieMoth
+  id: PlushieMoth3eilado
+  name: ниан Кемлухт
+  description: Милый и пушистый плюшевый ниан. Приятного аппетита, bz!
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/3eilado/moth.rsi
+    state: plushie_moth
+
+#Tail
+- type: marking
+  id: 3eiladoTail
+  name: голографические хвосты
+  bodyPart: Tail
+  markingCategory: Tail
+  sponsorOnly: true
+  sprites:
+  - sprite: DeadSpace/Sponsor/3eilado/tail.rsi
+    state: tail
+
+# PDA
+- type: entity
+  parent: BaseMedicalPDA
+  id: PDA3eilado
+  name: пурпурно-синий КПК
+  description: Принадлежит члену экипажа, находящемуся под покровительством спонсорской организации.
+  components:
+  - type: Icon
+    sprite: DeadSpace/Sponsor/3eilado/pda.rsi
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/3eilado/pda.rsi
