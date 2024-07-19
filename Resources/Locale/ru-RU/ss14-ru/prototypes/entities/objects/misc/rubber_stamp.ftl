@@ -68,6 +68,6 @@ ent-RubberStampDetective = печать следователя
 ent-RubberStampBlueShield = печать оперативника КГБ
     .desc = { ent-RubberStampBase.desc }
     .suffix = НЕ МАППИТЬ
-ent-RubberStampSeniorAdministrator = печать администратора сервиса
+ent-RubberStampSeniorAdministrator = печать управленца сервисного отдела
     .desc = { ent-RubberStampBase.desc }
     .suffix = НЕ МАППИТЬ

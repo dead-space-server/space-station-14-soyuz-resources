@@ -94,8 +94,8 @@
 - type: entity
   parent: ClothingUnderwearTopBase
   id: ClothingUnderwearTopBraQuartermaster
-  name: бра Квартирмейстера
-  description: Cтандартное нижнее бельё завхоза.
+  name: бра завхоза
+  description: Cтандартное нижнее бельё заведующего хозяйством.
   components:
   - type: Sprite
     sprite: DeadSpace/Clothing/Underwear/Cargo/quartermaster/women/bra.rsi
@@ -341,8 +341,8 @@
 - type: entity
   parent: ClothingUnderwearTopBase
   id: ClothingUnderwearTopBraIAA
-  name: бра агента внутренних дел
-  description: Cтандартное нижнее бельё агента внутренних дел.
+  name: бра агента следственного комитета
+  description: Cтандартное нижнее бельё агента следственного комитета
   components:
   - type: Sprite
     sprite: DeadSpace/Clothing/Underwear/Law/iaa/women/bra.rsi
@@ -442,8 +442,8 @@
 - type: entity
   parent: ClothingUnderwearTopBase
   id: ClothingUnderwearTopBraResearchAssistant
-  name: бра научного ассистента
-  description: Cтандартное нижнее бельё научного ассистента.
+  name: бра лаборанта
+  description: Cтандартное нижнее бельё лаборанта.
   components:
   - type: Sprite
     sprite: DeadSpace/Clothing/Underwear/Science/research_assistant/women/bra.rsi
@@ -533,8 +533,8 @@
 - type: entity
   parent: ClothingUnderwearTopBase
   id: ClothingUnderwearTopBraWarden
-  name: бра смотрителя
-  description: Cтандартное нижнее бельё смотрителя.
+  name: бра оперативного дежурного
+  description: Cтандартное нижнее бельё оперативного дежурного.
   components:
   - type: Sprite
     sprite: DeadSpace/Clothing/Underwear/Security/warden/women/bra.rsi
