@@ -261,8 +261,8 @@
 - type: entity
   parent: BaseBorgChassisSecurity
   id: BorgChassisSecurity
-  name: киборг службы безопасности
-  description: Киборг, чья главная цель — защита станции от любой угрозы. Принадлежит отделу службы безопасности.
+  name: киборг милиции
+  description: Киборг, чья главная цель — защита предприятия от любой угрозы. Принадлежит советской милиции.
   noSpawn: true
   components:
     - type: Sprite

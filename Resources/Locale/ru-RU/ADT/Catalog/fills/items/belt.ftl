@@ -1,3 +1,3 @@
-ent-ClothingBeltMilitaryWebbingBlueShieldFilled = РПС оперативника "КГБ"
+ent-ClothingBeltMilitaryWebbingBlueShieldFilled = РПС оперативника КГБ
     .suffix = Заполненный
-    .desc = РПС, которую носят оперативники "КГБ"
+    .desc = РПС, которую носят оперативники комитета государственной безопасности.

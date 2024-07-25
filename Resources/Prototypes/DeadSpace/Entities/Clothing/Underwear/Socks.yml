@@ -83,8 +83,8 @@
 - type: entity
   parent: ClothingUnderwearSocksBase
   id: ClothingUnderwearSocksQuartermaster
-  name: носки квартирмейстера
-  description: Cтандартные носки квартирмейстера.
+  name: носки завхоза
+  description: Cтандартные носки заведующего хозяйством.
   components:
   - type: Sprite
     sprite: DeadSpace/Clothing/Underwear/Cargo/quartermaster/socks.rsi
@@ -92,8 +92,8 @@
 - type: entity
   parent: ClothingUnderwearSocksBase
   id: ClothingUnderwearSocksHeadofPersonnel
-  name: носки главы персонала
-  description: Cтандартные носки главы персонала.
+  name: носки начальника отдела кадров
+  description: Cтандартные носки начальника отдела кадров.
   components:
   - type: Sprite
     sprite: DeadSpace/Clothing/Underwear/Civilian/head_of_personnel/socks.rsi
@@ -137,8 +137,8 @@
 - type: entity
   parent: ClothingUnderwearSocksBase
   id: ClothingUnderwearSocksHeadOfSecurity
-  name: носки главы службы безопасности
-  description: Cтандартные носки главы службы безопасности.
+  name: носки начальника милиции
+  description: Cтандартные носки начальника милиции.
   components:
   - type: Sprite
     sprite: DeadSpace/Clothing/Underwear/Security/head_of_security/socks.rsi
