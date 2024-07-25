@@ -72,7 +72,7 @@ ghost-role-information-willow-name = Кенгуру Уиллоу
 ghost-role-information-willow-description = Вы кенгуру по имени Уиллоу! Уиллоу любит бокс.
 
 ghost-role-information-space-tick-name = Космический клещ
-ghost-role-information-space-tick-description = Кусайте утилизаторов в космосе!
+ghost-role-information-space-tick-description = Кусайте шахтёров в космосе!
 
 ghost-role-information-salvage-tick-name = Космический клещ на обломке в космосе
 ghost-role-information-salvage-tick-description = Защищайте сокровища космического обломка!
