@@ -215,9 +215,6 @@
   id: JobCoroner
 
 - type: playTimeTracker
-  id: JobMaid
-
-- type: playTimeTracker
   id: JobSeniorSalvageSpecialist
 
 - type: playTimeTracker

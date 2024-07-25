@@ -8,15 +8,13 @@
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup
-          mapNameTemplate: '{0} Астра {1}'
+          mapNameTemplate: '{0} Astra {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: 'MT'
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Shuttles/corvax_emergency.yml
         - type: StationJobs
-          overflowJobs:
-            - Passenger
           availableJobs:
             # service
             HeadOfPersonnel: [ 1, 1 ]

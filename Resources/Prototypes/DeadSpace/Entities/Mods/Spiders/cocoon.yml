@@ -35,4 +35,39 @@
     - id: MobSpiderTerrorGuardian #Что вылупилось
       amount: 2 #Колличество
 
-
+- type: entity
+  name: королевский паучий кокон
+  parent: BaseStructure
+  id: CocoonKingBloodSpider
+  components:
+  - type: Tag
+    tags:
+    - Wall
+  - type: Physics
+    bodyType: Static
+  - type: Sprite
+    scale: 0.7, 0.7
+    noRot: true
+    sprite: DeadSpace/Mods/Spiders/egg.rsi
+    layers:
+    - state: king_cocoon
+      map: [ "enum.DamageStateVisualLayers.Base" ]
+  - type: Damageable
+    damageContainer: Biological
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+  - type: Appearance
+  - type: Egg
+    eggSound:
+      collection: SpiderHatches #Звуки яйца
+    duration: 360 #Время до вылупления
+    durationPlayEggSound: 10 #Интервалы между звуками яйца
+    spawned:
+    - id: MobSpiderTerrorGuardianKingBlood #Что вылупилось
+      amount: 1 #Колличество

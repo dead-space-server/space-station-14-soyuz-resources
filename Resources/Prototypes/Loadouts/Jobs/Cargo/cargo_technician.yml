@@ -74,3 +74,40 @@
   id: CargoWinterBoots
   equipment:
     shoes: ClothingShoesBootsWinterCargo
+
+# Underwear
+- type: loadout
+  id: UnderwearBottomBoxersCargoTechnician
+  equipment: UnderwearBottomBoxersCargoTechnician
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomBoxersCargoTechnician
+  equipment:
+    underwearb: ClothingUnderwearBottomBoxersCargoTechnician
+
+- type: loadout
+  id: UnderwearBottomPantiesCargoTechnician
+  equipment: UnderwearBottomPantiesCargoTechnician
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomPantiesCargoTechnician
+  equipment:
+    underwearb: ClothingUnderwearBottomPantiesCargoTechnician
+
+- type: loadout
+  id: UnderwearTopBraCargoTechnician
+  equipment: UnderwearTopBraCargoTechnician
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearTopBraCargoTechnician
+  equipment:
+    underweart: ClothingUnderwearTopBraCargoTechnician

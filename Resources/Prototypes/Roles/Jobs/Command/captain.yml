@@ -52,10 +52,6 @@
     id: CaptainPDA
     ears: ClothingHeadsetAltCommand
     socks: ClothingUnderwearSocksCaptain
-    underwearb: ClothingUnderwearBottomBoxersCaptain # DS14-Underwear
-  underweart: ClothingUnderwearTopBraCaptain # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesCaptain # DS14-Underwear
   storage:
     back:
-    - BoxSurvival
     - Flash

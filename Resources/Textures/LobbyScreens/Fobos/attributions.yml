@@ -41,7 +41,7 @@
 - files: ["singulord-cage.png"]
   license: "CC-BY-SA-3.0"
   copyright: "Gasper_horned#9372 (428967480057397260) on discord"
-  source: "https://github.com/space-syndicate/space-station-14"
+  source: "https://github.com/space-syndicate/space-station-14/pull/1574"
 
 - files: ["fleshanom.png"]
   license: "CC-BY-NC-SA-3.0"
@@ -132,3 +132,13 @@
   license: "CC0-1.0"
   copyright: "psychpsyo on Github/Twitter"
   source: "https://github.com/space-wizards/space-station-14"
+
+- files: ["gerion_dart.png", "unity.png"]
+  license: "CC-BY-SA-3.0"
+  copyright: "doner4037 on discord for Space Station 14 server Dead Space (Мёртвый космос)"
+  source: "https://discord.gg/ds14"
+
+- files: ["engineering.png", "particle_accelerator.jpg", "sec_againts_all.png"]
+  license: "CC-BY-SA-3.0"
+  copyright: "anomaly_il_ on discord for Space Station 14 server Dead Space (Мёртвый космос)"
+  source: "https://discord.gg/ds14"

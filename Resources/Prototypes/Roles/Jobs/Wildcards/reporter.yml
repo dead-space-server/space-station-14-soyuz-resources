@@ -26,9 +26,3 @@
     shoes: ClothingShoesColorWhite
     id: ReporterPDA
     ears: ClothingHeadsetService
-    underwearb: ClothingUnderwearBottomBoxersReporter # DS14-Underwear
-  underweart: ClothingUnderwearTopBraReporter # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesReporter # DS14-Underwear
-  storage:
-    back:
-    - BoxSurvival

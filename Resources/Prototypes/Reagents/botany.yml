@@ -55,7 +55,9 @@
   desc: reagent-desc-pest-killer
   flavor: bitter
   color: "#9e9886"
+  worksOnTheDead: true
   physicalDesc: reagent-physical-desc-bubbling
+  reactiveEffects:
   plantMetabolism:
     - !type:PlantAdjustToxins
       amount: 4
@@ -64,6 +66,10 @@
   metabolisms:
     Medicine:
       effects:
+      - !type:CureMuhaEggs
+        conditions:
+        - !type:ReagentThreshold
+          min: 1
       - !type:HealthChange
         damage:
           types:

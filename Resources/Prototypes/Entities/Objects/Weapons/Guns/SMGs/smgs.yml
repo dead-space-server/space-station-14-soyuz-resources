@@ -41,6 +41,7 @@
         whitelist:
           tags:
             - MagazinePistolSubMachineGun
+        whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
         startingItem: CartridgePistol
@@ -93,14 +94,9 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: Objects/Weapons/Guns/SMGs/c20r.rsi
-  - type: Wieldable
-    unwieldOnUse: false
-  - type: GunWieldBonus
-    minAngle: -19
-    maxAngle: -16
   - type: Gun
-    minAngle: 21
-    maxAngle: 32 
+    minAngle: 2
+    maxAngle: 16 
     shotsPerBurst: 5
     availableModes:
     - SemiAuto
@@ -156,6 +152,7 @@
           whitelist:
             tags:
               - MagazinePistolSubMachineGun
+          whitelistFailPopup: gun-magazine-whitelist-fail
         gun_chamber:
           name: Chamber
           startingItem: CartridgePistol
@@ -174,7 +171,7 @@
   parent: BaseWeaponSubMachineGun
   id: WeaponSubMachineGunVector
   suffix: Deprecated use Drozd
-  description: An excellent fully automatic Heavy SMG. Uses 9х19 ammo.
+  description: An excellent fully automatic Heavy SMG. Uses 9�19 ammo.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/SMGs/vector.rsi
@@ -210,6 +207,7 @@
         whitelist:
           tags:
             - CartridgePistol
+        whitelistFailPopup: gun-magazine-whitelist-fail
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -262,6 +260,7 @@
         whitelist:
           tags:
             - MagazinePistolSubMachineGunTopMounted
+        whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
         startingItem: CartridgePistol

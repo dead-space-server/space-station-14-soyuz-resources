@@ -1,6 +1,6 @@
 # Chat window radio wrap (prefix and postfix)
-chat-radio-message-wrap = [color={$channel-color}][bold]{$channel}[/color] [color={$job-color}]{$job} {$name}[/bold][/color][color={$channel-color}] {$verb}, [font={$fontType} size={$fontSize}]"{$message}"[/font][/color]
-chat-radio-message-wrap-bold = [color={$channel-color}]{$channel}[bold][/color] [color={$job-color}]{$job}[/bold] [bold]{$name}[/bold][/color][color={$channel-color}] {$verb}, [font={$fontType} size={$fontSize}][bold]"{$message}"[/bold][/font][/color]
+chat-radio-message-wrap = [bold][color={ $channel-color }]{ $channel } [/color][color={ $headset-color }]{ $job }{ $name }[/bold][/color][color={ $channel-color }] { $verb }, [font={ $fontType } size={ $fontSize }]"{ $message }"[/font][/color]
+chat-radio-message-wrap-bold = [bold][color={ $channel-color }]{ $channel } [/color][color={ $headset-color }]{ $job }{ $name }[/bold][/color][color={ $channel-color }] { $verb }, [font={ $fontType } size={ $fontSize }][bold]"{ $message }"[/bold][/font][/color]
 
 examine-headset-default-channel = Отображается, что каналом по умолчанию этой гарнитуры является [color={ $color }]{ $channel }[/color].
 
@@ -22,4 +22,4 @@ chat-radio-binary = Двоичный
 
 chat-radio-unitolog = Юнитологи
 
-chat-radio-source-unknown = Неизвестно
+chat-radio-source-unknown = [Неизвестно]

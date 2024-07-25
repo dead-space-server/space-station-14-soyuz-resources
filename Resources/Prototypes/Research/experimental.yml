@@ -68,6 +68,7 @@
   cost: 7500
   recipeUnlocks:
   - ClothingShoesBootsMagSci
+  - ClothingShoesBootsMoon
 
 - type: technology
   id: AnomalyCoreHarnessing
@@ -109,6 +110,7 @@
   - WeaponPistolCHIMP
   - AnomalySynchronizerCircuitboard
   - AnomalyVesselExperimentalCircuitboard
+  - ObeliskStoper
   technologyPrerequisites:
   - BasicAnomalousResearch
 

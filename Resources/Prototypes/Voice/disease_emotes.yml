@@ -2,7 +2,16 @@
   id: Sneeze
   name: chat-emote-name-sneeze
   category: Vocal
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
   chatMessages: ["chat-emote-msg-sneeze"]
+  chatTriggers:
+    - чихает
+    - чихает.
 
 - type: emote
   id: Cough

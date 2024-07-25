@@ -10,7 +10,7 @@
     layers:
     - map: ["enum.DamageStateVisualLayers.Base", "movement"]
       state: running
-      sprite: DeadSpace/Mods/Spiders/knight_terror.rsi
+      sprite: DeadSpace/Mods/Spiders/varrior_terror.rsi
   - type: MeleeWeapon
     altDisarm: false
     angle: 0
@@ -19,8 +19,8 @@
       path: /Audio/Effects/bite.ogg
     damage:
       types:
-        Piercing: 10
-        Poison: 8
+        Piercing: 8
+        Poison: 2
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -38,7 +38,6 @@
         layer:
         - MobLayer
   - type: Reflect
-    enabled: true
     reflectProb: 0.2
   - type: MovementSpeedModifier
     baseWalkSpeed: 3
@@ -59,24 +58,26 @@
   - type: Evolution
     duration: 360 #Время до получения возможности эволюционировать
     spawnedEntities: #В кого можно эволюционировать
-      - MobSpiderTerrorKnightLvl2
+      - MobSpiderTerrorKnight
       - MobSpiderTerrorVdova
       - MobSpiderTerrorReaper
+      - MobSpiderTerrorLurker
   - type: NeededBloodForEvolution #Пример
     defaultCost: 200 #Стандартная цена на не заданный результат
     bloodCosts: #цены
       MobSpiderTerrorKnightLvl2: 100
       MobSpiderTerrorVdova: 150
       MobSpiderTerrorReaper: 150
+      MobSpiderTerrorLurker: 100
 
 - type: entity
   name: паук рыцарь
   parent: BaseMobSpiderTerror
-  id: MobSpiderTerrorKnightLvl2
+  id: MobSpiderTerrorKnight
   description: Прочный, выглядит пугающе.
   components:
   - type: Sprite
-    scale: 1.4, 1.4
+    scale: 1, 1
     drawdepth: Mobs
     layers:
     - map: ["enum.DamageStateVisualLayers.Base", "movement"]
@@ -90,12 +91,11 @@
       path: /Audio/Effects/bite.ogg
     damage:
       types:
-        Piercing: 15
-        Poison: 12
+        Piercing: 8
+        Poison: 1
   - type: MobThresholds
     thresholds:
       0: Alive
-      250: Critical
       350: Dead
   - type: Fixtures
     fixtures:
@@ -109,8 +109,7 @@
         layer:
         - MobLayer
   - type: Reflect
-    enabled: true
-    reflectProb: 0.35
+    reflectProb: 0.1
   - type: MovementSpeedModifier
     baseWalkSpeed: 3
     baseSprintSpeed: 3
@@ -121,9 +120,10 @@
   - type: Puller
     needsHands: false
   - type: Bloodsucker
-    maxCountReagent: 0 #Емкость
-    countReagent: 0 #Сколько реагента при спавне
+    maxCountReagent: 100 #Емкость
+    countReagent: 30 #Сколько реагента при спавне
     duration: 2 #Длительность сосания
     howMuchWillItSuck: 20 #Сколько высосет за один укус
     injectSound:
       collection: SpiderHatches #Звуки после высасывания
+  - type: SpiderKnight

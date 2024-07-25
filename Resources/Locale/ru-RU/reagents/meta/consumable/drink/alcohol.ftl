@@ -186,5 +186,3 @@ reagent-name-watermelon-wakeup = арбузное пробуждение
 reagent-desc-watermelon-wakeup = Если вы хотите взбодриться, это поможет... Ещё и сладкое.
 reagent-name-rubberneck = раббернек
 reagent-desc-rubberneck = Популярный напиток среди тех, кто придерживается полностью синтетической диеты.
-reagent-name-champagne = шампанское
-reagent-desc-champagne = Премиальное игристое вино

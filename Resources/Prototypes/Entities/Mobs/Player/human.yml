@@ -4,7 +4,7 @@
   parent: BaseMobHuman
   id: MobHuman
 
-# Syndie
+#Syndie
 - type: entity
   parent: MobHuman
   id: MobHumanSyndicateAgentBase
@@ -36,10 +36,36 @@
       giveObjectives: false
 
 - type: entity
+  parent: MobHumanSyndicateAgent
+  id: MobHumanSyndicateAgentMedic
+  name: syndicate medic
+  components:
+  - type: Loadout
+    prototypes: [SyndicateReinforcementMedic]
+
+- type: entity
+  parent: MobHumanSyndicateAgent
+  id: MobHumanSyndicateAgentSpy
+  name: syndicate spy
+  components:
+  - type: Loadout
+    prototypes: [SyndicateReinforcementSpy]
+
+- type: entity
+  parent: MobHumanSyndicateAgent
+  id: MobHumanSyndicateAgentThief
+  name: syndicate thief
+  components:
+  - type: Loadout
+    prototypes: [SyndicateReinforcementThief]
+
+- type: entity
   parent: MobHumanSyndicateAgentBase
   id: MobHumanSyndicateAgentNukeops # Reinforcement exclusive to nukeops uplink
   suffix: Human, NukeOps
   components:
+    - type: Loadout
+      prototypes: [SyndicateOperativeGearReinforcementNukeOps]
     - type: NukeOperative
 
 # Nuclear Operative
@@ -70,56 +96,3 @@
     - type: NpcFactionMember
       factions:
       - Syndicate
-
-# Space Ninja
-- type: entity
-  noSpawn: true
-  name: Space Ninja
-  parent: MobHuman
-  id: MobHumanSpaceNinja
-  components:
-  - type: RandomHumanoidAppearance
-    randomizeName: false
-  - type: Loadout
-    prototypes: [SpaceNinjaGear]
-  - type: NpcFactionMember
-    factions:
-    - Syndicate
-  - type: SpaceNinja
-  - type: GenericAntag
-    rule: Ninja
-  - type: AutoImplant
-    implants:
-    - DeathAcidifierImplant
-  - type: RandomMetadata
-    nameSegments:
-    - names_ninja_title
-    - names_ninja
-
-# DS14 Death Squad Unit
-- type: entity
-  id: MobHumanDeathSquadUnit
-  name: death squad unit
-  description: Member of death squad.
-  parent: MobHuman
-  components:
-  - type: MindShield
-  - type: ZombieImmune
-  - type: AutoImplant
-    implants:
-    - FreedomImplant
-    - SadTromboneImplant
-    - DeathAcidifierImplant
-  - type: GhostRole
-    name: ghost-role-information-death-squad-unit-name
-    description: ghost-role-information-death-squad-unit-description
-    requirements:
-      - !type:OverallPlaytimeRequirement
-        time: 756000 # 210 hours
-  - type: GhostTakeoverAvailable
-  - type: RandomMetadata
-    nameSegments:
-    - SyndicateNamesNormal
-    - NamesLastDeathSquad
-  - type: Loadout
-    prototypes: [DeathSquadUnitGear]

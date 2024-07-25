@@ -53841,10 +53841,14 @@ entities:
   - uid: 7382
     components:
     - type: Transform
+      anchored: False
       pos: -11.5,-17.5
       parent: 4812
     - type: AtmosPipeColor
       color: '#FF0000FF'
+    - type: Physics
+      canCollide: True
+      bodyType: Dynamic
   - uid: 7858
     components:
     - type: Transform

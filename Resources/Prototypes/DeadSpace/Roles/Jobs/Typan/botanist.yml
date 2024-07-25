@@ -1,0 +1,18 @@
+- type: job
+  id: TypanBotanist
+  name: Ботаник Синдиката
+  playTimeTracker: TypanBotanist
+  description: Ботаник из далёкого космоса
+  startingGear: SyndicateBotanist
+  icon: "JobIconTypanBotanist"
+  supervisors: job-supervisors-hop
+  setPreference: false
+
+- type: startingGear
+  id: SyndicateBotanist
+  equipment:
+    ears: ClothingHeadsetAltSyndicate
+    jumpsuit: ClothingUniformJumpsuitTypanBotanist
+    back: ClothingBackpackSatchelTypan
+    shoes: ClothingShoesColorBlack
+    id: TypanIDCardBotanist

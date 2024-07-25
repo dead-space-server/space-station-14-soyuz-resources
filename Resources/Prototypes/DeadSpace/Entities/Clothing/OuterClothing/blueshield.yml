@@ -1,13 +1,13 @@
 - type: entity
   parent: ClothingOuterHardsuitBase
   id: ClothingOuterHardsuitBlueShield
-  name: blue shild hardsuit
-  description: A hardsuit designed for the defender of the command stuff.
+  name: скафандр офицера "Синий Щит"
+  description: Скафандр предназначенный для защитника командования.
   components:
   - type: Sprite
-    sprite: DeadSpace/Clothing/OuterClothing/Hardsuits/blue_shield.rsi
+    sprite: DeadSpace/Clothing/OuterClothing/Hardsuits/blueshield.rsi
   - type: Clothing
-    sprite: DeadSpace/Clothing/OuterClothing/Hardsuits/blue_shield.rsi
+    sprite: DeadSpace/Clothing/OuterClothing/Hardsuits/blueshield.rsi
   - type: PressureProtection
     highPressureMultiplier: 0.45
     lowPressureMultiplier: 1000
@@ -30,3 +30,14 @@
     clothingPrototype: ClothingHeadHelmetHardsuitBlueShield
   - type: Item
     size: Huge
+
+- type: entity
+  parent: ClothingOuterCoatHoSGreatcoat
+  id: ClothingOuterArmorBasicBlueShield
+  name: бронежилет офицера "Синий Щит"
+  description: Защитные характеристики данного бронежилета превосходят обычный и идентичны бронированной шинели главы службы безопасности.
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Clothing/OuterClothing/Armor/blueshield_armor.rsi
+  - type: Clothing
+    sprite: DeadSpace/Clothing/OuterClothing/Armor/blueshield_armor.rsi

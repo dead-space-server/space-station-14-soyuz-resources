@@ -132,6 +132,26 @@
 #   id: JaniShootout
 #   background: /Textures/LobbyScreens/Fobos/janishootout.webp
 
+- type: lobbyBackground
+  id: GerionDart
+  background: /Textures/LobbyScreens/Fobos/gerion_dart.png
+
+- type: lobbyBackground
+  id: Unity
+  background: /Textures/LobbyScreens/Fobos/unity.png
+
+- type: lobbyBackground
+  id: Engineering
+  background: /Textures/LobbyScreens/Fobos/engineering.png
+
+- type: lobbyBackground
+  id: ParticleAccelerator
+  background: /Textures/LobbyScreens/Fobos/particle_accelerator.jpg
+
+- type: lobbyBackground
+  id: SecAgaintsAll
+  background: /Textures/LobbyScreens/Fobos/sec_againts_all.png
+
 # Titan
 
 # - type: lobbyBackground

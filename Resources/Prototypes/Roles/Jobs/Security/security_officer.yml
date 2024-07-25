@@ -33,10 +33,6 @@
   equipment:
     eyes: ClothingEyesGlassesSecurity
     ears: ClothingHeadsetSecurity
-    underwearb: ClothingUnderwearBottomBoxersSecurityOfficer # DS14-Underwear
-  underweart: ClothingUnderwearTopBraSecurityOfficer # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesSecurityOfficer # DS14-Underwear
   storage:
     back:
-    - BoxSurvivalSecurity
     - Flash

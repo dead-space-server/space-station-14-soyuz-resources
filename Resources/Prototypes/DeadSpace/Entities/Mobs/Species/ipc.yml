@@ -5,7 +5,7 @@
   abstract: true
   components:
   - type: Body
-    prototype: IPC_body
+    prototype: IPC
     requiredLegs: 2
   - type: HumanoidAppearance
     species: IPC

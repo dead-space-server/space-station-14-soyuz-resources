@@ -1,25 +1,9 @@
 - type: entity
-  id: ClothingBackpackDuffelCBURNNECROFilled
-  parent: ClothingBackpackERTMedical
-  suffix: Заполненный
-  components:
-  - type: StorageFill
-    contents:
-    - id: BoxSurvivalEngineering
-    - id: WeaponShotgunBulldog
-    - id: MagazineShotgunIncendiary
-      amount: 4
-    - id: NECROMedipen
-      amount: 5
-    - id: ZetaTwoMedipen
-      amount: 2
-    - id: Crowbar
-
-- type: entity
   id: ClothingBeltMilitaryWebbingNECROFilled
   parent: ClothingBeltMilitaryWebbing
   name: РПС ОПНУ
-  suffix: Filled
+  description: Ременно-плечевая система тактических ремней, которую носят представители военных структур.
+  suffix: Заполненный
   components:
   - type: Item
     size: Ginormous
@@ -32,79 +16,94 @@
       - id: MagazineShotgunIncendiary
         amount: 6
 
-- type: entity
-  id: ClothingBackpackLeaderDuffelCBURNNECROFilled
-  parent: ClothingBackpackERTMedical
-  suffix: Заполненный
-  components:
-  - type: StorageFill
-    contents:
-    - id: BoxSurvivalEngineering
-    - id: WeaponShotgunBulldog
-    - id: MagazineShotgunIncendiary
-      amount: 4
-    - id: NECROMedipen
-      amount: 5
-    - id: ZetaTwoMedipen
-      amount: 2
-    - id: Crowbar
-    - id: ObeliskStoper
-
 - type: startingGear
   id: CBURNNECROLeaderGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitColorBrown
-    back: ClothingBackpackLeaderDuffelCBURNNECROFilled
+    back: ClothingBackpackERTLeader
     mask: ClothingMaskGasERT
     eyes: ClothingEyesGlassesSecurity
     ears: ClothingHeadsetSOC
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitCBURNNECROLeader
-    shoes: ClothingShoesBootsCombatFilled
+    shoes: ADTClothingShoesBootsMagERT
     id: CBURNPDA
     pocket1: KukriKnife
     pocket2: WeaponPulsePistol
     suitstorage: OxygenTankFilled
     belt: ClothingBeltMilitaryWebbingNECROFilled
+  storage:
+    back:
+    - BoxSurvivalEngineering
+    - WeaponShotgunBulldog
+    - MagazineShotgunIncendiary
+    - MagazineShotgunIncendiary
+    - MagazineShotgunIncendiary
+    - MagazineShotgunIncendiary
+    - ObeliskStoper
+    - NECROMedipen
+    - NECROMedipen
+    - NECROMedipen
+    - NECROMedipen
+    - NECROMedipen
+    - ZetaTwoMedipen
+    - ZetaTwoMedipen
+    - Crowbar
 
 - type: startingGear
   id: CBURNNECROSoldierGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitColorBrown
-    back: ClothingBackpackDuffelCBURNNECROFilled
+    back: ClothingBackpackERTMedical
     mask: ClothingMaskGasERT
     eyes: ClothingEyesGlassesSecurity
     ears: ClothingHeadsetSOC
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitCBURNNECROSoldier
-    shoes: ClothingShoesBootsCombatFilled
+    shoes: ADTClothingShoesBootsMagERT
     id: CBURNPDA
     pocket1: KukriKnife
     pocket2: WeaponPulsePistol
     suitstorage: OxygenTankFilled
     belt: ClothingBeltMilitaryWebbingNECROFilled
-
+  storage:
+    back:
+    - BoxSurvivalEngineering
+    - WeaponShotgunBulldog
+    - MagazineShotgunIncendiary
+    - MagazineShotgunIncendiary
+    - MagazineShotgunIncendiary
+    - MagazineShotgunIncendiary
+    - NECROMedipen
+    - NECROMedipen
+    - NECROMedipen
+    - NECROMedipen
+    - NECROMedipen
+    - ZetaTwoMedipen
+    - ZetaTwoMedipen
+    - Crowbar
+    
 - type: entity
   id: RandomHumanoidSpawnerCBURNLeaderNECRO
   name: лидер отряда ОПНУ
-  suffix: РХБЗ
+  suffix: РХБЗ, Некроморфы, Призрачная роль
   components:
     - type: Sprite
       sprite: Markers/jobs.rsi
       state: cburn
     - type: RandomHumanoidSpawner
       settings: CBURNLeaderNECRO
-    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   id: CBURNLeaderNECRO
+  parent: EventHumanoidERTZombieImmune
   components:
-    - type: MindShield
     - type: Loadout
       prototypes: [CBURNNECROLeaderGear]
     - type: GhostRole
       name: ghost-role-information-cburn-leader-name
       description: ghost-role-information-cburn-leader-description
+      rules: ghost-role-information-nonantagonist-rules
       requirements:
         - !type:DepartmentTimeRequirement
           department: Medical
@@ -120,29 +119,28 @@
       nameSegments:
       - NamesFirstERTLeader
       - NamesLastERT
-    - type: InitialInfectedExempt
 
 - type: entity
   id: RandomHumanoidSpawnerCBURNSoldierNECRO
   name: боец отряда ОПНУ
-  suffix: РХБЗ
+  suffix: РХБЗ, Некроморфы, Призрачная роль
   components:
     - type: Sprite
       sprite: Markers/jobs.rsi
       state: cburn
     - type: RandomHumanoidSpawner
       settings: CBURNSoldierNECRO
-    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   id: CBURNSoldierNECRO
+  parent: EventHumanoidERTZombieImmune
   components:
-    - type: MindShield
     - type: Loadout
       prototypes: [CBURNNECROSoldierGear]
     - type: GhostRole
       name: ghost-role-information-cburn-agent-name
       description: ghost-role-information-cburn-agent-description
+      rules: ghost-role-information-nonantagonist-rules
       requirements:
         - !type:DepartmentTimeRequirement
           department: Medical
@@ -158,4 +156,3 @@
       nameSegments:
       - NamesFirstERTLeader
       - NamesLastERT
-    - type: InitialInfectedExempt

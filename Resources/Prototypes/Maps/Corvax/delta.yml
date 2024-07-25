@@ -8,15 +8,13 @@
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup
-          mapNameTemplate: '{0} Дельта {1}'
+          mapNameTemplate: '{0} Delta {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: 'TG'
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Shuttles/emergency_corvaxdelta.yml
         - type: StationJobs
-          overflowJobs:
-            - Passenger
           availableJobs:
             CargoTechnician: [ 4, 4 ]
             Passenger: [ -1, -1 ]
@@ -39,7 +37,7 @@
             HeadOfSecurity: [ 1, 1 ]
             SecurityOfficer: [ 6, 6 ]
             Chaplain: [ 1, 1 ]
-            Warden: [ 1, 1 ]
+            Warden: [ 2, 2 ]
             Librarian: [ 1, 1 ]
             Quartermaster: [ 1, 1 ]
             SalvageSpecialist: [ 3, 3 ]

@@ -196,6 +196,7 @@
       - id: ClothingMaskSterile
       - id: ClothingOuterHardsuitMedical
       - id: Hypospray
+      - id: ClothingEyesHudCMO
       - id: DoorRemoteMedical
       - id: RubberStampCMO
       - id: MedicalTechFabCircuitboard

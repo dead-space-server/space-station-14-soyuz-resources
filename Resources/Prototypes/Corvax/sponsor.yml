@@ -175,6 +175,7 @@
       sprite: Corvax/Clothing/Hands/Accessories/watch.rsi
     - type: Clothing
       sprite: Corvax/Clothing/Hands/Accessories/watch.rsi
+    - type: Clock
 
 - type: marking
   id: AugmentsRoboticRightArm

@@ -80,10 +80,6 @@
     ears: ClothingHeadsetAltCommand
     belt: BoxFolderClipboard
     socks: ClothingUnderwearSocksHeadofPersonnel
-    underwearb: ClothingUnderwearBottomBoxersHeadofPersonnel # DS14-Underwear
-  underweart: ClothingUnderwearTopBraHeadofPersonnel # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesHeadofPersonnel # DS14-Underwear
   storage:
     back:
-    - BoxSurvival
     - Flash

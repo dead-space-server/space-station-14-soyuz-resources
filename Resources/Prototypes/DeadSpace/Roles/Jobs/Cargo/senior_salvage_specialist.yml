@@ -29,9 +29,3 @@
     ears: ClothingHeadsetMining
     neck: ClothingNeckCloakMiner
     jumpsuit: ClothingUniformJumpsuitSalvageSpecialist
-    underwearb: ClothingUnderwearBottomBoxersSalvageSpecialist # DS14-Underwear
-  underweart: ClothingUnderwearTopBraSalvageSpecialist # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesSalvageSpecialist # DS14-Underwear
-  storage:
-    back:
-    - BoxSurvival

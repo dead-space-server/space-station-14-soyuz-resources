@@ -29,9 +29,6 @@
     pocket1: EnergySword
     belt: ClothingBeltDeathSquadWebbingFilled
     underwearb: ClothingUnderwearBottomBoxersDeathSquad # DS14-Underwear
-  underweart: ClothingUnderwearTopBraDeathSquad # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesDeathSquad # DS14-Underwear
-  innerClothingSkirt: ClothingUniformJumpskirtColorBlack
 
 - type: entity
   parent: WeaponRevolverMateba
@@ -76,13 +73,6 @@
   id: ClothingBeltDeathSquadWebbingFilled
   name: РПС бойца отряда специального назначения "Дым"
   description: РПС члена отряда элитной эвакуации.
-  suffix: Заполненный
-  components:
-    - type: StorageFill
-      contents:
-        - id: PowerDrill
-        - id: WelderExperimental
-        - id: Multitool
 
 - type: entity
   parent: ClothingHeadset
@@ -102,3 +92,5 @@
     sprite: Clothing/Ears/Headsets/base.rsi
   - type: Clothing
     sprite: Clothing/Ears/Headsets/base.rsi
+  - type: Headset
+    color: "#CF1CFF"

@@ -50,6 +50,8 @@
     - BypassInteractionRangeChecks
   - type: TypingIndicator
     proto: default
+  - type: ShowJobIcons
+  - type: ShowMindShieldIcons
 
 - type: entity
   id: ActionGhostBoo

@@ -16,15 +16,10 @@
       - CannotSuicide
       - DoorBumpOpener
       - FootstepSound
-  - type: Tool
-    speed: 1.5
-    qualities:
-      - Prying
   - type: Prying
-    pryPowered: !type:Bool
-        true
-    force: !type:Bool
-      true
+    pryPowered: true
+    force: true
+    speedModifier: 1.5
     useSound:
       path: /Audio/Items/crowbar.ogg
   - type: Sprite
@@ -85,6 +80,17 @@
         - MobLayer
   - type: ZombieImmune
   - type: ImmunitetInfectionDead
+  - type: PassiveDamage
+    allowedStates:
+    - Alive
+    - Critical
+    damageCap: 0
+    damage:
+      types:
+        Poison: -2
+      groups:
+        Brute: -4
+        Burn: -4
 
 - type: entity
   parent: BaseMobDemonBoss

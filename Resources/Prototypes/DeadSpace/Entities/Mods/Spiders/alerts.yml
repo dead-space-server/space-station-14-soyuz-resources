@@ -48,3 +48,9 @@
   description: Если вы не будете поглащать кровь, вы не сможете использовать свои способности.
   minSeverity: 0
   maxSeverity: 20
+
+- type: alert
+  id: SpiderGuard
+  icons: [ /Textures/DeadSpace/Mods/Spiders/guardian/guard.png ]
+  name: на защите!
+  description: вы охраняете королевскую особу.

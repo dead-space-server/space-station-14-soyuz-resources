@@ -15,7 +15,7 @@
           true
     - type: NpcFactionMember
       factions:
-        - SimpleHostile
+      - Dragon
     - type: Sprite
       drawdepth: Mobs
       sprite: Mobs/Aliens/Carps/space.rsi
@@ -78,6 +78,7 @@
       interactFailureString: petting-failure-carp
       interactFailureSound:
         path: /Audio/Effects/bite.ogg
+    - type: NightVision # DS14
 
 - type: entity
   parent: BaseMobCarp
@@ -168,6 +169,7 @@
       makeSentient: true
       name: ghost-role-information-sentient-carp-name
       description: ghost-role-information-sentient-carp-description
+      rules: ghost-role-information-space-dragon-summoned-carp-rules
       raffle:
         settings: short
     - type: GhostTakeoverAvailable

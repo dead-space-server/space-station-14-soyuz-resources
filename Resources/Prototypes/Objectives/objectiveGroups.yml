@@ -113,6 +113,7 @@
     RenaultStealObjective: 1
     ShivaStealObjective: 1
     TropicoStealObjective: 1
+    PolyStealObjective: 1
 
 - type: weightedRandom
   id: ThiefObjectiveGroupEscape

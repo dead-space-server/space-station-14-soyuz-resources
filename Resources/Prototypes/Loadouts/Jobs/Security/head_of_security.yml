@@ -109,3 +109,40 @@
   id: HeadofSecurityWinterCoat
   equipment:
     outerClothing: ClothingOuterWinterHoS
+
+# Underwear
+- type: loadout
+  id: UnderwearBottomBoxersHeadofSecurity
+  equipment: UnderwearBottomBoxersHeadofSecurity
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomBoxersHeadofSecurity
+  equipment:
+    underwearb: ClothingUnderwearBottomBoxersHeadofSecurity
+
+- type: loadout
+  id: UnderwearBottomPantiesHeadofSecurity
+  equipment: UnderwearBottomPantiesHeadofSecurity
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomPantiesHeadofSecurity
+  equipment:
+    underwearb: ClothingUnderwearBottomPantiesHeadofSecurity
+
+- type: loadout
+  id: UnderwearTopBraHeadofSecurity
+  equipment: UnderwearTopBraHeadofSecurity
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearTopBraHeadofSecurity
+  equipment:
+    underweart: ClothingUnderwearTopBraHeadofSecurity

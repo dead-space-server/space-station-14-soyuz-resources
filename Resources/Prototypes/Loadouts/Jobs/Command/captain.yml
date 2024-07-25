@@ -128,3 +128,40 @@
   id: CaptainWintercoat
   equipment:
     outerClothing: ClothingOuterWinterCap
+
+# Underwear
+- type: loadout
+  id: UnderwearBottomBoxersCaptain
+  equipment: UnderwearBottomBoxersCaptain
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomBoxersCaptain
+  equipment:
+    underwearb: ClothingUnderwearBottomBoxersCaptain
+
+- type: loadout
+  id: UnderwearBottomPantiesCaptain
+  equipment: UnderwearBottomPantiesCaptain
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomPantiesCaptain
+  equipment:
+    underwearb: ClothingUnderwearBottomPantiesCaptain
+
+- type: loadout
+  id: UnderwearTopBraCaptain
+  equipment: UnderwearTopBraCaptain
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearTopBraCaptain
+  equipment:
+    underweart: ClothingUnderwearTopBraCaptain

@@ -54,6 +54,39 @@
       path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
 
 - type: entity
+  name: игрушечная china lake
+  parent: [BaseWeaponLauncher, BaseGunWieldable]
+  id: WeaponLauncherChinaLakeToy
+  description: BOOM
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Launchers/toy_china_lake.rsi
+    layers:
+      - state: icon
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Launchers/toy_china_lake.rsi
+    slots:
+    - Back
+    - suitStorage
+  - type: AmmoCounter
+  - type: Gun
+    fireRate: 1
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+        - SnapPop 
+    capacity: 20
+    proto: SnapPop
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+
+- type: entity
   name: RPG-7
   parent: BaseWeaponLauncher
   id: WeaponLauncherRocket
@@ -166,6 +199,8 @@
     - type: TetherGun
       frequency: 5
       dampingRatio: 4
+    - type: ItemToggle
+      onUse: false
     - type: PowerCellDraw
     - type: Sprite
       sprite: Objects/Weapons/Guns/Launchers/tether_gun.rsi
@@ -211,6 +246,8 @@
         path: /Audio/Weapons/soup.ogg
         params:
           volume: 2
+    - type: ItemToggle
+      onUse: false
     - type: PowerCellDraw
     - type: Sprite
       sprite: Objects/Weapons/Guns/Launchers/force_gun.rsi
@@ -247,6 +284,7 @@
     - type: Gun
       soundGunshot: /Audio/Weapons/Guns/Gunshots/harpoon.ogg
       fireRate: 0.5
+      clumsyProof: true
     - type: BasicEntityAmmoProvider
       proto: GrapplingHook
       capacity: 1
@@ -361,7 +399,7 @@
     whitelist:
       tags:
         - CartridgeRocket
-    proto: MeteorLarge
+    proto: MeteorMedium
 
 - type: entity
   name: immovable rod launcher

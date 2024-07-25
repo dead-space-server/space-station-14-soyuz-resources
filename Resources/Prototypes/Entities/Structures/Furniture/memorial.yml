@@ -32,8 +32,11 @@
 - type: entity
   id: SS13Memorial
   parent: BaseStructure
-  name: Tomb of the Unknown Employee
-  description: Here rests an unknown employee, Unknown by name or rank, Whose acts will not be forgotten
+  name: tomb of the unknown employee
+  description: |
+    Here rests an unknown employee
+    Unknown by name or rank
+    Whose acts will not be forgotten
   components:
     - type: Sprite
       sprite: Structures/Furniture/Memorials/ss13_memorial.rsi

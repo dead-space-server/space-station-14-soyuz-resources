@@ -73,3 +73,40 @@
   id: WhiteShoes
   equipment:
     shoes: ClothingShoesColorWhite
+
+# Underwear
+- type: loadout
+  id: UnderwearBottomBoxersAtmosphericTechnician
+  equipment: UnderwearBottomBoxersAtmosphericTechnician
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomBoxersAtmosphericTechnician
+  equipment:
+    underwearb: ClothingUnderwearBottomBoxersAtmosphericTechnician
+
+- type: loadout
+  id: UnderwearBottomPantiesAtmosphericTechnician
+  equipment: UnderwearBottomPantiesAtmosphericTechnician
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomPantiesAtmosphericTechnician
+  equipment:
+    underwearb: ClothingUnderwearBottomPantiesAtmosphericTechnician
+
+- type: loadout
+  id: UnderwearTopBraAtmosphericTechnician
+  equipment: UnderwearTopBraAtmosphericTechnician
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearTopBraAtmosphericTechnician
+  equipment:
+    underweart: ClothingUnderwearTopBraAtmosphericTechnician

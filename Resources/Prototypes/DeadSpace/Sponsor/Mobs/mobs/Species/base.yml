@@ -123,7 +123,18 @@
     spawned:
       - id: FoodMeatXeno
         amount: 5
+  - type: PassiveDamage # Slight passive regen. Assuming one damage type, comes out to about 4 damage a minute.
+    allowedStates:
+    - Alive
+    - Critical
+    - Dead
+    damage:
+      types:
+        Airloss: -0.5
+      groups:
+        Airloss: -0.5
   - type: Sanity
+  - type: ZombieImmune
 
 - type: damageModifierSet
   id: XenoRace

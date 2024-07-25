@@ -29,6 +29,10 @@
       - id: PlushieArachind
       - id: PlushiePenguin
       - id: PlushieJokerge
+      - id: PlushieFloran
+      - id: PlushieJuggernaut
+      - id: PlushieLieutenant
+      - id: PlushieIps
 
 - type: entity
   id: CrateFunLizardPlushieBulk
@@ -307,6 +311,7 @@
       - id: ClothingHeadHatMagician
       - id: BeachBall
       - id: ClothingShoesSkates
+      # - id: TommyCapGun
 
 - type: entity
   id: CrateFunBikeHornImplants

@@ -67,8 +67,8 @@
 - type: entity
   parent: ClothingUniformBase
   id: ADTClothingUniformDungeonMasterSuit
-  name: Dungeon Master Suit
-  description: Dungeon Master Suit.
+  name: костюм Мастера
+  description: Для настоящих Dungeon Masters.
   components:
   - type: Sprite
     sprite: ADT/Clothing/Uniforms/Jumpsuit/dungeon_master_suit.rsi

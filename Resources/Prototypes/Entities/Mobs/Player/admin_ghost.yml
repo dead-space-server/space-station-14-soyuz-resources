@@ -1,9 +1,13 @@
 - type: entity
-  parent: MobObserver
+  parent: [MobObserver, InventoryBase]
   id: AdminObserver
   name: admin observer
   noSpawn: true
   components:
+  - type: InteractionPopup
+    successChance: 1
+    interactSuccessString: hugging-success-generic
+    interactSuccessSound: /Audio/Effects/thudswoosh.ogg
   - type: ContentEye
     maxZoom: 8.916104, 8.916104
   - type: Tag
@@ -69,6 +73,7 @@
   - type: RadarConsole
     followEntity: true
   - type: CargoOrderConsole
+  - type: BankClient
   - type: CrewMonitoringConsole
   - type: GeneralStationRecordConsole
     canDeleteEntries: true
@@ -85,9 +90,10 @@
   - type: SolutionScanner
   - type: IgnoreUIRange
   - type: ShowAntagIcons
+  - type: ShowJobIcons
+  - type: ShowMindShieldIcons
   - type: Inventory
     templateId: aghost
-  - type: InventorySlots
   - type: Loadout
     prototypes: [ MobAghostGear ]
   - type: BypassInteractionChecks

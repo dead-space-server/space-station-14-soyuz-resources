@@ -103,30 +103,30 @@
     - MagazinePistol
 
 #CBURN Unit Gear - Full Kit
-- type: startingGear
-  id: CBURNGear
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitColorBrown
-    back: ClothingBackpackDuffelCBURN
-    mask: ClothingMaskGasERT
-    eyes: ClothingEyesGlassesSecurity
-    ears: ClothingHeadsetAltCentCom
-    gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterHardsuitCBURN
-    shoes: ClothingShoesBootsCombatFilled
-    id: CBURNPDA
-    pocket1: RadioHandheld
-    pocket2: WeaponLaserGun
-    suitstorage: OxygenTankFilled
-    belt: ClothingBeltBandolier
-  storage:
-    back:
-    - BoxSurvivalEngineering
-    - WeaponShotgunDoubleBarreled
-    - BoxShotgunIncendiary
-    - GrenadeFlashBang
-    - PillAmbuzolPlus
-    - PillAmbuzol
+# - type: startingGear
+#   id: CBURNGear
+#   equipment:
+#     jumpsuit: ClothingUniformJumpsuitColorBrown
+#     back: ClothingBackpackDuffelCBURN
+#     mask: ClothingMaskGasERT
+#     eyes: ClothingEyesGlassesSecurity
+#     ears: ClothingHeadsetAltCentCom
+#     gloves: ClothingHandsGlovesCombat
+#     outerClothing: ClothingOuterHardsuitCBURN
+#     shoes: ClothingShoesBootsCombatFilled
+#     id: CBURNPDA
+#     pocket1: RadioHandheld
+#     pocket2: WeaponLaserGun
+#     suitstorage: OxygenTankFilled
+#     belt: ClothingBeltBandolier
+#   storage:
+#     back:
+#     - BoxSurvivalEngineering
+#     - WeaponShotgunDoubleBarreled
+#     - BoxShotgunIncendiary
+#     - GrenadeFlashBang
+#     - PillAmbuzolPlus
+#     - PillAmbuzol
 
 - type: startingGear
   id: BoxingKangarooGear
@@ -185,6 +185,8 @@
     - GasAnalyzer
     - trayScanner
     - AccessConfiguratorUniversal
+    - Multitool
+    - Wrench
 
 #Gladiator with spear
 - type: startingGear

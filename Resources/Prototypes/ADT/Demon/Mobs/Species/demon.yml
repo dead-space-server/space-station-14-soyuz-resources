@@ -5,6 +5,12 @@
   components:
   - type: HumanoidAppearance
     species: DemonSpecies
+    hideLayersOnEquip:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
+    - Tail
   - type: Hunger
   - type: Thirst
   - type: Icon

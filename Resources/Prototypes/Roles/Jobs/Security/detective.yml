@@ -34,12 +34,8 @@
     id: DetectivePDA
     ears: ClothingHeadsetSecurity
     belt: ClothingBeltHolsterFilled
-    underwearb: ClothingUnderwearBottomBoxersDetective # DS14-Underwear
-  underweart: ClothingUnderwearTopBraDetective # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesDetective # DS14-Underwear
   storage:
     back:
-    - BoxSurvivalSecurity
     - Flash
     - ForensicPad
     - ForensicScanner

@@ -1,1 +1,2 @@
-loadout-group-psychologist-backpack = Рюкзак психолога
+loadout-group-psychologist-backpack = Психолог, рюкзак
+loadout-group-psychologist-underwear = Психолог, нижнее бельё

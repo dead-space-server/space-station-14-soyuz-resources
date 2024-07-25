@@ -29,9 +29,3 @@
     shoes: ClothingShoesColorWhite
     id: ResearchAssistantPDA
     ears: ClothingHeadsetScience
-    underwearb: ClothingUnderwearBottomBoxersResearchAssistant # DS14-Underwear
-  underweart: ClothingUnderwearTopBraResearchAssistant # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesResearchAssistant # DS14-Underwear
-  storage:
-    back:
-    - BoxSurvival

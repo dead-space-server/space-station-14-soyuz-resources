@@ -131,6 +131,9 @@
     - ClothingHeadHatCowboyRed
     - Whistle
     - PlushieJokerge
+    - PlushieFloran
+    - PlushieJuggernaut
+    - PlushieLieutenant
   - type: WiresPanel
   - type: Wires
     layoutId: Arcade

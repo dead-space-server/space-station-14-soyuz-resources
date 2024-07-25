@@ -1,0 +1,36 @@
+# Underwear
+- type: loadout
+  id: UnderwearBottomBoxersService
+  equipment: UnderwearBottomBoxersService
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomBoxersService
+  equipment:
+    underwearb: ClothingUnderwearBottomBoxersService
+
+- type: loadout
+  id: UnderwearBottomPantiesService
+  equipment: UnderwearBottomPantiesService
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomPantiesService
+  equipment:
+    underwearb: ClothingUnderwearBottomPantiesService
+
+- type: loadout
+  id: UnderwearTopBraService
+  equipment: UnderwearTopBraService
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearTopBraService
+  equipment:
+    underweart: ClothingUnderwearTopBraService

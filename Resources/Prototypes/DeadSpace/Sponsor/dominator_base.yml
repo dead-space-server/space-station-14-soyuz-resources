@@ -165,21 +165,9 @@
         map: [ "enum.ToggleVisuals.Layer" ]
     - type: Clothing
       sprite: DeadSpace/Sponsor/vjlados/magboots.rsi
-    - type: Magboots
-      toggleAction: ActionToggleMagbootsDominator
     - type: ClothingSpeedModifier
       walkModifier: 1
       sprintModifier: 1
-      enabled: false
-
-- type: entity
-  id: ActionToggleMagbootsDominator
-  parent: ActionBaseToggleMagboots
-  noSpawn: true
-  components:
-  - type: InstantAction
-    icon: { sprite: DeadSpace/Sponsor/vjlados/magboots.rsi, state: icon }
-    iconOn: DeadSpace/Sponsor/vjlados/magboots.rsi/icon-on.png
 
 # Socks
 - type: entity

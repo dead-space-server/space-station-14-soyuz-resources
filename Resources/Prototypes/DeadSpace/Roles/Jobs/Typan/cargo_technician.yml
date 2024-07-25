@@ -1,0 +1,18 @@
+- type: job
+  id: TypanCargotech
+  name: Грузчик Синдиката
+  playTimeTracker: TypanCargotech
+  description: Грузчик из далёкого космоса
+  startingGear: SyndicateCargotech
+  icon: "JobIconTypanCargotech"
+  supervisors: job-supervisors-qm
+  setPreference: false
+
+- type: startingGear
+  id: SyndicateCargotech
+  equipment:
+    ears: ClothingHeadsetAltSyndicate
+    jumpsuit: ClothingUniformJumpsuitTypanCargotech
+    back: ClothingBackpackSatchelTypan
+    shoes: ClothingShoesBootsCombatSyndie
+    id: TypanIDCardCargo

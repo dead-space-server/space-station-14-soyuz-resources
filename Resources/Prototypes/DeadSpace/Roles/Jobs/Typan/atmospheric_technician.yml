@@ -1,0 +1,19 @@
+- type: job
+  id: TypanAtmosTech
+  name: Атмосферный инженер синдиката
+  playTimeTracker: TypanAtmosTech
+  description: Атмос из далёкого космоса
+  startingGear: SyndicateAtmos
+  icon: "JobIconSyndicateAtmos"
+  supervisors: job-supervisors-ce-syndicate
+  setPreference: false
+
+- type: startingGear
+  id: SyndicateAtmos
+  equipment:
+    ears: ClothingHeadsetAltSyndicate
+    jumpsuit: ClothingUniformJumpsuitChiefEngineerSyndie
+    shoes: ClothingShoesBootsTypan
+    back: ClothingBackpackSyndicate
+    belt: ClothingBeltAssaultTypan
+    id: TypanIDCardRd

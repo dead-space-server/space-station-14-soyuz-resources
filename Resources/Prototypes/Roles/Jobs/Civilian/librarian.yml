@@ -29,12 +29,8 @@
     pocket1: d10Dice
     belt: BooksBag
     pocket2: HandLabeler # for making named bestsellers
-    underwearb: ClothingUnderwearBottomBoxersLibrarian # DS14-Underwear
-  underweart: ClothingUnderwearTopBraLibrarian # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesLibrarian # DS14-Underwear
   inhand:
     - BriefcaseBrownFilled
   storage:
     back:
-    - BoxSurvival
     - BookRandom

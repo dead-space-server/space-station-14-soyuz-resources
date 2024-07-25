@@ -30,9 +30,3 @@
     shoes: ClothingShoesColorBlack
     id: BartenderPDA
     ears: ClothingHeadsetService
-    underwearb: ClothingUnderwearBottomBoxersBartender # DS14-Underwear
-  underweart: ClothingUnderwearTopBraBartender # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesBartender # DS14-Underwear
-  storage:
-    back:
-    - BoxSurvival

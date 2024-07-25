@@ -44,7 +44,8 @@
       - id: ToyScythe3eilado
       - id: ClothingEyesGlassesMeson3eilado
       - id: PlushieMoth3eilado
-
+      - id: PDA3eilado
+      
 - type: entity
   parent: CrateGenericSteel
   id: ClothingBackpackSecond3eilado
@@ -75,7 +76,6 @@
       - id: SyndicateJawsOfLife3eilado
       - id: WelderExperimental3eilado
       - id: Multitool
-      - id: PDA3eilado
 
 # Cloak
 - type: entity
@@ -198,21 +198,9 @@
         map: [ "enum.ToggleVisuals.Layer" ]
     - type: Clothing
       sprite: DeadSpace/Sponsor/3eilado/magboots.rsi
-    - type: Magboots
-      toggleAction: ActionToggleMagboots3eilado
     - type: ClothingSpeedModifier
       walkModifier: 1
       sprintModifier: 1
-      enabled: false
-
-- type: entity
-  id: ActionToggleMagboots3eilado
-  parent: ActionBaseToggleMagboots
-  noSpawn: true
-  components:
-  - type: InstantAction
-    icon: { sprite: DeadSpace/Sponsor/3eilado/magboots.rsi, state: icon }
-    iconOn: DeadSpace/Sponsor/3eilado/magboots.rsi/icon-on.png
 
 # Socks
 - type: entity
@@ -373,7 +361,6 @@
 #Tail
 - type: marking
   id: 3eiladoTail
-  name: голографические хвосты
   bodyPart: Tail
   markingCategory: Tail
   sponsorOnly: true

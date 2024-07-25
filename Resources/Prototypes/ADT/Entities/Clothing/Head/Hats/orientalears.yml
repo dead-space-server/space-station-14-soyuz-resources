@@ -1,8 +1,8 @@
 - type: entity
   parent: ClothingHeadBase
   id: ADTClothingHeadHatBlackOrientalEars
-  name: oriental ears
-  description: "NYAH!"
+  name: чёрные ушки ориентала
+  description: НЯ!!!
   components:
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/orientalears.rsi
@@ -14,15 +14,10 @@
 - type: entity
   parent: ClothingHeadBase
   id: ADTClothingHeadHatOktyabrinaOrientalEars
-  name: gift for October
-  description: "On the inside is scrawled 'For the one whose hair is the color of lilac'. This smells like a joy and happy"
+  name: подарок для Октябрины
+  description: На внутренней стороне нацарапано "Для той, чьи волосы цвета сирени". Это пахнет радостью и счастьем.
   components:
   - type: Sprite
     sprite: ADT/Clothing/Head/Hats/orientalears.rsi
   - type: Clothing
     sprite: ADT/Clothing/Head/Hats/orientalears.rsi
-
-- type: sponsorLoadout
-  id: OktyabrinaLoadout
-  entity: ADTClothingHeadHatOktyabrinaOrientalEars
-  sponsorOnly: true

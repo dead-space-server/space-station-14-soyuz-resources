@@ -83,21 +83,23 @@
 - type: randomHumanoidSettings
   id: FSCPRecruitPreset
   speciesBlacklist:
-    - SlimePerson
-    - Moth
-    - Skeleton
-    - Vox
-    - Reptilian
-    - KoboltSpecies
-    - Diona
     - Arachnid
-    - Felinid
-    - VulpkaninSpecies
-    - TajaranSpecies
-    - SharkSpecies
+    - Diona
+    # - Dwarf
+    # - Human
+    - Moth
+    - Reptilian
+    - SlimePerson
+    - Vox
     - DemonSpecies
-    - IPS
+    - SharkSpecies
+    - TajaranSpecies
+    - VulpkaninSpecies
+    - Felinid
+    - KoboltSpecies
+    - XenoSponsor
     - IPC
+    - IPS
   randomizeName: false
   components:
     - type: GhostRole
@@ -131,12 +133,12 @@
     pocket1: FSCPKnife
     pocket2: ADTDrinkArmyFlask
     back: ClothingBackpackFSCPRecruitFilled
-    underwearb: ClothingUnderwearBottomBoxersWhite # DS14-Underwear
-  underweart: ClothingUnderwearTopBraSportsAlternative # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesWhite # DS14-Underwear
-  innerClothingSkirt: ClothingUniformJumpsuitFSCPRecruit
-  satchel: ClothingBackpackFSCPRecruitFilled
-  duffelbag: ClothingBackpackFSCPRecruitFilled
+  #   underwearb: ClothingUnderwearBottomBoxersWhite # DS14-Underwear
+  # underweart: ClothingUnderwearTopBraSportsAlternative # DS14-Underwear
+  # underwearb: ClothingUnderwearBottomPantiesWhite # DS14-Underwear
+  # innerClothingSkirt: ClothingUniformJumpsuitFSCPRecruit
+  # satchel: ClothingBackpackFSCPRecruitFilled
+  # duffelbag: ClothingBackpackFSCPRecruitFilled
 
 - type: entity
   parent: ADTClothingUniformJumpsuitMaugly
@@ -192,21 +194,23 @@
 - type: randomHumanoidSettings
   id: FSCPCorporalPreset
   speciesBlacklist:
-    - SlimePerson
-    - Moth
-    - Skeleton
-    - Vox
-    - Reptilian
-    - KoboltSpecies
-    - Diona
     - Arachnid
-    - Felinid
-    - VulpkaninSpecies
-    - TajaranSpecies
-    - SharkSpecies
+    - Diona
+    # - Dwarf
+    # - Human
+    - Moth
+    - Reptilian
+    - SlimePerson
+    - Vox
     - DemonSpecies
-    - IPS
+    - SharkSpecies
+    - TajaranSpecies
+    - VulpkaninSpecies
+    - Felinid
+    - KoboltSpecies
+    - XenoSponsor
     - IPC
+    - IPS
   randomizeName: false
   components:
     - type: GhostRole
@@ -242,12 +246,12 @@
     pocket1: ScalpelAdvanced
     pocket2: ADTDrinkArmyFlask
     back: ClothingBackpackFSCPCorporalFilled
-    underwearb: ClothingUnderwearBottomBoxersWhite # DS14-Underwear
-  underweart: ClothingUnderwearTopBraSportsAlternative # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesWhite # DS14-Underwear
-  innerClothingSkirt: ClothingUniformJumpsuitFSCPCorporal
-  satchel: ClothingBackpackFSCPCorporalFilled
-  duffelbag: ClothingBackpackFSCPCorporalFilled
+  #   underwearb: ClothingUnderwearBottomBoxersWhite # DS14-Underwear
+  # underweart: ClothingUnderwearTopBraSportsAlternative # DS14-Underwear
+  # underwearb: ClothingUnderwearBottomPantiesWhite # DS14-Underwear
+  # innerClothingSkirt: ClothingUniformJumpsuitFSCPCorporal
+  # satchel: ClothingBackpackFSCPCorporalFilled
+  # duffelbag: ClothingBackpackFSCPCorporalFilled
 
 - type: entity
   parent: ADTClothingUniformTurleneckWhite
@@ -292,21 +296,23 @@
 - type: randomHumanoidSettings
   id: FSCPSergeantPreset
   speciesBlacklist:
-    - SlimePerson
-    - Moth
-    - Skeleton
-    - Vox
-    - Reptilian
-    - KoboltSpecies
-    - Diona
     - Arachnid
-    - Felinid
-    - VulpkaninSpecies
-    - TajaranSpecies
-    - SharkSpecies
+    - Diona
+    # - Dwarf
+    # - Human
+    - Moth
+    - Reptilian
+    - SlimePerson
+    - Vox
     - DemonSpecies
-    - IPS
+    - SharkSpecies
+    - TajaranSpecies
+    - VulpkaninSpecies
+    - Felinid
+    - KoboltSpecies
+    - XenoSponsor
     - IPC
+    - IPS
   randomizeName: false
   components:
     - type: GhostRole
@@ -340,12 +346,12 @@
     pocket1: FSCPKnife
     pocket2: ADTDrinkArmyFlask
     back: ClothingBackpackFSCPSergeantFilled
-    underwearb: ClothingUnderwearBottomBoxersWhite # DS14-Underwear
-  underweart: ClothingUnderwearTopBraSportsAlternative # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesWhite # DS14-Underwear
-  innerClothingSkirt: ClothingUniformJumpsuitFSCPSergeant
-  satchel: ClothingBackpackFSCPSergeantFilled
-  duffelbag: ClothingBackpackFSCPSergeantFilled
+  #   underwearb: ClothingUnderwearBottomBoxersWhite # DS14-Underwear
+  # underweart: ClothingUnderwearTopBraSportsAlternative # DS14-Underwear
+  # underwearb: ClothingUnderwearBottomPantiesWhite # DS14-Underwear
+  # innerClothingSkirt: ClothingUniformJumpsuitFSCPSergeant
+  # satchel: ClothingBackpackFSCPSergeantFilled
+  # duffelbag: ClothingBackpackFSCPSergeantFilled
 
 - type: entity
   parent: ClothingNeckMantleHOS

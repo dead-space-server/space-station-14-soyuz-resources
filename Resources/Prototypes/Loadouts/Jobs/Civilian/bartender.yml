@@ -108,3 +108,40 @@
   id: BartenderWintercoat
   equipment:
     outerClothing: ClothingOuterWinterBar
+
+# Underwear
+- type: loadout
+  id: UnderwearBottomBoxersBartender
+  equipment: UnderwearBottomBoxersBartender
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomBoxersBartender
+  equipment:
+    underwearb: ClothingUnderwearBottomBoxersBartender
+
+- type: loadout
+  id: UnderwearBottomPantiesBartender
+  equipment: UnderwearBottomPantiesBartender
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomPantiesBartender
+  equipment:
+    underwearb: ClothingUnderwearBottomPantiesBartender
+
+- type: loadout
+  id: UnderwearTopBraBartender
+  equipment: UnderwearTopBraBartender
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearTopBraBartender
+  equipment:
+    underweart: ClothingUnderwearTopBraBartender

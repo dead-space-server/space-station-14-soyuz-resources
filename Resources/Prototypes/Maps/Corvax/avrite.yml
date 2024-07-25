@@ -16,8 +16,6 @@
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Shuttles/emergency_corvaxavrit.yml
         - type: StationJobs
-          overflowJobs:
-            - Passenger
           availableJobs:
             CargoTechnician: [ 4, 4 ]
             Passenger: [ -1, -1 ]

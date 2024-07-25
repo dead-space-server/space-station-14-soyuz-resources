@@ -56,6 +56,17 @@
     - !type:ListingLimitedStockCondition
       stock: 1
 
+- type: listing
+  id: CigaretteMachineInventoryEmag2
+  productEntity: FlippoSyndicateLighter
+  cost:
+    SpaceCash: 50
+  categories:
+    - CigaretteMachineInventoryEmag
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 1
+
 # Coffee
 - type: listing
   id: HotDrinksMachineInventoryEmag1

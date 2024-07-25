@@ -110,3 +110,40 @@
   id: MimeWintercoat
   equipment:
     outerClothing: ClothingOuterWinterMime
+
+# Underwear
+- type: loadout
+  id: UnderwearBottomBoxersMime
+  equipment: UnderwearBottomBoxersMime
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomBoxersMime
+  equipment:
+    underwearb: ClothingUnderwearBottomBoxersMime
+
+- type: loadout
+  id: UnderwearBottomPantiesMime
+  equipment: UnderwearBottomPantiesMime
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomPantiesMime
+  equipment:
+    underwearb: ClothingUnderwearBottomPantiesMime
+
+- type: loadout
+  id: UnderwearTopBraMime
+  equipment: UnderwearTopBraMime
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearTopBraMime
+  equipment:
+    underweart: ClothingUnderwearTopBraMime

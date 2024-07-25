@@ -5,7 +5,7 @@
   description: A pistol designed specifically for officers whose tasks include protecting members of the command stuff.
   components:
   - type: Sprite
-    sprite: DeadSpace/Objects/Weapons/Guns/Battery/blue_shield_gun.rsi
+    sprite: DeadSpace/Objects/Weapons/Guns/Battery/blueshield_gun.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -16,7 +16,7 @@
     proto: VioletLaser
     fireCost: 50
   - type: Clothing
-    sprite: DeadSpace/Objects/Weapons/Guns/Battery/blue_shield_gun.rsi
+    sprite: DeadSpace/Objects/Weapons/Guns/Battery/blueshield_gun.rsi
   - type: Gun
     selectedMode: SemiAuto
     availableModes:

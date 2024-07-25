@@ -634,18 +634,6 @@
         - state: green
         - state: coroner
 
-- type: entity
-  id: SpawnPointMaid
-  parent: SpawnPointJobBase
-  name: maid spawn
-  components:
-    - type: SpawnPoint
-      job_id: Maid
-    - type: Sprite
-      layers:
-        - state: green
-        - state: maid
-
 # SPECIAL
 
 ## ERT

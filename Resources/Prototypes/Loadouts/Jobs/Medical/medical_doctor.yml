@@ -271,3 +271,40 @@
   id: SterileMask
   equipment:
     mask: ClothingMaskSterile
+
+# Underwear
+- type: loadout
+  id: UnderwearBottomBoxersDoctor
+  equipment: UnderwearBottomBoxersDoctor
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomBoxersDoctor
+  equipment:
+    underwearb: ClothingUnderwearBottomBoxersDoctor
+
+- type: loadout
+  id: UnderwearBottomPantiesDoctor
+  equipment: UnderwearBottomPantiesDoctor
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomPantiesDoctor
+  equipment:
+    underwearb: ClothingUnderwearBottomPantiesDoctor
+
+- type: loadout
+  id: UnderwearTopBraDoctor
+  equipment: UnderwearTopBraDoctor
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearTopBraDoctor
+  equipment:
+    underweart: ClothingUnderwearTopBraDoctor

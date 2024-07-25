@@ -1,27 +1,28 @@
 - type: gameMapPool
   id: DefaultMapPool
   maps:
-  - Fland
-  - Meta
-  - Packed
-  - Cluster
-  # - Oasis # ������� ������� ��� ����
-  - Omega
-  - Bagel
-  - Origin
-  - Box
-  - Core
-  - Marathon
-  - Aspid
-  - Barratry
+  - CorvaxAstra
   - CorvaxAvrite
   - CorvaxDelta
   - CorvaxGate
   - CorvaxGelta
-  - CorvaxSilly
+  - CorvaxIshimura
   - CorvaxPaper
-  - CorvaxAstra
-  # - CorvaxIshimura # Ожидает ремаппа под билд
+  - CorvaxSilly
   - CorvaxSpectrum
+  - Aspid
+  - Bagel
+  - Barratry
+  - Box
+  - Cluster
+  - Core
+  - Fland
   - Gemini
+  - Marathon
+  - Meta
+  - Oasis
+  - Omega
+  - Origin
+  - Packed
+  - Saltern
   - Train

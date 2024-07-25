@@ -42,6 +42,10 @@
   id: VendingYouTool
   name: store-category-vendingyoutool
 
+- type: storeCategory
+  id: ToysInventory
+  name: store-category-vending-drinks
+
 # - type: storeCategory
 #   id: VendingLootboxInventory
 #   name: store-category-lootbox

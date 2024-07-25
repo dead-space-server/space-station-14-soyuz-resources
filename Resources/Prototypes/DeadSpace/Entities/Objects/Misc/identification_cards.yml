@@ -2,6 +2,7 @@
   parent: IDCardStandard
   id: TypanIDCardCargo
   name: ID карта 
+  description: Карта, необходимая для доступа в различные отделы станции
   components:
   - type: Sprite
     sprite: DeadSpace/Objects/Misc/typancargo.rsi
@@ -17,6 +18,7 @@
   parent: IDCardStandard
   id: TypanIDCardCom
   name: ID карта 
+  description: Карта, необходимая для доступа в различные отделы станции
   components:
   - type: Sprite
     sprite: DeadSpace/Objects/Misc/typansec.rsi
@@ -33,12 +35,13 @@
     - SyndicateAgent
     - Quartermaster
     - ResearchDirector
-    - NukeOperative
+    - NuclearOperative
 
 - type: entity
   parent: IDCardStandard
   id: TypanIDCardEng
   name: ID карта 
+  description: Карта, необходимая для доступа в различные отделы станции
   components:
   - type: Sprite
     sprite: DeadSpace/Objects/Misc/typaneng.rsi
@@ -53,6 +56,7 @@
   parent: IDCardStandard
   id: TypanIDCardMed
   name: ID карта 
+  description: Карта, необходимая для доступа в различные отделы станции
   components:
   - type: Sprite
     sprite: DeadSpace/Objects/Misc/typanmed.rsi
@@ -67,6 +71,7 @@
   parent: IDCardStandard
   id: TypanIDCardRd
   name: ID карта 
+  description: Карта, необходимая для доступа в различные отделы станции
   components:
   - type: Sprite
     sprite: DeadSpace/Objects/Misc/typanrd.rsi
@@ -88,6 +93,7 @@
   parent: IDCardStandard
   id: TypanIDCardScience
   name: ID карта 
+  description: Карта, необходимая для доступа в различные отделы станции
   components:
   - type: Sprite
     sprite: DeadSpace/Objects/Misc/typanscien.rsi
@@ -100,13 +106,31 @@
 
 - type: entity
   parent: IDCardStandard
-  id: TypanIDCardService
-  name: ID карта 
+  id: TypanIDCardBotanist
+  name: ID карта
   components:
   - type: Sprite
-    sprite: DeadSpace/Objects/Misc/typanserv.rsi
+    sprite: DeadSpace/Objects/Misc/typanbotan.rsi
     layers:
-    - state: typancardservice
+    - state: typancardbotanist
+  - type: PresetIdCard
+    job: TaypanBotanist
+  - type: Access
+    tags:
+    - Service
+    - SyndicateAgent
+
+- type: entity
+  parent: IDCardStandard
+  id: TypanIDCardChef
+  name: ID карта
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Objects/Misc/typanchef.rsi
+    layers:
+    - state: typancardchef
+  - type: PresetIdCard
+    job: TaypanChef
   - type: Access
     tags:
     - Service

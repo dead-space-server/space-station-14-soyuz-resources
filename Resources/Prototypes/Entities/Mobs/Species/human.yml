@@ -20,9 +20,26 @@
     hideLayersOnEquip:
     - Hair
     - Snout
+  - type: Inventory
+    femaleDisplacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Human/displacement.rsi
+            state: jumpsuit-female
   - type: Sanity
+
 
 - type: entity
   parent: BaseSpeciesDummy
   id: MobHumanDummy
   noSpawn: true
+  components:
+  - type: Inventory
+    femaleDisplacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Human/displacement.rsi
+            state: jumpsuit-female
+

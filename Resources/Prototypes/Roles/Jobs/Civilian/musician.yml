@@ -27,16 +27,11 @@
 - type: startingGear
   id: MusicianGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitMusician
     eyes: ClothingEyesGlassesSunglasses
     shoes: ClothingShoesBootsLaceup
     id: MusicianPDA
     ears: ClothingHeadsetService
-    underwearb: ClothingUnderwearBottomBoxersMusician # DS14-Underwear
-  underweart: ClothingUnderwearTopBraMusician # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesMusician # DS14-Underwear
   storage:
     back:
-    - BoxSurvival
     - AcousticGuitarInstrument
     - SaxophoneInstrument

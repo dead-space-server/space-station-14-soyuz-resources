@@ -143,61 +143,20 @@
 - type: entity
   id: NecromorfMobBase
   parent: [SimpleSpaceMobBase, MobCombat]
-  abstract: true
   noSpawn: true
   components:
   - type: IgnoreKudzu
   - type: Unitology
   - type: ZombieImmune
-  - type: HTN
-    rootTask:
-      task: XenoCompound
-    blackboard:
-      NavClimb: !type:Bool
-        true
-      NavInteract: !type:Bool
-        true
-      NavPry: !type:Bool
-        true
-      NavSmash: !type:Bool
-        true
   - type: MobState
     allowedStates:
     - Alive
     - Critical
     - Dead
   - type: Tool
-    speed: 1.5
+    speedModifier: 1.5
     qualities:
       - Prying
-  - type: Prying
-    pryPowered: !type:Bool
-        true
-    force: !type:Bool
-      true
-    useSound:
-      path: /Audio/Items/crowbar.ogg
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeCircle
-          radius: 0.35
-        density: 100
-        mask:
-        - MobMask
-        layer:
-        - MobLayer
-  - type: DamageStateVisuals
-    states:
-      Alive:
-        Base: running
-      Critical:
-        Base: crit
-      Dead:
-        Base: dead
-  - type: Stamina
-    critThreshold: 100
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -214,20 +173,6 @@
         Brute: 15
   - type: Puller
     needsHands: false
-  - type: Temperature
-    heatDamageThreshold: 360
-    coldDamageThreshold: -150
-    currentTemperature: 310.15
-  - type: Tag
-    tags:
-      - CannotSuicide
-      - DoorBumpOpener
-      - FootstepSound
-  - type: Speech
-    speechVerb: LargeMob
-  - type: MovementSpeedModifier
-    baseWalkSpeed: 3
-    baseSprintSpeed: 3
   - type: Bloodstream
     bloodReagent: NecromorfBlood
     bloodMaxVolume: 200
@@ -235,17 +180,7 @@
   - type: NpcFactionMember
     factions:
     - Necromorfs
-  - type: WallHack
-  - type: Grammar
-    attributes:
-      proper: true
-  - type: ReplacementAccent
-    accent: genericAggressive
-  - type: Vocal
-    sounds:
-      Female: Necro
-      Male: Necro
-      Unsexed: Necro
+  - type: NightVision
   - type: ReleaseGasPerSecond
     gasID: 9
 
@@ -373,6 +308,12 @@
     damage:
       types:
         Blunt: 10
+  - type: ShowHealthBars
+    damageContainers:
+    - Biological
+  - type: ShowHealthIcons
+    damageContainers:
+    - Biological
   - type: Butcherable
     butcheringType: Knife
     spawned:
@@ -484,7 +425,7 @@
     settings: PregnantNecromorf
 
 - type: entity
-  id: TwitcherecromorfSpawner
+  id: TwitcherNecromorfSpawner
   name: Некроморф
   suffix: некроморф твичер
   components:

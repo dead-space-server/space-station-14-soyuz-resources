@@ -28,8 +28,8 @@
 - type: entity
   parent: ClothingUnderwearTopBase
   id: ClothingUnderwearTopBraWhite
-  name: bra
-  description: Standard Nanotrasen bra for station staff. Painted white.
+  name: бра
+  description: Стандартное нижнее белье для женского персонала СССП.
   components:
   - type: Sprite
     sprite: Sirena/Clothing/Underwear/Top/bra.rsi
@@ -37,8 +37,8 @@
 - type: entity
   parent: ClothingUnderwearTopBase
   id: ClothingUnderwearTopBraSports
-  name: sports bra
-  description: Sports bra. Painted white.
+  name: спортивное бра
+  description: Стандартное нижнее белье для женского персонала СССП.
   components:
   - type: Sprite
     sprite: Sirena/Clothing/Underwear/Top/sportsbra.rsi
@@ -46,8 +46,8 @@
 - type: entity
   parent: ClothingUnderwearTopBase
   id: ClothingUnderwearTopBraSportsAlternative
-  name: alternative sports bra
-  description: Sports bra. Alternate version. Painted white.
+  name: альтернативное спортивное бра
+  description: Стандартное нижнее белье для женского персонала СССП.
   components:
   - type: Sprite
     sprite: Sirena/Clothing/Underwear/Top/sportsbraalt.rsi
@@ -289,7 +289,7 @@
   description: Cтандартное нижнее бельё оперативника КГБ.
   components:
   - type: Sprite
-    sprite: DeadSpace/Clothing/Underwear/Command/blue_shield/women/bra.rsi
+    sprite: DeadSpace/Clothing/Underwear/Command/blueshield/women/bra.rsi
 
 # Engineering
 - type: entity

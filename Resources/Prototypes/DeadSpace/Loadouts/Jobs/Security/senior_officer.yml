@@ -54,3 +54,40 @@
   id: SeniorOfficerPDA
   equipment:
     id: SeniorOfficerPDA
+
+# Underwear
+- type: loadout
+  id: UnderwearBottomBoxersSeniorOfficer
+  equipment: UnderwearBottomBoxersSeniorOfficer
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomBoxersSeniorOfficer
+  equipment:
+    underwearb: ClothingUnderwearBottomBoxersSeniorOfficer
+
+- type: loadout
+  id: UnderwearBottomPantiesSeniorOfficer
+  equipment: UnderwearBottomPantiesSeniorOfficer
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomPantiesSeniorOfficer
+  equipment:
+    underwearb: ClothingUnderwearBottomPantiesSeniorOfficer
+
+- type: loadout
+  id: UnderwearTopBraSeniorOfficer
+  equipment: UnderwearTopBraSeniorOfficer
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearTopBraSeniorOfficer
+  equipment:
+    underweart: ClothingUnderwearTopBraSeniorOfficer

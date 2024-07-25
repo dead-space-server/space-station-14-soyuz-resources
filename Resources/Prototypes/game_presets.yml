@@ -7,6 +7,7 @@
   description: survival-description
   rules:
     - RampingStationEventScheduler
+    - GameRuleMeteorScheduler
     - BasicRoundstartVariation
     - WageScheduler #backmen: currency
 
@@ -21,6 +22,7 @@
     - Revolutionary
     - Zombie
     - RampingStationEventScheduler
+    - GameRuleMeteorScheduler
     - WageScheduler #backmen: currency
 
 - type: gamePreset
@@ -31,9 +33,10 @@
   showInVote: true
   description: extended-description
   rules:
-    - SubGamemodesRule
     - BasicStationEventScheduler
+    - GameRuleMeteorScheduler
     - BasicRoundstartVariation
+    - SubGamemodesRule # DS14
     - WageScheduler #backmen: currency
 
 - type: gamePreset
@@ -65,9 +68,10 @@
   showInVote: false #Admin Use
   description: secret-description
   rules:
-    - SubGamemodesRule
     - BasicStationEventScheduler
-    - BasicRoundstartVariation
+    - GameRuleMeteorScheduler
+    - BasicRoundstartVariation # DS14
+    - SubGamemodesRule # DS14
     - WageScheduler #backmen: currency
 
 - type: gamePreset
@@ -78,7 +82,7 @@
   showInVote: false #Admin Use
   description: secret-description
   rules:
-    - BasicRoundstartVariation
+    - BasicRoundstartVariation # DS14
     - WageScheduler #backmen: currency
 
 - type: gamePreset
@@ -103,6 +107,7 @@
     - Traitor
     - SubGamemodesRule
     - BasicStationEventScheduler
+    - GameRuleMeteorScheduler
     - BasicRoundstartVariation
     - WageScheduler #backmen: currency
 
@@ -129,6 +134,7 @@
     - Nukeops
     - SubGamemodesRule
     - BasicStationEventScheduler
+    - GameRuleMeteorScheduler
     - BasicRoundstartVariation
     - WageScheduler #backmen: currency
 
@@ -143,6 +149,7 @@
     - Revolutionary
     - SubGamemodesRule
     - BasicStationEventScheduler
+    - GameRuleMeteorScheduler
     - BasicRoundstartVariation
     - WageScheduler #backmen: currency
 
@@ -155,7 +162,8 @@
   showInVote: true
   rules:
     - Zombie
-    - SubGamemodesRule
     - BasicStationEventScheduler
+    - GameRuleMeteorScheduler
     - BasicRoundstartVariation
+    - SubGamemodesRule # DS14
     - WageScheduler #backmen: currency

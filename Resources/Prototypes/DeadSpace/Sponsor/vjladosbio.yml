@@ -9,7 +9,7 @@
   id: ClothingBackpackVjladosBio
   name: блюспейс органический рюкзак
   description: Рюкзак использующий технологию блюспейса для увелечения своего максимального объёма. Состоит из органических компонентов. Принадлежит члену экипажа, находящемуся под покровительством спонсорской организации.
-  noSpawn: true
+  # noSpawn: true
   components:
   - type: Sprite
     sprite: DeadSpace/Sponsor/vjlados/bio/backpack.rsi
@@ -33,7 +33,6 @@
       - id: ClothingHeadsetVjlados
       - id: JetpackVoidVjlados
       - id: ClothingMaskVjlados
-      - id: MedkitAdvancedFilled
       - id: PDAVjlados
       - id: ADTtelescopicBaton
       - id: ToySwordDoubleVjlados
@@ -147,21 +146,9 @@
         map: [ "enum.ToggleVisuals.Layer" ]
     - type: Clothing
       sprite: DeadSpace/Sponsor/vjlados/bio/magboots.rsi
-    - type: Magboots
-      toggleAction: ActionToggleMagbootsVjladosBio
     - type: ClothingSpeedModifier
       walkModifier: 1
       sprintModifier: 1
-      enabled: false
-
-- type: entity
-  id: ActionToggleMagbootsVjladosBio
-  parent: ActionBaseToggleMagboots
-  noSpawn: true
-  components:
-  - type: InstantAction
-    icon: { sprite: DeadSpace/Sponsor/vjlados/bio/magboots.rsi, state: icon }
-    iconOn: DeadSpace/Sponsor/vjlados/bio/magboots.rsi/icon-on.png
 
 # ClothingOuter
 - type: entity

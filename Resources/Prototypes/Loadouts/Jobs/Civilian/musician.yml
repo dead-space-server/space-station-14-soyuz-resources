@@ -1,3 +1,22 @@
+# Jumpsuit
+- type: loadout
+  id: MusicianJumpsuit
+  equipment: MusicianJumpsuit
+
+- type: startingGear
+  id: MusicianJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMusician
+
+- type: loadout
+  id: MusicianJumpskirt
+  equipment: MusicianJumpskirt
+
+- type: startingGear
+  id: MusicianJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtMusician
+
 # Outerclothing
 - type: loadout
   id: MusicianWintercoat
@@ -7,3 +26,40 @@
   id: MusicianWintercoat
   equipment:
     outerClothing: ClothingOuterWinterMusician
+
+# Underwear
+- type: loadout
+  id: UnderwearBottomBoxersMusician
+  equipment: UnderwearBottomBoxersMusician
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomBoxersMusician
+  equipment:
+    underwearb: ClothingUnderwearBottomBoxersMusician
+
+- type: loadout
+  id: UnderwearBottomPantiesMusician
+  equipment: UnderwearBottomPantiesMusician
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomPantiesMusician
+  equipment:
+    underwearb: ClothingUnderwearBottomPantiesMusician
+
+- type: loadout
+  id: UnderwearTopBraMusician
+  equipment: UnderwearTopBraMusician
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearTopBraMusician
+  equipment:
+    underweart: ClothingUnderwearTopBraMusician
