@@ -139,6 +139,8 @@
         Radiation: 0
         Caustic: 0.75
   - type: GroupExamine
+  - type: ExplosionResistance
+    damageCoefficient: 0.80
   - type: ClothingRequiredStepTriggerImmune
     slots: WITHOUT_POCKET
 

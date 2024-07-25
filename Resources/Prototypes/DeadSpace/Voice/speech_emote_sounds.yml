@@ -200,7 +200,7 @@
     Sneeze:
       collection: VulpkaninSneezes
     Cough:
-      collection: MaleCoughs
+      collection: FemaleCoughs
     CatMeow:
       collection: CatMeows
     CatHisses:
@@ -210,13 +210,13 @@
     RobotBeep:
       collection: RobotBeeps
     Yawn:
-      collection: MaleYawn
+      collection: FemaleYawn
     Snore:
       collection: Snores
     Honk:
       collection: BikeHorn
     Sigh:
-      collection: MaleSigh
+      collection: FemaleSigh
     Crying:
       collection: VulpkaninCry
     Whistle:
