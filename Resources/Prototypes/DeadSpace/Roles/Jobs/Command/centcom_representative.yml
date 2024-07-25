@@ -11,10 +11,10 @@
     gloves: ClothingHandsGlovesColorGray
     ears: ClothingHeadsetCentCom
     pocket1: MacroBombImplanter
-    underwearb: ClothingUnderwearBottomBoxersCentcomm # DS14-Underwear
-  underweart: ClothingUnderwearTopBraCentcomm # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesCentcomm # DS14-Underwear
-  innerClothingSkirt: ClothingUniformJumpskirtPencilCentcomOfficial
+  #   underwearb: ClothingUnderwearBottomBoxersCentcomm # DS14-Underwear
+  # underweart: ClothingUnderwearTopBraCentcomm # DS14-Underwear
+  # underwearb: ClothingUnderwearBottomPantiesCentcomm # DS14-Underwear
+  # innerClothingSkirt: ClothingUniformJumpskirtPencilCentcomOfficial
 
 - type: entity
   parent: ClothingBackpack

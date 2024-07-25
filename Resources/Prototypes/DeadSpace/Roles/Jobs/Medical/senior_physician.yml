@@ -33,9 +33,3 @@
     shoes: ClothingShoesColorBlack
     ears: ClothingHeadsetMedical
     belt: ClothingBeltMedicalFilled
-    underwearb: ClothingUnderwearBottomBoxersSeniorPhysician # DS14-Underwear
-  underweart: ClothingUnderwearTopBraSeniorPhysician # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesSeniorPhysician # DS14-Underwear
-  storage:
-    back:
-    - BoxSurvivalMedical

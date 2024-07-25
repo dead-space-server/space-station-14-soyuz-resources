@@ -1,7 +1,7 @@
 ﻿- type: entity
   parent: VendingMachineDiscount
   id: BackmenVendingMachineDiscount
-  suffix: backmen
+  suffix: Backmen, Платный
   components:
     - type: Store
       categories:
@@ -20,60 +20,10 @@
         enum.StoreUiKey.Key:
           type: StoreBoundUserInterface
 
-# - type: entity
-#   parent: VendingMachine
-#   id: BackmenVendingLootBox
-#   name: ЛутБоксы
-#   suffix: backmen
-#   description: Испытайте удачу и откройте свой лутбокс!
-#   components:
-#     - type: VendingMachine
-#       pack: VendingLootboxInventory
-#       dispenseOnHitChance: 0.01
-#       dispenseOnHitThreshold: 50
-#       offState: off
-#       brokenState: broken
-#       normalState: normal-unshaded
-#     - type: Advertise
-#       pack: AmmoVendAds
-#     - type: Speech
-#     - type: Sprite
-#       sprite: Backmen/Structures/Machines/VendingMachines/lootbox.rsi
-#       layers:
-#         - state: "off"
-#           map: ["enum.VendingMachineVisualLayers.Base"]
-#         - state: "off"
-#           map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
-#           shader: unshaded
-#         - state: panel
-#           map: ["enum.WiresVisualLayers.MaintenancePanel"]
-#     - type: PointLight
-#       radius: 1.5
-#       energy: 1.6
-#       color: "#6148c7"
-#     - type: Store
-#       categories:
-#         - VendingLootboxInventory
-#       currencyWhitelist:
-#         - SpaceCash
-#       balance:
-#         SpaceCash: 0
-#     - type: BuyStoreBank
-#       emagCategories:
-#         - VendingLootboxInventoryEmag
-#     - type: ActivatableUI
-#       key: enum.StoreUiKey.Key
-#       singleUser: true
-#     - type: ActivatableUIRequiresPower
-#     - type: UserInterface
-#       interfaces:
-#         enum.StoreUiKey.Key:
-#           type: StoreBoundUserInterface
-
 - type: entity
   parent: VendingMachineCigs
   id: BackmenVendingMachineCigs
-  suffix: backmen
+  suffix: Backmen, Платный
   components:
     - type: Store
       categories:
@@ -95,9 +45,33 @@
           type: StoreBoundUserInterface
 
 - type: entity
+  parent: VendingMachineToys
+  id: BackmenVendingMachineToys
+  name: ИгрушкоМат
+  description: Игровой автомат с игрушками, точно не лохотрон!
+  suffix: Backmen, Платный
+  components:
+    - type: Store
+      categories:
+        - ToysInventory
+      currencyWhitelist:
+        - SpaceCash
+      balance:
+        SpaceCash: 0
+    - type: BuyStoreBank
+    - type: ActivatableUI
+      key: enum.StoreUiKey.Key
+      singleUser: true
+    - type: ActivatableUIRequiresPower
+    - type: UserInterface
+      interfaces:
+        enum.StoreUiKey.Key:
+          type: StoreBoundUserInterface
+
+- type: entity
   parent: VendingMachineCola
   id: BackmenVendingMachineCola
-  suffix: backmen
+  suffix: Backmen, Платный
   components:
     - type: Store
       categories:
@@ -121,7 +95,7 @@
 - type: entity
   parent: VendingMachineColaBlack
   id: BackmenVendingMachineColaBlack
-  suffix: backmen
+  suffix: Backmen, Платный
   components:
     - type: Store
       categories:
@@ -145,7 +119,7 @@
 - type: entity
   parent: VendingMachineSoda
   id: BackmenVendingMachineSoda
-  suffix: backmen
+  suffix: Backmen, Платный
   components:
     - type: Store
       categories:
@@ -169,7 +143,7 @@
 - type: entity
   parent: VendingMachineDonut
   id: BackmenVendingMachineDonut
-  suffix: backmen
+  suffix: Backmen, Платный
   components:
     - type: Store
       categories:
@@ -191,7 +165,7 @@
 - type: entity
   parent: VendingMachineChang
   id: BackmenVendingMachineChang
-  suffix: backmen
+  suffix: Backmen, Платный
   components:
     - type: Store
       categories:
@@ -213,7 +187,7 @@
 - type: entity
   parent: VendingMachineCoffee
   id: BackmenVendingMachineCoffee
-  suffix: backmen
+  suffix: Backmen, Платный
   components:
     - type: Store
       categories:
@@ -237,7 +211,7 @@
 - type: entity
   parent: VendingMachineSovietSoda
   id: BackmenVendingMachineSovietSoda
-  suffix: backmen
+  suffix: Backmen, Платный
   components:
     - type: Store
       categories:
@@ -259,7 +233,7 @@
 - type: entity
   parent: VendingMachineSnack
   id: BackmenVendingMachineSnack
-  suffix: backmen
+  suffix: Backmen, Платный
   components:
     - type: Store
       categories:
@@ -281,7 +255,7 @@
 - type: entity
   parent: VendingMachineSnackOrange
   id: BackmenVendingMachineSnackOrange
-  suffix: backmen
+  suffix: Backmen, Платный
   components:
     - type: Store
       categories:
@@ -303,7 +277,7 @@
 - type: entity
   parent: VendingMachineSnackGreen
   id: BackmenVendingMachineSnackGreen
-  suffix: backmen
+  suffix: Backmen, Платный
   components:
     - type: Store
       categories:
@@ -325,7 +299,7 @@
 - type: entity
   parent: VendingMachineSnackBlue
   id: BackmenVendingMachineSnackBlue
-  suffix: backmen
+  suffix: Backmen, Платный
   components:
     - type: Store
       categories:
@@ -347,7 +321,7 @@
 - type: entity
   parent: VendingMachineSnackTeal
   id: BackmenVendingMachineSnackTeal
-  suffix: backmen
+  suffix: Backmen, Платный
   components:
     - type: Store
       categories:
@@ -369,7 +343,7 @@
 - type: entity
   parent: VendingMachineSpaceUp
   id: BackmenVendingMachineSpaceUp
-  suffix: backmen
+  suffix: Backmen, Платный
   components:
     - type: Store
       categories:
@@ -393,7 +367,7 @@
 - type: entity
   parent: VendingMachineColaRed
   id: BackmenVendingMachineColaRed
-  suffix: backmen
+  suffix: Backmen, Платный
   components:
     - type: Store
       categories:
@@ -417,7 +391,7 @@
 - type: entity
   parent: VendingMachineShamblersJuice
   id: BackmenVendingMachineShamblersJuice
-  suffix: backmen
+  suffix: Backmen, Платный
   components:
     - type: Store
       categories:
@@ -441,7 +415,7 @@
 - type: entity
   parent: VendingMachinePwrGame
   id: BackmenVendingMachinePwrGame
-  suffix: backmen
+  suffix: Backmen, Платный
   components:
     - type: Store
       categories:
@@ -465,7 +439,7 @@
 - type: entity
   parent: VendingMachineDrGibb
   id: BackmenVendingMachineDrGibb
-  suffix: backmen
+  suffix: Backmen, Платный
   components:
     - type: Store
       categories:
@@ -489,7 +463,7 @@
 - type: entity
   parent: VendingMachineStarkist
   id: BackmenVendingMachineStarkist
-  suffix: backmen
+  suffix: Backmen, Платный
   components:
     - type: Store
       categories:
@@ -513,7 +487,7 @@
 - type: entity
   parent: VendingMachineHappyHonk
   id: BackmenVendingMachineHappyHonk
-  suffix: backmen
+  suffix: Backmen, Платный
   components:
     - type: Store
       categories:
@@ -537,7 +511,7 @@
 # - type: entity
 #   parent: VendingMachine
 #   id: VendingMachineBoxingDrobe
-#   suffix: backmen
+#   suffix: Backmen, Платный
 #   components:
 #   - type: VendingMachine
 #     pack: VendingLootboxInventory

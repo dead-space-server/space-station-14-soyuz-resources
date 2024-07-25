@@ -29,7 +29,7 @@
   parent: ClothingUnderwearBottomBase
   id: ClothingUnderwearBottomBoxersWhite
   name: боксеры
-  description: Стандартное нижнее белье для персонала Nanotrasen. Покрашены в белый.
+  description: Стандартное нижнее белье для персонала Nanotrasen.
   components:
   - type: Sprite
     sprite: Sirena/Clothing/Underwear/Bottom/boxers.rsi
@@ -38,7 +38,7 @@
   parent: ClothingUnderwearBottomBase
   id: ClothingUnderwearBottomPantiesWhite
   name: стринги
-  description: Стандартное нижнее белье для женского персонала Nanotrasen. Покрашены в белый.
+  description: Стандартное нижнее белье для женского персонала Nanotrasen.
   components:
   - type: Sprite
     sprite: Sirena/Clothing/Underwear/Bottom/panties.rsi
@@ -280,7 +280,7 @@
   description: Cтандартное нижнее бельё оперативника КГБ.
   components:
   - type: Sprite
-    sprite: DeadSpace/Clothing/Underwear/Command/blue_shield/man.rsi
+    sprite: DeadSpace/Clothing/Underwear/Command/blueshield/man.rsi
 
 # Engineering
 - type: entity
@@ -767,7 +767,7 @@
   description: Cтандартное нижнее бельё оперативника КГБ.
   components:
   - type: Sprite
-    sprite: DeadSpace/Clothing/Underwear/Command/blue_shield/women/pants.rsi
+    sprite: DeadSpace/Clothing/Underwear/Command/blueshield/women/pants.rsi
 
 # Engineering
 - type: entity

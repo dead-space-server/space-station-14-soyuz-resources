@@ -8,6 +8,10 @@
   - type: CombatMode
   - type: InputMover
   - type: MobMover
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatSpider
+      amount: 1
   - type: Sprite
     scale: 0.5, 0.5
     drawdepth: SmallMobs
@@ -32,15 +36,10 @@
     - Alive
     - Critical
     - Dead
-  - type: Tool
-    speed: 1.5
-    qualities:
-      - Prying
   - type: Prying
-    pryPowered: !type:Bool
-        true
-    force: !type:Bool
-      true
+    pryPowered: true
+    force: true
+    speedModifier: 1.5
     useSound:
       path: /Audio/Items/crowbar.ogg
   - type: Fixtures
@@ -127,8 +126,80 @@
   - type: NpcFactionMember
     factions:
     - SimpleHostile
-  - type: WallHack
+  - type: NightVision
+  - type: IntrinsicRadioReceiver
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - SpiderTerrorChannel
+  - type: ActiveRadio
+    channels:
+    - SpiderTerrorChannel
 
+- type: entity
+  name: паук королевской крови
+  parent: BaseMobSpiderTerror
+  id: MobSpiderTerrorGuardianKingBlood
+  description: Маленький ядовитый паучок.
+  components:
+  - type: Sprite
+    scale: 0.5, 0.5
+    drawdepth: SmallMobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+      state: running
+      sprite: DeadSpace/Mods/Spiders/pauchok_major_terror.rsi
+  - type: Evolution
+    duration: 200 #Время до получения возможности эволюционировать
+    spawnedEntities: #В кого можно эволюционировать
+      - MobSpiderTerrorRoyalGuard
+      - MobSpiderTerrorPrincess
+  - type: Bloodsucker
+    maxCountReagent: 150 #Емкость
+    countReagent: 0 #Сколько реагента при спавне
+    duration: 2 #Длительность сосания
+    howMuchWillItSuck: 10 #Сколько высосет за один укус
+    injectSound:
+      collection: SpiderHatches #Звуки после высасывания
+  - type: GhostRole
+    name: Паук королевской крови
+    description: Паук Ужаса.
+    rules: Вы антагонист.
+  - type: NeededBloodForEvolution #Пример
+    defaultCost: 100 #Стандартная цена на не заданный результат
+    bloodCosts: #цены
+      MobSpiderTerrorRoyalGuard: 100
+      MobSpiderTerrorPrincess: 150
+
+- type: entity
+  name: героический паук королевской крови
+  parent: BaseMobSpiderTerror
+  id: MobSpiderTerrorGuardianHeroicKingBlood
+  description: Маленький ядовитый паучок.
+  components:
+  - type: Sprite
+    scale: 0.5, 0.5
+    drawdepth: SmallMobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+      state: running
+      sprite: DeadSpace/Mods/Spiders/pauchok_major_terror.rsi
+  - type: Evolution
+    duration: 300 #Время до получения возможности эволюционировать
+    spawnedEntities: #В кого можно эволюционировать
+      - MobSpiderTerrorKing
+  - type: Bloodsucker
+    maxCountReagent: 200 #Емкость
+    countReagent: 0 #Сколько реагента при спавне
+    duration: 2 #Длительность сосания
+    howMuchWillItSuck: 10 #Сколько высосет за один укус
+    injectSound:
+      collection: SpiderHatches #Звуки после высасывания
+  - type: NeededBloodForEvolution #Пример
+    defaultCost: 200 #Стандартная цена на не заданный результат
+  - type: GhostRole
+    name: Героический паук королевской крови
+    description: Паук Ужаса.
+    rules: Вы антагонист.
 
 - type: entity
   name: паук страж
@@ -179,7 +250,7 @@
       path: /Audio/Effects/bite.ogg
     damage:
       types:
-        Piercing: 10
+        Piercing: 4
         Poison: 5
   - type: MobThresholds
     thresholds:
@@ -256,7 +327,7 @@
       path: /Audio/Effects/bite.ogg
     damage:
       types:
-        Piercing: 4
+        Piercing: 2
         Poison: 7
   - type: MobThresholds
     thresholds:
@@ -335,9 +406,9 @@
       path: /Audio/Effects/bite.ogg
     damage:
       types:
-        Piercing: 10
-        Poison: 10
-        Structural: 30
+        Piercing: 7
+        Poison: 7
+        Structural: 20
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -376,9 +447,10 @@
     injectSound:
       collection: SpiderHatches #Звуки после высасывания
   - type: NeededBloodForSpawnAgainst #Пример
-    defaultCost: 100 #Стандартная цена на не заданный результат
+    defaultCost: 20 #Стандартная цена на не заданный результат
   - type: Puller
     needsHands: false
+  - type: SpideKing
 
 - type: entity
   name: паук уничтожитель
@@ -401,10 +473,10 @@
       path: /Audio/Effects/bite.ogg
     damage:
       types:
-        Piercing: 2
+        Piercing: 1
         Poison: 1
         Structural: 30
-        Blunt: 10
+        Blunt: 6
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -454,7 +526,7 @@
       path: /Audio/Effects/bite.ogg
     damage:
       types:
-        Piercing: 6
+        Piercing: 3
         Poison: 3
   - type: MobThresholds
     thresholds:
@@ -571,3 +643,121 @@
       Omnizine: 10
   - type: NeededBloodForAutoInject
     cost: 30 #Цена крови за действие
+
+- type: entity
+  name: король пауков
+  parent: BaseMobSpiderTerror
+  id: MobSpiderTerrorKing
+  description: Выглядит величественно.
+  components:
+  - type: Bloodsucker
+    maxCountReagent: 0 #Емкость
+    countReagent: 0 #Сколько реагента при спавне
+    duration: 2 #Длительность сосания
+    howMuchWillItSuck: 20 #Сколько высосет за один укус
+    injectSound:
+      collection: SpiderHatches #Звуки после высасывания
+  - type: Sprite
+    scale: 1.5, 1.5
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+      state: running
+      sprite: DeadSpace/Mods/Spiders/king.rsi
+  - type: MeleeWeapon
+    altDisarm: false
+    angle: 0
+    animation: WeaponArcBite
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    damage:
+      types:
+        Piercing: 10
+        Poison: 10
+        Structural: 30
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      350: Critical
+      450: Dead
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.3
+        density: 130
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 4
+    baseSprintSpeed: 4
+  - type: Bloodstream
+    bloodReagent: CopperBlood
+    bloodMaxVolume: 250
+    bloodlossThreshold: 0.4
+  - type: StunRadius
+    actionStunRadius: ActionStunRadiusSpider
+    paralyzeTime: 3 #Время стана
+    launchForwardsMultiplier: 1 #Длинна слодьжения после стана
+    rangeStun: 5 #Радиус способности
+    ignorAlien: true #Не трогать союзников
+    stunRadiusSound:
+      path: /Audio/Animals/space_dragon_roar.ogg #Звуки способности
+  - type: Puller
+    needsHands: false
+  - type: SpideKing
+
+- type: entity
+  name: паук королевский гвардеец
+  parent: BaseMobSpiderTerror
+  id: MobSpiderTerrorRoyalGuard
+  description: Выглядит величественно.
+  components:
+  - type: Sprite
+    scale: 1.1, 1.1
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+      state: running
+      sprite: DeadSpace/Mods/Spiders/royal_guard.rsi
+  - type: MeleeWeapon
+    altDisarm: false
+    angle: 0
+    animation: WeaponArcBite
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    damage:
+      types:
+        Poison: 3
+        Structural: 20
+      groups:
+        Brute: 10
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      250: Critical
+      350: Dead
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.3
+        density: 130
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 3.5
+    baseSprintSpeed: 3.5
+  - type: Bloodstream
+    bloodReagent: CopperBlood
+    bloodMaxVolume: 250
+    bloodlossThreshold: 0.4
+  - type: Puller
+    needsHands: false
+  - type: SpideRoyalGuard

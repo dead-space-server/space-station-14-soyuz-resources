@@ -16,3 +16,40 @@
   id: WhiteJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtColorWhite
+
+# Underwear
+- type: loadout
+  id: UnderwearBottomBoxersIntern
+  equipment: UnderwearBottomBoxersIntern
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomBoxersIntern
+  equipment:
+    underwearb: ClothingUnderwearBottomBoxersIntern
+
+- type: loadout
+  id: UnderwearBottomPantiesIntern
+  equipment: UnderwearBottomPantiesIntern
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomPantiesIntern
+  equipment:
+    underwearb: ClothingUnderwearBottomPantiesIntern
+
+- type: loadout
+  id: UnderwearTopBraIntern
+  equipment: UnderwearTopBraIntern
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearTopBraIntern
+  equipment:
+    underweart: ClothingUnderwearTopBraIntern

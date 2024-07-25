@@ -54,3 +54,40 @@
   id: CoronerHead
   equipment:
     head: ClothingHeadHatCoroner
+
+# Underwear
+- type: loadout
+  id: UnderwearBottomBoxersCoroner
+  equipment: UnderwearBottomBoxersCoroner
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomBoxersCoroner
+  equipment:
+    underwearb: ClothingUnderwearBottomBoxersCoroner
+
+- type: loadout
+  id: UnderwearBottomPantiesCoroner
+  equipment: UnderwearBottomPantiesCoroner
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomPantiesCoroner
+  equipment:
+    underwearb: ClothingUnderwearBottomPantiesCoroner
+
+- type: loadout
+  id: UnderwearTopBraCoroner
+  equipment: UnderwearTopBraCoroner
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearTopBraCoroner
+  equipment:
+    underweart: ClothingUnderwearTopBraCoroner

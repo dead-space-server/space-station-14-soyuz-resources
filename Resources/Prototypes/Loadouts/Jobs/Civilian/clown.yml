@@ -92,3 +92,40 @@
   id: ClownWintercoat
   equipment:
     outerClothing: ClothingOuterWinterClown
+
+# Underwear
+- type: loadout
+  id: UnderwearBottomBoxersClown
+  equipment: UnderwearBottomBoxersClown
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomBoxersClown
+  equipment:
+    underwearb: ClothingUnderwearBottomBoxersClown
+
+- type: loadout
+  id: UnderwearBottomPantiesClown
+  equipment: UnderwearBottomPantiesClown
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomPantiesClown
+  equipment:
+    underwearb: ClothingUnderwearBottomPantiesClown
+
+- type: loadout
+  id: UnderwearTopBraClown
+  equipment: UnderwearTopBraClown
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearTopBraClown
+  equipment:
+    underweart: ClothingUnderwearTopBraClown

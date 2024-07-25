@@ -27,12 +27,6 @@
     id: JanitorPDA
     ears: ClothingHeadsetService
     belt: ClothingBeltJanitorFilled
-    underwearb: ClothingUnderwearBottomBoxersJanitor # DS14-Underwear
-  underweart: ClothingUnderwearTopBraJanitor # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesJanitor # DS14-Underwear
-  storage:
-    back:
-    - BoxSurvival
 
 - type: startingGear
   id: JanitorMaidGear

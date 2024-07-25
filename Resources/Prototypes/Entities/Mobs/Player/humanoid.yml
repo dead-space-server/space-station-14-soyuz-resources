@@ -1,4 +1,85 @@
-# DS14 Humanoids prototypes
+# This file contains DS14 highly modified (to wizards version) humanoids prototypes
+
+## Random humanoids
+
+- type: randomHumanoidSettings
+  id: EventHumanoid
+  components:
+    - type: RandomHumanoidAppearance
+      randomizeName: false
+    - type: GhostTakeoverAvailable
+
+- type: randomHumanoidSettings
+  id: EventHumanoidMindShielded
+  parent: EventHumanoid
+  components:
+    - type: MindShield
+    - type: AntagImmune
+
+- type: randomHumanoidSettings
+  id: EventHumanoidERT
+  parent: EventHumanoidMindShielded
+  # Nanotrasen are a bit racist, but FSCP more racist
+  speciesBlacklist:
+    # - Arachnid
+    - Diona
+    # - Dwarf
+    # - Human
+    # - Moth
+    # - Reptilian
+    # - SlimePerson
+    - Vox
+    # - DemonSpecies
+    # - SharkSpecies
+    # - TajaranSpecies
+    # - VulpkaninSpecies
+    - Felinid
+    - KoboltSpecies
+    - XenoSponsor
+    - IPC
+    - IPS
+  randomizeName: false
+  components:
+    - type: AutoImplant
+      implants:
+      - TrackingImplant
+
+- type: randomHumanoidSettings
+  id: EventHumanoidERTZombieImmune
+  parent: EventHumanoidERT
+  components:
+    - type: ZombieImmune
+
+## Death Squad (it's actually just mobhuman, unlike the other prototypes in this file, but I don't see the point in creating randomHumanoidSettings for it)
+
+- type: entity
+  id: MobHumanDeathSquadUnit
+  name: death squad unit
+  description: Member of death squad.
+  parent: MobHuman
+  components:
+  - type: MindShield
+  - type: ZombieImmune
+  - type: AutoImplant
+    implants:
+    - FreedomImplant
+    - DeathAcidifierImplant
+  - type: GhostRole
+    name: ghost-role-information-Death-Squad-name
+    description: ghost-role-information-Death-Squad-description
+    rules: ghost-role-information-Death-Squad-rules
+    requirements:
+      - !type:OverallPlaytimeRequirement
+        time: 756000 # 210 hours
+    raffle:
+      settings: short
+  - type: GhostTakeoverAvailable
+  - type: RandomMetadata
+    nameSegments:
+    - SyndicateNamesNormal
+    - NamesLastDeathSquad
+  - type: Loadout
+    prototypes: [DeathSquadUnitGear]
 
 # ERT
 ## Leader
@@ -16,24 +97,15 @@
       - NamesLastERT
     - type: RandomHumanoidSpawner
       settings: ERTLeaderAmberPreset
-    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   id: ERTLeaderAmberPreset
-  speciesBlacklist:
-    - Diona
-    - IPS
-    - IPC
-    - Dwarf
-    - KoboltSpecies
-    - Felinid
-    - XenoSponsor
-  randomizeName: false
+  parent: EventHumanoidERT
   components:
-    - type: MindShield
     - type: GhostRole
       name: ghost-role-information-ert-leader-name
       description: ghost-role-information-ert-leader-description
+      rules: ghost-role-information-nonantagonist-rules
       requirements:
         - !type:DepartmentTimeRequirement
           department: Medical
@@ -47,16 +119,12 @@
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
-    - type: AutoImplant
-      implants:
-      - TrackingImplant
     - type: Loadout
       prototypes: [ ERTLeaderGearAmber ]
     - type: RandomMetadata
       nameSegments:
       - NamesFirstERTLeader
       - NamesLastERT
-    - type: InitialInfectedExempt
 
 ### Red
 - type: entity
@@ -69,24 +137,15 @@
       state: ertleadereva
     - type: RandomHumanoidSpawner
       settings: ERTLeaderRedPreset
-    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   id: ERTLeaderRedPreset
-  speciesBlacklist:
-    - Diona
-    - IPS
-    - IPC
-    - Dwarf
-    - KoboltSpecies
-    - Felinid
-    - XenoSponsor
-  randomizeName: false
+  parent: EventHumanoidERT
   components:
-    - type: MindShield
     - type: GhostRole
       name: ghost-role-information-ert-leader-name
       description: ghost-role-information-ert-leader-description
+      rules: ghost-role-information-nonantagonist-rules
       requirements:
         - !type:DepartmentTimeRequirement
           department: Medical
@@ -100,16 +159,12 @@
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
-    - type: AutoImplant
-      implants:
-      - TrackingImplant
     - type: Loadout
       prototypes: [ ERTLeaderGearRed ]
     - type: RandomMetadata
       nameSegments:
       - NamesFirstERTLeader
       - NamesLastERT
-    - type: InitialInfectedExempt
 
 ### Gamma
 - type: entity
@@ -122,24 +177,15 @@
       state: ertleadereva
     - type: RandomHumanoidSpawner
       settings: ERTLeaderGammaPreset
-    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   id: ERTLeaderGammaPreset
-  speciesBlacklist:
-    - Diona
-    - IPS
-    - IPC
-    - Dwarf
-    - KoboltSpecies
-    - Felinid
-    - XenoSponsor
-  randomizeName: false
+  parent: EventHumanoidERT
   components:
-    - type: MindShield
     - type: GhostRole
       name: ghost-role-information-ert-leader-name
       description: ghost-role-information-ert-leader-description
+      rules: ghost-role-information-nonantagonist-rules
       requirements:
         - !type:DepartmentTimeRequirement
           department: Medical
@@ -153,16 +199,12 @@
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
-    - type: AutoImplant
-      implants:
-      - TrackingImplant
     - type: Loadout
       prototypes: [ ERTLeaderGearGamma ]
     - type: RandomMetadata
       nameSegments:
       - NamesFirstERTLeader
       - NamesLastERT
-    - type: InitialInfectedExempt
 
 ### CBURN
 - type: entity
@@ -175,24 +217,15 @@
       state: cburn
     - type: RandomHumanoidSpawner
       settings: CBURNLeaderPreset
-    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   id: CBURNLeaderPreset
-  speciesBlacklist:
-    - Diona
-    - IPS
-    - IPC
-    - Dwarf
-    - KoboltSpecies
-    - Felinid
-    - XenoSponsor
-  randomizeName: false
+  parent: EventHumanoidERTZombieImmune
   components:
-    - type: MindShield
     - type: GhostRole
       name: ghost-role-information-cburn-leader-name
       description: ghost-role-information-cburn-leader-description
+      rules: ghost-role-information-nonantagonist-rules
       requirements:
         - !type:DepartmentTimeRequirement
           department: Medical
@@ -206,17 +239,12 @@
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
-    - type: AutoImplant
-      implants:
-      - TrackingImplant
-    - type: ZombieImmune
     - type: Loadout
       prototypes: [ CBURNLeaderGear ]
     - type: RandomMetadata
       nameSegments:
       - NamesFirstERTLeader
       - NamesLastERT
-    - type: InitialInfectedExempt
 
 ### CBURN Sierra
 - type: entity
@@ -229,24 +257,15 @@
       state: cburn
     - type: RandomHumanoidSpawner
       settings: CBURNSierraLeaderPreset
-    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   id: CBURNSierraLeaderPreset
-  speciesBlacklist:
-    - Diona
-    - IPS
-    - IPC
-    - Dwarf
-    - KoboltSpecies
-    - Felinid
-    - XenoSponsor
-  randomizeName: false
+  parent: EventHumanoidERTZombieImmune
   components:
-    - type: MindShield
     - type: GhostRole
       name: ghost-role-information-cburn-leader-name
       description: ghost-role-information-cburn-leader-description
+      rules: ghost-role-information-nonantagonist-rules
       requirements:
         - !type:DepartmentTimeRequirement
           department: Medical
@@ -260,17 +279,12 @@
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
-    - type: AutoImplant
-      implants:
-      - TrackingImplant
-    - type: ZombieImmune
     - type: Loadout
       prototypes: [ CBURNSierraLeaderGear ]
     - type: RandomMetadata
       nameSegments:
       - NamesFirstERTLeader
       - NamesLastERT
-    - type: InitialInfectedExempt
 
 ## Security
 ### Amber
@@ -288,23 +302,15 @@
       - NamesLastERT
     - type: RandomHumanoidSpawner
       settings: ERTSecurityAmberPreset
-    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   id: ERTSecurityAmberPreset
-  speciesBlacklist:
-    - Diona
-    - IPS
-    - IPC
-    - Dwarf
-    - KoboltSpecies
-    - Felinid
-    - XenoSponsor
+  parent: EventHumanoidERT
   components:
-    - type: MindShield
     - type: GhostRole
       name: ghost-role-information-ert-security-name
       description: ghost-role-information-ert-security-description
+      rules: ghost-role-information-nonantagonist-rules
       requirements:
         - !type:DepartmentTimeRequirement
           department: Medical
@@ -315,16 +321,12 @@
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
-    - type: AutoImplant
-      implants:
-      - TrackingImplant
     - type: RandomMetadata
       nameSegments:
       - NamesFirstERT
       - NamesLastERT
     - type: Loadout
       prototypes: [ ERTSecurityGearAmber ]
-    - type: InitialInfectedExempt
 
 ### Red
 - type: entity
@@ -334,23 +336,15 @@
   components:
     - type: RandomHumanoidSpawner
       settings: ERTSecurityRedPreset
-    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   id: ERTSecurityRedPreset
-  speciesBlacklist:
-    - Diona
-    - IPS
-    - IPC
-    - Dwarf
-    - KoboltSpecies
-    - Felinid
-    - XenoSponsor
+  parent: EventHumanoidERT
   components:
-    - type: MindShield
     - type: GhostRole
       name: ghost-role-information-ert-security-name
       description: ghost-role-information-ert-security-description
+      rules: ghost-role-information-nonantagonist-rules
       requirements:
         - !type:DepartmentTimeRequirement
           department: Medical
@@ -361,16 +355,12 @@
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
-    - type: AutoImplant
-      implants:
-      - TrackingImplant
     - type: RandomMetadata
       nameSegments:
       - NamesFirstERT
       - NamesLastERT
     - type: Loadout
       prototypes: [ ERTSecurityGearRed ]
-    - type: InitialInfectedExempt
 
 ### Gamma
 - type: entity
@@ -380,23 +370,15 @@
   components:
     - type: RandomHumanoidSpawner
       settings: ERTSecurityGammaPreset
-    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   id: ERTSecurityGammaPreset
-  speciesBlacklist:
-    - Diona
-    - IPS
-    - IPC
-    - Dwarf
-    - KoboltSpecies
-    - Felinid
-    - XenoSponsor
+  parent: EventHumanoidERT
   components:
-    - type: MindShield
     - type: GhostRole
       name: ghost-role-information-ert-security-name
       description: ghost-role-information-ert-security-description
+      rules: ghost-role-information-nonantagonist-rules
       requirements:
         - !type:DepartmentTimeRequirement
           department: Medical
@@ -407,16 +389,12 @@
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
-    - type: AutoImplant
-      implants:
-      - TrackingImplant
     - type: RandomMetadata
       nameSegments:
       - NamesFirstERT
       - NamesLastERT
     - type: Loadout
       prototypes: [ ERTSecurityGearGamma ]
-    - type: InitialInfectedExempt
 
 ## Medical
 ### Amber
@@ -434,23 +412,15 @@
       - NamesLastERT
     - type: RandomHumanoidSpawner
       settings: ERTMedicalAmberPreset
-    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   id: ERTMedicalAmberPreset
-  speciesBlacklist:
-    - Diona
-    - IPS
-    - IPC
-    - Dwarf
-    - KoboltSpecies
-    - Felinid
-    - XenoSponsor
+  parent: EventHumanoidERT
   components:
-    - type: MindShield
     - type: GhostRole
       name: ghost-role-information-ert-medical-name
       description: ghost-role-information-ert-medical-description
+      rules: ghost-role-information-nonantagonist-rules
       requirements:
         - !type:DepartmentTimeRequirement
           department: Medical
@@ -461,16 +431,12 @@
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
-    - type: AutoImplant
-      implants:
-      - TrackingImplant
     - type: RandomMetadata
       nameSegments:
       - NamesFirstERT
       - NamesLastERT
     - type: Loadout
       prototypes: [ ERTMedicalGearAmber ]
-    - type: InitialInfectedExempt
 
 ### Red
 - type: entity
@@ -480,23 +446,15 @@
   components:
     - type: RandomHumanoidSpawner
       settings: ERTMedicalRedPreset
-    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   id: ERTMedicalRedPreset
-  speciesBlacklist:
-    - Diona
-    - IPS
-    - IPC
-    - Dwarf
-    - KoboltSpecies
-    - Felinid
-    - XenoSponsor
+  parent: EventHumanoidERT
   components:
-    - type: MindShield
     - type: GhostRole
       name: ghost-role-information-ert-medical-name
       description: ghost-role-information-ert-medical-description
+      rules: ghost-role-information-nonantagonist-rules
       requirements:
         - !type:DepartmentTimeRequirement
           department: Medical
@@ -507,16 +465,12 @@
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
-    - type: AutoImplant
-      implants:
-      - TrackingImplant
     - type: RandomMetadata
       nameSegments:
       - NamesFirstERT
       - NamesLastERT
     - type: Loadout
       prototypes: [ ERTMedicalGearRed ]
-    - type: InitialInfectedExempt
 
 ### Gamma
 - type: entity
@@ -526,23 +480,15 @@
   components:
     - type: RandomHumanoidSpawner
       settings: ERTMedicalGammaPreset
-    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   id: ERTMedicalGammaPreset
-  speciesBlacklist:
-    - Diona
-    - IPS
-    - IPC
-    - Dwarf
-    - KoboltSpecies
-    - Felinid
-    - XenoSponsor
+  parent: EventHumanoidERT
   components:
-    - type: MindShield
     - type: GhostRole
       name: ghost-role-information-ert-medical-name
       description: ghost-role-information-ert-medical-description
+      rules: ghost-role-information-nonantagonist-rules
       requirements:
         - !type:DepartmentTimeRequirement
           department: Medical
@@ -553,16 +499,12 @@
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
-    - type: AutoImplant
-      implants:
-      - TrackingImplant
     - type: RandomMetadata
       nameSegments:
       - NamesFirstERT
       - NamesLastERT
     - type: Loadout
       prototypes: [ ERTMedicalGearGamma ]
-    - type: InitialInfectedExempt
 
 ## Janitor
 ### Amber
@@ -580,23 +522,15 @@
       - NamesLastERT
     - type: RandomHumanoidSpawner
       settings: ERTJanitorAmberPreset
-    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   id: ERTJanitorAmberPreset
-  speciesBlacklist:
-    - Diona
-    - IPS
-    - IPC
-    - Dwarf
-    - KoboltSpecies
-    - Felinid
-    - XenoSponsor
+  parent: EventHumanoidERT
   components:
-    - type: MindShield
     - type: GhostRole
       name: ghost-role-information-ert-janitor-name
       description: ghost-role-information-ert-janitor-description
+      rules: ghost-role-information-nonantagonist-rules
       requirements:
         - !type:DepartmentTimeRequirement
           department: Security
@@ -604,16 +538,12 @@
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
-    - type: AutoImplant
-      implants:
-      - TrackingImplant
     - type: RandomMetadata
       nameSegments:
       - NamesFirstERT
       - NamesLastERT
     - type: Loadout
       prototypes: [ ERTJanitorGearAmber ]
-    - type: InitialInfectedExempt
 
 ### Red
 - type: entity
@@ -623,23 +553,15 @@
   components:
     - type: RandomHumanoidSpawner
       settings: ERTJanitorRedPreset
-    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   id: ERTJanitorRedPreset
-  speciesBlacklist:
-    - Diona
-    - IPS
-    - IPC
-    - Dwarf
-    - KoboltSpecies
-    - Felinid
-    - XenoSponsor
+  parent: EventHumanoidERT
   components:
-    - type: MindShield
     - type: GhostRole
       name: ghost-role-information-ert-janitor-name
       description: ghost-role-information-ert-janitor-description
+      rules: ghost-role-information-nonantagonist-rules
       requirements:
         - !type:DepartmentTimeRequirement
           department: Security
@@ -647,16 +569,12 @@
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
-    - type: AutoImplant
-      implants:
-      - TrackingImplant
     - type: RandomMetadata
       nameSegments:
       - NamesFirstERT
       - NamesLastERT
     - type: Loadout
       prototypes: [ ERTJanitorGearRed ]
-    - type: InitialInfectedExempt
 
 ### Gamma
 - type: entity
@@ -666,23 +584,15 @@
   components:
     - type: RandomHumanoidSpawner
       settings: ERTJanitorGammaPreset
-    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   id: ERTJanitorGammaPreset
-  speciesBlacklist:
-    - Diona
-    - IPS
-    - IPC
-    - Dwarf
-    - KoboltSpecies
-    - Felinid
-    - XenoSponsor
+  parent: EventHumanoidERT
   components:
-    - type: MindShield
     - type: GhostRole
       name: ghost-role-information-ert-janitor-name
       description: ghost-role-information-ert-janitor-description
+      rules: ghost-role-information-nonantagonist-rules
       requirements:
         - !type:DepartmentTimeRequirement
           department: Security
@@ -690,16 +600,12 @@
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
-    - type: AutoImplant
-      implants:
-      - TrackingImplant
     - type: RandomMetadata
       nameSegments:
       - NamesFirstERT
       - NamesLastERT
     - type: Loadout
       prototypes: [ ERTJanitorGearGamma ]
-    - type: InitialInfectedExempt
 
 ## Engineer
 ### Amber
@@ -717,23 +623,15 @@
       - NamesLastERT
     - type: RandomHumanoidSpawner
       settings: ERTEngineerAmberPreset
-    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   id: ERTEngineerAmberPreset
-  speciesBlacklist:
-    - Diona
-    - IPS
-    - IPC
-    - Dwarf
-    - KoboltSpecies
-    - Felinid
-    - XenoSponsor
+  parent: EventHumanoidERT
   components:
-    - type: MindShield
     - type: GhostRole
       name: ghost-role-information-ert-engineer-name
       description: ghost-role-information-ert-engineer-description
+      rules: ghost-role-information-nonantagonist-rules
       requirements:
         - !type:DepartmentTimeRequirement
           department: Engineering
@@ -744,16 +642,12 @@
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
-    - type: AutoImplant
-      implants:
-      - TrackingImplant
     - type: RandomMetadata
       nameSegments:
       - NamesFirstERT
       - NamesLastERT
     - type: Loadout
       prototypes: [ ERTEngineerGearAmber ]
-    - type: InitialInfectedExempt
 
 ### Red
 - type: entity
@@ -763,23 +657,15 @@
   components:
     - type: RandomHumanoidSpawner
       settings: ERTEngineerRedPreset
-    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   id: ERTEngineerRedPreset
-  speciesBlacklist:
-    - Diona
-    - IPS
-    - IPC
-    - Dwarf
-    - KoboltSpecies
-    - Felinid
-    - XenoSponsor
+  parent: EventHumanoidERT
   components:
-    - type: MindShield
     - type: GhostRole
       name: ghost-role-information-ert-engineer-name
       description: ghost-role-information-ert-engineer-description
+      rules: ghost-role-information-nonantagonist-rules
       requirements:
         - !type:DepartmentTimeRequirement
           department: Engineering
@@ -790,16 +676,12 @@
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
-    - type: AutoImplant
-      implants:
-      - TrackingImplant
     - type: RandomMetadata
       nameSegments:
       - NamesFirstERT
       - NamesLastERT
     - type: Loadout
       prototypes: [ ERTEngineerGearRed ]
-    - type: InitialInfectedExempt
 
 ### Gamma
 - type: entity
@@ -809,23 +691,15 @@
   components:
     - type: RandomHumanoidSpawner
       settings: ERTEngineerGammaPreset
-    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   id: ERTEngineerGammaPreset
-  speciesBlacklist:
-    - Diona
-    - IPS
-    - IPC
-    - Dwarf
-    - KoboltSpecies
-    - Felinid
-    - XenoSponsor
+  parent: EventHumanoidERT
   components:
-    - type: MindShield
     - type: GhostRole
       name: ghost-role-information-ert-engineer-name
       description: ghost-role-information-ert-engineer-description
+      rules: ghost-role-information-nonantagonist-rules
       requirements:
         - !type:DepartmentTimeRequirement
           department: Engineering
@@ -836,16 +710,12 @@
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
-    - type: AutoImplant
-      implants:
-      - TrackingImplant
     - type: RandomMetadata
       nameSegments:
       - NamesFirstERT
       - NamesLastERT
     - type: Loadout
       prototypes: [ ERTEngineerGearGamma ]
-    - type: InitialInfectedExempt
 
 ## CBURN Agent
 - type: entity
@@ -862,23 +732,15 @@
       - NamesLastERT
     - type: RandomHumanoidSpawner
       settings: CBURNAgentPreset
-    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   id: CBURNAgentPreset
-  speciesBlacklist:
-    - Diona
-    - IPS
-    - IPC
-    - Dwarf
-    - KoboltSpecies
-    - Felinid
-    - XenoSponsor
+  parent: EventHumanoidERTZombieImmune
   components:
-    - type: MindShield
     - type: GhostRole
       name: ghost-role-information-cburn-agent-name
       description: ghost-role-information-cburn-agent-description
+      rules: ghost-role-information-nonantagonist-rules
       requirements:
         - !type:DepartmentTimeRequirement
           department: Medical
@@ -889,17 +751,12 @@
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
-    - type: AutoImplant
-      implants:
-      - TrackingImplant
-    - type: ZombieImmune
     - type: RandomMetadata
       nameSegments:
       - NamesFirstERT
       - NamesLastERT
     - type: Loadout
       prototypes: [ CBURNAgentGear ]
-    - type: InitialInfectedExempt
 
 ## CBURN Sierra Agent
 - type: entity
@@ -916,23 +773,15 @@
       - NamesLastERT
     - type: RandomHumanoidSpawner
       settings: CBURNSierraAgentPreset
-    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   id: CBURNSierraAgentPreset
-  speciesBlacklist:
-    - Diona
-    - IPS
-    - IPC
-    - Dwarf
-    - KoboltSpecies
-    - Felinid
-    - XenoSponsor
+  parent: EventHumanoidERTZombieImmune
   components:
-    - type: MindShield
     - type: GhostRole
       name: ghost-role-information-cburn-agent-name
       description: ghost-role-information-cburn-agent-description
+      rules: ghost-role-information-nonantagonist-rules
       requirements:
         - !type:DepartmentTimeRequirement
           department: Medical
@@ -943,17 +792,12 @@
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
-    - type: AutoImplant
-      implants:
-      - TrackingImplant
-    - type: ZombieImmune
     - type: RandomMetadata
       nameSegments:
       - NamesFirstERT
       - NamesLastERT
     - type: Loadout
       prototypes: [ CBURNSierraAgentGear ]
-    - type: InitialInfectedExempt
 
 # Central Command
 - type: entity
@@ -965,27 +809,23 @@
       state: centcom
     - type: RandomHumanoidSpawner
       settings: CentcomOfficial
-    - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
   id: CentcomOfficial
+  parent: EventHumanoidMindShielded
   components:
-    - type: MindShield
     - type: GhostRole
       name: ghost-role-information-centcom-official-name
       description: ghost-role-information-centcom-official-description
+      rules: ghost-role-information-nonantagonist-rules
       requirements:
         - !type:OverallPlaytimeRequirement
-          time: 648000 # 180 hours
+          time: 756000 # 210 hours
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
-    - type: AutoImplant
-      implants:
-      - TrackingImplant
     - type: Loadout
       prototypes: [ CentcomGear ]
-    - type: InitialInfectedExempt
 
 # Syndicate
 - type: entity
@@ -1043,10 +883,14 @@
     - type: GhostRole
       name: ghost-role-information-cluwne-name
       description: ghost-role-information-cluwne-description
+      rules: ghost-role-information-nonantagonist-rules
       raffle:
         settings: default
     - type: GhostTakeoverAvailable
     - type: Cluwne
+
+
+## Shuttle roles
 
 ## Lost Cargo technician
 
@@ -1078,11 +922,29 @@
 - type: randomHumanoidSettings
   id: LostCargoTechnician
   randomizeName: false
+  speciesBlacklist:
+    - Arachnid
+    - Diona
+    # - Dwarf
+    # - Human
+    - Moth
+    - Reptilian
+    - SlimePerson
+    - Vox
+    - DemonSpecies
+    - SharkSpecies
+    - TajaranSpecies
+    - VulpkaninSpecies
+    - Felinid
+    - KoboltSpecies
+    - XenoSponsor
+    - IPC
+    - IPS
   components:
     - type: GhostRole
       name: ghost-role-information-lost-cargo-technical-name
       description: ghost-role-information-lost-cargo-technical-description
-      rules: ghost-role-information-lost-cargo-technical-rules
+      rules: ghost-role-information-nonantagonist-rules
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
@@ -1133,11 +995,29 @@
 - type: randomHumanoidSettings
   id: ClownTroupe
   randomizeName: false
+  speciesBlacklist:
+    - Arachnid
+    - Diona
+    # - Dwarf
+    # - Human
+    - Moth
+    - Reptilian
+    - SlimePerson
+    - Vox
+    - DemonSpecies
+    - SharkSpecies
+    - TajaranSpecies
+    - VulpkaninSpecies
+    - Felinid
+    - KoboltSpecies
+    - XenoSponsor
+    - IPC
+    - IPS
   components:
     - type: GhostRole
       name: ghost-role-information-clown-troupe-name
       description: ghost-role-information-clown-troupe-description
-      rules: ghost-role-information-clown-troupe-rules
+      rules: ghost-role-information-nonantagonist-rules
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
@@ -1150,6 +1030,24 @@
 - type: randomHumanoidSettings
   id: ClownTroupeBanana
   randomizeName: false
+  speciesBlacklist:
+    - Arachnid
+    - Diona
+    # - Dwarf
+    # - Human
+    - Moth
+    - Reptilian
+    - SlimePerson
+    - Vox
+    - DemonSpecies
+    - SharkSpecies
+    - TajaranSpecies
+    - VulpkaninSpecies
+    - Felinid
+    - KoboltSpecies
+    - XenoSponsor
+    - IPC
+    - IPS
   components:
     - type: GhostRole
       name: ghost-role-information-clown-troupe-name
@@ -1191,11 +1089,29 @@
 - type: randomHumanoidSettings
   id: TravelingChef
   randomizeName: false
+  speciesBlacklist:
+    - Arachnid
+    - Diona
+    # - Dwarf
+    # - Human
+    - Moth
+    - Reptilian
+    - SlimePerson
+    - Vox
+    - DemonSpecies
+    - SharkSpecies
+    - TajaranSpecies
+    - VulpkaninSpecies
+    - Felinid
+    - IPC
+    - IPS
+    - XenoSponsor
+    - KoboltSpecies
   components:
     - type: GhostRole
       name: ghost-role-information-traveling-chef-name
       description: ghost-role-information-traveling-chef-description
-      rules: ghost-role-information-traveling-chef-rules
+      rules: ghost-role-information-nonantagonist-rules
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
@@ -1253,12 +1169,30 @@
 
 - type: randomHumanoidSettings
   id: DisasterVictimResearchDirector
-  randomizeName: false
+  parent: EventHumanoidMindShielded
+  speciesBlacklist:
+    - Arachnid
+    - Diona
+    # - Dwarf
+    # - Human
+    - Moth
+    - Reptilian
+    - SlimePerson
+    - Vox
+    - DemonSpecies
+    - SharkSpecies
+    - TajaranSpecies
+    - VulpkaninSpecies
+    - Felinid
+    - KoboltSpecies
+    - XenoSponsor
+    - IPC
+    - IPS
   components:
     - type: GhostRole
       name: ghost-role-information-disaster-victim-name
       description: ghost-role-information-disaster-victim-description
-      rules: ghost-role-information-disaster-victim-rules
+      rules: ghost-role-information-nonantagonist-rules
       raffle:
         settings: default
     - type: GhostTakeoverAvailable
@@ -1271,7 +1205,25 @@
 
 - type: randomHumanoidSettings
   id: DisasterVictimCMO
-  randomizeName: false
+  parent: EventHumanoidMindShielded
+  speciesBlacklist:
+    - Arachnid
+    - Diona
+    # - Dwarf
+    # - Human
+    - Moth
+    - Reptilian
+    - SlimePerson
+    - Vox
+    - DemonSpecies
+    - SharkSpecies
+    - TajaranSpecies
+    - VulpkaninSpecies
+    - Felinid
+    - KoboltSpecies
+    - XenoSponsor
+    - IPC
+    - IPS
   components:
     - type: GhostRole
       name: ghost-role-information-disaster-victim-name
@@ -1289,7 +1241,25 @@
 
 - type: randomHumanoidSettings
   id: DisasterVictimCaptain
-  randomizeName: false
+  parent: EventHumanoidMindShielded
+  speciesBlacklist:
+    - Arachnid
+    - Diona
+    # - Dwarf
+    # - Human
+    - Moth
+    - Reptilian
+    - SlimePerson
+    - Vox
+    - DemonSpecies
+    - SharkSpecies
+    - TajaranSpecies
+    - VulpkaninSpecies
+    - Felinid
+    - KoboltSpecies
+    - XenoSponsor
+    - IPC
+    - IPS
   components:
     - type: GhostRole
       name: ghost-role-information-disaster-victim-name
@@ -1334,6 +1304,24 @@
 - type: randomHumanoidSettings
   id: SyndieDisasterVictim
   randomizeName: false
+  speciesBlacklist:
+    - Arachnid
+    - Diona
+    # - Dwarf
+    # - Human
+    - Moth
+    - Reptilian
+    - SlimePerson
+    - Vox
+    - DemonSpecies
+    - SharkSpecies
+    - TajaranSpecies
+    - VulpkaninSpecies
+    - Felinid
+    - KoboltSpecies
+    - XenoSponsor
+    - IPC
+    - IPS
   components:
     - type: NpcFactionMember
       factions:
@@ -1341,7 +1329,7 @@
     - type: GhostRole
       name: ghost-role-information-syndie-disaster-victim-name
       description: ghost-role-information-syndie-disaster-victim-description
-      rules: ghost-role-information-syndie-disaster-victim-rules
+      rules: ghost-role-information-nonantagonist-rules
       raffle:
         settings: short
     - type: GhostTakeoverAvailable

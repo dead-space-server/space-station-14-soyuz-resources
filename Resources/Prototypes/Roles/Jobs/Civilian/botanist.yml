@@ -31,9 +31,3 @@
     id: BotanistPDA
     ears: ClothingHeadsetService
     belt: ClothingBeltPlantFilled
-    underwearb: ClothingUnderwearBottomBoxersBotanist # DS14-Underwear
-  underweart: ClothingUnderwearTopBraBotanist # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesBotanist # DS14-Underwear
-  storage:
-    back:
-    - BoxSurvival

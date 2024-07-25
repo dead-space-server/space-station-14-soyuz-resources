@@ -52,7 +52,7 @@
   - type: ZombieImmune
   - type: Repairable
     doAfterDelay: 30
-    fuelcost: 10
+    fuelCost: 10
     allowSelfRepair: false
   - type: Damageable
     damageContainer: StructuralInorganic

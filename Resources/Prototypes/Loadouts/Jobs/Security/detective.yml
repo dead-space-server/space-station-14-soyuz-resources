@@ -82,3 +82,40 @@
   id: DetectiveCoat
   equipment:
     outerClothing: ClothingOuterCoatDetectiveLoadout
+
+# Underwear
+- type: loadout
+  id: UnderwearBottomBoxersDetective
+  equipment: UnderwearBottomBoxersDetective
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomBoxersDetective
+  equipment:
+    underwearb: ClothingUnderwearBottomBoxersDetective
+
+- type: loadout
+  id: UnderwearBottomPantiesDetective
+  equipment: UnderwearBottomPantiesDetective
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomPantiesDetective
+  equipment:
+    underwearb: ClothingUnderwearBottomPantiesDetective
+
+- type: loadout
+  id: UnderwearTopBraDetective
+  equipment: UnderwearTopBraDetective
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearTopBraDetective
+  equipment:
+    underweart: ClothingUnderwearTopBraDetective

@@ -21,4 +21,3 @@ ent-AIEyeCamShootAction = выстрел из камеры
 ent-AIEyeCamAction = Интерфейс просмотра камер
     .desc = Позволяет прыгать на выбранные камеры.
 ai-station-console = ИИ станции
-job-name-sai = ИИ станции

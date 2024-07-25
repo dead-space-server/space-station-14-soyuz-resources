@@ -54,6 +54,21 @@
           tags:
           - Knife
           - Sidearm
+  - type: FootstepModifier # DS-Sounds
+    footstepSoundCollection:
+      collection: FootstepJackboots
+      params:
+        volume: -1
+
+- type: entity
+  abstract: true
+  id: ClothingShoesBootsSecFilled
+  suffix: Filled
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - CombatKnife
 
 - type: entity
   abstract: true

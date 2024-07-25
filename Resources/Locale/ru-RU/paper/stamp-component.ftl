@@ -16,7 +16,6 @@ stamp-component-stamped-name-trader = Торговец
 stamp-component-stamped-name-syndicate = Синдикат
 stamp-component-stamped-name-ce = Старший инженер
 stamp-component-stamped-name-magistrat = Судья
-stamp-component-stamped-name-psychologist = Психиатр
 stamp-component-stamped-name-brigmedic = Врач милиции
 stamp-component-stamped-name-meme-deny = Хуйня, переделать
 stamp-component-stamped-name-coroner = Патологоанатом

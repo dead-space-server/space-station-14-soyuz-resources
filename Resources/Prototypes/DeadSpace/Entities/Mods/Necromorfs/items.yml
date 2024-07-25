@@ -145,7 +145,7 @@
         reagents:
           - ReagentId: ZetaOne
             Quantity: 15
-          - ReagentId: Desoxyephedrine
+          - ReagentId: Impedrezene
             Quantity: 10
   - type: Tag
     tags: []
@@ -191,7 +191,6 @@
   name: tiles-necro-floor
   spawn: FloorNecroTileItemFlesh
   maxCount: 30
-  itemSize: 5
 
 - type: entity
   name: ядро некроманта

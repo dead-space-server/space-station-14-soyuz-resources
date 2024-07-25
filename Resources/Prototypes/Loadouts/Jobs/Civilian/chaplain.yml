@@ -137,3 +137,40 @@
   id: ChaplainHoodie
   equipment:
     outerClothing: ClothingOuterHoodieChaplain
+
+# Underwear
+- type: loadout
+  id: UnderwearBottomBoxersChaplain
+  equipment: UnderwearBottomBoxersChaplain
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomBoxersChaplain
+  equipment:
+    underwearb: ClothingUnderwearBottomBoxersChaplain
+
+- type: loadout
+  id: UnderwearBottomPantiesChaplain
+  equipment: UnderwearBottomPantiesChaplain
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomPantiesChaplain
+  equipment:
+    underwearb: ClothingUnderwearBottomPantiesChaplain
+
+- type: loadout
+  id: UnderwearTopBraChaplain
+  equipment: UnderwearTopBraChaplain
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearTopBraChaplain
+  equipment:
+    underweart: ClothingUnderwearTopBraChaplain

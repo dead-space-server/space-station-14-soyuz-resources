@@ -188,13 +188,22 @@
     shoes: ClothingShoesBootsCombatFilled
 
 - type: loadout
+  id: JackBoots
+  equipment: JackBoots
+
+- type: startingGear
+  id: JackBoots
+  equipment:
+    shoes: ClothingShoesBootsJackFilled
+
+- type: loadout
   id: SecurityWinterBoots
   equipment: SecurityWinterBoots
 
 - type: startingGear
   id: SecurityWinterBoots
   equipment:
-    shoes: ClothingShoesBootsWinterSec
+    shoes: ClothingShoesBootsWinterSecFilled
 
 # PDA
 - type: loadout
@@ -217,3 +226,40 @@
 #   id: SeniorOfficerPDA
 #   equipment:
 #     id: SeniorOfficerPDA
+
+# Underwear
+- type: loadout
+  id: UnderwearBottomBoxersSecurityOfficer
+  equipment: UnderwearBottomBoxersSecurityOfficer
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomBoxersSecurityOfficer
+  equipment:
+    underwearb: ClothingUnderwearBottomBoxersSecurityOfficer
+
+- type: loadout
+  id: UnderwearBottomPantiesSecurityOfficer
+  equipment: UnderwearBottomPantiesSecurityOfficer
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomPantiesSecurityOfficer
+  equipment:
+    underwearb: ClothingUnderwearBottomPantiesSecurityOfficer
+
+- type: loadout
+  id: UnderwearTopBraSecurityOfficer
+  equipment: UnderwearTopBraSecurityOfficer
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearTopBraSecurityOfficer
+  equipment:
+    underweart: ClothingUnderwearTopBraSecurityOfficer

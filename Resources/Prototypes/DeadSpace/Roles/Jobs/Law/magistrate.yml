@@ -47,14 +47,10 @@
     head: ClothingHeadHatPwig
     id: MagistratPDA
     ears: ClothingHeadsetMagistrat
-    underwearb: ClothingUnderwearBottomBoxersMagistrat # DS14-Underwear
-  underweart: ClothingUnderwearTopBraMagistrat # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesMagistrat # DS14-Underwear
   inhand:
     - BriefcaseMagistratFilled
   storage:
     back:
-    - BoxSurvival
     - HyperLinkBookCorporateLaw
     - HyperLinkBookSOPSecurity
     - HyperLinkBookSOPLaw
@@ -100,3 +96,5 @@
       - EncryptionKeyCommon
   - type: Sprite
     sprite: Clothing/Ears/Headsets/servicesecurity.rsi
+  - type: Headset
+    color: "#d98b71"

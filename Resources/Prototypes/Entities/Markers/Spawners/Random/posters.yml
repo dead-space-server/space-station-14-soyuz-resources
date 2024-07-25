@@ -94,6 +94,7 @@
       - PosterContrabandWaffleCorp
       - PosterContrabandMissingSpacepen
       - PosterMeow
+      - PosterDiesLiberatis
     chance: 1
 
 - type: entity
@@ -153,4 +154,5 @@
       - PosterLegitNTTGC
       - PosterMeow
       - PosterABSK
+      - PosterDiesLiberatis
     chance: 1

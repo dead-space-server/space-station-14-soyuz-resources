@@ -46,10 +46,6 @@
         conditions:
         - !type:ReagentThreshold
           min: 20
-      - !type:CureSanity
-        conditions:
-        - !type:ReagentThreshold
-          min: 10
 
 - type: reagent
   id: Ephedrine
@@ -155,8 +151,7 @@
         - !type:HealthChange
           conditions:
           - !type:TotalDamage
-            min: 70
-            max: 120 # you've got a chance to get out of crit
+            min: 70 # only heals when you're more dead than alive
           damage: # heals at the same rate as tricordrazine, doesn't heal poison because if you OD'd I'm not giving you a safety net
             groups:
               Burn: -1
@@ -227,6 +222,10 @@
         probability: 0.05
       - !type:Drunk # Headaches and slurring are major symptoms of brain damage, this is close enough
         boozePower: 5
+      - !type:CureSanity
+        conditions:
+        - !type:ReagentThreshold
+          min: 8
 
 - type: reagent
   id: SpaceDrugs

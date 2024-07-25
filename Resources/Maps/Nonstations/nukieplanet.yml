@@ -1625,8 +1625,6 @@ entities:
     - type: GasTileOverlay
     - type: SpreaderGrid
     - type: GridPathfinding
-    - type: BecomesStation
-      id: SyndicateOutpost
   - uid: 1295
     components:
     - type: MetaData
@@ -10402,6 +10400,13 @@ entities:
     - type: Transform
       pos: -14.478909,9.585995
       parent: 104
+- proto: DefibrillatorCabinetFilled
+  entities:
+  - uid: 2538
+    components:
+    - type: Transform
+      pos: -0.5,-11.5
+      parent: 104
 - proto: DresserFilled
   entities:
   - uid: 349
@@ -11029,13 +11034,6 @@ entities:
     components:
     - type: Transform
       pos: 18.918644,6.663283
-      parent: 104
-- proto: KitchenMicrowave
-  entities:
-  - uid: 10
-    components:
-    - type: Transform
-      pos: 13.5,-6.5
       parent: 104
 - proto: KitchenReagentGrinder
   entities:
@@ -13318,6 +13316,13 @@ entities:
       - SurveillanceCameraEntertainment
       nameSet: True
       id: Weeh
+- proto: SyndicateMicrowave
+  entities:
+  - uid: 10
+    components:
+    - type: Transform
+      pos: 13.5,-6.5
+      parent: 104
 - proto: SyndicatePersonalAI
   entities:
   - uid: 160

@@ -1,0 +1,95 @@
+- type: soundCollection
+  id: FootstepMuha
+  files:
+  - /Audio/DeadSpace/Events/Muha/muha1.ogg
+  - /Audio/DeadSpace/Events/Muha/muha2.ogg
+  - /Audio/DeadSpace/Events/Muha/muha3.ogg
+  - /Audio/DeadSpace/Events/Muha/muha4.ogg
+  - /Audio/DeadSpace/Events/Muha/muha5.ogg
+  - /Audio/DeadSpace/Events/Muha/muha6.ogg
+
+- type: entity
+  id: ActionLayEggs
+  name: Отложить мушиные яйца
+  description: Откладывает яйца в разлагающуюся плоть.
+  noSpawn: true
+  components:
+  - type: EntityTargetAction
+    useDelay: 1
+    icon:
+      sprite: DeadSpace/Mods/Other/muha.rsi
+      state: larva
+    event: !type:LayEggsActionEvent
+
+- type: entity
+  name: муха
+  parent:
+  - MobRespirator
+  - MobAtmosStandard
+  - FlyingMobBase
+  - BaseSimpleMob
+  - MobBloodstream
+  - MobFlammable
+  id: MobMuha
+  description: Какая же она надоедливая.
+  components:
+  - type: GhostRole
+    makeSentient: true
+    name: ghost-role-information-muha-name
+    description: ghost-role-information-muha-description
+    rules: ghost-role-information-muha-rules
+  - type: GhostTakeoverAvailable
+  - type: Tag
+    tags:
+      - FootstepSound
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 6
+    baseSprintSpeed : 6
+  - type: Physics
+  - type: Sprite
+    drawdepth: SmallMobs
+    scale: 0.1, 0.1
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: running
+      sprite: DeadSpace/Mods/Other/muha.rsi
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.1
+        density: 7.5
+        mask:
+        - SmallMobMask
+        layer:
+        - SmallMobLayer
+  - type: MobState
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 10
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+  - type: Temperature
+    heatDamageThreshold: 1000
+    coldDamageThreshold: 285
+    currentTemperature: 310.15
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepMuha
+      params:
+        volume: -8
+  - type: Muha
+  - type: Muted
+  - type: NightVision
+  - type: Bloodsucker
+    allowedStates:
+    - Alive
+    - Critical
+    maxCountReagent: 5 #Емкость
+    countReagent: 0 #Сколько реагента при спавне
+    duration: 3 #Длительность сосания
+    howMuchWillItSuck: 1 #Сколько высосет за один укус

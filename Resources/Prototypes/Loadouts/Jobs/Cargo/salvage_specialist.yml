@@ -45,3 +45,40 @@
   id: SalvageBoots
   equipment:
     shoes: ClothingShoesBootsSalvage
+
+# Underwear
+- type: loadout
+  id: UnderwearBottomBoxersSalvageSpecialist
+  equipment: UnderwearBottomBoxersSalvageSpecialist
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomBoxersSalvageSpecialist
+  equipment:
+    underwearb: ClothingUnderwearBottomBoxersSalvageSpecialist
+
+- type: loadout
+  id: UnderwearBottomPantiesSalvageSpecialist
+  equipment: UnderwearBottomPantiesSalvageSpecialist
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomPantiesSalvageSpecialist
+  equipment:
+    underwearb: ClothingUnderwearBottomPantiesSalvageSpecialist
+
+- type: loadout
+  id: UnderwearTopBraSalvageSpecialist
+  equipment: UnderwearTopBraSalvageSpecialist
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearTopBraSalvageSpecialist
+  equipment:
+    underweart: ClothingUnderwearTopBraSalvageSpecialist

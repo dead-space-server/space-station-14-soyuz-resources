@@ -13,7 +13,7 @@
       - !type:CauseInfectionDead
         conditions:
         - !type:ReagentThreshold
-          min: 3
+          min: 0.5
       - !type:PopupMessage
         type: Local
         visualType: Medium

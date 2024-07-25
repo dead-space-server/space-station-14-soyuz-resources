@@ -40,11 +40,5 @@
     eyes: ClothingEyesGlassesSunglasses
     ears: ClothingHeadsetIAA
     pocket1: ADTtelescopicBaton
-    underwearb: ClothingUnderwearBottomBoxersIAA # DS14-Underwear
-  underweart: ClothingUnderwearTopBraIAA # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesIAA # DS14-Underwear
   inhand:
     - BriefcaseIAAFilled
-  storage:
-    back:
-    - BoxSurvival

@@ -12,10 +12,10 @@
     id: CentcomPDA
     ears: ClothingHeadsetSOC
     pocket1: MacroBombImplanter
-    underwearb: ClothingUnderwearBottomBoxersWhite # DS14-Underwear
-  underweart: ClothingUnderwearTopBraWhite # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesWhite # DS14-Underwear
-  innerClothingSkirt: ClothingUniformJumpskirtPencilSpecialOperationsOfficer
+  #   underwearb: ClothingUnderwearBottomBoxersWhite # DS14-Underwear
+  # underweart: ClothingUnderwearTopBraWhite # DS14-Underwear
+  # underwearb: ClothingUnderwearBottomPantiesWhite # DS14-Underwear
+  # innerClothingSkirt: ClothingUniformJumpskirtPencilSpecialOperationsOfficer
 
 - type: entity
   parent: ClothingBackpackERTLeader

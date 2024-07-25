@@ -131,7 +131,7 @@
         - ReagentId: BoiledCondensedMilk
           Quantity: 30
   - type: SolutionContainerVisuals
-    maxFillLevels: 6
+    maxFillLevels: 0
     fillBaseName: fill
   - type: TrashOnSolutionEmpty
     solution: drink

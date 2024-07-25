@@ -33,3 +33,12 @@
 
 - type: Tag
   id: Necro
+
+- type: Tag
+  id: MagazineTommyCapGun
+
+- type: Tag
+  id: ToySword
+
+- type: Tag
+  id: SnapPop

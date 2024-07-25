@@ -30,6 +30,8 @@ comms-console-menu-category-shuttle = Шаттл эвакуации
 comms-console-menu-call-shuttle = Вызвать
 comms-console-menu-recall-shuttle = Отозвать
 
+comms-console-menu-time-remaining = Оставшееся время: { $time }
+
 # ERT call
 comms-console-menu-category-ert = Вызов СОБР
 comms-console-menu-call-ert = Запросить СОБР

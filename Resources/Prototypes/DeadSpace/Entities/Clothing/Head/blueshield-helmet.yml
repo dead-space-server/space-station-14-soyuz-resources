@@ -2,12 +2,18 @@
   parent: ClothingHeadHelmetHardsuitSecurityRed
   id: ClothingHeadHelmetHardsuitBlueShield
   noSpawn: true
-  name: BlueShield helmet
-  description: A robust, tactical helmet.
+  name: шлем скафандра офицера "Синий Щит"
+  description: Предназначен для защитника командования.
   components:
   - type: Sprite
-    sprite: DeadSpace/Clothing/Head/Hardsuits/blue_shield.rsi
+    sprite: DeadSpace/Clothing/Head/Hardsuits/blueshield.rsi
   - type: Clothing
-    sprite: DeadSpace/Clothing/Head/Hardsuits/blue_shield.rsi
+    sprite: DeadSpace/Clothing/Head/Hardsuits/blueshield.rsi
   - type: PointLight
-    color: blue
+    color: '#4ac4ff'
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide

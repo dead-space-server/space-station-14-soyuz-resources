@@ -91,3 +91,40 @@
   id: QuartermasterWintercoat
   equipment:
     outerClothing: ClothingOuterWinterQM
+
+# Underwear
+- type: loadout
+  id: UnderwearBottomBoxersQuartermaster
+  equipment: UnderwearBottomBoxersQuartermaster
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomBoxersQuartermaster
+  equipment:
+    underwearb: ClothingUnderwearBottomBoxersQuartermaster
+
+- type: loadout
+  id: UnderwearBottomPantiesQuartermaster
+  equipment: UnderwearBottomPantiesQuartermaster
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomPantiesQuartermaster
+  equipment:
+    underwearb: ClothingUnderwearBottomPantiesQuartermaster
+
+- type: loadout
+  id: UnderwearTopBraQuartermaster
+  equipment: UnderwearTopBraQuartermaster
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearTopBraQuartermaster
+  equipment:
+    underweart: ClothingUnderwearTopBraQuartermaster

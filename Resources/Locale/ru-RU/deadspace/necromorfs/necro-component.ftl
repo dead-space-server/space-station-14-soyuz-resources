@@ -11,6 +11,10 @@ ent-MobPregnant = беременный
     .desc = Некроморф похожий на мутировавший труп.
     .suffix = Некроморф, Призрачная роль
 
+ent-MobSlasherSmall = некроморф
+    .desc = Похож на мутировавший труп.
+    .suffix = Некроморф, Призрачная роль
+
 ent-MobBrute = зверь
     .desc = Поистине гигантский некроморф.
     .suffix = Некроморф, Призрачная роль
@@ -48,12 +52,6 @@ ent-MobTwitcherlvl2 = возвышенный
     .suffix = Некроморф
 
 # Other ent
-ent-ObeliskStoperProduct = { ent-CrateObeliskStoper }
-    .desc = { ent-CrateObeliskStoper.desc }
-
-ent-ZetaOneMedipenProduct = { ent-CrateZetaOneMedipen }
-    .desc = { ent-CrateZetaOneMedipen.desc }
-
 ent-StructureObelisk = красный обелиск
     .desc = От него веет смертью.
 
@@ -105,7 +103,7 @@ reagent-effect-guidebook-cure-infection-dead =
 # ZetaTwo
 
 ent-ZetaTwoMedipen = медипен ZetaTwo
-    .desc = Содержит в себе лекарство от некроинфеции и сильно действующий наркотик дезоксиэфедрин, восстанавливающий рассудок после пребывание возле обелиска.
+    .desc = Содержит в себе лекарство от некроинфеции и сильно действующий наркотик импердразин, восстанавливающий рассудок после пребывание возле обелиска.
 
 reagent-effect-guidebook-cure-sanity =
     { $chance ->

@@ -15,6 +15,7 @@
   special:
   - !type:AddComponentSpecial
     components:
+    - type: CustomNameOnSpawn
     - type: MimePowers
     - type: FrenchAccent
   #start-backmen: currency
@@ -34,12 +35,8 @@
     pocket2: Paper
     id: MimePDA
     ears: ClothingHeadsetService
-    underwearb: ClothingUnderwearBottomBoxersMime # DS14-Underwear
-  underweart: ClothingUnderwearTopBraMime # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesMime # DS14-Underwear
   storage:
     back:
-    - BoxSurvival
     - RubberStampMime
 
 - type: entity

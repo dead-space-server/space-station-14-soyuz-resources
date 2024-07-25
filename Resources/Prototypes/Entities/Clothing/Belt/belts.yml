@@ -269,6 +269,7 @@
         - Radio
         - DiscreteHealthAnalyzer
         - SurgeryTool
+        - Dropper
       components:
         - Hypospray
         - Injector
@@ -343,6 +344,7 @@
         - Bottle
         - Syringe
         - CigPack
+        - Dropper
       components:
         - Seed
         - Smokable
@@ -581,6 +583,9 @@
     sprite: Clothing/Belt/holster.rsi
   - type: Clothing
     sprite: Clothing/Belt/holster.rsi
+    slots:
+    - neck
+    - belt
   - type: Storage
     grid:
     - 0,0,3,1
@@ -595,6 +600,9 @@
     sprite: Clothing/Belt/syndieholster.rsi
   - type: Clothing
     sprite: Clothing/Belt/syndieholster.rsi
+    slots:
+    - neck
+    - belt
   - type: Item
     size: Ginormous
   - type: Storage

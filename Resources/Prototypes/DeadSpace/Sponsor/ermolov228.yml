@@ -3,97 +3,219 @@
   entity: ClothingBackpackErmolov228
   sponsorOnly: true
 
+# Sound Collection
+- type: soundCollection
+  id: Ermolov228Whistle
+  files:
+    - /Audio/DeadSpace/Sponsor/ermolov228/whistle_1.ogg
+    - /Audio/DeadSpace/Sponsor/ermolov228/whistle_2.ogg
+  
 # Backpack
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackErmolov228
-  name: чёрный вместительный рюкзак
-  description: Вместительный рюкзак с множеством карманов. Окрашен в чёрный цвет. Принадлежат члену экипажа, находящемуся под покровительством спонсорской организации.
-  noSpawn: true
+  name: потрёпанная сумка
+  description: Вместилище полезных и не очень вещей, ей явно уже не один десяток лет
   components:
   - type: Sprite
-    sprite: DeadSpace/Sponsor/ermolov228/backpack.rsi
+    sprite: DeadSpace/Sponsor/ermolov228/satchel.rsi
   - type: Clothing
-    sprite: DeadSpace/Sponsor/ermolov228/backpack.rsi
+    sprite: DeadSpace/Sponsor/ermolov228/satchel.rsi
   - type: Storage
     maxItemSize: Huge
     grid:
     - 0,0,11,5
   - type: StorageFill
     contents:
-      - id: ClothingNeckErmolov228
-      - id: ClothingUniformJumpsuitErmolov228
-      - id: ClothingOuterCoatErmolov228
-      - id: CigarGoldCaseErmolov228
-      - id: CigarGoldCaseErmolov228
-      - id: FlippoLighter
-      - id: BoxFolderRed
-      - id: BoxFolderBlue
-      - id: BoxFolderBlack
-      - id: PenErmolov228
-      - id: HandLabeler
-      - id: ClothingHandsGlovesLatex
+      - id: ClothingNeckErmolov228 
+      - id: ClothingOuterHardsuitErmolov228 
+      - id: WhistleErmolov228 
+      - id: JetpackVoidFilledErmolov228 
+      - id: ClothingBeltErmolov228 
+      - id: PDAErmolov228 
+      - id: ObjectsMugErmolov228 
+      - id: ClothingShoesBootsMagErmolov228
+      - id: ClothingHandsGlovesCombatErmolov228
       - id: PaperLawErmolov228
-      - id: MobSiliconErmolov228ServoSkull
+      - id: RemoteSignallerAdvanced
+      - id: SyringeUncookedAnimalProteinsErmolov228
+        amount: 9
 
+# Belt
+- type: entity
+  parent: ClothingBeltChiefEngineer
+  id: ClothingBeltErmolov228
+  name: пояс исследователя
+  description: Универсальный пояс с множеством карманов и креплений, специально созданный для длительных экспедиций в бездне.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/ermolov228/belt.rsi
+  - type: Clothing
+    sprite: DeadSpace/Sponsor/ermolov228/belt.rsi
+  - type: Item
+    size: Huge
+  - type: StorageFill
+    contents:
+      - id: PowerDrill
+      - id: JawsOfLife
+      - id: WelderExperimental
+      - id: Multitool
+      
 # Neck
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckErmolov228
   name: кружевной воротник
-  description: Принадлежит члену экипажа, находящемуся под покровительством спонсорской организации.
+  description: Каким образом он всегда остаётся чистым?
   noSpawn: true
   components:
   - type: Sprite
     sprite: DeadSpace/Sponsor/ermolov228/neck.rsi
 
-# Jumpsuit
+# Hardsuit
 - type: entity
-  parent: ClothingUniformBase
-  id: ClothingUniformJumpsuitErmolov228
-  name:  костюм прокурора
-  description: Принадлежит члену экипажа, находящемуся под покровительством спонсорской организации.
+  parent: ClothingOuterHardsuitAtmos
+  id: ClothingOuterHardsuitErmolov228
+  name: купол Рассвета
+  description: Герметичный костюм исследователя бездны, модифицированный для нахождения в открытом космосе.
   noSpawn: true
   components:
   - type: Sprite
-    sprite: DeadSpace/Sponsor/ermolov228/jumpsuit.rsi
+    sprite: DeadSpace/Sponsor/ermolov228/hardsuit.rsi
   - type: Clothing
-    sprite: DeadSpace/Sponsor/ermolov228/jumpsuit.rsi
+    sprite: DeadSpace/Sponsor/ermolov228/hardsuit.rsi
+    clothingVisuals:
+      outerClothing:
+      - state: equipped-OUTERCLOTHING
+      - state: equipped-OUTERCLOTHING-unshaded
+        shader: unshaded
+      - state: smoke
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitErmolov228
+  - type: Item
+    size: Huge
+  - type: ClothingSpeedModifier
+    walkModifier: 0.8
+    sprintModifier: 0.85
+  - type: HideLayerClothing
+    slots:
+    - Tail
+    hideOnToggle: true
 
-# Coat
 - type: entity
-  parent: ClothingOuterStorageBase
-  id: ClothingOuterCoatErmolov228
-  name: пиджак прокурора
-  description: Красный пиджак прокурора, слева можно заметить жетон юридического департамента. Принадлежит члену экипажа, находящемуся под покровительством спонсорской организации.
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetHardsuitErmolov228
   noSpawn: true
+  name: купол Рассвета
+  description: Герметичный костюм исследователя бездны, модифицированный для нахождения в открытом космосе.
   components:
   - type: Sprite
-    sprite: DeadSpace/Sponsor/ermolov228/coat.rsi
+    sprite: DeadSpace/Sponsor/ermolov228/helmet.rsi
   - type: Clothing
-    sprite: DeadSpace/Sponsor/ermolov228/coat.rsi
+    sprite: DeadSpace/Sponsor/ermolov228/helmet.rsi
+  - type: PointLight
+    color: "#db94ff"
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
 
-# CigarCase
+# Whistle
 - type: entity
-  parent: CigarGoldCase
-  id: CigarGoldCaseErmolov228
-  name: портсигар прокурора
-  description: Принадлежит члену экипажа, находящемуся под покровительством спонсорской организации.
+  parent: BaseWhistle
+  id: WhistleErmolov228
+  name: молящиеся руки
+  description: Свисток, являющийся одним из артефактов бездны, в виде сложенных в молитве ладоней.
   noSpawn: true
   components:
   - type: Sprite
-    sprite: DeadSpace/Sponsor/ermolov228/case.rsi
+    sprite: DeadSpace/Sponsor/ermolov228/whistle.rsi
+    state: whistle
+    scale: 0.7, 0.7
+  - type: UseDelay
+    delay: 2.75
+  - type: Clothing
+    sprite: DeadSpace/Sponsor/ermolov228/whistle.rsi
+  - type: Whistle
+    distance: 5
+  - type: EmitSoundOnUse
+    sound:
+      collection: Ermolov228Whistle
 
-# Pen
+# Jetpack
 - type: entity
-  parent: Pen
-  id: PenErmolov228
-  name: роскошная ручка прокурора
-  description: Дорогая и модная ручка, которой вы достойны обладать только в том случае, если вы умеете работать с огромным количеством бумаг. Принадлежит члену экипажа, находящемуся под покровительством спонсорской организации.
+  id: JetpackVoidFilledErmolov228
+  parent: JetpackVoidFilled
+  name: прототип X-01
+  description: Прыжковый ранец, модифицированный для открытого космоса.
+  suffix: Filled
+  noSpawn: true
+  components:
+  - type: Item
+    sprite: Objects/Tanks/Jetpacks/black.rsi
+  - type: Sprite
+    sprite: Objects/Tanks/Jetpacks/black.rsi
+  - type: Clothing
+    sprite: Objects/Tanks/Jetpacks/black.rsi
+    slots:
+      - Back
+      - suitStorage
+      - Belt
+
+# PDA
+- type: entity
+  parent: BaseMedicalPDA
+  id: PDAErmolov228
+  name: КПК исследователя
+  description: Компактное устройство, содержащее всю необходимую информацию для любого исследователя.
+  noSpawn: true
+  components:
+  - type: Icon
+    sprite: DeadSpace/Sponsor/ermolov228/pda.rsi
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/ermolov228/pda.rsi
+  - type: PdaBorderColor
+    borderColor: "#3b3a41"
+    accentVColor: "#eccaf9"
+  - type: PointLight
+    color: "#da45ff"
+
+# Mug
+- type: entity
+  parent: DrinkBaseMug
+  id: ObjectsMugErmolov228
+  name: кружка "Лучший отец в мире"
+  description: Простая белая кружка с потёртой надписью, напоминающая о доме и важных моментах.
   noSpawn: true
   components:
   - type: Sprite
-    sprite: DeadSpace/Sponsor/ermolov228/pen.rsi
+    sprite: DeadSpace/Sponsor/ermolov228/mug.rsi
+
+# Gloves
+- type: entity
+  parent: ClothingHandsGlovesCombat
+  id: ClothingHandsGlovesCombatErmolov228
+  name: перчатки исследователя
+  description: Укреплённые перчатки из высокопрочных материалов, обеспечивающие защиту в работе с опасными объектами.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/ermolov228/gloves.rsi
+  - type: Clothing
+    sprite: DeadSpace/Sponsor/ermolov228/gloves.rsi
+
+# Magboots
+- type: entity
+  parent: ClothingShoesBootsMagAdv
+  id: ClothingShoesBootsMagErmolov228
+  name: магнитные сапоги
+  description: Сапоги с мощными магнитами, позволяющими передвигаться по поверхностям в условиях невесомости и нестабильной гравитации.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/ermolov228/magboots.rsi
+  - type: Clothing
+    sprite: DeadSpace/Sponsor/ermolov228/magboots.rsi
 
 # PaperLaw
 - type: entity
@@ -112,319 +234,17 @@
       stampedName: Одобрено
     content: paper-law-ermolov228
 
-#Servoskull
+# Syringe
 - type: entity
-  parent: BaseMob
-  id: MobSiliconErmolov228ServoSkull
-  name: сервочереп-писец
-  description: Робототехническое устройство, похожее на беспилотный аппарат, созданный из человеческого черепа.
+  parent: PrefilledSyringe
+  id: SyringeUncookedAnimalProteinsErmolov228
+  name: шприц с животными протеинами
   noSpawn: true
   components:
-    - type: Sprite
-      sprite: DeadSpace/Sponsor/ermolov228/servoskull.rsi
-      layers:
-        - state: servo
-        - state: servo_e
-          map: ["enum.BorgVisualLayers.Light"]
-          shader: unshaded
-          visible: true
-        - state: servo_l
-          shader: unshaded
-          map: ["light"]
-          visible: true
-    - type: Speech
-      speechVerb: Robotic
-      speechSounds: Pai
-    - type: NoSlip
-    - type: GhostRole
-      allowMovement: true
-      allowSpeech: true
-      makeSentient: true
-      name: ghost-role-information-servoskull-name
-      description: ghost-role-information-servoskull-description
-    - type: InteractionPopup
-      interactSuccessString: petting-success-recycler
-      interactFailureString: petting-failure-generic
-      interactSuccessSound:
-        path: /Audio/Ambience/Objects/periodic_beep.ogg
-    - type: TTS
-      voice: Kelthuzad
-    - type: BorgChassis
-      maxModules: 1
-      moduleWhitelist:
-        tags:
-          - BorgModuleSponsor
-      hasMindState: servo_e
-      noMindState: servo_e
-    - type: ItemSlots
-      slots:
-        cell_slot:
-          name: power-cell-slot-component-slot-name-default
-          startingItem: PowerCellHyper
-    - type: ContainerFill
-      containers:
-        borg_brain:
-          - PositronicBrain
-        borg_module:
-          - BorgModuleChronicler
-    - type: ZombieImmune
-    - type: StaticPrice
-      price: 1500
-    - type: MovementAlwaysTouching
-    - type: NpcFactionMember
-      factions:
-        - NanoTrasen
-    - type: Access
-      enabled: false
-      tags:
-      - Maintenance
-    - type: MobThresholds
-      thresholds:
-        0: Alive
-        100: Critical
-        200: Dead
-      stateAlertDict:
-        Alive: BorgHealth
-        Critical: BorgCrit
-        Dead: BorgDead
-      showOverlays: false
-      allowRevives: true
-    - type: IntrinsicRadioTransmitter
-      channels:
-        - Binary
-        - Common
-        - Law
-    - type: ActiveRadio
-      channels:
-        - Binary
-        - Common
-        - Law
-    - type: FlashImmunity
-    - type: Reactive
-      groups:
-        Acidic: [Touch]
-    - type: DamageOnHighSpeedImpact
-      damage:
-        types:
-          Blunt: 5
-      soundHit:
-        collection: MetalThud
-    - type: Fixtures
-      fixtures:
-        fix1:
-          shape:
-            !type:PhysShapeCircle
-            radius: 0.35
-          density: 150
-          mask:
-          - MobMask
-          layer:
-          - MobLayer
-    - type: MovementSpeedModifier
-      baseWalkSpeed : 2.5
-      baseSprintSpeed : 4.5
-    - type: RotationVisuals
-      horizontalRotation: 90
-    - type: MobState
-      allowedStates:
-      - Alive
-      - Critical
-      - Dead
-    - type: HealthExaminable
-      examinableTypes:
-        - Blunt
-        - Slash
-        - Piercing
-        - Heat
-        - Shock
-      locPrefix: silicon
-    - type: UserInterface
-      interfaces:
-        enum.BorgUiKey.Key:
-          type: BorgBoundUserInterface
-        enum.StrippingUiKey.Key:
-          type: StrippableBoundUserInterface
-        enum.PhotocopierUiKey.Key:
-          type: PhotocopierBoundUi
-    - type: ActivatableUI
-      key: enum.PhotocopierUiKey.Key
-    - type: Strippable
-    - type: Repairable
-      doAfterDelay: 30
-      allowSelfRepair: false
-    - type: NameIdentifier
-      group: Silicon
-    - type: ContainerContainer
-      containers:
-        borg_brain: !type:ContainerSlot { }
-        cell_slot: !type:ContainerSlot { }
-        borg_module: !type:Container { }
-        part-container: !type:Container
-        Paper: !type:ContainerSlot
-    - type: PowerCellSlot
-      cellSlotId: cell_slot
-      fitsInCharger: true
-    - type: PowerCellDraw
-      drawRate: 0.6
-    - type: StatusEffects
-      allowed:
-      - Stun
-      - KnockedDown
-      - SlowedDown
-      - Flashed
-    - type: TypingIndicator
-      proto: robot
-    - type: UnblockableSpeech
-    - type: Lock
-      locked: true
-    - type: ActivatableUIRequiresLock
-    - type: Damageable
-      damageContainer: Silicon
-    - type: Destructible
-      thresholds:
-      - trigger:
-          !type:DamageTrigger
-          damage: 75
-        behaviors:
-        - !type:PlaySoundBehavior
-          sound:
-            path: /Audio/Machines/warning_buzzer.ogg
-            params:
-              volume: 5
-      - trigger:
-          !type:DamageTrigger
-          damage: 300
-        behaviors:
-        - !type:PlaySoundBehavior
-          sound:
-            collection: MetalBreak
-        - !type:EmptyContainersBehaviour
-          containers:
-          - borg_brain
-          - cell_slot
-        - !type:DoActsBehavior
-          acts: [ "Destruction" ]
-    - type: HandheldLight
-      toggleOnInteract: false
-      wattage: 0.2
-      blinkingBehaviourId: blinking
-      radiatingBehaviourId: radiating
-    - type: LightBehaviour
-      behaviours:
-      - !type:FadeBehaviour
-        id: radiating
-        maxDuration: 2.0
-        startValue: 3.0
-        endValue: 2.0
-        isLooped: true
-        reverseWhenFinished: true
-      - !type:PulseBehaviour
-        id: blinking
-        interpolate: Nearest
-        maxDuration: 1.0
-        minValue: 0.1
-        maxValue: 2.0
-        isLooped: true
-    - type: ToggleableLightVisuals
-    - type: PointLight
-      enabled: false
-      mask: /Textures/Effects/LightMasks/cone.png
-      autoRot: true
-      radius: 4
-      netsync: false
-      color: red
-    - type: Pullable
-    - type: Puller
-      needsHands: false
-    - type: StandingState
-    - type: Tag
-      tags:
-      - DoorBumpOpener
-      - CanPilot
-    - type: Emoting
-    - type: GuideHelp
-      guides:
-        - Cyborgs
-    - type: InventorySlots
-    - type: Hands
-      showInHands: false
-    - type: Appearance
-    - type: Body
-      prototype: Ermolov
-    - type: Photocopier
-      paperSlot:
-        ejectSound: /Audio/Machines/tray_eject.ogg
-        whitelist:
-          components:
-            - Paper
-    - type: ApcPowerReceiver
-      powerLoad: 0
-    - type: StepTriggerImmune
-
-- type: body
-  id: Ermolov
-  name: "Ermolov"
-  root: torso
-  slots:
-    torso:
-      part: TorsoHuman
-      connections:
-      - right arm
-    right arm:
-      part: RightArmHuman
-      connections:
-      - right hand
-    right hand:
-      part: RightHandHuman
-
-#ServoskullPenModule
-- type: entity
-  id: BorgModuleChronicler
-  parent: [ BaseBorgModuleSponsor, BaseProviderBorgModule ]
-  name: летописный модуль
-  description: Модуль со странной ручкой, интересно, она тоже из костей?
-  noSpawn: true
-  components:
-  - type: Sprite
-    layers:
-    - state: service
-    - state: icon-pen
-  - type: ItemBorgModule
-    items:
-    - Pen
-
-#BaseBorgModuleSponsor
-- type: entity
-  id: BaseBorgModuleSponsor
-  parent: BaseBorgModule
-  abstract: true
-  components:
-    - type: Tag
-      tags:
-      - BorgModuleSponsor
-
-#Tag
-- type: Tag
-  id: BorgModuleSponsor
-
-#ReinforcementRadio
-- type: entity
-  parent: BaseItem
-  id: ReinforcementRadioErmolov228ServoSkull
-  name: радио запроса сервочерепа
-  description: Радио, которое вызывает сервочереп, который появится прямо из радио, невероятно!
-  noSpawn: true
-  components:
-  - type: Sprite
-    sprite: Objects/Devices/communication.rsi
-    layers:
-    - state: old-radio
-  - type: GhostRole
-    name: ghost-role-information-servoskull-name
-    description: ghost-role-information-servoskull-description
-  - type: GhostRoleMobSpawner
-    prototype: MobSiliconErmolov228ServoSkull
-  - type: EmitSoundOnUse
-    sound: /Audio/Effects/thunk.ogg
-  - type: UseDelay
-    delay: 300
+  - type: SolutionContainerManager
+    solutions:
+      injector:
+        maxVol: 15
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 15

@@ -31,9 +31,3 @@
     id: ChefPDA
     ears: ClothingHeadsetService
     belt: ClothingBeltChefFilled
-    underwearb: ClothingUnderwearBottomBoxersChef # DS14-Underwear
-  underweart: ClothingUnderwearTopBraChef # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesChef # DS14-Underwear
-  storage:
-    back:
-    - BoxSurvival

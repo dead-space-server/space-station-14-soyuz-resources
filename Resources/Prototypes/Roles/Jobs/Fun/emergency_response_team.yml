@@ -22,7 +22,7 @@
     back: ClothingBackpackERTLeader
     mask: ClothingMaskGasERT
     eyes: ADTClothingEyesHudAdvanced
-    ears: ClothingHeadsetAltCSO
+    ears: ClothingHeadsetSOC
     neck: ClothingNeckMantleERTLeader
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterArmorBulletproof
@@ -31,10 +31,6 @@
     head: ClothingHeadHelmetERTLeader
     id: ERTLeaderPDA
     belt: ClothingBeltSecurityFilled
-    underwearb: ClothingUnderwearBottomBoxersERT # DS14-Underwear
-  underweart: ClothingUnderwearTopBraERT # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesERT # DS14-Underwear
-  innerClothingSkirt: ClothingUniformJumpskirtColorBlack
   storage:
     back:
     - WeaponLaserCannon
@@ -73,7 +69,7 @@
     back: ClothingBackpackERTLeader
     mask: ClothingMaskGasERT
     eyes: ADTClothingEyesHudAdvanced
-    ears: ClothingHeadsetAltCSO
+    ears: ClothingHeadsetSOC
     neck: ClothingNeckMantleERTLeader
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTLeader
@@ -81,10 +77,6 @@
     shoes: ADTClothingShoesBootsMagERT
     id: ERTLeaderPDA
     belt: ClothingBeltSecurityFilled
-    underwearb: ClothingUnderwearBottomBoxersERT # DS14-Underwear
-  underweart: ClothingUnderwearTopBraERT # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesERT # DS14-Underwear
-  innerClothingSkirt: ClothingUniformJumpskirtColorBlack
   storage:
     back:
     - WeaponXrayCannon
@@ -124,7 +116,7 @@
     back: ClothingBackpackERTLeader
     mask: ClothingMaskGasERT
     eyes: ADTClothingEyesHudAdvanced
-    ears: ClothingHeadsetAltCSO
+    ears: ClothingHeadsetSOC
     neck: ClothingNeckMantleERTLeader
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTLeader
@@ -132,27 +124,22 @@
     shoes: ADTClothingShoesBootsMagERT
     id: ERTLeaderPDA
     belt: ClothingBeltSecurityFilled
-    underwearb: ClothingUnderwearBottomBoxersERT # DS14-Underwear
-  underweart: ClothingUnderwearTopBraERT # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesERT # DS14-Underwear
-  innerClothingSkirt: ClothingUniformJumpskirtColorBlack
+    pocket1: WeaponDisabler
+    pocket2: DoorRemoteAll
   storage:
     back:
-    - PinpointerNuclear
-    - WeaponDisabler
-    - CrowbarRed
+    - WeaponLauncherMGL
     - WeaponPulseCarbine
-    - DoorRemoteAll
     - WeaponSubMachineGunVector
+    - PinpointerNuclear
+    - CrowbarRed
     - MagazinePistolSubMachineGun
     - MagazinePistolSubMachineGun
     - MagazinePistolSubMachineGun
     - MagazinePistolSubMachineGun
     - EmergencyMedipen
     - BoxMRE
-    - Flash
     - Flare
-    - Truncheon
 
 ## CBURN Leader
 - type: job
@@ -175,7 +162,7 @@
     back: ClothingMilitaryBackpack
     mask: ClothingMaskGasExplorer
     eyes: ADTClothingEyesHudAdvanced
-    ears: ClothingHeadsetAltCSO
+    ears: ClothingHeadsetSOC
     neck: ClothingNeckMantleCBURNLeaderShoulder
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitCBURNLeader
@@ -183,10 +170,6 @@
     id: CBURNLeaderPDA
     suitstorage: AirTankFilled
     belt: ClothingBeltMilitaryWebbing
-    underwearb: ClothingUnderwearBottomBoxersCBURN # DS14-Underwear
-  underweart: ClothingUnderwearTopBraCBURN # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesCBURN # DS14-Underwear
-  innerClothingSkirt: ClothingUniformJumpsuitColorBrown
   storage:
     back:
     - WeaponShotgunKammerer
@@ -230,7 +213,7 @@
     back: ClothingMilitaryBackpack
     mask: ClothingMaskGasExplorer
     eyes: ADTClothingEyesHudAdvanced
-    ears: ClothingHeadsetAltCSO
+    ears: ClothingHeadsetSOC
     neck: ClothingNeckMantleCBURNLeaderShoulder
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitCBURNLeader
@@ -238,10 +221,6 @@
     id: CBURNLeaderPDA
     suitstorage: AirTankFilled
     belt: ClothingBeltMilitaryWebbing
-    underwearb: ClothingUnderwearBottomBoxersCBURN # DS14-Underwear
-  underweart: ClothingUnderwearTopBraCBURN # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesCBURN # DS14-Underwear
-  innerClothingSkirt: ClothingUniformJumpsuitColorBrown
   storage:
     back:
     - WeaponShotgunEnforcer
@@ -291,7 +270,7 @@
     back: ClothingBackpackERTSecurity
     mask: ClothingMaskGasERT
     eyes: ADTClothingEyesHudAdvanced
-    ears: ClothingHeadsetAltCSO
+    ears: ClothingHeadsetSOC
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterArmorBulletproof
     suitstorage: AirTankFilled
@@ -299,10 +278,6 @@
     head: ClothingHeadHelmetERTSecurity
     id: ERTSecurityPDA
     belt: ClothingBeltSecurityFilled
-    underwearb: ClothingUnderwearBottomBoxersERT # DS14-Underwear
-  underweart: ClothingUnderwearTopBraERT # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesERT # DS14-Underwear
-  innerClothingSkirt: ClothingUniformJumpskirtColorBlack
   storage:
     back:
     - TelescopicShield
@@ -339,17 +314,13 @@
     back: ClothingBackpackERTSecurity
     mask: ClothingMaskGasERT
     eyes: ADTClothingEyesHudAdvanced
-    ears: ClothingHeadsetAltCSO
+    ears: ClothingHeadsetSOC
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTSecurity
     suitstorage: AirTankFilled
     shoes: ADTClothingShoesBootsMagERT
     id: ERTSecurityPDA
     belt: ClothingBeltSecurityFilled
-    underwearb: ClothingUnderwearBottomBoxersERT # DS14-Underwear
-  underweart: ClothingUnderwearTopBraERT # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesERT # DS14-Underwear
-  innerClothingSkirt: ClothingUniformJumpskirtColorBlack
   storage:
     back:
     - TelescopicShield
@@ -387,17 +358,13 @@
     back: ClothingBackpackERTSecurity
     mask: ClothingMaskGasERT
     eyes: ADTClothingEyesHudAdvanced
-    ears: ClothingHeadsetAltCSO
+    ears: ClothingHeadsetSOC
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTSecurity
     suitstorage: AirTankFilled
     shoes: ADTClothingShoesBootsMagERT
     id: ERTSecurityPDA
     belt: ClothingBeltSecurityFilled
-    underwearb: ClothingUnderwearBottomBoxersERT # DS14-Underwear
-  underweart: ClothingUnderwearTopBraERT # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesERT # DS14-Underwear
-  innerClothingSkirt: ClothingUniformJumpskirtColorBlack
   storage:
     back:
     - TelescopicShield
@@ -437,7 +404,7 @@
     back: ClothingBackpackERTMedical
     mask: ClothingMaskGasERT
     eyes: ADTClothingEyesHudAdvanced
-    ears: ClothingHeadsetAltCSO
+    ears: ClothingHeadsetSOC
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterArmorBulletproof
     suitstorage: AirTankFilled
@@ -445,10 +412,6 @@
     head: ClothingHeadHelmetERTMedic
     id: ERTMedicPDA
     belt: ClothingBeltMedicalFilled
-    underwearb: ClothingUnderwearBottomBoxersERT # DS14-Underwear
-  underweart: ClothingUnderwearTopBraERT # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesERT # DS14-Underwear
-  innerClothingSkirt: ClothingUniformJumpskirtColorBlack
   storage:
     back:
     - Defibrillator
@@ -489,17 +452,13 @@
     back: ClothingBackpackERTMedical
     mask: ClothingMaskGasERT
     eyes: ADTClothingEyesHudAdvanced
-    ears: ClothingHeadsetAltCSO
+    ears: ClothingHeadsetSOC
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTMedical
     suitstorage: AirTankFilled
     shoes: ADTClothingShoesBootsMagERT
     id: ERTMedicPDA
     belt: ClothingBeltMedicalFilled # Тут должен быть портативный дефибриллятор, которого пока нет.
-    underwearb: ClothingUnderwearBottomBoxersERT # DS14-Underwear
-  underweart: ClothingUnderwearTopBraERT # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesERT # DS14-Underwear
-  innerClothingSkirt: ClothingUniformJumpskirtColorBlack
   storage:
     back:
     - OmnizineChemistryBottle
@@ -542,17 +501,13 @@
     back: ClothingBackpackERTMedical
     mask: ClothingMaskGasERT
     eyes: ADTClothingEyesHudAdvanced
-    ears: ClothingHeadsetAltCSO
+    ears: ClothingHeadsetSOC
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTMedical
     suitstorage: AirTankFilled
     shoes: ADTClothingShoesBootsMagERT
     id: ERTMedicPDA
     belt: ClothingBeltMedicalFilled
-    underwearb: ClothingUnderwearBottomBoxersERT # DS14-Underwear
-  underweart: ClothingUnderwearTopBraERT # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesERT # DS14-Underwear
-  innerClothingSkirt: ClothingUniformJumpskirtColorBlack
   storage:
     back:
     - OmnizineChemistryBottle
@@ -599,7 +554,7 @@
     back: ClothingBackpackERTEngineer
     mask: ClothingMaskGasERT
     eyes: ADTClothingEyesHudAdvanced
-    ears: ClothingHeadsetAltCSO
+    ears: ClothingHeadsetSOC
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterArmorBulletproof
     suitstorage: AirTankFilled
@@ -607,10 +562,6 @@
     head: ClothingHeadHelmetERTEngineer
     id: ERTEngineerPDA
     belt: ClothingBeltUtilityEngineering
-    underwearb: ClothingUnderwearBottomBoxersERT # DS14-Underwear
-  underweart: ClothingUnderwearTopBraERT # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesERT # DS14-Underwear
-  innerClothingSkirt: ClothingUniformJumpskirtColorBlack
   storage:
     back:
     - FlashlightLantern
@@ -644,17 +595,13 @@
     back: ClothingBackpackERTEngineer
     mask: ClothingMaskGasERT
     eyes: ADTClothingEyesHudAdvanced
-    ears: ClothingHeadsetAltCSO
+    ears: ClothingHeadsetSOC
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTEngineer
     suitstorage: AirTankFilled
     shoes: ADTClothingShoesBootsMagERT
     id: ERTEngineerPDA
     belt: ClothingBeltChiefEngineerFilled
-    underwearb: ClothingUnderwearBottomBoxersERT # DS14-Underwear
-  underweart: ClothingUnderwearTopBraERT # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesERT # DS14-Underwear
-  innerClothingSkirt: ClothingUniformJumpskirtColorBlack
   storage:
     back:
     - RCD
@@ -692,17 +639,13 @@
     back: ClothingBackpackERTEngineer
     mask: ClothingMaskGasERT
     eyes: ADTClothingEyesHudAdvanced
-    ears: ClothingHeadsetAltCSO
+    ears: ClothingHeadsetSOC
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTEngineer
     suitstorage: AirTankFilled
     shoes: ADTClothingShoesBootsMagERT
     id: ERTEngineerPDA
     belt: ClothingBeltChiefEngineerFilled
-    underwearb: ClothingUnderwearBottomBoxersERT # DS14-Underwear
-  underweart: ClothingUnderwearTopBraERT # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesERT # DS14-Underwear
-  innerClothingSkirt: ClothingUniformJumpskirtColorBlack
   storage:
     back:
     - WeaponDisabler
@@ -747,7 +690,7 @@
     back: ClothingBackpackERTJanitor
     mask: ClothingMaskGasERT
     eyes: ADTClothingEyesHudAdvanced
-    ears: ClothingHeadsetAltCSO
+    ears: ClothingHeadsetSOC
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterArmorBulletproof
     suitstorage: AirTankFilled
@@ -755,10 +698,6 @@
     head: ClothingHeadHelmetERTJanitor
     id: ERTJanitorPDA
     belt: ClothingBeltJanitorFilled
-    underwearb: ClothingUnderwearBottomBoxersERT # DS14-Underwear
-  underweart: ClothingUnderwearTopBraERT # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesERT # DS14-Underwear
-  innerClothingSkirt: ClothingUniformJumpskirtColorBlack
   storage:
     back:
     - SoapNT
@@ -796,17 +735,13 @@
     back: ClothingBackpackERTJanitor
     mask: ClothingMaskGasERT
     eyes: ADTClothingEyesHudAdvanced
-    ears: ClothingHeadsetAltCSO
+    ears: ClothingHeadsetSOC
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTJanitor
     suitstorage: AirTankFilled
     shoes: ADTClothingShoesBootsMagERT
     id: ERTJanitorPDA
     belt: ClothingBeltJanitorFilled
-    underwearb: ClothingUnderwearBottomBoxersERT # DS14-Underwear
-  underweart: ClothingUnderwearTopBraERT # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesERT # DS14-Underwear
-  innerClothingSkirt: ClothingUniformJumpskirtColorBlack
   storage:
     back:
     - SoapNT
@@ -846,17 +781,13 @@
     back: ClothingBackpackERTJanitor
     mask: ClothingMaskGasERT
     eyes: ADTClothingEyesHudAdvanced
-    ears: ClothingHeadsetAltCSO
+    ears: ClothingHeadsetSOC
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTJanitor
     suitstorage: AirTankFilled
     shoes: ADTClothingShoesBootsMagERT
     id: ERTJanitorPDA
     belt: ClothingBeltJanitorFilled
-    underwearb: ClothingUnderwearBottomBoxersERT # DS14-Underwear
-  underweart: ClothingUnderwearTopBraERT # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesERT # DS14-Underwear
-  innerClothingSkirt: ClothingUniformJumpskirtColorBlack
   storage:
     back:
     - SoapOmega
@@ -898,17 +829,13 @@
     back: ClothingMilitaryBackpack
     mask: ClothingMaskGasExplorer
     eyes: ADTClothingEyesHudAdvanced
-    ears: ClothingHeadsetAltCSO
+    ears: ClothingHeadsetSOC
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitCBURN
     shoes: ClothingShoesBootsCombatFilled
     id: CBURNPDA
     suitstorage: AirTankFilled
     belt: ClothingBeltMilitaryWebbing
-    underwearb: ClothingUnderwearBottomBoxersCBURN # DS14-Underwear
-  underweart: ClothingUnderwearTopBraCBURN # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesCBURN # DS14-Underwear
-  innerClothingSkirt: ClothingUniformJumpsuitColorBrown
   storage:
     back:
     - WeaponShotgunKammerer
@@ -949,17 +876,13 @@
     back: ClothingMilitaryBackpack
     mask: ClothingMaskGasExplorer
     eyes: ADTClothingEyesHudAdvanced
-    ears: ClothingHeadsetAltCSO
+    ears: ClothingHeadsetSOC
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitCBURN
     shoes: ClothingShoesBootsCombatFilled
     id: CBURNPDA
     suitstorage: AirTankFilled
     belt: ClothingBeltMilitaryWebbing
-    underwearb: ClothingUnderwearBottomBoxersCBURN # DS14-Underwear
-  underweart: ClothingUnderwearTopBraCBURN # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesCBURN # DS14-Underwear
-  innerClothingSkirt: ClothingUniformJumpsuitColorBrown
   storage:
     back:
     - WeaponShotgunEnforcer

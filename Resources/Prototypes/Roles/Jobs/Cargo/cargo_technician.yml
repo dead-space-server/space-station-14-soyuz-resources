@@ -27,9 +27,3 @@
     id: CargoPDA
     ears: ClothingHeadsetCargo
     pocket1: AppraisalTool
-    underwearb: ClothingUnderwearBottomBoxersCargoTechnician # DS14-Underwear
-  underweart: ClothingUnderwearTopBraCargoTechnician # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesCargoTechnician # DS14-Underwear
-  storage:
-    back:
-    - BoxSurvival

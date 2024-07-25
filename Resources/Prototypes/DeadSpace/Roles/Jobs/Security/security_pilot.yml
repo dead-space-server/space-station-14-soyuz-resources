@@ -41,5 +41,4 @@
     ears: ClothingHeadsetSecurity
   storage:
     back:
-    - BoxSurvivalSecurity
     - Flash

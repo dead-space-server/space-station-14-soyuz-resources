@@ -4,10 +4,10 @@
   - BaseMob
   - MobDamageable
   - MobCombat
+  - StripableInventoryBase
   id: BaseMobSpecies
   abstract: true
   components:
-  - type: EmotePanel
   - type: Sprite
     layers:
     - map: [ "enum.HumanoidVisualLayers.Chest" ]
@@ -18,22 +18,14 @@
     - map: [ "enum.HumanoidVisualLayers.LArm" ]
     - map: [ "enum.HumanoidVisualLayers.RLeg" ]
     - map: [ "enum.HumanoidVisualLayers.LLeg" ]
-    - shader: StencilClear
-      sprite: Mobs/Species/Human/parts.rsi #PJB on stencil clear being on the left leg: "...this is 'fine'" -https://github.com/space-wizards/space-station-14/pull/12217#issuecomment-1291677115
-      # its fine, but its still very stupid that it has to be done like this instead of allowing sprites to just directly insert a stencil clear.
-      # sprite refactor when
-      state: l_leg
-    - shader: StencilMask
-      map: ["enum.HumanoidVisualLayers.StencilMask"]
-      sprite: Mobs/Customization/masking_helpers.rsi
-      state: unisex_full
-      visible: false
     - map: [ "underwearb" ] # Sirena
     - map: [ "underweart" ] # Sirena
     - map: [ "enum.HumanoidVisualLayers.LFoot" ]
     - map: [ "enum.HumanoidVisualLayers.RFoot" ]
     - map: [ "socks" ] # Sirena
     - map: ["jumpsuit"]
+    # - map: ["enum.HumanoidVisualLayers.LFoot"]
+    # - map: ["enum.HumanoidVisualLayers.RFoot"]
     - map: ["enum.HumanoidVisualLayers.LHand"]
     - map: ["enum.HumanoidVisualLayers.RHand"]
     - map: [ "gloves" ]
@@ -145,9 +137,6 @@
     - Pacified
     - StaminaModifier
     - Flashed
-  - type: Reflect
-    enabled: false
-    reflectProb: 0
   - type: Body
     prototype: Human
     requiredLegs: 2
@@ -156,8 +145,6 @@
   - type: Hands
   - type: ComplexInteraction
   - type: Internals
-  - type: Inventory
-  - type: InventorySlots
   - type: FloatingVisuals
   - type: Climbing
   - type: Cuffable
@@ -195,7 +182,6 @@
     - NanoTrasen
   - type: CreamPied
   - type: Stripping
-  - type: Strippable
   - type: UserInterface
     interfaces:
       enum.VoiceMaskUIKey.Key:
@@ -214,7 +200,6 @@
       Female: FemaleHuman
       Unsexed: MaleHuman
   - type: Emoting
-  - type: EmoteAnimation
   - type: BodyEmotes
     soundsId: GeneralBodyEmotes
   - type: Grammar
@@ -228,6 +213,8 @@
     - CanPilot
     - FootstepSound
     - DoorBumpOpener
+  - type: EmoteAnimation
+  - type: EmotePanel
 
 - type: entity
   save: false
@@ -296,17 +283,17 @@
     - ScreamOnDamage
   - type: FireVisuals
     alternateState: Standing
+  - type: ExamineBlood # DS14: kloopre
   - type: HumanoidDamageSequence # DS14: for coroner job
 
 - type: entity
   save: false
   id: BaseSpeciesDummy
+  parent: InventoryBase
   abstract: true
   components:
   - type: Hands
   - type: ComplexInteraction
-  - type: Inventory
-  - type: InventorySlots
   - type: ContainerContainer
   - type: Icon
     sprite: Mobs/Species/Human/parts.rsi
@@ -324,14 +311,6 @@
     - map: [ "enum.HumanoidVisualLayers.LArm" ]
     - map: [ "enum.HumanoidVisualLayers.RLeg" ]
     - map: [ "enum.HumanoidVisualLayers.LLeg" ]
-    - shader: StencilClear
-      sprite: Mobs/Species/Human/parts.rsi
-      state: l_leg
-    - shader: StencilMask
-      map: ["enum.HumanoidVisualLayers.StencilMask"]
-      sprite: Mobs/Customization/masking_helpers.rsi
-      state: unisex_full
-      visible: false
     - map: ["underwearb"] # Sirena
     - map: ["underweart"] # Sirena
     - map: ["enum.HumanoidVisualLayers.LFoot"]

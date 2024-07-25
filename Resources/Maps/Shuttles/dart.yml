@@ -3896,11 +3896,15 @@ entities:
   - uid: 289
     components:
     - type: Transform
+      anchored: False
       rot: -1.5707963267948966 rad
       pos: 0.5,-5.5
       parent: 1
     - type: AtmosPipeColor
       color: '#0055CCFF'
+    - type: Physics
+      canCollide: True
+      bodyType: Dynamic
   - uid: 291
     components:
     - type: Transform

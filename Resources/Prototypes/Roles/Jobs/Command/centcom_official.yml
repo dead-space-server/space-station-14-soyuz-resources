@@ -27,7 +27,7 @@
     belt: WeaponPistolN1984
     pocket1: RubberStampCentcom
     pocket2: ClothingMaskGasCentcom
-    underwearb: ClothingUnderwearBottomBoxersCentcomm # DS14-Underwear
-  underweart: ClothingUnderwearTopBraCentcomm # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesCentcomm # DS14-Underwear
-  innerClothingSkirt: ClothingUniformJumpskirtPencilCentcomOfficial
+  #   underwearb: ClothingUnderwearBottomBoxersCentcomm # DS14-Underwear
+  # underweart: ClothingUnderwearTopBraCentcomm # DS14-Underwear
+  # underwearb: ClothingUnderwearBottomPantiesCentcomm # DS14-Underwear
+  # innerClothingSkirt: ClothingUniformJumpskirtPencilCentcomOfficial

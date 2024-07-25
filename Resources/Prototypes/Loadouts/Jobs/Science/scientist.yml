@@ -248,3 +248,40 @@
 #   id: SeniorResearcherPDA
 #   equipment:
 #     id: SeniorResearcherPDA
+
+# Underwear
+- type: loadout
+  id: UnderwearBottomBoxersScientist
+  equipment: UnderwearBottomBoxersScientist
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomBoxersScientist
+  equipment:
+    underwearb: ClothingUnderwearBottomBoxersScientist
+
+- type: loadout
+  id: UnderwearBottomPantiesScientist
+  equipment: UnderwearBottomPantiesScientist
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomPantiesScientist
+  equipment:
+    underwearb: ClothingUnderwearBottomPantiesScientist
+
+- type: loadout
+  id: UnderwearTopBraScientist
+  equipment: UnderwearTopBraScientist
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearTopBraScientist
+  equipment:
+    underweart: ClothingUnderwearTopBraScientist

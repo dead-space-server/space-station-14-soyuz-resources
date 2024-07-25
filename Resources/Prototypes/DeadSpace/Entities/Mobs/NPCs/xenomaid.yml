@@ -33,15 +33,10 @@
     thresholds:
       0: Alive
       75: Dead
-  - type: Tool
-    speed: 1.5
-    qualities:
-      - Prying
   - type: Prying
-    pryPowered: !type:Bool
-        true
-    force: !type:Bool
-      true
+    pryPowered: true
+    force: true
+    speedModifier: 1.5
     useSound:
       path: /Audio/Items/crowbar.ogg
   - type: Bloodstream
@@ -120,7 +115,8 @@
   - type: Sprite
     layers:
       - state: green
-      - state: ai
+      - state: maid
+        sprite: DeadSpace/Mobs/Pets/xenomaid.rsi
   - type: ConditionalSpawner
     prototypes:
       - XenoMaidMob

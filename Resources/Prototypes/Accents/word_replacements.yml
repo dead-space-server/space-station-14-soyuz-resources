@@ -53,7 +53,6 @@
     accent-mobster-words-46: accent-mobster-words-replace-46
     accent-mobster-words-47: accent-mobster-words-replace-47
 
-
 - type: accent
   id: italian
   wordReplacements:
@@ -510,6 +509,14 @@
     corvax-accent-cowboy-words-48: corvax-accent-cowboy-replacement-48
     corvax-accent-cowboy-words-49: corvax-accent-cowboy-replacement-49
     corvax-accent-cowboy-words-50: corvax-accent-cowboy-replacement-50
+    corvax-accent-cowboy-words-51: corvax-accent-cowboy-replacement-51
+    corvax-accent-cowboy-words-52: corvax-accent-cowboy-replacement-52
+    corvax-accent-cowboy-words-53: corvax-accent-cowboy-replacement-53
+    corvax-accent-cowboy-words-54: corvax-accent-cowboy-replacement-54
+    corvax-accent-cowboy-words-5501: corvax-accent-cowboy-replacement-55
+    corvax-accent-cowboy-words-5502: corvax-accent-cowboy-replacement-55
+    corvax-accent-cowboy-words-56: corvax-accent-cowboy-replacement-56
+    corvax-accent-cowboy-words-57: corvax-accent-cowboy-replacement-57
     # Corvax-accent-end
 
 - type: accent
@@ -575,6 +582,9 @@
     chatsan-word-47: chatsan-replacement-47
     chatsan-word-48: chatsan-replacement-48
     chatsan-word-49: chatsan-replacement-49
+    chatsan-word-50: chatsan-replacement-50
+    chatsan-word-51: chatsan-replacement-51
+    chatsan-word-52: chatsan-replacement-52
 
 - type: accent
   id: liar

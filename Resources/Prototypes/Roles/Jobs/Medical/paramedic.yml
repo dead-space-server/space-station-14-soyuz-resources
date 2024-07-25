@@ -30,10 +30,6 @@
     id: ParamedicPDA
     ears: ClothingHeadsetMedical
     belt: ClothingBeltMedicalEMTFilled
-    underwearb: ClothingUnderwearBottomBoxersParamedic # DS14-Underwear
-  underweart: ClothingUnderwearTopBraParamedic # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesParamedic # DS14-Underwear
   storage:
     back:
-    - BoxSurvivalMedical
     - EmergencyRollerBedSpawnFolded

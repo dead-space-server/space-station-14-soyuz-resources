@@ -1,0 +1,21 @@
+- type: job
+  id: TypanRD
+  name: Директор исследований Синдиката
+  playTimeTracker: TypanRD
+  description: Научный Директор из далёкого космоса
+  startingGear: SyndicateRD
+  icon: "JobIconSyndicateRD"
+  supervisors: job-supervisors-captain-syndicate
+
+- type: startingGear
+  id: SyndicateRD
+  equipment:
+    eyes: ClothingEyesGlassesHiddenSecurity
+    ears: ClothingHeadsetAltSyndicate
+    shoes: ClothingShoesBootsCombat
+    outerClothing: ClothingOuterCoatRDTypan
+    gloves: ClothingHandsRDTypan
+    id: TypanIDCardRd
+    back: ClothingBackpackDuffelSyndicateOperative
+    jumpsuit: ClothingUniformJumpsuitSyndieFormal
+    belt: ClothingBeltAssaultTypan

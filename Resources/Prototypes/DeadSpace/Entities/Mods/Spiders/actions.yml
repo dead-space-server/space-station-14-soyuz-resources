@@ -1,8 +1,8 @@
 
 - type: entity
   id: ActionExplosionAfterDead
-  name: Взрыв.
-  description: Взорваться
+  name: Взрыв
+  description: Взорваться.
   noSpawn: true
   components:
   - type: InstantAction
@@ -14,7 +14,7 @@
 
 - type: entity
   id: ActionStunRadiusSpider
-  name: крик
+  name: Крик
   description:  Пронзительный крик станит всех врагов поблизости.
   noSpawn: true
   components:
@@ -26,8 +26,21 @@
     event: !type:StunRadiusActionEvent
 
 - type: entity
+  id: ActionSpiderKnight
+  name: Сменить состояние
+  description: Обычное, защита или атака? Потребляет кровь.
+  noSpawn: true
+  components:
+  - type: InstantAction
+    useDelay: 0.5
+    icon:
+      sprite: Interface/Actions/actions_mecha.rsi
+      state: mech_cycle_equip_on
+    event: !type:SpiderKnightActionEvent
+
+- type: entity
   id: ActionInvisibility
-  name: невидимость
+  name: Невидимость
   description: Вы становитесь невидимым.
   noSpawn: true
   components:
@@ -37,8 +50,21 @@
     event: !type:InvisibilityActionEvent
 
 - type: entity
+  id: ActionSpiderLurker
+  name: Дымок
+  description: Выпускает дым.
+  noSpawn: true
+  components:
+  - type: InstantAction
+    useDelay: 30
+    icon:
+      sprite: Interface/Actions/actions_mecha.rsi
+      state: mech_smoke
+    event: !type:SpiderLurkerActionEvent
+
+- type: entity
   id: ActionSuckBlood
-  name: высосать кровь
+  name: Высосать кровь
   description: Поглощает кровь у выбранной цели.
   noSpawn: true
   components:
@@ -50,8 +76,21 @@
     event: !type:SuckBloodActionEvent
 
 - type: entity
+  id: ActionChainAbility
+  name: Заплести
+  description: Заплести цель паутиной.
+  noSpawn: true
+  components:
+  - type: EntityTargetAction
+    useDelay: 3
+    icon:
+      sprite: Objects/Misc/handcuffs.rsi
+      state: handcuff
+    event: !type:ChainAbilityActionEvent
+
+- type: entity
   id: ActionAutoInjectReagent
-  name: выделить вещества
+  name: Выделить вещества
   description: Выделяет вещества и впрыскивает их в ваше тело.
   noSpawn: true
   components:

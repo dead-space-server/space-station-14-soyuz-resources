@@ -98,3 +98,40 @@
   id: LawyerNeck
   equipment:
     neck: ClothingNeckLawyerbadge
+  
+# Underwear
+- type: loadout
+  id: UnderwearBottomBoxersLawyer
+  equipment: UnderwearBottomBoxersLawyer
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomBoxersLawyer
+  equipment:
+    underwearb: ClothingUnderwearBottomBoxersLawyer
+
+- type: loadout
+  id: UnderwearBottomPantiesLawyer
+  equipment: UnderwearBottomPantiesLawyer
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomPantiesLawyer
+  equipment:
+    underwearb: ClothingUnderwearBottomPantiesLawyer
+
+- type: loadout
+  id: UnderwearTopBraLawyer
+  equipment: UnderwearTopBraLawyer
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearTopBraLawyer
+  equipment:
+    underweart: ClothingUnderwearTopBraLawyer

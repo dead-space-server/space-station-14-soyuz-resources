@@ -19,6 +19,8 @@
     interfaces:
       enum.AutopsyScannerUiKey.Key:
         type: AutopsyScannerBoundUserInterface
+  - type: ItemToggle
+    onUse: false
   - type: AutopsyScanner
     scanningSound:
       path: "/Audio/DeadSpace/Items/Medical/autopsyscanner.ogg"

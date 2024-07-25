@@ -91,3 +91,40 @@
   id: BotanistWintercoat
   equipment:
     outerClothing: ClothingOuterWinterHydro
+
+# Underwear
+- type: loadout
+  id: UnderwearBottomBoxersBotanist
+  equipment: UnderwearBottomBoxersBotanist
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomBoxersBotanist
+  equipment:
+    underwearb: ClothingUnderwearBottomBoxersBotanist
+
+- type: loadout
+  id: UnderwearBottomPantiesBotanist
+  equipment: UnderwearBottomPantiesBotanist
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomPantiesBotanist
+  equipment:
+    underwearb: ClothingUnderwearBottomPantiesBotanist
+
+- type: loadout
+  id: UnderwearTopBraBotanist
+  equipment: UnderwearTopBraBotanist
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearTopBraBotanist
+  equipment:
+    underweart: ClothingUnderwearTopBraBotanist

@@ -61,3 +61,40 @@
   id: ResearchDirectorWintercoat
   equipment:
     outerClothing: ClothingOuterWinterRD
+
+# Underwear
+- type: loadout
+  id: UnderwearBottomBoxersResearchDirector
+  equipment: UnderwearBottomBoxersResearchDirector
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomBoxersResearchDirector
+  equipment:
+    underwearb: ClothingUnderwearBottomBoxersResearchDirector
+
+- type: loadout
+  id: UnderwearBottomPantiesResearchDirector
+  equipment: UnderwearBottomPantiesResearchDirector
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomPantiesResearchDirector
+  equipment:
+    underwearb: ClothingUnderwearBottomPantiesResearchDirector
+
+- type: loadout
+  id: UnderwearTopBraResearchDirector
+  equipment: UnderwearTopBraResearchDirector
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearTopBraResearchDirector
+  equipment:
+    underweart: ClothingUnderwearTopBraResearchDirector

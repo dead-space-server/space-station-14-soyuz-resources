@@ -9,7 +9,6 @@ bible-summon-verb = Призвать фамильяра
 bible-summon-verb-desc = Призовите фамильяра, который станет помогать вам и обретёт человекоподобный интеллект после вселения в него души.
 bible-summon-requested = Ваш фамильяр явится, как только появится желающая душа.
 bible-summon-respawn-ready = { CAPITALIZE($book) } наполняется неземной энергией. Обитатель { CAPITALIZE($book) } вернулся домой.
-necro-heal-success-self = Вы ударяете { $target } с помощью { $bible }, и кожа { $target } начинает кукожиться и плавиться!
-necro-heal-success-others = { CAPITALIZE($user) } ударяет { $target } с помощью { $bible }, и кожа { $target } начинает кукожиться и плавиться!
-necro-heal-fail-self = Вы ударяете { $target } с помощью { $bible }, но удар отдаётся печальным стуком, не сумев поразить { $target }.
-necro-heal-fail-others = { CAPITALIZE($user) } ударяет { $target } с помощью { $bible }, но удар отдаётся печальным стуком, не сумев поразить { $target }.
+
+clown-bible-interact-self = Вы ударяете { $target } с помощью { $bible }, после чего { $target } начинает непроизвольно весело подпрыгивать!
+clown-bible-interact-others = { CAPITALIZE($user) } ударяет { $target } с помощью { $bible }, после чего { $target } начинает непроизвольно весело подпрыгивать!

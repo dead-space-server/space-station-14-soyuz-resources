@@ -5,7 +5,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/Rifles/ak.rsi, state: icon }
   productEntity: ADTClothingBackpackDuffelSyndicateFilledAKMS
   cost:
-    Telecrystal: 15
+    Telecrystal: 12
   categories:
   - UplinkWeaponry
   conditions:
@@ -47,7 +47,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/LightRifle/light_rifle_mag.rsi, state: red }
   productEntity: MagazineLightRifle
   cost:
-    Telecrystal: 4
+    Telecrystal: 3
   categories:
   - UplinkAmmo
 

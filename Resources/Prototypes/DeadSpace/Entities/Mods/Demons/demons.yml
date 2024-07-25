@@ -20,15 +20,10 @@
       - CannotSuicide
       - DoorBumpOpener
       - FootstepSound
-  - type: Tool
-    speed: 1.5
-    qualities:
-      - Prying
   - type: Prying
-    pryPowered: !type:Bool
-        true
-    force: !type:Bool
-      true
+    pryPowered: true
+    force: true
+    speedModifier: 1.5
     useSound:
       path: /Audio/Items/crowbar.ogg
   - type: MovementAlwaysTouching
@@ -79,6 +74,17 @@
       Unsexed: Demon
   - type: ZombieImmune
   - type: ImmunitetInfectionDead
+  - type: PassiveDamage
+    allowedStates:
+    - Alive
+    - Critical
+    damageCap: 0
+    damage:
+      types:
+        Poison: -2
+      groups:
+        Brute: -2
+        Burn: -2
   - type: TTS
     voice: Avozu
 
@@ -129,7 +135,6 @@
     description: ghost-role-information-slaughter-description
     rules: ghost-role-information-slaughter-rules
   - type: Reflect
-    enabled: true
     reflectProb: 0.25
 
 - type: entity

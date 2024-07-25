@@ -67,7 +67,7 @@
     allowMovement: true
     name: ghost-role-information-mukhtar-name
     description: ghost-role-information-mukhtar-description
-    rules: ghost-role-information-mukhtar-rules
+    rules: ghost-role-information-nonantagonist-rules
     requirements:
       - !type:OverallPlaytimeRequirement
         time: 144000 # 40 hours

@@ -623,7 +623,6 @@
     state: marker
   - type: Item
     sprite: Backmen/Mobs/Aliens/blob.rsi
-    state: marker
     size: Ginormous
   - type: Unremoveable
     deleteOnDrop: true

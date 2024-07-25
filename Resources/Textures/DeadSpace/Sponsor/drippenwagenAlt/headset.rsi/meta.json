@@ -1,14 +1,25 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Made by Hqlle and SonicHDC (github), changed by mally0352 (discord) for DS14",
+  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/f8f4aeda930fcd0805ca4cc76d9bc9412a5b3428, resprited by shaxid22 (Discord) for Space Station 14 server Dead Space",
   "size": {
     "x": 32,
     "y": 32
   },
   "states": [
     {
-      "name": "icon"
+      "name": "icon",
+	    "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+	    ]
     },
     {
       "name": "equipped-EARS",

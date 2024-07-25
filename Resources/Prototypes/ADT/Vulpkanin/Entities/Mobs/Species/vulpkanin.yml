@@ -5,6 +5,12 @@
   components:
   - type: HumanoidAppearance
     species: VulpkaninSpecies
+    hideLayersOnEquip:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
+    - Tail
   - type: Body
     prototype: VulpkaninBody
     requiredLegs: 2

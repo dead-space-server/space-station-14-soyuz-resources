@@ -80,6 +80,21 @@
     range: 10
 
 - type: entity
+  id: ActionLockCocoon
+  name: Засунуть в кокон
+  description: Помещает существо в теневой кокон.
+  noSpawn: true
+  components:
+  - type: EntityTargetAction
+    useDelay: 30
+    icon: 
+      sprite: DeadSpace/Mods/Demons/shadow_cocoon.rsi
+      state: cocoon
+    event: !type:LockCocoonEvent
+    checkCanAccess: false
+    range: 10
+
+- type: entity
   id: ActionDemonShadowCrawl
   name: Войти в астрал
   description: Вы исчезаете из физического мира.

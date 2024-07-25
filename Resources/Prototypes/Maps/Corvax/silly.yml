@@ -9,7 +9,7 @@
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup
-          mapNameTemplate: '{0} Silly island {1}'
+          mapNameTemplate: '{0} Silly Island {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: 'ABK'
@@ -21,17 +21,17 @@
           shuttlePath: /Maps/Shuttles/arrivals_corvaxsilly.yml
         - type: GridSpawn
           groups:
-            trade:
+            trade: !type:GridSpawnGroup
               addComponents:
                 - type: ProtectedGrid
                 - type: TradeStation
               paths:
                 - /Maps/Shuttles/trading_outpostcorvaxsilly.yml
-            mining:
+            mining: !type:GridSpawnGroup
               paths:
               - /Maps/Shuttles/mining_corvaxsilly.yml
             # Spawn last
-            ruins:
+            ruins: !type:GridSpawnGroup
               hide: true
               nameGrid: true
               minCount: 0
@@ -42,13 +42,10 @@
               - /Maps/Ruins/derelict.yml
               - /Maps/Ruins/djstation.yml
               - /Maps/Ruins/old_ai_sat.yml
-              - /Maps/Ruins/relaystation.yml
               - /Maps/Ruins/syndicate_dropship.yml
               - /Maps/Ruins/whiteship_ancient.yml
               - /Maps/Ruins/whiteship_bluespacejumper.yml
         - type: StationJobs
-          overflowJobs:
-            - Passenger
           availableJobs:
             # service
             HeadOfPersonnel: [ 1, 1 ]

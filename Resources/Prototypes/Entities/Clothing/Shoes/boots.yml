@@ -20,11 +20,6 @@
     sprite: Clothing/Shoes/Boots/jackboots.rsi
   - type: Clothing
     sprite: Clothing/Shoes/Boots/jackboots.rsi
-  - type: FootstepModifier # DS-Sounds
-    footstepSoundCollection:
-      collection: FootstepJackboots
-      params:
-        volume: -1
 
 - type: entity
   parent: ClothingShoesBaseButcherable
@@ -172,7 +167,7 @@
     sprite: Clothing/Shoes/Boots/winterbootssci.rsi
 
 - type: entity
-  parent: ClothingShoesBaseWinterBoots
+  parent: [ClothingShoesBaseWinterBoots, ClothingShoesMilitaryBase]
   id: ClothingShoesBootsWinterSec
   name: security winter boots
   components:

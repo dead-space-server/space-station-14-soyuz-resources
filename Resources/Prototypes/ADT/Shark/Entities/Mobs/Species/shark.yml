@@ -5,6 +5,12 @@
   components:
   - type: HumanoidAppearance
     species: SharkSpecies
+    hideLayersOnEquip:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
+    - Tail
   - type: Body
     prototype: ADTSharkBody
     requiredLegs: 2

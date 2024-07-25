@@ -15,6 +15,8 @@
       - id: RubberStampWarden
       - id: DoorRemoteArmory
       - id: HoloprojectorSecurity
+      - id: ClothingNeckBodyCamera
+        amount: 3
       - id: ClothingOuterHardsuitWarden
 
 - type: entity
@@ -34,6 +36,8 @@
       - id: RubberStampWarden
       - id: DoorRemoteArmory
       - id: HoloprojectorSecurity
+      - id: ClothingNeckBodyCamera
+        amount: 3
 
 - type: entity
   id: LockerSecurityFilled
@@ -55,6 +59,7 @@
         prob: 0.6
       - id: PistolDominator
       - id: WeaponPistolMk58
+      - id: ClothingNeckBodyCamera
 
 - type: entity
   id: LockerBrigmedicFilled
@@ -113,6 +118,7 @@
       - id: RubberStampDetective
       - id: HoloprojectorSecurity
       - id: BoxEvidenceMarkers
+      - id: FlippoEngravedLighter
 
 - type: entity
   id: ClosetBombFilled

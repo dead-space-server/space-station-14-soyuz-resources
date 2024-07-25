@@ -6474,10 +6474,14 @@ entities:
   - uid: 698
     components:
     - type: Transform
+      anchored: False
       pos: 0.5,0.5
       parent: 656
     - type: AtmosPipeColor
       color: '#17E8E2FF'
+    - type: Physics
+      canCollide: True
+      bodyType: Dynamic
   - uid: 699
     components:
     - type: Transform

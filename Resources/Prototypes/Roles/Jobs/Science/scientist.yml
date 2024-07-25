@@ -24,9 +24,3 @@
   id: ScientistGear
   equipment:
     ears: ClothingHeadsetScience
-    underwearb: ClothingUnderwearBottomBoxersScientist # DS14-Underwear
-  underweart: ClothingUnderwearTopBraScientist # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesScientist # DS14-Underwear
-  storage:
-    back:
-    - BoxSurvival

@@ -5,6 +5,12 @@
   components:
   - type: HumanoidAppearance
     species: TajaranSpecies
+    hideLayersOnEquip:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
+    - Tail
   - type: Body
     prototype: Tajaran
     requiredLegs: 2

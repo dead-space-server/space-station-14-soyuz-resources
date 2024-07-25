@@ -50,10 +50,6 @@
     belt: BoxFolderClipboard
     socks: ClothingUnderwearSocksQuartermaster
     pocket1: AppraisalTool
-    underwearb: ClothingUnderwearBottomBoxersQuartermaster # DS14-Underwear
-  underweart: ClothingUnderwearTopBraQuartermaster # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesQuartermaster # DS14-Underwear
   storage:
     back:
-    - BoxSurvival
     - Flash

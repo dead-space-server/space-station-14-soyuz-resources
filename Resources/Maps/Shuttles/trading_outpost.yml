@@ -3518,9 +3518,13 @@ entities:
   - uid: 511
     components:
     - type: Transform
+      anchored: False
       rot: -1.5707963267948966 rad
       pos: 0.5,5.5
       parent: 2
+    - type: Physics
+      canCollide: True
+      bodyType: Dynamic
   - uid: 513
     components:
     - type: Transform

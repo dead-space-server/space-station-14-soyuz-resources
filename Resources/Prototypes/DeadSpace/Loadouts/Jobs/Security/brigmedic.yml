@@ -44,3 +44,40 @@
   id: BrigmedicDuffel
   equipment:
     back: ClothingBackpackDuffelBrigmedic
+
+# Underwear
+- type: loadout
+  id: UnderwearBottomBoxersBrigmedic
+  equipment: UnderwearBottomBoxersBrigmedic
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomBoxersBrigmedic
+  equipment:
+    underwearb: ClothingUnderwearBottomBoxersBrigmedic
+
+- type: loadout
+  id: UnderwearBottomPantiesBrigmedic
+  equipment: UnderwearBottomPantiesBrigmedic
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomPantiesBrigmedic
+  equipment:
+    underwearb: ClothingUnderwearBottomPantiesBrigmedic
+
+- type: loadout
+  id: UnderwearTopBraBrigmedic
+  equipment: UnderwearTopBraBrigmedic
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearTopBraBrigmedic
+  equipment:
+    underweart: ClothingUnderwearTopBraBrigmedic

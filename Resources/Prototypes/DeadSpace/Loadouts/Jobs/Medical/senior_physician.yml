@@ -46,3 +46,40 @@
   id: SeniorPhysicianPDA
   equipment:
     id: SeniorPhysicianPDA
+
+# Underwear
+- type: loadout
+  id: UnderwearBottomBoxersSeniorPhysician
+  equipment: UnderwearBottomBoxersSeniorPhysician
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomBoxersSeniorPhysician
+  equipment:
+    underwearb: ClothingUnderwearBottomBoxersSeniorPhysician
+
+- type: loadout
+  id: UnderwearBottomPantiesSeniorPhysician
+  equipment: UnderwearBottomPantiesSeniorPhysician
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearBottomPantiesSeniorPhysician
+  equipment:
+    underwearb: ClothingUnderwearBottomPantiesSeniorPhysician
+
+- type: loadout
+  id: UnderwearTopBraSeniorPhysician
+  equipment: UnderwearTopBraSeniorPhysician
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: FemaleUnderwear
+
+- type: startingGear
+  id: UnderwearTopBraSeniorPhysician
+  equipment:
+    underweart: ClothingUnderwearTopBraSeniorPhysician

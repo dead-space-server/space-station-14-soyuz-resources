@@ -22,6 +22,9 @@
 		},
 		{
             "name": "Event"
+		},
+		{
+			"name": "Egg"
 		}
     ]
 }

@@ -3,13 +3,19 @@
   entity: ClothingBackpackdrippenwagenAlt
   sponsorOnly: true
 
+- type: sponsorLoadout
+  id: DrippenwagenAltIceCrusher
+  entity: WeaponDrippenwagenAltIceCrusher
+  sponsorOnly: true
+  whitelistJobs: [SalvageSpecialist, SeniorSalvageSpecialist]
+
 # Backpack
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackdrippenwagenAlt
   name: армейский рюкзак Серебряной Лисы
   description: Рюкзак изготовленый из влагостойкого материала, обеспечивающего сохранность вещей.
-  noSpawn: true
+  # noSpawn: true
   components:
   - type: Sprite
     sprite: DeadSpace/Sponsor/drippenwagenAlt/backpack.rsi
@@ -76,29 +82,13 @@
 
 # Cloak
 - type: entity
-  parent: ClothingNeckCloakGoliathCloak
+  parent: ClothingNeckBase
   id: ClothingNeckCloakdrippenwagenAlt
-  name: плащ "Серебряной лисы"
-  description: Водонепроницаемый плащ с капюшоном. Обеспечивает защиту от дождя и сильного ветра.
+  name: метка Хак’кара
+  description: Знак в виде шести конечной звезды, от которого веет холодом и безысходностью.
   components:
   - type: Sprite
     sprite: DeadSpace/Sponsor/drippenwagenAlt/cloack.rsi
-  - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHatHooddrippenwagenAlt
-    requiredSlot:
-    - neck
-    slot: head
-
-- type: entity
-  parent: ClothingHeadBase
-  id: ClothingHeadHatHooddrippenwagenAlt
-  name: накидка "Серебряной лисы"
-  description: Водонепроницаемый плащ с капюшоном. Обеспечивает защиту от дождя и сильного ветра.
-  components:
-  - type: Sprite
-    sprite: DeadSpace/Sponsor/drippenwagenAlt/cloackhead.rsi
-  - type: Clothing
-    sprite: DeadSpace/Sponsor/drippenwagenAlt/cloackhead.rsi
 
 # Gloves
 - type: entity
@@ -117,8 +107,8 @@
 - type: entity
   parent: ClothingOuterHardsuitAtmos
   id: ClothingOuterHardsuitdrippenwagenAlt
-  name: cкафандр разведчика "Егерь"
-  description: Скафандр старой модели, использовавшийся в рядах наёмников Лагстанта несколько десятилетий назад. По прежнему обеспечивает достойную защиту и мобильность.
+  name: облачение Хак’кара
+  description: Массивная броня покрытая ледяными кристаллами различной формы, украшен латунными вставками обрамляющими ядро - ярко сияющий кристалл неизвестного происхождения сияющий в груди.
   noSpawn: true
   components:
   - type: Sprite
@@ -134,15 +124,15 @@
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitdrippenwagenAlt
   noSpawn: true
-  name: шлем скафандра разведчика
-  description: Шлем изолирующий владельца от страшного вакуума снаружи.
+  name: покров Хак’кара
+  description: Не смотря на его размер, шлем покрытый ледяными кристаллами обеспечивает хорошую защиту а так же не сковывает движения и не нагружает шею.
   components:
   - type: Sprite
     sprite: DeadSpace/Sponsor/drippenwagenAlt/helmet.rsi
   - type: Clothing
     sprite: DeadSpace/Sponsor/drippenwagenAlt/helmet.rsi
   - type: PointLight
-    color: "#5b73eb"
+    color: "#80f9ff"
   - type: PressureProtection
     highPressureMultiplier: 0.08
     lowPressureMultiplier: 1000
@@ -175,28 +165,16 @@
         map: [ "enum.ToggleVisuals.Layer" ]
     - type: Clothing
       sprite: DeadSpace/Sponsor/drippenwagenAlt/magboots.rsi
-    - type: Magboots
-      toggleAction: ActionToggleMagbootsdrippenwagenAlt
     - type: ClothingSpeedModifier
       walkModifier: 1
       sprintModifier: 1
-      enabled: false
-
-- type: entity
-  id: ActionToggleMagbootsdrippenwagenAlt
-  parent: ActionBaseToggleMagboots
-  noSpawn: true
-  components:
-  - type: InstantAction
-    icon: { sprite: DeadSpace/Sponsor/drippenwagenAlt/magboots.rsi, state: icon }
-    iconOn: DeadSpace/Sponsor/drippenwagenAlt/magboots.rsi/icon-on.png
 
 # Gasmask
 - type: entity
   parent: ClothingMaskGasSyndicate
   id: ClothingMaskdrippenwagenAlt
-  name: ударостойкий респиратор Серебряной Лисы
-  description: Модифицированный противогаз исполненый в виде лисьей морды.
+  name: лик Хак’кара
+  description: Древняя маска найденная во время экспедиций. Покрыта кристаллами льда, которые не таят и по сей день. Окуляры покрыты инеем не естественного для льда инеем.
   noSpawn: true
   components:
   - type: Sprite
@@ -234,8 +212,8 @@
 - type: entity
   parent: ClothingHeadset
   id: ClothingHeadsetdrippenwagenAlt
-  name: гарнитура наёмника Лагстанта
-  description: Полноразмерная гарнитура, пользующаяся популярностью среди наёмников.
+  name: уши Хак’кара
+  description: Древняя гарнитура найденная во время экспедиций, покрытая переливающимися на свету кристаллами льда. Продолжает функционировать, не смотря на её возраст.
   components:
   - type: Sprite
     sprite: DeadSpace/Sponsor/drippenwagenAlt/headset.rsi
@@ -332,7 +310,6 @@
           path: /Audio/Items/change_drill.ogg
 
 # Hat
-
 - type: entity
   parent: ClothingHeadHatBeret
   id: ClothingHeadHatBeretdrippenwagenAlt
@@ -344,3 +321,24 @@
     sprite: DeadSpace/Sponsor/drippenwagenAlt/head.rsi
   - type: Clothing
     sprite: DeadSpace/Sponsor/drippenwagenAlt/head.rsi
+
+# Crusher
+- type: entity
+  parent: WeaponCrusher
+  id: WeaponDrippenwagenAltIceCrusher
+  name: Хак’кар, Око Бури # Имя, поэтому с большой буквы
+  description: Массивный крушитель, найденный во время экспедиций по планетам покрытыми снегами и вековыми льдами. Топорище исполнено в виде разинутой пасти дракона, а рукоять обита приятной на ощупь кожей неизвестного порождения Ред Спейса.
+  # noSpawn: true
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/ice_crusher.rsi
+  - type: Clothing
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/ice_crusher.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: PointLight
+    color: "#87d9ff"
+    enabled: false
+    radius: 5

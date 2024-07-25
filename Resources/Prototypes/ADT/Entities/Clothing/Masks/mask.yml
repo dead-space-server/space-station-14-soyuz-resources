@@ -1,8 +1,8 @@
 - type: entity
   parent: ClothingMaskGas
   id: ADTClothingMaskGasDarkRavenFriskis
-  name: raven gas mask
-  description: raven gas mask
+  name: противогаз ворона
+  description: Личные вещи бывают странные, да?
   components:
   - type: Sprite
     sprite: ADT/Clothing/Mask/raven.rsi

@@ -137,8 +137,8 @@
         Radiation: 0.1
         Caustic: 0.6
   - type: ClothingSpeedModifier
-    walkModifier: 1.2
-    sprintModifier: 1.2
+    walkModifier: 1.1
+    sprintModifier: 1.1
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetCBURNNECROSoldier

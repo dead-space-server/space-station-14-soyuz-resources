@@ -65,10 +65,6 @@
     id: SeniorServicePDA
     ears: ClothingHeadsetService
     belt: BoxFolderClipboard
-    underwearb: ClothingUnderwearBottomBoxersService # DS14-Underwear
-  underweart: ClothingUnderwearTopBraService # DS14-Underwear
-  underwearb: ClothingUnderwearBottomPantiesService # DS14-Underwear
   storage:
     back:
-    - BoxSurvival
     - RubberStampSeniorAdministrator
