@@ -258,7 +258,7 @@
         - BorgModuleSecurity
 
 - type: entity
-  name: челюсти жизни киборга СБ
+  name: челюсти жизни киборга милиции
   parent: JawsOfLife
   id: BorgSecJawsOfLife
   noSpawn: true

@@ -117,8 +117,8 @@
 - type: entity
   parent: BasePlushie
   id: PlushieGSB
-  name: плюшевый ГСБ
-  description: Игрушка в форме Главы Службы Безопасности, на вид выглядит хорошо сделанной игрушкой, напоминает одного унатха с сектора "Титан"
+  name: плюшевый начальник милиции
+  description: Игрушка в форме начальника милиции, на вид хорошо следанная игрушка, напоминает одного унатха с сектора "Титан", вызывая улыбку и уважение к её деталям.
   components:
   - type: Sprite
     sprite: DeadSpace/Items/Toys/toys.rsi
@@ -127,8 +127,8 @@
 - type: entity
   parent: BasePlushie
   id: PlushieInstructor
-  name: плюшевый инструктор
-  description: Игрушка в форме инструктора службы безопасности, на вид хорошо сделанная игрушка, напоминает одного известного инструктора с сектора "Титан"
+  name: плюшевый старший милиционер
+  description: Игрушка в форме старшего милиционера, на вид хорошо сделанная игрушка, напоминает одного известного милиционера с сектора "Титан"
   components:
   - type: Sprite
     sprite: DeadSpace/Items/Toys/toys.rsi
@@ -137,8 +137,8 @@
 - type: entity
   parent: BasePlushie
   id: PlushieKodi
-  name: плюшевый бригмедик
-  description: Игрушка в форме бригмедика, на вид мягкая и пушистенькая, напоминает одну знаменитую девушку с сектора "Титан"
+  name: плюшевый врач милиции
+  description: Игрушка в форме врача милиции, на вид мягкая и пушистенькая, напоминает одну знаменитую девушку с сектора "Титан".
   components:
   - type: Sprite
     sprite: DeadSpace/Items/Toys/toys.rsi
@@ -148,7 +148,7 @@
   parent: BasePlushie
   id: PlushieLera
   name: плюшевый главный врач
-  description: Очень мягкая игрушка ведущего врача. Мягкая и пахнет мятой
+  description: Очень мягкая игрушка ведущего врача. Мягкая и пахнет мятой.
   components:
   - type: Sprite
     sprite: DeadSpace/Items/Toys/toys.rsi
@@ -157,8 +157,8 @@
 - type: entity
   parent: BasePlushie
   id: PlushieKel
-  name: плюшевый коронер
-  description: Игрушка в форме коронера. Пахнет двенадцатью лет работы в морге.
+  name: плюшевый патологоанатом
+  description: Игрушка в форме патологоанатома. Пахнет двенадцатью лет работы в морге.
   components:
   - type: Sprite
     sprite: DeadSpace/Items/Toys/toys.rsi

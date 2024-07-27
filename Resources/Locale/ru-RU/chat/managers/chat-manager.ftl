@@ -17,7 +17,7 @@ chat-manager-no-radio-key = Не задан ключ канала!
 chat-manager-no-such-channel = Нет канала с ключём '{ $key }'!
 chat-manager-whisper-headset-on-message = Вы не можете шептать в радио!
 chat-manager-server-wrap-message = [bold]{ $message }[/bold]
-chat-manager-sender-announcement = Центральное командование
+chat-manager-sender-announcement = Генеральный штаб
 chat-manager-sender-announcement-wrap-message = [font size=14][bold]Объявление { $sender }:[/font][font size=12]
     { $message }[/bold][/font]
 chat-manager-entity-say-wrap-message = [BubbleHeader][bold][Name]{ $entityName }[/Name][/bold][/BubbleHeader] { $verb }, [font={ $fontType } size={ $fontSize } ]"[BubbleContent]{ $message }[/BubbleContent]"[/font]
@@ -130,5 +130,5 @@ chat-speech-verb-electricity-3 = скрипит
 
 chat-sanitize-raider-alert = ИГРОК: "{ $player }" НАПИСАЛ ПОДОЗРИТЕЛЬНОЕ/НАБЕГЕРСКОЕ СООБЩЕНИЕ И БЫЛ КИКНУТ!
 chat-sanitize-raider-alert-emote = ИГРОК: "{ $player }" НАПИСАЛ ПОДОЗРИТЕЛЬНЫЙ/НАБЕГЕРСКИЙ ЭМОУТ И БЫЛ КИКНУТ!
-chat-sanitize-raider-alert-comms = ПОПЫТКА ОТПРАВКИ ПОДОЗРИТЕЛЬНОГО/НАБЕГЕРСКОГО СООБЩЕНИЯ В КОНСОЛЬ СВЯЗИ! ОТПРАВКА СООБЩЕНИЯ БЫЛА ОТМЕНЕНА
-chat-sanitize-raider-kick-reason = Следите за тем, что вы пишете
+chat-sanitize-raider-alert-comms = ПОПЫТКА ОТПРАВКИ ПОДОЗРИТЕЛЬНОГО/НАБЕГЕРСКОГО СООБЩЕНИЯ В КОНСОЛЬ СВЯЗИ! ОТПРАВКА СООБЩЕНИЯ БЫЛА ОТМЕНЕНА.
+chat-sanitize-raider-kick-reason = Пожалуйста, следите за тем, что Вы пишете.
