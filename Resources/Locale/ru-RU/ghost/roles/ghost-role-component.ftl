@@ -155,9 +155,9 @@ ghost-role-information-loneop-description = Вы - одинокий ядерны
 ghost-role-information-loneop-rules = Вы [color=red][bold]Командный антагонист[/bold][/color], в команде с другими Ядерными оперативниками. Помощь агентов на станции не гарантируется.
 ghost-role-information-hellspawn-name = Адское отродье
 ghost-role-information-hellspawn-description = Несите смерть всем, кто не повинуется великой богине Нар'Си.
-ghost-role-information-Death-Squad-name = Боец эскадрона смерти
-ghost-role-information-Death-Squad-description = Боец напичканный всевозможными имплантами и обладающий самой лучшей экипировкой с одной целью - аннигиляция.
-ghost-role-information-Death-Squad-rules = Вы обязаны подчиняться ВСЕМ приказам офицера специальных операций.
+ghost-role-information-Death-Squad-name = Боец специального отряда "Дым"
+ghost-role-information-Death-Squad-description = Боец напичканный всевозможными имплантами и обладающий самой лучшей экипировкой с одной целью — аннигиляция.
+ghost-role-information-Death-Squad-rules = Вы обязаны подчиняться ВСЕМ приказам генерала специальных операций.
 ghost-role-information-SyndiCat-name = СиндиКот
 ghost-role-information-SyndiCat-description = Вы - верный дрессированный питомец ядерных оперативников с микробомбой. Служите своему хозяину до самой смерти!
 ghost-role-information-SyndiCat-rules = Вы [color=red][bold]Командный антагонист[/bold][/color], в команде с агентом, который вас призвал.
