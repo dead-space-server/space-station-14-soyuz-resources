@@ -11,8 +11,8 @@
 - type: startingGear
   id: SyndicateBotanist
   equipment:
-    ears: ClothingHeadsetAltSyndicate
-    jumpsuit: ClothingUniformJumpsuitTypanBotanist
-    back: ClothingBackpackSatchelTypan
-    shoes: ClothingShoesColorBlack
-    id: TypanIDCardBotanist
+    # ears: ClothingHeadsetAltSyndicate
+    # jumpsuit: ClothingUniformJumpsuitTypanBotanist
+    # back: ClothingBackpackSatchelTypan
+    # shoes: ClothingShoesColorBlack
+    # id: TypanIDCardBotanist

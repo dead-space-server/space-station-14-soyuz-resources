@@ -11,13 +11,13 @@
 - type: startingGear
   id: SyndicateFormal
   equipment:
-    eyes: ClothingEyesHudTypan
-    ears: ClothingHeadsetAltSyndicate
-    shoes: ClothingShoesBootsCombat
-    jumpsuit: ClothingUniformJumpsuitSyndieFormal
-    gloves: ClothingHandsGlovesCombat
-    id: TypanIDCardCom
-    back: ClothingBackpackDuffelSyndicateOperative
-    belt: ClothingBeltAssaultTypan
-    pocket1: SyndicateWhistle
-    pocket2: ClothingMaskGasSyndicate
+    # eyes: ClothingEyesHudTypan
+    # ears: ClothingHeadsetAltSyndicate
+    # shoes: ClothingShoesBootsCombat
+    # jumpsuit: ClothingUniformJumpsuitSyndieFormal
+    # gloves: ClothingHandsGlovesCombat
+    # id: TypanIDCardCom
+    # back: ClothingBackpackDuffelSyndicateOperative
+    # belt: ClothingBeltAssaultTypan
+    # pocket1: SyndicateWhistle
+    # pocket2: ClothingMaskGasSyndicate
