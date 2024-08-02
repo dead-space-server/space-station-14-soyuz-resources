@@ -2,7 +2,7 @@
   name: Мухтар
   parent: SimpleMobBase
   id: MobMukhtar
-  description: Верный пёс отдела службы безопасности.
+  description: Верный пёс отдела милиции.
   suffix: Призрачная роль
   components:
   - type: Sprite

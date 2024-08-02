@@ -10,6 +10,6 @@ ent-ADTClothingOuterCoatJohanCoat = пальто Йохана
     .desc = Белое пальто, да? С голубыми полосками, да? ДА.
     .suffix = { "" }
 
-ent-ADTClothingOuterCoatInvestigator = бушлат следователя службы безопасности
+ent-ADTClothingOuterCoatInvestigator = бушлат следователя милиции
     .desc = Один вид этого бушлата повышает вероятность чистосердечного признания подозреваемого на 50%.
     .suffix = { "" }

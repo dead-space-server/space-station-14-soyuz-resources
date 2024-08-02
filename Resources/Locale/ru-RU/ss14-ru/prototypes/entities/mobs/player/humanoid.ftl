@@ -48,19 +48,19 @@ ent-RandomHumanoidSpawnerERTMedicalGamma = СОБР медик
     .desc = { "" }
     .suffix = Гамма, Призрачная роль
 
-ent-RandomHumanoidSpawnerCBURNLeader = Лидер РХБЗЗ
+ent-RandomHumanoidSpawnerCBURNLeader = Лидер бригады РХБЗЗ
     .desc = { "" }
     .suffix = Призрачная роль
 
-ent-RandomHumanoidSpawnerCBURNSierraLeader = Лидер РХБЗЗ Сьерра
+ent-RandomHumanoidSpawnerCBURNSierraLeader = Лидер бригады РХБЗЗ "Сьерра"
     .desc = { "" }
     .suffix = Сьерра, Призрачная роль
 
-ent-RandomHumanoidSpawnerCBURNAgent = Боец РХБЗЗ
+ent-RandomHumanoidSpawnerCBURNAgent = Оперативник бригады РХБЗЗ
     .desc = { "" }
     .suffix = Призрачная роль
 
-ent-RandomHumanoidSpawnerCBURNSierraAgent = Боец РХБЗЗ Сьерра
+ent-RandomHumanoidSpawnerCBURNSierraAgent = Оперативник бригады РХБЗЗ "Сьерра"
     .desc = { "" }
     .suffix = Сьерра, Призрачная роль
 

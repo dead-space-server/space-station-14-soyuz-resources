@@ -146,7 +146,7 @@
 - type: entity
   parent: SecurityIDCard
   id: IdBorgSec
-  name: киборг службы безопасности
+  name: киборг милиции
   description: Карта, необходимая для доступа в различные области станции.
   noSpawn: true
   components:
@@ -155,7 +155,7 @@
     layers:
     - state: icon
   - type: IdCard
-    jobTitle: Киборг службы безопасности
+    jobTitle: Киборг милиции
   - type: Item
     heldPrefix: blue
   - type: Unremoveable
@@ -166,7 +166,7 @@
   parent: BaseWeaponBattery
   id: WeaponLaserGunBorg
   name: лазерная установка киборга
-  description: Установка созданная специально для боргов службы безопасности.
+  description: Установка созданная специально для боргов милиции.
   noSpawn: true
   components:
   - type: Sprite
@@ -295,7 +295,7 @@
 - type: entity
   id: LeftArmBorgSec
   parent: BaseBorgArmLeft
-  name: левая рука киборга службы безопасности
+  name: левая рука киборга милиции
   components:
   - type: Sprite
     sprite: /Textures/DeadSpace/SecurityBorg/borg_sec.rsi
@@ -312,7 +312,7 @@
 - type: entity
   id: RightArmBorgSec
   parent: BaseBorgArmRight
-  name: правая рука киборга службы безопасности
+  name: правая рука киборга милиции
   components:
   - type: Sprite
     sprite: /Textures/DeadSpace/SecurityBorg/borg_sec.rsi
@@ -329,7 +329,7 @@
 - type: entity
   id: LeftLegBorgSec
   parent: BaseBorgLegLeft
-  name: левая нога киборга службы безопасности
+  name: левая нога киборга милиции
   components:
   - type: Sprite
     sprite: /Textures/DeadSpace/SecurityBorg/borg_sec.rsi
@@ -346,7 +346,7 @@
 - type: entity
   id: RightLegBorgSec
   parent: BaseBorgLegRight
-  name: правая нога киборга службы безопасности
+  name: правая нога киборга милиции
   components:
   - type: Sprite
     sprite: /Textures/DeadSpace/SecurityBorg/borg_sec.rsi
@@ -363,7 +363,7 @@
 - type: entity
   id: HeadBorgSec
   parent: BaseBorgHead
-  name: голова киборга службы безопасности
+  name: голова киборга милиции
   components:
   - type: Sprite
     sprite: /Textures/DeadSpace/SecurityBorg/borg_sec.rsi
@@ -380,7 +380,7 @@
 - type: entity
   id: TorsoBorgSec
   parent: BaseBorgTorso
-  name: туловище киборга службы безопасности
+  name: туловище киборга милиции
   components:
   - type: Sprite
     sprite: /Textures/DeadSpace/SecurityBorg/borg_sec.rsi
@@ -396,8 +396,8 @@
 - type: entity
   parent: CyborgEndoskeleton
   id: CyborgEndoskeletonSec
-  name: эндоскелет киборга службы безопасности
-  description: Каркас, на котором собираются киборги службы безопасности. Значительно менее жуткий, чем ожидалось, но всеравно крепче классического эндоскелета.
+  name: эндоскелет киборга милиции
+  description: Каркас, на котором собираются киборги милиции. Значительно менее жуткий, чем ожидалось, но всеравно крепче классического эндоскелета.
   components:
   - type: Clickable
   - type: InteractionOutline
