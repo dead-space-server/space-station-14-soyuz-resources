@@ -6,17 +6,16 @@
   startingGear: SyndicateRD
   icon: "JobIconSyndicateRD"
   supervisors: job-supervisors-captain-syndicate
-  setPreference: false
 
 - type: startingGear
   id: SyndicateRD
   equipment:
-    # eyes: ClothingEyesGlassesHiddenSecurity
-    # ears: ClothingHeadsetAltSyndicate
-    # shoes: ClothingShoesBootsCombat
-    # outerClothing: ClothingOuterCoatRDTypan
-    # gloves: ClothingHandsRDTypan
-    # id: TypanIDCardRd
-    # back: ClothingBackpackDuffelSyndicateOperative
-    # jumpsuit: ClothingUniformJumpsuitSyndieFormal
-    # belt: ClothingBeltAssaultTypan
+    eyes: ClothingEyesGlassesHiddenSecurity
+    ears: ClothingHeadsetAltSyndicate
+    shoes: ClothingShoesBootsCombat
+    outerClothing: ClothingOuterCoatRDTypan
+    gloves: ClothingHandsRDTypan
+    id: TypanIDCardRd
+    back: ClothingBackpackSyndicate
+    jumpsuit: ClothingUniformJumpsuitSyndieFormal
+    belt: ClothingBeltAssaultTypan

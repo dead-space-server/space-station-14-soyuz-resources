@@ -86,9 +86,6 @@
   - type: Muted
   - type: NightVision
   - type: Bloodsucker
-    allowedStates:
-    - Alive
-    - Critical
     maxCountReagent: 5 #Емкость
     countReagent: 0 #Сколько реагента при спавне
     duration: 3 #Длительность сосания

@@ -6,16 +6,15 @@
   startingGear: SyndicateParamedic
   icon: "JobIconSyndicateParamedic"
   supervisors: job-supervisors-cmo-syndicate
-  setPreference: false
 
 - type: startingGear
   id: SyndicateParamedic
   equipment:
-    # eyes: ClothingEyesHudSyndicateAgentTypan
-    # ears: ClothingHeadsetAltSyndicate
-    # jumpsuit: ClothingUniformJumpsuitParamedicSyndie
-    # outerClothing: ClothingOuterMedTypan
-    # shoes: ClothingShoesBootsCombat
-    # id: TypanIDCardRd
-    # back: ClothingBackpackDuffelSyndicateMedical
-    # belt: ClothingBeltMedicalFilled
+    eyes: ClothingEyesHudSyndicateAgentTypan
+    ears: ClothingHeadsetAltSyndicate
+    jumpsuit: ClothingUniformJumpsuitParamedicSyndie
+    outerClothing: ClothingOuterMedTypan
+    shoes: ClothingShoesBootsCombat
+    id: TypanIDCardRd
+    back: ClothingBackpackSyndicate
+    belt: ClothingBeltMedicalFilled
