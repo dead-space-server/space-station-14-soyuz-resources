@@ -32,7 +32,3 @@ spider-terror-kingblood-briefing-greeting =
 
 spider-terror-title = Пауки Ужаса
 spider-terror-description = Яйца пауков ужаса попали на станцию, ужасы!
-
-## Admin verb
-admin-verb-text-make-spider-terror = Засунуть яйцо.
-admin-verb-make-spider-terror = Засунуть яйцо паука ужаса.

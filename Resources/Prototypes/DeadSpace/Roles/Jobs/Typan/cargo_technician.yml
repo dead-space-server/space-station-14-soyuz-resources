@@ -6,13 +6,12 @@
   startingGear: SyndicateCargotech
   icon: "JobIconTypanCargotech"
   supervisors: job-supervisors-qm
-  setPreference: false
 
 - type: startingGear
   id: SyndicateCargotech
   equipment:
-    # ears: ClothingHeadsetAltSyndicate
-    # jumpsuit: ClothingUniformJumpsuitTypanCargotech
-    # back: ClothingBackpackSatchelTypan
-    # shoes: ClothingShoesBootsCombatSyndie
-    # id: TypanIDCardCargo
+    ears: ClothingHeadsetAltSyndicate
+    jumpsuit: ClothingUniformJumpsuitTypanCargotech
+    back: ClothingBackpackSyndicate
+    shoes: ClothingShoesBootsCombatSyndie
+    id: TypanIDCardCargo

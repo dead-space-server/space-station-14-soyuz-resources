@@ -1,23 +1,22 @@
 - type: job
   id: TypanTelecommunicationsOfficer
   name: Офицер телекомуникаций Синдиката
-  playTimeTracker: Офицер из далёкого космоса
+  playTimeTracker: TypanTelecommunicationsOfficer
   description: job-description-science-syndicate
   startingGear: SyndicateFormal
   icon: "JobIconSyndicateFormal"
   supervisors: job-supervisors-captain-syndicate
-  setPreference: false
 
 - type: startingGear
   id: SyndicateFormal
   equipment:
-    # eyes: ClothingEyesHudTypan
-    # ears: ClothingHeadsetAltSyndicate
-    # shoes: ClothingShoesBootsCombat
-    # jumpsuit: ClothingUniformJumpsuitSyndieFormal
-    # gloves: ClothingHandsGlovesCombat
-    # id: TypanIDCardCom
-    # back: ClothingBackpackDuffelSyndicateOperative
-    # belt: ClothingBeltAssaultTypan
-    # pocket1: SyndicateWhistle
-    # pocket2: ClothingMaskGasSyndicate
+    eyes: ClothingEyesHudTypan
+    ears: ClothingHeadsetAltSyndicate
+    shoes: ClothingShoesBootsCombat
+    jumpsuit: ClothingUniformJumpsuitSyndieFormal
+    gloves: ClothingHandsGlovesCombat
+    id: TypanIDCardCom
+    back: ClothingBackpackSyndicate
+    belt: ClothingBeltAssaultTypan
+    pocket1: SyndicateWhistle
+    pocket2: ClothingMaskGasSyndicate

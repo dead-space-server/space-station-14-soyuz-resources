@@ -6,14 +6,13 @@
   startingGear: SyndicateAtmos
   icon: "JobIconSyndicateAtmos"
   supervisors: job-supervisors-ce-syndicate
-  setPreference: false
 
 - type: startingGear
   id: SyndicateAtmos
   equipment:
-    # ears: ClothingHeadsetAltSyndicate
-    # jumpsuit: ClothingUniformJumpsuitChiefEngineerSyndie
-    # shoes: ClothingShoesBootsTypan
-    # back: ClothingBackpackSyndicate
-    # belt: ClothingBeltAssaultTypan
-    # id: TypanIDCardRd
+    ears: ClothingHeadsetAltSyndicate
+    jumpsuit: ClothingUniformJumpsuitChiefEngineerSyndie
+    shoes: ClothingShoesBootsTypan
+    back: ClothingBackpackSyndicate
+    belt: ClothingBeltAssaultTypan
+    id: TypanIDCardRd

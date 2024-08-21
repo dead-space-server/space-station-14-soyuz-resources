@@ -6,15 +6,14 @@
   startingGear: SyndicateScience
   icon: "JobIconSyndicateScience"
   supervisors: job-supervisors-rd-syndicate
-  setPreference: false
 
 - type: startingGear
   id: SyndicateScience
   equipment:
-    # ears: ClothingHeadsetAltSyndicate
-    # jumpsuit: ClothingUniformScienceTypan
-    # outerClothing: ClothingOuterCoatLabOpened
-    # gloves: ClothingHandsScienceTypan
-    # shoes: ClothingShoesBootsCombat
-    # back: ClothingBackpackSyndicate
-    # id: TypanIDCardScience
+    ears: ClothingHeadsetAltSyndicate
+    jumpsuit: ClothingUniformScienceTypan
+    outerClothing: ClothingOuterCoatLabOpened
+    gloves: ClothingHandsScienceTypan
+    shoes: ClothingShoesBootsCombat
+    back: ClothingBackpackSyndicate
+    id: TypanIDCardScience

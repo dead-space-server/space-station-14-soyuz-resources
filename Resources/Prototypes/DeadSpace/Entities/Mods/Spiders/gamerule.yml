@@ -65,7 +65,7 @@
         duration: 650
         spawned:
         - id: MobSpiderTerrorQuin
-          amount: 1
+          amount: 1 #Колличество
       - type: NpcFactionMember
         factions:
         - SpiderTerror
