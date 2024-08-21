@@ -131,10 +131,12 @@
     damage:
       types:
         Airloss: -0.5
+        Cellular: -0.5
       groups:
         Airloss: -0.5
   - type: Sanity
   - type: ZombieImmune
+  - type: ImmunitetInfectionDead
 
 - type: damageModifierSet
   id: XenoRace

@@ -74,8 +74,6 @@
         orGroup: GiftPool
       - id: FoamBlade
         orGroup: GiftPool
-      - id: SingularityToy
-        orGroup: GiftPool
       - id: WeaponLauncherChinaLakeToy
         orGroup: GiftPool
 
@@ -158,6 +156,8 @@
       - id: PlushieKel
         orGroup: GiftPool
       - id: PlushieLera
+        orGroup: GiftPool
+      - id: PlushieCap
         orGroup: GiftPool
       - id: PlushieFloran
         orGroup: GiftPool
@@ -676,7 +676,7 @@
 
 - type: entity
   id: PresentTrash
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   parent: BaseItem
   name: wrapping paper
   description: Carefully folded, taped, and tied with a bow. Then ceremoniously ripped apart and tossed on the floor.

@@ -152,6 +152,14 @@
   id: SecAgaintsAll
   background: /Textures/LobbyScreens/Fobos/sec_againts_all.png
 
+- type: lobbyBackground
+  id: SvadbaXD
+  background: /Textures/LobbyScreens/Fobos/svadba_xd.webp
+
+- type: lobbyBackground
+  id: IMG4743
+  background: /Textures/LobbyScreens/Fobos/img_4743.webp
+
 # Titan
 
 # - type: lobbyBackground

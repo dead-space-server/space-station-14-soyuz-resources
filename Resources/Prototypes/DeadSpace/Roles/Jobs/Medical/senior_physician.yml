@@ -10,6 +10,8 @@
     - !type:DepartmentTimeRequirement
       department: Medical
       time: 288000 # 80 hours
+    - !type:AgeRequirement
+      requiredAge: 28
   startingGear: SeniorPhysicianGear
   icon: "JobIconSeniorPhysician"
   supervisors: job-supervisors-cmo

@@ -1,16 +1,16 @@
 
 - type: entity
-  id: ActionExplosionAfterDead
+  id: ActionExplosionAbility
   name: Взрыв
   description: Взорваться.
   noSpawn: true
   components:
   - type: InstantAction
-    useDelay: 5
+    useDelay: 60
     icon:
       sprite: Actions/Implants/implants.rsi
       state: explosive
-    event: !type:ExplosionAfterDeadActionEvent
+    event: !type:ExplosionAbilityActionEvent
 
 - type: entity
   id: ActionStunRadiusSpider
@@ -45,14 +45,14 @@
   noSpawn: true
   components:
   - type: InstantAction
-    useDelay: 15
+    useDelay: 5
     icon: Interface/Actions/eyeclose.png
     event: !type:InvisibilityActionEvent
 
 - type: entity
   id: ActionSpiderLurker
   name: Дымок
-  description: Выпускает дым.
+  description: Выпускает дым, стоит 10 крови.
   noSpawn: true
   components:
   - type: InstantAction
@@ -123,3 +123,33 @@
     icon: { sprite: Interface/Actions/actions_mecha.rsi, state: mech_ivanov }
     event: !type:EvolutionActionEvent
     checkCanInteract: false
+
+- type: entity
+  id: ActionLockCocoon
+  name: Заплести цель паутиной
+  description: Помещает существо в кокон.
+  noSpawn: true
+  components:
+  - type: EntityTargetAction
+    useDelay: 10
+    icon:
+      sprite: Objects/Misc/handcuffs.rsi
+      state: handcuff
+    event: !type:LockCocoonEvent
+    checkCanAccess: false
+    range: 2
+
+- type: entity
+  id: ActionSpiderInfector
+  name: Впрыснуть яйца
+  description: Помещает в существо паучье яйца.
+  noSpawn: true
+  components:
+  - type: EntityTargetAction
+    useDelay: 10
+    icon:
+      sprite: /Textures/DeadSpace/Interface/Misc/antag_icons.rsi
+      state: Egg
+    event: !type:SpiderInfectorActionEvent
+    checkCanAccess: false
+    range: 2

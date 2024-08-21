@@ -103,6 +103,12 @@
       Female: Demon
       Unsexed: Demon
   - type: LockCocoon
+    allowedStates:
+    - Dead
+    - Critical
+    isHumanoid: true
+    lockCocoon: ActionLockShadowCocoon
+    cocoon: ShadowCocoon
   - type: GhostTakeoverAvailable
   - type: GhostRole
     allowMovement: true
@@ -167,6 +173,7 @@
     - id: ShardCrystalPink
       amount: 1
   - type: ShadowCocoon
+  - type: Cocoon
   - type: Tag
     tags:
       - CannotSuicide

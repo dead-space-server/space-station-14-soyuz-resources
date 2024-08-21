@@ -1,52 +1,220 @@
 # TODO: Заняться и правильно рассортировать эту лапшу в одном файле и/или оптимизировать её наследованием
-# ps. Сделал лучше, но всё ещё в файле 625 не привлекательных строчек
+
+# Переделанный родительский прототип шасси борга + основной прототип готового борга
 
 - type: entity
-  parent: BaseBorgChassisNT
-  id: BorgChassisSecurity
-  name: киборг милиции
-  description: Киборг, чья главная цель — защита предприятия от любой угрозы. Принадлежит советской милиции.
-  noSpawn: true
+  parent: BaseMob
+  id: BaseBorgChassisSec
+  save: false
+  abstract: true
   components:
-    - type: Sprite
-      sprite: DeadSpace/SecurityBorg/securityborg.rsi
-      layers:
-        - state: sec
-        - state: sec_e
-          map: ["enum.BorgVisualLayers.Light"]
-          shader: unshaded
-          visible: false
-        - state: sec_l
-          shader: unshaded
-          map: ["light"]
-          visible: false
-    - type: BorgChassis
-      maxModules: 3
-      moduleWhitelist:
-        tags:
-          - BorgModuleSecurity
-          - BorgModuleGeneric
-      hasMindState: sec_e
-      noMindState: sec_e_r
-    - type: BorgTransponder
-      sprite:
-        sprite: DeadSpace/SecurityBorg/securityborg.rsi
-        state: sec
-      name: cyborg
-    - type: Construction
-      node: security
-    - type: Damageable
-      damageModifierSet: SecurityBorgResist
-    - type: ExplosionResistance
-      damageCoefficient: 0.5
-    - type: FlashImmunity
-    - type: Loadout
-      prototypes: [ BorgSecurity ]
-    - type: MovementSpeedModifier
-      baseWalkSpeed : 2.5
-      baseSprintSpeed : 4
-    - type: Inventory
-      templateId: borgSec
+  - type: Reactive
+    groups:
+      Acidic: [Touch]
+  - type: DamageOnHighSpeedImpact
+    damage:
+      types:
+        Blunt: 5
+    soundHit:
+      collection: MetalThud
+  - type: CombatMode
+  - type: NoSlip
+  - type: StaticPrice
+    price: 1500
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.35
+        density: 150
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 2.5
+    baseSprintSpeed : 4
+  - type: Sprite
+    sprite: DeadSpace/SecurityBorg/securityborg.rsi
+  - type: RotationVisuals
+    horizontalRotation: 90
+  - type: MobState
+    allowedStates:
+    - Alive
+    - Critical
+    - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      100: Critical
+      200: Dead
+    stateAlertDict:
+      Alive: BorgHealth
+      Critical: BorgCrit
+      Dead: BorgDead
+    showOverlays: false
+    allowRevives: true
+  - type: HealthExaminable
+    examinableTypes:
+      - Blunt
+      - Slash
+      - Piercing
+      - Heat
+      - Shock
+    locPrefix: silicon
+  - type: UserInterface
+    interfaces:
+      enum.SiliconLawsUiKey.Key:
+        type: SiliconLawBoundUserInterface
+      enum.BorgUiKey.Key:
+        type: BorgBoundUserInterface
+      enum.StrippingUiKey.Key:
+        type: StrippableBoundUserInterface
+  - type: ActivatableUI
+    key: enum.BorgUiKey.Key
+  - type: SiliconLawBound
+  - type: EmagSiliconLaw
+    stunTime: 5
+  - type: SiliconLawProvider
+    laws: Crewsimov
+  - type: IonStormTarget
+  - type: Strippable
+  - type: InventorySlots
+  - type: Inventory
+    templateId: borgSec
+  - type: Hands
+    showInHands: false
+  - type: IntrinsicRadioReceiver
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Binary
+    - Common
+    - Science
+  - type: ActiveRadio
+    channels:
+    - Binary
+    - Common
+    - Science
+  - type: ZombieImmune
+  - type: Repairable
+    doAfterDelay: 30
+    allowSelfRepair: false
+  - type: BorgChassis
+  - type: WiresPanel
+  - type: ActivatableUIRequiresPanel
+  - type: NameIdentifier
+    group: Silicon
+  - type: ContainerContainer
+    containers:
+      borg_brain: !type:ContainerSlot { }
+      cell_slot: !type:ContainerSlot { }
+      borg_module: !type:Container { }
+      part-container: !type:Container
+  - type: PowerCellSlot
+    cellSlotId: cell_slot
+    fitsInCharger: true
+  - type: PowerCellDraw
+    drawRate: 0.6
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+  - type: Body
+  - type: StatusEffects
+    allowed:
+    - Stun
+    - KnockedDown
+    - SlowedDown
+    - Flashed
+  - type: TypingIndicator
+    proto: robot
+  - type: Speech
+    speechVerb: Robotic
+    speechSounds: Pai
+  - type: UnblockableSpeech
+  - type: Construction
+    graph: CyborgSec
+    containers:
+    - part-container
+    - cell_slot
+  - type: Lock
+    locked: true
+  - type: ActivatableUIRequiresLock
+  - type: Damageable
+    damageContainer: Silicon
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 75
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Machines/warning_buzzer.ogg
+          params:
+            volume: 5
+    - trigger:
+        !type:DamageTrigger
+        damage: 500
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:EmptyContainersBehaviour
+        containers:
+        - borg_brain
+        - cell_slot
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: HandheldLight
+    toggleOnInteract: false
+    wattage: 0.2
+    blinkingBehaviourId: blinking
+    radiatingBehaviourId: radiating
+  - type: LightBehaviour
+    behaviours:
+    - !type:FadeBehaviour
+      id: radiating
+      maxDuration: 2.0
+      startValue: 3.0
+      endValue: 2.0
+      isLooped: true
+      reverseWhenFinished: true
+    - !type:PulseBehaviour
+      id: blinking
+      interpolate: Nearest
+      maxDuration: 1.0
+      minValue: 0.1
+      maxValue: 2.0
+      isLooped: true
+  - type: ToggleableLightVisuals
+  - type: PointLight
+    enabled: false
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+    radius: 4
+    netsync: false
+  - type: Pullable
+  - type: Puller
+    needsHands: false
+  - type: StandingState
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+    - CanPilot
+    - FootstepSound
+  - type: Emoting
+  - type: GuideHelp
+    guides:
+      - Cyborgs
+  - type: StepTriggerImmune
+
+- type: entity
+  parent: BaseBorgChassisSec
+  id: BaseBorgChassisSecurity
+  abstract: true
+  components:
     - type: NpcFactionMember
       factions:
         - NanoTrasen
@@ -56,6 +224,8 @@
       - AllAccess
     - type: AccessReader
       access: [["Command"], ["Security"]]
+    - type: ShowJobIcons
+    - type: ShowMindShieldIcons
     - type: ShowCriminalRecordIcons
     - type: SiliconLawProvider
       laws: NTDefault
@@ -86,6 +256,58 @@
     - type: FootstepModifier
       footstepSoundCollection:
         collection: FootstepBorgSec
+    - type: BorgAINT
+
+- type: entity
+  parent: BaseBorgChassisSecurity
+  id: BorgChassisSecurity
+  name: киборг службы безопасности
+  description: Киборг, чья главная цель — защита станции от любой угрозы. Принадлежит отделу службы безопасности.
+  noSpawn: true
+  components:
+    - type: Sprite
+      sprite: /Textures/DeadSpace/SecurityBorg/securityborg.rsi
+      layers:
+        - state: sec
+        - state: sec_e
+          map: ["enum.BorgVisualLayers.Light"]
+          shader: unshaded
+          visible: false
+        - state: sec_l
+          shader: unshaded
+          map: ["light"]
+          visible: false
+    - type: BorgChassis
+      maxModules: 3
+      moduleWhitelist:
+        tags:
+          - BorgModuleSecurity
+          - BorgModuleGeneric
+      hasMindState: sec_e
+      noMindState: sec_e_r
+    - type: Construction
+      node: security
+    - type: Damageable
+      damageModifierSet: SecurityBorgResist
+    - type: ExplosionResistance
+      damageCoefficient: 0.5
+    - type: FlashImmunity
+    - type: Loadout
+      prototypes: [ BorgSecurity ]
+
+# Защита для борга
+
+- type: damageModifierSet
+  id: SecurityBorgResist
+  coefficients:
+    Blunt: 0.75
+    Slash: 0.75
+    Piercing: 0.75
+    Shock: 0.75
+    Cold: 0.25
+    Heat: 0.75
+    Poison: 0.0
+    Radiation: 0.0
 
 - type: entity
   id: PlayerBorgChassisSecurity
@@ -104,20 +326,6 @@
         cell_slot:
           name: power-cell-slot-component-slot-name-default
           startingItem: PowerCellHyper
-
-# Защита для борга
-
-- type: damageModifierSet
-  id: SecurityBorgResist
-  coefficients:
-    Blunt: 0.75
-    Slash: 0.75
-    Piercing: 0.75
-    Shock: 0.75
-    Cold: 0.25
-    Heat: 0.75
-    Poison: 0.0
-    Radiation: 0.0
 
 # Слот под айди карту + сама айди карта
 
@@ -188,7 +396,7 @@
     startingCharge: 1000
   - type: BatterySelfRecharger
     autoRecharge: true
-    autoRechargeRate: 10
+    autoRechargeRate: 20
 
 - type: entity
   parent: WeaponDisabler
@@ -258,7 +466,7 @@
         - BorgModuleSecurity
 
 - type: entity
-  name: челюсти жизни киборга милиции
+  name: челюсти жизни киборга СБ
   parent: JawsOfLife
   id: BorgSecJawsOfLife
   noSpawn: true

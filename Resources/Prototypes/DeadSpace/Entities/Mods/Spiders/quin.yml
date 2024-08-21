@@ -171,9 +171,10 @@
     bloodMaxVolume: 250
     bloodlossThreshold: 0.4
   - type: SpawnAgainst
-    duration: 30
+    duration: 20
     spawnAgainstAction: ActionSpawnAgainst #действие
     spawnedEntities:
+      - SpiderTomb
       - TelecomServerSpiderTerror
       - CocoonSpider #Что спавнить
       - CocoonKingBloodSpider
@@ -199,7 +200,12 @@
   - type: NeededBloodForSpawnAgainst #Пример
     defaultCost: 25 #Стандартная цена на не заданный результат
     bloodCosts: #цены
+      SpiderTomb: 100
       TelecomServerSpiderTerror: 200
       CocoonKingBloodSpider: 100
-      CocoonSpider: 25
+      CocoonSpider: 50
   - type: SpideKing
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      250: 0.7
+      300: 0.5

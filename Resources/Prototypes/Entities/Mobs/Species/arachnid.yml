@@ -117,12 +117,12 @@
         visible: false
   - type: Inventory
     templateId: arachnid
-  - type: Sanity
+  - type: Sanity # DS14
 
 - type: entity
   parent: BaseSpeciesDummy
   id: MobArachnidDummy
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: HumanoidAppearance
     species: Arachnid

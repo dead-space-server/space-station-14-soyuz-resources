@@ -1,6 +1,6 @@
 ﻿- type: radioChannel
   id: Hivemind
-  name: Улей
+  name: chat-radio-hivemind
   keycode: 'у'
   frequency: 8888
   color: "#800080"

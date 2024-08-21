@@ -16,8 +16,8 @@ entities:
     - type: MetaData
       name: grid
     - type: Transform
-      pos: -0.640625,0.4375
-      parent: 282
+      pos: -4.683155,-8.804967
+      parent: invalid
     - type: MapGrid
       chunks:
         0,0:
@@ -262,18 +262,6 @@ entities:
     - type: GasTileOverlay
     - type: RadiationGridResistance
     - type: EmergencyShuttle
-  - uid: 282
-    components:
-    - type: MetaData
-      name: emergency_corvaxpaper
-    - type: Transform
-    - type: Map
-    - type: PhysicsMap
-    - type: GridTree
-    - type: MovedGrids
-    - type: Broadphase
-    - type: OccluderTree
-    - type: LoadedMap
 - proto: AirlockCommandLocked
   entities:
   - uid: 60

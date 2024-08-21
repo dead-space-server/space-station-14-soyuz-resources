@@ -12,6 +12,8 @@
       time: 72000 # 20 hours
     - !type:OverallPlaytimeRequirement
       time: 144000 # 40 hours
+    - !type:AgeRequirement
+      requiredAge: 28
   startingGear: IAAGear
   icon: "JobIconIAA"
   supervisors: job-supervisors-magistrat

@@ -1,4 +1,4 @@
-- type: statusIcon
+- type: factionIcon
   id: AiIconEnemyTarget
   priority: 5
   icon:

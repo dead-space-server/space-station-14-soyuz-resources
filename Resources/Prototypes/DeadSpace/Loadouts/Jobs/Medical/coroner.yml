@@ -1,18 +1,10 @@
 # Jumpsuit
 - type: loadout
   id: CoronerJumpsuit
-  equipment: CoronerJumpsuit
-
-- type: startingGear
-  id: CoronerJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitCoroner
 
 - type: loadout
-  id: CoronerJumpskirt
-  equipment: CoronerJumpskirt
-
-- type: startingGear
   id: CoronerJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtCoroner
@@ -20,27 +12,15 @@
 # Back
 - type: loadout
   id: CoronerBackpack
-  equipment: CoronerBackpack
-
-- type: startingGear
-  id: CoronerBackpack
   equipment:
     back: ClothingBackpackCoroner
 
 - type: loadout
   id: CoronerSatchel
-  equipment: CoronerSatchel
-
-- type: startingGear
-  id: CoronerSatchel
   equipment:
     back: ClothingBackpackSatchelCoroner
 
 - type: loadout
-  id: CoronerDuffel
-  equipment: CoronerDuffel
-
-- type: startingGear
   id: CoronerDuffel
   equipment:
     back: ClothingBackpackDuffelCoroner
@@ -48,46 +28,30 @@
 # Head
 - type: loadout
   id: CoronerHead
-  equipment: CoronerHead
-
-- type: startingGear
-  id: CoronerHead
   equipment:
     head: ClothingHeadHatCoroner
 
 # Underwear
 - type: loadout
   id: UnderwearBottomBoxersCoroner
-  equipment: UnderwearBottomBoxersCoroner
   effects:
   - !type:GroupLoadoutEffect
     proto: MaleUnderwear
-
-- type: startingGear
-  id: UnderwearBottomBoxersCoroner
   equipment:
     underwearb: ClothingUnderwearBottomBoxersCoroner
 
 - type: loadout
   id: UnderwearBottomPantiesCoroner
-  equipment: UnderwearBottomPantiesCoroner
   effects:
   - !type:GroupLoadoutEffect
     proto: FemaleUnderwear
-
-- type: startingGear
-  id: UnderwearBottomPantiesCoroner
   equipment:
     underwearb: ClothingUnderwearBottomPantiesCoroner
 
 - type: loadout
   id: UnderwearTopBraCoroner
-  equipment: UnderwearTopBraCoroner
   effects:
   - !type:GroupLoadoutEffect
     proto: FemaleUnderwear
-
-- type: startingGear
-  id: UnderwearTopBraCoroner
   equipment:
     underweart: ClothingUnderwearTopBraCoroner

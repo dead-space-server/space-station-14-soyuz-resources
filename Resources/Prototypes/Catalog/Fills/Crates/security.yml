@@ -132,14 +132,3 @@
         amount: 4
       - id: TrackingImplanter
         amount: 2
-
-- type: entity
-  id: CrateTrainingBombs
-  parent: CrateSecgear
-  name: training bombs
-  description: Contains three low-yield training bombs for security to learn defusal and safe ordnance disposal, EOD suit not included. Requires Armory access to open.
-  components:
-  - type: StorageFill
-    contents:
-    - id: TrainingBomb
-      amount: 3

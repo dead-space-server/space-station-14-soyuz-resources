@@ -66,76 +66,104 @@
     - SCSTMedipen
     - Crowbar
 
-- type: entity
-  id: RandomHumanoidSpawnerCBURNLeaderSCST
-  name: лидер отряда ОППУ
-  suffix: РХБЗ, Пауки ужаса, Призрачная роль
-  components:
-    - type: Sprite
-      sprite: Markers/jobs.rsi
-      state: cburn
-    - type: RandomHumanoidSpawner
-      settings: CBURNLeaderSCST
-
 - type: randomHumanoidSettings
   id: CBURNLeaderSCST
   parent: EventHumanoidERTZombieImmune
   components:
-    - type: Loadout
-      prototypes: [CBURNSCSTLeaderGear]
-    - type: GhostRole
-      name: ghost-role-information-cburn-agent-name
-      description: ghost-role-information-cburn-agent-description
-      rules: ghost-role-information-nonantagonist-rules
-      requirements:
-        - !type:DepartmentTimeRequirement
-          department: Medical
-          time: 36000 # 10 hours
-        - !type:DepartmentTimeRequirement
-          department: Security
-          time: 72000 # 20 hours
-        - !type:DepartmentTimeRequirement
-          department: Command
-          time: 36000 # 10 hours
-    - type: GhostTakeoverAvailable
-    - type: RandomMetadata
-      nameSegments:
-      - NamesFirstERTLeader
-      - NamesLastERT
-
-- type: entity
-  id: RandomHumanoidSpawnerCBURNSoldierSCST
-  name: боец отряда ОППУ
-  suffix: РХБЗ, Пауки ужаса, Призрачная роль
-  components:
-    - type: Sprite
-      sprite: Markers/jobs.rsi
-      state: cburn
-    - type: RandomHumanoidSpawner
-      settings: CBURNSoldierSCST
+  - type: Loadout
+    prototypes: [CBURNSCSTLeaderGear]
+  - type: GhostRole
+    name: ghost-role-information-cburn-agent-name
+    description: ghost-role-information-cburn-agent-description
+    rules: ghost-role-information-nonantagonist-rules
+    requirements:
+      - !type:DepartmentTimeRequirement
+        department: Medical
+        time: 36000 # 10 hours
+      - !type:DepartmentTimeRequirement
+        department: Security
+        time: 72000 # 20 hours
+      - !type:DepartmentTimeRequirement
+        department: Command
+        time: 36000 # 10 hours
+  - type: GhostTakeoverAvailable
+  - type: RandomMetadata
+    nameSegments:
+    - NamesFirstERTLeader
+    - NamesLastERT
 
 - type: randomHumanoidSettings
   id: CBURNSoldierSCST
-  parent: EventHumanoidERTZombieImmune
+  parent: EventHumanoid
   components:
-    - type: Loadout
-      prototypes: [CBURNSCSTSoldierGear]
-    - type: GhostRole
-      name: ghost-role-information-cburn-agent-name
-      description: ghost-role-information-cburn-agent-description
-      rules: ghost-role-information-nonantagonist-rules
-      requirements:
-        - !type:DepartmentTimeRequirement
-          department: Medical
-          time: 36000 # 10 hours
-        - !type:DepartmentTimeRequirement
-          department: Security
-          time: 72000 # 20 hours
-        - !type:DepartmentTimeRequirement
-          department: Command
-          time: 36000 # 10 hours
-    - type: GhostTakeoverAvailable
-    - type: RandomMetadata
-      nameSegments:
-      - NamesFirstERTLeader
-      - NamesLastERT
+  - type: Loadout
+    prototypes: [CBURNSCSTSoldierGear]
+  - type: GhostRole
+    name: ghost-role-information-cburn-agent-name
+    description: ghost-role-information-cburn-agent-description
+    rules: ghost-role-information-nonantagonist-rules
+    requirements:
+      - !type:DepartmentTimeRequirement
+        department: Medical
+        time: 36000 # 10 hours
+      - !type:DepartmentTimeRequirement
+        department: Security
+        time: 72000 # 20 hours
+      - !type:DepartmentTimeRequirement
+        department: Command
+        time: 36000 # 10 hours
+  - type: GhostTakeoverAvailable
+  - type: RandomMetadata
+    nameSegments:
+    - NamesFirstERTLeader
+    - NamesLastERT
+
+- type: entity
+  id: RandomHumanoidCBURNSoldierSCST
+  name: боец ОППУ, ghost role
+  suffix: РХБЗ, Пауки ужаса, Призрачная роль
+  components:
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    state: cburn
+  - type: RandomHumanoidSpawner
+    settings: CBURNSoldierSCST
+
+- type: entity
+  name: боец ОППУ, spawner
+  id: CBURNSoldierSCSTSpawner
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: Markers/jobs.rsi
+        state: cburn
+  - type: RandomSpawner
+    prototypes:
+    - RandomHumanoidCBURNSoldierSCST
+
+- type: entity
+  id: RandomHumanoidSpawnerCBURNLeaderSCST
+  name: ОППУ лидер, ghost role
+  suffix: РХБЗ, Пауки ужаса, Призрачная роль
+  components:
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    state: cburn
+  - type: RandomHumanoidSpawner
+    settings: CBURNLeaderSCST
+
+- type: entity
+  name: лидер ОППУ, spawner
+  id: CBURNLeaderSCSTSpawner
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: Markers/jobs.rsi
+        state: cburn
+  - type: RandomSpawner
+    prototypes:
+    - RandomHumanoidSpawnerCBURNLeaderSCST

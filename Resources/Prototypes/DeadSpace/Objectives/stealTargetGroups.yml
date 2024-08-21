@@ -1,11 +1,4 @@
 - type: stealTargetGroup
-  id: BestGlassesForCMO
-  name: очки главного врача
-  sprite:
-    sprite: DeadSpace/Clothing/Eyes/Hud/cmo_hud.rsi
-    state: icon
-
-- type: stealTargetGroup
   id: AnimalPoly
   name: Poly
   sprite:

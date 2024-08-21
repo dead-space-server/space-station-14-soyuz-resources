@@ -1,6 +1,7 @@
 - type: department
   id: Typan
-  description: department-Science-description
+  name: department-Typan
+  description: department-Typan-description
   color: "#D381C9"
   roles:
   - TypanAtmosTech

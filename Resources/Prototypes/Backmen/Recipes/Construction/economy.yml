@@ -9,7 +9,6 @@
   icon: { sprite: Backmen/Objects/Tools/eftpos.rsi, state: eftpos }
   objectType: Item
 
-
 - type: construction
   name: Банкомат
   id: ATM

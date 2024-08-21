@@ -1,18 +1,10 @@
 # Head
 - type: loadout
   id: WardenHead
-  equipment: WardenHead
-
-- type: startingGear
-  id: WardenHead
   equipment:
     head: ClothingHeadHatWarden
 
 - type: loadout
-  id: WardenBeret
-  equipment: WardenBeret
-
-- type: startingGear
   id: WardenBeret
   equipment:
     head: ClothingHeadHatBeretWarden
@@ -20,18 +12,10 @@
 # Jumpsuit
 - type: loadout
   id: WardenJumpsuit
-  equipment: WardenJumpsuit
-
-- type: startingGear
-  id: WardenJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitWarden
 
 - type: loadout
-  id: WardenJumpskirt
-  equipment: WardenJumpskirt
-
-- type: startingGear
   id: WardenJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtWarden
@@ -39,18 +23,10 @@
 # OuterClothing
 - type: loadout
   id: WardenCoat
-  equipment: WardenCoat
-
-- type: startingGear
-  id: WardenCoat
   equipment:
     outerClothing: ClothingOuterCoatWarden
 
 - type: loadout
-  id: WardenArmoredWinterCoat
-  equipment: WardenArmoredWinterCoat
-
-- type: startingGear
   id: WardenArmoredWinterCoat
   equipment:
     outerClothing: ClothingOuterWinterWarden
@@ -58,36 +34,24 @@
 # Underwear
 - type: loadout
   id: UnderwearBottomBoxersWarden
-  equipment: UnderwearBottomBoxersWarden
   effects:
   - !type:GroupLoadoutEffect
     proto: MaleUnderwear
-
-- type: startingGear
-  id: UnderwearBottomBoxersWarden
   equipment:
     underwearb: ClothingUnderwearBottomBoxersWarden
 
 - type: loadout
   id: UnderwearBottomPantiesWarden
-  equipment: UnderwearBottomPantiesWarden
   effects:
   - !type:GroupLoadoutEffect
     proto: FemaleUnderwear
-
-- type: startingGear
-  id: UnderwearBottomPantiesWarden
   equipment:
     underwearb: ClothingUnderwearBottomPantiesWarden
 
 - type: loadout
   id: UnderwearTopBraWarden
-  equipment: UnderwearTopBraWarden
   effects:
   - !type:GroupLoadoutEffect
     proto: FemaleUnderwear
-
-- type: startingGear
-  id: UnderwearTopBraWarden
   equipment:
     underweart: ClothingUnderwearTopBraWarden

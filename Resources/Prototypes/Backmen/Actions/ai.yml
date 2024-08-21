@@ -47,17 +47,17 @@
     useDelay: 5
     priority: 17
 
-- type: entity
-  id: AIHealthOverlay
-  name: Health Overlay
-  description: Toggles the AI's health overlay.
-  components:
-  - type: InstantAction
-    icon: Backmen/Actions/AI/sensor.png
-    event: !type:AIHealthOverlayEvent
-    checkCanInteract: false
-    useDelay: 2.5
-    priority: 18
+# - type: entity
+#   id: AIHealthOverlay
+#   name: Health Overlay
+#   description: Toggles the AI's health overlay.
+#   components:
+#   - type: InstantAction
+#     icon: Backmen/Actions/AI/sensor.png
+#     event: !type:AIHealthOverlayEvent
+#     checkCanInteract: false
+#     useDelay: 2.5
+#     priority: 18
 
 - type: entity
   id: AIToggleArmNuke

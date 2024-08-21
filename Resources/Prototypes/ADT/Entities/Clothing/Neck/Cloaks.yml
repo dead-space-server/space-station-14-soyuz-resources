@@ -24,6 +24,8 @@
   components:
   - type: Sprite
     sprite: ADT/Clothing/Neck/Cloaks/HoP_alt_cloak.rsi
+  - type: StealTarget
+    stealGroup: HeadCloak
 
 - type: entity
   parent: ClothingNeckBase

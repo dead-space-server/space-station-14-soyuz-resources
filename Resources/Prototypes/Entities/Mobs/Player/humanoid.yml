@@ -826,6 +826,7 @@
     - type: GhostTakeoverAvailable
     - type: Loadout
       prototypes: [ CentcomGear ]
+      roleLoadout: [ RoleSurvivalStandard ]
 
 # Syndicate
 - type: entity
@@ -845,6 +846,7 @@
   components:
     - type: Loadout
       prototypes: [SyndicateOperativeGearExtremelyBasic]
+      roleLoadout: [ RoleSurvivalSyndicate ]
 
 - type: entity
   id: RandomHumanoidSpawnerNukeOp
@@ -921,25 +923,7 @@
 
 - type: randomHumanoidSettings
   id: LostCargoTechnician
-  randomizeName: false
-  speciesBlacklist:
-    - Arachnid
-    - Diona
-    # - Dwarf
-    # - Human
-    - Moth
-    - Reptilian
-    - SlimePerson
-    - Vox
-    - DemonSpecies
-    - SharkSpecies
-    - TajaranSpecies
-    - VulpkaninSpecies
-    - Felinid
-    - KoboltSpecies
-    - XenoSponsor
-    - IPC
-    - IPS
+  parent: EventHumanoid
   components:
     - type: GhostRole
       name: ghost-role-information-lost-cargo-technical-name
@@ -950,10 +934,7 @@
     - type: GhostTakeoverAvailable
     - type: Loadout
       prototypes: [ LostCargoTechGearSuit, LostCargoTechGearCoat ]
-    - type: RandomMetadata
-      nameSegments:
-      - names_first
-      - names_last_male
+      roleLoadout: [ RoleSurvivalStandard ]
 
 # Clown troupe
 
@@ -994,25 +975,8 @@
 
 - type: randomHumanoidSettings
   id: ClownTroupe
+  parent: EventHumanoid
   randomizeName: false
-  speciesBlacklist:
-    - Arachnid
-    - Diona
-    # - Dwarf
-    # - Human
-    - Moth
-    - Reptilian
-    - SlimePerson
-    - Vox
-    - DemonSpecies
-    - SharkSpecies
-    - TajaranSpecies
-    - VulpkaninSpecies
-    - Felinid
-    - KoboltSpecies
-    - XenoSponsor
-    - IPC
-    - IPS
   components:
     - type: GhostRole
       name: ghost-role-information-clown-troupe-name
@@ -1023,31 +987,15 @@
     - type: GhostTakeoverAvailable
     - type: Loadout
       prototypes: [ ClownTroupe ]
+      roleLoadout: [ RoleSurvivalStandard ]
     - type: RandomMetadata
       nameSegments:
       - names_clown
 
 - type: randomHumanoidSettings
   id: ClownTroupeBanana
+  parent: ClownTroupe
   randomizeName: false
-  speciesBlacklist:
-    - Arachnid
-    - Diona
-    # - Dwarf
-    # - Human
-    - Moth
-    - Reptilian
-    - SlimePerson
-    - Vox
-    - DemonSpecies
-    - SharkSpecies
-    - TajaranSpecies
-    - VulpkaninSpecies
-    - Felinid
-    - KoboltSpecies
-    - XenoSponsor
-    - IPC
-    - IPS
   components:
     - type: GhostRole
       name: ghost-role-information-clown-troupe-name
@@ -1056,6 +1004,7 @@
     - type: GhostTakeoverAvailable
     - type: Loadout
       prototypes: [ BananaClown ]
+      roleLoadout: [ RoleSurvivalStandard ]
     - type: RandomMetadata
       nameSegments:
       - names_clown
@@ -1088,25 +1037,7 @@
 
 - type: randomHumanoidSettings
   id: TravelingChef
-  randomizeName: false
-  speciesBlacklist:
-    - Arachnid
-    - Diona
-    # - Dwarf
-    # - Human
-    - Moth
-    - Reptilian
-    - SlimePerson
-    - Vox
-    - DemonSpecies
-    - SharkSpecies
-    - TajaranSpecies
-    - VulpkaninSpecies
-    - Felinid
-    - IPC
-    - IPS
-    - XenoSponsor
-    - KoboltSpecies
+  parent: EventHumanoid
   components:
     - type: GhostRole
       name: ghost-role-information-traveling-chef-name
@@ -1117,10 +1048,7 @@
     - type: GhostTakeoverAvailable
     - type: Loadout
       prototypes: [ TravelingChef ]
-    - type: RandomMetadata
-      nameSegments:
-      - names_first
-      - names_last_male
+      roleLoadout: [ RoleSurvivalStandard ]
 
 # Disaster victim
 
@@ -1173,7 +1101,7 @@
   speciesBlacklist:
     - Arachnid
     - Diona
-    # - Dwarf
+    - Dwarf
     # - Human
     - Moth
     - Reptilian
@@ -1198,6 +1126,7 @@
     - type: GhostTakeoverAvailable
     - type: Loadout
       prototypes: [ DisasterVictimRD, DisasterVictimRDAlt ]
+      roleLoadout: [ RoleSurvivalStandard ]
     - type: RandomMetadata
       nameSegments:
       - names_first
@@ -1209,7 +1138,7 @@
   speciesBlacklist:
     - Arachnid
     - Diona
-    # - Dwarf
+    - Dwarf
     # - Human
     - Moth
     - Reptilian
@@ -1234,6 +1163,7 @@
     - type: GhostTakeoverAvailable
     - type: Loadout
       prototypes: [ DisasterVictimCMO, DisasterVictimCMOAlt ]
+      roleLoadout: [ RoleSurvivalStandard ]
     - type: RandomMetadata
       nameSegments:
       - names_first
@@ -1245,7 +1175,7 @@
   speciesBlacklist:
     - Arachnid
     - Diona
-    # - Dwarf
+    - Dwarf
     # - Human
     - Moth
     - Reptilian
@@ -1270,6 +1200,7 @@
     - type: GhostTakeoverAvailable
     - type: Loadout
       prototypes: [ DisasterVictimCaptain, DisasterVictimCaptainAlt ]
+      roleLoadout: [ RoleSurvivalStandard ]
     - type: RandomMetadata
       nameSegments:
       - names_first
@@ -1307,7 +1238,7 @@
   speciesBlacklist:
     - Arachnid
     - Diona
-    # - Dwarf
+    - Dwarf
     # - Human
     - Moth
     - Reptilian
@@ -1335,6 +1266,7 @@
     - type: GhostTakeoverAvailable
     - type: Loadout
       prototypes: [ SyndicateOperativeGearCivilian ]
+      roleLoadout: [ RoleSurvivalStandard ]
     - type: RandomMetadata
       nameSegments:
       - names_first

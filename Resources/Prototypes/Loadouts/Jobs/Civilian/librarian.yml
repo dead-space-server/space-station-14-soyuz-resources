@@ -1,36 +1,20 @@
 # Jumpsuit
 - type: loadout
   id: LibrarianJumpsuit
-  equipment: LibrarianJumpsuit
-
-- type: startingGear
-  id: LibrarianJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitLibrarian
 
 - type: loadout
-  id: LibrarianJumpskirt
-  equipment: LibrarianJumpskirt
-
-- type: startingGear
   id: LibrarianJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtLibrarian
 
 - type: loadout
   id: CuratorJumpsuit
-  equipment: CuratorJumpsuit
-
-- type: startingGear
-  id: CuratorJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitCurator
 
 - type: loadout
-  id: CuratorJumpskirt
-  equipment: CuratorJumpskirt
-
-- type: startingGear
   id: CuratorJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtCurator
@@ -38,36 +22,24 @@
 # Underwear
 - type: loadout
   id: UnderwearBottomBoxersLibrarian
-  equipment: UnderwearBottomBoxersLibrarian
   effects:
   - !type:GroupLoadoutEffect
     proto: MaleUnderwear
-
-- type: startingGear
-  id: UnderwearBottomBoxersLibrarian
   equipment:
     underwearb: ClothingUnderwearBottomBoxersLibrarian
 
 - type: loadout
   id: UnderwearBottomPantiesLibrarian
-  equipment: UnderwearBottomPantiesLibrarian
   effects:
   - !type:GroupLoadoutEffect
     proto: FemaleUnderwear
-
-- type: startingGear
-  id: UnderwearBottomPantiesLibrarian
   equipment:
     underwearb: ClothingUnderwearBottomPantiesLibrarian
 
 - type: loadout
   id: UnderwearTopBraLibrarian
-  equipment: UnderwearTopBraLibrarian
   effects:
   - !type:GroupLoadoutEffect
     proto: FemaleUnderwear
-
-- type: startingGear
-  id: UnderwearTopBraLibrarian
   equipment:
     underweart: ClothingUnderwearTopBraLibrarian

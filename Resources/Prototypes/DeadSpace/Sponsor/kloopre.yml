@@ -3,6 +3,7 @@
   id: ClothingHeadHelmetHardsuitKloopRe
   name: ударопрочный шлем
   description: Устойчивый к давлению и ударостойкий шлем ОПНУ. Создано NanoTrasen.
+  noSpawn: true
   components:
   - type: BreathMask
   - type: Sprite
@@ -26,7 +27,6 @@
   id: ClothingOuterHardsuitKloopRee
   name: ударопрочный скафандр
   description: Легкий, но прочный экзокостюм. Создано NanoTrasen.
-  noSpawn: true
   components:
   - type: Sprite
     sprite: DeadSpace/Sponsor/kloopre/hardsuit.rsi

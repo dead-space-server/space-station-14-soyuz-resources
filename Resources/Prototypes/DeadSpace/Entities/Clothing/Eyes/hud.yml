@@ -35,5 +35,3 @@
     - HighRiskItem
   - type: FlashImmunity
   - type: SolutionScanner
-  - type: StealTarget
-    stealGroup: BestGlassesForCMO

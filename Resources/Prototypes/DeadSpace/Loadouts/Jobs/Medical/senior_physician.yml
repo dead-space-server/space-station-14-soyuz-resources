@@ -1,28 +1,16 @@
 # Head
 - type: loadout
   id: SeniorPhysicianBeret
-  equipment: SeniorPhysicianBeret
-
-- type: startingGear
-  id: SeniorPhysicianBeret
   equipment:
     head: ClothingHeadHatBeretSeniorPhysician
 
 # Jumpsuit
 - type: loadout
   id: SeniorPhysicianJumpsuit
-  equipment: SeniorPhysicianJumpsuit
-
-- type: startingGear
-  id: SeniorPhysicianJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitSeniorPhysician
 
 - type: loadout
-  id: SeniorPhysicianJumpskirt
-  equipment: SeniorPhysicianJumpskirt
-
-- type: startingGear
   id: SeniorPhysicianJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtSeniorPhysician
@@ -30,19 +18,11 @@
 # OuterClothing
 - type: loadout
   id: SeniorPhysicianLabCoat
-  equipment: SeniorPhysicianLabCoat
-
-- type: startingGear
-  id: SeniorPhysicianLabCoat
   equipment:
     outerClothing: ClothingOuterCoatLabSeniorPhysician
 
 # ID
 - type: loadout
-  id: SeniorPhysicianPDA
-  equipment: SeniorPhysicianPDA
-
-- type: startingGear
   id: SeniorPhysicianPDA
   equipment:
     id: SeniorPhysicianPDA
@@ -50,36 +30,24 @@
 # Underwear
 - type: loadout
   id: UnderwearBottomBoxersSeniorPhysician
-  equipment: UnderwearBottomBoxersSeniorPhysician
   effects:
   - !type:GroupLoadoutEffect
     proto: MaleUnderwear
-
-- type: startingGear
-  id: UnderwearBottomBoxersSeniorPhysician
   equipment:
     underwearb: ClothingUnderwearBottomBoxersSeniorPhysician
 
 - type: loadout
   id: UnderwearBottomPantiesSeniorPhysician
-  equipment: UnderwearBottomPantiesSeniorPhysician
   effects:
   - !type:GroupLoadoutEffect
     proto: FemaleUnderwear
-
-- type: startingGear
-  id: UnderwearBottomPantiesSeniorPhysician
   equipment:
     underwearb: ClothingUnderwearBottomPantiesSeniorPhysician
 
 - type: loadout
   id: UnderwearTopBraSeniorPhysician
-  equipment: UnderwearTopBraSeniorPhysician
   effects:
   - !type:GroupLoadoutEffect
     proto: FemaleUnderwear
-
-- type: startingGear
-  id: UnderwearTopBraSeniorPhysician
   equipment:
     underweart: ClothingUnderwearTopBraSeniorPhysician

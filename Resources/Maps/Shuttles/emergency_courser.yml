@@ -19,7 +19,7 @@ entities:
       name: NT Evac Courser
     - type: Transform
       pos: 0.52083397,0.5416665
-      parent: 657
+      parent: invalid
     - type: MapGrid
       chunks:
         -1,-1:
@@ -470,18 +470,6 @@ entities:
     - type: GasTileOverlay
     - type: SpreaderGrid
     - type: GridPathfinding
-  - uid: 657
-    components:
-    - type: MetaData
-      name: emergency_courser
-    - type: Transform
-    - type: Map
-    - type: PhysicsMap
-    - type: GridTree
-    - type: MovedGrids
-    - type: Broadphase
-    - type: OccluderTree
-    - type: LoadedMap
 - proto: AirCanister
   entities:
   - uid: 171

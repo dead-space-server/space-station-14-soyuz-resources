@@ -1,101 +1,186 @@
-- type: entity
-  id: ActionUnitologObeliskSpawn
-  noSpawn: true
+- type: factionIcon
+  id: UnitologyHeadFaction
+  priority: 11
+  showTo:
+    components:
+      - ShowAntagIcons
+      - Unitology
+      - UnitologyEnslaved
+      - UnitologyHead
+  icon:
+    sprite: /Textures/DeadSpace/Interface/Misc/antag_icons.rsi
+    state: UnitologyHead
+
+- type: factionIcon
+  id: UnitologyFaction
+  priority: 11
+  showTo:
+    components:
+      - ShowAntagIcons
+      - Unitology
+      - UnitologyEnslaved
+      - UnitologyHead
+  icon:
+    sprite: /Textures/DeadSpace/Interface/Misc/antag_icons.rsi
+    state: Unitology
+
+- type: factionIcon
+  id: UnitologyEnslavedFaction
+  priority: 11
+  showTo:
+    components:
+      - ShowAntagIcons
+      - Unitology
+      - UnitologyEnslaved
+      - UnitologyHead
+  icon:
+    sprite: /Textures/DeadSpace/Interface/Misc/antag_icons.rsi
+    state: UnitologyEnslaved
+
+- type: startingGear
+  id: TravelingDoctor
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMedicalDoctor
+    shoes: ClothingShoesColorWhite
+    id: MedicalPDA
+    back: ClothingBackpackSatchel
+    ears: ClothingHeadsetService
+    belt: ClothingBeltMedicalFilled
+
+- type: startingGear
+  id: TravelingDoctorUnitology
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMedicalDoctor
+    shoes: ClothingShoesColorWhite
+    id: MedicalPDA
+    back: ClothingBackpackSatchel
+    ears: ClothingHeadsetService
+    belt: ClothingBeltMedicalFilled
+    pocket1: UplinkRadioUnitology
+
+- type: randomHumanoidSettings
+  id: TravelingDoctor
+  parent: EventHumanoid
   components:
-  - type: InstantAction
-    priority: -1
-    icon: DeadSpace/Interface/Actions/obelisk.png
-    event: !type:ObeliskActionEvent
+  - type: GhostRole
+    name: ghost-role-information-traveling-doctor-name
+    description: ghost-role-information-traveling-doctor-description
+    rules: ghost-role-information-nonantagonist-rules
+    raffle:
+      settings: short
+  - type: Loadout
+    prototypes: [ TravelingDoctor ]
+    roleLoadout: [ RoleSurvivalMedical ]
+
+- type: randomHumanoidSettings
+  id: TravelingDoctorUnitology
+  parent: EventHumanoid
+  components:
+  - type: Unitology
+  - type: GhostRole
+    name: ghost-role-information-traveling-doctor-unitolog-name
+    description: ghost-role-information-traveling-doctor-unitolog-description
+    rules: ghost-role-information-antagonist-rules
+    raffle:
+      settings: short
+  - type: Loadout
+    prototypes: [ TravelingDoctorUnitology ]
+    roleLoadout: [ RoleSurvivalSyndicate ]
 
 - type: entity
-  id: ActionUnitologTentacleSpawn
-  noSpawn: true
+  id: RandomHumanoidTravelingDoctor
+  name: роль призрака странствующего врача
   components:
-  - type: InstantAction
-    priority: -1
-    useDelay: 60
-    icon: DeadSpace/Mods/Necromorfs/necrokudzu.rsi/kudzu_33.png
-    event: !type:TileSpawnActionEvent
+  - type: Sprite
+    sprite: Objects/Specific/Chemistry/syringe.rsi
+    state: syringe1
+  - type: RandomHumanoidSpawner
+    settings: TravelingDoctor
 
 - type: entity
-  id: NecroTentacle
-  placement:
-    mode: SnapgridCenter
-    snap:
-      - Wall
+  name: странствующий врач, spawner
+  id: TravelingDoctorSpawner
+  parent: MarkerBase
   components:
-    - type: TimedDespawn
-      lifetime: 45
-    - type: MeleeSound
-      soundGroups:
-        Brute:
-          path:
-            "/Audio/Weapons/slash.ogg"
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    layers:
+    - state: green
+    - state: doctor
+  - type: RandomSpawner
+    prototypes:
+    - RandomHumanoidTravelingDoctor
+
+- type: entity
+  id: RandomHumanoidTravelingDoctorUnitology
+  name: роль призрака странствующего врача
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Chemistry/syringe.rsi
+    state: syringe1
+  - type: RandomHumanoidSpawner
+    settings: TravelingDoctorUnitology
+
+- type: entity
+  name: странствующий врач юнитолог, spawner
+  id: TravelingDoctorSpawnerUnitology
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    layers:
+    - state: green
+    - state: doctor
+  - type: RandomSpawner
+    prototypes:
+    - RandomHumanoidTravelingDoctorUnitology
+
+- type: startingGear
+  id: TravelingChefUnitology
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitChef
+    shoes: ClothingShoesColorWhite
+    id: ChefPDA
+    back: ClothingBackpackSatchel
+    ears: ClothingHeadsetService
+    belt: ClothingBeltChef
+    pocket1: UplinkRadioUnitology
+
+- type: randomHumanoidSettings
+  id: TravelingChefUnitology
+  parent: EventHumanoid
+  components:
+  - type: Unitology
+  - type: GhostRole
+    name: ghost-role-information-traveling-chef-unitolog-name
+    description: ghost-role-information-traveling-chef-unitolog-description
+    rules: ghost-role-information-antagonist-rules
+    raffle:
+      settings: short
+  - type: Loadout
+    prototypes: [ TravelingChefUnitology ]
+    roleLoadout: [ RoleSurvivalSyndicate ]
+
+- type: entity
+  id: RandomHumanoidTravelingChefUnitology
+  name: повар юнитолог, ghost role
+  components:
     - type: Sprite
-      sprite: Objects/Misc/fleshkudzu.rsi
-      state: kudzu_33
-      drawdepth: Overdoors
-    - type: Appearance
-    - type: KudzuVisuals
-    - type: Clickable
-    - type: Transform
-      anchored: true
-    - type: Physics
-    - type: Fixtures
-      fixtures:
-        fix1:
-          hard: false
-          density: 7
-          shape:
-            !type:PhysShapeAabb
-            bounds: "-0.5,-0.5,0.5,0.5"
-          layer:
-          - MidImpassable
-    - type: Damageable
-    - type: Destructible
-      thresholds:
-      - trigger:
-          !type:DamageTrigger
-          damage: 60
-        behaviors:
-        - !type:DoActsBehavior
-          acts: [ "Destruction" ]
-    - type: DamageContacts
-      damage:
-        types:
-          Slash: 6
-          Piercing: 2
-      ignoreWhitelist:
-        tags:
-        - Flesh
-    - type: Temperature
-      heatDamage:
-        types:
-          Heat: 10
-      coldDamage:
-        types:
-          Cold: 5 #per second, scales with temperature & other constants
-    - type: Barotrauma
-      damage:
-        types:
-          Blunt: 0.10 #per second, scales with pressure and other constants.
-    - type: Flammable
-      fireSpread: true
-      damage:
-       types:
-         Heat: 1
-    - type: AtmosExposed
-    - type: ActiveEdgeSpreader
-    - type: SpeedModifierContacts
-      walkSpeedModifier: 0.3
-      sprintSpeedModifier: 0.3
-      ignoreWhitelist:
-        tags:
-        - Flesh
-    - type: Respirator
-      damage:
-        types:
-          Asphyxiation: 0.25
-      damageRecovery:
-        types:
-          Asphyxiation: -0.25
+      sprite: Objects/Tools/appraisal-tool.rsi
+      state: icon
+    - type: RandomHumanoidSpawner
+      settings: TravelingChefUnitology
+
+- type: entity
+  name: повар юнитолог, spawner
+  id: TravelingChefSpawnerUnitology
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: red
+        - sprite: Objects/Weapons/Melee/kitchen_knife.rsi
+          state: icon
+    - type: RandomSpawner
+      prototypes:
+      - RandomHumanoidTravelingChefUnitology

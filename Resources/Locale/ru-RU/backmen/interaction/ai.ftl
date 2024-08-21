@@ -1,2 +1,2 @@
-aienemy-examine = [color=red] Был указан { $name }, как враг ИИ![/color]
-sai-enemy-verb = Отменить как врага ИИ
+aienemy-examine = [color=red]ИИ { $name } указал это существо своим врагом![/color]
+sai-enemy-verb = Отметить как врага ИИ

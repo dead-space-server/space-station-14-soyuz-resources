@@ -1,36 +1,24 @@
 # Underwear
 - type: loadout
   id: UnderwearBottomBoxersZookeeper
-  equipment: UnderwearBottomBoxersZookeeper
   effects:
   - !type:GroupLoadoutEffect
     proto: MaleUnderwear
-
-- type: startingGear
-  id: UnderwearBottomBoxersZookeeper
   equipment:
     underwearb: ClothingUnderwearBottomBoxersZoo
 
 - type: loadout
   id: UnderwearBottomPantiesZookeeper
-  equipment: UnderwearBottomPantiesZookeeper
   effects:
   - !type:GroupLoadoutEffect
     proto: FemaleUnderwear
-
-- type: startingGear
-  id: UnderwearBottomPantiesZookeeper
   equipment:
     underwearb: ClothingUnderwearBottomPantiesZoo
 
 - type: loadout
   id: UnderwearTopBraZookeeper
-  equipment: UnderwearTopBraZookeeper
   effects:
   - !type:GroupLoadoutEffect
     proto: FemaleUnderwear
-
-- type: startingGear
-  id: UnderwearTopBraZookeeper
   equipment:
     underweart: ClothingUnderwearTopBraZoo

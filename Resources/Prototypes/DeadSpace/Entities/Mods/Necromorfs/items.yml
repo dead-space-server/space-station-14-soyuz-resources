@@ -51,7 +51,7 @@
     state: ano01
   product: CrateObeliskStoper
   cost: 10000
-  category: cargoproduct-category-name-science
+  category: Science
   group: market
 
 - type: cargoProduct
@@ -61,7 +61,7 @@
     state: medipen
   product: CrateZetaOneMedipen
   cost: 2000
-  category: cargoproduct-category-name-medical
+  category: Medical
   group: market
 
 - type: entity
@@ -220,15 +220,49 @@
 
 - type: entity
   parent: BaseItem
-  id: UnitologyBible
-  name: библия юнитологов
-  description: От неё веет смертью
-  suffix: Филлер
+  id: ObeliskSplinter
+  name: Осколок обелиска
   components:
   - type: Sprite
-    sprite: DeadSpace/Items/necrobible.rsi
+    sprite: DeadSpace/Mods/Necromorfs/splinter.rsi
     layers:
-    - state: icon
+    - state: splinter
+  - type: Damageable
+  - type: Physics
+    bodyType: Dynamic
+  - type: CollisionWake
+    enabled: false
+  - type: InteractionOutline
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.25,0.25,0.25"
+        density: 20
+        mask:
+        - ItemMask
+        layer:
+        - Opaque
+        restitution: 0.3
+        friction: 0.2
   - type: Item
     size: Normal
-    sprite: DeadSpace/Items/necrobible.rsi
+    sprite: DeadSpace/Mods/Necromorfs/splinter.rsi
+    heldPrefix: splinter
+  - type: Necroobelisk
+    sanityDamage: 0.5
+    warn: false
+    active: false
+    canConvergence: false
+    cudzu: false
+    tile: false
+
+- type: entity
+  id: CrateObeliskSplinter
+  parent: CrateGenericSteel
+  components:
+  - type: StorageFill
+    contents:
+      - id: ObeliskStoper
+      - id: ObeliskSplinter

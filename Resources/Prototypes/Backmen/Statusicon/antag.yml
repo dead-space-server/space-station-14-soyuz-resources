@@ -1,4 +1,4 @@
-- type: statusIcon
+- type: factionIcon
   id: BlobFaction
   priority: 10
   showTo:

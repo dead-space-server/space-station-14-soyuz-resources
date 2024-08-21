@@ -4,20 +4,30 @@
   sponsorOnly: true
 
 - type: sponsorLoadout
-  id: 3eilado1Part2
-  entity: ClothingBackpackSecond3eilado
+  id: 3eiladoBelt
+  entity: ClothingBelt3eiladoFilled
   sponsorOnly: true
 
 # Backpack
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpack3eilado
-  name: пурпурно-синий блюспейс рюкзак
-  description: Рюкзак использующий технологию блюспейса для увелечения своего максимального объёма. Окрашен в пурпурно-синий цвет. Принадлежат члену экипажа, находящемуся под покровительством спонсорской организации.
+  name: карманный демон Ainnetel
+  description: Провористый карманный демон, выглядит не особо дружелюбно. На его рожках виднеется гравировка Ван'Астрея.
   noSpawn: true
   components:
   - type: Sprite
     sprite: DeadSpace/Sponsor/3eilado/backpack.rsi
+    scale: "0.5, 0.5"
+  - type: Clothing
+    sprite: DeadSpace/Sponsor/3eilado/backpack.rsi
+    clothingVisuals:
+      back: 
+      - state: equipped-BACKPACK
+        scale: 0.5, 0.5
+      - state: eyes
+        scale: 0.5, 0.5
+        shader: unshaded
   - type: Storage
     maxItemSize: Huge
     grid:
@@ -25,16 +35,12 @@
   - type: StorageFill
     contents:
       - id: ClothingNeckCloak3eilado
-      - id: ClothingHandsGloves3eilado
-      - id: ClothingHeadHat3eilado
-      - id: ClothingUniformJumpsuit3eilado
       - id: ClothingShoesBootsMag3eilado
-      - id: ClothingUnderSocks3eilado
-      - id: ClothingOuterCoatUSSPOvercoatBlack
-      - id: ClothingShoesUSSPBlack
-      - id: ClothingUniformJumpsuitUSSPBlack
-      - id: ClothingHandsGlovesLeatherUSSPBlack
-      - id: ClothingHeadHatCapUSSPBlack
+      - id: ClothingOuterCoatUSSPOvercoatBlack3eilado
+      - id: ClothingShoesUSSPBlack3eilado
+      - id: ClothingUniformJumpsuitUSSPBlack3eilado
+      - id: ClothingHandsGlovesLeatherUSSPBlack3eilado
+      - id: ClothingHeadHatCapUSSPBlack3eilado
       - id: JetpackVoidFilled
       - id: DominatorMedkitAdvanced
       - id: ADTtelescopicBaton
@@ -45,23 +51,17 @@
       - id: ClothingEyesGlassesMeson3eilado
       - id: PlushieMoth3eilado
       - id: PDA3eilado
-      
-- type: entity
-  parent: CrateGenericSteel
-  id: ClothingBackpackSecond3eilado
-  noSpawn: true
-  components:
-  - type: StorageFill
-    contents:
-      - id: ClothingBelt3eiladoFilled
       - id: ClothingOuterHardsuit3eilado
+      - id: GoldenPlunger3eilado
+      - id: ClothingNeckCloakWings3eilado
+      - id: ToyBall3eilado
 
 # Belt
 - type: entity
   parent: ClothingBeltChiefEngineer
   id: ClothingBelt3eiladoFilled
-  name: пурпурно-синий украшенный пояс
-  description: Вместительный пояс окрашенный в пурпурно-синий цвет.
+  name: кожаный пояс
+  description: Вместительный кожаный пояс.
   noSpawn: true
   components:
   - type: Sprite
@@ -107,34 +107,37 @@
       map: ["foldedLayer"]
       visible: false
 
-# Gloves
+# CloakWings
 - type: entity
-  parent: ClothingHandsGlovesCombat
-  id: ClothingHandsGloves3eilado
-  name: белые боевые перчатки
-  description: Принадлежат члену экипажа, находящемуся под покровительством спонсорской организации. Изолированны.
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakWings3eilado
+  name: Небесные крылья
+  description: Лёгкие крылья. Перья кажутся очень нежными. Создатель этих крыльев оставил на основании свою подпись "Jeleshka".
   noSpawn: true
   components:
   - type: Sprite
-    sprite: DeadSpace/Sponsor/vjlados/gloves.rsi
+    sprite: DeadSpace/Sponsor/3eilado/wings.rsi
   - type: Clothing
-    sprite: DeadSpace/Sponsor/vjlados/gloves.rsi
-  - type: Fiber
-    fiberMaterial: fibers-insulative
-    fiberColor: fibers-white
+    sprite: DeadSpace/Sponsor/3eilado/wings.rsi
 
 # Hardsuit
 - type: entity
   parent: ClothingOuterHardsuitAtmos
   id: ClothingOuterHardsuit3eilado
-  name: скафандр Warden
-  description: Собственность Ван'Астрея. От этого скафандра не оторвать глаз. Принадлежит члену экипажа, находящемуся под покровительством тайной организации «Зодиак». Характеристики идентичны скафандру атмос-техника.
+  name: скафандр "Harbringer Of Death"
+  description: Потрёпанная мантия. Кажется под ней что-то живое. Рядом с этим неприятно находится. На поясе виднеется надпись "Собственность Ван'Астрея".
   noSpawn: true
   components:
   - type: Sprite
     sprite: DeadSpace/Sponsor/3eilado/hardsuit.rsi
   - type: Clothing
     sprite: DeadSpace/Sponsor/3eilado/hardsuit.rsi
+    clothingVisuals:
+      outerClothing:
+      - state: equipped-OUTERCLOTHING
+      - state: mist
+      - state: dots_unshaded
+        shader: unshaded
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuit3eilado
   - type: Item
@@ -143,52 +146,32 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuit3eilado
+  name: Шлем "Harbringer Of Death"
+  description: Капюшон потрёпанной мантии. На внутренней стороне нанесена подпись "Jeleshka".
   noSpawn: true
-  name: шлем скафандра Warden
-  description: Шлем изолирующий владельца от страшного вакуума снаружи. На внутренней стороне шлема нанесена гравировка "ahahahahha & Jeleshka".
   components:
   - type: Sprite
     sprite: DeadSpace/Sponsor/3eilado/helmet.rsi
   - type: Clothing
     sprite: DeadSpace/Sponsor/3eilado/helmet.rsi
   - type: PointLight
-    color: "#B1A0F7"
+    color: "#ff0000"
   - type: PressureProtection
     highPressureMultiplier: 0.08
     lowPressureMultiplier: 1000
-
-# Head
-- type: entity
-  parent: ClothingHeadBase
-  id: ClothingHeadHat3eilado
-  name: бантиковая лента
-  description: Принадлежит члену экипажа, находящемуся под покровительством спонсорской организации.
-  noSpawn: true
-  components:
-  - type: Sprite
-    sprite: DeadSpace/Sponsor/vjlados/head.rsi
-  - type: Clothing
-    sprite: DeadSpace/Sponsor/vjlados/head.rsi
-
-# Jumpsuit
-- type: entity
-  parent: ClothingUniformBase
-  id: ClothingUniformJumpsuit3eilado
-  name: костюм с морским воротником
-  description: Принадлежит члену экипажа, находящемуся под покровительством спонсорской организации.
-  noSpawn: true
-  components:
-  - type: Sprite
-    sprite: DeadSpace/Sponsor/vjlados/jumpsuit.rsi
-  - type: Clothing
-    sprite: DeadSpace/Sponsor/vjlados/jumpsuit.rsi
+  - type: Appearance
+  - type: ToggleableLightVisuals
+    clothingVisuals:
+      head:
+      - state: cross
+        shader: unshaded
 
 # Magboots
 - type: entity
   parent: ClothingShoesBootsMag
   id: ClothingShoesBootsMag3eilado
-  name: пурпурно-синие украшенные магнитные ботинки
-  description: Магнитные ботинки пурпурно-синего цвета.
+  name: серые украшенные магнитные ботинки
+  description: Магнитные ботинки серого цвета.
   noSpawn: true
   components:
     - type: Sprite
@@ -202,17 +185,7 @@
       walkModifier: 1
       sprintModifier: 1
 
-# Socks
-- type: entity
-  parent: ClothingUnderwearSocksBase
-  id: ClothingUnderSocks3eilado
-  name: полосатые чулки
-  description: Принадлежат члену экипажа, находящемуся под покровительством спонсорской организации.
-  noSpawn: true
-  components:
-  - type: Sprite
-    sprite: DeadSpace/Sponsor/vjlados/socks.rsi
-
+# Law
 - type: entity
   parent: PaperPrintedCentcomm
   id: PaperLaw3eilado
@@ -233,7 +206,7 @@
 - type: entity
   parent: WelderExperimental
   id: WelderExperimental3eilado
-  name: пурпурно-синий экспериментальный сварочный аппарат
+  name: серый экспериментальный сварочный аппарат
   description: Принадлежит члену экипажа, находящемуся под покровительством спонсорской организации.
   noSpawn: true
   components:
@@ -243,7 +216,7 @@
     sprite: DeadSpace/Sponsor/3eilado/welder_experimental.rsi
 
 - type: entity
-  name: пурпурно-синие челюсти жизни
+  name: серые челюсти жизни
   description: Принадлежит члену экипажа, находящемуся под покровительством спонсорской организации.
   parent: SyndicateJawsOfLife
   id: SyndicateJawsOfLife3eilado
@@ -281,7 +254,7 @@
 - type: entity
   parent: PowerDrill
   id: PowerDrill3eilado
-  name: пурпурно-синяя дрель
+  name: серая дрель
   description: Принадлежит члену экипажа, находящемуся под покровительством спонсорской организации.
   noSpawn: true
   components:
@@ -311,39 +284,151 @@
         changeSound:
           path: /Audio/Items/change_drill.ogg
 
+# Ball
+- type: entity
+  parent: BaseItem
+  id: ToyBall3eilado
+  name: кроваво-красная сфера
+  description: Сгусток странной энергии неизвестного происхождения.
+  noSpawn: true
+  components:
+  - type: EnergySword
+    colorOptions:
+      - Red
+  - type: ItemToggle
+    soundActivate:
+      path: /Audio/Weapons/ebladeon.ogg
+    soundDeactivate:
+      path: /Audio/Weapons/ebladeoff.ogg
+  - type: ItemToggleActiveSound
+    activeSound:
+      path: /Audio/Weapons/ebladehum.ogg
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/3eilado/ball.rsi
+    layers:
+      - state: e_sword
+        shader: unshaded
+      - state: e_sword_blade
+        visible: false
+        shader: unshaded
+  - type: Item
+    size: Small
+    sprite: DeadSpace/Sponsor/3eilado/ball.rsi
+  - type: PointLight
+    enabled: false
+    radius: 2
+    energy: 2
+    color: red
+    netsync: false
+  - type: Appearance
+  - type: ToggleableLightVisuals
+    spriteLayer: blade
+    inhandVisuals:
+      left:
+        - state: inhand-left-blade
+          shader: unshaded
+      right:
+        - state: inhand-right-blade
+          shader: unshaded
+  - type: ItemToggleMeleeWeapon
+    activatedSoundOnHit:
+      path: /Audio/Weapons/eblade1.ogg
+      params:
+        variation: 0.250
+    activatedSoundOnHitNoDamage:
+      path: /Audio/Weapons/eblade1.ogg
+      params:
+        variation: 0.250
+    activatedSoundOnSwing:
+      path: /Audio/Weapons/eblademiss.ogg
+      params:
+        variation: 0.125
+  - type: UseDelay
+    delay: 1.0
+
+
 # E_Scythe
 - type: entity
   parent: ToySword
   id: ToyScythe3eilado
-  name: энергетическая коса Жнеца
-  description: Очень громкая коса с лучом чистой, концентрированной плазмы. На удивление совершенно безобидна.
+  name: игручешная кроваво-красная коса
+  description: Удобная технологичная коса, будь та настоящей, ей было бы весело наказывать врагов.
   noSpawn: true
   components:
+  - type: EnergySword
+    colorOptions:
+      - Red
+  - type: ItemToggle
+    soundActivate:
+      path: /Audio/Weapons/ebladeon.ogg
+    soundDeactivate:
+      path: /Audio/Weapons/ebladeoff.ogg
+  - type: ItemToggleActiveSound
+    activeSound:
+      path: /Audio/Weapons/ebladehum.ogg
   - type: Sprite
     sprite: DeadSpace/Sponsor/3eilado/e_scythe.rsi
     layers:
       - state: e_sword
+        shader: unshaded
       - state: e_sword_blade
-        color: "#BA55D3FF"
+        color: "#FFFFFF"
         visible: false
         shader: unshaded
         map: [ "blade" ]
   - type: Item
     size: Normal
     sprite: DeadSpace/Sponsor/3eilado/e_scythe.rsi
+  - type: PointLight
+    enabled: false
+    radius: 2
+    energy: 2
+    color: red
+    netsync: false
+  - type: Appearance
+  - type: ToggleableLightVisuals
+    spriteLayer: blade
+    inhandVisuals:
+      left:
+        - state: inhand-left-blade
+          shader: unshaded
+      right:
+        - state: inhand-right-blade
+          shader: unshaded
+  - type: ItemToggleMeleeWeapon
+    activatedSoundOnHit:
+      path: /Audio/Weapons/eblade1.ogg
+      params:
+        variation: 0.250
+    activatedSoundOnHitNoDamage:
+      path: /Audio/Weapons/eblade1.ogg
+      params:
+        variation: 0.250
+    activatedSoundOnSwing:
+      path: /Audio/Weapons/eblademiss.ogg
+      params:
+        variation: 0.125
+  - type: UseDelay
+    delay: 1.0
 
 #glasses
 - type: entity
   parent: ClothingEyesBase
   id: ClothingEyesGlassesMeson3eilado
-  name: искрящие очки
-  description: Гравировка говорит о том что это собственность Ван'Астрея.
+  name: технологические очки "Антихрист"
+  description: Ноебычные кроваво-красные очки. У них странная материя, как они работают? в свечении очков едва виднеется надпись "Ван'Астрея".
   noSpawn: true
   components:
   - type: Sprite
     sprite: DeadSpace/Sponsor/3eilado/engi_glasses.rsi
+    layers:
+    - state: icon
+      shader: unshaded
   - type: Clothing
     sprite: DeadSpace/Sponsor/3eilado/engi_glasses.rsi
+    layers:
+    - state: equipped-EYES
+      shader: unshaded
   - type: EyeProtection
 
 #Plushie
@@ -372,10 +457,69 @@
 - type: entity
   parent: BaseMedicalPDA
   id: PDA3eilado
-  name: пурпурно-синий КПК
+  name: странный КПК модификации "Антихрист"
   description: Принадлежит члену экипажа, находящемуся под покровительством спонсорской организации.
+  noSpawn: true
   components:
   - type: Icon
-    sprite: DeadSpace/Sponsor/3eilado/pda.rsi
+    sprite: DeadSpace/Sponsor/3eilado/pda.rsi 
   - type: Sprite
     sprite: DeadSpace/Sponsor/3eilado/pda.rsi
+  
+# GoldenPlunger
+- type: entity
+  parent: GoldenPlunger
+  id: GoldenPlunger3eilado
+  name: золотой вантуз
+  description: Золотой вантуз, украшенный драгоценными камнями. Подарен одним из Адмиралов Центрального Командования. К тому же, это отличный головной убор.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/3eilado/golden_plunger.rsi
+    state: plunger
+  - type: Item
+    sprite: DeadSpace/Sponsor/3eilado/golden_plunger.rsi
+    heldPrefix: plunger
+  - type: Clothing
+    sprite: DeadSpace/Sponsor/3eilado/golden_plunger.rsi
+
+# USSP stuff but without USSSP
+- type: entity
+  parent: ClothingHandsGlovesLeatherUSSPBlack
+  id: ClothingHandsGlovesLeatherUSSPBlack3eilado
+  name: cтарые кожаные перчатки
+  description: Довольно старые кожаные перчатки.
+  noSpawn: true
+
+- type: entity
+  parent: ClothingShoesUSSPBlack
+  id: ClothingShoesUSSPBlack3eilado
+  name: cтарые ботинки
+  description: Довольно старые ботинки.
+  noSpawn: true
+
+- type: entity
+  parent: ClothingUniformJumpsuitUSSPBlack
+  id: ClothingUniformJumpsuitUSSPBlack3eilado
+  name: cтарая униформа
+  description: Довольно старая униформа.
+  noSpawn: true
+
+- type: entity
+  parent: ClothingHeadHatCapUSSPBlack
+  id: ClothingHeadHatCapUSSPBlack3eilado
+  name: Старая шляпа
+  description: Довольно старая шляпа.
+  noSpawn: true
+
+- type: entity
+  parent: ClothingOuterCoatUSSPOvercoatBlack
+  id: ClothingOuterCoatUSSPOvercoatBlack3eilado
+  name: старое пальто
+  description: Довольно старое пальто. На пальто намертво прикреплён значок юридического отдела.
+  noSpawn: true
+  components:
+    - type: Sprite
+      sprite: DeadSpace/Sponsor/3eilado/coat.rsi
+    - type: Clothing
+      sprite: DeadSpace/Sponsor/3eilado/coat.rsi

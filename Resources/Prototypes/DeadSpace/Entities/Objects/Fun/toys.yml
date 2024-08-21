@@ -165,6 +165,16 @@
     state: plushie_kel
 
 - type: entity
+  parent: BasePlushie
+  id: PlushieCap
+  name: плюшевый капитан
+  description: Мягкая игрушка в форме капитана, на шее висит мантия горничной, к чему бы это? Напоминает одну персону с сектора "Фобос".
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Items/Toys/toys.rsi
+    state: plushie_cap
+
+- type: entity
   id: MagazineTommyCapGun
   name: магазин для игрушечного томми гана
   parent: BaseItem

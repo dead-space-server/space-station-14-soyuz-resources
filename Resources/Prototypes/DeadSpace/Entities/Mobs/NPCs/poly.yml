@@ -8,8 +8,8 @@
     stealGroup: AnimalPoly
   - type: Advertise
     pack: ParrotPoly
-    minimumWait: 45
-    maximumWait: 160
+    minimumWait: 30
+    maximumWait: 180
   - type: TTS
     voice: Gyro
 

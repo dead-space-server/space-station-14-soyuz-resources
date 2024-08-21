@@ -1,27 +1,15 @@
 # Jumpsuit
 - type: loadout
   id: AtmosphericTechnicianJumpsuit
-  equipment: AtmosphericTechnicianJumpsuit
-
-- type: startingGear
-  id: AtmosphericTechnicianJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitAtmos
 
 - type: loadout
   id: AtmosphericTechnicianJumpskirt
-  equipment: AtmosphericTechnicianJumpskirt
-
-- type: startingGear
-  id: AtmosphericTechnicianJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtAtmos
 
 - type: loadout
-  id: AtmosphericTechnicianJumpsuitCasual
-  equipment: AtmosphericTechnicianJumpsuitCasual
-
-- type: startingGear
   id: AtmosphericTechnicianJumpsuitCasual
   equipment:
     jumpsuit: ClothingUniformJumpsuitAtmosCasual
@@ -29,27 +17,15 @@
 # Back
 - type: loadout
   id: AtmosphericTechnicianBackpack
-  equipment: AtmosphericTechnicianBackpack
-
-- type: startingGear
-  id: AtmosphericTechnicianBackpack
   equipment:
     back: ClothingBackpackAtmospherics
 
 - type: loadout
   id: AtmosphericTechnicianSatchel
-  equipment: AtmosphericTechnicianSatchel
-
-- type: startingGear
-  id: AtmosphericTechnicianSatchel
   equipment:
     back: ClothingBackpackSatchelAtmospherics
 
 - type: loadout
-  id: AtmosphericTechnicianDuffel
-  equipment: AtmosphericTechnicianDuffel
-
-- type: startingGear
   id: AtmosphericTechnicianDuffel
   equipment:
     back: ClothingBackpackDuffelAtmospherics
@@ -57,19 +33,16 @@
 # OuterClothing
 - type: loadout
   id: AtmosphericTechnicianWintercoat
-  equipment: AtmosphericTechnicianWintercoat
-
-- type: startingGear
-  id: AtmosphericTechnicianWintercoat
   equipment:
     outerClothing: ClothingOuterWinterAtmos
 
+- type: loadout
+  id: AtmosphericTechnicianCoatWorking
+  equipment:
+    outerClothing: ClothingOuterCoatAtmosWorking
+
 # Shoes
 - type: loadout
-  id: WhiteShoes
-  equipment: WhiteShoes
-
-- type: startingGear
   id: WhiteShoes
   equipment:
     shoes: ClothingShoesColorWhite
@@ -77,36 +50,24 @@
 # Underwear
 - type: loadout
   id: UnderwearBottomBoxersAtmosphericTechnician
-  equipment: UnderwearBottomBoxersAtmosphericTechnician
   effects:
   - !type:GroupLoadoutEffect
     proto: MaleUnderwear
-
-- type: startingGear
-  id: UnderwearBottomBoxersAtmosphericTechnician
   equipment:
     underwearb: ClothingUnderwearBottomBoxersAtmosphericTechnician
 
 - type: loadout
   id: UnderwearBottomPantiesAtmosphericTechnician
-  equipment: UnderwearBottomPantiesAtmosphericTechnician
   effects:
   - !type:GroupLoadoutEffect
     proto: FemaleUnderwear
-
-- type: startingGear
-  id: UnderwearBottomPantiesAtmosphericTechnician
   equipment:
     underwearb: ClothingUnderwearBottomPantiesAtmosphericTechnician
 
 - type: loadout
   id: UnderwearTopBraAtmosphericTechnician
-  equipment: UnderwearTopBraAtmosphericTechnician
   effects:
   - !type:GroupLoadoutEffect
     proto: FemaleUnderwear
-
-- type: startingGear
-  id: UnderwearTopBraAtmosphericTechnician
   equipment:
     underweart: ClothingUnderwearTopBraAtmosphericTechnician

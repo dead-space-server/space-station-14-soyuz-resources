@@ -119,17 +119,14 @@ ghost-role-information-skeleton-pirate-name = Скелет-пират
 ghost-role-information-skeleton-pirate-description = Устройте хаос и разграбьте станцию в поисках сокровищ.
 ghost-role-information-skeleton-biker-name = Скелет-байкер
 ghost-role-information-skeleton-biker-description = Колесите на своём прекрасном байке.
-ghost-role-information-onestar-mecha-name = мех Onestar
-ghost-role-information-onestar-mecha-description = Вы - экспериментальный мех, созданный неизвестно кем. Всё, что вы знаете, это что у вас есть оружие, а поблизости обнаружены движущиеся мясные мишени...
 ghost-role-information-closet-skeleton-name = Скелет из шкафа
 ghost-role-information-closet-skeleton-description = Вы, похоже, один из старейших сотрудников станции! Это ваш шанс вернуться в раунд.
 ghost-role-information-closet-skeleton-rules = Вы НЕ антагонист неизвестно как попавший на станцию. Только вы вершите свою судьбу.
 ghost-role-information-remilia-name = Ремилия, фамильяр священника
 ghost-role-information-remilia-description = Слушайтесь и повинуйтесь священнику. Ешьте фрукты. Громко кричите людям в уши и списывайте это на эхолокацию.
 ghost-role-information-cerberus-name = Цербер, злой фамильяр
-ghost-role-information-cerberus-description = Слушайте своего хозяина. Сейте хаос.
-ghost-role-information-cerberus-rules = Вы разумная, демоническая собака. Старайтесь помогать священнику и любому из верных ему прихожан. Как антагонист, в остальном вы вольны делать что угодно.
-ghost-role-information-ert-leader-name = СОБР Лидер
+ghost-role-information-cerberus-description = Слушайте своего хозяина.
+ghost-role-information-ert-leader-name = ОБР Лидер
 ghost-role-information-ert-leader-description = Руководите командой специалистов для решения проблем станции.
 ghost-role-information-ert-janitor-name = СОБР Уборщик
 ghost-role-information-ert-janitor-description = Оказывайте содействие в попытках навести чистоту для решения проблем станции.
@@ -173,6 +170,15 @@ ghost-role-information-space-ninja-rules = Вы элитный наёмник к
 ghost-role-information-syndicate-reinforcement-name = Агент Синдиката
 ghost-role-information-syndicate-reinforcement-description = Кому-то нужно подкрепление. Вы первый, кого Синдикат смог найти и послать на помощь.
 ghost-role-information-syndicate-reinforcement-rules = Вы [color=red][bold]Командный антагонист[/bold][/color], в команде с агентом, который вас призвал.
+ghost-role-information-syndicate-reinforcement-medic-name = Медик Синдиката
+ghost-role-information-syndicate-reinforcement-medic-description = Кому-то нужно подкрепление. Ваша задача - сохранить жизнь вызвавшему вас агенту.
+ghost-role-information-syndicate-reinforcement-spy-name = Шпион Синдиката
+ghost-role-information-syndicate-reinforcement-spy-description = Кому-то нужно подкрепление. Ваша специализация - шпионаж, постарайтесь не быть обнаруженными.
+ghost-role-information-syndicate-reinforcement-thief-name = Вор Синдиката
+ghost-role-information-syndicate-reinforcement-thief-description = Кому-то нужно подкрепление. Ваша задача - проникнуть и забрать что-то ценное для своего агента.
+ghost-role-information-nukeop-reinforcement-name = Ядерный оперативник
+ghost-role-information-nukeop-reinforcement-description = Ядерному оперативнику нужно подкрепление. Вы, резервный агент, поможете им.
+ghost-role-information-nukeop-reinforcement-rules = Вы [color=red][bold]Командный антагонист[/bold][/color], в команде с ядерным оперативником, который вас призвал.
 ghost-role-information-syndicate-monkey-reinforcement-name = Агент Синдиката-обезьяна
 ghost-role-information-syndicate-monkey-reinforcement-description = Кому-то нужно подкрепление. Вы, специально обученная обезьяна, поможете им.
 ghost-role-information-syndicate-monkey-reinforcement-rules = Вы [color=red][bold]Командный антагонист[/bold][/color], в команде с агентом, который вас призвал.

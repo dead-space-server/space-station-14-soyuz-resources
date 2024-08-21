@@ -1,39 +1,22 @@
 # Head
 - type: loadout
   id: ScientificBeret
-  equipment: ScientificBeret
-
-- type: startingGear
-  id: ScientificBeret
   equipment:
     head: ClothingHeadHatBeretRND
 
 # Jumpsuit
 - type: loadout
   id: SeniorResearcherJumpsuit
-  equipment: SeniorResearcherJumpsuit
-
-- type: startingGear
-  id: SeniorResearcherJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitSeniorResearcher
 
 - type: loadout
   id: SeniorResearcherJumpskirt
-  equipment: SeniorResearcherJumpskirt
-
-- type: startingGear
-  id: SeniorResearcherJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtSeniorResearcher
 
-
 # OuterClothing
 - type: loadout
-  id: SeniorResearcherLabCoat
-  equipment: SeniorResearcherLabCoat
-
-- type: startingGear
   id: SeniorResearcherLabCoat
   equipment:
     outerClothing: ClothingOuterCoatLabSeniorResearcher
@@ -41,46 +24,30 @@
 # ID
 - type: loadout
   id: SeniorResearcherPDA
-  equipment: SeniorResearcherPDA
-
-- type: startingGear
-  id: SeniorResearcherPDA
   equipment:
     id: SeniorResearcherPDA
 
 # Underwear
 - type: loadout
   id: UnderwearBottomBoxersSeniorResearcher
-  equipment: UnderwearBottomBoxersSeniorResearcher
   effects:
   - !type:GroupLoadoutEffect
     proto: MaleUnderwear
-
-- type: startingGear
-  id: UnderwearBottomBoxersSeniorResearcher
   equipment:
     underwearb: ClothingUnderwearBottomBoxersSeniorResearcher
 
 - type: loadout
   id: UnderwearBottomPantiesSeniorResearcher
-  equipment: UnderwearBottomPantiesSeniorResearcher
   effects:
   - !type:GroupLoadoutEffect
     proto: FemaleUnderwear
-
-- type: startingGear
-  id: UnderwearBottomPantiesSeniorResearcher
   equipment:
     underwearb: ClothingUnderwearBottomPantiesSeniorResearcher
 
 - type: loadout
   id: UnderwearTopBraSeniorResearcher
-  equipment: UnderwearTopBraSeniorResearcher
   effects:
   - !type:GroupLoadoutEffect
     proto: FemaleUnderwear
-
-- type: startingGear
-  id: UnderwearTopBraSeniorResearcher
   equipment:
     underweart: ClothingUnderwearTopBraSeniorResearcher

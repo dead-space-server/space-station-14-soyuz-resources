@@ -8,3 +8,4 @@ department-Science = Научно-исследовательский отдел
 department-Specific = На определённых станциях
 department-Law = Юридический отдел
 department-Silicons = Синтетики
+department-Typan = ННКСС Тайпан

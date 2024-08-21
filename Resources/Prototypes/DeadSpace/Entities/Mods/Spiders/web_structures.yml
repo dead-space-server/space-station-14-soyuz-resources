@@ -138,3 +138,33 @@
   - type: Construction
     graph: WebStructures
     node: wall
+
+- type: entity
+  name: паучий столб притязаний
+  parent: BaseStructure
+  id: SpiderTomb
+  components:
+  - type: Tag
+    tags:
+    - Wall
+  - type: Physics
+    bodyType: Static
+  - type: Sprite
+    noRot: true
+    sprite: DeadSpace/Mods/Spiders/egg.rsi
+    layers:
+    - state: tomb
+      map: [ "enum.DamageStateVisualLayers.Base" ]
+  - type: Damageable
+    damageContainer: Biological
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 500
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+  - type: Appearance
+  - type: SpiderTerrorTomb
+    range: 5

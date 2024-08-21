@@ -1,9 +1,5 @@
 # Jumpsuit
 - type: loadout
   id: BlueShieldOfficerJumpsuit
-  equipment: BlueShieldOfficerJumpsuit
-
-- type: startingGear
-  id: BlueShieldOfficerJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitBlueShield

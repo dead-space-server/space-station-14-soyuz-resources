@@ -73,7 +73,7 @@
     reagents: #Что впрыскивать
       DexalinPlus: 5
       Epinephrine: 15
-      Puncturase: 10
+      Puncturase: 5
       Omnizine: 5
 
 - type: entity
@@ -125,7 +125,7 @@
   - type: TemperatureProtection
     coefficient: 0.001
   - type: ExplosionResistance
-    damageCoefficient: 0.7
+    damageCoefficient: 0.5
   - type: Armor
     modifiers:
       coefficients:
@@ -139,8 +139,8 @@
         Radiation: 0.1
         Caustic: 0.6
   - type: ClothingSpeedModifier
-    walkModifier: 1.2
-    sprintModifier: 1.2
+    walkModifier: 1.1
+    sprintModifier: 1.1
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetCBURNSCSTSoldier
@@ -151,7 +151,7 @@
     reagents: #Что впрыскивать
       DexalinPlus: 5
       Epinephrine: 15
-      Puncturase: 10
+      Puncturase: 5
       Omnizine: 5
       TranexamicAcid: 5
 
