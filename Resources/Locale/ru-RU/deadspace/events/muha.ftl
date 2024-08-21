@@ -1,6 +1,6 @@
-ghost-role-information-muha-name = Муха
-ghost-role-information-muha-description = Пьёт кровь и откладывает личинки.
-ghost-role-information-muha-rules =
+ghost-role-information-CorpseEater-name = Жук кровопийца
+ghost-role-information-CorpseEater-description = Пьёт кровь и откладывает личинки.
+ghost-role-information-CorpseEater-rules =
     Вы не помните ничего из своей предыдущей жизни, если администратор не сказал вам обратное.
     Вам разрешается помнить знания об игре в целом, например, как готовить, как использовать предметы и т.д.
     Вам [color=red]НЕ[/color] разрешается помнить, имя, внешность и т.д. вашего предыдущего персонажа.

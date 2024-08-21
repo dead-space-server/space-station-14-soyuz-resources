@@ -8,7 +8,7 @@
     - hardquit
     - svbind
     - bind
-    - exec # macro moment
+    # - exec # macro moment # DS14: DO NOT ENABLE
     - cls
     - vram
     - monitor
@@ -85,3 +85,4 @@
     - uploadfile
     - loadprototype
     - uploadfolder
+    - exec # macro moment

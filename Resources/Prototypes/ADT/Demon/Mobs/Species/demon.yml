@@ -53,7 +53,7 @@
       types:
         Heat : 0.3 #per second, scales with temperature & other constants
   - type: Perishable
-  - type: Sanity
+  - type: Sanity # DS14
 
 - type: entity
   save: false

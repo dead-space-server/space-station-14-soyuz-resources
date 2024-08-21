@@ -1,36 +1,24 @@
 # Underwear
 - type: loadout
   id: UnderwearBottomBoxersMagistrat
-  equipment: UnderwearBottomBoxersMagistrat
   effects:
   - !type:GroupLoadoutEffect
     proto: MaleUnderwear
-
-- type: startingGear
-  id: UnderwearBottomBoxersMagistrat
   equipment:
     underwearb: ClothingUnderwearBottomBoxersMagistrat
 
 - type: loadout
   id: UnderwearBottomPantiesMagistrat
-  equipment: UnderwearBottomPantiesMagistrat
   effects:
   - !type:GroupLoadoutEffect
     proto: FemaleUnderwear
-
-- type: startingGear
-  id: UnderwearBottomPantiesMagistrat
   equipment:
     underwearb: ClothingUnderwearBottomPantiesMagistrat
 
 - type: loadout
   id: UnderwearTopBraMagistrat
-  equipment: UnderwearTopBraMagistrat
   effects:
   - !type:GroupLoadoutEffect
     proto: FemaleUnderwear
-
-- type: startingGear
-  id: UnderwearTopBraMagistrat
   equipment:
     underweart: ClothingUnderwearTopBraMagistrat

@@ -21,6 +21,9 @@
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+    - type: LawyerStampProvider
   #start-backmen: currency
   minBankBalance: 150
   maxBankBalance: 250

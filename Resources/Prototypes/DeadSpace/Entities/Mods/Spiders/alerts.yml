@@ -44,8 +44,8 @@
     state: blood95
   - sprite: /Textures/DeadSpace/Mods/Spiders/vampire_hunger.rsi
     state: blood100
-  name: кровь
-  description: Если вы не будете поглащать кровь, вы не сможете использовать свои способности.
+  name: Кровь
+  description: Если вы не будете поглощать кровь, вы не сможете использовать свои способности.
   minSeverity: 0
   maxSeverity: 20
 

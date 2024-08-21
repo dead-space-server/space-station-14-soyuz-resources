@@ -47,10 +47,10 @@
     layers:
     - map: ["enum.DamageStateVisualLayers.Base", "movement"]
       state: lvl1
-  - type: StatusEffects
-    allowed:
-    - lvl2
-    - lvl3
+  - type: DamageStateVisuals
+    states:
+      Dead:
+        Base: dead
   - type: MobThresholds
     thresholds:
       0: Alive

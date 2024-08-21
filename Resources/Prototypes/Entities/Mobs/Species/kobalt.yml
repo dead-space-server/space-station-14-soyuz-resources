@@ -81,7 +81,7 @@
     baseSprintSpeed: 4.8
   - type: Stamina
     critThreshold: 85
-  - type: Sanity
+  - type: Sanity # DS14
   - type: Inventory
     speciesId: reptilian # for reptilian masks
 

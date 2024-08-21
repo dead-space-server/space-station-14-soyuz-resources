@@ -20,6 +20,7 @@
     RiotBulletShield: 2
     RadioHandheldSecurity: 6
     RadioHandheld: 6
+    ClothingNeckBodyCamera: 4
   # security officers need to follow a diet regimen!
   emaggedInventory:
     FoodDonutHomer: 12

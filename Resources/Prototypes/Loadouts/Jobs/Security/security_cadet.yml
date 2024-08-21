@@ -1,18 +1,10 @@
 # Jumpsuit
 - type: loadout
   id: RedJumpsuit
-  equipment: RedJumpsuit
-
-- type: startingGear
-  id: RedJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitSecGrey
 
 - type: loadout
-  id: RedJumpskirt
-  equipment: RedJumpskirt
-
-- type: startingGear
   id: RedJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtSecGrey
@@ -20,36 +12,24 @@
 # Underwear
 - type: loadout
   id: UnderwearBottomBoxersCadet
-  equipment: UnderwearBottomBoxersCadet
   effects:
   - !type:GroupLoadoutEffect
     proto: MaleUnderwear
-
-- type: startingGear
-  id: UnderwearBottomBoxersCadet
   equipment:
     underwearb: ClothingUnderwearBottomBoxersCadet
 
 - type: loadout
   id: UnderwearBottomPantiesCadet
-  equipment: UnderwearBottomPantiesCadet
   effects:
   - !type:GroupLoadoutEffect
     proto: FemaleUnderwear
-
-- type: startingGear
-  id: UnderwearBottomPantiesCadet
   equipment:
     underwearb: ClothingUnderwearBottomPantiesCadet
 
 - type: loadout
   id: UnderwearTopBraCadet
-  equipment: UnderwearTopBraCadet
   effects:
   - !type:GroupLoadoutEffect
     proto: FemaleUnderwear
-
-- type: startingGear
-  id: UnderwearTopBraCadet
   equipment:
     underweart: ClothingUnderwearTopBraCadet

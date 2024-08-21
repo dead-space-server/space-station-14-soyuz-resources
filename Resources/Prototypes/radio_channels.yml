@@ -94,12 +94,3 @@
   color: "#f6ce64"
   # long range since otherwise it'd defeat the point of a handheld radio independent of telecomms
   longRange: true
-
-- type: radioChannel
-  id: Unitolog
-  name: chat-radio-unitolog
-  keycode: 'ь' # DS-Localization
-  frequency: 1666
-  color: "#828282"
-  # long range since otherwise it'd defeat the point of a handheld radio independent of telecomms
-  longRange: true

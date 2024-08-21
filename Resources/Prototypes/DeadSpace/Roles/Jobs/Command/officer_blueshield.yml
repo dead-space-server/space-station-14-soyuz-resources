@@ -18,6 +18,8 @@
       time: 36000 # 10 hours
     - !type:OverallPlaytimeRequirement
       time: 324000 # 90 hours
+    - !type:AgeRequirement
+      requiredAge: 28
   startingGear: BlueShieldOfficerGear
   icon: "JobIconADTBlueShieldOfficer"
   supervisors: job-supervisors-higher-command
@@ -109,7 +111,7 @@
       - id: BoxSurvivalSecurity
       - id: Zipties
         amount: 3
-      - id: ADTtelescopicBaton
+      - id: ADTtelescopicBaton # ADT
       - id: MagazinePistolSubMachineGun
         amount: 4
       - id: WeaponSubMachineGunDrozd

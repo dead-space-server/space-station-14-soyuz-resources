@@ -1,6 +1,6 @@
 - type: entity
   name: magistrat's rubber stamp
-  parent: RubberStampBase
+  parent: [RubberStampBase, BaseCommandContraband]
   id: RubberStampMagistrat
   suffix: DO NOT MAP
   components:
@@ -14,7 +14,7 @@
 
 - type: entity
   name: brigmedic's rubber stamp
-  parent: RubberStampBase
+  parent: [RubberStampBase, BaseCommandContraband]
   id: RubberStampBrigmedic
   suffix: DO NOT MAP
   components:
@@ -28,7 +28,7 @@
 
 - type: entity
   name: meme deny rubber stamp
-  parent: RubberStampBase
+  parent: [RubberStampBase, BaseCommandContraband]
   id: RubberStampMemeDeny
   suffix: DO NOT MAP
   components:
@@ -41,7 +41,7 @@
 
 - type: entity
   name: coroner rubber stamp
-  parent: RubberStampBase
+  parent: [RubberStampBase, BaseCommandContraband]
   id: RubberStampCoroner
   suffix: DO NOT MAP
   components:
@@ -54,34 +54,21 @@
 
 - type: entity
   name: lawyer rubber stamp
-  parent: RubberStampBase
+  parent: [RubberStampBase, BaseCommandContraband]
   id: RubberStampLawyer
   suffix: DO NOT MAP
+  noSpawn: true # they actually can't map, ha-ha
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-lawyer
     stampedColor: "#2F0069"
     stampState: "paper_stamp-lawyer"
-    editableName: true
   - type: Sprite
     state: stamp-rd
 
 - type: entity
-  name: detective rubber stamp
-  parent: RubberStampBase
-  id: RubberStampDetective
-  suffix: DO NOT MAP
-  components:
-  - type: Stamp
-    stampedName: stamp-component-stamped-name-detective
-    stampedColor: "#860000"
-    stampState: "paper_stamp-detective"
-  - type: Sprite
-    state: stamp-warden
-
-- type: entity
   name: blue shield rubber stamp
-  parent: RubberStampBase
+  parent: [RubberStampBase, BaseCommandContraband]
   id: RubberStampBlueShield
   suffix: DO NOT MAP
   components:
@@ -94,7 +81,7 @@
 
 - type: entity
   name: senior administrator rubber stamp
-  parent: RubberStampBase
+  parent: [RubberStampBase, BaseCommandContraband]
   id: RubberStampSeniorAdministrator
   suffix: DO NOT MAP
   components:

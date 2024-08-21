@@ -1,18 +1,10 @@
 # Jumpsuit
 - type: loadout
   id: BrigmedicJumpsuit
-  equipment: BrigmedicJumpsuit
-
-- type: startingGear
-  id: BrigmedicJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitBrigmedic
 
 - type: loadout
-  id: BrigmedicJumpskirt
-  equipment: BrigmedicJumpskirt
-
-- type: startingGear
   id: BrigmedicJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtBrigmedic
@@ -20,27 +12,15 @@
 # Back
 - type: loadout
   id: BrigmedicBackpack
-  equipment: BrigmedicBackpack
-
-- type: startingGear
-  id: BrigmedicBackpack
   equipment:
     back: ClothingBackpackBrigmedic
 
 - type: loadout
   id: BrigmedicSatchel
-  equipment: BrigmedicSatchel
-
-- type: startingGear
-  id: BrigmedicSatchel
   equipment:
     back: ClothingBackpackSatchelBrigmedic
 
 - type: loadout
-  id: BrigmedicDuffel
-  equipment: BrigmedicDuffel
-
-- type: startingGear
   id: BrigmedicDuffel
   equipment:
     back: ClothingBackpackDuffelBrigmedic
@@ -48,36 +28,24 @@
 # Underwear
 - type: loadout
   id: UnderwearBottomBoxersBrigmedic
-  equipment: UnderwearBottomBoxersBrigmedic
   effects:
   - !type:GroupLoadoutEffect
     proto: MaleUnderwear
-
-- type: startingGear
-  id: UnderwearBottomBoxersBrigmedic
   equipment:
     underwearb: ClothingUnderwearBottomBoxersBrigmedic
 
 - type: loadout
   id: UnderwearBottomPantiesBrigmedic
-  equipment: UnderwearBottomPantiesBrigmedic
   effects:
   - !type:GroupLoadoutEffect
     proto: FemaleUnderwear
-
-- type: startingGear
-  id: UnderwearBottomPantiesBrigmedic
   equipment:
     underwearb: ClothingUnderwearBottomPantiesBrigmedic
 
 - type: loadout
   id: UnderwearTopBraBrigmedic
-  equipment: UnderwearTopBraBrigmedic
   effects:
   - !type:GroupLoadoutEffect
     proto: FemaleUnderwear
-
-- type: startingGear
-  id: UnderwearTopBraBrigmedic
   equipment:
     underweart: ClothingUnderwearTopBraBrigmedic

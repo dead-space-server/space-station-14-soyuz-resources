@@ -51,6 +51,15 @@ uni-lost = Победа экипажа. Юнитологам не удалось
 uni-obelisk = Юнитологи смогли призвать обелиск, однако он не смог пробудиться.
 uni-convergence = Победа юнитологов. Схождение и появление нового бога.
 
+ghost-role-information-traveling-doctor-name = Странствующий доктор
+ghost-role-information-traveling-doctor-description = Вы врачна путешествующем шаттле. Вылечите всех больных!
+
+ghost-role-information-traveling-doctor-unitolog-name = Юнитолог-врач
+ghost-role-information-traveling-doctor-unitolog-description = Вы служите делу Юнитологии, используя свои медицинские навыки для помощи другим. Лечите союзников, заражайте врагов и распространяйте веру в Обелиск!
+
+ghost-role-information-traveling-chef-unitolog-name = Юнитолог-повар
+ghost-role-information-traveling-chef-unitolog-description = Вы повар, преданный идеалам Юнитологии. Готовьте пищу для своих единомышленников, отравляйте её своим врагам поддерживайте веру в единство схождения и Обелиск!
+
 ## CentComm Announcements
 uni-centcomm-announcement-obelisk-was-spawned = Внимание станция. Наши сканеры дальнего действия обнаружили некро-обелиск в вашем секторе. Ликвидируйте некро-угрозу пока она не представляет опасность.
 uni-centcomm-announcement-obelisk-was-destroyed = Внимание станция. Судя по нашим сканерам дальнего действия некро-обелиск был уничтожен. Доложите о своём статусе.

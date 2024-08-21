@@ -1,6 +1,6 @@
 - type: entity
   name: law office's rubber stamp
-  parent: RubberStampBase
+  parent: [RubberStampBase, BaseCommandContraband]
   id: RubberStampIAA
   suffix: DO NOT MAP
   components:
@@ -13,7 +13,7 @@
 
 - type: entity
   name: psychologist's rubber stamp
-  parent: RubberStampBase
+  parent: [RubberStampBase, BaseCommandContraband]
   id: RubberStampPsychologist
   suffix: DO NOT MAP
   components:

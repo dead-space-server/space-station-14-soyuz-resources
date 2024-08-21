@@ -31,7 +31,7 @@
 - type: entity
   parent: ClothingHeadsetAlt
   id: ClothingHeadsetAltCentCom
-  name: CentCom over-ear headset
+  name: CentComm over-ear headset
   components:
   - type: ContainerFill
     containers:
@@ -56,7 +56,7 @@
       - EncryptionKeyCommon
 
 - type: entity
-  parent: ClothingHeadsetAlt
+  parent: [ClothingHeadsetAlt, BaseCommandContraband]
   id: ClothingHeadsetAltCommand
   name: command over-ear headset
   components:
@@ -72,7 +72,7 @@
     color: "#fcdf03"
 
 - type: entity
-  parent: ClothingHeadsetAlt
+  parent: [ClothingHeadsetAlt, BaseCommandContraband]
   id: ClothingHeadsetAltEngineering
   name: chief engineer's over-ear headset
   components:
@@ -90,7 +90,7 @@
     color: "#f2ac26"
 
 - type: entity
-  parent: ClothingHeadsetAlt
+  parent: [ClothingHeadsetAlt, BaseCommandContraband]
   id: ClothingHeadsetAltMedical
   name: chief medical officer's over-ear headset
   components:
@@ -110,7 +110,7 @@
     color: "#57b8f0"
 
 - type: entity
-  parent: ClothingHeadsetAlt
+  parent: [ClothingHeadsetAlt, BaseCommandContraband]
   id: ClothingHeadsetAltSecurity
   name: head of security's over-ear headset
   components:
@@ -129,7 +129,7 @@
     color: "#dd3535"
 
 - type: entity
-  parent: ClothingHeadsetAlt
+  parent: [ClothingHeadsetAlt, BaseCommandContraband]
   id: ClothingHeadsetAltScience
   name: research director's over-ear headset
   components:
@@ -147,7 +147,7 @@
     color: "#c68cfa"
 
 - type: entity
-  parent: ClothingHeadsetAlt
+  parent: [ClothingHeadsetAlt, BaseSyndicateContraband]
   id: ClothingHeadsetAltSyndicate
   name: blood-red over-ear headset
   description: An updated, modular syndicate intercom that fits over the head and takes encryption keys (there are 5 key slots.).

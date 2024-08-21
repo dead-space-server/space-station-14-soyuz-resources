@@ -22,11 +22,11 @@
         maxVol: 30
         reagents:
           - ReagentId: Ultravasculine
-            Quantity: 10
-          - ReagentId: Tricordrazine
-            Quantity: 10
+            Quantity: 5
+          - ReagentId: Omnizine
+            Quantity: 20
           - ReagentId: Puncturase
-            Quantity: 10
+            Quantity: 5
   - type: StaticPrice
     price: 300
   - type: Tag

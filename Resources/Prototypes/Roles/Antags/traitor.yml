@@ -38,7 +38,6 @@
     gloves: ClothingHandsGlovesColorBlack
   storage:
     back:
-    - BoxSurvivalSyndicate
     - WeaponPistolViper
     - PinpointerSyndicateNuclear
     - DeathAcidifierImplanter
@@ -48,7 +47,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitOperative
     back: ClothingBackpackSyndicate
-    shoes: ClothingShoesBootsCombatFilled
+    shoes: ClothingShoesBootsSyndieFilled
     gloves: ClothingHandsGlovesColorBlack
 
 - type: startingGear
@@ -58,9 +57,6 @@
     pocket1: WeaponPistolViper
   inhand:
     - MedkitCombatFilled
-  storage:
-    back:
-    - BoxSurvivalSyndicate
 
 - type: startingGear
   id: SyndicateReinforcementSpy
@@ -69,9 +65,6 @@
     id: AgentIDCard
     mask: ClothingMaskGasVoiceChameleon
     pocket1: WeaponPistolViper
-  storage:
-    back:
-    - BoxSurvivalSyndicate
 
 - type: startingGear
   id: SyndicateReinforcementThief
@@ -82,16 +75,7 @@
     - ToolboxSyndicateFilled
   storage:
     back:
-    - BoxSurvivalSyndicate
     - SyndicateJawsOfLife
-
-# Syndicate Reinforcement NukeOps
-- type: startingGear
-  id: SyndicateOperativeGearReinforcementNukeOps
-  parent: SyndicateOperativeGearExtremelyBasic
-  equipment:
-    id: SyndiPDA #Do not give a PDA to the normal Reinforcement - it will spawn with a 20TC uplink
-
 
 #Syndicate Operative Outfit - Basic
 - type: startingGear

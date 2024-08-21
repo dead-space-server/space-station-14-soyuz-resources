@@ -1,6 +1,6 @@
 - type: entity
-  name: паучий кокон
-  description: Внутри кто-то есть.
+  name: наручники из паутины
+  description: Липкие.
   id: SpiderHandcuffs
   parent: BaseItem
   components:
@@ -104,6 +104,12 @@
   id: MobSpiderTerrorLurker
   description: Плохо видно.
   components:
+  - type: HipoHand
+    quantity: 5 #Сколько впрыскивать
+    countReagent: 10 #Сколько при спавне
+    maxCountReagent: 10 #Хранилище реагента
+    durationRegenReagent: 10 #Время регена
+    reagent: SpiderExtractLurker #Что в хранилище
   - type: Sprite
     scale: 1, 1
     drawdepth: Mobs
@@ -126,7 +132,7 @@
     thresholds:
       0: Alive
       150: Critical
-      250: Dead
+      200: Dead
   - type: Fixtures
     fixtures:
       fix1:
@@ -139,14 +145,14 @@
         layer:
         - MobLayer
   - type: MovementSpeedModifier
-    baseWalkSpeed: 3
-    baseSprintSpeed: 3
+    baseWalkSpeed: 4
+    baseSprintSpeed: 4
   - type: Bloodstream
     bloodReagent: CopperBlood
     bloodMaxVolume: 250
     bloodlossThreshold: 0.4
   - type: Bloodsucker
-    maxCountReagent: 90 #Емкость
+    maxCountReagent: 60 #Емкость
     countReagent: 30 #Сколько реагента при спавне
     duration: 2 #Длительность сосания
     howMuchWillItSuck: 10 #Сколько высосет за один укус
@@ -155,17 +161,14 @@
   - type: Puller
     needsHands: false
   - type: SpiderLurker
+    bloodCost: 10
     duration: 10
     spreadAmount: 30
     movementBuff: 2
     solution:
       reagents:
-      - ReagentId: ChloralHydrate
+      - ReagentId: SpiderLurkerSmokeExtract
         Quantity: 30
-  - type: ChainAbility
-    handcuffsProtorype: SpiderHandcuffs
-    bandageProtorype: ClothingEyesBlindfoldWeb
-    bootsProtorype: ClothingShoesBootsLaceupWeb
   - type: MeleeChemicalInjector
     solution: melee
     transferAmount: 4
@@ -174,4 +177,10 @@
       melee:
         reagents:
         - ReagentId: ChloralHydrate
-          Quantity: 80
+          Quantity: 2000
+  - type: ShowHealthBars
+    damageContainers:
+    - Biological
+  - type: ShowHealthIcons
+    damageContainers:
+    - Biological

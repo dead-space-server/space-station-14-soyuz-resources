@@ -1,27 +1,15 @@
 # Back
 - type: loadout
   id: PsychologistBackpack
-  equipment: PsychologistBackpack
-
-- type: startingGear
-  id: PsychologistBackpack
   equipment:
     back: ClothingBackpackPsychologistFilled
 
 - type: loadout
   id: PsychologistSatchel
-  equipment: PsychologistSatchel
-
-- type: startingGear
-  id: PsychologistSatchel
   equipment:
     back: ClothingBackpackSatchelPsychologistFilled
 
 - type: loadout
-  id: PsychologistDuffel
-  equipment: PsychologistDuffel
-
-- type: startingGear
   id: PsychologistDuffel
   equipment:
     back: ClothingBackpackDuffelPsychologistFilled
@@ -29,36 +17,24 @@
 # Underwear
 - type: loadout
   id: UnderwearBottomBoxersPsychologist
-  equipment: UnderwearBottomBoxersPsychologist
   effects:
   - !type:GroupLoadoutEffect
     proto: MaleUnderwear
-
-- type: startingGear
-  id: UnderwearBottomBoxersPsychologist
   equipment:
     underwearb: ClothingUnderwearBottomBoxersPsychologist
 
 - type: loadout
   id: UnderwearBottomPantiesPsychologist
-  equipment: UnderwearBottomPantiesPsychologist
   effects:
   - !type:GroupLoadoutEffect
     proto: FemaleUnderwear
-
-- type: startingGear
-  id: UnderwearBottomPantiesPsychologist
   equipment:
     underwearb: ClothingUnderwearBottomPantiesPsychologist
 
 - type: loadout
   id: UnderwearTopBraPsychologist
-  equipment: UnderwearTopBraPsychologist
   effects:
   - !type:GroupLoadoutEffect
     proto: FemaleUnderwear
-
-- type: startingGear
-  id: UnderwearTopBraPsychologist
   equipment:
     underweart: ClothingUnderwearTopBraPsychologist

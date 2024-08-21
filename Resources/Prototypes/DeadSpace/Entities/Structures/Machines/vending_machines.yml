@@ -53,7 +53,7 @@
     ejectDelay: 1.9
     initialStockQuality: 0.33
   - type: Sprite
-    sprite: Structures/Machines/VendingMachines/snack-orange.rsi
+    sprite: DeadSpace/Structures/Machines/VendingMachines/toysmat.rsi
     layers:
     - state: "off"
       map: ["enum.VendingMachineVisualLayers.Base"]

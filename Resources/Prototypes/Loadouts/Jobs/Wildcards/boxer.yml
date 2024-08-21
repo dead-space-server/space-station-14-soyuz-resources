@@ -1,18 +1,10 @@
 # Jumpsuit
 - type: loadout
   id: BoxerShorts
-  equipment: BoxerShorts
-
-- type: startingGear
-  id: BoxerShorts
   equipment:
     jumpsuit: UniformShortsRed
 
 - type: loadout
-  id: BoxerShortsWithTop
-  equipment: BoxerShortsWithTop
-
-- type: startingGear
   id: BoxerShortsWithTop
   equipment:
     jumpsuit: UniformShortsRedWithTop
@@ -20,36 +12,20 @@
 # Gloves
 - type: loadout
   id: RedBoxingGloves
-  equipment: RedBoxingGloves
-
-- type: startingGear
-  id: RedBoxingGloves
   equipment:
     gloves: ClothingHandsGlovesBoxingRed
 
 - type: loadout
-  id: BlueBoxingGloves
-  equipment: BlueBoxingGloves
-
-- type: startingGear
   id: BlueBoxingGloves
   equipment:
     gloves: ClothingHandsGlovesBoxingBlue
 
 - type: loadout
   id: GreenBoxingGloves
-  equipment: GreenBoxingGloves
-
-- type: startingGear
-  id: GreenBoxingGloves
   equipment:
     gloves: ClothingHandsGlovesBoxingGreen
 
 - type: loadout
-  id: YellowBoxingGloves
-  equipment: YellowBoxingGloves
-
-- type: startingGear
   id: YellowBoxingGloves
   equipment:
     gloves: ClothingHandsGlovesBoxingYellow
@@ -57,36 +33,24 @@
 # Underwear
 - type: loadout
   id: UnderwearBottomBoxersBoxer
-  equipment: UnderwearBottomBoxersBoxer
   effects:
   - !type:GroupLoadoutEffect
     proto: MaleUnderwear
-
-- type: startingGear
-  id: UnderwearBottomBoxersBoxer
   equipment:
     underwearb: ClothingUnderwearBottomBoxersBoxer
 
 - type: loadout
   id: UnderwearBottomPantiesBoxer
-  equipment: UnderwearBottomPantiesBoxer
   effects:
   - !type:GroupLoadoutEffect
     proto: FemaleUnderwear
-
-- type: startingGear
-  id: UnderwearBottomPantiesBoxer
   equipment:
     underwearb: ClothingUnderwearBottomPantiesBoxer
 
 - type: loadout
   id: UnderwearTopBraBoxer
-  equipment: UnderwearTopBraBoxer
   effects:
   - !type:GroupLoadoutEffect
     proto: FemaleUnderwear
-
-- type: startingGear
-  id: UnderwearTopBraBoxer
   equipment:
     underweart: ClothingUnderwearTopBraBoxer

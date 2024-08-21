@@ -12,6 +12,8 @@
       time: 108000 # 30 hours
     - !type:OverallPlaytimeRequirement
       time: 504000 # 140 hours
+    - !type:AgeRequirement
+      requiredAge: 34
   startingGear: MagistratGear
   icon: "JobIconMagistrat"
   requireAdminNotify: true

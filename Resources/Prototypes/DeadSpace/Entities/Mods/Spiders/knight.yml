@@ -44,12 +44,12 @@
     baseSprintSpeed: 3
   - type: Bloodstream
     bloodReagent: CopperBlood
-    bloodMaxVolume: 80
+    bloodMaxVolume: 200
     bloodlossThreshold: 0.4
   - type: Puller
     needsHands: false
   - type: Bloodsucker
-    maxCountReagent: 220 #Емкость
+    maxCountReagent: 80 #Емкость
     countReagent: 0 #Сколько реагента при спавне
     duration: 2 #Длительность сосания
     howMuchWillItSuck: 20 #Сколько высосет за один укус
@@ -61,14 +61,14 @@
       - MobSpiderTerrorKnight
       - MobSpiderTerrorVdova
       - MobSpiderTerrorReaper
-      - MobSpiderTerrorLurker
+      - MobSpiderTerrorInfector
   - type: NeededBloodForEvolution #Пример
     defaultCost: 200 #Стандартная цена на не заданный результат
     bloodCosts: #цены
-      MobSpiderTerrorKnightLvl2: 100
+      MobSpiderTerrorKnight: 150
       MobSpiderTerrorVdova: 150
-      MobSpiderTerrorReaper: 150
-      MobSpiderTerrorLurker: 100
+      MobSpiderTerrorReaper: 200
+      MobSpiderTerrorInfector: 200
 
 - type: entity
   name: паук рыцарь

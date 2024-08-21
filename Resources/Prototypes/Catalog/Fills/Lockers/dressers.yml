@@ -148,6 +148,7 @@
       - id: ClothingUnderwearBottomPantiesResearchDirector # DS14-Underwear
       - id: ClothingEyesGlasses
       - id: ClothingOuterWinterRD
+      - id: ClothingOuterCoatRD
 
 - type: entity
   id: DresserWardenFilled

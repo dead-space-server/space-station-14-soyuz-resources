@@ -14,6 +14,7 @@ loadout-group-survival-security = Аварийный запас охраны
 loadout-group-survival-syndicate = Github заставил меня перевести текст, который игрок вообще никогда не сможет увидеть, спасите
 loadout-group-breath-tool = Расозависимое дыхательное снаряжение
 loadout-group-tank-harness = Расозависимое снаряжение для выживания
+loadout-group-EVA-tank = Расозависимый газовый баллон
 # Command
 loadout-group-captain-head = Капитан, голова
 loadout-group-captain-jumpsuit = Капитан, комбинезон
@@ -201,6 +202,7 @@ loadout-group-paramedic-underwear = Парамедик, нижнее бельё
 loadout-group-zookeeper-underwear = Зоотехник, нижнее бельё
 loadout-group-reporter-jumpsuit = Репортёр, комбинезон
 loadout-group-reporter-underwear = Репортёр, нижнее бельё
+loadout-group-psychologist-jumpsuit = Психолог, комбинезон
 loadout-group-boxer-jumpsuit = Боксёр, комбинезон
 loadout-group-boxer-gloves = Боксёр, перчатки
 loadout-group-boxer-underwear = Боксёр, нижнее бельё

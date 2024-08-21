@@ -8,3 +8,4 @@ department-Science-description = Изучайте артефакты и аном
 department-Specific-description = Должности, которые есть не на всех станциях.
 department-Law-description = Занимайтесь аудитом станции.
 department-Silicons-description = Подчиняйтесь своим законам.
+department-Typan-description = Наблюдайте, соблюдайте секретность и исследуйте, а после создавате опасные штуки.

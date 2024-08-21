@@ -14,6 +14,13 @@
   - Necromorfs
 
 - type: antag
+  id: SpiderTerror
+  name: Паук ужаса
+  antagonist: true
+  setPreference: false
+  objective: Ваша цель захватить станцию.
+
+- type: antag
   id: SpiderTerrorQuin
   name: roles-antag-spider-terror-quin-name
   antagonist: true
@@ -21,7 +28,7 @@
   objective: roles-antag-spider-terror-quin-objective
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 172800 # 48 hours
+      time: 345600 # 4 суток
 
 - type: antag
   id: SpiderTerrorKing
@@ -31,7 +38,7 @@
   objective: roles-antag-spider-terror-king-objective
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 86400 # 24 hours
+      time: 345600 # 4 суток
 
 - type: antag
   id: SpiderTerrorKingBlood
@@ -50,6 +57,9 @@
   - type: GameRule
     minPlayers: 50
   - type: SpiderTerrorRule
+  - type: AntagObjectives
+    objectives:
+    - CaptureSpiderTerrorObjective
   - type: AntagSelection
     definitions:
     - prefRoles: [ SpiderTerrorQuin ]
@@ -106,9 +116,6 @@
         spawned:
         - id: MobSpiderTerrorGuardianKingBlood
           amount: 1 #Колличество
-      - type: NpcFactionMember
-        factions:
-        - SpiderTerror
       mindComponents:
       - type: SpiderTerrorRole
         prototype: SpiderTerrorKingBlood
@@ -120,7 +127,7 @@
   - type: StationEvent
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
-      path: /Audio/Announcements/attention.ogg
+      path: /Audio/DeadSpace/Announcements/lifesigns.ogg # DeadSpace-Announcements
     earliestStart: 50
     weight: 6
     duration: 60
@@ -134,3 +141,65 @@
     specialEntries:
     - id: MobSpiderTerrorGuardianKingBlood
       prob: 0.001
+
+- type: entity
+  id: GiftsGunsSpiderTerror
+  parent: CargoGiftsBase
+  components:
+  - type: StationEvent
+    weight: 3
+    duration: 120
+    earliestStart: 20
+    minimumPlayers: 50
+  - type: CargoGiftsRule
+    description: cargo-gift-security-guns
+    dest: cargo-gift-dest-sec
+    gifts:
+      CrateKarachnocidGrenadeProduct: 1
+      SecurityArmor: 3
+      ArmorySmg: 2
+      ArmoryShotgun: 2
+      ArmoryLaser: 2
+
+- type: entity
+  id: GiftsMedicalSpiderTerror
+  parent: CargoGiftsBase
+  components:
+  - type: StationEvent
+    weight: 8
+    duration: 120
+    earliestStart: 20
+    minimumPlayers: 30
+  - type: CargoGiftsRule
+    description: cargo-gift-medical-supply
+    dest: cargo-gift-dest-med
+    gifts:
+      MedicalSupplies: 4
+      EmergencyBruteKit: 4
+      EmergencyAdvancedKit: 4
+
+- type: preloadedGrid
+  id: CBURNSCSTShuttle
+  path: /Maps/Shuttles/ShuttleEvent/cburn_scst.yml
+  copies: 1
+
+- type: entity
+  parent: BaseGameRule
+  id: BaseErtShuttleRule
+  components:
+  - type: StationEvent
+    startAnnouncement: station-event-response-team-arrival
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+    weight: 0
+    reoccurrenceDelay: 30
+    duration: 1
+  - type: RuleGrids
+  - type: LoadMapRule
+
+- type: entity
+  parent: BaseUnknownShuttleRule
+  id: ShuttleCBURNSCST
+  components:
+  - type: LoadMapRule
+    preloadedGrid: CBURNSCSTShuttle

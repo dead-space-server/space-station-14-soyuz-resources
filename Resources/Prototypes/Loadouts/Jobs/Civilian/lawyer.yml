@@ -1,90 +1,50 @@
 # Jumpsuit
 - type: loadout
   id: LawyerJumpsuit
-  equipment: LawyerJumpsuit
-
-- type: startingGear
-  id: LawyerJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitLawyerBlack
 
 - type: loadout
-  id: LawyerJumpskirt
-  equipment: LawyerJumpskirt
-
-- type: startingGear
   id: LawyerJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtLawyerBlack
 
 - type: loadout
   id: LawyerJumpsuitBlue
-  equipment: LawyerJumpsuitBlue
-
-- type: startingGear
-  id: LawyerJumpsuitBlue
   equipment:
     jumpsuit: ClothingUniformJumpsuitLawyerBlue
 
 - type: loadout
-  id: LawyerJumpskirtBlue
-  equipment: LawyerJumpskirtBlue
-
-- type: startingGear
   id: LawyerJumpskirtBlue
   equipment:
     jumpsuit: ClothingUniformJumpskirtLawyerBlue
 
 - type: loadout
   id: LawyerJumpsuitPurple
-  equipment: LawyerJumpsuitPurple
-
-- type: startingGear
-  id: LawyerJumpsuitPurple
   equipment:
     jumpsuit: ClothingUniformJumpsuitLawyerPurple
 
 - type: loadout
-  id: LawyerJumpskirtPurple
-  equipment: LawyerJumpskirtPurple
-
-- type: startingGear
   id: LawyerJumpskirtPurple
   equipment:
     jumpsuit: ClothingUniformJumpskirtLawyerPurple
 
 - type: loadout
   id: LawyerJumpsuitRed
-  equipment: LawyerJumpsuitRed
-
-- type: startingGear
-  id: LawyerJumpsuitRed
   equipment:
     jumpsuit: ClothingUniformJumpsuitLawyerRed
 
 - type: loadout
-  id: LawyerJumpskirtRed
-  equipment: LawyerJumpskirtRed
-
-- type: startingGear
   id: LawyerJumpskirtRed
   equipment:
     jumpsuit: ClothingUniformJumpskirtLawyerRed
 
 - type: loadout
   id: LawyerJumpsuitGood
-  equipment: LawyerJumpsuitGood
-
-- type: startingGear
-  id: LawyerJumpsuitGood
   equipment:
     jumpsuit: ClothingUniformJumpsuitLawyerGood
 
 - type: loadout
-  id: LawyerJumpskirtGood
-  equipment: LawyerJumpskirtGood
-
-- type: startingGear
   id: LawyerJumpskirtGood
   equipment:
     jumpsuit: ClothingUniformJumpskirtLawyerGood
@@ -92,46 +52,30 @@
 # Neck
 - type: loadout
   id: LawyerNeck
-  equipment: LawyerNeck
-
-- type: startingGear
-  id: LawyerNeck
   equipment:
     neck: ClothingNeckLawyerbadge
   
 # Underwear
 - type: loadout
   id: UnderwearBottomBoxersLawyer
-  equipment: UnderwearBottomBoxersLawyer
   effects:
   - !type:GroupLoadoutEffect
     proto: MaleUnderwear
-
-- type: startingGear
-  id: UnderwearBottomBoxersLawyer
   equipment:
     underwearb: ClothingUnderwearBottomBoxersLawyer
 
 - type: loadout
   id: UnderwearBottomPantiesLawyer
-  equipment: UnderwearBottomPantiesLawyer
   effects:
   - !type:GroupLoadoutEffect
     proto: FemaleUnderwear
-
-- type: startingGear
-  id: UnderwearBottomPantiesLawyer
   equipment:
     underwearb: ClothingUnderwearBottomPantiesLawyer
 
 - type: loadout
   id: UnderwearTopBraLawyer
-  equipment: UnderwearTopBraLawyer
   effects:
   - !type:GroupLoadoutEffect
     proto: FemaleUnderwear
-
-- type: startingGear
-  id: UnderwearTopBraLawyer
   equipment:
     underweart: ClothingUnderwearTopBraLawyer

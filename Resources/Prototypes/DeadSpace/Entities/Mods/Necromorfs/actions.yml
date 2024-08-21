@@ -51,3 +51,12 @@
     event: !type:OrderToSlaveActionEvent
     checkCanAccess: false
     range: 10
+
+- type: entity
+  id: ActionUnitologObeliskSpawn
+  noSpawn: true
+  components:
+  - type: InstantAction
+    priority: -1
+    icon: DeadSpace/Interface/Actions/obelisk.png
+    event: !type:ObeliskActionEvent

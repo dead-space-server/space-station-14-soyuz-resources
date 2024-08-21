@@ -2,7 +2,7 @@
   parent: ClothingNeckBase
   id: ClothingNeckBodyCamera
   name: нательная камера
-  description: Это камера, она нательная, ты читаешь её описание. Зачем ты читаешь её описание? Ну ладно, если прочитал предложи новое описание в канал предложений.
+  description: Лучше не кидать жёлуди рядом с владельцем этой камеры.
   components:
   - type: Item
     size: Small

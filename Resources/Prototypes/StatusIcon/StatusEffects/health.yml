@@ -1,11 +1,11 @@
-- type: statusIcon
+- type: healthIcon
   id: HealthIcon
   abstract: true
   priority: 3
   locationPreference: Left
   isShaded: true
 
-- type: statusIcon
+- type: healthIcon
   parent: HealthIcon
   id: HealthIconFine
   icon:
@@ -13,7 +13,7 @@
     state: Fine
   locationPreference: Left # Corvax-TypingIndicator
 
-- type: statusIcon
+- type: healthIcon
   id: HealthIconCritical
   parent: HealthIcon
   icon:
@@ -21,7 +21,7 @@
     state: Critical
   locationPreference: Left # Corvax-TypingIndicator
 
-- type: statusIcon
+- type: healthIcon
   id: HealthIconDead
   parent: HealthIcon
   icon:
@@ -29,7 +29,7 @@
     state: Dead
   locationPreference: Left # Corvax-TypingIndicator
 
-- type: statusIcon
+- type: healthIcon
   id: HealthIconRotting
   parent: HealthIcon
   icon:

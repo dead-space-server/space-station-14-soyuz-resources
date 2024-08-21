@@ -1,4 +1,4 @@
-ent-Eftpos = Терминал безналичной оплаты
+ent-Eftpos = терминал безналичной оплаты
     .desc = Проведите вашей ID картой чтобы оплатить покупку безналичными.
 ent-EftposCargo = { ent-Eftpos }
     .desc = { ent-Eftpos.desc }
@@ -24,7 +24,6 @@ ent-EftposScience = { ent-Eftpos }
 ent-EftposSpecific = { ent-Eftpos }
     .desc = { ent-Eftpos.desc }
     .suffix = { "Редкие отделы" }
-
 
 eftpos-ui-value-label-text = Стоимость:
 eftpos-ui-linked-account-label-text = Аккаунт:

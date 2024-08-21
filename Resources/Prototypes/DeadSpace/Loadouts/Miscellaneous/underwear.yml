@@ -17,36 +17,24 @@
 # Default underwear
 - type: loadout
   id: UnderwearBottomBoxersWhite
-  equipment: UnderwearBottomBoxersWhite
   effects:
   - !type:GroupLoadoutEffect
     proto: MaleUnderwear
-
-- type: startingGear
-  id: UnderwearBottomBoxersWhite
   equipment:
     underwearb: ClothingUnderwearBottomBoxersWhite
 
 - type: loadout
   id: UnderwearBottomPantiesWhite
-  equipment: UnderwearBottomPantiesWhite
   effects:
   - !type:GroupLoadoutEffect
     proto: FemaleUnderwear
-
-- type: startingGear
-  id: UnderwearBottomPantiesWhite
   equipment:
     underwearb: ClothingUnderwearBottomPantiesWhite
 
 - type: loadout
   id: UnderwearTopBraWhite
-  equipment: UnderwearTopBraWhite
   effects:
   - !type:GroupLoadoutEffect
     proto: FemaleUnderwear
-
-- type: startingGear
-  id: UnderwearTopBraWhite
   equipment:
     underweart: ClothingUnderwearTopBraWhite

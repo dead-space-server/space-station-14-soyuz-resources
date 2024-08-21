@@ -1,8 +1,8 @@
 - type: entity
   parent: ClothingOuterStorageBase
   id: ClothingOuterCoatAtmosWorking
-  name: рабочая накидка атмосферного техника
-  description: Эта стильная и практичная рабочая накидка предназначена для профессионалов, которые работают в экстремальных, но не без атмосферных условиях.
+  name: спецовка атмосферного техника
+  description: Эта стильная и практичная рабочая спецовка предназначена для профессионалов, которые работают в экстремальных, но не без атмосферных условиях.
   components:
   - type: Sprite
     sprite: DeadSpace/Clothing/OuterClothing/Coats/atmos_overalls.rsi
@@ -11,11 +11,11 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.9
-        Slash: 0.9
+        Blunt: 0.8
+        Slash: 0.8
         Heat: 0.75
         Cold: 0.75
-        Caustic: 0.9
+        Caustic: 0.8
 
 - type: entity
   parent: ClothingOuterStorageBase

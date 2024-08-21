@@ -16,6 +16,8 @@
     - !type:DepartmentTimeRequirement
       department: Security
       time: 216000 # 60 hours
+    - !type:AgeRequirement
+      requiredAge: 28
   startingGear: SeniorOfficerGear
   icon: "JobIconSeniorOfficer"
   supervisors: job-supervisors-hos

@@ -1,28 +1,16 @@
 # Head
 - type: loadout
   id: ParamedicHead
-  equipment: ParamedicHead
-
-- type: startingGear
-  id: ParamedicHead
   equipment:
     head: ClothingHeadHatParamedicsoft
 
 # Jumpsuit
 - type: loadout
   id: ParamedicJumpsuit
-  equipment: ParamedicJumpsuit
-
-- type: startingGear
-  id: ParamedicJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitParamedic
 
 - type: loadout
-  id: ParamedicJumpskirt
-  equipment: ParamedicJumpskirt
-
-- type: startingGear
   id: ParamedicJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtParamedic
@@ -30,18 +18,10 @@
 # Outer clothing
 - type: loadout
   id: ParamedicWindbreaker
-  equipment: ParamedicWindbreaker
-
-- type: startingGear
-  id: ParamedicWindbreaker
   equipment:
     outerClothing: ClothingOuterCoatParamedicWB
 
 - type: loadout
-  id: ParamedicWintercoat
-  equipment: ParamedicWintercoat
-
-- type: startingGear
   id: ParamedicWintercoat
   equipment:
     outerClothing: ClothingOuterWinterPara
@@ -49,46 +29,30 @@
 # Shoes
 - type: loadout
   id: BlueShoes
-  equipment: BlueShoes
-
-- type: startingGear
-  id: BlueShoes
   equipment:
     shoes: ClothingShoesColorBlue
 
 # Underwear
 - type: loadout
   id: UnderwearBottomBoxersParamedic
-  equipment: UnderwearBottomBoxersParamedic
   effects:
   - !type:GroupLoadoutEffect
     proto: MaleUnderwear
-
-- type: startingGear
-  id: UnderwearBottomBoxersParamedic
   equipment:
     underwearb: ClothingUnderwearBottomBoxersParamedic
 
 - type: loadout
   id: UnderwearBottomPantiesParamedic
-  equipment: UnderwearBottomPantiesParamedic
   effects:
   - !type:GroupLoadoutEffect
     proto: FemaleUnderwear
-
-- type: startingGear
-  id: UnderwearBottomPantiesParamedic
   equipment:
     underwearb: ClothingUnderwearBottomPantiesParamedic
 
 - type: loadout
   id: UnderwearTopBraParamedic
-  equipment: UnderwearTopBraParamedic
   effects:
   - !type:GroupLoadoutEffect
     proto: FemaleUnderwear
-
-- type: startingGear
-  id: UnderwearTopBraParamedic
   equipment:
     underweart: ClothingUnderwearTopBraParamedic

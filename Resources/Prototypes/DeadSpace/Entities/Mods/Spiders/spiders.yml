@@ -1,13 +1,35 @@
 - type: entity
   name: паук страж
-  parent: [SimpleSpaceMobBase, MobCombat]
+  parent:
+  - SimpleSpaceMobBase
+  - MobCombat
   noSpawn: true
   id: BaseMobSpiderTerror
   description: Маленький ядовитый паучок.
   components:
-  - type: CombatMode
-  - type: InputMover
-  - type: MobMover
+  - type: Metabolizer
+    removeEmpty: true
+    solutionOnBody: false
+    solution: "Lung"
+    metabolizerTypes: [ Bloodsucker ]
+    groups:
+    - id: Gas
+      rateModifier: 100.0
+  - type: Body
+    prototype: Bloodsucker
+    requiredLegs: 1
+  - type: Hunger
+    thresholds: # only animals and rats are derived from this prototype so let's override it here and in rats' proto
+      Overfed: 100
+      Okay: 50
+      Peckish: 25
+      Starving: 10
+      Dead: 0
+    baseDecayRate: 0.00925925925926 # it is okay for animals to eat and drink less than humans, but more frequently
+  - type: SpiderTerror
+    mindComponents:
+    - type: SpiderTerrorRole
+      prototype: SpiderTerror
   - type: Butcherable
     spawned:
     - id: FoodMeatSpider
@@ -62,7 +84,7 @@
       Dead:
         Base: dead
   - type: Stamina
-    critThreshold: 10
+    critThreshold: 100
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -75,7 +97,7 @@
     damage:
       types:
         Piercing: 2
-        Poison: 4
+        Poison: 2
   - type: Puller
   - type: GhostRole
     makeSentient: true
@@ -101,8 +123,8 @@
   - type: Speech
     speechVerb: LargeMob
   - type: MovementSpeedModifier
-    baseWalkSpeed: 5
-    baseSprintSpeed: 5
+    baseWalkSpeed: 4.5
+    baseSprintSpeed: 4.5
   - type: Bloodstream
     bloodReagent: CopperBlood
     bloodMaxVolume: 30
@@ -125,7 +147,7 @@
   - type: Spider
   - type: NpcFactionMember
     factions:
-    - SimpleHostile
+    - SpiderTerror
   - type: NightVision
   - type: IntrinsicRadioReceiver
   - type: IntrinsicRadioTransmitter
@@ -134,6 +156,12 @@
   - type: ActiveRadio
     channels:
     - SpiderTerrorChannel
+  - type: LockCocoon
+    handcuffsProtorype: SpiderHandcuffs
+    needHandcuff: true
+    ignorFriends: false
+    lockCocoon: ActionLockCocoon
+    cocoon: SpiderCocoon
 
 - type: entity
   name: паук королевской крови
@@ -149,7 +177,7 @@
       state: running
       sprite: DeadSpace/Mods/Spiders/pauchok_major_terror.rsi
   - type: Evolution
-    duration: 200 #Время до получения возможности эволюционировать
+    duration: 100 #Время до получения возможности эволюционировать
     spawnedEntities: #В кого можно эволюционировать
       - MobSpiderTerrorRoyalGuard
       - MobSpiderTerrorPrincess
@@ -207,13 +235,62 @@
   id: MobSpiderTerrorGuardian
   description: Маленький ядовитый паучок.
   components:
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      150: Critical
+      200: Dead
+  - type: MeleeWeapon
+    animation: WeaponArcBite
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    damage:
+      types:
+        Poison: 2
+      groups:
+        Brute: 10
   - type: Evolution
     duration: 150 #Время до получения возможности эволюционировать
     spawnedEntities: #В кого можно эволюционировать
       - MobSpiderTerrorWarrior
       - MobSpiderTerrorDrone
-      - MobSpiderTerrorDestroyer
       - MobSpiderTerrorMedic
+  - type: Bloodsucker
+    maxCountReagent: 50 #Емкость
+    countReagent: 0 #Сколько реагента при спавне
+    duration: 2 #Длительность сосания
+    howMuchWillItSuck: 10 #Сколько высосет за один укус
+    injectSound:
+      collection: SpiderHatches #Звуки после высасывания
+  - type: NeededBloodForEvolution #Пример
+    defaultCost: 100 #Стандартная цена на не заданный результат
+    bloodCosts: #цены
+      MobSpiderTerrorWarrior: 50
+      MobSpiderTerrorDrone: 50
+      MobSpiderTerrorMedic: 50
+
+- type: entity
+  name: взрослый паук страж
+  parent: BaseMobSpiderTerror
+  id: MobSpiderTerrorGuardianLvl2
+  description: Ядовитый паук.
+  components:
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.35
+        density: 130
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: Evolution
+    duration: 100 #Время до получения возможности эволюционировать
+    spawnedEntities: #В кого можно эволюционировать
+      - MobSpiderTerrorDestroyer
+      - MobSpiderTerrorLurker
   - type: Bloodsucker
     maxCountReagent: 100 #Емкость
     countReagent: 0 #Сколько реагента при спавне
@@ -224,10 +301,15 @@
   - type: NeededBloodForEvolution #Пример
     defaultCost: 100 #Стандартная цена на не заданный результат
     bloodCosts: #цены
-      MobSpiderTerrorWarrior: 50
-      MobSpiderTerrorDrone: 80
       MobSpiderTerrorDestroyer: 100
-      MobSpiderTerrorMedic: 50
+      MobSpiderTerrorLurker: 100
+  - type: Sprite
+    scale: 1, 1
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+      state: running
+      sprite: DeadSpace/Mods/Spiders/guardian_terror.rsi
 
 - type: entity
   name: паук лекарь
@@ -269,13 +351,13 @@
         layer:
         - MobLayer
   - type: MovementSpeedModifier
-    baseWalkSpeed: 3.5
-    baseSprintSpeed: 3.5
+    baseWalkSpeed: 3
+    baseSprintSpeed: 3
   - type: Bloodstream
     bloodReagent: CopperBlood
     bloodMaxVolume: 180
     bloodlossThreshold: 0.4
-  - type: SpiderDrone
+  - type: HipoHand
     quantity: 5 #Сколько впрыскивать
     countReagent: 20 #Сколько при спавне
     maxCountReagent: 20 #Хранилище реагента
@@ -283,13 +365,20 @@
     reagent: Omnizine #Что в хранилище
   - type: Puller
     needsHands: false
+  - type: SpawnAgainst
+    duration: 5
+    spawnAgainstAction: ActionSpawnAgainst #действие
+    spawnedEntities:
+      - JeleSpider
   - type: Bloodsucker
-    maxCountReagent: 0 #Емкость
-    countReagent: 0 #Сколько реагента при спавне
+    maxCountReagent: 50 #Емкость
+    countReagent: 50 #Сколько реагента при спавне
     duration: 2 #Длительность сосания
     howMuchWillItSuck: 10 #Сколько высосет за один укус
     injectSound:
       collection: SpiderHatches #Звуки после высасывания
+  - type: NeededBloodForSpawnAgainst #Пример
+    defaultCost: 5 #Стандартная цена на не заданный результат
   - type: ShowHealthBars
     damageContainers:
     - Biological
@@ -329,11 +418,12 @@
       types:
         Piercing: 2
         Poison: 7
+        Structural: 10
   - type: MobThresholds
     thresholds:
       0: Alive
-      70: Critical
-      140: Dead
+      100: Critical
+      200: Dead
   - type: Fixtures
     fixtures:
       fix1:
@@ -346,8 +436,8 @@
         layer:
         - MobLayer
   - type: MovementSpeedModifier
-    baseWalkSpeed: 3.5
-    baseSprintSpeed: 3.5
+    baseWalkSpeed: 3
+    baseSprintSpeed: 3
   - type: Bloodstream
     bloodReagent: CopperBlood
     bloodMaxVolume: 180
@@ -412,8 +502,8 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      300: Critical
-      500: Dead
+      200: Critical
+      400: Dead
   - type: Fixtures
     fixtures:
       fix1:
@@ -426,8 +516,8 @@
         layer:
         - MobLayer
   - type: MovementSpeedModifier
-    baseWalkSpeed: 1.5
-    baseSprintSpeed: 1.5
+    baseWalkSpeed: 2
+    baseSprintSpeed: 2
   - type: Bloodstream
     bloodReagent: CopperBlood
     bloodMaxVolume: 250
@@ -447,7 +537,7 @@
     injectSound:
       collection: SpiderHatches #Звуки после высасывания
   - type: NeededBloodForSpawnAgainst #Пример
-    defaultCost: 20 #Стандартная цена на не заданный результат
+    defaultCost: 50 #Стандартная цена на не заданный результат
   - type: Puller
     needsHands: false
   - type: SpideKing
@@ -481,7 +571,7 @@
     thresholds:
       0: Alive
       100: Critical
-      150: Dead
+      200: Dead
   - type: Fixtures
     fixtures:
       fix1:
@@ -500,7 +590,9 @@
     bloodReagent: Napalm
     bloodMaxVolume: 100
     bloodlossThreshold: 0.8
-  - type: ExplosionAfterDead
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+  - type: ExplosionAbility
     totalIntensity: 50
     maxTileIntensity: 5
   - type: Puller
@@ -531,8 +623,11 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      100: Critical
-      150: Dead
+      150: Critical
+      250: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      80: 0.9
   - type: Fixtures
     fixtures:
       fix1:
@@ -567,7 +662,7 @@
     quantity: 5 #Сколько впрыскивать
     countReagent: 10 #Сколько при спавне
     maxCountReagent: 10 #Хранилище реагента
-    durationRegenReagent: 60 #Время регена
+    durationRegenReagent: 30 #Время регена
     reagent: Toxin #Что в хранилище
 
 - type: entity
@@ -611,9 +706,12 @@
         - MobMask
         layer:
         - MobLayer
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      150: 0.9
   - type: MovementSpeedModifier
-    baseWalkSpeed: 3
-    baseSprintSpeed: 3
+    baseWalkSpeed: 3.5
+    baseSprintSpeed: 3.5
   - type: Bloodstream
     bloodReagent: CopperBlood
     bloodMaxVolume: 250
@@ -629,9 +727,10 @@
     needsHands: false
   - type: AutoInjectReagent
     reagents: #Что впрыскивать
-      Stimulants: 10
-      Omnizine: 10
-      Bicaridine: 15
+      Stimulants: 5
+      SpiderReaperExtract: 10
+      Bicaridine: 10
+      TranexamicAcid: 2
   - type: AutoInjectReagentOnAllowedState #Автоиньектор при смене состояния сущности
     durationRegenReagents: 120 #кд способности
     allowedStates: #При каких состояниях
@@ -641,8 +740,9 @@
       Epinephrine: 5
       Puncturase: 5
       Omnizine: 10
+      TranexamicAcid: 10
   - type: NeededBloodForAutoInject
-    cost: 30 #Цена крови за действие
+    cost: 20 #Цена крови за действие
 
 - type: entity
   name: король пауков
@@ -650,13 +750,26 @@
   id: MobSpiderTerrorKing
   description: Выглядит величественно.
   components:
+  - type: SpawnAgainst
+    duration: 30
+    spawnAgainstAction: ActionSpawnAgainst #действие
+    spawnedEntities:
+      - SpiderTomb
+      - WallWebSpiderTerror
+      - AirlockWebTerror
   - type: Bloodsucker
-    maxCountReagent: 0 #Емкость
-    countReagent: 0 #Сколько реагента при спавне
+    maxCountReagent: 200 #Емкость
+    countReagent: 200 #Сколько реагента при спавне
     duration: 2 #Длительность сосания
     howMuchWillItSuck: 20 #Сколько высосет за один укус
     injectSound:
       collection: SpiderHatches #Звуки после высасывания
+  - type: NeededBloodForSpawnAgainst #Пример
+    defaultCost: 50 #Стандартная цена на не заданный результат
+    bloodCosts: #цены
+      SpiderTomb: 50
+      WallWebSpiderTerror: 5
+      AirlockWebTerror: 5
   - type: Sprite
     scale: 1.5, 1.5
     drawdepth: Mobs
@@ -680,6 +793,9 @@
       0: Alive
       350: Critical
       450: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      250: 0.8
   - type: Fixtures
     fixtures:
       fix1:
@@ -692,8 +808,8 @@
         layer:
         - MobLayer
   - type: MovementSpeedModifier
-    baseWalkSpeed: 4
-    baseSprintSpeed: 4
+    baseWalkSpeed: 3.5
+    baseSprintSpeed: 3.5
   - type: Bloodstream
     bloodReagent: CopperBlood
     bloodMaxVolume: 250
@@ -752,8 +868,8 @@
         layer:
         - MobLayer
   - type: MovementSpeedModifier
-    baseWalkSpeed: 3.5
-    baseSprintSpeed: 3.5
+    baseWalkSpeed: 3
+    baseSprintSpeed: 3
   - type: Bloodstream
     bloodReagent: CopperBlood
     bloodMaxVolume: 250
@@ -761,3 +877,67 @@
   - type: Puller
     needsHands: false
   - type: SpideRoyalGuard
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      150: 0.8
+  - type: StunAttack
+    paralyzeTime: 1
+
+- type: entity
+  name: переносчик заразы
+  parent: BaseMobSpiderTerror
+  id: MobSpiderTerrorInfector
+  description: Паук, распространитель заразы.
+  components:
+  - type: Sprite
+    scale: 0.6, 0.6
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+      state: running
+      sprite: DeadSpace/Mods/Spiders/infector.rsi
+  - type: MeleeWeapon
+    altDisarm: false
+    angle: 0
+    animation: WeaponArcBite
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    damage:
+      types:
+        Poison: 3
+        Structural: 5
+      groups:
+        Brute: 5
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      200: Critical
+      300: Dead
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.3
+        density: 130
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 3
+    baseSprintSpeed: 3
+  - type: Bloodstream
+    bloodReagent: CopperBlood
+    bloodMaxVolume: 200
+    bloodlossThreshold: 0.4
+  - type: Puller
+    needsHands: false
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      100: 0.8
+  - type: SpiderInfector
+    spawned:
+    - id: MobSpiderTerrorGuardian
+      amount: 3
+    infectDuration: 300

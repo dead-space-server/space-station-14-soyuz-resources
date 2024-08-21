@@ -145,6 +145,13 @@
   parent: [SimpleSpaceMobBase, MobCombat]
   noSpawn: true
   components:
+  - type: Vocal
+    sounds:
+      Male: Necro
+      Female: Necro
+      Unsexed: Necro
+  - type: ImmunitetInfectionDead
+  - type: ImmunNecroobelisk
   - type: IgnoreKudzu
   - type: Unitology
   - type: ZombieImmune
@@ -157,6 +164,18 @@
     speedModifier: 1.5
     qualities:
       - Prying
+  - type: HTN
+    rootTask:
+      task: XenoCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -183,11 +202,20 @@
   - type: NightVision
   - type: ReleaseGasPerSecond
     gasID: 9
+  - type: Prying
+    pryPowered: !type:Bool
+        true
+    force: !type:Bool
+      true
+    useSound:
+      path: /Audio/Items/crowbar.ogg
 
 - type: entity
   id: MobSlasherSmall
   parent: NecromorfMobBase
   components:
+  - type: ReplacementAccent
+    accent: genericAggressive
   - type: Sprite
     drawdepth: Mobs
     sprite: DeadSpace/Mods/Necromorfs/slasher2.rsi

@@ -49,7 +49,7 @@
       0: Alive
       80: Critical
       200: Dead
-  - type: Sanity
+  - type: Sanity # DS14
   - type: Inventory
     speciesId: reptilian # for reptilian masks
 
