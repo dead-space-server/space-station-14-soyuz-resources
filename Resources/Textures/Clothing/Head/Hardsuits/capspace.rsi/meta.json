@@ -15,19 +15,19 @@
     },
     {
       "name": "off-equipped-HELMET",
-      "directions": 4
+      "directions": 1
     },
     {
       "name": "off-equipped-HELMET-vox",
-      "directions": 4
+      "directions": 1
     },
     {
       "name": "on-equipped-HELMET",
-      "directions": 4
+      "directions": 1
     },
     {
       "name": "on-equipped-HELMET-vox",
-      "directions": 4
+      "directions": 1
     }
   ]
 }
