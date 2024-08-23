@@ -2,82 +2,82 @@
   id: Internacional
   name: Пролетарский гимн "Интернационал"
   path:
-    path: /Audio/Jukebox/Anthem RSSR — Internacional.ogg
+    path: /Audio/Jukebox/AnthemRSSRInternacional.ogg
 
 - type: jukebox
   id: EtotGorod
   name: Браво "Этот город"
   path:
-    path: /Audio/Jukebox/Bravo — etot gorod.ogg
+    path: /Audio/Jukebox/BravoEtotGorod.ogg
 
 - type: jukebox
   id: Komarovo
   name: DVRST "Комарово"
   path:
-    path: /Audio/Jukebox/DVRST — Komarovo.ogg
+    path: /Audio/Jukebox/DVRSTKomarovo.ogg
 
 - type: jukebox
   id: WhoLookForward
   name: Слава вперёдсмотрящему!
   path:
-    path: /Audio/Jukebox/Glory to the Ones Who Look Forward.ogg
+    path: /Audio/Jukebox/GloryToTheOnesWhoLookForward.ogg
 
 - type: jukebox
   id: PrekrasnoeDaleko
   name: Гостья из будущего "Прекрасное далеко"
   path:
-    path: /Audio/Jukebox/Gostya iz budushhego — Prekrasnoe daleko.ogg
+    path: /Audio/Jukebox/GostyaIzBudushhegoPrekrasnoeDaleko.ogg
 
 - type: jukebox
   id: Chuzhoe
   name: Гражданская оборона "Чужое"
   path:
-    path: /Audio/Jukebox/Grazhdanskaya oborona — Chuzhoe.ogg
+    path: /Audio/Jukebox/GrazhdanskayaOboronaChuzhoe.ogg
 
 - type: jukebox
   id: DiscoElysiumHardcoreDance
   name: Жёсткий танец
   path:
-    path: /Audio/Jukebox/Hardcore Dance — Disco Elysium OST.ogg
+    path: /Audio/Jukebox/HardcoreDanceDiscoElysiumOST.ogg
 
 - type: jukebox
   id: MarchOfTheCommunistBrigades
   name: Марш коммунистических бригад
   path:
-    path: /Audio/Jukebox/Metro 2 — March of the Communist Brigades OST.ogg
+    path: /Audio/Jukebox/Metro2MarchOfTheCommunistBrigadesOST.ogg
 
 - type: jukebox
   id: PapersPleaseTheme
   name: Бумаги, пожалуйста!
   path:
-    path: /Audio/Jukebox/Papers, please — main theme.ogg
+    path: /Audio/Jukebox/PapersPleaseMainTheme.ogg
 
 - type: jukebox
   id: WhirlingInRags
   name: Танцующая в лохматьях
   path:
-    path: /Audio/Jukebox/Sea Power — Whirling-In-Rags, 8 AM.ogg
+    path: /Audio/Jukebox/SeaPowerWhirlingInRags8AM.ogg
 
 - type: jukebox
   id: RedAlertSovietMarch
   name: Красная угроза
   path:
-    path: /Audio/Jukebox/SOVIET MARCH — Red Alert 3 — RUSSIAN COVER.ogg
+    path: /Audio/Jukebox/SovietMarchRedAlert3RussianCover.ogg
 
 - type: jukebox
   id: TravaUDoma
   name: Земляне "Трава у дома"
   path:
-    path: /Audio/Jukebox/Trava u doma.ogg
+    path: /Audio/Jukebox/TravaUDoma.ogg
 
 - type: jukebox
   id: IBelieveMyFriends
   name: Я верю, мои друзья
   path:
-    path: /Audio/Jukebox/Vladimir Troshin — I Believe My Friends.ogg
+    path: /Audio/Jukebox/VladimirTroshinIBelieveMyFriends.ogg
 
 - type: jukebox
   id: MachineOfCommunism
   name: Коммунистическая машина
   path:
-    path: /Audio/Jukebox/You Are Empty — Machine of Communism.ogg
+    path: /Audio/Jukebox/YouAreEmptyMachineOfCommunism.ogg
