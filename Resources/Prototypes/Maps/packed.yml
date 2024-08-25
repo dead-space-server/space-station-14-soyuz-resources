@@ -39,11 +39,13 @@
             MedicalDoctor: [ 3, 3 ]
             MedicalIntern: [ 2, 2 ]
             Paramedic: [ 1, 1 ]
+            Psychologist: [ 1, 1 ]
             #science
             ResearchDirector: [ 1, 1 ]
             SeniorResearcher: [ 1, 1 ]
             Scientist: [ 3, 3 ]
             ResearchAssistant: [ 2, 2 ]
+            Borg: [ 1 , 1 ]
             #security
             HeadOfSecurity: [ 1, 1 ]
             Warden: [ 1, 1 ]
@@ -61,7 +63,7 @@
             Clown: [ 1, 1 ]
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
-            Borg: [ 1 , 1 ]
+            Reporter: [ 1, 1 ]
             # DS14
             ADTBlueShieldOfficer: [ 1, 1 ]
             BorgSecurity: [ 1, 1 ]
