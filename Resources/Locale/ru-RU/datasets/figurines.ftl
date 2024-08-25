@@ -13,7 +13,7 @@ figurines-greytider-5 = Грейтайд по всей станции!
 figurines-clown-1 = Хонк!
 figurines-clown-2 = Банан!
 figurines-clown-3 = Мыло!
-figurines-clown-4 = У ГП один клоун, у ГСБ целый отдел.
+figurines-clown-4 = У НОКа один клоун, у НМа целый отдел.
 figurines-clown-5 = Я тебя раздражаю?
 
 figurines-holoclown-1 = Помогаю своему старшему брату.
@@ -29,9 +29,9 @@ figurines-musician-2 = Never gonna let you down!
 
 # figurines-boxer-
 
-figurines-captain-1 = Слава НТ!
+figurines-captain-1 = Слава СССП!
 
-figurines-hos-1 = Корпоративный закон? Что?
+figurines-hos-1 = Правила внутреннего распорядка? Что?
 figurines-hos-2 = Застрелить клоуна.
 
 figurines-warden-1 = Казните его за проникновение!
@@ -77,7 +77,7 @@ figurines-atmostech-5 = Слава Атмосии!
 figurines-rd-1 = Взорвать всех боргов!
 figurines-rd-2 = Арсенал третьего уровня? Ни за что.
 
-figurines-scientist-1= Кто-то другой сделал эти бомбы!
+figurines-scientist-1 = Кто-то другой сделал эти бомбы!
 figurines-scientist-2 = Он попросил, чтобы его боргировали!
 figurines-scientist-3 = Карп в нио!
 figurines-scientist-4 = Взрыв в нио.
@@ -105,9 +105,9 @@ figurines-chaplain-3 = Бог существует!
 figurines-chef-1 = Клянусь, это не человеческое мясо.
 
 figurines-bartender-1 = Где моя обезьянка?
-figurines-bartender-2 = СБ не пьёт.
+figurines-bartender-2 = Милиция не пьёт.
 
-figurines-botanist-1 = У меня нет травы, офицер!
+figurines-botanist-1 = У меня нет травы, милиционер!
 figurines-botanist-2 = Чувак, я вижу цвета...
 
 figurines-janitor-1 = Клоун украл моё мыло. Опять.
@@ -118,7 +118,7 @@ figurines-nukie-2 = Виски, Эхо, Виски.
 figurines-nukie-3 = Ядерка делает бум.
 figurines-nukie-4 = Какой код?
 
-figurines-nukie-elite-1 = Ни слова по нанотрейзен.
+figurines-nukie-elite-1 = Ни слова по коммунистически.
 figurines-nukie-elite-2 = ЭТО ПИВНАЯ!
 figurines-nukie-elite-3 = Ребят, вы живы?
 

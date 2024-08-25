@@ -1,6 +1,6 @@
 cargoproduct-category-name-armory = Оружейная
-cargoproduct-category-name-atmospherics = АТМОС
-cargoproduct-category-name-cargo = Почтовое отделение
+cargoproduct-category-name-atmospherics = Атмос
+cargoproduct-category-name-cargo = Почта
 cargoproduct-category-name-circuitboards = Платы и схемы
 cargoproduct-category-name-emergency = Аварийное снаряжение
 cargoproduct-category-name-engineering = Инженерный отдел
