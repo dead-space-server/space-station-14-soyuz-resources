@@ -3,7 +3,6 @@
   startingInventory:
     ButchCleaver: 1
     KitchenKnife: 5
-    ADTIronTray: 2
     RollingPin: 4
     Spoon: 4
     Fork: 4
@@ -16,8 +15,7 @@
     DrinkGlass: 5
     Beaker: 5
     LargeBeaker: 5
-    ADTDrinkTeapot: 1
-    ADTDrinkTeacup: 5
+    Pitcher: 2
     DrinkMug: 5
     DrinkMugBlack: 2
     DrinkMugBlue: 2
@@ -28,3 +26,6 @@
     DrinkMugOne: 1
     DrinkMugRainbow: 2
     DrinkMugRed: 2
+    ADTIronTray: 2
+    ADTDrinkTeapot: 1
+    ADTDrinkTeacup: 5

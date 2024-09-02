@@ -154,5 +154,5 @@
     - type: GhostTakeoverAvailable
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstERTLeader
+      - NamesFirstERT
       - NamesLastERT

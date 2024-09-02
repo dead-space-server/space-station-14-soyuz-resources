@@ -24,6 +24,7 @@ research-technology-biochemical-stasis = Биохимический стазис
 research-technology-mechanized-treatment = Механизированная подготовка
 research-technology-bluespace-chemistry = Блюспейс-химия
 research-technology-salvage-weapons = Шахтёрское оружие
+research-technology-special-means = Специальные средства
 research-technology-draconic-munitions = Драконьи боеприпасы
 research-technology-uranium-munitions = Урановые боеприпасы
 research-technology-explosive-technology = Взрывчатые вещества

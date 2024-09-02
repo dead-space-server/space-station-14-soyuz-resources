@@ -10,7 +10,7 @@
     - !type:DepartmentTimeRequirement
       department: Security
       time: 72000 # 20 hours
-  guides: [ Revolutionaries ]
+  # guides: [ Revolutionaries ] # DS14: disabled due to lack of localization
 
 - type: antag
   id: Rev
@@ -18,7 +18,7 @@
   antagonist: true
   setPreference: false
   objective: roles-antag-rev-objective
-  guides: [ Revolutionaries ]
+  # guides: [ Revolutionaries ] # DS14: disabled due to lack of localization
 
 - type: startingGear
   id: HeadRevGear

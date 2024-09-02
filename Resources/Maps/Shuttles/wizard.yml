@@ -343,7 +343,6 @@ entities:
             74: -9,-3
             75: -9,-1
             76: 8,-1
-            77: 8,-3
         - node:
             color: '#FFFFFFFF'
             id: WarnLineN
@@ -604,7 +603,7 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -2.5,5.5
       parent: 768
-- proto: AtmosDeviceFanTiny
+- proto: AtmosDeviceFanDirectional
   entities:
   - uid: 338
     components:
@@ -615,20 +614,20 @@ entities:
   - uid: 339
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 9.5,-2.5
+      rot: -1.5707963267948966 rad
+      pos: -10.5,-2.5
       parent: 768
   - uid: 340
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
-      pos: -10.5,-0.5
+      pos: 9.5,-2.5
       parent: 768
   - uid: 341
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -10.5,-2.5
+      rot: -1.5707963267948966 rad
+      pos: -10.5,-0.5
       parent: 768
 - proto: AtmosFixNitrogenMarker
   entities:

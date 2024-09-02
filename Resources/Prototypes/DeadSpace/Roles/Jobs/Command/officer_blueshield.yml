@@ -22,7 +22,7 @@
       requiredAge: 28
   startingGear: BlueShieldOfficerGear
   icon: "JobIconADTBlueShieldOfficer"
-  supervisors: job-supervisors-higher-command
+  supervisors: job-supervisors-centcom
   canBeAntag: false
   access:
   - Captain

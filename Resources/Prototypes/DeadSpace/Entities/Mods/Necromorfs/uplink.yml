@@ -1,13 +1,13 @@
-﻿- type: listing # товары в ней
-  id: UnitologyCrateObeliskSplinterList
-  name: Осколок обелиска
-  description: В комплект входит его активатор.
-  icon: { sprite: DeadSpace/Mods/Necromorfs/splinter.rsi, state: splinter }
-  productEntity: CrateObeliskSplinter
-  cost:
-    Telecrystal: 25
-  categories:
-    - UplinkUnitologyInfection
+﻿# - type: listing # товары в ней
+#   id: UnitologyCrateObeliskSplinterList
+#   name: Осколок обелиска
+#   description: В комплект входит его активатор.
+#   icon: { sprite: DeadSpace/Mods/Necromorfs/splinter.rsi, state: splinter }
+#   productEntity: CrateObeliskSplinter
+#   cost:
+#     Telecrystal: 25
+#   categories:
+#     - UplinkUnitologyInfection
 
 - type: listing # товары в ней
   id: UnitologyInfectionDeadCanisterList
@@ -23,7 +23,7 @@
 - type: listing # товары в ней
   id: UnitologyInfectionDeadList
   name: Экстракт заразителя
-  description: Шприц с сывороткой порабощения, 15 едениц.
+  description: Шприц с экстрактом заразителя, 15 едениц.
   icon: { sprite: Objects/Specific/Chemistry/syringe.rsi, state: syringe1 }
   productEntity: SyringeExtractInfectorDead
   cost:
@@ -34,7 +34,7 @@
 - type: listing # товары в ней
   id: UnitologySerumList
   name: Сыворотка порабощения
-  description: Шприц с экстрактом заразителя, 15 едениц.
+  description: Шприц с сывороткой порабощения, 15 едениц.
   icon: { sprite: Objects/Specific/Chemistry/syringe.rsi, state: syringe1 }
   productEntity: SyringeSerumEnslaved
   cost:

@@ -3,5 +3,3 @@
   name: Urist McFelinid
   parent: MobFelinidBase
   id: MobFelinid
-  components:
-  - type: Felinid

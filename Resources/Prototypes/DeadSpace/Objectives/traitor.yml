@@ -1,7 +1,0 @@
-- type: entity
-  noSpawn: true
-  parent: BaseCMOStealObjective
-  id: CMOBestGlassesForCMOStealObjective
-  components:
-  - type: StealCondition
-    stealGroup: BestGlassesForCMO

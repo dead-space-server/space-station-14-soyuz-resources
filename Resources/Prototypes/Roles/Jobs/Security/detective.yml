@@ -4,9 +4,9 @@
   description: job-description-detective
   playTimeTracker: JobDetective
   requirements:
-  - !type:DepartmentTimeRequirement
-    department: Security
-    time: 54000 # 15 hours
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 54000 # 15 hours
   startingGear: DetectiveGear
   icon: "JobIconDetective"
   supervisors: job-supervisors-hos
@@ -21,7 +21,7 @@
   minBankBalance: 150
   maxBankBalance: 250
   wageDepartment: Security
-  wage: 25
+  wage: 50
   #end-backmen: currency
   special:
   - !type:AddImplantSpecial

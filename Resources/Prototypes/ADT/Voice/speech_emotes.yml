@@ -1,9 +1,0 @@
-- type: emote
-  id: WorkOut
-  name: chat-emote-name-workout
-  chatMessages: ["качается"]
-  chatTriggers:
-    - works out
-    - bigs up
-    - buffs up
-    - качается

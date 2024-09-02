@@ -15,6 +15,7 @@ loadout-group-survival-syndicate = Github заставил меня переве
 loadout-group-breath-tool = Расозависимое дыхательное снаряжение
 loadout-group-tank-harness = Расозависимое снаряжение для выживания
 loadout-group-EVA-tank = Расозависимый газовый баллон
+loadout-group-survival-mime = Мимский аварийный запас
 # Command
 loadout-group-captain-head = Капитан, голова
 loadout-group-captain-jumpsuit = Капитан, комбинезон
@@ -35,6 +36,7 @@ loadout-group-passenger-gloves = Ассистент, перчатки
 loadout-group-passenger-backpack = Стандартный, рюкзак
 loadout-group-passenger-outerclothing = Ассистент, верхняя одежда
 loadout-group-passenger-shoes = Ассистент, обувь
+loadout-group-passenger-neck = Ассистент, шея
 loadout-group-bartender-head = Бармен, голова
 loadout-group-bartender-jumpsuit = Бармен, комбинезон
 loadout-group-bartender-outerclothing = Бармен, верхняя одежда
@@ -169,6 +171,7 @@ loadout-group-detective-outerclothing = Детектив, верхняя оде�
 loadout-group-detective-underwear = Детектив, нижнее бельё
 loadout-group-security-cadet-jumpsuit = Кадет СБ, комбинезон
 loadout-group-security-cadet-underwear = Кадет СБ, нижнее бельё
+loadout-group-security-star = СБ, Звёздочка
 # Medical
 loadout-group-medical-gloves = Медицинский отдел, перчатки
 loadout-group-medical-mask = Медицинский отдел, маска

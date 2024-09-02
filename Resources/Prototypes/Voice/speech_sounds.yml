@@ -119,10 +119,16 @@
   id: Vox
   saySound:
     path: /Audio/Voice/Talk/vox.ogg
+    params:
+        volume: -2
   askSound:
     path: /Audio/Voice/Talk/vox_ask.ogg
+    params:
+        volume: -2
   exclaimSound:
     path: /Audio/Voice/Talk/vox_exclaim.ogg
+    params:
+        volume: -2
 
 - type: speechSounds
   id: Arachnid

@@ -8,7 +8,7 @@
     - type: GhostRole
       name: ghost-role-information-blob-name
       description: ghost-role-information-blob-description
-      rules: You are an antagonist, destroy the station!
+      rules: ghost-role-component-default-rules
       raffle:
         settings: default
     - type: GhostTakeoverAvailable
@@ -136,9 +136,7 @@
     - type: GhostRole
       name: ghost-role-information-blobbernaut-name
       description: ghost-role-information-blobbernaut-description
-      rules: You are an antagonist, defend your blob core!
-      raffle:
-        settings: default
+      rules: ghost-role-component-default-rules
     - type: GhostTakeoverAvailable
     - type: Blobbernaut
     - type: BlobSpeak
@@ -384,7 +382,7 @@
     - type: GhostRole
       name: ghost-role-information-blob-name
       description: ghost-role-information-blob-description
-      rules: You are an antagonist, destroy the station!
+      rules: ghost-role-component-default-rules
       reregister: false
       raffle:
         settings: default
@@ -658,7 +656,7 @@
     - type: GhostRole
       name: ghost-role-information-blob-name
       description: ghost-role-information-blob-description
-      rules: You are an antagonist, destroy the station!
+      rules: ghost-role-component-default-rules
     - type: GhostTakeoverAvailable
     - type: Fixtures
       fixtures:
