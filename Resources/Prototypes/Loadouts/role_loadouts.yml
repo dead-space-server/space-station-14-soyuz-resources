@@ -181,7 +181,7 @@
   - MimeBackpack
   - MimeOuterClothing
   - Glasses
-  - Survival
+  - SurvivalMime
   - Trinkets
   - MimeUnderwear # DS14-Underwear
 
@@ -438,7 +438,7 @@
   - SurvivalMedical
   - Trinkets
   - GroupSpeciesBreathToolMedical
-  - SecurityCadetUnderwear # DS14-Underwear
+  - ChiefMedicalOfficerUnderwear # DS14-Underwear
 
 - type: roleLoadout
   id: JobMedicalDoctor

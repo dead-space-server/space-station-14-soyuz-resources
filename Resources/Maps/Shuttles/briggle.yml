@@ -147,7 +147,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -81.781815
+      secondsUntilStateChange: -347.64847
       state: Opening
 - proto: AirlockSecurityGlassLocked
   entities:
@@ -170,9 +170,9 @@ entities:
     - type: Transform
       pos: -0.5,-7.5
       parent: 1
-- proto: AtmosDeviceFanTiny
+- proto: AtmosDeviceFanDirectional
   entities:
-  - uid: 83
+  - uid: 57
     components:
     - type: Transform
       pos: 0.5,-10.5
@@ -829,6 +829,14 @@ entities:
         Glip Glorp,
 
         NanoTrasen Motorpool Division
+- proto: PlushieRouny
+  entities:
+  - uid: 83
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -0.53599805,-6.526394
+      parent: 1
 - proto: PortableGeneratorPacman
   entities:
   - uid: 41
@@ -847,60 +855,36 @@ entities:
       rot: 3.141592653589793 rad
       pos: -0.5,-6.5
       parent: 1
-    - type: PointLight
-      enabled: False
-    - type: ApcPowerReceiver
-      powerLoad: 0
   - uid: 144
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 1.5,-8.5
       parent: 1
-    - type: PointLight
-      enabled: False
-    - type: ApcPowerReceiver
-      powerLoad: 0
   - uid: 145
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -0.5,-8.5
       parent: 1
-    - type: PointLight
-      enabled: False
-    - type: ApcPowerReceiver
-      powerLoad: 0
   - uid: 146
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 1.5,-6.5
       parent: 1
-    - type: PointLight
-      enabled: False
-    - type: ApcPowerReceiver
-      powerLoad: 0
   - uid: 147
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -0.5,-0.5
       parent: 1
-    - type: PointLight
-      enabled: False
-    - type: ApcPowerReceiver
-      powerLoad: 0
   - uid: 148
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 1.5,-0.5
       parent: 1
-    - type: PointLight
-      enabled: False
-    - type: ApcPowerReceiver
-      powerLoad: 0
 - proto: RadioHandheld
   entities:
   - uid: 61

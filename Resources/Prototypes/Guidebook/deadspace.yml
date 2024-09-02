@@ -5,7 +5,6 @@
 #   children:
 #   - NewFoodDS14
 #   - NewDrinkDS14
-#   - ChemistDS14
 
 - type: guideEntry
   id: NewFoodDS14
@@ -18,8 +17,3 @@
   name: guide-service-newdrink-ds14
   text: "/ServerInfo/Guidebook/DeadSpace/NewDrink.xml"
   priority: 10
-
-# - type: guideEntry
-#   id: ChemistDS14
-#   name: guide-entry-chemist-ds14
-#   text: "/ServerInfo/Guidebook/DeadSpace/Chemist.xml"

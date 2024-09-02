@@ -18,6 +18,9 @@
         - proto: CyborgEndoskeleton
           cost: 3
           prob: 0.5
+        - proto: CyborgEndoskeletonSec
+          cost: 6
+          prob: 0.5
         - proto: ChemDispenserMachineCircuitboard
           cost: 2
         - proto: CircuitImprinter

@@ -70,6 +70,7 @@
   id: CBURNLeaderSCST
   parent: EventHumanoidERTZombieImmune
   components:
+  - type: MindShield
   - type: Loadout
     prototypes: [CBURNSCSTLeaderGear]
   - type: GhostRole
@@ -94,8 +95,9 @@
 
 - type: randomHumanoidSettings
   id: CBURNSoldierSCST
-  parent: EventHumanoid
+  parent: EventHumanoidERTZombieImmune
   components:
+  - type: MindShield
   - type: Loadout
     prototypes: [CBURNSCSTSoldierGear]
   - type: GhostRole
@@ -115,7 +117,7 @@
   - type: GhostTakeoverAvailable
   - type: RandomMetadata
     nameSegments:
-    - NamesFirstERTLeader
+    - NamesFirstERT
     - NamesLastERT
 
 - type: entity

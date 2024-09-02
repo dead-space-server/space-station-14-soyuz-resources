@@ -19,7 +19,7 @@
   minBankBalance: 150
   maxBankBalance: 250
   wageDepartment: Science
-  wage: 50
+  wage: 75
   #end-backmen: currency
 
 - type: startingGear

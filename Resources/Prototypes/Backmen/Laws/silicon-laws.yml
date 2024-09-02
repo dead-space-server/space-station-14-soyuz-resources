@@ -2,9 +2,9 @@
 - type: weightedRandom
   id: LawsStationAIDefault
   weights:
-    CrewsimovSAI: 4.0
+    CrewsimovSAI: 1.0
     CorporateSAI: 4.0
-    NTDefaultSAI: 4.0
+    NTDefaultSAI: 3.0
     CEO: 0.25
     Clown: 0.25
     Cowboy: 0.25

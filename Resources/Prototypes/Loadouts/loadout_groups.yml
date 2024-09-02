@@ -335,7 +335,7 @@
 - type: loadoutGroup
   id: LawyerNeck
   name: loadout-group-lawyer-neck
-  minLimit: 0
+  minLimit: 1
   loadouts:
   - LawyerNeck
 
@@ -498,13 +498,16 @@
   minLimit: 0
   loadouts:
   - JesterHat
+  - JesterAltHat
 
 - type: loadoutGroup
   id: ClownJumpsuit
   name: loadout-group-clown-jumpsuit
   loadouts:
   - ClownSuit
+  - ClownSkirt
   - JesterSuit
+  - JesterAltSuit
 
 - type: loadoutGroup
   id: ClownBackpack
@@ -591,6 +594,20 @@
   minLimit: 0
   loadouts:
   - MimeWintercoat
+
+- type: loadoutGroup
+  id: SurvivalMime
+  name: loadout-group-survival-mime
+  minLimit: 2
+  hidden: true
+  loadouts:
+  - EmergencyNitrogenMime
+  - EmergencyOxygenMime
+  # DS14-species-emergency-start
+  - EmergencyNonBreather
+  - EmergencyRobotNonBreather  
+  # DS14-species-emergency-end
+  - LoadoutSpeciesVoxNitrogen
 
 - type: loadoutGroup
   id: MimeUnderwear

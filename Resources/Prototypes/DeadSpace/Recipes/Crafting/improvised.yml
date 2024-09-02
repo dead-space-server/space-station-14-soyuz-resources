@@ -1,6 +1,6 @@
 - type: construction
   name: double toy sword
-  id: DoubleToySword
+  id: ToyDoubleSword
   graph: ToyDoubleSword
   startNode: start
   targetNode: icon

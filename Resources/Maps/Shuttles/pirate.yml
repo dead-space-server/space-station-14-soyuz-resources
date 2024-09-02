@@ -578,23 +578,25 @@ entities:
     - type: Transform
       pos: -0.67882204,3.741016
       parent: 1
-- proto: AtmosDeviceFanTiny
+- proto: AtmosDeviceFanDirectional
   entities:
   - uid: 27
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 3.5,15.5
+      rot: -1.5707963267948966 rad
+      pos: -11.5,2.5
       parent: 1
   - uid: 28
     components:
     - type: Transform
-      pos: -11.5,2.5
+      rot: 1.5707963267948966 rad
+      pos: 8.5,2.5
       parent: 1
   - uid: 772
     components:
     - type: Transform
-      pos: 8.5,2.5
+      rot: 3.141592653589793 rad
+      pos: 3.5,15.5
       parent: 1
 - proto: BackmenVendingMachineCigs
   entities:
