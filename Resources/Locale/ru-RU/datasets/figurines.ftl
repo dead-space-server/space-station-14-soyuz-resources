@@ -26,20 +26,29 @@ figurines-mime-5 = ................
 
 figurines-musician-1 = Never gonna give you up!
 figurines-musician-2 = Never gonna let you down!
-
-# figurines-boxer-
+figurines-boxer-1 = Первое правило бойцовского клуба...
 
 figurines-captain-1 = Слава СССП!
+figurines-captain-2 = Как я получил эту должность? Да.
+figurines-captain-3 = Ядерный диск в безопасности. Где? Где-то.
 
 figurines-hos-1 = Правила внутреннего распорядка? Что?
 figurines-hos-2 = Застрелить клоуна.
+figurines-hos-3 = Да, я застрелил клоуна. Нет, я не жалею об этом.
 
 figurines-warden-1 = Казните его за проникновение!
+figurines-warden-2 = В перму ублюдка за оскорбление!
+figurines-warden-3 = Мы абсолютно справедливо относимся ко всем и НЕ допускаем грубого обращения с заключенными.
+figurines-warden-4 = Бриг - мой дом. Мой дом - бриг. Мой бриг - дом. Стоп, что?
 
 figurines-detective-1 = Убийца был дворецкий.
+figurines-detective-2 = Мне нужно немного виски после этого.
 
 figurines-security-1 = Я тут закон!
 figurines-security-2 = Вы нарушили статью 1984.
+
+figurines-security-3 = Всякий раз, как мне становится скучно, я использую клоуна в качестве мишени.
+figurines-security-4 = У тебя есть два права: молчать и поплакать об этом.
 
 figurines-lawyer-1 = Лучше звоните солу!
 figurines-lawyer-2 = Objection!
@@ -80,8 +89,8 @@ figurines-rd-2 = Арсенал третьего уровня? Ни за что.
 figurines-scientist-1 = Кто-то другой сделал эти бомбы!
 figurines-scientist-2 = Он попросил, чтобы его боргировали!
 figurines-scientist-3 = Карп в нио!
-figurines-scientist-4 = Взрыв в нио.
-figurines-scientist-5 = Аномалия взорвалась.
+figurines-scientist-4 = Взрыв в нио!
+figurines-scientist-5 = Аномалия взорвалась!
 
 figurines-cmo-1 = Датчики костюмов!
 figurines-cmo-2 = Почему у нас есть мет?

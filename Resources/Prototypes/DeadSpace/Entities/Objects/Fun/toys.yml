@@ -56,7 +56,7 @@
   description: Два игрушечных меча в одном. Мечта любого клоуна.
   components:
   - type: Construction
-    graph: DoubleToySword
+    graph: ToyDoubleSword
     node: icon
   - type: Sprite
     sprite: Objects/Weapons/Melee/e_sword_double.rsi

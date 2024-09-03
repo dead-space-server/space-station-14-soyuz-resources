@@ -55,6 +55,7 @@
       Unsexed: MaleVulpkanin
   - type: Speech
     speechSounds: Vulpkanin
+  - type: Vulpkanin # DS14: For emote panel
 
 - type: entity
   save: false

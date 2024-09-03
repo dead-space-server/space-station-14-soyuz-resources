@@ -44,6 +44,13 @@
     - type: GasMiner
       spawnGas: InfectionDeadSpace
 
+- type: alarmThreshold
+  id: stationInfectionDeadSpace
+  upperBound: !type:AlarmThresholdSetting
+    threshold: 0.05
+  upperWarnAround: !type:AlarmThresholdSetting
+    threshold: 0.5
+
 - type: entity
   parent: GasCanister
   id: InfectionDeadCanister

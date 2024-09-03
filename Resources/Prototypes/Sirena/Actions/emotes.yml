@@ -59,7 +59,7 @@
   name: chat-emote-name-flip
   icon: Interface/Emotes/somersaults.png
   category: Animations
-  chatMessages: [chat-emote-msg-flip]
+  chatMessages: ["chat-emote-msg-flip"]
   chatTriggers:
     - сделал сальто
     - сделала сальто
@@ -72,7 +72,7 @@
   name: chat-emote-name-jump
   icon: Interface/Emotes/jump.png
   category: Animations
-  chatMessages: [прыгает]
+  chatMessages: ["chat-emote-msg-jump"]
   chatTriggers:
     - прыгает
     - прыгнула
@@ -86,7 +86,7 @@
   name: chat-emote-name-turn
   icon: Interface/Emotes/spin.png
   category: Animations
-  chatMessages: [chat-emote-msg-turn]
+  chatMessages: ["chat-emote-msg-turn"]
   chatTriggers:
     - кружится
     - оборачивается
@@ -99,7 +99,7 @@
   id: EmoteStopTail
   name: chat-emote-name-stop-tail
   category: Animations
-  chatMessages: [chat-emote-stop-tail]
+  chatMessages: ["chat-emote-msg-stop-tail"]
   chatTriggers:
     - хвост замирает
     - прекратил вилять хвостом
@@ -111,7 +111,7 @@
   id: EmoteStartTail
   name: chat-emote-name-start-tail
   category: Animations
-  chatMessages: [chat-emote-msg-start-tail]
+  chatMessages: ["chat-emote-msg-start-tail"]
   chatTriggers:
     - виляет хвостом
     - хвост двигается

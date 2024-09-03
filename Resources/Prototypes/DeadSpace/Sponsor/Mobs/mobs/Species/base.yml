@@ -7,7 +7,7 @@
   id: BaseMobSpeciesXenoSponsor
   abstract: true
   components:
-  - type: EmotePanel
+  - type: EmotePanel # DS14-Emote-panel
   # Organs
   - type: StatusEffects
     allowed:

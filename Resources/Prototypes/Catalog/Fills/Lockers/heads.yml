@@ -17,7 +17,6 @@
     - id: RubberStampDenied
     - id: RubberStampQm
     - id: SalvageShuttleConsoleCircuitboard
-    - id: ClothingHeadsetAltCargo
     - id: ADTtelescopicBaton # ADT
     - id: BoxPhotocopierToners # DS14
     - id: EftposCargo # backmen-economy
@@ -51,6 +50,7 @@
     - id: PlushieNuke
       prob: 0.1
     - id: RubberStampCaptain
+    # - id: SpaceCash1000 # DS14
     - id: WeaponDisabler
     - id: ADTtelescopicBaton # ADT
     - id: ADTClothingEyesHudAdvanced # ADT
@@ -160,7 +160,7 @@
     - id: CigarCase
       prob: 0.15
     - id: ClothingBeltChiefEngineerFilled
-    # - id: ClothingEyesGlassesMeson
+    # - id: ClothingEyesGlassesMeson # DS14
     - id: ClothingEyesGlassesMesonCE # DS14
     - id: ClothingHandsGlovesColorYellow
     - id: ClothingHeadsetAltEngineering
@@ -272,7 +272,7 @@
   table: !type:AllSelector
     children:
     - id: BoxEncryptionKeyScience
-    - id: BoxEncryptionKeyRobo
+    - id: BoxEncryptionKeyRobo # DS14
     - id: CircuitImprinterMachineCircuitboard
     - id: ClothingBeltUtilityFilled
     - id: ClothingHeadsetAltScience
@@ -325,8 +325,8 @@
   id: LockerFillHeadOfSecurityNoHardsuit
   table: !type:AllSelector
     children:
-    - id: BookSecretDocuments
-    # - id: BookSpaceLaw
+    # - id: WeaponEnergyShotgun # DS14
+    # - id: BookSpaceLaw # DS14
     - id: BoxEncryptionKeySecurity
     - id: CigarGoldCase
       prob: 0.50

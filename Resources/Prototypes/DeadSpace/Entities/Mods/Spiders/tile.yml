@@ -12,7 +12,7 @@
   isSubfloor: false
   footstepSounds:
     collection: BarestepCarpet
-  itemDrop: FloorNecroTileItem
+  itemDrop: FloorNecroTileItemFlesh
   friction: 0.05
   heatCapacity: 10000
 
