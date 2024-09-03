@@ -77,6 +77,10 @@
   parent: EventHumanoid
   components:
   - type: Unitology
+  - type: ImmunNecroobelisk
+  - type: NpcFactionMember
+    factions:
+    - Necromorfs
   - type: GhostRole
     name: ghost-role-information-traveling-doctor-unitolog-name
     description: ghost-role-information-traveling-doctor-unitolog-description
@@ -150,6 +154,10 @@
   id: TravelingChefUnitology
   parent: EventHumanoid
   components:
+  - type: ImmunNecroobelisk
+  - type: NpcFactionMember
+    factions:
+    - Necromorfs
   - type: Unitology
   - type: GhostRole
     name: ghost-role-information-traveling-chef-unitolog-name

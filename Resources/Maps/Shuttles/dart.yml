@@ -927,12 +927,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -9.5,-1.5
       parent: 1
-  - uid: 414
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -9.5,-0.5
-      parent: 1
   - uid: 415
     components:
     - type: Transform
@@ -950,6 +944,12 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 8.5,-2.5
+      parent: 1
+  - uid: 813
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -9.5,-0.5
       parent: 1
 - proto: AirlockGlass
   entities:
@@ -1002,37 +1002,43 @@ entities:
       rot: 3.141592653589793 rad
       pos: -1.5,4.5
       parent: 1
-- proto: AtmosDeviceFanTiny
+- proto: AtmosDeviceFanDirectional
   entities:
+  - uid: 414
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -9.5,-2.5
+      parent: 1
   - uid: 808
     components:
     - type: Transform
-      pos: -9.5,-0.5
+      rot: -1.5707963267948966 rad
+      pos: -9.5,-1.5
       parent: 1
   - uid: 809
     components:
     - type: Transform
-      pos: -9.5,-1.5
+      rot: -1.5707963267948966 rad
+      pos: -9.5,-0.5
       parent: 1
   - uid: 810
     components:
     - type: Transform
-      pos: -9.5,-2.5
+      rot: 1.5707963267948966 rad
+      pos: 8.5,-2.5
       parent: 1
   - uid: 811
     components:
     - type: Transform
-      pos: 8.5,-0.5
+      rot: 1.5707963267948966 rad
+      pos: 8.5,-1.5
       parent: 1
   - uid: 812
     components:
     - type: Transform
-      pos: 8.5,-1.5
-      parent: 1
-  - uid: 813
-    components:
-    - type: Transform
-      pos: 8.5,-2.5
+      rot: 1.5707963267948966 rad
+      pos: 8.5,-0.5
       parent: 1
 - proto: AtmosFixNitrogenMarker
   entities:
@@ -1100,89 +1106,56 @@ entities:
     - type: Transform
       pos: -5.5,-9.5
       parent: 1
-    - type: DeviceLinkSink
-      links:
-      - 111
   - uid: 807
     components:
     - type: Transform
       pos: -5.5,-14.5
       parent: 1
-    - type: DeviceLinkSink
-      links:
-      - 111
   - uid: 816
     components:
     - type: Transform
       pos: -5.5,-8.5
       parent: 1
-    - type: DeviceLinkSink
-      links:
-      - 111
   - uid: 817
     components:
     - type: Transform
       pos: -0.5,-18.5
       parent: 1
-    - type: DeviceLinkSink
-      links:
-      - 823
   - uid: 818
     components:
     - type: Transform
       pos: 0.5,-18.5
       parent: 1
-    - type: DeviceLinkSink
-      links:
-      - 823
   - uid: 819
     components:
     - type: Transform
       pos: 4.5,-14.5
       parent: 1
-    - type: DeviceLinkSink
-      links:
-      - 822
   - uid: 820
     components:
     - type: Transform
       pos: 4.5,-8.5
       parent: 1
-    - type: DeviceLinkSink
-      links:
-      - 769
   - uid: 821
     components:
     - type: Transform
       pos: -1.5,-18.5
       parent: 1
-    - type: DeviceLinkSink
-      links:
-      - 823
   - uid: 824
     components:
     - type: Transform
       pos: 4.5,-9.5
       parent: 1
-    - type: DeviceLinkSink
-      links:
-      - 769
   - uid: 825
     components:
     - type: Transform
       pos: 4.5,-13.5
       parent: 1
-    - type: DeviceLinkSink
-      links:
-      - 822
   - uid: 826
     components:
     - type: Transform
       pos: -5.5,-13.5
       parent: 1
-    - type: DeviceLinkSink
-      links:
-      - 111
 - proto: BoozeDispenser
   entities:
   - uid: 444
@@ -2729,9 +2702,6 @@ entities:
     - type: Transform
       pos: -4.5,2.5
       parent: 1
-    - type: DeviceLinkSink
-      links:
-      - 927
 - proto: ClosetFireFilled
   entities:
   - uid: 194
@@ -4529,9 +4499,6 @@ entities:
     - type: Transform
       pos: -4.5,0.5
       parent: 1
-    - type: DeviceLinkSink
-      links:
-      - 927
 - proto: MegaSprayBottle
   entities:
   - uid: 903
@@ -5321,7 +5288,7 @@ entities:
     - type: Transform
       pos: -1.5,-7.5
       parent: 1
-- proto: SignChemistry1
+- proto: SignChem
   entities:
   - uid: 893
     components:

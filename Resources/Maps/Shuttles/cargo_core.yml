@@ -201,22 +201,26 @@ entities:
       rot: 3.141592653589793 rad
       pos: 3.5,-7.5
       parent: 2
-- proto: AtmosDeviceFanTiny
+- proto: AtmosDeviceFanDirectional
   entities:
-  - uid: 139
+  - uid: 29
     components:
     - type: Transform
-      pos: -0.5,-2.5
-      parent: 2
-  - uid: 140
-    components:
-    - type: Transform
-      pos: -0.5,-1.5
+      rot: -1.5707963267948966 rad
+      pos: -0.5,-4.5
       parent: 2
   - uid: 141
     components:
     - type: Transform
-      pos: -0.5,-4.5
+      rot: -1.5707963267948966 rad
+      pos: -0.5,-2.5
+      parent: 2
+- proto: AtmosDeviceFanTiny
+  entities:
+  - uid: 140
+    components:
+    - type: Transform
+      pos: -0.5,-1.5
       parent: 2
   - uid: 142
     components:
@@ -230,17 +234,11 @@ entities:
     - type: Transform
       pos: -0.5,-5.5
       parent: 2
-    - type: DeviceLinkSink
-      links:
-      - 137
   - uid: 136
     components:
     - type: Transform
       pos: -0.5,-1.5
       parent: 2
-    - type: DeviceLinkSink
-      links:
-      - 138
 - proto: CableApcExtension
   entities:
   - uid: 104
@@ -584,36 +582,24 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 0.5,-5.5
       parent: 2
-    - type: DeviceLinkSink
-      links:
-      - 152
   - uid: 75
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -0.5,-5.5
       parent: 2
-    - type: DeviceLinkSink
-      links:
-      - 152
   - uid: 76
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -0.5,-1.5
       parent: 2
-    - type: DeviceLinkSink
-      links:
-      - 151
   - uid: 77
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 0.5,-1.5
       parent: 2
-    - type: DeviceLinkSink
-      links:
-      - 151
 - proto: GasPassiveVent
   entities:
   - uid: 143
@@ -832,12 +818,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 4.5,-3.5
       parent: 2
-  - uid: 29
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 4.5,-4.5
-      parent: 2
   - uid: 30
     components:
     - type: Transform
@@ -849,6 +829,12 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -0.5,-3.5
+      parent: 2
+  - uid: 139
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 4.5,-4.5
       parent: 2
 - proto: SignalButton
   entities:

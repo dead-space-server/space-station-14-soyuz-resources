@@ -14,7 +14,7 @@
   id: ClothingBackpack3eilado
   name: карманный демон Ainnetel
   description: Провористый карманный демон, выглядит не особо дружелюбно. На его рожках виднеется гравировка Ван'Астрея.
-  noSpawn: true
+  noSpawn: false # По запросу
   components:
   - type: Sprite
     sprite: DeadSpace/Sponsor/3eilado/backpack.rsi
@@ -424,11 +424,10 @@
     layers:
     - state: icon
       shader: unshaded
-  - type: Clothing
-    sprite: DeadSpace/Sponsor/3eilado/engi_glasses.rsi
-    layers:
     - state: equipped-EYES
       shader: unshaded
+  - type: Clothing
+    sprite: DeadSpace/Sponsor/3eilado/engi_glasses.rsi
   - type: EyeProtection
 
 #Plushie

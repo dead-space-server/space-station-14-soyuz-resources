@@ -216,7 +216,7 @@
     - FootstepSound
     - DoorBumpOpener
   - type: EmoteAnimation
-  - type: EmotePanel
+  - type: EmotePanel # DS14-Emote-panel
 
 - type: entity
   save: false

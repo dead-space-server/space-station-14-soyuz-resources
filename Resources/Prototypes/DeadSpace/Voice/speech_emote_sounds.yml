@@ -35,6 +35,10 @@
       collection: Whistles
     Weh:
       collection: Weh
+    Gasp:
+      collection: MaleGasp
+    DefaultDeathgasp:
+      collection: MaleDeathGasp
     Hiss:
       collection: FelinidHisses
     Meow:
@@ -83,6 +87,10 @@
       collection: Whistles
     Weh:
       collection: Weh
+    Gasp:
+      collection: FemaleGasp
+    DefaultDeathgasp:
+      collection: FemaleDeathGasp
     Hiss:
       collection: FelinidHisses
     Meow:
@@ -181,6 +189,10 @@
       collection: Whistles
     Weh:
       collection: Weh
+    Gasp:
+      collection: MaleGasp
+    DefaultDeathgasp:
+      collection: MaleDeathGasp
     Howl:
       collection: VulpkaninMaleHowl
     Growl:
@@ -223,6 +235,10 @@
       collection: Whistles
     Weh:
       collection: Weh
+    Gasp:
+      collection: FemaleGasp
+    DefaultDeathgasp:
+      collection: FemaleDeathGasp
     Howl:
       collection: VulpkaninFemaleHowl
     Growl:

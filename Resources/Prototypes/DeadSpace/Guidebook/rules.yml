@@ -26,7 +26,6 @@
   - DeadSpaceDefaultRule42
   - DeadSpaceDefaultRule43
   - DeadSpaceDefaultRule44
-  - DeadSpaceDefaultRule45
   - DeadSpaceDefaultRule5
   - DeadSpaceDefaultRule51
   - DeadSpaceDefaultRule52
@@ -186,78 +185,71 @@
   text: "/ServerInfo/DeadSpace/Guidebook/ServerRules/DeadSpaceDefaultRule44.xml"
 
 - type: guideEntry
-  id: DeadSpaceDefaultRule45
-  name: Правило 4.5
-  priority: 23
-  ruleEntry: true
-  text: "/ServerInfo/DeadSpace/Guidebook/ServerRules/DeadSpaceDefaultRule45.xml"
-
-- type: guideEntry
   id: DeadSpaceDefaultRule5
   name: Правило 5
-  priority: 24
+  priority: 23
   ruleEntry: true
   text: "/ServerInfo/DeadSpace/Guidebook/ServerRules/DeadSpaceDefaultRule5.xml"
 
 - type: guideEntry
   id: DeadSpaceDefaultRule51
   name: Правило 5.1
-  priority: 25
+  priority: 24
   ruleEntry: true
   text: "/ServerInfo/DeadSpace/Guidebook/ServerRules/DeadSpaceDefaultRule51.xml"
 
 - type: guideEntry
   id: DeadSpaceDefaultRule52
   name: Правило 5.2
-  priority: 26
+  priority: 25
   ruleEntry: true
   text: "/ServerInfo/DeadSpace/Guidebook/ServerRules/DeadSpaceDefaultRule52.xml"
 
 - type: guideEntry
   id: DeadSpaceDefaultRule53
   name: Правило 5.3
-  priority: 27
+  priority: 26
   ruleEntry: true
   text: "/ServerInfo/DeadSpace/Guidebook/ServerRules/DeadSpaceDefaultRule53.xml"
 
 - type: guideEntry
   id: DeadSpaceDefaultRule6
   name: Правило 6
-  priority: 28
+  priority: 27
   ruleEntry: true
   text: "/ServerInfo/DeadSpace/Guidebook/ServerRules/DeadSpaceDefaultRule6.xml"
 
 - type: guideEntry
   id: DeadSpaceDefaultRule7
   name: Правило 7
-  priority: 29
+  priority: 28
   ruleEntry: true
   text: "/ServerInfo/DeadSpace/Guidebook/ServerRules/DeadSpaceDefaultRule7.xml"
 
 - type: guideEntry
   id: DeadSpaceDefaultRule8
   name: Правило 8
-  priority: 30
+  priority: 29
   ruleEntry: true
   text: "/ServerInfo/DeadSpace/Guidebook/ServerRules/DeadSpaceDefaultRule8.xml"
 
 - type: guideEntry
   id: DeadSpaceDefaultRule9
   name: Правило 9
-  priority: 31
+  priority: 30
   ruleEntry: true
   text: "/ServerInfo/DeadSpace/Guidebook/ServerRules/DeadSpaceDefaultRule9.xml"
 
 - type: guideEntry
   id: DeadSpaceDefaultRule91
   name: Правило 91
-  priority: 32
+  priority: 31
   ruleEntry: true
   text: "/ServerInfo/DeadSpace/Guidebook/ServerRules/DeadSpaceDefaultRule91.xml"
 
 - type: guideEntry
   id: DeadSpaceDefaultRule10
   name: Правило 10
-  priority: 33
+  priority: 32
   ruleEntry: true
   text: "/ServerInfo/DeadSpace/Guidebook/ServerRules/DeadSpaceDefaultRule10.xml"

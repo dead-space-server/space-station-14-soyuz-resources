@@ -82,19 +82,24 @@
   - type: Stamina
     critThreshold: 85
   - type: Sanity # DS14
+  - type: Wagging
   - type: Inventory
     speciesId: reptilian # for reptilian masks
 
 - type: entity
-  save: false
-  name: Urist McHands
-  parent: MobHumanDummy
+  parent: BaseSpeciesDummy
   id: MobKoboltDummy
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   description: A dummy reptilian meant to be used in character setup.
   components:
   - type: HumanoidAppearance
     species: KoboltSpecies
+    hideLayersOnEquip:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
+    - Tail
   - type: Sprite
     netsync: false
     noRot: true
