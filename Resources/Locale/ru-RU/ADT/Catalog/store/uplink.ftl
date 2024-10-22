@@ -1,5 +1,5 @@
-uplink-advanced-magboots = Продвинутые магнитные ботинки Синдиката
-uplink-advanced-magboots-desc = Улучшенные магнитные ботинки Синдиката.
+uplink-advanced-magboots = Продвинутые магнитные ботинки "Рассвета"
+uplink-advanced-magboots-desc = Улучшенные магнитные ботинки "Рассвета".
 
 uplink-C20-ammo-bundle-name = Набор магазинов для С-20r
 uplink-C20-ammo-bundle-desc = Набор, содержащий 4 запасных магазина по цене 3.
@@ -19,7 +19,7 @@ uplink-xc67ammo-description = Набор, содержащий три расши
 uplink-AKMS-bundle-name = Набор АКМС
 uplink-AKMS-bundle-desc = Набор, содержащий АКМС и четыре магазина к нему.
 
-uplink-syndiecloak-name = Плащ Синдиката
+uplink-syndiecloak-name = Плащ "Рассвета"
 uplink-syndiecloak-desc = Антагонизируй со стилем!
 
 uplink-nukeopscloak-name = Плащ Ядерных Оперативников

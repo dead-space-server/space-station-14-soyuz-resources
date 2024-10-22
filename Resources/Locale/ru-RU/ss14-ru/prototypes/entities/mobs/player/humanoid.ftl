@@ -68,7 +68,7 @@ ent-RandomHumanoidSpawnerCentcomOfficial = представитель Геншт
     .desc = { "" }
     .suffix = Призрачная роль
 
-ent-RandomHumanoidSpawnerSyndicateAgent = Агент Синдиката
+ent-RandomHumanoidSpawnerSyndicateAgent = Агент "Рассвета"
     .desc = { "" }
 
 ent-RandomHumanoidSpawnerNukeOp = Ядерный оперативник
@@ -99,7 +99,7 @@ ent-RandomHumanoidDisasterVictimCMO = жертва катастрофы ГВ р�
     .desc = { ent-RandomHumanoidDisasterVictimRD.desc }
 ent-RandomHumanoidDisasterVictimCaptain = жертва катастрофы Капитан роль призрака
     .desc = { ent-RandomHumanoidDisasterVictimRD.desc }
-ent-SyndieDisasterVictimSpawner = жертва катастрофы Синдикат спавнер
+ent-SyndieDisasterVictimSpawner = жертва катастрофы "Рассвет" спавнер
     .desc = { ent-MarkerBase.desc }
-ent-RandomHumanoidSyndieDisasterVictim = жертва катастрофы Синдикат роль призрака
+ent-RandomHumanoidSyndieDisasterVictim = жертва катастрофы "Рассвет" роль призрака
     .desc = { "" }
