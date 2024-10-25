@@ -204,7 +204,7 @@
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-syndicate
-    stampedColor: "#850000"
+    stampedColor: "#192412"
     stampState: "paper_stamp-syndicate"
   - type: Sprite
     state: stamp-syndicate
