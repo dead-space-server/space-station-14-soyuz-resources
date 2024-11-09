@@ -148,9 +148,6 @@ entities:
     - type: Transform
       pos: 1.5,-11.5
       parent: 2
-    - type: DeviceLinkSink
-      links:
-      - 126
     - type: DeviceLinkSource
       linkedPorts:
         126:
@@ -160,9 +157,6 @@ entities:
     - type: Transform
       pos: 1.5,-13.5
       parent: 2
-    - type: DeviceLinkSink
-      links:
-      - 125
     - type: DeviceLinkSource
       linkedPorts:
         125:

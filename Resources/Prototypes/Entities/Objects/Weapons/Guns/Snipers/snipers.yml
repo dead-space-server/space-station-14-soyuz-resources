@@ -47,13 +47,7 @@
   - type: Sprite
     sprite: Objects/Weapons/Guns/Snipers/bolt_gun_wood.rsi
   - type: Gun
-    fireRate: 0.75
     useKey: false
-    selectedMode: SemiAuto
-    availableModes:
-    - SemiAuto
-    soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/sniper.ogg
   - type: MeleeWeapon
     attackRate: 2
     wideAnimationRotation: -135
@@ -62,7 +56,6 @@
         Blunt: 5
         Slash: 8
   - type: GunRequiresWield
-  - type: DisarmMalus
 
 - type: entity
   name: Hristov

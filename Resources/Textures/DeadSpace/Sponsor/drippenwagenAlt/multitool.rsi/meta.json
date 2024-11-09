@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "license": "CC-BY-SA-4.0",
-  "copyright": "Created by Nikitok007(Discord) for Dead Space 14",
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Made by gribgear (discord) for Space Station 14 server Dead Space",
   "size": {
     "x": 32,
     "y": 32
@@ -71,6 +71,10 @@
     },
     {
       "name": "red-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "equipped-BELT",
       "directions": 4
     }
   ]
