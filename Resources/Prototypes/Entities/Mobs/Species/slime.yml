@@ -13,13 +13,13 @@
     prototype: Slime
     requiredLegs: 2
   # they like eat it idk lol
-  - type: Storage
-    clickInsert: false
-    grid:
-    - 0,0,1,2
-    maxItemSize: Large
-    storageInsertSound:
-      path: /Audio/Voice/Slime/slime_squish.ogg
+  # - type: Storage
+  #   clickInsert: false
+  #   grid:
+  #   - 0,0,1,2
+  #   maxItemSize: Large
+  #   storageInsertSound:
+  #     path: /Audio/Voice/Slime/slime_squish.ogg
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
@@ -28,8 +28,6 @@
     interfaces:
       enum.StorageUiKey.Key:
         type: StorageBoundUserInterface
-      enum.VoiceMaskUIKey.Key:
-        type: VoiceMaskBoundUserInterface
       enum.HumanoidMarkingModifierKey.Key:
         type: HumanoidMarkingModifierBoundUserInterface
       enum.StrippingUiKey.Key:
@@ -92,7 +90,7 @@
         scaleByQuantity: true
         damage:
           types:
-            Heat: 0.1
+            Heat: 1
       - !type:PopupMessage
         type: Local
         visualType: Large

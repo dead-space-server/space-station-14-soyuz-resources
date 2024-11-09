@@ -21,10 +21,6 @@
     {
       "name": "on-equipped-HELMET",
       "directions": 4
-    },
-    {
-      "name": "cross",
-      "directions": 4
     }
   ]
 }

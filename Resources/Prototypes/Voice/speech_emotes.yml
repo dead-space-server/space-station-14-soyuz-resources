@@ -51,6 +51,7 @@
   blacklist:
     components:
     - BorgChassis
+    - ComputerEmotes
   chatMessages: ["chat-emote-msg-laugh"]
   chatTriggers:
     - laugh
@@ -107,6 +108,7 @@
   blacklist:
     components:
     - BorgChassis
+    - ComputerEmotes
   chatMessages: ["chat-emote-msg-sigh"]
   chatTriggers:
     - sigh
@@ -129,6 +131,7 @@
   blacklist:
     components:
     - BorgChassis
+    - ComputerEmotes
   chatMessages: ["chat-emote-msg-whistle"]
   chatTriggers:
     - whistle
@@ -150,6 +153,7 @@
   blacklist:
     components:
     - BorgChassis
+    - ComputerEmotes
   chatMessages: ["chat-emote-msg-crying"]
   chatTriggers:
     - cry
@@ -259,6 +263,7 @@
   blacklist:
     components:
     - BorgChassis
+    - ComputerEmotes
   chatMessages: ["chat-emote-msg-clap"]
   chatTriggers:
     - clap
@@ -310,6 +315,38 @@
     - щёлкает пальцами
     - щёлкнул пальцами
     - щёлкнула пальцами
+    # Corvax-Localization-End
+
+- type: emote
+  id: Thump
+  name: chat-emote-name-thump
+  category: Hands
+  available: false
+  icon: Interface/Emotes/tailslap.png
+  whitelist:
+    components:
+    - Hands
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-msg-thump"]
+  chatTriggers:
+    - thump
+    - thumps
+    - thumping
+    - thumped
+    - thump tail
+    - thumps tail
+    - thumps their tail
+    - thumps her tail
+    - thumps his tail
+    - thumps its tail
+    # Corvax-Localization-Start
+    - стучит хвостом
+    - стукнул хвостом
+    - стукнула хвостом
+    - стукнул своим хвостом
+    - стукнула своим хвостом
     # Corvax-Localization-End
 
 - type: emote
@@ -373,7 +410,8 @@
   whitelist:
     requireAll: true
     components:
-    - BorgChassis
+    # - BorgChassis
+    - ComputerEmotes
     - Vocal
   chatMessages: ["chat-emote-msg-buzz"]
   chatTriggers:
@@ -422,7 +460,8 @@
   whitelist:
     requireAll: true
     components:
-    - BorgChassis
+    # - BorgChassis
+    - ComputerEmotes
     - Vocal
   chatMessages: ["chat-emote-msg-beep"]
   chatTriggers:
@@ -442,7 +481,8 @@
   whitelist:
     requireAll: true
     components:
-    - BorgChassis
+    # - BorgChassis
+    - ComputerEmotes
     - Vocal
   chatMessages: ["chat-emote-msg-chime"]
   chatTriggers:
@@ -462,7 +502,8 @@
   whitelist:
     requireAll: true
     components:
-    - BorgChassis
+    # - BorgChassis
+    - ComputerEmotes
     - Vocal
   chatMessages: ["chat-emote-msg-buzzestwo"]
   chatTriggers:
@@ -493,7 +534,8 @@
   whitelist:
     requireAll: true
     components:
-    - BorgChassis
+    # - BorgChassis
+    - ComputerEmotes
     - Vocal
   chatMessages: ["chat-emote-msg-ping"]
   chatTriggers:

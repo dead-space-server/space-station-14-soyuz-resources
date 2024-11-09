@@ -26,6 +26,7 @@ chat-radio-merc = Наёмники
 chat-radio-soc = КГБ
 chat-radio-typan = Тайпан
 chat-radio-unitolog = Юнитологи
+chat-radio-spiders = Связующая паутина
 chat-radio-hivemind = Улей
 
 chat-radio-source-unknown = Неизвестно

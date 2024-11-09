@@ -924,7 +924,7 @@ entities:
     - type: Transform
       pos: 7.5,0.5
       parent: 85
-- proto: SignToxins2
+- proto: SignToxins
   entities:
   - uid: 65
     components:

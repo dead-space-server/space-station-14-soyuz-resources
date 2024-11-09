@@ -51,6 +51,7 @@ ent-ClothingBackpackERTChaplain = рюкзак священника СОБР
 ent-ClothingBackpackDeathSquad = рюкзак бойца специального отряда "Дым"
     .desc = Вмещает снаряжение самых устрашающих представителей генерального штаба.
 ent-ClothingBackpackSyndicate = рюкзак "Рассвета"
+    .suffix = Не используется
     .desc = { ent-ClothingBackpack.desc }
 ent-ClothingBackpackHolding = бездонный рюкзак
     .desc = Рюкзак, открывающийся в локальный карман блюспейса.

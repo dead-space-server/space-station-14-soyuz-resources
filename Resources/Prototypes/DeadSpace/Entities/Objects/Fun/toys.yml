@@ -136,13 +136,13 @@
 
 - type: entity
   parent: BasePlushie
-  id: PlushieKodi
-  name: плюшевый врач милиции
-  description: Игрушка в форме врача милиции, на вид мягкая и пушистенькая, напоминает одну знаменитую девушку с сектора "Титан".
+  id: PlushieOfficer
+  name: плюшевый офицер милиции
+  description: Игрушка в форме офицера милиции. Сделана не идеально, но с любовью.
   components:
   - type: Sprite
     sprite: DeadSpace/Items/Toys/toys.rsi
-    state: plushie_kodi
+    state: plushie_officer
   
 - type: entity
   parent: BasePlushie

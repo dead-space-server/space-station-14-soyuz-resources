@@ -23,3 +23,5 @@ stamp-component-stamped-name-lawyer = Юрист
 stamp-component-stamped-name-detective = Следователь
 stamp-component-stamped-name-blueshield = Оперативник КГБ
 stamp-component-stamped-name-senior-administrator = Управленец сервисного отдела
+stamp-component-stamped-name-greytide = Грейтайд
+stamp-component-stamped-name-psychologist = Психиатр
