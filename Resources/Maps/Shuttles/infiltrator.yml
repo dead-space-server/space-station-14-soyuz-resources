@@ -596,8 +596,6 @@ entities:
         - DoorStatus: Close
     - type: DeviceLinkSink
       invokeCounter: 1
-      links:
-      - 13
   - uid: 10
     components:
     - type: Transform
@@ -610,8 +608,6 @@ entities:
         - DoorStatus: Close
     - type: DeviceLinkSink
       invokeCounter: 1
-      links:
-      - 3
 - proto: AirlockExternalSyndicateLocked
   entities:
   - uid: 2
@@ -619,9 +615,6 @@ entities:
     - type: Transform
       pos: -0.5,-25.5
       parent: 1
-    - type: DeviceLinkSink
-      links:
-      - 14
     - type: DeviceLinkSource
       linkedPorts:
         14:
@@ -633,8 +626,6 @@ entities:
       parent: 1
     - type: DeviceLinkSink
       invokeCounter: 1
-      links:
-      - 10
     - type: DeviceLinkSource
       linkedPorts:
         10:
@@ -644,9 +635,6 @@ entities:
     - type: Transform
       pos: -4.5,-14.5
       parent: 1
-    - type: DeviceLinkSink
-      links:
-      - 12
     - type: DeviceLinkSource
       linkedPorts:
         12:
@@ -656,9 +644,6 @@ entities:
     - type: Transform
       pos: 3.5,-14.5
       parent: 1
-    - type: DeviceLinkSink
-      links:
-      - 22
     - type: DeviceLinkSource
       linkedPorts:
         22:
@@ -668,9 +653,6 @@ entities:
     - type: Transform
       pos: -4.5,-10.5
       parent: 1
-    - type: DeviceLinkSink
-      links:
-      - 7
     - type: DeviceLinkSource
       linkedPorts:
         7:
@@ -682,8 +664,6 @@ entities:
       parent: 1
     - type: DeviceLinkSink
       invokeCounter: 1
-      links:
-      - 8
     - type: DeviceLinkSource
       linkedPorts:
         8:
@@ -693,9 +673,6 @@ entities:
     - type: Transform
       pos: -0.5,-22.5
       parent: 1
-    - type: DeviceLinkSink
-      links:
-      - 2
     - type: DeviceLinkSource
       linkedPorts:
         2:
@@ -705,9 +682,6 @@ entities:
     - type: Transform
       pos: 3.5,-10.5
       parent: 1
-    - type: DeviceLinkSink
-      links:
-      - 9
     - type: DeviceLinkSource
       linkedPorts:
         9:
@@ -824,6 +798,13 @@ entities:
     components:
     - type: Transform
       pos: 0.49331844,-13.366474
+      parent: 1
+- proto: BoxFolderNuclearCodes
+  entities:
+  - uid: 510
+    components:
+    - type: Transform
+      pos: -2.5286522,-11.44479
       parent: 1
 - proto: BoxHandcuff
   entities:
@@ -3565,13 +3546,6 @@ entities:
     - type: Transform
       pos: 3.5,-3.5
       parent: 1
-- proto: SyndicateMicrowave
-  entities:
-  - uid: 497
-    components:
-    - type: Transform
-      pos: 3.5,-19.5
-      parent: 1
 - proto: KnifePlastic
   entities:
   - uid: 498
@@ -3690,13 +3664,6 @@ entities:
     components:
     - type: Transform
       pos: -2.5,-12.5
-      parent: 1
-- proto: BoxFolderNuclearCodes
-  entities:
-  - uid: 510
-    components:
-    - type: Transform
-      pos: -2.5286522,-11.44479
       parent: 1
 - proto: Ointment
   entities:
@@ -4317,97 +4284,61 @@ entities:
     - type: Transform
       pos: -6.5,-4.5
       parent: 1
-    - type: DeviceLinkSink
-      links:
-      - 21
   - uid: 598
     components:
     - type: Transform
       pos: 5.5,-4.5
       parent: 1
-    - type: DeviceLinkSink
-      links:
-      - 20
   - uid: 599
     components:
     - type: Transform
       pos: 1.5,-9.5
       parent: 1
-    - type: DeviceLinkSink
-      links:
-      - 609
   - uid: 600
     components:
     - type: Transform
       pos: -2.5,-9.5
       parent: 1
-    - type: DeviceLinkSink
-      links:
-      - 609
   - uid: 601
     components:
     - type: Transform
       pos: -4.5,-2.5
       parent: 1
-    - type: DeviceLinkSink
-      links:
-      - 21
   - uid: 602
     components:
     - type: Transform
       pos: 3.5,-2.5
       parent: 1
-    - type: DeviceLinkSink
-      links:
-      - 20
   - uid: 603
     components:
     - type: Transform
       pos: 1.5,-1.5
       parent: 1
-    - type: DeviceLinkSink
-      links:
-      - 21
   - uid: 604
     components:
     - type: Transform
       pos: -0.5,-1.5
       parent: 1
-    - type: DeviceLinkSink
-      links:
-      - 21
   - uid: 605
     components:
     - type: Transform
       pos: 5.5,-19.5
       parent: 1
-    - type: DeviceLinkSink
-      links:
-      - 611
   - uid: 606
     components:
     - type: Transform
       pos: -1.5,-1.5
       parent: 1
-    - type: DeviceLinkSink
-      links:
-      - 21
   - uid: 607
     components:
     - type: Transform
       pos: 0.5,-1.5
       parent: 1
-    - type: DeviceLinkSink
-      links:
-      - 21
   - uid: 608
     components:
     - type: Transform
       pos: -2.5,-1.5
       parent: 1
-    - type: DeviceLinkSink
-      links:
-      - 21
 - proto: SignalButton
   entities:
   - uid: 609
@@ -4589,6 +4520,13 @@ entities:
     components:
     - type: Transform
       pos: -4.5,-17.5
+      parent: 1
+- proto: SyndicateMicrowave
+  entities:
+  - uid: 497
+    components:
+    - type: Transform
+      pos: 3.5,-19.5
       parent: 1
 - proto: SyndieMiniBomb
   entities:

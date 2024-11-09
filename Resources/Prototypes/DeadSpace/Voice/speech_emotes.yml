@@ -9,6 +9,10 @@
     components:
     - Vocal
     - SlimePerson
+  blacklist:
+    components:
+    - BorgChassis
+    - ComputerEmotes
   chatMessages: ["chat-emote-msg-bubbling"]
   chatTriggers:
     - громко пузыриться
@@ -24,6 +28,10 @@
     components:
     - Vocal
     - SlimePerson
+  blacklist:
+    components:
+    - BorgChassis
+    - ComputerEmotes
   chatMessages: ["chat-emote-msg-pop"]
   chatTriggers:
     - издаёт хлопок
@@ -43,6 +51,7 @@
   blacklist:
     components:
     - BorgChassis
+    - ComputerEmotes
   chatMessages: ["chat-emote-msg-hiss"]
   chatTriggers:
     - hiss
@@ -64,6 +73,7 @@
   blacklist:
     components:
     - BorgChassis
+    - ComputerEmotes
   chatMessages: ["chat-emote-msg-meow"]
   chatTriggers:
     - meow
@@ -88,6 +98,7 @@
   blacklist:
     components:
     - BorgChassis
+    - ComputerEmotes
   chatMessages: ["chat-emote-msg-mew"]
   chatTriggers:
     - mew
@@ -107,6 +118,7 @@
   blacklist:
     components:
     - BorgChassis
+    - ComputerEmotes
   chatMessages: ["chat-emote-msg-purr"]
   chatTriggers:
     - purr
@@ -130,6 +142,7 @@
   blacklist:
     components:
     - BorgChassis
+    - ComputerEmotes
   chatMessages: ["chat-emote-msg-growl"]
   chatTriggers:
     - growl
@@ -150,6 +163,7 @@
   blacklist:
     components:
     - BorgChassis
+    - ComputerEmotes
   chatMessages: ["chat-emote-msg-howl"]
   chatTriggers:
     - воет на луну

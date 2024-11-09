@@ -738,33 +738,21 @@ entities:
     - type: Transform
       pos: -0.5,-1.5
       parent: 50
-    - type: DeviceLinkSink
-      links:
-      - 99
   - uid: 96
     components:
     - type: Transform
       pos: -4.5,-5.5
       parent: 50
-    - type: DeviceLinkSink
-      links:
-      - 99
   - uid: 97
     components:
     - type: Transform
       pos: -3.5,-5.5
       parent: 50
-    - type: DeviceLinkSink
-      links:
-      - 99
   - uid: 98
     components:
     - type: Transform
       pos: -2.5,-5.5
       parent: 50
-    - type: DeviceLinkSink
-      links:
-      - 99
 - proto: SignalButton
   entities:
   - uid: 99
@@ -782,7 +770,7 @@ entities:
         - Pressed: Toggle
         87:
         - Pressed: Toggle
-- proto: SignMinerDock
+- proto: SignShipDock
   entities:
   - uid: 106
     components:

@@ -2156,7 +2156,7 @@ entities:
     - type: Transform
       pos: -12.508532,-4.9480534
       parent: 179
-- proto: SignChemistry1
+- proto: SignChem
   entities:
   - uid: 567
     components:
