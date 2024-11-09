@@ -1618,6 +1618,13 @@ entities:
     - type: Transform
       pos: 27.84681,20.634686
       parent: 1653
+- proto: FoodKebabSkewer
+  entities:
+  - uid: 42
+    components:
+    - type: Transform
+      pos: 38.036457,12.588582
+      parent: 1653
 - proto: FoodMeatHuman
   entities:
   - uid: 186
@@ -1629,13 +1636,6 @@ entities:
     components:
     - type: Transform
       pos: 34.64263,40.511673
-      parent: 1653
-- proto: FoodMeatLizardtailKebab
-  entities:
-  - uid: 42
-    components:
-    - type: Transform
-      pos: 38.036457,12.588582
       parent: 1653
 - proto: FoodMeatRouny
   entities:

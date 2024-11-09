@@ -48,13 +48,6 @@
   paperPrototype: PaperPrintedUSSPLaw
 
 - type: paperworkForm
-  id: Law7
-  category: law
-  name: paperwork-form-title-law-7
-  text: "/Paperwork/Law/7.xml"
-  paperPrototype: PaperPrintedUSSPLaw
-
-- type: paperworkForm
   id: Law8
   category: law
   name: paperwork-form-title-law-8

@@ -4664,7 +4664,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: FoodMeatLizardtailKebab
+- proto: FoodKebabSkewer
   entities:
   - uid: 72
     components:
@@ -4676,15 +4676,11 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: FoodMeatRatdoubleKebab
-  entities:
   - uid: 567
     components:
     - type: Transform
       pos: -5.510681,-14.711578
       parent: 656
-- proto: FoodMeatRatKebab
-  entities:
   - uid: 574
     components:
     - type: Transform

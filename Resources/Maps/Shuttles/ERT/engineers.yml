@@ -709,18 +709,6 @@ entities:
       - Plastic
       - Cloth
       - Wood
-    - type: TechnologyDatabase
-      supportedDisciplines:
-      - Industrial
-      - Arsenal
-      - Experimental
-      - CivilianServices
-      currentTechnologyCards:
-      - IndustrialEngineering
-      - Virology
-      - ExplosiveTechnology
-      - BasicAnomalousResearch
-      - AdvancedEntertainment
     - type: ContainerContainer
       containers:
         machine_board: !type:Container
@@ -737,6 +725,22 @@ entities:
           - 52
           - 53
           - 54
+        blueprint: !type:Container
+          showEnts: False
+          occludes: True
+          ents: []
+    - type: TechnologyDatabase
+      supportedDisciplines:
+      - Industrial
+      - Arsenal
+      - Experimental
+      - CivilianServices
+      currentTechnologyCards:
+      - IndustrialEngineering
+      - Virology
+      - ExplosiveTechnology
+      - BasicAnomalousResearch
+      - AdvancedEntertainment
 - proto: AutolatheMachineCircuitboard
   entities:
   - uid: 49

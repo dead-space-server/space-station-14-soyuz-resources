@@ -11100,17 +11100,11 @@ entities:
     - type: Transform
       pos: 34.5,27.5
       parent: 588
-    - type: DeviceLinkSink
-      links:
-      - 593
   - uid: 1238
     components:
     - type: Transform
       pos: 32.5,27.5
       parent: 588
-    - type: DeviceLinkSink
-      links:
-      - 593
 - proto: ShuttersWindow
   entities:
   - uid: 1239
@@ -11118,9 +11112,6 @@ entities:
     - type: Transform
       pos: 33.5,27.5
       parent: 588
-    - type: DeviceLinkSink
-      links:
-      - 593
 - proto: SignCloning
   entities:
   - uid: 1484

@@ -17,6 +17,3 @@ ent-MobHumanNukeOp = Ядерный оперативник
     .desc = { ent-MobHuman.desc }
 ent-MobHumanLoneNuclearOperative = Одинокий оперативник
     .desc = { ent-MobHuman.desc }
-ent-MobHumanDeathSquadUnit = Боец отряда специального назначения "Дым"
-    .desc = { ent-MobHuman.desc }
-    .suffix = Призрачная роль

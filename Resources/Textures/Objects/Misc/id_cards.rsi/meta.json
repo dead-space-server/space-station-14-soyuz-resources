@@ -17,6 +17,9 @@
       "name": "admin"
     },
     {
+      "name": "idsurgeon"
+    },
+    {
       "name": "ert_chaplain"
     },
     {
@@ -147,6 +150,9 @@
     },
     {
       "name": "idvirologist"
+    },
+    {
+      "name": "idvisitor"
     },
     {
       "name": "idwarden"

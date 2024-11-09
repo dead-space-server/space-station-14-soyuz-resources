@@ -1,4 +1,7 @@
-ent-RandomHumanoidSpawnerERTLeaderAmber = ССОБР лидер
+ent-RandomHumanoidSpawnerDeathSquad = Эскадрон смерти
+    .suffix = Призрачная роль, 210 часов общего времени
+    .desc = { "" }
+ent-RandomHumanoidSpawnerERTLeaderAmber = ОБР лидер
     .desc = { "" }
     .suffix = Эмбер, Призрачная роль
 ent-RandomHumanoidSpawnerERTLeaderRed = СОБР лидер
@@ -7,7 +10,6 @@ ent-RandomHumanoidSpawnerERTLeaderRed = СОБР лидер
 ent-RandomHumanoidSpawnerERTLeaderGamma = СОБР лидер
     .desc = { "" }
     .suffix = Гамма, Призрачная роль
-
 ent-RandomHumanoidSpawnerERTJanitorAmber = СОБР уборщик
     .desc = { "" }
     .suffix = Эмбер, Призрачная роль
@@ -17,7 +19,6 @@ ent-RandomHumanoidSpawnerERTJanitorRed = СОБР уборщик
 ent-RandomHumanoidSpawnerERTJanitorGamma = СОБР уборщик
     .desc = { "" }
     .suffix = Гамма, Призрачная роль
-
 ent-RandomHumanoidSpawnerERTEngineerAmber = СОБР инженер
     .desc = { "" }
     .suffix = Эмбер, Призрачная роль
@@ -27,7 +28,6 @@ ent-RandomHumanoidSpawnerERTEngineerRed = СОБР инженер
 ent-RandomHumanoidSpawnerERTEngineerGamma = СОБР инженер
     .desc = { "" }
     .suffix = Гамма, Призрачная роль
-
 ent-RandomHumanoidSpawnerERTSecurityAmber = СОБР офицер безопасности
     .desc = { "" }
     .suffix = Эмбер, Призрачная роль
@@ -37,7 +37,6 @@ ent-RandomHumanoidSpawnerERTSecurityRed = СОБР офицер безопасн
 ent-RandomHumanoidSpawnerERTSecurityGamma = СОБР офицер безопасности
     .desc = { "" }
     .suffix = Гамма, Призрачная роль
-
 ent-RandomHumanoidSpawnerERTMedicalAmber = СОБР медик
     .desc = { "" }
     .suffix = Эмбер, Призрачная роль
@@ -47,30 +46,36 @@ ent-RandomHumanoidSpawnerERTMedicalRed = СОБР медик
 ent-RandomHumanoidSpawnerERTMedicalGamma = СОБР медик
     .desc = { "" }
     .suffix = Гамма, Призрачная роль
-
 ent-RandomHumanoidSpawnerCBURNLeader = Лидер РХБЗЗ
     .desc = { "" }
     .suffix = Призрачная роль
-
 ent-RandomHumanoidSpawnerCBURNSierraLeader = Лидер РХБЗЗ Сьерра
     .desc = { "" }
     .suffix = Сьерра, Призрачная роль
-
 ent-RandomHumanoidSpawnerCBURNAgent = Боец РХБЗЗ
     .desc = { "" }
     .suffix = Призрачная роль
-
 ent-RandomHumanoidSpawnerCBURNSierraAgent = Боец РХБЗЗ Сьерра
     .desc = { "" }
     .suffix = Сьерра, Призрачная роль
-
-ent-RandomHumanoidSpawnerCentcomOfficial = представитель Генштаба
+ent-RandomHumanoidSpawnerCentcomOfficial = Представитель ЦК
     .desc = { "" }
-    .suffix = Призрачная роль
+    .suffix = Призрачная роль, 210 часов общего времени
+ent-RandomHumanoidSpawnerCentcomAdministrator = Администратор ЦК
+    .desc = { "" }
+    .suffix = АЦК
+ent-RandomHumanoidSpawnerCentcomOperator = Оператор ЦК
+    .desc = { "" }
+    .suffix = ОЦК
+ent-RandomHumanoidSpawnerCentcomSpecialOperationsOfficer = Офицер Специальных Операций
+    .desc = { "" }
+    .suffix = ОСО
+ent-RandomHumanoidSpawnerCentcomOfficer = Офицер ЦК
+    .desc = { "" }
+    .suffix = { "" }
 
 ent-RandomHumanoidSpawnerSyndicateAgent = Агент Синдиката
     .desc = { "" }
-
 ent-RandomHumanoidSpawnerNukeOp = Ядерный оперативник
     .desc = { "" }
 
@@ -85,8 +90,6 @@ ent-ClownTroupeSpawner = клоунская труппа спавнер
     .desc = { ent-MarkerBase.desc }
 ent-RandomHumanoidClownTroupe = клоунская труппа роль призрака
     .desc = { "" }
-ent-RandomHumanoidClownTroupeBanana = клоунская труппа банановый роль призрака
-    .desc = { ent-RandomHumanoidClownTroupe.desc }
 ent-TravelingChefSpawner = путешествующий шеф-повар спавнер
     .desc = { ent-MarkerBase.desc }
 ent-RandomHumanoidTravelingChef = путешествующий шеф-повар роль призрака

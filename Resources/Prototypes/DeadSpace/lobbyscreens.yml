@@ -132,33 +132,33 @@
 #   id: JaniShootout
 #   background: /Textures/LobbyScreens/Fobos/janishootout.webp
 
-- type: lobbyBackground
-  id: GerionDart
-  background: /Textures/LobbyScreens/Fobos/gerion_dart.png
+# - type: lobbyBackground
+#   id: GerionDart
+#   background: /Textures/LobbyScreens/Fobos/gerion_dart.png
 
-- type: lobbyBackground
-  id: Unity
-  background: /Textures/LobbyScreens/Fobos/unity.png
+# - type: lobbyBackground
+#   id: Unity
+#   background: /Textures/LobbyScreens/Fobos/unity.png
 
-- type: lobbyBackground
-  id: Engineering
-  background: /Textures/LobbyScreens/Fobos/engineering.png
+# - type: lobbyBackground
+#   id: Engineering
+#   background: /Textures/LobbyScreens/Fobos/engineering.png
 
-- type: lobbyBackground
-  id: ParticleAccelerator
-  background: /Textures/LobbyScreens/Fobos/particle_accelerator.jpg
+# - type: lobbyBackground
+#   id: ParticleAccelerator
+#   background: /Textures/LobbyScreens/Fobos/particle_accelerator.jpg
 
-- type: lobbyBackground
-  id: SecAgaintsAll
-  background: /Textures/LobbyScreens/Fobos/sec_againts_all.png
+# - type: lobbyBackground
+#   id: SecAgaintsAll
+#   background: /Textures/LobbyScreens/Fobos/sec_againts_all.png
 
-- type: lobbyBackground
-  id: SvadbaXD
-  background: /Textures/LobbyScreens/Fobos/svadba_xd.webp
+# - type: lobbyBackground
+#   id: SvadbaXD
+#   background: /Textures/LobbyScreens/Fobos/svadba_xd.webp
 
-- type: lobbyBackground
-  id: IMG4743
-  background: /Textures/LobbyScreens/Fobos/img_4743.webp
+# - type: lobbyBackground
+#   id: IMG4743
+#   background: /Textures/LobbyScreens/Fobos/img_4743.webp
 
 # Titan
 
@@ -193,6 +193,9 @@
   background: /Textures/LobbyScreens/Soyuz/zavod.png
 
 - type: lobbyBackground
-  id: moli_utilizatori
+  id: MoliUtilizatori
   background: /Textures/LobbyScreens/Soyuz/moli_utilizatori.png
 
+- type: lobbyBackground
+  id: CommunistBanquet
+  background: /Textures/LobbyScreens/Soyuz/communist_banquet.png
