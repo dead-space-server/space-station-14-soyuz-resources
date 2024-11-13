@@ -1,4 +1,3 @@
-
 uplink-advanced-magboots = Продвинутые магнитные ботинки "Рассвета"
 uplink-advanced-magboots-desc = Улучшенные магнитные ботинки "Рассвета".
 uplink-C20-ammo-bundle-name = Набор магазинов для С-20r
