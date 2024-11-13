@@ -8,6 +8,7 @@
   blacklist:
     components:
     - BorgChassis
+    - ComputerEmotes
   chatMessages: ["chat-emote-msg-sneeze"]
   chatTriggers:
     - чихает
@@ -23,6 +24,7 @@
   blacklist:
     components:
     - BorgChassis
+    - ComputerEmotes
   chatMessages: ["chat-emote-msg-cough"]
   chatTriggers:
     - cough
@@ -65,6 +67,7 @@
   blacklist:
     components:
     - BorgChassis
+    - ComputerEmotes
   chatMessages: ["chat-emote-msg-yawn"]
   chatTriggers:
     - yawn

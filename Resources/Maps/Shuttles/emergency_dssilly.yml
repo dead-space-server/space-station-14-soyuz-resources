@@ -456,49 +456,31 @@ entities:
     - type: Transform
       pos: -6.5,8.5
       parent: 1
-    - type: DeviceLinkSink
-      links:
-      - 115
   - uid: 9
     components:
     - type: Transform
       pos: -4.5,8.5
       parent: 1
-    - type: DeviceLinkSink
-      links:
-      - 115
   - uid: 10
     components:
     - type: Transform
       pos: -6.5,7.5
       parent: 1
-    - type: DeviceLinkSink
-      links:
-      - 115
   - uid: 11
     components:
     - type: Transform
       pos: -3.5,8.5
       parent: 1
-    - type: DeviceLinkSink
-      links:
-      - 115
   - uid: 12
     components:
     - type: Transform
       pos: -5.5,8.5
       parent: 1
-    - type: DeviceLinkSink
-      links:
-      - 115
   - uid: 13
     components:
     - type: Transform
       pos: 0.5,7.5
       parent: 1
-    - type: DeviceLinkSink
-      links:
-      - 116
 - proto: BoozeDispenser
   entities:
   - uid: 14

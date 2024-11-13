@@ -4,11 +4,6 @@
   sponsorOnly: true
 
 - type: sponsorLoadout
-  id: drippenwagenAltBelt
-  entity: ClothingBeltdrippenwagenAltFilled
-  sponsorOnly: true
-
-- type: sponsorLoadout
   id: drippenwagenAltCrusher
   entity: WeaponDrippenwagenAltCrusher
   sponsorOnly: true
@@ -18,177 +13,111 @@
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackdrippenwagenAlt
-  name: армейский рюкзак из обсидиана
-  description: Рюкзак изготовленый из влагостойкого материала, обеспечивающего сохранность вещей.
-  # noSpawn: true
+  name: грузовой сервочереп
+  description: Изготовлено на заказ организацией LaFleur Wear.
+  # categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/backpack.rsi
+  - type: Clothing
     sprite: DeadSpace/Sponsor/drippenwagenAlt/backpack.rsi
   - type: Storage
     maxItemSize: Huge
     grid:
-    - 0,0,13,5
+    - 0,0,15,5
   - type: StorageFill
     contents:
-      - id: ClothingNeckCloakdrippenwagenAlt
-      - id: ClothingHandsGlovesdrippenwagenAlt
-      - id: ClothingOuterHardsuitdrippenwagenAlt
+      - id: ClothingBeltdrippenwagenAlt
       - id: ClothingUniformJumpsuitdrippenwagenAlt
-      - id: ClothingShoesBootsMagdrippenwagenAlt
-      - id: ClothingHeadsetdrippenwagenAlt
+      - id: JetpackVoidFilleddrippenwagenAlt
+      - id: ClothingOuterHardsuitdrippenwagenAlt
       - id: ClothingEyesHudMedicaldrippenwagenAlt
-      - id: JetpackVoidFilled
+      - id: ClothingHandsGlovesdrippenwagenAlt
       - id: ClothingMaskdrippenwagenAlt
-      - id: ClothingHeadHatBeretdrippenwagenAlt
-      - id: MedkitAdvancedFilled
-      - id: PDAdrippenwagenAlt
-      - id: ADTtelescopicBaton
-      - id: SpaceCash1000
-      - id: PaperLawsdrippenwagenAlt
-      - id: ClothingUnderwearSocksdrippenwagenAlt
-      - id: ClothingNeckWingsdrippenwagenAlt
+      - id: ClothingShoesBootsMagdrippenwagenAlt
       - id: ClothingOuterCoatdrippenwagenAlt
-
-#Пояс
+      - id: PDAdrippenwagenAlt
+      
+# Belt
 - type: entity
-  parent: ClothingBeltStorageBase
-  id: ClothingBeltdrippenwagenAltFilled
-  name: футуристичный РПС
-  description: Максимально удобная ременно-плечевая система, с неменее прекрасными инструментами внутри.
+  parent: ClothingBeltChiefEngineer
+  id: ClothingBeltdrippenwagenAlt
+  name: инструментальный сервочереп
+  description: Изготовлено на заказ организацией LaFleur Wear.
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: DeadSpace/Sponsor/drippenwagenAlt/belt.rsi
   - type: Clothing
     sprite: DeadSpace/Sponsor/drippenwagenAlt/belt.rsi
-  - type: Storage
-    grid:
-    - 0,0,9,1
-    whitelist:
-      tags:
-        - Wirecutter
-        - Crowbar
-        - Screwdriver
-        - Flashlight
-        - Wrench
-        - GeigerCounter
-        - Flare
-        - CableCoil
-        - Powerdrill
-        - JawsOfLife
-        - CigPack
-        - Radio
-        - HolofanProjector
-        - Multitool
-        - AppraisalTool
-      components:
-        - SprayPainter
-        - NetworkConfigurator
-        - RCD
-        - RCDAmmo
-        - Welder
-        - Flash
-        - Handcuff
-        - PowerCell
-        - Geiger
-        - TrayScanner
-        - GasAnalyzer
   - type: Item
     size: Huge
   - type: StorageFill
     contents:
-      - id: PowerDrilldrippenwagenAlt
+      - id: MultitooldrippenwagenAlt
+      - id: trayScannerdrippenwagenAlt
       - id: SyndicateJawsOfLifedrippenwagenAlt
       - id: WelderExperimentaldrippenwagenAlt
-      - id: MultitooldrippenwagenAlt
+      - id: PowerDrilldrippenwagenAlt
 
-#Coat
+# Uniform
 - type: entity
-  parent: ClothingOuterStorageBase
-  id: ClothingOuterCoatdrippenwagenAlt
-  name: обсидиановый тренч
-  description: Тренч из чистого гибкого обсидиана, обеспечивает легкость при носке за счет микро отверстий.
-  noSpawn: true
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitdrippenwagenAlt
+  name: экзоскелет
+  description: Изготовлено на заказ организацией LaFleur Wear.
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    sprite: DeadSpace/Sponsor/drippenwagenAlt/trench.rsi
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/suit.rsi
   - type: Clothing
-    sprite: DeadSpace/Sponsor/drippenwagenAlt/trench.rsi
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/suit.rsi
 
-#Чулочки
+# Jetpack
 - type: entity
-  parent: ClothingUnderwearSocksBase
-  id: ClothingUnderwearSocksdrippenwagenAlt
-  name: пчелиные чулочки
-  description: Красивые черно-жёлтые чулочки. "Бззз"
-  noSpawn: true
+  parent: JetpackVoidFilled
+  id: JetpackVoidFilleddrippenwagenAlt
+  name: прыжковый ранец X-01
+  description: Прыжковый ранец, модифицированный для открытого космоса.
+  suffix: Filled
+  categories: [ HideSpawnMenu ]
   components:
+  - type: Item
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/void.rsi
   - type: Sprite
-    sprite: DeadSpace/Sponsor/drippenwagenAlt/stockings.rsi
-
-# Other
-- type: entity
-  parent: PaperPrintedCentcomm
-  id: PaperLawsdrippenwagenAlt
-  name: распечатанный документ
-  description: Лист бумаги с заголовком центкома. Страшно даже смотреть на него.
-  noSpawn: true
-  components:
-  - type: Paper
-    stampState: paper_stamp-centcom
-    stampedBy:
-    - stampedColor: '#006600FF'
-      stampedName: Центральное Командование
-    - stampedColor: '#00BE00FF'
-      stampedName: Одобрено
-    content: paper-law-valadar
-
-# Cloak
-- type: entity
-  parent: ClothingNeckBase
-  id: ClothingNeckCloakdrippenwagenAlt
-  name: костяной плащ
-  description: Накидка, похожая на сочетание костей и сосудов... Завораживает!
-  noSpawn: true
-  components:
-  - type: Sprite
-    sprite: DeadSpace/Sponsor/drippenwagenAlt/cape.rsi
-
-#Крылья
-- type: entity
-  parent: ClothingNeckBase
-  id: ClothingNeckWingsdrippenwagenAlt
-  name: пепельно красные крылья
-  description: Загадочные серые крылья с красными вкраплениями.
-  noSpawn: true
-  components:
-  - type: Sprite
-    sprite: DeadSpace/Sponsor/drippenwagenAlt/wings.rsi
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/void.rsi
+  - type: Clothing
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/void.rsi
+    slots:
+      - Back
+      - suitStorage
+      - Belt
 
 # Gloves
 - type: entity
   parent: ClothingHandsGlovesCombat
   id: ClothingHandsGlovesdrippenwagenAlt
-  name: перчатки оперативника Серебряной Лисы
-  description: Перчатки изготовленные из ударопрочных материалов, обеспечивающие надлежащим уровень защиты, при этом не сковывая движение запястьев и пальцев.
-  noSpawn: true
+  name: перчатки
+  description: Изготовлено на заказ организацией LaFleur Wear.
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: DeadSpace/Sponsor/drippenwagenAlt/gloves.rsi
   - type: Clothing
     sprite: DeadSpace/Sponsor/drippenwagenAlt/gloves.rsi
 
-#Скафандр
+# Hardsuit
 - type: entity
   parent: ClothingOuterHardsuitAtmos
   id: ClothingOuterHardsuitdrippenwagenAlt
-  name: обсидиановый скафандр
-  description: Массивная броня сделаная из обсидиана с золотыми вставками, подчёркивает статус владельца.
-  noSpawn: true
+  name: скафандр Инквизитора
+  description: Изготовлено на заказ организацией LaFleur Wear.
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    sprite: DeadSpace/Sponsor/drippenwagenAlt/warhammer_suit.rsi
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/hardsuit.rsi
   - type: Clothing
-    sprite: DeadSpace/Sponsor/drippenwagenAlt/warhammer_suit.rsi
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/hardsuit.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitdrippenwagenAlt
   - type: Item
@@ -214,14 +143,14 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitdrippenwagenAlt
-  noSpawn: true
-  name: обсидиановый шлем
-  description: Шлем из обсидиана с добавлением красного парика и загадочной маски.
+  categories: [ HideSpawnMenu ]
+  name: шлем Инквизитора
+  description: Изготовлено на заказ организацией LaFleur Wear.
   components:
   - type: Sprite
-    sprite: DeadSpace/Sponsor/drippenwagenAlt/warhammer_helmet.rsi
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/helmet.rsi
   - type: Clothing
-    sprite: DeadSpace/Sponsor/drippenwagenAlt/warhammer_helmet.rsi
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/helmet.rsi
   - type: PointLight
     radius: 7
     energy: 3
@@ -235,58 +164,14 @@
         Slash: 0.9
         Piercing: 0.9
         Heat: 0.9
-
-- type: entity
-  parent: ClothingUniformBase
-  id: ClothingUniformJumpsuitdrippenwagenAlt
-  name: обсидиановый костюм
-  description: Изготовлены под заказ костюм из гибкого обсидиана с красными сапфирами и синими лазуритами.
-  noSpawn: true
-  components:
-  - type: Sprite
-    sprite: DeadSpace/Sponsor/drippenwagenAlt/suit_base.rsi
-  - type: Clothing
-    sprite: DeadSpace/Sponsor/drippenwagenAlt/suit_base.rsi
-
-# Magboots
-- type: entity
-  parent: ClothingShoesBootsMag
-  id: ClothingShoesBootsMagdrippenwagenAlt
-  name: чёрно-красные обсидиановые сапоги
-  description: Модифицированные подкованные сапоги позволяющие без помех передвигатся в местах повышенной опасности падения и зонах низкой гравитации.
-  noSpawn: true
-  components:
-    - type: Sprite
-      sprite: DeadSpace/Sponsor/drippenwagenAlt/magnet_boots.rsi
-      layers:
-      - state: icon
-        map: [ "enum.ToggleVisuals.Layer" ]
-    - type: Clothing
-      sprite: DeadSpace/Sponsor/drippenwagenAlt/magnet_boots.rsi
-    - type: ClothingSpeedModifier
-      walkModifier: 1
-      sprintModifier: 1
-
-# Противогаз
-- type: entity
-  parent: ClothingMaskGasSyndicate
-  id: ClothingMaskdrippenwagenAlt
-  name: противогаз смерти
-  description: Идеально подобраный под размер головы противогаз, через него даже дышится легче!
-  noSpawn: true
-  components:
-  - type: Sprite
-    sprite: DeadSpace/Sponsor/drippenwagenAlt/mask.rsi
-  - type: Clothing
-    sprite: DeadSpace/Sponsor/drippenwagenAlt/mask.rsi
-
+      
 # Eyes
-
 - type: entity
-  parent: ClothingEyesHudMedical
+  parent: ClothingEyesHudMultiversal
   id: ClothingEyesHudMedicaldrippenwagenAlt
-  name: тактический визор Серебряной Лисы
-  description: Визор военного образца прошедший через несколько модификаций.
+  name: техновизор
+  description: Изготовлено на заказ организацией LaFleur Wear.
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: DeadSpace/Sponsor/drippenwagenAlt/eyes.rsi
@@ -296,48 +181,122 @@
   - type: IdentityBlocker
     coverage: EYES
 
+# Mask
+- type: entity
+  parent: ClothingMaskGasSyndicate
+  id: ClothingMaskdrippenwagenAlt
+  name: дыхательная маска
+  description: Изготовлено на заказ организацией LaFleur Wear.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/mask.rsi
+  - type: Clothing
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/mask.rsi
+
+# Magboots
+- type: entity
+  parent: ClothingShoesBootsMag
+  id: ClothingShoesBootsMagdrippenwagenAlt
+  name: черно-белые сапоги
+  description: Изготовлено на заказ организацией LaFleur Wear.
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Sprite
+      sprite: DeadSpace/Sponsor/drippenwagenAlt/magboots.rsi
+      layers:
+      - state: icon
+        map: [ "enum.ToggleVisuals.Layer" ]
+    - type: Clothing
+      sprite: DeadSpace/Sponsor/drippenwagenAlt/magboots.rsi
+    - type: ClothingSpeedModifier
+      walkModifier: 1
+      sprintModifier: 1
+
+# Mantle
+- type: entity
+  parent: ClothingOuterCoatSyndieCapArmored
+  id: ClothingOuterCoatdrippenwagenAlt
+  name: одеяния Магоса
+  description: Оно обвешено механическими манипуляторами. Изготовлено на заказ организацией LaFleur Wear.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/mantle.rsi
+  - type: Clothing
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/mantle.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHooddrippenwagenAlt
+    requiredSlot:
+    - OUTERCLOTHING
+    slot: head
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatHooddrippenwagenAlt
+  name: капюшон Магоса
+  description: Изготовлено на заказ организацией LaFleur Wear.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/hood.rsi
+  - type: Clothing
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/hood.rsi
+  - type: Tag
+    tags:
+    - HidesHair
+
 # PDA
 - type: entity
   parent: BaseMedicalPDA
   id: PDAdrippenwagenAlt
-  name: КПК наёмника Лагстанта
-  description: Цифровой КПК, пользующийся популярностью среди наёмников.
-  noSpawn: true
+  name: кпк Магоса
+  description: Изготовлено на заказ организацией LaFleur Wear.
+  categories: [ HideSpawnMenu ]
   components:
   - type: Icon
-    sprite: DeadSpace/Sponsor/drippenwagenAlt/pda.rsi
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/pda.rsi 
   - type: Sprite
     sprite: DeadSpace/Sponsor/drippenwagenAlt/pda.rsi
 
-# HeadSet
+#Multitool
 - type: entity
-  parent: ClothingHeadset
-  id: ClothingHeadsetdrippenwagenAlt
-  name: уши Хак’кара
-  description: Древняя гарнитура найденная во время экспедиций, покрытая переливающимися на свету кристаллами льда. Продолжает функционировать, не смотря на её возраст.
+  parent: Multitool
+  id: MultitooldrippenwagenAlt
+  name: свиток
+  description: На нем есть текст, но символы вам непонятны. Изготовлено на заказ организацией LaFleur Wear.
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    sprite: DeadSpace/Sponsor/drippenwagenAlt/headset.rsi
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/multitool.rsi
 
-# Tools
+# t-ray scanner
 - type: entity
-  parent: WelderExperimental
-  id: WelderExperimentaldrippenwagenAlt
-  noSpawn: true
+  parent: trayScanner
+  id: trayScannerdrippenwagenAlt
+  name: благовоние
+  description: Распространяет странные испарения, которые проявляет скрытые полом механизмы. Изготовлено на заказ организацией LaFleur Wear.
+  categories: [ HideSpawnMenu ]
   components:
-  - type: Sprite
-    sprite: DeadSpace/Sponsor/drippenwagenAlt/welding_tool.rsi
-  - type: Item
-    sprite: DeadSpace/Sponsor/drippenwagenAlt/welding_tool.rsi
+    - type: Sprite
+      sprite: DeadSpace/Sponsor/drippenwagenAlt/t-ray.rsi
+      state: icon
+    - type: Item
+      sprite: DeadSpace/Sponsor/drippenwagenAlt/t-ray.rsi
 
+# JawsOfLife
 - type: entity
-  name: челюсти жизни
   parent: SyndicateJawsOfLife
   id: SyndicateJawsOfLifedrippenwagenAlt
-  noSpawn: true
+  name: челюсти жизни
+  description: Изготовлено на заказ организацией LaFleur Wear.
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    sprite: DeadSpace/Sponsor/drippenwagenAlt/claws_of_life.rsi
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/jaws_of_life.rsi
     state: jaws_pry
   - type: Item
     inhandVisuals:
@@ -350,13 +309,13 @@
     entries:
       - behavior: Prying
         sprite:
-          sprite: DeadSpace/Sponsor/drippenwagenAlt/claws_of_life.rsi
+          sprite: DeadSpace/Sponsor/drippenwagenAlt/jaws_of_life.rsi
           state: jaws_pry
         useSound: /Audio/Items/jaws_pry.ogg
         changeSound: /Audio/Items/change_jaws.ogg
       - behavior: Cutting
         sprite:
-          sprite: DeadSpace/Sponsor/drippenwagenAlt/claws_of_life.rsi
+          sprite: DeadSpace/Sponsor/drippenwagenAlt/jaws_of_life.rsi
           state: jaws_cutter
         useSound: /Audio/Items/jaws_cut.ogg
         changeSound: /Audio/Items/change_jaws.ogg
@@ -365,27 +324,26 @@
       types:
         Blunt: 14
 
+# WelderExperimental
 - type: entity
-  parent: Multitool
-  id: MultitooldrippenwagenAlt
-  noSpawn: true
+  parent: WelderExperimental
+  id: WelderExperimentaldrippenwagenAlt
+  name: сварочный аппарат
+  description: Изготовлено на заказ организацией LaFleur Wear.
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    sprite: DeadSpace/Sponsor/drippenwagenAlt/multitool.rsi
-    layers:
-    - state: icon
-    - state: green-unlit
-      shader: unshaded
-  - type: Clothing
-    sprite: DeadSpace/Sponsor/drippenwagenAlt/multitool.rsi
-    quickEquip: false
-    slots:
-    - Belt
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/welder_experimental.rsi
+  - type: Item
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/welder_experimental.rsi
 
+# PowerDrill
 - type: entity
   parent: PowerDrill
   id: PowerDrilldrippenwagenAlt
-  noSpawn: true
+  name: дрель
+  description: Изготовлено на заказ организацией LaFleur Wear.
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: DeadSpace/Sponsor/drippenwagenAlt/drill.rsi
@@ -413,36 +371,23 @@
         changeSound:
           path: /Audio/Items/change_drill.ogg
 
-# Hat
-- type: entity
-  parent: ClothingHeadHatBeret
-  id: ClothingHeadHatBeretdrippenwagenAlt
-  name: берет оперативника Серебряной Лисы
-  description: Берет, символизирующий принадлежность к элитному подразделению наёмников, известному своей смелостью и высоким профессионализмом.
-  noSpawn: true
-  components:
-  - type: Sprite
-    sprite: DeadSpace/Sponsor/drippenwagenAlt/head.rsi
-  - type: Clothing
-    sprite: DeadSpace/Sponsor/drippenwagenAlt/head.rsi
-
 # Crusher
 - type: entity
   parent: WeaponCrusher
   id: WeaponDrippenwagenAltCrusher
-  name: энергетический крушитель
+  name: энергетический меч
   description: Крушитель больше похожий на меч, имеет функцию подсветки.
-  noSpawn: true
+  # categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    sprite: DeadSpace/Sponsor/drippenwagenAlt/scythe.rsi
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/crusher.rsi
   - type: Clothing
-    sprite: DeadSpace/Sponsor/drippenwagenAlt/scythe.rsi
+    sprite: DeadSpace/Sponsor/drippenwagenAlt/crusher.rsi
     quickEquip: false
     slots:
     - Back
     - suitStorage
   - type: PointLight
-    color: "#87d9ff"
+    color: "#ffc526"
     enabled: false
     radius: 5

@@ -2467,33 +2467,21 @@ entities:
     - type: Transform
       pos: 2.5,2.5
       parent: 16
-    - type: DeviceLinkSink
-      links:
-      - 464
   - uid: 179
     components:
     - type: Transform
       pos: -1.5,2.5
       parent: 16
-    - type: DeviceLinkSink
-      links:
-      - 463
   - uid: 180
     components:
     - type: Transform
       pos: 0.5,2.5
       parent: 16
-    - type: DeviceLinkSink
-      links:
-      - 464
   - uid: 181
     components:
     - type: Transform
       pos: 1.5,2.5
       parent: 16
-    - type: DeviceLinkSink
-      links:
-      - 464
   - uid: 264
     components:
     - type: Transform
@@ -2529,17 +2517,11 @@ entities:
     - type: Transform
       pos: -3.5,2.5
       parent: 16
-    - type: DeviceLinkSink
-      links:
-      - 463
   - uid: 459
     components:
     - type: Transform
       pos: -2.5,2.5
       parent: 16
-    - type: DeviceLinkSink
-      links:
-      - 463
 - proto: ShuttersRadiation
   entities:
   - uid: 675
@@ -2547,9 +2529,6 @@ entities:
     - type: Transform
       pos: 6.5,7.5
       parent: 16
-    - type: DeviceLinkSink
-      links:
-      - 584
 - proto: SignalButton
   entities:
   - uid: 463

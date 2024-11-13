@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-NC-SA-4.0",
-  "copyright": "Taken from goonstation and modified by Swept at commit https://github.com/goonstation/goonstation/pull/3555/commits/b24eb6260647c0fcfe858268a26b6160bc50017a, wielded version by Easypoll, resprited by shaxid22 (Discord) for Space Station 14 server Dead Space",
+  "copyright": "Taken from goonstation and modified by Swept at commit https://github.com/goonstation/goonstation/pull/3555/commits/b24eb6260647c0fcfe858268a26b6160bc50017a, wielded version by Easypoll, resprited by shaxid22 (discord) for Space Station 14 server Dead Space",
   "size": {
       "x": 32,
       "y": 32

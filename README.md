@@ -1,2 +1,2 @@
 # space-station-14-resources
-Resources of Space Station 14 server Dead Space
+Ресурсы билда "Союз-1", форка билда "Фобос" проекта "Мёртвый космос" в игре Space Station 14

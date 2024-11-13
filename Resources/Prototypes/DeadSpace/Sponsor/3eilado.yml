@@ -14,7 +14,6 @@
   id: ClothingBackpack3eilado
   name: карманный демон Ainnetel
   description: Провористый карманный демон, выглядит не особо дружелюбно. На его рожках виднеется гравировка Ван'Астрея.
-  noSpawn: false # По запросу
   components:
   - type: Sprite
     sprite: DeadSpace/Sponsor/3eilado/backpack.rsi
@@ -31,38 +30,40 @@
   - type: Storage
     maxItemSize: Huge
     grid:
-    - 0,0,13,5
+    - 0,0,15,5
   - type: StorageFill
     contents:
       - id: ClothingNeckCloak3eilado
+      - id: ClothingOuterHardsuit3eilado
       - id: ClothingShoesBootsMag3eilado
-      - id: ClothingOuterCoatUSSPOvercoatBlack3eilado
-      - id: ClothingShoesUSSPBlack3eilado
-      - id: ClothingUniformJumpsuitUSSPBlack3eilado
-      - id: ClothingHandsGlovesLeatherUSSPBlack3eilado
-      - id: ClothingHeadHatCapUSSPBlack3eilado
-      - id: JetpackVoidFilled
-      - id: DominatorMedkitAdvanced
-      - id: ADTtelescopicBaton
-      - id: SpaceCash1000
-      - id: WeaponDisablerToySponsor
       - id: PaperLaw3eilado
+      - id: ToyBall3eilado
       - id: ToyScythe3eilado
       - id: ClothingEyesGlassesMeson3eilado
       - id: PlushieMoth3eilado
       - id: PDA3eilado
-      - id: ClothingOuterHardsuit3eilado
       - id: GoldenPlunger3eilado
-      - id: ClothingNeckCloakWings3eilado
-      - id: ToyBall3eilado
+      - id: JetpackVoidFilled3eilado
+      - id: DominatorMedkitAdvanced
+      - id: ADTtelescopicBaton
+      - id: SpaceCash1000
+      - id: WeaponDisablerToySponsor
+      - id: ClothingHeadset3eilado
+      - id: ClothingUniformJumpsuit3eilado
+      - id: ClothingHeadHat3eilado
+      - id: ClothingOuterCoat3eilado
+      - id: ClothingNeckCloak3eiladoBlack
+      - id: ClothingNeckCloak3eiladoWhite
+      - id: ClothingHandsRing3eilado
+      - id: FoodIris3eilado
 
 # Belt
 - type: entity
   parent: ClothingBeltChiefEngineer
   id: ClothingBelt3eiladoFilled
-  name: кожаный пояс
-  description: Вместительный кожаный пояс.
-  noSpawn: true
+  name: белый пояс для инструментов 
+  description: Удобный пояс для инструментов.
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: DeadSpace/Sponsor/3eilado/belt.rsi
@@ -83,7 +84,7 @@
   id: ClothingNeckCloak3eilado
   name: пурпурно-синий плащ
   description: От этого плаща не оторвать глаз.
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Foldable
     canFoldInsideContainer: true
@@ -107,37 +108,18 @@
       map: ["foldedLayer"]
       visible: false
 
-# CloakWings
-- type: entity
-  parent: ClothingNeckBase
-  id: ClothingNeckCloakWings3eilado
-  name: Небесные крылья
-  description: Лёгкие крылья. Перья кажутся очень нежными. Создатель этих крыльев оставил на основании свою подпись "Jeleshka".
-  noSpawn: true
-  components:
-  - type: Sprite
-    sprite: DeadSpace/Sponsor/3eilado/wings.rsi
-  - type: Clothing
-    sprite: DeadSpace/Sponsor/3eilado/wings.rsi
-
 # Hardsuit
 - type: entity
   parent: ClothingOuterHardsuitAtmos
   id: ClothingOuterHardsuit3eilado
-  name: скафандр "Harbringer Of Death"
-  description: Потрёпанная мантия. Кажется под ней что-то живое. Рядом с этим неприятно находится. На поясе виднеется надпись "Собственность Ван'Астрея".
-  noSpawn: true
+  name: скафандр «Aurora»
+  description: Скафандр модификации «Полярное сияние». Глядя на него вы ощущаете мороз по коже. На скафандре есть гравировка "собственность Ван’Астрея"
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: DeadSpace/Sponsor/3eilado/hardsuit.rsi
   - type: Clothing
     sprite: DeadSpace/Sponsor/3eilado/hardsuit.rsi
-    clothingVisuals:
-      outerClothing:
-      - state: equipped-OUTERCLOTHING
-      - state: mist
-      - state: dots_unshaded
-        shader: unshaded
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuit3eilado
   - type: Item
@@ -146,25 +128,19 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuit3eilado
-  name: Шлем "Harbringer Of Death"
-  description: Капюшон потрёпанной мантии. На внутренней стороне нанесена подпись "Jeleshka".
-  noSpawn: true
+  name: шлем скафандра «Aurora» 
+  description: Шлем модификации «Полярное сияние». Ледяные рожки имеют переливающуюся гравировку "Jeleshka".
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: DeadSpace/Sponsor/3eilado/helmet.rsi
   - type: Clothing
     sprite: DeadSpace/Sponsor/3eilado/helmet.rsi
   - type: PointLight
-    color: "#ff0000"
+    color: "#a0dfff"
   - type: PressureProtection
     highPressureMultiplier: 0.08
     lowPressureMultiplier: 1000
-  - type: Appearance
-  - type: ToggleableLightVisuals
-    clothingVisuals:
-      head:
-      - state: cross
-        shader: unshaded
 
 # Magboots
 - type: entity
@@ -172,7 +148,7 @@
   id: ClothingShoesBootsMag3eilado
   name: серые украшенные магнитные ботинки
   description: Магнитные ботинки серого цвета.
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
       sprite: DeadSpace/Sponsor/3eilado/magboots.rsi
@@ -191,7 +167,7 @@
   id: PaperLaw3eilado
   name: распечатанный документ
   description: Лист бумаги с заголовком центкома. Страшно даже смотреть на него.
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Paper
     stampState: paper_stamp-centcom
@@ -208,7 +184,7 @@
   id: WelderExperimental3eilado
   name: серый экспериментальный сварочный аппарат
   description: Принадлежит члену экипажа, находящемуся под покровительством спонсорской организации.
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: DeadSpace/Sponsor/3eilado/welder_experimental.rsi
@@ -220,7 +196,7 @@
   description: Принадлежит члену экипажа, находящемуся под покровительством спонсорской организации.
   parent: SyndicateJawsOfLife
   id: SyndicateJawsOfLife3eilado
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: DeadSpace/Sponsor/3eilado/jaws_of_life.rsi
@@ -256,7 +232,7 @@
   id: PowerDrill3eilado
   name: серая дрель
   description: Принадлежит члену экипажа, находящемуся под покровительством спонсорской организации.
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: DeadSpace/Sponsor/3eilado/drill.rsi
@@ -290,7 +266,7 @@
   id: ToyBall3eilado
   name: кроваво-красная сфера
   description: Сгусток странной энергии неизвестного происхождения.
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: EnergySword
     colorOptions:
@@ -302,7 +278,7 @@
       path: /Audio/Weapons/ebladeoff.ogg
   - type: ItemToggleActiveSound
     activeSound:
-      path: /Audio/Weapons/ebladehum.ogg
+      path: /Audio/Ambience/anomaly_scary.ogg
   - type: Sprite
     sprite: DeadSpace/Sponsor/3eilado/ball.rsi
     layers:
@@ -311,6 +287,7 @@
       - state: e_sword_blade
         visible: false
         shader: unshaded
+        map: [ "blade" ]
   - type: Item
     size: Small
     sprite: DeadSpace/Sponsor/3eilado/ball.rsi
@@ -353,7 +330,7 @@
   id: ToyScythe3eilado
   name: игручешная кроваво-красная коса
   description: Удобная технологичная коса, будь та настоящей, ей было бы весело наказывать врагов.
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: EnergySword
     colorOptions:
@@ -415,20 +392,18 @@
 - type: entity
   parent: ClothingEyesBase
   id: ClothingEyesGlassesMeson3eilado
-  name: технологические очки "Антихрист"
-  description: Ноебычные кроваво-красные очки. У них странная материя, как они работают? в свечении очков едва виднеется надпись "Ван'Астрея".
-  noSpawn: true
+  name: визор модификации «Полярное сияния»
+  description: Удобный технологичный визор.
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    sprite: DeadSpace/Sponsor/3eilado/engi_glasses.rsi
-    layers:
-    - state: icon
-      shader: unshaded
-    - state: equipped-EYES
-      shader: unshaded
+    sprite: DeadSpace/Sponsor/3eilado/hud.rsi
   - type: Clothing
-    sprite: DeadSpace/Sponsor/3eilado/engi_glasses.rsi
+    sprite: DeadSpace/Sponsor/3eilado/hud.rsi
   - type: EyeProtection
+  - type: Tag
+    tags:
+    - HudMedical
 
 #Plushie
 - type: entity
@@ -436,7 +411,7 @@
   id: PlushieMoth3eilado
   name: ниан Кемлухт
   description: Милый и пушистый плюшевый ниан. Приятного аппетита, bz!
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: DeadSpace/Sponsor/3eilado/moth.rsi
@@ -451,14 +426,18 @@
   sprites:
   - sprite: DeadSpace/Sponsor/3eilado/tail.rsi
     state: tail
+  - sprite: DeadSpace/Sponsor/3eilado/tail.rsi
+    state: tail-tip
+  - sprite: DeadSpace/Sponsor/3eilado/tail.rsi
+    state: stars
 
 # PDA
 - type: entity
   parent: BaseMedicalPDA
   id: PDA3eilado
-  name: странный КПК модификации "Антихрист"
-  description: Принадлежит члену экипажа, находящемуся под покровительством спонсорской организации.
-  noSpawn: true
+  name: КПК модификации «Домашний демон»
+  description: Этот КПК выглядит уютно
+  categories: [ HideSpawnMenu ]
   components:
   - type: Icon
     sprite: DeadSpace/Sponsor/3eilado/pda.rsi 
@@ -471,7 +450,7 @@
   id: GoldenPlunger3eilado
   name: золотой вантуз
   description: Золотой вантуз, украшенный драгоценными камнями. Подарен одним из Адмиралов Центрального Командования. К тому же, это отличный головной убор.
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: DeadSpace/Sponsor/3eilado/golden_plunger.rsi
@@ -482,43 +461,135 @@
   - type: Clothing
     sprite: DeadSpace/Sponsor/3eilado/golden_plunger.rsi
 
-# USSP stuff but without USSSP
+# Jetpack
 - type: entity
-  parent: ClothingHandsGlovesLeatherUSSPBlack
-  id: ClothingHandsGlovesLeatherUSSPBlack3eilado
-  name: cтарые кожаные перчатки
-  description: Довольно старые кожаные перчатки.
-  noSpawn: true
-
-- type: entity
-  parent: ClothingShoesUSSPBlack
-  id: ClothingShoesUSSPBlack3eilado
-  name: cтарые ботинки
-  description: Довольно старые ботинки.
-  noSpawn: true
-
-- type: entity
-  parent: ClothingUniformJumpsuitUSSPBlack
-  id: ClothingUniformJumpsuitUSSPBlack3eilado
-  name: cтарая униформа
-  description: Довольно старая униформа.
-  noSpawn: true
-
-- type: entity
-  parent: ClothingHeadHatCapUSSPBlack
-  id: ClothingHeadHatCapUSSPBlack3eilado
-  name: Старая шляпа
-  description: Довольно старая шляпа.
-  noSpawn: true
-
-- type: entity
-  parent: ClothingOuterCoatUSSPOvercoatBlack
-  id: ClothingOuterCoatUSSPOvercoatBlack3eilado
-  name: старое пальто
-  description: Довольно старое пальто. На пальто намертво прикреплён значок юридического отдела.
-  noSpawn: true
+  id: JetpackVoidFilled3eilado
+  parent: JetpackVoidFilled
+  name: пустотный джетпак модификации «Северный олень» 
+  description: Он поможет добраться куда-то молниеносно, погладьте его за хорошую работу.
+  categories: [ HideSpawnMenu ]
   components:
-    - type: Sprite
-      sprite: DeadSpace/Sponsor/3eilado/coat.rsi
-    - type: Clothing
-      sprite: DeadSpace/Sponsor/3eilado/coat.rsi
+  - type: Item
+    sprite: DeadSpace/Sponsor/3eilado/jetpack.rsi
+    size: Huge
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/3eilado/jetpack.rsi
+  - type: Clothing
+    sprite: DeadSpace/Sponsor/3eilado/jetpack.rsi
+    slots:
+      - Back
+      - suitStorage
+      - Belt
+
+# HeadSet
+- type: entity
+  parent: ClothingHeadset
+  id: ClothingHeadset3eilado
+  name: гарнитура модификации «Aurora»
+  description: Эта гарнитура странно сияет
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/3eilado/headset.rsi
+  - type: Clothing
+    sprite: DeadSpace/Sponsor/3eilado/headset.rsi
+    
+# Uniform
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuit3eilado
+  name: белая рубашка
+  description: Удобная белая рубашка для комплекта «полярная ночь»
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/3eilado/jumpsuit.rsi
+  - type: Clothing
+    sprite: DeadSpace/Sponsor/3eilado/jumpsuit.rsi
+
+# Hat
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHat3eilado
+  name: шляпа полярной ночи
+  description: Удобный головной убор.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/3eilado/hat.rsi
+  - type: Clothing
+    sprite: DeadSpace/Sponsor/3eilado/hat.rsi
+
+# Coat
+- type: entity
+  parent: ClothingOuterCoatDetectiveDark
+  id: ClothingOuterCoat3eilado
+  name: пальто полярной ночи
+  description: Это пальто выглядит удобно.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/3eilado/coat.rsi
+  - type: Clothing
+    sprite: DeadSpace/Sponsor/3eilado/coat.rsi
+
+# Cloak_white
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloak3eiladoWhite
+  name: плащ полярной ночи
+  description: На этом плаще значок юридического департамента.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/3eilado/cloak_black.rsi
+
+# Cloak_black
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloak3eiladoBlack
+  name: белый плащ полярного дня 
+  description: На этом плаще значок юридического департамента.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/3eilado/cloak_white.rsi
+
+# Ring
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsRing3eilado
+  name: обсидиановое кольцо 1’А
+  description: Внутри драгоценного камня виден целый космос.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/3eilado/ring.rsi
+  - type: Clothing
+    sprite: DeadSpace/Sponsor/3eilado/ring.rsi
+  - type: Item
+    size: Tiny
+
+# Iris
+- type: entity
+  parent: FoodProduceBase
+  id: FoodIris3eilado
+  name: цветок ириса
+  description: Его можно подарить особенному гуманоиду, хорошо оставляет запах на одежде.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - grass
+  - type: Sprite
+    sprite: DeadSpace/Sponsor/3eilado/iris_flower.rsi
+    state: icon
+  - type: Clothing
+    slots:
+    - HEAD
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 7
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 7
