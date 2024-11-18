@@ -10,7 +10,7 @@
   - type: Clothing
     sprite: DeadSpace/Clothing/Head/Hardsuits/blueshield.rsi
   - type: PointLight
-    color: '#4ac4ff'
+    color: '#c70000'
   - type: HideLayerClothing
     slots:
     - Hair
