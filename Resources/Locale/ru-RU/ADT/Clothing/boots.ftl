@@ -1,8 +1,8 @@
 ent-ADTClothingRedjiShoes = стильные туфли
     .desc = Пара потрёпаных временем, тем не менее, стильных туфель.
-ent-ADTClothingShoesBootsMagAdvSynd = улучшенные кроваво-чёрные магнитные ботинки
+ent-ADTClothingShoesBootsMagAdvSynd = улучшенные болотно-чёрные магнитные ботинки
     .desc = Созданые благодаря ревёрс инженерингу, эти ботинки защитят вас как от условий отсутвия гравитации, так и от клоунов.
-    .suffix = Синдиката
+    .suffix = Рассвета, Синдиката
 ent-ADTClothingSandals = сандали
     .desc = Пара простых сандалей. НИ. В КОЕМ. СЛУЧАЕ. НЕ СОВМЕЩАТЬ. С НОСКАМИ
 ent-ADTClothingShoesBootsMagERT = магнитные ботинки СОБР
