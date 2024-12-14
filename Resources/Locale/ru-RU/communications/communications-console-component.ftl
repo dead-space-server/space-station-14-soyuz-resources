@@ -1,7 +1,7 @@
 # Comms console variant titles
 comms-console-announcement-title-station = Консоль связи
 comms-console-announcement-title-centcom = Генеральный штаб
-comms-console-announcement-title-nukie = Ядерные оперативники
+comms-console-announcement-title-nukie = Легион
 comms-console-announcement-title-station-ai = Станционный ИИ
 
 # Popup

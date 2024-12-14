@@ -148,7 +148,7 @@ ghost-role-information-behonker-name = Бехонкер
 ghost-role-information-behonker-description = Вы - антагонист, несущий смерть и хонки всем, кто не следует за хонкоматерью.
 ghost-role-information-nukeop-rules = Вы [color=red][bold]Командный антагонист[/bold][/color], в команде с другими Ядерными оперативниками. Помощь агентов на станции не гарантируется.
 ghost-role-information-loneop-name = Одинокий оперативник
-ghost-role-information-loneop-description = Вы - одинокий ядерный оперативник. Уничтожьте станцию.
+ghost-role-information-loneop-description = Вы - одинокий оперативник Легиона. Уничтожьте станцию.
 ghost-role-information-loneop-rules = Вы [color=red][bold]Командный антагонист[/bold][/color], в команде с другими Ядерными оперативниками. Помощь агентов на станции не гарантируется.
 ghost-role-information-hellspawn-name = Адское отродье
 ghost-role-information-hellspawn-description = Несите смерть всем, кто не повинуется великой богине Нар'Си.
@@ -174,8 +174,8 @@ ghost-role-information-syndicate-reinforcement-spy-name = Шпион "Рассв
 ghost-role-information-syndicate-reinforcement-spy-description = Кому-то нужно подкрепление. Ваша специализация - шпионаж, постарайтесь не быть обнаруженными.
 ghost-role-information-syndicate-reinforcement-thief-name = Вор "Рассвета"
 ghost-role-information-syndicate-reinforcement-thief-description = Кому-то нужно подкрепление. Ваша задача - проникнуть и забрать что-то ценное для своего агента.
-ghost-role-information-nukeop-reinforcement-name = Ядерный оперативник
-ghost-role-information-nukeop-reinforcement-description = Ядерному оперативнику нужно подкрепление. Вы, резервный агент, поможете им.
+ghost-role-information-nukeop-reinforcement-name = Оперативник Легиона
+ghost-role-information-nukeop-reinforcement-description = Оперативнику Легиона нужно подкрепление. Вы, резервный агент, поможете им.
 ghost-role-information-nukeop-reinforcement-rules = Вы [color=red][bold]Командный антагонист[/bold][/color], в команде с ядерным оперативником, который вас призвал.
 ghost-role-information-syndicate-monkey-reinforcement-name = Агент "Рассвета"-обезьяна
 ghost-role-information-syndicate-monkey-reinforcement-description = Кому-то нужно подкрепление. Вы, специально обученная обезьяна, поможете им.
