@@ -479,8 +479,8 @@
 - type: entity
   parent: ClothingUnderwearTopBase
   id: ClothingUnderwearTopBraBrigmedic
-  name: бра врача милиции
-  description: Cтандартное нижнее бельё врача милиции.
+  name: бра дежурного врача
+  description: Cтандартное нижнее бельё дежурного врача.
   components:
   - type: Sprite
     sprite: DeadSpace/Clothing/Underwear/Security/brigmedic/women/bra.rsi

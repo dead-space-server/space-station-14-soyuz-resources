@@ -470,8 +470,8 @@
 - type: entity
   parent: ClothingUnderwearBottomBase
   id: ClothingUnderwearBottomBoxersBrigmedic
-  name: боксеры врача милиции
-  description: Cтандартное нижнее бельё врача милиции.
+  name: боксеры дежурного врача
+  description: Cтандартное нижнее бельё дежурного врача.
   components:
   - type: Sprite
     sprite: DeadSpace/Clothing/Underwear/Security/brigmedic/man.rsi
@@ -957,8 +957,8 @@
 - type: entity
   parent: ClothingUnderwearBottomBase
   id: ClothingUnderwearBottomPantiesBrigmedic
-  name: стринги врача милиции
-  description: Cтандартное нижнее бельё врача милиции.
+  name: стринги дежурного врача
+  description: Cтандартное нижнее бельё дежурного врача.
   components:
   - type: Sprite
     sprite: DeadSpace/Clothing/Underwear/Security/brigmedic/women/pants.rsi
