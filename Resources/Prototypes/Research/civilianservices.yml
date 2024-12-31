@@ -53,6 +53,7 @@
   - SurveillanceCameraMonitorCircuitboard
   - SurveillanceWirelessCameraMonitorCircuitboard
   - TelecomServerCircuitboard
+  - HolopadMachineCircuitboard
 
 - type: technology
   id: AdvancedEntertainment
@@ -154,6 +155,7 @@
   recipeUnlocks:
   - AdvMopItem
   - MegaSprayBottle
+  - BagOfSummoningGarbage # DS14
 
 - type: technology
   id: HONKMech
