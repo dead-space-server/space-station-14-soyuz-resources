@@ -23,11 +23,14 @@
   wageDepartment: Cargo
   wage: 50
   #end-backmen: currency
+  special:
+  - !type:GiveItemOnHolidaySpecial
+    holiday: FestiveSeason
+    prototype: PresentRandom
 
 - type: startingGear
   id: SalvageSpecialistGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitSalvageSpecialist
     id: SalvagePDA
     ears: ClothingHeadsetCargo
     socks: ClothingUnderwearSocksSalvage

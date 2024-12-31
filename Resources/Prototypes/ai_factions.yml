@@ -7,8 +7,11 @@
     - PetsNT
     - Zombie
     - Revolutionary
-    - Necromorfs
-    - SpiderTerror
+    - AllHostile
+    - Necromorfs # DS14
+    - SpiderTerror # DS14
+    - Blob # DS14
+    - SyndicateAgent # DS14-agents-faction
 
 - type: npcFaction
   id: NanoTrasen
@@ -18,13 +21,17 @@
   - Xeno
   - Zombie
   - Revolutionary
-  - Necromorfs
-  - SpiderTerror
+  - Dragon
+  - AllHostile
+  - Necromorfs # DS14
+  - SpiderTerror # DS14
+  - Blob # DS14
 
 - type: npcFaction
   id: Mouse
   hostile:
     - PetsNT
+    - AllHostile
 
 - type: npcFaction
   id: Passive
@@ -36,6 +43,7 @@
   - SimpleHostile
   - Zombie
   - Xeno
+  - AllHostile
 
 - type: npcFaction
   id: SimpleHostile
@@ -46,8 +54,10 @@
   - PetsNT
   - Zombie
   - Revolutionary
-  - Necromorfs
-  - SpiderTerror
+  - AllHostile
+  - Necromorfs # DS14
+  - SpiderTerror # DS14
+  - SyndicateAgent # DS14-agents-faction
 
 - type: npcFaction
   id: SimpleNeutral
@@ -60,8 +70,24 @@
   - Xeno
   - PetsNT
   - Zombie
-  - Necromorfs
-  - SpiderTerror
+  - Dragon
+  - AllHostile
+  - Necromorfs # DS14
+  - SpiderTerror # DS14
+  - Blob # DS14
+
+# DS14-agents-faction-start
+- type: npcFaction
+  id: SyndicateAgent
+  hostile:
+  - SimpleHostile
+  - Xeno
+  - Zombie
+  - Dragon
+  - AllHostile
+  - Necromorfs # DS14
+  - SpiderTerror # DS14
+# DS14-agents-faction-end
 
 - type: npcFaction
   id: Xeno
@@ -72,8 +98,11 @@
   - PetsNT
   - Zombie
   - Revolutionary
-  - Necromorfs
-  - SpiderTerror
+  - AllHostile
+  - Necromorfs # DS14
+  - SpiderTerror # DS14
+  - Blob # DS14
+  - SyndicateAgent # DS14-agents-faction
 
 - type: npcFaction
   id: Zombie
@@ -85,8 +114,11 @@
   - Passive
   - PetsNT
   - Revolutionary
-  - Necromorfs
-  - SpiderTerror
+  - AllHostile
+  - Necromorfs # DS14
+  - SpiderTerror # DS14
+  - Blob # DS14
+  - SyndicateAgent # DS14-agents-faction
 
 - type: npcFaction
   id: Revolutionary
@@ -95,5 +127,26 @@
   - Zombie
   - SimpleHostile
   - Dragon
-  - Necromorfs
-  - SpiderTerror
+  - AllHostile
+  - Necromorfs # DS14
+  - SpiderTerror # DS14
+  - Blob # DS14
+
+- type: npcFaction
+  id: AllHostile
+  hostile:
+  - NanoTrasen
+  - Dragon
+  - Mouse
+  - Passive
+  - PetsNT
+  - SimpleHostile
+  - SimpleNeutral
+  - Syndicate
+  - Xeno
+  - Zombie
+  - Revolutionary
+  - Necromorfs # DS14
+  - SpiderTerror # DS14
+  - SyndicateAgent # DS14-agents-faction
+  - Blob # DS14

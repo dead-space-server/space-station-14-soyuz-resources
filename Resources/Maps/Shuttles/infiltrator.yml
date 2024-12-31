@@ -783,6 +783,13 @@ entities:
     - type: Transform
       pos: 3.5,-3.5
       parent: 1
+- proto: BorgCharger
+  entities:
+  - uid: 612
+    components:
+    - type: Transform
+      pos: -4.5,-27.5
+      parent: 1
 - proto: BoxEncryptionKeySyndie
   entities:
   - uid: 34
@@ -3719,6 +3726,31 @@ entities:
     components:
     - type: Transform
       pos: -2.4942985,-13.37949
+      parent: 1
+  - uid: 784
+    components:
+    - type: Transform
+      pos: -2.6415586,-13.365221
+      parent: 1
+  - uid: 835
+    components:
+    - type: Transform
+      pos: -2.3612509,-13.365221
+      parent: 1
+  - uid: 836
+    components:
+    - type: Transform
+      pos: -2.4645212,-13.468466
+      parent: 1
+  - uid: 837
+    components:
+    - type: Transform
+      pos: -2.4645212,-13.453716
+      parent: 1
+  - uid: 838
+    components:
+    - type: Transform
+      pos: -2.4645212,-13.40947
       parent: 1
 - proto: PlasmaReinforcedWindowDirectional
   entities:

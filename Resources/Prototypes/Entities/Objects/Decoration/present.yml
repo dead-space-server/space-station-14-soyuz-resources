@@ -147,18 +147,6 @@
         orGroup: GiftPool
       - id: PlushieGhost
         orGroup: GiftPool
-      - id: PlushieOfficer
-        orGroup: GiftPool
-      - id: PlushieInstructor
-        orGroup: GiftPool
-      - id: PlushieGSB
-        orGroup: GiftPool
-      - id: PlushieKel
-        orGroup: GiftPool
-      - id: PlushieLera
-        orGroup: GiftPool
-      - id: PlushieCap
-        orGroup: GiftPool
       - id: PlushieFloran
         orGroup: GiftPool
       - id: PlushieJuggernaut
@@ -627,14 +615,23 @@
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
-  id: PresentRandomAsh
+  id: PresentRandomCoal
   parent: [PresentBase, BaseItem]
-  suffix: Filled Ash
+  suffix: Filled Coal
   components:
   - type: SpawnItemsOnUse
     items:
       - id: PresentTrash
-      - id: Ash # No coal yet!
+      - id: Coal1
+        orGroup: GiftPool
+      - id: Coal5
+        prob: .4
+        orGroup: GiftPool
+      - id: Coal10
+        prob: .2
+        orGroup: GiftPool
+      - id: Coal15
+        prob: .1
         orGroup: GiftPool
     sound:
       path: /Audio/Effects/unwrap.ogg
