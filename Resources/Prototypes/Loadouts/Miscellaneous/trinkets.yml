@@ -28,7 +28,14 @@
     back:
     - ClothingNeckHeadphones
 
-# Plushies
+# DS14: HatDeer
+- type: loadout
+  id: HatDeer
+  storage:
+    back:
+    - ClothingHeadHatDeer
+
+# Toys
 - type: loadout
   id: PlushieLizard
   storage:
@@ -40,6 +47,15 @@
   storage:
     back:
     - PlushieSpaceLizard
+
+- type: loadout
+  id: ThreeCandles
+  dummyEntity: LoadoutDummyCandles
+  storage:
+    back:
+    - CandleRed
+    - CandleBlue
+    - CandleGreenSmall
 
 # Smokeables
 - type: loadout
