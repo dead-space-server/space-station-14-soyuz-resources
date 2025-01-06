@@ -16,6 +16,8 @@
   - Brig
   - Maintenance
   - Service
+  - External
+  - Cryogenics
   - Detective
   #start-backmen: currency
   minBankBalance: 150
@@ -26,6 +28,9 @@
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
+  - !type:GiveItemOnHolidaySpecial
+    holiday: FestiveSeason
+    prototype: PresentRandom
 
 - type: startingGear
   id: DetectiveGear

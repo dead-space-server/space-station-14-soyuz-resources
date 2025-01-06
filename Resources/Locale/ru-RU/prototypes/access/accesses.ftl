@@ -35,3 +35,4 @@ id-card-access-level-external = Внешний
 id-card-access-level-nuclear-operative = Оперативник Легиона
 id-card-access-level-syndicate-agent = Агент "Рассвета"
 id-card-access-level-central-command = Генеральный Штаб
+id-card-access-level-wizard = Волшебник
