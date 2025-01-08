@@ -3,67 +3,107 @@
   copyright: "Custom"
   source: "https://www.youtube.com/watch?v=76L1pBUw3H8"
 
-  - files: ["BravoEtotGorod.ogg"]
+- files: ["BlowWithTheFires.ogg"]
+  license: "Custom"
+  copyright: "Custom"
+  source: "----"
+
+- files: ["BravoEtotGorod.ogg"]
   license: "Custom"
   copyright: "Custom"
   source: "https://www.youtube.com/watch?v=zXs2jD7Tfhs"
 
-  - files: ["DVRSTKomarovo.ogg"]
+- files: ["DajjteTank.ogg"]
+  license: "Custom"
+  copyright: "Custom"
+  source: "----"
+
+- files: ["DVRSTKomarovo.ogg"]
   license: "Custom"
   copyright: "Custom"
   source: "https://www.youtube.com/watch?v=7wFEQeR4kNM"
 
-  - files: ["GloryToTheOnesWhoLookForward.ogg"]
+- files: ["EgorLetovPoPlanu.ogg"]
+  license: "Custom"
+  copyright: "Custom"
+  source: "----"
+
+- files: ["GloryToTheOnesWhoLookForward.ogg"]
   license: "Custom"
   copyright: "Custom"
   source: "https://www.youtube.com/watch?v=KYrDV_nICiM"
 
-  - files: ["GostyaIzBudushhegoPrekrasnoeDaleko.ogg"]
+- files: ["GostyaIzBudushhegoPrekrasnoeDaleko.ogg"]
   license: "Custom"
   copyright: "Custom"
   source: "https://www.youtube.com/watch?v=KYrDV_nICiM"
 
-  - files: ["GrazhdanskayaOboronaChuzhoe.ogg"]
+- files: ["GrazhdanskayaOboronaChuzhoe.ogg"]
   license: "Custom"
   copyright: "Custom"
   source: "https://www.youtube.com/watch?v=RvTocHvxrro"
 
-  - files: ["HardcoreDanceDiscoElysiumOST.ogg"]
+- files: ["GrazhdanskayaOboronaDurachok.ogg"]
+  license: "Custom"
+  copyright: "Custom"
+  source: "----"
+
+- files: ["HappyNation.ogg"]
+  license: "Custom"
+  copyright: "Custom"
+  source: "----"
+
+- files: ["HardcoreDanceDiscoElysiumOST.ogg"]
   license: "Custom"
   copyright: "Custom"
   source: "https://www.youtube.com/watch?v=2-Yvi2bC2to"
 
-  - files: ["Metro2MarchOfTheCommunistBrigadesOST.ogg"]
+- files: ["Metro2MarchOfTheCommunistBrigadesOST.ogg"]
   license: "Custom"
   copyright: "Custom"
   source: "https://www.youtube.com/watch?v=54cn9tcGB-A"
 
-  - files: ["PapersPleaseMainTheme.ogg"]
+- files: ["NinaBrodskayaYanvarskayaVyuga.ogg"]
+  license: "Custom"
+  copyright: "Custom"
+  source: "----"
+
+- files: ["PapersPleaseMainTheme.ogg"]
   license: "Custom"
   copyright: "Custom"
   source: "https://www.youtube.com/watch?v=OBQE_TNI7zw"
 
-  - files: ["SeaPowerWhirlingInRags8AM.ogg"]
+- files: ["RabochayaMarseleza.ogg"]
+  license: "Custom"
+  copyright: "Custom"
+  source: "----"
+
+- files: ["RedArmyAnsambl.ogg"]
+  license: "Custom"
+  copyright: "Custom"
+  source: "----"
+
+- files: ["SeaPowerWhirlingInRags8AM.ogg"]
   license: "Custom"
   copyright: "Custom"
   source: "https://www.youtube.com/watch?v=LeILSPhyExw"
 
-  - files: ["SovietMarchRedAlert3RussianCover.ogg"]
+- files: ["SovietMarchRedAlert3RussianCover.ogg"]
   license: "Custom"
   copyright: "Custom"
   source: "https://www.youtube.com/watch?v=GKvlt6rpb4Y"
 
-  - files: ["TravaUDoma.ogg"]
+- files: ["TravaUDoma.ogg"]
   license: "Custom"
   copyright: "Custom"
   source: "https://www.youtube.com/watch?v=jpne8fCwFJ8"
 
-  - files: ["VladimirTroshinIBelieveMyFriends.ogg"]
+- files: ["VladimirTroshinIBelieveMyFriends.ogg"]
   license: "Custom"
   copyright: "Custom"
   source: "https://www.youtube.com/watch?v=Dvk_n7F4O3U"
 
-  - files: ["YouAreEmptyMachineOfCommunism.ogg"]
+- files: ["YouAreEmptyMachineOfCommunism.ogg"]
   license: "Custom"
   copyright: "Custom"
   source: "https://www.youtube.com/watch?v=jPGyR_3zpjA"
