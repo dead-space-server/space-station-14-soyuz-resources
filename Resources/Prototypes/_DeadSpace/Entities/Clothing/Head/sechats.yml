@@ -1,0 +1,34 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothinHosUshanka
+  name: шапка-ушанка начальника милиции
+  description: Греет душу так же, как пытки над иноагентами.
+  components:
+  - type: TemperatureProtection
+    coolingCoefficient: 0.5
+  - type: Sprite
+    sprite: DeadSpace/Clothing/Head/Hats/hos_ushanka.rsi
+  - type: Clothing
+    sprite: DeadSpace/Clothing/Head/Hats/hos_ushanka.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothinSecAlt
+  name: фуражка милиции
+  description: Официальный головной убор, подчеркивающий вашу строгость и принадлежность к государственной системе.
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Clothing/Head/Hats/sec_althelmet.rsi
+  - type: Clothing
+    sprite: DeadSpace/Clothing/Head/Hats/sec_althelmet.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothinSecWard
+  name: фуражка оперативного дежурного
+  description: Официальный головной убор, являющийся частью зимней униформы оперативного дежурного.
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Clothing/Head/Hats/warden_althelmet.rsi
+  - type: Clothing
+    sprite: DeadSpace/Clothing/Head/Hats/warden_althelmet.rsi
