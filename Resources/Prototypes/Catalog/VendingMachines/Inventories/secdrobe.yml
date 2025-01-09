@@ -1,6 +1,8 @@
 - type: vendingMachineInventory
   id: SecDrobeInventory
   startingInventory:
+    ClothingOuterSecLeather: 2
+    ClothingOuterSecGreenAlt: 2
     ClothingBackpackSecurity: 4
     ClothingBackpackSatchelSecurity: 4
     ClothingBackpackDuffelSecurity: 4

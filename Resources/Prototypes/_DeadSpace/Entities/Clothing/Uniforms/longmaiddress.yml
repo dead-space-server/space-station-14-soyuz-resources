@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtlongmaiddressMK
+  name: Платье придворной горничной
+  description: Прятное платье, идущее в комплекте с чистым белым фартуком. Подчёркивает талию.
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Clothing/Uniforms/Jumpskirt/longmaiddress.rsi
+  - type: Clothing
+    sprite: DeadSpace/Clothing/Uniforms/Jumpskirt/longmaiddress.rsi
