@@ -1,6 +1,5 @@
 job-supervisors-centcom = генеральному штабу
-job-supervisors-magistrat = судье
-job-supervisors-magistrat-iaa = судье и агенту следственного комитета
+job-supervisors-iaa = агенту следственного комитета
 job-supervisors-captain = капитану
 job-supervisors-hop = главе персонала
 job-supervisors-hos = начальнику милиции

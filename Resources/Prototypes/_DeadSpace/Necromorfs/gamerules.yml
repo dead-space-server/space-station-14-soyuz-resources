@@ -119,14 +119,28 @@
       mindRoles:
       - MindRoleEnslavedUnitology
 
-- type: preloadedGrid
-  id: TravelingCuisineUnitology
-  path: /Maps/Shuttles/ShuttleEvent/traveling_china_cuisine_unitology.yml
-  copies: 1
+- type: entity
+  id: GiftsNecroobeliskArtefact
+  parent: CargoGiftsBase
+  components:
+  - type: StationEvent
+    duration: 120
+    earliestStart: 20
+    minimumPlayers: 30
+    willNotStartRandomly: true
+  - type: CargoGiftsRule
+    description: контейнер с артефактом
+    dest: cargo-gift-default-sender
+    gifts:
+      ArtifactContainerNecroobelisk: 1
 
 - type: entity
-  parent: BaseUnknownShuttleRule
-  id: UnknownShuttleTravelingCuisineUnitology
+  id: CentcommSendNecroobeliskArtefact
+  parent: BaseGameRule
   components:
-  - type: LoadMapRule
-    preloadedGrid: TravelingCuisineUnitology
+  - type: StationEvent
+    duration: 120
+    earliestStart: 20
+    minimumPlayers: 30
+    willNotStartRandomly: true
+  - type: NecroobeliskArtefactRule

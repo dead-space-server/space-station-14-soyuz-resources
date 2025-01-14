@@ -615,6 +615,8 @@
     - BorgModuleHarvesting
     - BorgModuleDefibrillator
     - BorgModuleAdvancedTreatment
+    - BorgModuleAdvancedMining # DS14
+    - BorgModuleMiningWeapon # DS14
     - RipleyHarness
     - RipleyLArm
     - RipleyRArm
@@ -810,6 +812,7 @@
       - WeaponLaserCarbine
       - WeaponXrayCannon
       - WeaponLaserRifle # DS14
+      - MagazineBox357Incendiary # ADT
   - type: MaterialStorage
     whitelist:
       tags:

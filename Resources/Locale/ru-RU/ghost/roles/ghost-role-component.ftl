@@ -176,6 +176,8 @@ ghost-role-information-syndicate-reinforcement-thief-name = Вор "Рассве
 ghost-role-information-syndicate-reinforcement-thief-description = Кому-то нужно подкрепление. Ваша задача - проникнуть и забрать что-то ценное для своего агента.
 ghost-role-information-nukeop-reinforcement-name = Оперативник Легиона
 ghost-role-information-nukeop-reinforcement-description = Оперативнику Легиона нужно подкрепление. Вы, резервный агент, поможете им.
+ghost-role-information-derelict-cyborg-name = Derelict Cyborg
+ghost-role-information-derelict-cyborg-description = You are a regular cyborg that got lost in space. After years of exposure to ion storms you find yourself near a space station.
 ghost-role-information-nukeop-reinforcement-rules = Вы [color=red][bold]Командный антагонист[/bold][/color], в команде с ядерным оперативником, который вас призвал.
 ghost-role-information-syndicate-monkey-reinforcement-name = Агент "Рассвета"-обезьяна
 ghost-role-information-syndicate-monkey-reinforcement-description = Кому-то нужно подкрепление. Вы, специально обученная обезьяна, поможете им.
