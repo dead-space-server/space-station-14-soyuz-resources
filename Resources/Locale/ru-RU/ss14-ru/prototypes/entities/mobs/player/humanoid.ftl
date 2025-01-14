@@ -1,6 +1,8 @@
 ent-RandomHumanoidSpawnerDeathSquad = Специальный отряд "Дым"
     .suffix = Призрачная роль, 210 часов общего времени
     .desc = { "" }
+ent-MobHumanDeathSquadUnit = { ent-MobHuman }
+    .desc = { ent-MobHuman.desc }
 ent-RandomHumanoidSpawnerERTLeaderAmber = СОБР лидер
     .desc = { "" }
     .suffix = Эмбер, Призрачная роль
@@ -73,12 +75,10 @@ ent-RandomHumanoidSpawnerCentcomSpecialOperationsOfficer = Генерал Спе
 ent-RandomHumanoidSpawnerCentcomOfficer = Офицер ГШ
     .desc = { "" }
     .suffix = { "" }
-
 ent-RandomHumanoidSpawnerSyndicateAgent = Агент "Рассвета"
     .desc = { "" }
 ent-RandomHumanoidSpawnerNukeOp = Ядерный оперативник
     .desc = { "" }
-
 ent-RandomHumanoidSpawnerCluwne = Клувень
     .desc = { "" }
     .suffix = Спавнит клувеня, Призрачная роль

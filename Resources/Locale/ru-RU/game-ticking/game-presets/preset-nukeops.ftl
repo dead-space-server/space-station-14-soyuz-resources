@@ -4,11 +4,11 @@ nukeops-welcome =
     Вы - Оперативник Легиона. Ваша задача - взорвать { $station } и убедиться, что от неё осталась лишь груда обломков. Ваше руководство, ОПЗ, снабдило вас всем необходимым для выполнения этой задачи.
     Операция "{ $name }" началась! Смерть СССП!
 nukeops-briefing = Ваши задачи просты. Доставить бомбу и убедиться, что она взорвётся. Начинайте миссию.
-nukeops-opsmajor =  [color=crimson]Крупная победа Легиона![/color]
-nukeops-opsminor =  [color=crimson]Малая победа Легиона![/color]
-nukeops-neutral =  [color=yellow]Ничейный исход![/color]
-nukeops-crewminor =  [color=green]Малая победа экипажа![/color]
-nukeops-crewmajor =  [color=green]Разгромная победа экипажа![/color]
+nukeops-opsmajor = [color=crimson]Крупная победа Легиона![/color]
+nukeops-opsminor = [color=crimson]Малая победа Легиона![/color]
+nukeops-neutral = [color=yellow]Ничейный исход![/color]
+nukeops-crewminor = [color=green]Малая победа экипажа![/color]
+nukeops-crewmajor = [color=green]Разгромная победа экипажа![/color]
 nukeops-cond-nukeexplodedoncorrectstation = Оперативникам Легиона удалось взорвать станцию.
 nukeops-cond-nukeexplodedonnukieoutpost = Аванпост оперативников Легиона был уничтожен ядерным взрывом.
 nukeops-cond-nukeexplodedonincorrectlocation = Ядерная бомба взорвалась вне станции.

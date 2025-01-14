@@ -1,5 +1,7 @@
-ent-CaptainSabre = сабля Капитана
-    .desc = Церемониальное оружие, принадлежащее Капитану станции.
+ent-BaseSword = { ent-BaseItem }
+    .desc = { ent-BaseItem.desc }
+ent-CaptainSabre = капитанская сабля
+    .desc = Церемониальное оружие, принадлежащее капитану станции.
 ent-Katana = катана
     .desc = Древняя работа, выполненная из не столь древней пластали.
 ent-EnergyKatana = энергокатана

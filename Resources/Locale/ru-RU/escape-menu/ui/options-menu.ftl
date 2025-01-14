@@ -7,7 +7,6 @@ ui-options-tab-controls = Управление
 ui-options-tab-audio = Аудио
 ui-options-tab-network = Сеть
 ui-options-tab-misc = Основные
-
 ui-options-apply = Применить
 ui-options-reset-all = Сбросить всё и применить
 ui-options-default = По-умолчанию
@@ -96,6 +95,7 @@ ui-options-parallax-low-quality = Низкокачественный парал�
 ui-options-fps-counter = Показать счётчик FPS
 ui-options-vp-width = Ширина окна игры:
 ui-options-hud-layout = Тип HUD:
+ui-options-background-hud-layout = Тип фона лобби:
 
 ## Controls menu
 
@@ -104,7 +104,6 @@ ui-options-binds-explanation = ЛКМ — изменить кнопку, ПКМ 
 ui-options-unbound = Пусто
 ui-options-bind-reset = Сбросить
 ui-options-key-prompt = Нажмите кнопку...
-
 ui-options-header-movement = Перемещение
 ui-options-header-camera = Камера
 ui-options-header-interaction-basic = Базовые взаимодействия
@@ -116,23 +115,19 @@ ui-options-header-shuttle = Шаттл
 ui-options-header-map-editor = Редактор карт
 ui-options-header-dev = Разработка
 ui-options-header-general = Основное
-
 ui-options-hotkey-keymap = Использовать клавиши QWERTY (США)
 ui-options-hotkey-toggle-walk = Переключить ходьбу
-
 ui-options-function-move-up = Двигаться вверх
 ui-options-function-move-left = Двигаться налево
 ui-options-function-move-down = Двигаться вниз
 ui-options-function-move-right = Двигаться направо
 ui-options-function-walk = Идти
-
 ui-options-function-camera-rotate-left = Повернуть налево
 ui-options-function-camera-rotate-right = Повернуть направо
 ui-options-function-camera-reset = Сбросить камеру
 ui-options-function-zoom-in = Приблизить
 ui-options-function-zoom-out = Отдалить
 ui-options-function-reset-zoom = Сбросить
-
 ui-options-function-use = Использовать
 ui-options-function-use-secondary = Использовать вторично
 ui-options-function-alt-use = Альтернативное использование
@@ -160,7 +155,6 @@ ui-options-function-point = Указать на что-либо
 ui-options-function-rotate-object-clockwise = Повернуть по часовой стрелке
 ui-options-function-rotate-object-counterclockwise = Повернуть против часовой стрелки
 ui-options-function-flip-object = Перевернуть
-
 ui-options-function-focus-chat-input-window = Писать в чат
 ui-options-function-focus-local-chat-window = Писать в чат (IC)
 ui-options-function-focus-emote = Писать в чат (Emote)
