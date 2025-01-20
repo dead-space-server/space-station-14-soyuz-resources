@@ -1,8 +1,6 @@
 - type: vendingMachineInventory
   id: SecDrobeInventory
   startingInventory:
-    ClothingOuterSecLeather: 2
-    ClothingOuterSecGreenAlt: 2
     ClothingBackpackSecurity: 4
     ClothingBackpackSatchelSecurity: 4
     ClothingBackpackDuffelSecurity: 4
@@ -34,3 +32,5 @@
     ClothingHeadHelmetJustice: 2
   contrabandInventory:
     ClothingMaskClownSecurity: 1
+    ClothingOuterSecLeather: 2 # DS14-Soyuz
+    ClothingOuterSecGreenAlt: 2 # DS14-Soyuz
