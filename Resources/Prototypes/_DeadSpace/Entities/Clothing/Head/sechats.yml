@@ -1,6 +1,6 @@
 - type: entity
   parent: ClothingHeadBase
-  id: ClothinHosUshanka
+  id: ClothingHeadHatHosUshanka
   name: шапка-ушанка начальника милиции
   description: Греет душу так же, как пытки над иноагентами.
   components:
