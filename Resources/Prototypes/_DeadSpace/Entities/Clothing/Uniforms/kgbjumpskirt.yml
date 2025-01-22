@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitKGBFemale
+  name: водолазка оперативника КГБ
+  description: Водолазка для сотрудников КГБ. Согревает холодное сердце.
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Clothing/Uniforms/okgb_turtle/female/okgb_turtle.yml
+  - type: Clothing
+    sprite: DeadSpace/Clothing/Uniforms/okgb_turtle/female/okgb_turtle.yml

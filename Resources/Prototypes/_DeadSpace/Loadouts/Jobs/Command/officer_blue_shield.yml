@@ -2,4 +2,4 @@
 - type: loadout
   id: BlueShieldOfficerJumpsuit
   equipment:
-    jumpsuit: ClothingUniformJumpsuitBlueShield
+    jumpsuit: ClothingUniformJumpsuitKGBMale

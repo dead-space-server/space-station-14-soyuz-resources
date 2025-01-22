@@ -64,6 +64,7 @@
   components:
   - type: StorageFill
     contents:
+      - id: ClothinSecAlt
       - id: FlashlightSeclite
       #   prob: 0.8 # DS14-disabled
       # - id: WeaponDisabler # DS14-disabled
@@ -85,6 +86,7 @@
       - id: ERTloadoutSecuritySecondary # DS14
       - id: ClothingNeckBodyCamera # DS14
       - id: ClothingMaskGasSecurity # DS14
+      - id: ClothingOuterSecAlt # DS14
 
 - type: entity
   id: LockerBrigmedicFilled
@@ -285,3 +287,4 @@
       - id: RubberStampBlueShield
       - id: WeaponDisabler
       - id: ClothingHeadHelmetSwat
+      - id: ClothingUniformJumpsuitKGBFemale # DS14-Soyuz

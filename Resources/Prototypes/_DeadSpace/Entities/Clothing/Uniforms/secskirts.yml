@@ -1,0 +1,21 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtSecBlue
+  name: синяя юбка милиции
+  description: Эта элегантная синяя юбка идеально подчёркивает вашу серьёзность и готовность поддерживать порядок на станции. Секретный кодекс милиции утверждает, что юбка добавляет +10 к харизме и +5 к шансу убедить экипаж не сопротивляться аресту.
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Clothing/Uniforms/security_blue.rsi
+  - type: Clothing
+    sprite: DeadSpace/Clothing/Uniforms/security_blue.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtSecGray
+  name: серая юбка милиции
+  description: Нейтральный цвет для нестандартных ситуаций. Эта строгая серая юбка говорит всему экипажу "Я здесь, чтобы поддерживать порядок, но не забываю о стиле!".
+  components:
+  - type: Sprite
+    sprite: DeadSpace/Clothing/Uniforms/security_trooper.rsi
+  - type: Clothing
+    sprite: DeadSpace/Clothing/Uniforms/security_trooper.rsi
