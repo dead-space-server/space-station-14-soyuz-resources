@@ -1,5 +1,5 @@
 ent-WardrobeBase = { ent-ClosetBase }
-    .desc = Стандартное хранилище USSP для одежды и снаряжения.
+    .desc = Стандартное хранилище СССП для одежды и снаряжения.
 ent-WardrobeBlue = синий гардероб
     .desc = { ent-WardrobeBase.desc }
 ent-WardrobePink = розовый гардероб
