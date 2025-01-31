@@ -122,8 +122,8 @@
 - type: entity
   parent: ClothingUnderwearTopBase
   id: ClothingUnderwearTopBraBotanist
-  name: бра ботаника
-  description: Cтандартное нижнее бельё ботаника.
+  name: бра агронома
+  description: Cтандартное нижнее бельё агронома.
   components:
   - type: Sprite
     sprite: DeadSpace/Clothing/Underwear/Civilian/botanist/women/bra.rsi
@@ -230,8 +230,8 @@
 - type: entity
   parent: ClothingUnderwearTopBase
   id: ClothingUnderwearTopBraZoo
-  name: бра зоотехника
-  description: Cтандартное нижнее бельё зоотехника.
+  name: бра ветеринара
+  description: Cтандартное нижнее бельё ветеринара.
   components:
   - type: Sprite
     sprite: DeadSpace/Clothing/Underwear/Civilian/zoo/women/bra.rsi
@@ -533,8 +533,8 @@
 - type: entity
   parent: ClothingUnderwearTopBase
   id: ClothingUnderwearTopBraWarden
-  name: бра оперативного дежурного
-  description: Cтандартное нижнее бельё оперативного дежурного.
+  name: бра участкового
+  description: Cтандартное нижнее бельё участкового.
   components:
   - type: Sprite
     sprite: DeadSpace/Clothing/Underwear/Security/warden/women/bra.rsi

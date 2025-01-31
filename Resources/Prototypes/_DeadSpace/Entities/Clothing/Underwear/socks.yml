@@ -148,8 +148,8 @@
 - type: entity
   parent: ClothingUnderwearSocksBase
   id: ClothingUnderwearSocksBotanist
-  name: носки ботаника
-  description: Стандартные носки ботаника.
+  name: носки агронома
+  description: Стандартные носки агронома.
   components:
   - type: Sprite
     sprite: DeadSpace/Clothing/Underwear/Civilian/botanist/socks.rsi
@@ -247,8 +247,8 @@
 - type: entity
   parent: ClothingUnderwearSocksBase
   id: ClothingUnderwearSocksZoo
-  name: носки зоотехника
-  description: Стандартные носки зоотехника.
+  name: носки ветеринара
+  description: Стандартные носки ветеринара.
   components:
   - type: Sprite
     sprite: DeadSpace/Clothing/Underwear/Civilian/zoo/socks.rsi 
@@ -485,8 +485,8 @@
 - type: entity
   parent: ClothingUnderwearSocksBase
   id: ClothingUnderwearSocksWarden
-  name: носки оперативного дежурного
-  description: Стандартные носки оперативного дежурного.
+  name: носки участкового
+  description: Стандартные носки участкового.
   components:
   - type: Sprite
     sprite: DeadSpace/Clothing/Underwear/Security/warden/socks.rsi

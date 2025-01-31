@@ -50,5 +50,5 @@ ent-WardrobeVirology = гардероб вирусолога
     .desc = { ent-WardrobeWhite.desc }
 ent-WardrobeScience = гардероб научного сотрудника
     .desc = { ent-WardrobeWhite.desc }
-ent-WardrobeBotanist = гардероб ботаника
+ent-WardrobeBotanist = гардероб агронома
     .desc = { ent-WardrobeGreen.desc }

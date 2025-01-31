@@ -103,7 +103,7 @@ holopad-engineering-main = Инженерный - Основной
 # Security
 holopad-security-front = Милиция - Приёмная
 holopad-security-brig = Милиция - Участок
-holopad-security-warden = Милиция - Комната оперативного дежурного
+holopad-security-warden = Милиция - Комната участкового
 holopad-security-interrogation = Милиция - Допрос
 holopad-security-breakroom = Милиция - Комната отдыха
 holopad-security-detective = Милиция - Каюта следователя
@@ -123,7 +123,7 @@ holopad-service-botany = Сервис - Ботаника
 holopad-service-chapel = Сервис - Церковь
 holopad-service-library = Сервис - Библиотека
 holopad-service-newsroom = Сервис - Редакция
-holopad-service-zookeeper = Сервис - Зоотехник
+holopad-service-zookeeper = Сервис - Ветеринар
 holopad-service-boxer = Сервис - Боксер
 holopad-service-clown = Сервис - Клоун
 holopad-service-musician = Сервис - Музыкант

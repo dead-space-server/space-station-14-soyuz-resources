@@ -2,7 +2,7 @@
 
 # Shown at the end of a round of Traitor
 traitor-round-end-agent-name = предатель
-objective-issuer-syndicate = [color=crimson]"Рассвет"[/color]
+objective-issuer-syndicate = [color=darkgreen]"Рассвет"[/color]
 objective-issuer-unknown = Неизвестно
 traitor-round-end-codewords = Кодовыми словами были: [color=White]{ $codewords }[/color].
 traitor-title = Предатели
@@ -22,7 +22,7 @@ traitor-death-match-end-round-description-entry = КПК { $originalName }, с {
 
 # TraitorRole
 traitor-role-greeting =
-    Вы - агент организации { $corporation } на задании [color = darkred]"Рассвета".[/color].
+    Вы - шпион организации { $corporation } Объединенного Правительства Земли на задании [color = darkgreen]"Рассвета"[/color].
     Ваши цели и кодовые слова перечислены в меню персонажа.
     Воспользуйтесь своим аплинком, чтобы приобрести всё необходимое для выполнения работы.
     Смерть СССП!
