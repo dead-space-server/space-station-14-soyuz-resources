@@ -129,3 +129,21 @@
   name: Коммунистическая машина
   path:
     path: /Audio/Jukebox/YouAreEmptyMachineOfCommunism.ogg
+
+- type: jukebox
+  id: YoungBuildersMarch
+  name: Марш молодых строителей
+  path:
+    path: /Audio/Jukebox/YoungBuildersMarch.ogg
+
+- type: jukebox
+  id: InvinciblePeoples
+  name: Когда народ един - он не победим
+  path:
+    path: /Audio/Jukebox/InvinciblePeoples.ogg
+  
+- type: jukebox
+  id: AnthemOfTheDemocratic
+  name: Гимн демократической молодежи мира
+  path:
+    path: /Audio/Jukebox/AnthemOfTheDemocratic.ogg
