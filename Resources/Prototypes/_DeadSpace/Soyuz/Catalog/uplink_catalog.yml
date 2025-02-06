@@ -33,3 +33,14 @@
     whitelist:
       tags:
       - NukeOpsUplink
+
+- type: listing
+  id: UplinkMagazineRifle
+  name: uplink-rifle-magazine-name
+  description: uplink-rifle-magazine-desc
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/LightRifle/light_rifle_mag.rsi, state: red }
+  productEntity: MagazineRifle
+  cost:
+    Telecrystal: 3
+  categories:
+  - UplinkAmmo

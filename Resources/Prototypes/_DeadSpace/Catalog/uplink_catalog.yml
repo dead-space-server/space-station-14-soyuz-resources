@@ -190,16 +190,16 @@
   categories:
   - UplinkAmmo
 
-- type: listing
-  id: UplinkMagazineLightRifle
-  name: uplink-light-rifle-magazine-name
-  description: uplink-light-rifle-magazine-desc
-  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/LightRifle/light_rifle_mag.rsi, state: red }
-  productEntity: MagazineLightRifle
-  cost:
-    Telecrystal: 3
-  categories:
-  - UplinkAmmo
+# - type: listing
+#   id: UplinkMagazineLightRifle #DS14-Soyuz disabled
+#   name: uplink-light-rifle-magazine-name
+#   description: uplink-light-rifle-magazine-desc
+#   icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/LightRifle/light_rifle_mag.rsi, state: red }
+#   productEntity: MagazineLightRifle
+#   cost:
+#     Telecrystal: 3
+#   categories:
+#   - UplinkAmmo
 
 - type: listing
   id: UplinkSyndieCloak
