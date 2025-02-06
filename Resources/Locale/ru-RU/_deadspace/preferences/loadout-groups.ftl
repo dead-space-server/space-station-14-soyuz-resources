@@ -17,11 +17,11 @@ loadout-group-senior-engineer-jumpsuit = Бригадир, комбинезон
 loadout-group-senior-engineer-id = Бригадир, ID
 loadout-group-senior-engineer-underwear = Бригадир, нижнее бельё
 # Science
-loadout-group-senior-researcher-head = Ведущий учёный, голова
-loadout-group-senior-researcher-jumpsuit = Ведущий учёный, комбинезон
-loadout-group-senior-researcher-outerclothing = Ведущий учёный, верхняя одежда
-loadout-group-senior-researcher-id = Ведущий учёный, ID
-loadout-group-senior-researcher-underwear = Ведущий учёный, нижнее бельё
+loadout-group-senior-researcher-head = Ведущий научный сотрудник, голова
+loadout-group-senior-researcher-jumpsuit = Ведущий научный сотрудник, комбинезон
+loadout-group-senior-researcher-outerclothing = Ведущий научный сотрудник, верхняя одежда
+loadout-group-senior-researcher-id = Ведущий научный сотрудник, ID
+loadout-group-senior-researcher-underwear = Ведущий научный сотрудник, нижнее бельё
 # Security
 loadout-group-brigmedic-jumpsuit = Дежурный врач, комбинезон
 loadout-group-brigmedic-backpack = Дежурный врач, рюкзак

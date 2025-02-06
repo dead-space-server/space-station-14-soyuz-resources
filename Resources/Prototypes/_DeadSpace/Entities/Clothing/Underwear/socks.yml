@@ -394,8 +394,8 @@
 - type: entity
   parent: ClothingUnderwearSocksBase
   id: ClothingUnderwearSocksScientist
-  name: носки учёного
-  description: Стандартные носки учёного.
+  name: носки научного сотрудника
+  description: Стандартные носки научного сотрудника.
   components:
   - type: Sprite
     sprite: DeadSpace/Clothing/Underwear/Science/scientist/socks.rsi
@@ -403,8 +403,8 @@
 - type: entity
   parent: ClothingUnderwearSocksBase
   id: ClothingUnderwearSocksResearchAssistant
-  name: носки лаборанта
-  description: Стандартные носки лаборанта.
+  name: носки младшего научного сотрудника
+  description: Стандартные носки младшего научного сотрудника.
   components:
   - type: Sprite
     sprite: DeadSpace/Clothing/Underwear/Science/research_assistant/socks.rsi
@@ -412,8 +412,8 @@
 - type: entity
   parent: ClothingUnderwearSocksBase
   id: ClothingUnderwearSocksSeniorResearcher
-  name: носки ведущего учёного
-  description: Стандартные ведущего учёного.
+  name: носки ведущего научного сотрудника
+  description: Стандартные ведущего научного сотрудника.
   components:
   - type: Sprite
     sprite: DeadSpace/Clothing/Underwear/Science/senior_researcher/socks.rsi

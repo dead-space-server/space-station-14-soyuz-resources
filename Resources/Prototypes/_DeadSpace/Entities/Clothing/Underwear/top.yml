@@ -442,8 +442,8 @@
 - type: entity
   parent: ClothingUnderwearTopBase
   id: ClothingUnderwearTopBraResearchAssistant
-  name: бра лаборанта
-  description: Cтандартное нижнее бельё лаборанта.
+  name: бра младшего научного сотрудника
+  description: Cтандартное нижнее бельё младшего научного сотрудника.
   components:
   - type: Sprite
     sprite: DeadSpace/Clothing/Underwear/Science/research_assistant/women/bra.rsi
@@ -460,8 +460,8 @@
 - type: entity
   parent: ClothingUnderwearTopBase
   id: ClothingUnderwearTopBraScientist
-  name: бра учёного
-  description: Cтандартное нижнее бельё учёного.
+  name: бра научного сотрудника
+  description: Cтандартное нижнее бельё научного сотрудника.
   components:
   - type: Sprite
     sprite: DeadSpace/Clothing/Underwear/Science/scientist/women/bra.rsi
