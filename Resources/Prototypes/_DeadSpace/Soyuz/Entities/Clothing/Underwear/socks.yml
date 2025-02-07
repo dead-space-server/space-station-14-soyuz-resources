@@ -5,7 +5,7 @@
   description: Симпатичные чулки в чёрную сетку, чёткий узор тёмных линий придаёт им строгость и изящество.
   components:
   - type: Sprite
-    sprite: DeadSpace/Soyuz/Clothing/Underwear/stockingsblackgrid.rsi
+    sprite: DeadSpace/Soyuz/Clothing/Underwear/Socks/stockingsblackgrid.rsi
 
 - type: entity
   parent: ClothingUnderwearSocksBase
@@ -14,7 +14,7 @@
   description: Светлые и лёгкие, эти чулки с белым клетчатым узором создают ощущение воздушной грации.
   components:
   - type: Sprite
-    sprite: DeadSpace/Soyuz/Clothing/Underwear/stockingswhitegrid.rsi
+    sprite: DeadSpace/Soyuz/Clothing/Underwear/Socks/stockingswhitegrid.rsi
 
 - type: entity
   parent: ClothingUnderwearSocksBase
@@ -23,7 +23,7 @@
   description: Плотные и гладкие, эти матовые чёрные чулки обволакивают ноги сдержанной роскошью. Идеальный выбор для тех, кто ценит простоту и стиль.
   components:
   - type: Sprite
-    sprite: DeadSpace/Soyuz/Clothing/Underwear/stockingsblack.rsi
+    sprite: DeadSpace/Soyuz/Clothing/Underwear/Socks/stockingsblack.rsi
 
 - type: entity
   parent: ClothingUnderwearSocksBase
@@ -32,4 +32,4 @@
   description: Мягкие следы пушистых лапок украшают эти чулки, добавляя нотку игривости и обаяния.
   components:
   - type: Sprite
-    sprite: DeadSpace/Soyuz/Clothing/Underwear/stockingsblackpaws.rsi
+    sprite: DeadSpace/Soyuz/Clothing/Underwear/Socks/stockingsblackpaws.rsi
