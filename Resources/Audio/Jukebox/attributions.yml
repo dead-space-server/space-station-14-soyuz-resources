@@ -107,3 +107,18 @@
   license: "Custom"
   copyright: "Custom"
   source: "https://www.youtube.com/watch?v=jPGyR_3zpjA"
+
+- files: ["AnthemOfTheDemocratic.ogg"]
+  license: "Custom"
+  copyright: "Custom"
+  source: "----"
+
+- files: ["YoungBuildersMarch.ogg"]
+  license: "Custom"
+  copyright: "Custom"
+  source: "----"
+
+- files: ["InvinciblePeoples.ogg"]
+  license: "Custom"
+  copyright: "Custom"
+  source: "----"
