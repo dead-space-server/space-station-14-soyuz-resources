@@ -24,13 +24,13 @@ ert-loadout-category-energyshotgun-description =
 ert-loadout-category-wt550-name = WT550
 ert-loadout-category-wt550-description =
     Отличный одноручный пистолет-пулемёт, 
-    производства NanoTrasen's Small Arms Division.
+    производства USSP's Small Arms Division.
     Для точной стрельбы достаточно одной руки. 
     Использует патроны калибра 9х19 мм.
 
-ert-loadout-category-drozd-name = Дрозд
+ert-loadout-category-drozd-name = ОЦ-94 "Гроза"
 ert-loadout-category-drozd-description =
-    Полностью автоматический, двуручный пистолет-пулемёт. 
+    Полностью автоматический, двуручный штурмовой автомат. 
     Использует патроны калибра 9х19 мм. 
 
 ert-loadout-category-vector-name = Вектор
@@ -46,7 +46,7 @@ ert-loadout-category-lecter-description =
 
 ert-loadout-category-lasercarbine-name = Лазерная винтовка
 ert-loadout-category-lasercarbine-description =
-    Предпочитается службой безопасности NanoTrasen 
+    Предпочитается милицией СССП 
     за дешевизну и простоту использования.
     Для восполнения боезапаса потребуется зарядник энергооружия.
 
@@ -74,7 +74,7 @@ ert-loadout-category-pulsecarbine-description =
 ert-loadout-category-mk58-name = MK 58
 ert-loadout-category-mk58-description =
     Дешёвый и распространённый пистолет, 
-    производимый дочерней компанией Nanotrasen. 
+    производимый дочерней компанией СССП. 
     Использует патроны калибра 9х19. 
 
 ert-loadout-category-n1984-name = N1984
@@ -84,7 +84,7 @@ ert-loadout-category-n1984-description =
 
 ert-loadout-category-mateba-name = Матеба
 ert-loadout-category-mateba-description =
-    Револьвер элитных сил NanoTrasen.
+    Револьвер элитных сил СССП.
     Использует калибр .44 магнум.
 
 ert-loadout-category-dominator-name = Доминатор
