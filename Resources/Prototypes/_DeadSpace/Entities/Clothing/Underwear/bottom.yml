@@ -113,8 +113,8 @@
 - type: entity
   parent: ClothingUnderwearBottomBase
   id: ClothingUnderwearBottomBoxersBotanist
-  name: боксеры ботаника
-  description: Cтандартное нижнее бельё ботаника.
+  name: боксеры агронома
+  description: Cтандартное нижнее бельё агронома.
   components:
   - type: Sprite
     sprite: DeadSpace/Clothing/Underwear/Civilian/botanist/man.rsi
@@ -221,8 +221,8 @@
 - type: entity
   parent: ClothingUnderwearBottomBase
   id: ClothingUnderwearBottomBoxersZoo
-  name: боксеры зоотехника
-  description: Cтандартное нижнее бельё зоотехника.
+  name: боксеры ветеринара
+  description: Cтандартное нижнее бельё ветеринара.
   components:
   - type: Sprite
     sprite: DeadSpace/Clothing/Underwear/Civilian/zoo/man.rsi
@@ -433,8 +433,8 @@
 - type: entity
   parent: ClothingUnderwearBottomBase
   id: ClothingUnderwearBottomBoxersResearchAssistant
-  name: боксеры лаборанта
-  description: Cтандартное нижнее бельё лаборанта.
+  name: боксеры младшего научного сотрудника
+  description: Cтандартное нижнее бельё младшего научного сотрудника.
   components:
   - type: Sprite
     sprite: DeadSpace/Clothing/Underwear/Science/research_assistant/man.rsi
@@ -451,8 +451,8 @@
 - type: entity
   parent: ClothingUnderwearBottomBase
   id: ClothingUnderwearBottomBoxersScientist
-  name: боксеры учёного
-  description: Cтандартное нижнее бельё учёного.
+  name: боксеры научного сотрудника
+  description: Cтандартное нижнее бельё научного сотрудника.
   components:
   - type: Sprite
     sprite: DeadSpace/Clothing/Underwear/Science/scientist/man.rsi
@@ -524,8 +524,8 @@
 - type: entity
   parent: ClothingUnderwearBottomBase
   id: ClothingUnderwearBottomBoxersWarden
-  name: боксеры оперативного дежурного
-  description: Cтандартное нижнее бельё оперативного дежурного.
+  name: боксеры участкового
+  description: Cтандартное нижнее бельё участкового.
   components:
   - type: Sprite
     sprite: DeadSpace/Clothing/Underwear/Security/warden/man.rsi
@@ -600,8 +600,8 @@
 - type: entity
   parent: ClothingUnderwearBottomBase
   id: ClothingUnderwearBottomPantiesBotanist
-  name: стринги ботаника
-  description: Cтандартное нижнее бельё ботаника.
+  name: стринги агронома
+  description: Cтандартное нижнее бельё агронома.
   components:
   - type: Sprite
     sprite: DeadSpace/Clothing/Underwear/Civilian/botanist/women/pants.rsi
@@ -708,8 +708,8 @@
 - type: entity
   parent: ClothingUnderwearBottomBase
   id: ClothingUnderwearBottomPantiesZoo
-  name: стринги зоотехника
-  description: Cтандартное нижнее бельё зоотехника.
+  name: стринги ветеринара
+  description: Cтандартное нижнее бельё ветеринара.
   components:
   - type: Sprite
     sprite: DeadSpace/Clothing/Underwear/Civilian/zoo/women/pants.rsi
@@ -920,8 +920,8 @@
 - type: entity
   parent: ClothingUnderwearBottomBase
   id: ClothingUnderwearBottomPantiesResearchAssistant
-  name: стринги лаборанта
-  description: Cтандартное нижнее бельё лаборанта.
+  name: стринги младшего научного сотрудника
+  description: Cтандартное нижнее бельё младшего научного сотрудника.
   components:
   - type: Sprite
     sprite: DeadSpace/Clothing/Underwear/Science/research_assistant/women/pants.rsi
@@ -938,8 +938,8 @@
 - type: entity
   parent: ClothingUnderwearBottomBase
   id: ClothingUnderwearBottomPantiesScientist
-  name: стринги учёного
-  description: Cтандартное нижнее бельё учёного.
+  name: стринги научного сотрудника
+  description: Cтандартное нижнее бельё научного сотрудника.
   components:
   - type: Sprite
     sprite: DeadSpace/Clothing/Underwear/Science/scientist/women/pants.rsi
@@ -1011,8 +1011,8 @@
 - type: entity
   parent: ClothingUnderwearBottomBase
   id: ClothingUnderwearBottomPantiesWarden
-  name: стринги оперативного дежурного
-  description: Cтандартное нижнее бельё оперативного дежурного.
+  name: стринги участкового
+  description: Cтандартное нижнее бельё участкового.
   components:
   - type: Sprite
     sprite: DeadSpace/Clothing/Underwear/Security/warden/women/pants.rsi

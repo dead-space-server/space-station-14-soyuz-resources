@@ -159,9 +159,9 @@ ghost-role-information-SyndiCat-name = Котик "Рассвета"
 ghost-role-information-SyndiCat-description = Вы - верный дрессированный питомец оперативных бойцов с микробомбой. Служите своему хозяину до самой смерти!
 ghost-role-information-SyndiCat-rules = Вы [color=red][bold]Командный антагонист[/bold][/color], в команде с агентом, который вас призвал.
 ghost-role-information-Cak-name = Тот
-ghost-role-information-Cak-description = Вы - любимое дитя шеф-повара. Вы - живой торт-кот.
+ghost-role-information-Cak-description = Вы - любимое дитя повара. Вы - живой торт-кот.
 ghost-role-information-BreadDog-name = Хлебака
-ghost-role-information-BreadDog-description = Вы - любимое дитя шеф-повара. Вы - живая хлебная собака.
+ghost-role-information-BreadDog-description = Вы - любимое дитя повара. Вы - живая хлебная собака.
 ghost-role-information-space-ninja-name = Космический ниндзя
 ghost-role-information-space-ninja-description = Используйте хитрость и скрытность, чтобы выполнить цели которые поставил вам клан паука.
 ghost-role-information-space-ninja-rules = Вы элитный наёмник клана паука. Старайтесь действовать максимально скрытно, убивать только свои цели и тех кто попытается убить вас.
@@ -248,4 +248,4 @@ ghost-role-information-gingerbread-description =
     Существо чистого праздничного духа.
     Распространяйте паточную вкуснятину и хорошее настроение.
 ghost-role-information-tomatokiller-name = Томат-убийца
-ghost-role-information-tomatokiller-description = Этот маленький помидор будет служить ботанику до конца своей жизни... то есть пару минут.
+ghost-role-information-tomatokiller-description = Этот маленький помидор будет служить агроному до конца своей жизни... то есть пару минут.
